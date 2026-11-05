@@ -1,0 +1,14 @@
+{
+    "primary_threat": "Wildfire",
+    "location": "Kgalagadi, Botswana",
+    "lat": -22.5,
+    "lon": 23.5,
+    "time_of_event": "Thursday, 05 Nov 2026 19:30:00",
+    "severity": "High",
+    "probability": "78%",
+    "cascading_effects": [
+        "Severe smoke plume reducing air quality regionally",
+        "Mass evacuations of nearby settlements",
+        "Road closures and disruption of supply chains"
+    ]
+}
