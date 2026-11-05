@@ -1,0 +1,215 @@
+[
+    {
+        "primary_threat": "Tropical Cyclone",
+        "location": "Chennai, India",
+        "lat": 13.0827,
+        "lon": 80.2707,
+        "time_of_event": "Friday, 06 Nov 2026 09:30:00",
+        "severity": "High",
+        "probability": "78%",
+        "cascading_effects": [
+            "Severe coastal flooding",
+            "Storm surge",
+            "Landslides in hilly outskirts",
+            "Widespread power outages"
+        ]
+    },
+    {
+        "primary_threat": "Wildfire",
+        "location": "Pilbara, Western Australia",
+        "lat": -16.5,
+        "lon": 128.0,
+        "time_of_event": "Friday, 06 Nov 2026 04:30:00",
+        "severity": "High",
+        "probability": "71%",
+        "cascading_effects": [
+            "Severe smoke plume affecting regional air quality",
+            "Road and rail network disruptions",
+            "Potential flash flooding in burn\u2011scar areas"
+        ]
+    },
+    {
+        "primary_threat": "Tsunami",
+        "location": "Port Vila, Vanuatu",
+        "lat": -17.733,
+        "lon": 168.321,
+        "time_of_event": "Fri, 06 Nov 2026 00:30:00",
+        "severity": "High",
+        "probability": "12%",
+        "cascading_effects": [
+            "Coastal flooding",
+            "Infrastructure damage",
+            "Displacement of residents"
+        ]
+    },
+    {
+        "primary_threat": "Tropical Cyclone",
+        "location": "Colombo, Sri Lanka",
+        "lat": 6.93,
+        "lon": 79.85,
+        "time_of_event": "Thu, 05 Nov 2026 12:30:00",
+        "severity": "High",
+        "probability": "38%",
+        "cascading_effects": [
+            "Storm surge",
+            "Heavy rainfall flooding",
+            "Landslides"
+        ]
+    },
+    {
+        "primary_threat": "Forest Fire",
+        "location": "Perth, Australia",
+        "lat": -17.0,
+        "lon": 126.0,
+        "time_of_event": "Friday, 06 Nov 2026 19:45:00",
+        "severity": "High",
+        "probability": "70%",
+        "cascading_effects": [
+            "Air quality degradation",
+            "Evacuation orders",
+            "Infrastructure strain"
+        ]
+    },
+    {
+        "primary_threat": "Tropical Cyclone",
+        "location": "Andhra Pradesh, India",
+        "lat": 15.8,
+        "lon": 80.2,
+        "time_of_event": "Friday, 06 Nov 2026 06:30:00",
+        "severity": "High",
+        "probability": "78%",
+        "cascading_effects": [
+            "Coastal flooding",
+            "Storm surge",
+            "Heavy rainfall leading to landslides"
+        ]
+    },
+    {
+        "primary_threat": "Forest Fire",
+        "location": "Kununurra, Australia",
+        "lat": -15.78,
+        "lon": 128.73,
+        "time_of_event": "Friday, 06 Nov 2026 20:30:00",
+        "severity": "High",
+        "probability": "38%",
+        "cascading_effects": [
+            "Severe Air Quality Deterioration",
+            "Road Closures and Infrastructure Disruption",
+            "Potential Smoke-Related Health Emergencies"
+        ]
+    },
+    {
+        "primary_threat": "Tropical Cyclone",
+        "location": "Andaman Sea, near 15.8\u00b0N, 80.2\u00b0E",
+        "lat": 15.8,
+        "lon": 80.2,
+        "time_of_event": "Fri, 06 Nov 2026 03:00:00",
+        "severity": "High",
+        "probability": "78%",
+        "cascading_effects": [
+            "Storm surge",
+            "Coastal flooding",
+            "Landslides",
+            "Agricultural loss"
+        ]
+    },
+    {
+        "primary_threat": "Tsunami",
+        "location": "Port Vila, Vanuatu",
+        "lat": -17.7333,
+        "lon": 168.327,
+        "time_of_event": "Fri, 06 Nov 2026 04:30:00",
+        "severity": "High",
+        "probability": "12%",
+        "cascading_effects": [
+            "Coastal flooding",
+            "Infrastructure damage",
+            "Disruption of maritime transport"
+        ]
+    },
+    {
+        "primary_threat": "Tropical Cyclone",
+        "location": "Cox's Bazar, Bangladesh",
+        "lat": 21.44,
+        "lon": 92.0,
+        "time_of_event": "Thursday, 05 Nov 2026 15:30:00",
+        "severity": "High",
+        "probability": "68%",
+        "cascading_effects": [
+            "Severe coastal flooding",
+            "Storm surge",
+            "Landslides in hilly regions",
+            "Disruption of transportation"
+        ]
+    },
+    {
+        "primary_threat": "Cyclone",
+        "location": "Coastal Bangladesh, Bay of Bengal",
+        "lat": 16.25,
+        "lon": 89.35,
+        "time_of_event": "Friday, 06 Nov 2026 04:45:00",
+        "severity": "High",
+        "probability": "38%",
+        "cascading_effects": [
+            "Severe storm surge and coastal flooding in southern Bangladesh",
+            "Rain\u2011induced landslides in the Chittagong Hill Tracts (Myanmar border)",
+            "Disruption of major shipping lanes in the Bay of Bengal",
+            "Potential power outages and infrastructure damage in Khulna region"
+        ]
+    },
+    {
+        "primary_threat": "Earthquake",
+        "location": "Punta Cana, Dominican Republic",
+        "lat": 19.2256,
+        "lon": -68.1196,
+        "time_of_event": "Friday, 06 Nov 2026 02:30:00",
+        "severity": "Medium",
+        "probability": "7%",
+        "cascading_effects": [
+            "Minor tsunami",
+            "Coastal flooding",
+            "Aftershocks"
+        ]
+    },
+    {
+        "primary_threat": "Earthquake",
+        "location": "San Simeon, USA",
+        "lat": 35.773167,
+        "lon": -121.208999,
+        "time_of_event": "Friday, 06 Nov 2026 14:30:00",
+        "severity": "Moderate",
+        "probability": "12%",
+        "cascading_effects": [
+            "Landslide",
+            "Coastal Flooding",
+            "Power Outage"
+        ]
+    },
+    {
+        "primary_threat": "Earthquake",
+        "location": "The Geysers, California, USA",
+        "lat": 38.82,
+        "lon": -122.81,
+        "time_of_event": "Thursday, 05 Nov 2026 13:45:00",
+        "severity": "Medium",
+        "probability": "11%",
+        "cascading_effects": [
+            "Potential landslide",
+            "Geothermal plant shutdown"
+        ]
+    },
+    {
+        "primary_threat": "Wildfire",
+        "location": "Kgalagadi, Botswana",
+        "lat": -22.5,
+        "lon": 23.5,
+        "time_of_event": "Thursday, 05 Nov 2026 19:30:00",
+        "severity": "High",
+        "probability": "78%",
+        "cascading_effects": [
+            "Severe smoke plume reducing air quality regionally",
+            "Mass evacuations of nearby settlements",
+            "Road closures and disruption of supply chains"
+        ]
+    }
+]

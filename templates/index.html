@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureDisasterLens</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="//unpkg.com/three"></script>
+    <script src="//unpkg.com/globe.gl"></script>
+</head>
+<body>
+    <div id="globeViz"></div>
+
+    <div class="dashboard">
+        <h1>FutureDisasterLens AI</h1>
+        <div class="panel">
+            <h2>Primary Threat</h2>
+            <p id="threat-name">Awaiting AI Data...</p>
+            
+            <h2>Location</h2>
+            <p id="threat-location">--</p>
+
+            <h2>Time / ETA</h2>
+            <p id="threat-time" style="color: #00e5ff;">--</p>
+            
+            <h2>Severity</h2>
+            <p id="threat-severity" class="severity-badge">--</p>
+
+            <h2>Probability</h2>
+            <p id="threat-prob" style="color: #ffaa00; font-weight: bold;">--</p>
+            
+            <h2>Cascading Effects</h2>
+            <ul id="threat-effects">
+                <li>--</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

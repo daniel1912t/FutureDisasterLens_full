@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #fff;
+}
+
+#globeViz {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.dashboard {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 350px;
+    z-index: 10;
+    background: rgba(10, 10, 20, 0.85);
+    border: 1px solid #334455;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.dashboard h1 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: #00e5ff;
+    border-bottom: 1px solid #334455;
+    padding-bottom: 10px;
+}
+
+.panel h2 {
+    font-size: 0.9rem;
+    color: #8899aa;
+    text-transform: uppercase;
+    margin: 15px 0 5px 0;
+}
+
+.panel p {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.severity-badge {
+    text-transform: uppercase;
+    text-shadow: 0 0 10px currentColor;
+}
+
+ul {
+    margin: 5px 0 0 0;
+    padding-left: 20px;
+    font-size: 1rem;
+    color: #ffaa00;
+}
