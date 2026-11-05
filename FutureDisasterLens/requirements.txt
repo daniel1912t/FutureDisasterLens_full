@@ -1,6 +1,0 @@
-flask
-pika
-google-generativeai
-requests
-feedparser
-ephem
