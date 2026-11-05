@@ -9,7 +9,7 @@ WORKDIR /app
 
 # Copy your requirements and install them
 COPY requirements.txt .
-RUN pip install flask flask-cors pika groq requests
+RUN pip install flask flask-cors pika groq requests feedparser ephem
 
 # Copy all your scripts and folders into the cloud server
 COPY . .
