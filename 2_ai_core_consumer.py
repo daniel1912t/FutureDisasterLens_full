@@ -19,10 +19,20 @@ def analyze_with_groq(all_events):
         "Content-Type": "application/json"
     }
     payload = {
-        "model": "llama-3.3-70b-versatile",
+        "model": "openai/gpt-oss-120b",
         "messages": [
-            {"role": "system", "content": "You are a disaster telemetry AI. Analyze the incoming data and output ONLY a valid JSON object with keys: primary_threat, location, time_of_event, severity, probability, lat, lon, cascading_effects (array)."},
-            {"role": "user", "content": f"Analyze this telemetry feed: {json.dumps(all_events)}"}
+            {
+                "role": "system",
+                "content": (
+                    "You are an expert disaster telemetry and risk assessment AI. "
+                    "Analyze the raw data points carefully. Output ONLY a valid JSON object with keys: "
+                    "primary_threat, location, time_of_event, severity, probability, lat, lon, cascading_effects (array)."
+                )
+            },
+            {
+                "role": "user",
+                "content": f"Analyze this telemetry feed: {json.dumps(all_events)}"
+            }
         ],
         "response_format": {"type": "json_object"}
     }
