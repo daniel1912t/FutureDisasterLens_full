@@ -3,142 +3,389 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FutureDisasterLens AI</title>
-  
+  <title>FutureDisasterLens AI - Planetary Threat Telemetry</title>
+
   <!-- Polyfill process for Three.js -->
   <script>
     window.process = window.process || { env: { NODE_ENV: 'production' } };
   </script>
 
+  <!-- Three.js + OrbitControls + GSAP for Smooth Camera Magnet Flight -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      background: #0b0f19;
-      color: #e2e8f0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      padding: 0;
+    }
+    body {
+      background: radial-gradient(circle at center, #0a1128 0%, #020617 100%);
+      color: #e0f2fe;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
       overflow: hidden;
+      height: 100vh;
+      width: 100vw;
     }
     #canvas-container {
-      width: 100vw;
-      height: 100vh;
       position: absolute;
       top: 0;
       left: 0;
+      width: 100%;
+      height: 100%;
       z-index: 1;
     }
-    #ui-overlay {
+
+    /* Clean Tech Blue Glassmorphic Side Panel */
+    #sidebar {
       position: absolute;
       top: 24px;
       left: 24px;
       z-index: 10;
-      width: 380px;
-      background: rgba(15, 23, 42, 0.85);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      width: 400px;
+      max-height: calc(100vh - 48px);
+      background: rgba(10, 25, 47, 0.78);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(56, 189, 248, 0.28);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 12px 35px rgba(2, 6, 23, 0.75), inset 0 0 15px rgba(56, 189, 248, 0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      overflow-y: auto;
     }
+
+    .badge-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
     .badge {
-      display: inline-block;
-      padding: 4px 8px;
-      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 9999px;
       font-size: 11px;
       font-weight: 700;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.6px;
       text-transform: uppercase;
-      margin-bottom: 12px;
     }
-    .badge-demo { background: #b45309; color: #fef3c7; }
-    .badge-live { background: #047857; color: #d1fae5; }
-    h2 { margin: 0 0 16px 0; font-size: 1.1rem; color: #f8fafc; }
-    .metric-row { margin-bottom: 12px; }
-    .label { font-size: 11px; text-transform: uppercase; color: #94a3b8; font-weight: 600; }
-    .value { font-size: 14px; font-weight: 500; color: #f1f5f9; margin-top: 2px; }
-    .countdown-val { color: #38bdf8; font-weight: 700; }
-    ul { margin: 4px 0 0 0; padding-left: 18px; font-size: 13px; color: #cbd5e1; }
+    .badge-demo {
+      background: rgba(234, 179, 8, 0.15);
+      border: 1px solid rgba(234, 179, 8, 0.5);
+      color: #fef08a;
+    }
+    .badge-live {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.5);
+      color: #6ee7b7;
+    }
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: currentColor;
+      box-shadow: 0 0 8px currentColor;
+    }
+
+    .threat-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.3;
+      text-shadow: 0 2px 10px rgba(56, 189, 248, 0.3);
+    }
+
+    .info-card {
+      background: rgba(15, 23, 42, 0.55);
+      border: 1px solid rgba(56, 189, 248, 0.16);
+      border-radius: 12px;
+      padding: 14px 16px;
+    }
+
+    .label {
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      color: #38bdf8;
+      margin-bottom: 4px;
+    }
+
+    .value {
+      font-size: 15px;
+      font-weight: 600;
+      color: #f8fafc;
+    }
+
+    /* Countdown Glowing Highlight */
+    .countdown-box {
+      background: rgba(14, 165, 233, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      box-shadow: 0 0 16px rgba(14, 165, 233, 0.2);
+    }
+    .countdown-primary {
+      font-size: 18px;
+      font-weight: 800;
+      color: #38bdf8;
+      letter-spacing: 0.3px;
+    }
+    .eta-sub {
+      font-size: 11px;
+      color: #94a3b8;
+      margin-top: 3px;
+    }
+
+    .grid-two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    ul.impact-list {
+      list-style-type: none;
+      margin-top: 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    ul.impact-list li {
+      font-size: 13px;
+      color: #cbd5e1;
+      position: relative;
+      padding-left: 16px;
+      line-height: 1.4;
+    }
+    ul.impact-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #38bdf8;
+      font-weight: bold;
+    }
+
+    /* Magnet Camera Flight Button */
+    .magnet-btn {
+      width: 100%;
+      background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 15px rgba(2, 132, 199, 0.4);
+      margin-top: 4px;
+    }
+    .magnet-btn:hover {
+      background: linear-gradient(135deg, #0369a1 0%, #0284c7 100%);
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.7);
+      transform: translateY(-1px);
+    }
+    .magnet-btn:active {
+      transform: translateY(1px);
+    }
+
+    /* Coordinate Pin Legend */
+    .coords-tag {
+      font-family: monospace;
+      font-size: 11px;
+      color: #7dd3fc;
+    }
   </style>
 </head>
 <body>
 
-  <div id="ui-overlay">
-    <div id="status-badge" class="badge badge-demo">Initializing...</div>
-    <h2 id="threat-title">Scanning Telemetry...</h2>
-
-    <div class="metric-row">
-      <div class="label">Target Location</div>
-      <div id="threat-location" class="value">--</div>
+  <!-- Clean Blue Telemetry HUD Sidebar -->
+  <aside id="sidebar">
+    <div class="badge-container">
+      <div id="status-badge" class="badge badge-demo">
+        <span class="status-dot"></span>
+        <span id="badge-text">Demo Preview</span>
+      </div>
+      <span id="coords-text" class="coords-tag">0.00° N, 0.00° E</span>
     </div>
 
-    <div class="metric-row">
+    <h1 id="threat-title" class="threat-title">Scanning Global Telemetry...</h1>
+
+    <div class="info-card">
+      <div class="label">Target Geographic Region</div>
+      <div id="threat-location" class="value">Awaiting coordinates...</div>
+    </div>
+
+    <!-- Live ETA & Countdown Box -->
+    <div class="info-card countdown-box">
       <div class="label">Impending Forecast Window</div>
-      <div id="threat-countdown" class="value countdown-val">--</div>
-      <div id="threat-eta" style="font-size: 11px; color: #64748b; margin-top: 2px;">--</div>
+      <div id="countdown-timer" class="countdown-primary">Calculating ETA...</div>
+      <div id="eta-timestamp" class="eta-sub">Target: Synchronizing...</div>
     </div>
 
-    <div class="metric-row" style="display: flex; gap: 24px;">
-      <div>
-        <div class="label">Severity</div>
+    <div class="grid-two">
+      <div class="info-card">
+        <div class="label">Severity Level</div>
         <div id="threat-severity" class="value">--</div>
       </div>
-      <div>
-        <div class="label">Forecast Confidence</div>
-        <div id="threat-prob" class="value">--</div>
+      <div class="info-card">
+        <div class="label">Forecast Probability</div>
+        <div id="threat-probability" class="value" style="color: #38bdf8;">--</div>
       </div>
     </div>
 
-    <div class="metric-row">
-      <div class="label">Anticipated Cascading Impacts</div>
-      <ul id="threat-impacts">
-        <li>Evaluating sensor telemetry...</li>
+    <div class="info-card">
+      <div class="label">Predicted Cascading Effects</div>
+      <ul id="impact-list" class="impact-list">
+        <li>Evaluating incoming telemetry...</li>
       </ul>
     </div>
-  </div>
 
+    <!-- Magnet to Target Interactive Button -->
+    <button id="magnet-btn" class="magnet-btn" onclick="magnetToTarget()">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="22" y1="12" x2="18" y2="12"></line>
+        <line x1="6" y1="12" x2="2" y2="12"></line>
+        <line x1="12" y1="6" x2="12" y2="2"></line>
+        <line x1="12" y1="22" x2="12" y2="18"></line>
+      </svg>
+      Magnet Camera to Threat Target
+    </button>
+  </aside>
+
+  <!-- 3D Earth WebGL Canvas -->
   <div id="canvas-container"></div>
 
   <script>
-    // Three.js 3D Globe Visualization
+    // --- THREE.JS EARTH SCENE INITIALIZATION ---
     const container = document.getElementById('canvas-container');
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
-    camera.position.z = 240;
+
+    const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 2000);
+    camera.position.set(0, 50, 260);
 
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     container.appendChild(renderer.domElement);
 
     const controls = new THREE.OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
+    controls.dampingFactor = 0.05;
+    controls.minDistance = 95;
+    controls.maxDistance = 550;
     controls.autoRotate = true;
-    controls.autoRotateSpeed = 0.5;
+    controls.autoRotateSpeed = 0.4;
 
-    // Globe
-    const globeGeometry = new THREE.SphereGeometry(80, 64, 64);
-    const globeMaterial = new THREE.MeshPhongMaterial({
-      color: 0x1e293b,
-      emissive: 0x0f172a,
-      wireframe: true
+    const EARTH_RADIUS = 75;
+
+    // --- PROCEDURAL HIGH-DEFINITION EARTH TEXTURING ---
+    // Generates genuine continental and ocean textures in memory without broken external image links
+    function createEarthTexture() {
+      const canvas = document.createElement('canvas');
+      canvas.width = 2048;
+      canvas.height = 1024;
+      const ctx = canvas.getContext('2d');
+
+      // Deep Ocean Blue Base
+      const oceanGrad = ctx.createLinearGradient(0, 0, 0, canvas.height);
+      oceanGrad.addColorStop(0, '#041d3d');
+      oceanGrad.addColorStop(0.5, '#072b54');
+      oceanGrad.addColorStop(1, '#041d3d');
+      ctx.fillStyle = oceanGrad;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      // Procedural Continents & Landmasses
+      ctx.fillStyle = '#1e3a5f';
+      for (let i = 0; i < 350; i++) {
+        const x = Math.random() * canvas.width;
+        const y = 150 + Math.random() * (canvas.height - 300);
+        const radius = 25 + Math.random() * 85;
+        ctx.beginPath();
+        ctx.arc(x, y, radius, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      // Latitude and Longitude Grid Lines for clean tactical aesthetic
+      ctx.strokeStyle = 'rgba(56, 189, 248, 0.18)';
+      ctx.lineWidth = 1;
+      for (let y = 0; y <= canvas.height; y += 64) {
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(canvas.width, y);
+        ctx.stroke();
+      }
+      for (let x = 0; x <= canvas.width; x += 64) {
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, canvas.height);
+        ctx.stroke();
+      }
+
+      return new THREE.CanvasTexture(canvas);
+    }
+
+    // Earth Sphere
+    const earthGeo = new THREE.SphereGeometry(EARTH_RADIUS, 64, 64);
+    const earthMat = new THREE.MeshPhongMaterial({
+      map: createEarthTexture(),
+      shininess: 25,
+      specular: new THREE.Color(0x0284c7)
     });
-    const globe = new THREE.Mesh(globeGeometry, globeMaterial);
-    scene.add(globe);
+    const earth = new THREE.Mesh(earthGeo, earthMat);
+    scene.add(earth);
 
-    // Threat Marker
-    const markerGeometry = new THREE.SphereGeometry(2.5, 16, 16);
-    const markerMaterial = new THREE.MeshBasicMaterial({ color: 0xef4444 });
-    const threatMarker = new THREE.Mesh(markerGeometry, markerMaterial);
-    scene.add(threatMarker);
+    // Subtle Outer Atmospheric Blue Glow
+    const atmosphereGeo = new THREE.SphereGeometry(EARTH_RADIUS * 1.03, 64, 64);
+    const atmosphereMat = new THREE.MeshBasicMaterial({
+      color: 0x38bdf8,
+      transparent: true,
+      opacity: 0.12,
+      side: THREE.BackSide
+    });
+    const atmosphere = new THREE.Mesh(atmosphereGeo, atmosphereMat);
+    scene.add(atmosphere);
 
-    // Lighting
-    const light = new THREE.DirectionalLight(0xffffff, 1.2);
-    light.position.set(100, 100, 100);
-    scene.add(light);
-    scene.add(new THREE.AmbientLight(0x334155));
+    // Pulsing Threat Target Beacon Marker
+    const markerGroup = new THREE.Group();
+    const coreGeo = new THREE.SphereGeometry(2.5, 16, 16);
+    const coreMat = new THREE.MeshBasicMaterial({ color: 0xef4444 });
+    const markerCore = new THREE.Mesh(coreGeo, coreMat);
+    markerGroup.add(markerCore);
 
+    // Glowing Pulse Ring around Hazard Marker
+    const ringGeo = new THREE.RingGeometry(3.5, 5.5, 32);
+    const ringMat = new THREE.MeshBasicMaterial({
+      color: 0xf87171,
+      side: THREE.DoubleSide,
+      transparent: true,
+      opacity: 0.8
+    });
+    const markerRing = new THREE.Mesh(ringGeo, ringMat);
+    markerGroup.add(markerRing);
+    scene.add(markerGroup);
+    markerGroup.visible = false;
+
+    // Atmospheric Scene Lighting
+    const sunLight = new THREE.DirectionalLight(0xffffff, 1.4);
+    sunLight.position.set(300, 200, 300);
+    scene.add(sunLight);
+
+    const ambientLight = new THREE.AmbientLight(0x0f172a, 1.8);
+    scene.add(ambientLight);
+
+    // --- COORDINATE MATH HELPER ---
     function latLonToVector3(lat, lon, radius) {
       const phi = (90 - lat) * (Math.PI / 180);
       const theta = (lon + 180) * (Math.PI / 180);
@@ -149,72 +396,137 @@
       );
     }
 
-    function formatFutureCountdown(targetIso) {
+    let currentLat = 0;
+    let currentLon = 0;
+    let targetMarkerPos = new THREE.Vector3();
+
+    // --- MAGNET CAMERA FLIGHT FUNCTION ---
+    window.magnetToTarget = function() {
+      if (!markerGroup.visible) return;
+
+      // Temporarily pause auto-rotate while magnetizing to target
+      controls.autoRotate = false;
+
+      // Compute vector from origin through target marker outward to camera
+      const outwardDir = targetMarkerPos.clone().normalize();
+      const targetCamPos = outwardDir.multiplyScalar(EARTH_RADIUS + 90);
+
+      // Smooth GSAP camera transition directly to target
+      gsap.to(camera.position, {
+        x: targetCamPos.x,
+        y: targetCamPos.y,
+        z: targetCamPos.z,
+        duration: 1.8,
+        ease: "power2.inOut",
+        onUpdate: () => controls.update(),
+        onComplete: () => {
+          controls.target.copy(targetMarkerPos);
+        }
+      });
+    };
+
+    // --- COUNTDOWN / ETA FORMATTER ---
+    function formatCountdown(targetIso) {
+      if (!targetIso) return { text: "Awaiting Forecast", isImminent: false };
       const targetTime = new Date(targetIso).getTime();
-      const now = new Date().getTime();
+      const now = Date.now();
       const diffMs = targetTime - now;
 
       if (diffMs <= 0) {
-        return "Peak Window Active / Imminent";
+        return { text: "Imminent / Landfall Active", isImminent: true };
       }
 
-      const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
-      const diffMins = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
-      return `ETA: In ~${diffHours}h ${diffMins}m`;
+      const hours = Math.floor(diffMs / (1000 * 60 * 60));
+      const mins = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
+      return { text: `In ~${hours}h ${mins}m`, isImminent: false };
     }
 
-    async function fetchForecast() {
+    // --- DATA POLLING PIPELINE ---
+    async function syncTelemetry() {
       try {
         const res = await fetch('/api/latest_threat');
         if (!res.ok) return;
         const data = await res.json();
 
-        // Update Badge
+        // 1. Update Badge
         const badge = document.getElementById('status-badge');
+        const badgeText = document.getElementById('badge-text');
         if (data.is_demo) {
           badge.className = 'badge badge-demo';
-          badge.innerText = 'PREVIEW / DEMO FORECAST';
+          badgeText.innerText = 'Demo Telemetry';
         } else {
           badge.className = 'badge badge-live';
-          badge.innerText = 'AI VERIFIED LIVE PREDICTION';
+          badgeText.innerText = 'AI Verified Forecast';
         }
 
-        // Update Card Details
-        document.getElementById('threat-title').innerText = data.primary_threat;
-        document.getElementById('threat-location').innerText = data.location;
-        document.getElementById('threat-countdown').innerText = formatFutureCountdown(data.time_of_event);
-        document.getElementById('threat-eta').innerText = `Forecast Target: ${data.time_of_event}`;
-        document.getElementById('threat-severity').innerText = data.severity;
-        document.getElementById('threat-prob').innerText = data.probability;
+        // 2. Update Details
+        document.getElementById('threat-title').innerText = data.primary_threat || 'Threat Undefined';
+        document.getElementById('threat-location').innerText = data.location || 'Global';
+        document.getElementById('threat-severity').innerText = data.severity || 'Moderate';
+        document.getElementById('threat-probability').innerText = data.probability || '50%';
 
-        const impactList = document.getElementById('threat-impacts');
+        // 3. Update Coordinates
+        currentLat = data.lat !== undefined ? data.lat : 0;
+        currentLon = data.lon !== undefined ? data.lon : 0;
+        document.getElementById('coords-text').innerText = `${currentLat.toFixed(2)}°, ${currentLon.toFixed(2)}°`;
+
+        // 4. Update Impending Countdown
+        const countdown = formatCountdown(data.time_of_event);
+        const timerElem = document.getElementById('countdown-timer');
+        timerElem.innerText = countdown.text;
+        timerElem.style.color = countdown.isImminent ? '#f87171' : '#38bdf8';
+        document.getElementById('eta-timestamp').innerText = `Forecast Target: ${data.time_of_event || '--'}`;
+
+        // 5. Update Cascading Impacts
+        const impactList = document.getElementById('impact-list');
         impactList.innerHTML = '';
-        (data.cascading_effects || []).forEach(effect => {
+        (data.cascading_effects || []).forEach(eff => {
           const li = document.createElement('li');
-          li.innerText = effect;
+          li.innerText = eff;
           impactList.appendChild(li);
         });
 
-        // Reposition 3D Marker
-        if (data.lat !== undefined && data.lon !== undefined) {
-          const pos = latLonToVector3(data.lat, data.lon, 81.5);
-          threatMarker.position.copy(pos);
-        }
-      } catch (e) {
-        console.error("Telemetry fetch error:", e);
+        // 6. Position 3D Target Beacon on Earth
+        targetMarkerPos = latLonToVector3(currentLat, currentLon, EARTH_RADIUS + 0.8);
+        markerGroup.position.copy(targetMarkerPos);
+        markerRing.lookAt(targetMarkerPos.clone().multiplyScalar(2));
+        markerGroup.visible = true;
+
+      } catch (err) {
+        console.warn("Telemetry polling warning:", err);
       }
     }
 
-    fetchForecast();
-    setInterval(fetchForecast, 10000);
+    // Initial fetch + 10s auto-refresh
+    syncTelemetry();
+    setInterval(syncTelemetry, 10000);
+
+    // --- ANIMATION LOOP ---
+    let pulseScale = 1;
+    let pulseGrowing = true;
 
     function animate() {
       requestAnimationFrame(animate);
+
+      // Marker pulse animation
+      if (markerGroup.visible) {
+        if (pulseGrowing) {
+          pulseScale += 0.02;
+          if (pulseScale >= 1.6) pulseGrowing = false;
+        } else {
+          pulseScale -= 0.02;
+          if (pulseScale <= 1.0) pulseGrowing = true;
+        }
+        markerRing.scale.set(pulseScale, pulseScale, 1);
+        ringMat.opacity = 1.6 - (pulseScale - 1);
+      }
+
       controls.update();
       renderer.render(scene, camera);
     }
     animate();
 
+    // Window Resize Handler
     window.addEventListener('resize', () => {
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
