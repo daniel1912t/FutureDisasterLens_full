@@ -11,24 +11,18 @@ QUEUE_NAME = 'disaster_telemetry'
 GROQ_API_KEY = os.environ.get('GROQ_API_KEY')
 DATA_FILE = '/app/data/latest_prediction.json'
 
-print("=== [BOOT] AI CORE CONSUMER STARTED ===", flush=True)
+print("=== [BOOT] AI CORE LIVE TELEMETRY CONSUMER ===", flush=True)
 
-if not GROQ_API_KEY:
-    print("❌ FATAL: GROQ_API_KEY environment variable is missing!", flush=True)
-else:
-    print(f"✅ Detected GROQ_API_KEY (Length: {len(GROQ_API_KEY)})", flush=True)
-
-# Delete stale prediction files
 if os.path.exists(DATA_FILE):
     try:
         os.remove(DATA_FILE)
-        print(f"[!] Purged stale prediction cache: {DATA_FILE}", flush=True)
+        print(f"[!] Removed stale prediction: {DATA_FILE}", flush=True)
     except Exception as e:
-        print(f"[-] Could not delete stale cache: {e}", flush=True)
+        print(f"[-] Could not delete: {e}", flush=True)
 
-def analyze_with_groq(all_events):
+def analyze_real_events(events):
     if not GROQ_API_KEY:
-        print("[-] Skipping: No API key found.", flush=True)
+        print("❌ GROQ_API_KEY missing from environment!", flush=True)
         return None
 
     current_time_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -38,30 +32,29 @@ def analyze_with_groq(all_events):
         "Content-Type": "application/json"
     }
 
-    # Only reasoning_format="parsed" is sent (never include_reasoning alongside it)
     payload = {
         "model": "openai/gpt-oss-120b",
         "messages": [
             {
                 "role": "user",
                 "content": (
-                    f"Current UTC System Time: {current_time_iso}\n"
-                    f"Raw Telemetry Feed: {json.dumps(all_events)}\n\n"
-                    "INSTRUCTIONS:\n"
-                    "1. Act as a strict, realistic meteorological and seismic risk analyst.\n"
-                    "2. DO NOT blindly output 90% or 100% confidence. Real-world disaster probabilities must reflect scientific forecasting uncertainty (e.g., hurricane track cones typically range between 25% to 65% unless landfall is actively occurring).\n"
-                    "3. 'time_of_event': Estimate the realistic onset or peak window based on the telemetry (e.g., '+24h', '+48h', or the exact timestamp in the event data). Do NOT simply echo the current second unless the event is actively impacting the sensor.\n"
-                    "4. Evaluate real cascading infrastructure impacts based on the specific coordinates.\n\n"
-                    "Output ONLY a valid JSON object matching this schema:\n"
+                    f"Current UTC Timestamp: {current_time_iso}\n\n"
+                    f"Real Global Sensor Feeds:\n{json.dumps(events, indent=2)}\n\n"
+                    "ANALYSIS CRITERIA:\n"
+                    "1. Evaluate this authentic telemetry feed. Identify the single most severe active global event.\n"
+                    "2. Extract its exact verified latitude, longitude, and geographic location name directly from the data.\n"
+                    "3. Assign a calibrated statistical probability based on actual sensor magnitude or category (e.g. magnitude 5.0+ earthquake has 100% detection certainty; a cyclone landfall track is typically 40% - 75%). DO NOT invent arbitrary 90% numbers.\n"
+                    "4. Predict 2-4 tangible cascading physical/economic consequences for that region.\n\n"
+                    "Output ONLY a raw, valid JSON object with this exact structure:\n"
                     "{\n"
-                    '  "primary_threat": "string (specific phenomenon name)",\n'
-                    '  "location": "string (city/region, country)",\n'
-                    '  "time_of_event": "ISO 8601 string or expected impact window",\n'
+                    '  "primary_threat": "Exact name and magnitude/type",\n'
+                    '  "location": "Region, Country",\n'
+                    '  "time_of_event": "Actual event ISO timestamp or forecast window",\n'
                     '  "severity": "Low | Moderate | Severe | Extreme",\n'
-                    '  "probability": "realistic percentage string (e.g. 42%, 65%)",\n'
-                    '  "lat": float,\n'
-                    '  "lon": float,\n'
-                    '  "cascading_effects": ["specific realistic consequence 1", "specific realistic consequence 2"]\n'
+                    '  "probability": "percentage string",\n'
+                    '  "lat": float_latitude,\n'
+                    '  "lon": float_longitude,\n'
+                    '  "cascading_effects": ["consequence 1", "consequence 2"]\n'
                     "}"
                 )
             }
@@ -72,60 +65,42 @@ def analyze_with_groq(all_events):
     }
 
     try:
-        print("[*] Contacting Groq API (openai/gpt-oss-120b)...", flush=True)
-        response = requests.post(url, headers=headers, json=payload, timeout=35)
-        
-        if response.status_code == 200:
-            res_data = response.json()
-            choice = res_data["choices"][0]["message"]
+        print("[*] Requesting live analysis from Groq AI...", flush=True)
+        res = requests.post(url, headers=headers, json=payload, timeout=30)
+        if res.status_code == 200:
+            choice = res.json()["choices"][0]["message"]
             
-            # Extract and print reasoning
             thinking = choice.get("reasoning") or choice.get("reasoning_content")
             if thinking:
                 print("\n" + "="*50, flush=True)
-                print("🧠 [AI REASONING / THINKING TRACE]:", flush=True)
+                print("🧠 [LIVE REASONING TRACE]:", flush=True)
                 print(thinking.strip(), flush=True)
                 print("="*50 + "\n", flush=True)
-            else:
-                print("[*] (Model generated output directly)", flush=True)
 
             return json.loads(choice["content"])
         else:
-            print(f"❌ Groq API Error {response.status_code}: {response.text}", flush=True)
+            print(f"[-] Groq Error {res.status_code}: {res.text}", flush=True)
     except Exception as e:
-        print(f"❌ Request Error: {e}", flush=True)
+        print(f"[-] Processing exception: {e}", flush=True)
 
     return None
-
-def process_and_save(events):
-    print(f"[*] Processing {len(events)} telemetry events through AI...", flush=True)
-    result = analyze_with_groq(events)
-    if result:
-        os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
-        with open(DATA_FILE, 'w') as f:
-            json.dump(result, f)
-        print(f"✅ SUCCESS: Saved prediction at {result.get('time_of_event')} to {DATA_FILE}", flush=True)
-    else:
-        print("[-] Inference failed; file not created.", flush=True)
 
 def callback(ch, method, properties, body):
     try:
         events = json.loads(body)
     except Exception:
         events = []
-    print(f"\n📩 Message received from RabbitMQ ({len(events)} points)!", flush=True)
-    process_and_save(events)
+    
+    print(f"\n📩 Ingested {len(events)} authentic events from message broker.", flush=True)
+    result = analyze_real_events(events)
+    if result:
+        os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
+        with open(DATA_FILE, 'w') as f:
+            json.dump(result, f)
+        print(f"[✓] VERIFIED THREAT SAVED: {result.get('primary_threat')} at {result.get('location')}", flush=True)
 
-def start_ai_consumer():
-    # Immediate boot test cycle so thinking prints without waiting for RabbitMQ
-    print("[*] Executing boot test cycle...", flush=True)
-    test_events = [
-        {"title": "Pacific Cyclone Alert", "lat": 14.5995, "lon": 120.9842, "severity": "High"},
-        {"title": "Tokyo Seismic Anomaly", "lat": 35.6762, "lon": 139.6503, "severity": "Medium"}
-    ]
-    process_and_save(test_events)
-
-    print("🤖 Consumer waiting for RabbitMQ messages on 'disaster_telemetry'...", flush=True)
+def start_consumer():
+    print("🤖 Telemetry Consumer Online. Listening on 'disaster_telemetry'...", flush=True)
     while True:
         try:
             conn = pika.BlockingConnection(pika.ConnectionParameters(host=RABBITMQ_HOST))
@@ -134,8 +109,8 @@ def start_ai_consumer():
             chan.basic_consume(queue=QUEUE_NAME, on_message_callback=callback, auto_ack=True)
             chan.start_consuming()
         except Exception as e:
-            print(f"[-] RabbitMQ connection error: {e}. Retrying in 5s...", flush=True)
+            print(f"[-] Waiting for RabbitMQ... ({e})", flush=True)
             time.sleep(5)
 
 if __name__ == "__main__":
-    start_ai_consumer()
+    start_consumer()
