@@ -19,9 +19,25 @@ def main():
             chan = conn.channel()
             chan.queue_declare(queue=QUEUE_NAME, durable=True)
             
-            data = [
-                {"title": "NOAA Weather Alert: High Wind", "lat": 25.2048, "lon": 55.2708, "severity": "High", "source": "NOAA"},
-                {"title": "Seismic Activity Detected", "lat": 35.6762, "lon": 139.6503, "severity": "Medium", "source": "USGS"}
+            data_points = [
+                {
+                    "title": "NOAA Warning: Developing Tropical Depression / High Wind Advisory",
+                    "lat": 24.4539,
+                    "lon": 54.3773,
+                    "observed_wind_knots": 48,
+                    "pressure_mb": 994,
+                    "reported_at": time.strftime("%Y-%m-%dT%H:00:00Z", time.gmtime()),
+                    "forecast_window": "12-24 hours",
+                    "source": "NOAA-NWS"
+                },
+                {
+                    "title": "USGS M4.8 Seismic Tremor Detected",
+                    "lat": 35.6762,
+                    "lon": 139.6503,
+                    "depth_km": 42.1,
+                    "reported_at": time.strftime("%Y-%m-%dT%H:%M:00Z", time.gmtime()),
+                    "source": "USGS"
+                }
             ]
             chan.basic_publish(
                 exchange='',
