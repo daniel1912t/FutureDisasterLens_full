@@ -3,7 +3,13 @@ import json
 from flask import Flask, jsonify, send_from_directory, render_template_string
 from flask_cors import CORS
 
-app = Flask(__name__, static_folder='.', static_url_path='')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+app = Flask(
+    __name__,
+    static_folder=BASE_DIR,
+    static_url_path=''
+)
 CORS(app)
 
 DATA_FILE = '/app/data/latest_prediction.json'
@@ -61,21 +67,20 @@ def all_threats():
 
 @app.route('/')
 def index():
-    # Check all possible locations for index.html
-    for candidate_dir in ['.', 'templates', 'frontend', 'static']:
-        if os.path.exists(os.path.join(candidate_dir, 'index.html')):
+    for candidate_dir in [BASE_DIR, os.path.join(BASE_DIR, 'templates'), os.path.join(BASE_DIR, 'static'), os.path.join(BASE_DIR, 'frontend')]:
+        target = os.path.join(candidate_dir, 'index.html')
+        if os.path.exists(target):
             return send_from_directory(candidate_dir, 'index.html')
-    
-    # Fallback status if index.html is missing
-    return render_template_string("<h2>FutureDisasterLens API Online</h2><p>index.html not found in root, static, or templates.</p>")
+    return render_template_string("<h2>FutureDisasterLens Online</h2><p>index.html not found.</p>")
 
-@app.route('/<path:path>')
-def static_files(path):
-    for candidate_dir in ['.', 'static', 'frontend', 'templates']:
-        file_path = os.path.join(candidate_dir, path)
-        if os.path.exists(file_path) and not os.path.isdir(file_path):
-            return send_from_directory(candidate_dir, path)
-    return send_from_directory('.', path)
+@app.route('/<path:filename>')
+def serve_static(filename):
+    # Search across potential folders where css, js, or assets reside
+    for candidate_dir in [BASE_DIR, os.path.join(BASE_DIR, 'static'), os.path.join(BASE_DIR, 'frontend')]:
+        target_path = os.path.join(candidate_dir, filename)
+        if os.path.exists(target_path) and not os.path.isdir(target_path):
+            return send_from_directory(candidate_dir, filename)
+    return send_from_directory(BASE_DIR, filename)
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 10000))
