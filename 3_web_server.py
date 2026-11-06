@@ -1,9 +1,9 @@
 import os
 import json
-from flask import Flask, jsonify, send_from_directory
+from flask import Flask, jsonify, send_from_directory, render_template_string
 from flask_cors import CORS
 
-app = Flask(__name__, static_folder='frontend', static_url_path='')
+app = Flask(__name__, static_folder='.', static_url_path='')
 CORS(app)
 
 DATA_FILE = '/app/data/latest_prediction.json'
@@ -24,7 +24,6 @@ DEFAULT_FALLBACK = {
 }
 
 def get_latest_data():
-    # 1. Try reading state file
     if os.path.exists(STATE_FILE):
         try:
             with open(STATE_FILE, 'r') as f:
@@ -35,7 +34,6 @@ def get_latest_data():
         except Exception:
             pass
 
-    # 2. Try reading latest_prediction.json
     if os.path.exists(DATA_FILE):
         try:
             with open(DATA_FILE, 'r') as f:
@@ -63,11 +61,21 @@ def all_threats():
 
 @app.route('/')
 def index():
-    return send_from_directory('frontend', 'index.html')
+    # Check all possible locations for index.html
+    for candidate_dir in ['.', 'templates', 'frontend', 'static']:
+        if os.path.exists(os.path.join(candidate_dir, 'index.html')):
+            return send_from_directory(candidate_dir, 'index.html')
+    
+    # Fallback status if index.html is missing
+    return render_template_string("<h2>FutureDisasterLens API Online</h2><p>index.html not found in root, static, or templates.</p>")
 
 @app.route('/<path:path>')
 def static_files(path):
-    return send_from_directory('frontend', path)
+    for candidate_dir in ['.', 'static', 'frontend', 'templates']:
+        file_path = os.path.join(candidate_dir, path)
+        if os.path.exists(file_path) and not os.path.isdir(file_path):
+            return send_from_directory(candidate_dir, path)
+    return send_from_directory('.', path)
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 10000))
