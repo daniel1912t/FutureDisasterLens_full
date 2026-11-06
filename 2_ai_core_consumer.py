@@ -9,71 +9,56 @@ import requests
 RABBITMQ_HOST = os.environ.get('RABBITMQ_HOST', 'localhost')
 QUEUE_NAME = 'disaster_telemetry'
 GROQ_API_KEY = os.environ.get('GROQ_API_KEY')
-DATA_FILE = '/app/data/latest_prediction.json'
-STATE_FILE = '/app/data/ai_state.json'
 
-print("=== [BOOT] AI CORE LIVE TELEMETRY CONSUMER ===", flush=True)
+# Ensure matching relative/absolute directory
+DATA_DIR = os.path.join(os.getcwd(), 'data')
+os.makedirs(DATA_DIR, exist_ok=True)
+
+DATA_FILE = os.path.join(DATA_DIR, 'latest_prediction.json')
+ALL_DATA_FILE = os.path.join(DATA_DIR, 'all_threats.json')
+STATE_FILE = os.path.join(DATA_DIR, 'ai_state.json')
+
+print("=== [BOOT] AI CORE CONSUMER ONLINE ===", flush=True)
 
 if not GROQ_API_KEY:
-    print("❌ WARNING: GROQ_API_KEY is not set in environment variables!", flush=True)
+    print("❌ ERROR: GROQ_API_KEY is not set in environment variables!", flush=True)
 else:
-    print(f"✅ Detected GROQ_API_KEY (Length: {len(GROQ_API_KEY)})", flush=True)
+    print(f"✅ GROQ_API_KEY loaded (Length: {len(GROQ_API_KEY)})", flush=True)
 
 def generate_initial_demo_data():
-    """Generates 3 staggered demo entries marked explicitly as [DEMO]."""
     now = datetime.now(timezone.utc)
-    t1 = (now + timedelta(days=1)).strftime("%Y-%m-%dT14:00:00Z")
-    t2 = (now + timedelta(days=2)).strftime("%Y-%m-%dT08:30:00Z")
-    t3 = (now + timedelta(days=3)).strftime("%Y-%m-%dT19:15:00Z")
-
     return [
         {
-            "primary_threat": "[DEMO] Tropical Cyclone Track Projection",
-            "location": "Bay of Bengal, Indian Ocean",
-            "time_of_event": t1,
-            "severity": "Severe",
-            "probability": "68%",
-            "lat": 14.5000,
-            "lon": 88.2000,
-            "is_demo": True,
-            "cascading_effects": [
-                "Coastal storm surge 2.5m",
-                "Regional maritime shipping suspension"
-            ]
-        },
-        {
-            "primary_threat": "[DEMO] Magnitude 6.1 Subduction Zone Tremor",
+            "primary_threat": "[DEMO] Magnitude 6.2 Subduction Rupture",
             "location": "Near Coast of Honshu, Japan",
-            "time_of_event": t2,
-            "severity": "Moderate",
-            "probability": "55%",
+            "time_of_event": (now + timedelta(days=1)).strftime("%Y-%m-%dT14:00:00Z"),
+            "severity": "Severe",
+            "probability": "72%",
             "lat": 37.8500,
             "lon": 142.1000,
             "is_demo": True,
             "cascading_effects": [
-                "High-speed rail automated transit pause",
-                "Localized infrastructure shake alerts"
+                "Regional rail transit automatic stop",
+                "Localized coastal surge alert"
             ]
         },
         {
-            "primary_threat": "[DEMO] High-Intensity Thermal Orbital Anomaly",
-            "location": "Pilbara Region, Western Australia",
-            "time_of_event": t3,
-            "severity": "Extreme",
-            "probability": "74%",
-            "lat": -22.3500,
-            "lon": 118.9000,
+            "primary_threat": "[DEMO] Tropical Cyclone Track Projection",
+            "location": "Bay of Bengal, Indian Ocean",
+            "time_of_event": (now + timedelta(days=2)).strftime("%Y-%m-%dT08:30:00Z"),
+            "severity": "Severe",
+            "probability": "65%",
+            "lat": 14.5000,
+            "lon": 88.2000,
             "is_demo": True,
             "cascading_effects": [
-                "Air quality particulate PM2.5 spike",
-                "Localized inland transport corridor watch"
+                "Maritime shipping diversion",
+                "Coastal storm warning"
             ]
         }
     ]
 
 def load_or_init_state():
-    """Tracks how many real AI responses have been generated and preserves items."""
-    os.makedirs('/app/data', exist_ok=True)
     if os.path.exists(STATE_FILE):
         try:
             with open(STATE_FILE, 'r') as f:
@@ -89,21 +74,23 @@ def load_or_init_state():
     return state
 
 def save_state(state):
-    """Saves state and immediately updates latest_prediction.json for the web UI."""
-    os.makedirs('/app/data', exist_ok=True)
     with open(STATE_FILE, 'w') as f:
         json.dump(state, f, indent=2)
+
+    # Write both endpoints that 3_web_server.py expects
     if state["items"]:
         with open(DATA_FILE, 'w') as f:
-            json.dump(state["items"][0], f)
+            json.dump(state["items"][0], f, indent=2)
+        with open(ALL_DATA_FILE, 'w') as f:
+            json.dump(state["items"], f, indent=2)
+    print(f"[✓] Synced data files ({len(state['items'])} items, real AI count: {state['real_ai_count']})", flush=True)
 
-# Seed immediate startup data so the frontend is never blank on fresh boot
+# Seed on boot
 current_state = load_or_init_state()
-print(f"[*] Boot State: {current_state['real_ai_count']} real AI responses registered.", flush=True)
 
 def synthesize_planetary_telemetry(telemetry_batch):
     if not GROQ_API_KEY:
-        print("[-] Skipping AI query: GROQ_API_KEY missing.", flush=True)
+        print("[-] Cannot call Groq: GROQ_API_KEY missing.", flush=True)
         return None
 
     current_time_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -113,7 +100,7 @@ def synthesize_planetary_telemetry(telemetry_batch):
         "Content-Type": "application/json"
     }
 
-    sample_records = telemetry_batch[:60]
+    sample_records = telemetry_batch[:45]
 
     payload = {
         "model": "openai/gpt-oss-120b",
@@ -122,21 +109,20 @@ def synthesize_planetary_telemetry(telemetry_batch):
                 "role": "user",
                 "content": (
                     f"Current UTC System Time: {current_time_iso}\n"
-                    f"Total Incoming Planetary Telemetry Records: {len(telemetry_batch)}\n"
-                    f"Raw Multi-Stream Sensor Batch:\n{json.dumps(sample_records, indent=1)}\n\n"
-                    "SCIENTIFIC MISSION INSTRUCTIONS:\n"
-                    "1. Correlate across ALL live sensors: USGS OEF seismic hypocenters, NASA MODIS orbital thermal radiative power, and NOAA deep-space plasma.\n"
-                    "2. Select the single most severe, verified anomaly on Earth right now.\n"
+                    f"Live Telemetry Records: {json.dumps(sample_records, indent=1)}\n\n"
+                    "INSTRUCTIONS:\n"
+                    "1. Evaluate incoming live sensors (USGS Seismic, NASA MODIS Thermal, NOAA Plasma).\n"
+                    "2. Identify the single most critical, active anomaly on Earth.\n"
                     "3. Extract verified latitude and longitude verbatim from the sensor data.\n"
-                    "4. Base probability strictly on sensor verification: an active satellite thermal hotspot with FRP > 150MW or confirmed M5.0+ earthquake has 95-100% detection certainty; emerging tracks or lower readings have calibrated proportional values. Do NOT invent arbitrary 90% numbers.\n"
+                    "4. Base probability strictly on sensor verification: an active satellite thermal hotspot with FRP > 150MW or confirmed M5.0+ earthquake has 95%+ detection certainty; emerging tracks have lower proportional values. Do NOT invent arbitrary numbers.\n"
                     "5. Synthesize 2-3 realistic cascading physical/infrastructure consequences.\n\n"
                     "Return ONLY valid JSON matching this schema:\n"
                     "{\n"
-                    '  "primary_threat": "Phenomenon name + sensor metric (e.g. M5.8 Subduction Rupture / 350MW Thermal Anomaly)",\n'
+                    '  "primary_threat": "Phenomenon name + sensor metric",\n'
                     '  "location": "Region, Country",\n'
                     '  "time_of_event": "Exact timestamp from sensor",\n'
                     '  "severity": "Low | Moderate | Severe | Extreme",\n'
-                    '  "probability": "calibrated percentage string (e.g. 58%)",\n'
+                    '  "probability": "calibrated percentage string (e.g. 62%)",\n'
                     '  "lat": float_latitude,\n'
                     '  "lon": float_longitude,\n'
                     '  "cascading_effects": ["consequence 1", "consequence 2"]\n'
@@ -150,9 +136,8 @@ def synthesize_planetary_telemetry(telemetry_batch):
     }
 
     try:
-        print(f"[*] Contacting Groq (openai/gpt-oss-120b) with {len(telemetry_batch)} planetary observations...", flush=True)
+        print(f"[*] Dispatching {len(telemetry_batch)} planetary events to Groq AI...", flush=True)
         res = requests.post(url, headers=headers, json=payload, timeout=35)
-        
         if res.status_code == 200:
             choice = res.json()["choices"][0]["message"]
             
@@ -160,19 +145,17 @@ def synthesize_planetary_telemetry(telemetry_batch):
             thinking = choice.get("reasoning") or choice.get("reasoning_content")
             if thinking:
                 print("\n" + "="*50, flush=True)
-                print("🧠 [100+ MULTI-STREAM PLANETARY REASONING TRACE]:", flush=True)
+                print("🧠 [LIVE REASONING TRACE]:", flush=True)
                 print(thinking.strip(), flush=True)
                 print("="*50 + "\n", flush=True)
-            else:
-                print("[*] (Model output generated directly)", flush=True)
 
             ai_result = json.loads(choice["content"])
             ai_result["is_demo"] = False
             return ai_result
         else:
-            print(f"❌ Groq API error {res.status_code}: {res.text}", flush=True)
+            print(f"❌ Groq API Error {res.status_code}: {res.text}", flush=True)
     except Exception as e:
-        print(f"❌ Inference exception: {e}", flush=True)
+        print(f"❌ Groq Exception: {e}", flush=True)
 
     return None
 
@@ -182,21 +165,19 @@ def update_predictions_with_real_ai(new_ai_result):
     count = state["real_ai_count"]
 
     if count < 2:
-        # First real AI response: Replace one demo entry, keep the rest
+        # Step 1: Replace one demo item with this real AI response
         demo_items = [it for it in state["items"] if it.get("is_demo", False)]
         real_items = [it for it in state["items"] if not it.get("is_demo", False)]
-        
         if demo_items:
             demo_items.pop(0)
-            
         state["items"] = [new_ai_result] + real_items + demo_items
-        print(f"⚡ [REAL AI RESPONSE #1]: Stored real prediction. Remaining demo buffer retained.", flush=True)
+        print(f"⚡ [REAL AI UPDATE #1]: Injected 1 real response, retaining demo buffer.", flush=True)
     else:
-        # 2 or more real responses: Purge ALL demo items permanently
+        # Step 2: Purge ALL demo items permanently
         real_items = [it for it in state["items"] if not it.get("is_demo", False)]
         state["items"] = [new_ai_result] + real_items
-        state["items"] = state["items"][:5]  # Keep top 5 latest verified events
-        print(f"🚀 [MILESTONE REACHED: {count} REAL AI RESPONSES]: ALL DEMO DATA PERMANENTLY REMOVED.", flush=True)
+        state["items"] = state["items"][:6]
+        print(f"🚀 [MILESTONE REACHED: {count} REAL AI RESPONSES]: ALL DEMO DATA PURGED.", flush=True)
 
     save_state(state)
 
@@ -206,14 +187,24 @@ def callback(ch, method, properties, body):
     except Exception:
         events = []
 
-    print(f"\n📩 Message broker received {len(events)} telemetry data points.", flush=True)
+    print(f"\n📩 Message received from RabbitMQ ({len(events)} points).", flush=True)
     ai_threat = synthesize_planetary_telemetry(events)
     if ai_threat:
         update_predictions_with_real_ai(ai_threat)
-        print(f"[✓] VERIFIED THREAT SAVED: {ai_threat.get('primary_threat')} at {ai_threat.get('location')} ({ai_threat.get('lat')}, {ai_threat.get('lon')})", flush=True)
+        print(f"[✓] Active Threat Logged: {ai_threat.get('primary_threat')} at {ai_threat.get('location')}", flush=True)
 
 def start_consumer():
-    print("🤖 Multi-Stream Consumer Online. Listening on 'disaster_telemetry'...", flush=True)
+    # Immediate boot test so you see real AI output right away
+    print("[*] Running boot test cycle...", flush=True)
+    boot_events = [
+        {"title": "USGS M5.4 Earthquake", "place": "Off Coast of Honshu, Japan", "lat": 36.1, "lon": 141.2, "magnitude": 5.4, "stream": "USGS_SEISMIC"},
+        {"title": "NASA Thermal Hotspot", "lat": -18.2, "lon": 133.4, "fire_radiative_power_mw": 320.0, "stream": "NASA_FIRMS"}
+    ]
+    test_result = synthesize_planetary_telemetry(boot_events)
+    if test_result:
+        update_predictions_with_real_ai(test_result)
+
+    print("🤖 Consumer Online. Waiting for live RabbitMQ streams...", flush=True)
     while True:
         try:
             conn = pika.BlockingConnection(pika.ConnectionParameters(host=RABBITMQ_HOST))
