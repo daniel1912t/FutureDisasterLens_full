@@ -1,21 +1,17 @@
 import os
 import json
-from flask import Flask, jsonify, send_from_directory, render_template_string
+from flask import Flask, render_template, jsonify, make_response
 from flask_cors import CORS
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
-app = Flask(
-    __name__,
-    static_folder=BASE_DIR,
-    static_url_path=''
-)
+app = Flask(__name__)
 CORS(app)
 
-DATA_FILE = '/app/data/latest_prediction.json'
-STATE_FILE = '/app/data/ai_state.json'
+DATA_FILE = os.path.join('data', 'latest_prediction.json')
+ALL_DATA_FILE = os.path.join('data', 'all_threats.json')
+STATE_FILE = os.path.join('data', 'ai_state.json')
 
-DEFAULT_FALLBACK = {
+# Safe fallback threat payload to prevent UI blanking on cold start
+INITIAL_FALLBACK = {
     "primary_threat": "[DEMO] Magnitude 6.2 Subduction Rupture",
     "location": "Near Coast of Honshu, Japan",
     "time_of_event": "2026-11-07T12:00:00Z",
@@ -23,65 +19,72 @@ DEFAULT_FALLBACK = {
     "probability": "72%",
     "lat": 37.8500,
     "lon": 142.1000,
+    "is_demo": True,
     "cascading_effects": [
-        "Regional bullet train automatic seismic shutdown",
+        "Regional bullet train automated seismic shutdown",
         "Coastal surge alert"
     ]
 }
 
-def get_latest_data():
-    if os.path.exists(STATE_FILE):
+def nocache_response(payload, status=200):
+    """Wraps JSON response with headers to prevent browser-side caching."""
+    resp = make_response(jsonify(payload), status)
+    resp.headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, max-age=0'
+    resp.headers['Pragma'] = 'no-cache'
+    return resp
+
+def read_json_safely(filepath):
+    if os.path.exists(filepath):
         try:
-            with open(STATE_FILE, 'r') as f:
-                state = json.load(f)
-                items = state.get("items", [])
-                if items:
-                    return items[0], items
-        except Exception:
-            pass
-
-    if os.path.exists(DATA_FILE):
-        try:
-            with open(DATA_FILE, 'r') as f:
-                data = json.load(f)
-                if isinstance(data, list) and len(data) > 0:
-                    return data[0], data
-                elif isinstance(data, dict):
-                    return data, [data]
-        except Exception:
-            pass
-
-    return DEFAULT_FALLBACK, [DEFAULT_FALLBACK]
-
-@app.route('/api/latest_threat', methods=['GET'])
-@app.route('/api/threats/latest', methods=['GET'])
-def latest_threat():
-    single_item, _ = get_latest_data()
-    return jsonify(single_item)
-
-@app.route('/api/threats', methods=['GET'])
-@app.route('/api/historical_predictions', methods=['GET'])
-def all_threats():
-    _, all_items = get_latest_data()
-    return jsonify(all_items)
+            with open(filepath, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"[-] Error reading {filepath}: {e}", flush=True)
+    return None
 
 @app.route('/')
 def index():
-    for candidate_dir in [BASE_DIR, os.path.join(BASE_DIR, 'templates'), os.path.join(BASE_DIR, 'static'), os.path.join(BASE_DIR, 'frontend')]:
-        target = os.path.join(candidate_dir, 'index.html')
-        if os.path.exists(target):
-            return send_from_directory(candidate_dir, 'index.html')
-    return render_template_string("<h2>FutureDisasterLens Online</h2><p>index.html not found.</p>")
+    return render_template('index.html')
 
-@app.route('/<path:filename>')
-def serve_static(filename):
-    # Search across potential folders where css, js, or assets reside
-    for candidate_dir in [BASE_DIR, os.path.join(BASE_DIR, 'static'), os.path.join(BASE_DIR, 'frontend')]:
-        target_path = os.path.join(candidate_dir, filename)
-        if os.path.exists(target_path) and not os.path.isdir(target_path):
-            return send_from_directory(candidate_dir, filename)
-    return send_from_directory(BASE_DIR, filename)
+@app.route('/healthz')
+def healthz():
+    return jsonify({"status": "healthy", "service": "FutureDisasterLens"}), 200
+
+@app.route('/api/latest_threat', methods=['GET'])
+@app.route('/api/threats/latest', methods=['GET'])
+def get_latest_threat():
+    # 1. Try reading standard latest prediction
+    data = read_json_safely(DATA_FILE)
+    if data:
+        return nocache_response(data)
+
+    # 2. Try reading from state file items if available
+    state = read_json_safely(STATE_FILE)
+    if state and state.get("items"):
+        return nocache_response(state["items"][0])
+
+    # 3. Safe fallback so UI renders immediately without 404
+    return nocache_response(INITIAL_FALLBACK)
+
+@app.route('/api/later_threats', methods=['GET'])
+@app.route('/api/threats', methods=['GET'])
+@app.route('/api/historical_predictions', methods=['GET'])
+def get_all_threats():
+    # 1. Check for historical threat log
+    all_data = read_json_safely(ALL_DATA_FILE)
+    if all_data:
+        return nocache_response(all_data)
+
+    # 2. Check state file items
+    state = read_json_safely(STATE_FILE)
+    if state and state.get("items"):
+        return nocache_response(state["items"])
+
+    # 3. Return active fallback list
+    return nocache_response([INITIAL_FALLBACK])
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 10000))
+    # Dynamically match Render's PORT or fallback to standard 7860
+    port = int(os.environ.get('PORT', 7860))
+    print(f"[*] Starting FutureDisasterLens Server on port {port}", flush=True)
     app.run(host='0.0.0.0', port=port)
