@@ -45,19 +45,23 @@ def analyze_with_groq(all_events):
             {
                 "role": "user",
                 "content": (
-                    f"Current UTC time: {current_time_iso}.\n"
-                    f"Telemetry data: {json.dumps(all_events)}\n\n"
-                    "Think step-by-step and assess all disaster risks. "
+                    f"Current UTC System Time: {current_time_iso}\n"
+                    f"Raw Telemetry Feed: {json.dumps(all_events)}\n\n"
+                    "INSTRUCTIONS:\n"
+                    "1. Act as a strict, realistic meteorological and seismic risk analyst.\n"
+                    "2. DO NOT blindly output 90% or 100% confidence. Real-world disaster probabilities must reflect scientific forecasting uncertainty (e.g., hurricane track cones typically range between 25% to 65% unless landfall is actively occurring).\n"
+                    "3. 'time_of_event': Estimate the realistic onset or peak window based on the telemetry (e.g., '+24h', '+48h', or the exact timestamp in the event data). Do NOT simply echo the current second unless the event is actively impacting the sensor.\n"
+                    "4. Evaluate real cascading infrastructure impacts based on the specific coordinates.\n\n"
                     "Output ONLY a valid JSON object matching this schema:\n"
                     "{\n"
-                    '  "primary_threat": "string",\n'
-                    '  "location": "string",\n'
-                    f'  "time_of_event": "{current_time_iso}",\n'
-                    '  "severity": "High",\n'
-                    '  "probability": "90%",\n'
-                    '  "lat": 25.2048,\n'
-                    '  "lon": 55.2708,\n'
-                    '  "cascading_effects": ["effect 1", "effect 2"]\n'
+                    '  "primary_threat": "string (specific phenomenon name)",\n'
+                    '  "location": "string (city/region, country)",\n'
+                    '  "time_of_event": "ISO 8601 string or expected impact window",\n'
+                    '  "severity": "Low | Moderate | Severe | Extreme",\n'
+                    '  "probability": "realistic percentage string (e.g. 42%, 65%)",\n'
+                    '  "lat": float,\n'
+                    '  "lon": float,\n'
+                    '  "cascading_effects": ["specific realistic consequence 1", "specific realistic consequence 2"]\n'
                     "}"
                 )
             }
