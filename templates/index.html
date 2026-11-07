@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>FutureDisasterLens AI - Planetary Telemetry</title>
 
-  <!-- Polyfill process for Three.js in standalone browser environments -->
   <script>
     window.process = window.process || { env: { NODE_ENV: 'production' } };
   </script>
 
-  <!-- Three.js + OrbitControls + GSAP for Smooth Camera Magnet Flight -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -50,7 +48,7 @@
       z-index: 1;
     }
 
-    /* Desktop & Large Screen Sidebar */
+    /* Laptop / Desktop Layout */
     #sidebar {
       position: absolute;
       top: 20px;
@@ -70,27 +68,21 @@
       flex-direction: column;
       gap: 12px;
       overflow-y: auto;
-      transition: transform 0.3s ease, opacity 0.3s ease;
+      transition: all 0.3s ease;
     }
 
-    /* 4K & Big Screens */
-    @media (min-width: 2000px) {
+    /* Tablet Screen Adjustments */
+    @media (min-width: 681px) and (max-width: 1024px) {
       #sidebar {
-        width: 520px;
-        top: 40px;
-        left: 40px;
-        padding: 30px;
-        border-radius: 24px;
-        gap: 18px;
+        width: 330px;
+        top: 16px;
+        left: 16px;
+        padding: 16px;
+        gap: 10px;
       }
-      .threat-title { font-size: 1.8rem !important; }
-      .countdown-primary { font-size: 24px !important; }
-      .value { font-size: 18px !important; }
-      .label { font-size: 13px !important; }
-      ul.impact-list li { font-size: 15px !important; }
     }
 
-    /* Mobile Sheet Adaptation */
+    /* Mobile Phones & Portrait View */
     @media (max-width: 680px), (max-height: 580px) and (orientation: landscape) {
       #sidebar {
         top: auto;
@@ -98,12 +90,12 @@
         left: 0;
         right: 0;
         width: 100%;
-        max-height: 50vh;
-        max-height: 50dvh;
+        max-height: 44vh;
+        max-height: 44dvh;
         border-radius: 20px 20px 0 0;
         border-bottom: none;
-        padding: 12px 16px 20px 16px;
-        gap: 10px;
+        padding: 12px 16px 18px 16px;
+        gap: 8px;
         box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.85);
       }
       .mobile-handle {
@@ -156,7 +148,7 @@
     }
 
     .threat-title {
-      font-size: clamp(1.15rem, 1.8vw, 1.35rem);
+      font-size: clamp(1.1rem, 1.8vw, 1.35rem);
       font-weight: 700;
       color: #ffffff;
       line-height: 1.3;
@@ -243,7 +235,6 @@
 </head>
 <body>
 
-  <!-- Sidebar HUD -->
   <aside id="sidebar">
     <div class="mobile-handle"></div>
     <div class="badge-container">
@@ -290,7 +281,6 @@
     </div>
   </aside>
 
-  <!-- 3D Canvas Container -->
   <div id="canvas-container"></div>
 
   <script>
@@ -299,15 +289,26 @@
 
     const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 2000);
 
-    function updateResponsiveCamera() {
+    const EARTH_RADIUS = 75;
+
+    // Responsive camera position helper
+    function getResponsiveSettings() {
       const w = window.innerWidth;
       const h = window.innerHeight;
-      const isMobilePortrait = w < 680 || h > w;
-      const dist = isMobilePortrait ? 310 : 240;
-      const yOffset = isMobilePortrait ? 25 : 0;
-      camera.position.set(0, yOffset, dist);
+      const isMobile = w < 680 || h > w;
+      const isTablet = w >= 681 && w <= 1024;
+
+      if (isMobile) {
+        return { dist: 290, yOffset: 32 }; // Moved up so mobile bottom sheet never hides it
+      } else if (isTablet) {
+        return { dist: 255, yOffset: 0 };
+      } else {
+        return { dist: 235, yOffset: 0 };  // Laptops and TVs
+      }
     }
-    updateResponsiveCamera();
+
+    const initialSettings = getResponsiveSettings();
+    camera.position.set(0, initialSettings.yOffset, initialSettings.dist);
 
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -322,13 +323,13 @@
     controls.autoRotate = true;
     controls.autoRotateSpeed = 0.35;
 
-    const EARTH_RADIUS = 75;
+    // LOCKED CENTER PIVOT: Prevents off-center wobble
+    controls.target.set(0, 0, 0);
 
-    // --- REAL NASA SATELLITE EARTH TEXTURE ---
+    // --- REAL SATELLITE TEXTURE WITH BLUE CAST ---
     const textureLoader = new THREE.TextureLoader();
     textureLoader.setCrossOrigin('anonymous');
 
-    // Equirectangular NASA satellite earth texture with oceans and continents
     const earthTexture = textureLoader.load(
       'https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/earth_atmos_2048.jpg'
     );
@@ -336,14 +337,14 @@
     const earthGeo = new THREE.SphereGeometry(EARTH_RADIUS, 64, 64);
     const earthMat = new THREE.MeshPhongMaterial({
       map: earthTexture,
-      color: 0x80c4f8,       // Tactical deep cyan-blue cast
-      specular: 0x0369a1,    // Realistic ocean specular sheen
-      shininess: 28
+      color: 0x82c6fc,
+      specular: 0x0369a1,
+      shininess: 25
     });
     const earth = new THREE.Mesh(earthGeo, earthMat);
     scene.add(earth);
 
-    // Atmospheric Ozone Blue Outer Glow
+    // Atmosphere Glow
     const atmosphereGeo = new THREE.SphereGeometry(EARTH_RADIUS * 1.025, 64, 64);
     const atmosphereMat = new THREE.MeshBasicMaterial({
       color: 0x38bdf8,
@@ -353,7 +354,7 @@
     });
     scene.add(new THREE.Mesh(atmosphereGeo, atmosphereMat));
 
-    // --- BALANCED MULTI-POINT LIGHTING (NO BLIND SPOTS) ---
+    // Balanced Non-Glaring Lighting
     const keyLight = new THREE.DirectionalLight(0xffffff, 0.9);
     keyLight.position.set(200, 100, 200);
     scene.add(keyLight);
@@ -365,7 +366,6 @@
     const ambientLight = new THREE.AmbientLight(0x162a45, 1.4);
     scene.add(ambientLight);
 
-    // Lat/Lon to Vector3
     function latLonToVector3(lat, lon, radius) {
       const phi = (90 - lat) * (Math.PI / 180);
       const theta = (lon + 180) * (Math.PI / 180);
@@ -376,7 +376,6 @@
       );
     }
 
-    // Interactive Threat Pins
     const threatPins = [];
     const pinGroup = new THREE.Group();
     scene.add(pinGroup);
@@ -396,7 +395,6 @@
       const marker = new THREE.Group();
       marker.position.copy(pos);
 
-      // Red core sphere (Enlarged hit target for mobile fingers)
       const coreGeo = new THREE.SphereGeometry(3.6, 16, 16);
       const coreMat = new THREE.MeshBasicMaterial({ color: 0xef4444 });
       const coreMesh = new THREE.Mesh(coreGeo, coreMat);
@@ -404,7 +402,6 @@
       marker.add(coreMesh);
       threatPins.push(coreMesh);
 
-      // Outer Pulsing Red Alert Ring
       const ringGeo = new THREE.RingGeometry(4.2, 7.2, 32);
       const ringMat = new THREE.MeshBasicMaterial({
         color: 0xf87171,
@@ -419,24 +416,24 @@
       pinGroup.add(marker);
     }
 
-    // Camera Magnet Fly-To Animation
+    // Magnet to target without shifting the orbit center
     function magnetToPosition(worldPos) {
       controls.autoRotate = false;
       const outwardDir = worldPos.clone().normalize();
       
-      const isMobile = window.innerWidth < 680;
-      const zoomDist = isMobile ? EARTH_RADIUS + 115 : EARTH_RADIUS + 85;
-      const targetCamPos = outwardDir.multiplyScalar(zoomDist);
+      const settings = getResponsiveSettings();
+      const targetCamPos = outwardDir.multiplyScalar(settings.dist);
+      targetCamPos.y += settings.yOffset; // Maintain mobile upward clearance
 
       gsap.to(camera.position, {
         x: targetCamPos.x,
         y: targetCamPos.y,
         z: targetCamPos.z,
-        duration: 1.8,
+        duration: 1.6,
         ease: "power2.inOut",
-        onUpdate: () => controls.update(),
-        onComplete: () => {
-          controls.target.copy(worldPos);
+        onUpdate: () => {
+          controls.target.set(0, settings.yOffset * 0.25, 0);
+          controls.update();
         }
       });
     }
@@ -482,7 +479,6 @@
       });
     }
 
-    // Touch & Mouse Pointer Raycaster
     const raycaster = new THREE.Raycaster();
     const pointer = new THREE.Vector2();
 
@@ -508,7 +504,6 @@
 
     window.addEventListener('pointerdown', onPointerDown);
 
-    // Sync Telemetry API
     async function syncThreats() {
       try {
         let threatList = [];
@@ -537,7 +532,6 @@
     syncThreats();
     setInterval(syncThreats, 10000);
 
-    // Pulse Animation Loop
     let pulseScale = 1;
     let pulseGrowing = true;
 
@@ -565,10 +559,11 @@
     }
     animate();
 
-    // Responsive Viewport Resize
     window.addEventListener('resize', () => {
       camera.aspect = window.innerWidth / window.innerHeight;
-      updateResponsiveCamera();
+      const settings = getResponsiveSettings();
+      camera.position.set(camera.position.x, settings.yOffset, settings.dist);
+      controls.target.set(0, settings.yOffset * 0.25, 0);
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
