@@ -48,7 +48,7 @@
       z-index: 1;
     }
 
-    /* Laptop / Desktop Layout */
+    /* Standard Desktop & Large Screens */
     #sidebar {
       position: absolute;
       top: 20px;
@@ -68,33 +68,42 @@
       flex-direction: column;
       gap: 12px;
       overflow-y: auto;
-      transition: all 0.3s ease;
+      transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
-    /* Tablet Screen Adjustments */
-    @media (min-width: 681px) and (max-width: 1024px) {
+    /* TABLET VIEW: Stays cleanly pinned to the SIDE */
+    @media (min-width: 681px) and (max-width: 1180px) {
       #sidebar {
-        width: 330px;
         top: 16px;
         left: 16px;
+        bottom: auto;
+        right: auto;
+        width: 320px;
+        max-height: calc(100vh - 32px);
+        max-height: calc(100dvh - 32px);
         padding: 16px;
         gap: 10px;
+        border-radius: 14px;
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.75);
+      }
+      .mobile-handle {
+        display: none !important;
       }
     }
 
-    /* Mobile Phones & Portrait View */
-    @media (max-width: 680px), (max-height: 580px) and (orientation: landscape) {
+    /* MOBILE PHONES ONLY: Bottom Sheet Drawer */
+    @media (max-width: 680px) {
       #sidebar {
         top: auto;
         bottom: 0;
         left: 0;
         right: 0;
         width: 100%;
-        max-height: 44vh;
-        max-height: 44dvh;
+        max-height: 42vh;
+        max-height: 42dvh;
         border-radius: 20px 20px 0 0;
         border-bottom: none;
-        padding: 12px 16px 18px 16px;
+        padding: 10px 16px 18px 16px;
         gap: 8px;
         box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.85);
       }
@@ -148,7 +157,7 @@
     }
 
     .threat-title {
-      font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+      font-size: clamp(1.05rem, 1.8vw, 1.35rem);
       font-weight: 700;
       color: #ffffff;
       line-height: 1.3;
@@ -172,7 +181,7 @@
     }
 
     .value {
-      font-size: 14px;
+      font-size: 13.5px;
       font-weight: 600;
       color: #f8fafc;
     }
@@ -183,13 +192,13 @@
       box-shadow: 0 0 14px rgba(14, 165, 233, 0.25);
     }
     .countdown-primary {
-      font-size: 16px;
+      font-size: 15.5px;
       font-weight: 800;
       color: var(--accent-cyan);
       letter-spacing: 0.3px;
     }
     .eta-sub {
-      font-size: 10.5px;
+      font-size: 10px;
       color: #94a3b8;
       margin-top: 2px;
     }
@@ -291,24 +300,27 @@
 
     const EARTH_RADIUS = 75;
 
-    // Responsive camera position helper
+    // Responsive camera position & vertical placement helper
     function getResponsiveSettings() {
       const w = window.innerWidth;
       const h = window.innerHeight;
-      const isMobile = w < 680 || h > w;
-      const isTablet = w >= 681 && w <= 1024;
+      const isMobile = w <= 680;
+      const isTablet = w > 680 && w <= 1180;
 
       if (isMobile) {
-        return { dist: 290, yOffset: 32 }; // Moved up so mobile bottom sheet never hides it
+        // LIFTED HIGHER: yOffset moved to 46 so Earth floats high above the bottom sheet
+        return { dist: 285, yCam: 46, yTarget: 22 };
       } else if (isTablet) {
-        return { dist: 255, yOffset: 0 };
+        // TABLET: Sits on the side with Earth shifted slightly to the right
+        return { dist: 250, yCam: 0, yTarget: 0 };
       } else {
-        return { dist: 235, yOffset: 0 };  // Laptops and TVs
+        // LAPTOP / DESKTOP / TV
+        return { dist: 235, yCam: 0, yTarget: 0 };
       }
     }
 
     const initialSettings = getResponsiveSettings();
-    camera.position.set(0, initialSettings.yOffset, initialSettings.dist);
+    camera.position.set(0, initialSettings.yCam, initialSettings.dist);
 
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -323,8 +335,8 @@
     controls.autoRotate = true;
     controls.autoRotateSpeed = 0.35;
 
-    // LOCKED CENTER PIVOT: Prevents off-center wobble
-    controls.target.set(0, 0, 0);
+    // Lock pivot directly to responsive target (stays stable, no wobbling)
+    controls.target.set(0, initialSettings.yTarget, 0);
 
     // --- REAL SATELLITE TEXTURE WITH BLUE CAST ---
     const textureLoader = new THREE.TextureLoader();
@@ -354,7 +366,7 @@
     });
     scene.add(new THREE.Mesh(atmosphereGeo, atmosphereMat));
 
-    // Balanced Non-Glaring Lighting
+    // Balanced Lighting
     const keyLight = new THREE.DirectionalLight(0xffffff, 0.9);
     keyLight.position.set(200, 100, 200);
     scene.add(keyLight);
@@ -416,14 +428,14 @@
       pinGroup.add(marker);
     }
 
-    // Magnet to target without shifting the orbit center
+    // Magnet to target position smoothly
     function magnetToPosition(worldPos) {
       controls.autoRotate = false;
       const outwardDir = worldPos.clone().normalize();
       
       const settings = getResponsiveSettings();
       const targetCamPos = outwardDir.multiplyScalar(settings.dist);
-      targetCamPos.y += settings.yOffset; // Maintain mobile upward clearance
+      targetCamPos.y += settings.yCam; // Preserves upward clearance on mobile
 
       gsap.to(camera.position, {
         x: targetCamPos.x,
@@ -432,7 +444,7 @@
         duration: 1.6,
         ease: "power2.inOut",
         onUpdate: () => {
-          controls.target.set(0, settings.yOffset * 0.25, 0);
+          controls.target.set(0, settings.yTarget, 0);
           controls.update();
         }
       });
@@ -562,8 +574,8 @@
     window.addEventListener('resize', () => {
       camera.aspect = window.innerWidth / window.innerHeight;
       const settings = getResponsiveSettings();
-      camera.position.set(camera.position.x, settings.yOffset, settings.dist);
-      controls.target.set(0, settings.yOffset * 0.25, 0);
+      camera.position.set(camera.position.x, settings.yCam, settings.dist);
+      controls.target.set(0, settings.yTarget, 0);
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
