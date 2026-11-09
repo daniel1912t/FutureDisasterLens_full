@@ -1,46 +1,77 @@
 import os
 import json
+import sqlite3
+from datetime import datetime, timezone, timedelta
 from flask import Flask, render_template, jsonify, make_response
 from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
 
-DATA_FILE = os.path.join('data', 'latest_prediction.json')
-ALL_DATA_FILE = os.path.join('data', 'all_threats.json')
-STATE_FILE = os.path.join('data', 'ai_state.json')
+DATA_DIR = os.path.join(os.getcwd(), 'data')
+os.makedirs(DATA_DIR, exist_ok=True)
+DB_PATH = os.path.join(DATA_DIR, 'threats.db')
 
-# Safe fallback threat payload to prevent UI blanking on cold start
-INITIAL_FALLBACK = {
-    "primary_threat": "[DEMO] Magnitude 6.2 Subduction Rupture",
-    "location": "Near Coast of Honshu, Japan",
-    "time_of_event": "2026-11-07T12:00:00Z",
-    "severity": "Severe",
-    "probability": "72%",
-    "lat": 37.8500,
-    "lon": 142.1000,
-    "is_demo": True,
-    "cascading_effects": [
-        "Regional bullet train automated seismic shutdown",
-        "Coastal surge alert"
-    ]
-}
+def get_db_connection():
+    conn = sqlite3.connect(DB_PATH)
+    conn.row_factory = sqlite3.Row
+    return conn
+
+def purge_expired():
+    """Prunes past threats and threats with <= 1 hour remaining."""
+    if not os.path.exists(DB_PATH):
+        return
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+        threshold = (datetime.now(timezone.utc) + timedelta(hours=1)).strftime("%Y-%m-%dT%H:%M:%SZ")
+        cursor.execute('DELETE FROM predictions WHERE time_of_event <= ?', (threshold,))
+        conn.commit()
+        conn.close()
+    except Exception as e:
+        print(f"[-] DB Prune error: {e}", flush=True)
+
+def fetch_active_threats():
+    purge_expired()
+    if not os.path.exists(DB_PATH):
+        return []
+
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute('''
+        SELECT primary_threat, location, time_of_event, severity, probability, lat, lon, cascading_effects, is_demo
+        FROM predictions
+        ORDER BY id DESC
+        LIMIT 10
+    ''')
+    rows = cursor.fetchall()
+    conn.close()
+
+    results = []
+    for r in rows:
+        try:
+            effects = json.loads(r["cascading_effects"])
+        except Exception:
+            effects = []
+
+        results.append({
+            "primary_threat": r["primary_threat"],
+            "location": r["location"],
+            "time_of_event": r["time_of_event"],
+            "severity": r["severity"],
+            "probability": r["probability"],
+            "lat": r["lat"],
+            "lon": r["lon"],
+            "cascading_effects": effects,
+            "is_demo": bool(r["is_demo"])
+        })
+    return results
 
 def nocache_response(payload, status=200):
-    """Wraps JSON response with headers to prevent browser-side caching."""
     resp = make_response(jsonify(payload), status)
     resp.headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, max-age=0'
     resp.headers['Pragma'] = 'no-cache'
     return resp
-
-def read_json_safely(filepath):
-    if os.path.exists(filepath):
-        try:
-            with open(filepath, 'r', encoding='utf-8') as f:
-                return json.load(f)
-        except Exception as e:
-            print(f"[-] Error reading {filepath}: {e}", flush=True)
-    return None
 
 @app.route('/')
 def index():
@@ -48,43 +79,42 @@ def index():
 
 @app.route('/healthz')
 def healthz():
-    return jsonify({"status": "healthy", "service": "FutureDisasterLens"}), 200
+    return jsonify({"status": "healthy"}), 200
+
+@app.route('/favicon.ico')
+def favicon():
+    return '', 204
 
 @app.route('/api/latest_threat', methods=['GET'])
 @app.route('/api/threats/latest', methods=['GET'])
 def get_latest_threat():
-    # 1. Try reading standard latest prediction
-    data = read_json_safely(DATA_FILE)
-    if data:
-        return nocache_response(data)
+    threats = fetch_active_threats()
+    if threats:
+        return nocache_response(threats[0])
+    
+    # Safe cold-boot fallback if DB just wiped on Render wakeup
+    now = datetime.now(timezone.utc)
+    fallback = {
+        "primary_threat": "Synchronizing Live Telemetry Stream...",
+        "location": "Global Observation Network",
+        "time_of_event": (now + timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "severity": "Moderate",
+        "probability": "50%",
+        "lat": 37.85,
+        "lon": 142.10,
+        "is_demo": True,
+        "cascading_effects": ["Calibrating sensor feeds", "Ingesting satellite records"]
+    }
+    return nocache_response(fallback)
 
-    # 2. Try reading from state file items if available
-    state = read_json_safely(STATE_FILE)
-    if state and state.get("items"):
-        return nocache_response(state["items"][0])
-
-    # 3. Safe fallback so UI renders immediately without 404
-    return nocache_response(INITIAL_FALLBACK)
-
-@app.route('/api/later_threats', methods=['GET'])
 @app.route('/api/threats', methods=['GET'])
+@app.route('/api/later_threats', methods=['GET'])
 @app.route('/api/historical_predictions', methods=['GET'])
 def get_all_threats():
-    # 1. Check for historical threat log
-    all_data = read_json_safely(ALL_DATA_FILE)
-    if all_data:
-        return nocache_response(all_data)
-
-    # 2. Check state file items
-    state = read_json_safely(STATE_FILE)
-    if state and state.get("items"):
-        return nocache_response(state["items"])
-
-    # 3. Return active fallback list
-    return nocache_response([INITIAL_FALLBACK])
+    threats = fetch_active_threats()
+    return nocache_response(threats)
 
 if __name__ == '__main__':
-    # Dynamically match Render's PORT or fallback to standard 7860
     port = int(os.environ.get('PORT', 7860))
     print(f"[*] Starting FutureDisasterLens Server on port {port}", flush=True)
     app.run(host='0.0.0.0', port=port)
