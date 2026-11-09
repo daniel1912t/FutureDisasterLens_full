@@ -1,6 +1,5 @@
 import os
 import json
-import sqlite3
 from datetime import datetime, timezone, timedelta
 from flask import Flask, render_template, jsonify, make_response
 from flask_cors import CORS
@@ -10,62 +9,70 @@ CORS(app)
 
 DATA_DIR = os.path.join(os.getcwd(), 'data')
 os.makedirs(DATA_DIR, exist_ok=True)
-DB_PATH = os.path.join(DATA_DIR, 'threats.db')
 
-def get_db_connection():
-    conn = sqlite3.connect(DB_PATH)
-    conn.row_factory = sqlite3.Row
-    return conn
+DATA_FILE = os.path.join(DATA_DIR, 'latest_prediction.json')
+ALL_DATA_FILE = os.path.join(DATA_DIR, 'all_threats.json')
+STATE_FILE = os.path.join(DATA_DIR, 'ai_state.json')
 
-def purge_expired():
-    """Prunes past threats and threats with <= 1 hour remaining."""
-    if not os.path.exists(DB_PATH):
-        return
-    try:
-        conn = get_db_connection()
-        cursor = conn.cursor()
-        threshold = (datetime.now(timezone.utc) + timedelta(hours=1)).strftime("%Y-%m-%dT%H:%M:%SZ")
-        cursor.execute('DELETE FROM predictions WHERE time_of_event <= ?', (threshold,))
-        conn.commit()
-        conn.close()
-    except Exception as e:
-        print(f"[-] DB Prune error: {e}", flush=True)
+def purge_expired_records(items):
+    """Filters out threats that are in the past or have <= 1 hour left."""
+    valid_items = []
+    now = datetime.now(timezone.utc)
+    cutoff = now + timedelta(hours=1)
 
-def fetch_active_threats():
-    purge_expired()
-    if not os.path.exists(DB_PATH):
-        return []
-
-    conn = get_db_connection()
-    cursor = conn.cursor()
-    cursor.execute('''
-        SELECT primary_threat, location, time_of_event, severity, probability, lat, lon, cascading_effects, is_demo
-        FROM predictions
-        ORDER BY id DESC
-        LIMIT 10
-    ''')
-    rows = cursor.fetchall()
-    conn.close()
-
-    results = []
-    for r in rows:
+    for it in items:
+        ts_str = it.get("time_of_event")
+        if not ts_str:
+            continue
         try:
-            effects = json.loads(r["cascading_effects"])
+            event_dt = datetime.fromisoformat(ts_str.replace("Z", "+00:00"))
+            if event_dt > cutoff:
+                valid_items.append(it)
         except Exception:
-            effects = []
+            valid_items.append(it)
+    return valid_items
 
-        results.append({
-            "primary_threat": r["primary_threat"],
-            "location": r["location"],
-            "time_of_event": r["time_of_event"],
-            "severity": r["severity"],
-            "probability": r["probability"],
-            "lat": r["lat"],
-            "lon": r["lon"],
-            "cascading_effects": effects,
-            "is_demo": bool(r["is_demo"])
-        })
-    return results
+def get_threat_data():
+    # 1. Read state file first
+    if os.path.exists(STATE_FILE):
+        try:
+            with open(STATE_FILE, 'r') as f:
+                state = json.load(f)
+                clean_items = purge_expired_records(state.get("items", []))
+                if clean_items:
+                    return clean_items[0], clean_items
+        except Exception:
+            pass
+
+    # 2. Read latest_prediction.json
+    if os.path.exists(DATA_FILE):
+        try:
+            with open(DATA_FILE, 'r') as f:
+                data = json.load(f)
+                items = data if isinstance(data, list) else [data]
+                clean_items = purge_expired_records(items)
+                if clean_items:
+                    return clean_items[0], clean_items
+        except Exception:
+            pass
+
+    # 3. Emergency fallback if container just woke up empty
+    now = datetime.now(timezone.utc)
+    fallback = {
+        "primary_threat": "[DEMO] Forecasted M6.2 Triggered Aftershock",
+        "location": "Near Coast of Honshu, Japan",
+        "time_of_event": (now + timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "severity": "Severe",
+        "probability": "68%",
+        "lat": 37.8500,
+        "lon": 142.1000,
+        "is_demo": True,
+        "cascading_effects": [
+            "Regional transit deceleration advisory",
+            "Coastal surge warning"
+        ]
+    }
+    return fallback, [fallback]
 
 def nocache_response(payload, status=200):
     resp = make_response(jsonify(payload), status)
@@ -88,31 +95,15 @@ def favicon():
 @app.route('/api/latest_threat', methods=['GET'])
 @app.route('/api/threats/latest', methods=['GET'])
 def get_latest_threat():
-    threats = fetch_active_threats()
-    if threats:
-        return nocache_response(threats[0])
-    
-    # Safe cold-boot fallback if DB just wiped on Render wakeup
-    now = datetime.now(timezone.utc)
-    fallback = {
-        "primary_threat": "Synchronizing Live Telemetry Stream...",
-        "location": "Global Observation Network",
-        "time_of_event": (now + timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "severity": "Moderate",
-        "probability": "50%",
-        "lat": 37.85,
-        "lon": 142.10,
-        "is_demo": True,
-        "cascading_effects": ["Calibrating sensor feeds", "Ingesting satellite records"]
-    }
-    return nocache_response(fallback)
+    single, _ = get_threat_data()
+    return nocache_response(single)
 
 @app.route('/api/threats', methods=['GET'])
 @app.route('/api/later_threats', methods=['GET'])
 @app.route('/api/historical_predictions', methods=['GET'])
 def get_all_threats():
-    threats = fetch_active_threats()
-    return nocache_response(threats)
+    _, all_items = get_threat_data()
+    return nocache_response(all_items)
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 7860))
