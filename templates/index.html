@@ -71,7 +71,7 @@
       transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
-    /* TABLET VIEW: Stays cleanly pinned to the SIDE */
+    /* TABLET VIEW: Stays pinned on the SIDE */
     @media (min-width: 681px) and (max-width: 1180px) {
       #sidebar {
         top: 16px;
@@ -91,7 +91,7 @@
       }
     }
 
-    /* MOBILE PHONES ONLY: Bottom Sheet Drawer */
+    /* MOBILE PHONES: Bottom Sheet Drawer */
     @media (max-width: 680px) {
       #sidebar {
         top: auto;
@@ -300,7 +300,6 @@
 
     const EARTH_RADIUS = 75;
 
-    // Responsive camera position & vertical placement helper
     function getResponsiveSettings() {
       const w = window.innerWidth;
       const h = window.innerHeight;
@@ -308,13 +307,10 @@
       const isTablet = w > 680 && w <= 1180;
 
       if (isMobile) {
-        // LIFTED HIGHER: yOffset moved to 46 so Earth floats high above the bottom sheet
         return { dist: 285, yCam: 46, yTarget: 22 };
       } else if (isTablet) {
-        // TABLET: Sits on the side with Earth shifted slightly to the right
         return { dist: 250, yCam: 0, yTarget: 0 };
       } else {
-        // LAPTOP / DESKTOP / TV
         return { dist: 235, yCam: 0, yTarget: 0 };
       }
     }
@@ -334,11 +330,9 @@
     controls.maxDistance = 550;
     controls.autoRotate = true;
     controls.autoRotateSpeed = 0.35;
-
-    // Lock pivot directly to responsive target (stays stable, no wobbling)
     controls.target.set(0, initialSettings.yTarget, 0);
 
-    // --- REAL SATELLITE TEXTURE WITH BLUE CAST ---
+    // --- REAL SATELLITE TEXTURE ---
     const textureLoader = new THREE.TextureLoader();
     textureLoader.setCrossOrigin('anonymous');
 
@@ -428,14 +422,13 @@
       pinGroup.add(marker);
     }
 
-    // Magnet to target position smoothly
     function magnetToPosition(worldPos) {
       controls.autoRotate = false;
       const outwardDir = worldPos.clone().normalize();
       
       const settings = getResponsiveSettings();
       const targetCamPos = outwardDir.multiplyScalar(settings.dist);
-      targetCamPos.y += settings.yCam; // Preserves upward clearance on mobile
+      targetCamPos.y += settings.yCam;
 
       gsap.to(camera.position, {
         x: targetCamPos.x,
@@ -450,16 +443,29 @@
       });
     }
 
+    let activeSelectedThreat = null;
+
     function formatCountdown(targetIso) {
       if (!targetIso) return { text: "Awaiting Forecast", isImminent: false };
       const diffMs = new Date(targetIso).getTime() - Date.now();
       if (diffMs <= 0) return { text: "Imminent / Active", isImminent: true };
       const hours = Math.floor(diffMs / (1000 * 60 * 60));
       const mins = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
-      return { text: `In ~${hours}h ${mins}m`, isImminent: false };
+      const secs = Math.floor((diffMs % (1000 * 60)) / 1000);
+      return { text: `In ~${hours}h ${mins}m ${secs}s`, isImminent: false };
+    }
+
+    function updateLiveCountdownDisplay() {
+      if (!activeSelectedThreat) return;
+      const countdown = formatCountdown(activeSelectedThreat.time_of_event);
+      const timerElem = document.getElementById('countdown-timer');
+      timerElem.innerText = countdown.text;
+      timerElem.style.color = countdown.isImminent ? '#f87171' : 'var(--accent-cyan)';
     }
 
     function displayThreatDetails(threat) {
+      activeSelectedThreat = threat;
+
       const badge = document.getElementById('status-badge');
       const badgeText = document.getElementById('badge-text');
       if (threat.is_demo) {
@@ -475,12 +481,9 @@
       document.getElementById('threat-severity').innerText = threat.severity || 'Moderate';
       document.getElementById('threat-probability').innerText = threat.probability || '50%';
       document.getElementById('coords-text').innerText = `${(threat.lat || 0).toFixed(2)}°, ${(threat.lon || 0).toFixed(2)}°`;
-
-      const countdown = formatCountdown(threat.time_of_event);
-      const timerElem = document.getElementById('countdown-timer');
-      timerElem.innerText = countdown.text;
-      timerElem.style.color = countdown.isImminent ? '#f87171' : 'var(--accent-cyan)';
       document.getElementById('eta-timestamp').innerText = `Forecast Target: ${threat.time_of_event || '--'}`;
+
+      updateLiveCountdownDisplay();
 
       const impactList = document.getElementById('impact-list');
       impactList.innerHTML = '';
@@ -516,6 +519,9 @@
 
     window.addEventListener('pointerdown', onPointerDown);
 
+    // --- SMART AUTO-UPDATE ENGINE ---
+    let lastDataSignature = "";
+
     async function syncThreats() {
       try {
         let threatList = [];
@@ -533,16 +539,34 @@
 
         if (threatList.length === 0) return;
 
-        clearPins();
-        threatList.forEach(t => createThreatPin(t));
-        displayThreatDetails(threatList[0]);
+        // Generate data signature to detect changes
+        const currentSignature = JSON.stringify(threatList.map(t => `${t.primary_threat}_${t.time_of_event}`));
+
+        // Only rebuild pins if the data actually changed
+        if (currentSignature !== lastDataSignature) {
+          console.log("[+] New prediction detected! Updating Earth pins...", threatList);
+          lastDataSignature = currentSignature;
+
+          clearPins();
+          threatList.forEach(t => createThreatPin(t));
+
+          // Retain currently selected threat if still valid, otherwise default to top item
+          const stillExists = activeSelectedThreat && threatList.some(t => t.primary_threat === activeSelectedThreat.primary_threat);
+          if (!stillExists) {
+            displayThreatDetails(threatList[0]);
+          }
+        }
       } catch (err) {
         console.warn("Sync warning:", err);
       }
     }
 
+    // Check backend every 5 seconds for newly published predictions
     syncThreats();
-    setInterval(syncThreats, 10000);
+    setInterval(syncThreats, 5000);
+
+    // Continuously update live ETA countdown every second
+    setInterval(updateLiveCountdownDisplay, 1000);
 
     let pulseScale = 1;
     let pulseGrowing = true;
