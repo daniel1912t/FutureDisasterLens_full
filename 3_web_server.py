@@ -12,67 +12,73 @@ os.makedirs(DATA_DIR, exist_ok=True)
 
 DATA_FILE = os.path.join(DATA_DIR, 'latest_prediction.json')
 ALL_DATA_FILE = os.path.join(DATA_DIR, 'all_threats.json')
-STATE_FILE = os.path.join(DATA_DIR, 'ai_state.json')
 
-def purge_expired_records(items):
-    """Filters out threats that are in the past or have <= 1 hour left."""
+def filter_active_threats(items):
+    """Filters out any threat that has passed or has <= 1 hour left."""
     valid_items = []
     now = datetime.now(timezone.utc)
     cutoff = now + timedelta(hours=1)
 
-    for it in items:
-        ts_str = it.get("time_of_event")
-        if not ts_str:
+    for item in items:
+        ts = item.get("time_of_event")
+        if not ts:
             continue
         try:
-            event_dt = datetime.fromisoformat(ts_str.replace("Z", "+00:00"))
+            event_dt = datetime.fromisoformat(ts.replace("Z", "+00:00"))
             if event_dt > cutoff:
-                valid_items.append(it)
+                valid_items.append(item)
         except Exception:
-            valid_items.append(it)
+            valid_items.append(item)
     return valid_items
 
-def get_threat_data():
-    # 1. Read state file first
-    if os.path.exists(STATE_FILE):
+def load_json_data():
+    items = []
+    # 1. Read all_threats.json
+    if os.path.exists(ALL_DATA_FILE):
         try:
-            with open(STATE_FILE, 'r') as f:
-                state = json.load(f)
-                clean_items = purge_expired_records(state.get("items", []))
-                if clean_items:
-                    return clean_items[0], clean_items
-        except Exception:
-            pass
+            with open(ALL_DATA_FILE, 'r', encoding='utf-8') as f:
+                content = json.load(f)
+                if isinstance(content, list):
+                    items = content
+                elif isinstance(content, dict):
+                    items = [content]
+        except Exception as e:
+            print(f"[-] Error reading {ALL_DATA_FILE}: {e}", flush=True)
 
-    # 2. Read latest_prediction.json
-    if os.path.exists(DATA_FILE):
+    # 2. If empty, check latest_prediction.json
+    if not items and os.path.exists(DATA_FILE):
         try:
-            with open(DATA_FILE, 'r') as f:
-                data = json.load(f)
-                items = data if isinstance(data, list) else [data]
-                clean_items = purge_expired_records(items)
-                if clean_items:
-                    return clean_items[0], clean_items
-        except Exception:
-            pass
+            with open(DATA_FILE, 'r', encoding='utf-8') as f:
+                content = json.load(f)
+                if isinstance(content, list):
+                    items = content
+                elif isinstance(content, dict):
+                    items = [content]
+        except Exception as e:
+            print(f"[-] Error reading {DATA_FILE}: {e}", flush=True)
 
-    # 3. Emergency fallback if container just woke up empty
-    now = datetime.now(timezone.utc)
-    fallback = {
-        "primary_threat": "[DEMO] Forecasted M6.2 Triggered Aftershock",
-        "location": "Near Coast of Honshu, Japan",
-        "time_of_event": (now + timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "severity": "Severe",
-        "probability": "68%",
-        "lat": 37.8500,
-        "lon": 142.1000,
-        "is_demo": True,
-        "cascading_effects": [
-            "Regional transit deceleration advisory",
-            "Coastal surge warning"
-        ]
-    }
-    return fallback, [fallback]
+    active_items = filter_active_threats(items)
+
+    # 3. Safe fallback if files are completely empty
+    if not active_items:
+        now = datetime.now(timezone.utc)
+        fallback = {
+            "primary_threat": "[DEMO] Forecasted M6.2 Triggered Aftershock",
+            "location": "Near Coast of Honshu, Japan",
+            "time_of_event": (now + timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "severity": "Severe",
+            "probability": "68%",
+            "lat": 37.8500,
+            "lon": 142.1000,
+            "is_demo": True,
+            "cascading_effects": [
+                "Regional rail transit deceleration advisory",
+                "Coastal surge warning"
+            ]
+        }
+        return fallback, [fallback]
+
+    return active_items[0], active_items
 
 def nocache_response(payload, status=200):
     resp = make_response(jsonify(payload), status)
@@ -95,14 +101,14 @@ def favicon():
 @app.route('/api/latest_threat', methods=['GET'])
 @app.route('/api/threats/latest', methods=['GET'])
 def get_latest_threat():
-    single, _ = get_threat_data()
+    single, _ = load_json_data()
     return nocache_response(single)
 
 @app.route('/api/threats', methods=['GET'])
 @app.route('/api/later_threats', methods=['GET'])
 @app.route('/api/historical_predictions', methods=['GET'])
 def get_all_threats():
-    _, all_items = get_threat_data()
+    _, all_items = load_json_data()
     return nocache_response(all_items)
 
 if __name__ == '__main__':
