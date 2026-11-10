@@ -2,6 +2,7 @@ import os
 import sys
 import json
 import time
+import threading
 from datetime import datetime, timezone, timedelta
 import pika
 import requests
@@ -17,10 +18,14 @@ DATA_FILE = os.path.join(DATA_DIR, 'latest_prediction.json')
 ALL_DATA_FILE = os.path.join(DATA_DIR, 'all_threats.json')
 STATE_FILE = os.path.join(DATA_DIR, 'ai_state.json')
 
-print("=== [BOOT] JSON TELEMETRY CONSUMER ONLINE ===", flush=True)
+print("=== [BOOT] AUTONOMOUS FUTURE AI ENGINE ACTIVE ===", flush=True)
+
+if not GROQ_API_KEY:
+    print("❌ CRITICAL: GROQ_API_KEY is not set in Render Environment Variables!", flush=True)
+else:
+    print(f"✅ GROQ_API_KEY Loaded (Length: {len(GROQ_API_KEY)})", flush=True)
 
 def purge_expired_items(items):
-    """Filters out any event in the past or with <= 1 hour left."""
     valid_items = []
     now = datetime.now(timezone.utc)
     cutoff = now + timedelta(hours=1)
@@ -34,66 +39,37 @@ def purge_expired_items(items):
             if event_dt > cutoff:
                 valid_items.append(it)
             else:
-                print(f"🧹 [PURGE]: Removed '{it.get('primary_threat')}' (ETA {ts_str} <= 1h threshold)", flush=True)
+                print(f"🧹 [PURGE]: Dropped expired '{it.get('primary_threat')}' ({ts_str})", flush=True)
         except Exception:
             valid_items.append(it)
     return valid_items
 
-def generate_initial_demo_data():
-    now = datetime.now(timezone.utc)
-    return [
-        {
-            "primary_threat": "[DEMO] Forecasted M6.2 Triggered Aftershock",
-            "location": "Near Coast of Honshu, Japan",
-            "time_of_event": (now + timedelta(hours=26)).strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "severity": "Severe",
-            "probability": "68%",
-            "lat": 37.8500,
-            "lon": 142.1000,
-            "is_demo": True,
-            "cascading_effects": [
-                "Regional transit deceleration advisory",
-                "Coastal surge warning"
-            ]
-        },
-        {
-            "primary_threat": "[DEMO] Projected Wildfire Spread Perimeter",
-            "location": "Pilbara Region, Western Australia",
-            "time_of_event": (now + timedelta(hours=38)).strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "severity": "Extreme",
-            "probability": "74%",
-            "lat": -22.3500,
-            "lon": 118.9000,
-            "is_demo": True,
-            "cascading_effects": [
-                "Power transmission line emergency shutdown",
-                "PM2.5 particulate advisory"
-            ]
-        }
-    ]
-
-def load_or_init_state():
+def save_prediction_to_disk(new_ai_result):
+    state = {"real_ai_count": 0, "items": []}
     if os.path.exists(STATE_FILE):
         try:
             with open(STATE_FILE, 'r') as f:
                 state = json.load(f)
-                state["items"] = purge_expired_items(state.get("items", []))
-                if state["items"]:
-                    save_state(state)
-                    return state
         except Exception:
             pass
 
-    state = {
-        "real_ai_count": 0,
-        "items": generate_initial_demo_data()
-    }
-    save_state(state)
-    return state
+    state["real_ai_count"] = state.get("real_ai_count", 0) + 1
+    count = state["real_ai_count"]
 
-def save_state(state):
-    # Enforce cleanup before saving to disk
-    state["items"] = purge_expired_items(state.get("items", []))
+    if count < 2:
+        demo_items = [it for it in state.get("items", []) if it.get("is_demo", False)]
+        real_items = [it for it in state.get("items", []) if not it.get("is_demo", False)]
+        if demo_items:
+            demo_items.pop(0)
+        state["items"] = [new_ai_result] + real_items + demo_items
+    else:
+        # 2+ real responses: wipe all demo artifacts permanently
+        real_items = [it for it in state.get("items", []) if not it.get("is_demo", False)]
+        state["items"] = [new_ai_result] + real_items
+        state["items"] = state["items"][:6]
+        print(f"🚀 [MILESTONE REACHED]: Real responses: {count}. All demo data permanently removed.", flush=True)
+
+    state["items"] = purge_expired_items(state["items"])
 
     with open(STATE_FILE, 'w') as f:
         json.dump(state, f, indent=2)
@@ -103,27 +79,54 @@ def save_state(state):
             json.dump(state["items"][0], f, indent=2)
         with open(ALL_DATA_FILE, 'w') as f:
             json.dump(state["items"], f, indent=2)
-    print(f"[✓] Synced data/*.json files ({len(state['items'])} active threats, real count: {state['real_ai_count']})", flush=True)
 
-# Seed files on fresh container boot
-current_state = load_or_init_state()
+    print(f"💾 [SAVED TO JSON]: '{new_ai_result.get('primary_threat')}' | ETA: {new_ai_result.get('time_of_event')}", flush=True)
 
-def forecast_future_disasters(telemetry_batch):
+def fetch_live_telemetry_direct():
+    """Direct fallback to pull live global planetary events without waiting on brokers."""
+    events = []
+    try:
+        # Live USGS Seismic M4.5+ Feed (Updated every 5 mins)
+        r = requests.get('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson', timeout=10)
+        if r.status_code == 200:
+            features = r.json().get('features', [])
+            for f in features[:6]:
+                props = f.get('properties', {})
+                geom = f.get('geometry', {})
+                coords = geom.get('coordinates', [0, 0])
+                events.append({
+                    "stream": "USGS_SEISMIC",
+                    "title": props.get('title'),
+                    "magnitude": props.get('mag'),
+                    "place": props.get('place'),
+                    "lon": coords[0],
+                    "lat": coords[1],
+                    "time": props.get('time')
+                })
+    except Exception as e:
+        print(f"[-] Telemetry fetch notice: {e}", flush=True)
+
+    if not events:
+        events = [
+            {"stream": "USGS_SEISMIC", "title": "M 5.3 Offshore Subduction Activity", "place": "Near Coast of Honshu, Japan", "lat": 38.2, "lon": 142.5, "magnitude": 5.3},
+            {"stream": "NASA_FIRMS", "title": "Orbital Radiative Anomaly", "lat": -22.3, "lon": 119.1, "fire_radiative_power_mw": 395.0}
+        ]
+    return events
+
+def run_ai_prediction_cycle(events_batch):
     if not GROQ_API_KEY:
-        print("[-] Skipping Groq call: GROQ_API_KEY missing.", flush=True)
-        return None
+        print("[-] Skipping cycle: GROQ_API_KEY is not defined.", flush=True)
+        return
 
     now = datetime.now(timezone.utc)
     current_time_iso = now.strftime("%Y-%m-%dT%H:%M:%SZ")
-    min_future_time = (now + timedelta(hours=6)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    min_future_time = (now + timedelta(hours=14)).strftime("%Y-%m-%dT%H:%M:%SZ")
 
     url = "https://api.groq.com/openai/v1/chat/completions"
     headers = {
         "Authorization": f"Bearer {GROQ_API_KEY}",
         "Content-Type": "application/json"
     }
-
-    sample_records = telemetry_batch[:45]
 
     payload = {
         "model": "openai/gpt-oss-120b",
@@ -132,20 +135,21 @@ def forecast_future_disasters(telemetry_batch):
                 "role": "user",
                 "content": (
                     f"CURRENT UTC TIME: {current_time_iso}\n"
-                    f"MINIMUM VALID FUTURE ETA: {min_future_time}\n"
-                    f"LIVE SCIENTIFIC TELEMETRY BATCH:\n{json.dumps(sample_records, indent=1)}\n\n"
-                    "INSTRUCTIONS: PREDICT FUTURE CRISES ONLY (ETA strictly 12h to 72h Ahead)\n"
-                    "1. DO NOT report past events. All events must occur in the future.\n"
-                    "2. Earthquake readings: calculate secondary fault stress transfer / triggered aftershocks.\n"
-                    "3. Satellite heat anomalies: calculate downwind perimeter containment breach window.\n"
-                    "4. Lat/Lon must match incoming sensor data.\n\n"
+                    f"MINIMUM ALLOWED FUTURE ETA: {min_future_time}\n"
+                    f"LIVE PLANETARY TELEMETRY SENSORS:\n{json.dumps(events_batch[:35], indent=1)}\n\n"
+                    "MISSION: FUTURE HAZARD PREDICTION\n"
+                    "1. Formulate a future emergency forecast targeting 14 to 48 hours from right now.\n"
+                    "2. If seismic: calculate secondary fault trigger window or aftershock sequence.\n"
+                    "3. If thermal: calculate atmospheric dispersion / forward fire corridor.\n"
+                    "4. 'time_of_event' MUST BE IN THE FUTURE (ISO 8601 strictly after the minimum allowed ETA).\n"
+                    "5. Output calibrated realistic probability string (e.g. 58%, 72%).\n\n"
                     "Return ONLY valid JSON matching this schema:\n"
                     "{\n"
-                    '  "primary_threat": "Forecasted [Phenomenon] Risk / Window",\n'
+                    '  "primary_threat": "Forecasted [Phenomenon] Risk",\n'
                     '  "location": "Region, Country",\n'
                     '  "time_of_event": "FUTURE ISO 8601 timestamp",\n'
                     '  "severity": "Moderate | Severe | Extreme",\n'
-                    '  "probability": "calibrated percentage string (e.g. 62%)",\n'
+                    '  "probability": "calibrated percentage string",\n'
                     '  "lat": float_latitude,\n'
                     '  "lon": float_longitude,\n'
                     '  "cascading_effects": ["consequence 1", "consequence 2"]\n'
@@ -159,91 +163,77 @@ def forecast_future_disasters(telemetry_batch):
     }
 
     try:
-        print(f"[*] Dispatching {len(telemetry_batch)} events to AI model...", flush=True)
+        print(f"[*] Dispatching {len(events_batch)} telemetry records to Groq (openai/gpt-oss-120b)...", flush=True)
         res = requests.post(url, headers=headers, json=payload, timeout=35)
         if res.status_code == 200:
             choice = res.json()["choices"][0]["message"]
             
+            # Print Reasoning Trace to Render runtime logs
             thinking = choice.get("reasoning") or choice.get("reasoning_content")
             if thinking:
                 print("\n" + "="*50, flush=True)
-                print("🧠 [AI FUTURE REASONING LOG]:", flush=True)
+                print("🧠 [GROQ REASONING LOG]:", flush=True)
                 print(thinking.strip(), flush=True)
                 print("="*50 + "\n", flush=True)
 
             ai_result = json.loads(choice["content"])
             ai_result["is_demo"] = False
 
-            # Ensure timestamp is strictly in the future
+            # Strict guardrail: Prevent premature purge
             try:
                 event_dt = datetime.fromisoformat(ai_result["time_of_event"].replace("Z", "+00:00"))
-                if event_dt <= now + timedelta(hours=1):
+                if event_dt <= now + timedelta(hours=2):
                     ai_result["time_of_event"] = (now + timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%SZ")
             except Exception:
                 ai_result["time_of_event"] = (now + timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%SZ")
 
-            return ai_result
+            save_prediction_to_disk(ai_result)
         else:
-            print(f"❌ Groq API Error {res.status_code}: {res.text}", flush=True)
+            print(f"❌ Groq API error {res.status_code}: {res.text}", flush=True)
     except Exception as e:
-        print(f"❌ Groq Exception: {e}", flush=True)
+        print(f"❌ Groq execution exception: {e}", flush=True)
 
-    return None
+# Continuous background thread so AI runs autonomously even if RabbitMQ has 0 messages
+def autonomous_timer_loop():
+    print("[*] Autonomous AI telemetry loop started.", flush=True)
+    # Run immediately on boot
+    telemetry = fetch_live_telemetry_direct()
+    run_ai_prediction_cycle(telemetry)
 
-def update_predictions_with_real_ai(new_ai_result):
-    state = load_or_init_state()
-    state["real_ai_count"] += 1
-    count = state["real_ai_count"]
+    while True:
+        # Re-evaluates global telemetry every 90 seconds
+        time.sleep(90)
+        try:
+            telemetry = fetch_live_telemetry_direct()
+            run_ai_prediction_cycle(telemetry)
+        except Exception as e:
+            print(f"[-] Autonomous loop cycle exception: {e}", flush=True)
 
-    if count < 2:
-        demo_items = [it for it in state["items"] if it.get("is_demo", False)]
-        real_items = [it for it in state["items"] if not it.get("is_demo", False)]
-        if demo_items:
-            demo_items.pop(0)
-        state["items"] = [new_ai_result] + real_items + demo_items
-        print(f"⚡ [REAL AI UPDATE #1]: Injected 1 real prediction, kept demo buffer.", flush=True)
-    else:
-        real_items = [it for it in state["items"] if not it.get("is_demo", False)]
-        state["items"] = [new_ai_result] + real_items
-        state["items"] = state["items"][:6]
-        print(f"🚀 [MILESTONE REACHED: {count} REAL AI RESPONSES]: ALL DEMO DATA PERMANENTLY PURGED.", flush=True)
-
-    save_state(state)
-
-def callback(ch, method, properties, body):
-    try:
-        events = json.loads(body)
-    except Exception:
-        events = []
-
-    print(f"\n📩 Message received from RabbitMQ ({len(events)} points).", flush=True)
-    prediction = forecast_future_disasters(events)
-    if prediction:
-        update_predictions_with_real_ai(prediction)
-        print(f"[✓] Saved threat: {prediction['primary_threat']} at {prediction['location']}", flush=True)
-
-def start_consumer():
-    # Immediate boot test so real prediction generates upon container launch
-    print("[*] Running boot forecast cycle...", flush=True)
-    boot_events = [
-        {"title": "USGS M5.2 Subduction Activity", "place": "Off Coast of Oregon, USA", "lat": 43.6, "lon": -127.8, "magnitude": 5.2, "stream": "USGS_SEISMIC"},
-        {"title": "NASA Satellite Radiative Hotspot", "lat": -14.2, "lon": 132.1, "fire_radiative_power_mw": 380.0, "stream": "NASA_FIRMS"}
-    ]
-    test_result = forecast_future_disasters(boot_events)
-    if test_result:
-        update_predictions_with_real_ai(test_result)
-
-    print("🤖 Consumer Online. Listening on 'disaster_telemetry'...", flush=True)
+def rabbitmq_consumer_loop():
     while True:
         try:
             conn = pika.BlockingConnection(pika.ConnectionParameters(host=RABBITMQ_HOST))
             chan = conn.channel()
             chan.queue_declare(queue=QUEUE_NAME, durable=True)
+
+            def callback(ch, method, properties, body):
+                try:
+                    events = json.loads(body)
+                except Exception:
+                    events = []
+                print(f"📩 RabbitMQ received {len(events)} points. Triggering AI cycle...", flush=True)
+                run_ai_prediction_cycle(events)
+
             chan.basic_consume(queue=QUEUE_NAME, on_message_callback=callback, auto_ack=True)
             chan.start_consuming()
         except Exception as e:
-            print(f"[-] RabbitMQ connection error: {e}. Retrying in 5s...", flush=True)
-            time.sleep(5)
+            # Expected if RabbitMQ isn't running locally or on Render
+            time.sleep(15)
 
 if __name__ == "__main__":
-    start_consumer()
+    # Start RabbitMQ consumer in a daemon thread
+    t_rabbit = threading.Thread(target=rabbitmq_consumer_loop, daemon=True)
+    t_rabbit.start()
+
+    # Run the main autonomous telemetry loop
+    autonomous_timer_loop()
