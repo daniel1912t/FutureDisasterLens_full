@@ -18,14 +18,15 @@ DATA_FILE = os.path.join(DATA_DIR, 'latest_prediction.json')
 ALL_DATA_FILE = os.path.join(DATA_DIR, 'all_threats.json')
 STATE_FILE = os.path.join(DATA_DIR, 'ai_state.json')
 
-print("=== [BOOT] AUTONOMOUS FUTURE AI ENGINE ACTIVE ===", flush=True)
+print("=== [BOOT] STRICT REAL-TIME FUTURE AI ENGINE ACTIVE ===", flush=True)
 
 if not GROQ_API_KEY:
-    print("❌ CRITICAL: GROQ_API_KEY is not set in Render Environment Variables!", flush=True)
+    print("❌ CRITICAL: GROQ_API_KEY is not set in Environment Variables!", flush=True)
 else:
     print(f"✅ GROQ_API_KEY Loaded (Length: {len(GROQ_API_KEY)})", flush=True)
 
 def purge_expired_items(items):
+    """Purges anything in the past, anything <= 1 hour away, or anything older than right now."""
     valid_items = []
     now = datetime.now(timezone.utc)
     cutoff = now + timedelta(hours=1)
@@ -39,10 +40,34 @@ def purge_expired_items(items):
             if event_dt > cutoff:
                 valid_items.append(it)
             else:
-                print(f"🧹 [PURGE]: Dropped expired '{it.get('primary_threat')}' ({ts_str})", flush=True)
+                print(f"🧹 [PURGE]: Dropped past/expired event '{it.get('primary_threat')}' (Date: {ts_str} | Current: {now.isoformat()})", flush=True)
         except Exception:
-            valid_items.append(it)
+            pass
     return valid_items
+
+def clean_old_files_on_boot():
+    """Wipes any leftover predictions from earlier days (e.g. 5/11) from disk immediately."""
+    for file_path in [STATE_FILE, DATA_FILE, ALL_DATA_FILE]:
+        if os.path.exists(file_path):
+            try:
+                with open(file_path, 'r') as f:
+                    content = json.load(f)
+                if isinstance(content, dict) and "items" in content:
+                    content["items"] = purge_expired_items(content["items"])
+                    with open(file_path, 'w') as f:
+                        json.dump(content, f, indent=2)
+                elif isinstance(content, list):
+                    cleaned = purge_expired_items(content)
+                    with open(file_path, 'w') as f:
+                        json.dump(cleaned, f, indent=2)
+                elif isinstance(content, dict):
+                    cleaned = purge_expired_items([content])
+                    with open(file_path, 'w') as f:
+                        json.dump(cleaned[0] if cleaned else {}, f, indent=2)
+            except Exception:
+                pass
+
+clean_old_files_on_boot()
 
 def save_prediction_to_disk(new_ai_result):
     state = {"real_ai_count": 0, "items": []}
@@ -63,11 +88,11 @@ def save_prediction_to_disk(new_ai_result):
             demo_items.pop(0)
         state["items"] = [new_ai_result] + real_items + demo_items
     else:
-        # 2+ real responses: wipe all demo artifacts permanently
+        # Purge all demo placeholders
         real_items = [it for it in state.get("items", []) if not it.get("is_demo", False)]
         state["items"] = [new_ai_result] + real_items
         state["items"] = state["items"][:6]
-        print(f"🚀 [MILESTONE REACHED]: Real responses: {count}. All demo data permanently removed.", flush=True)
+        print(f"🚀 [MILESTONE REACHED]: Real responses: {count}. All demo items permanently removed.", flush=True)
 
     state["items"] = purge_expired_items(state["items"])
 
@@ -80,20 +105,17 @@ def save_prediction_to_disk(new_ai_result):
         with open(ALL_DATA_FILE, 'w') as f:
             json.dump(state["items"], f, indent=2)
 
-    print(f"💾 [SAVED TO JSON]: '{new_ai_result.get('primary_threat')}' | ETA: {new_ai_result.get('time_of_event')}", flush=True)
+    print(f"💾 [SAVED FUTURE EVENT]: '{new_ai_result.get('primary_threat')}' targeting {new_ai_result.get('time_of_event')}", flush=True)
 
 def fetch_live_telemetry_direct():
-    """Direct fallback to pull live global planetary events without waiting on brokers."""
     events = []
     try:
-        # Live USGS Seismic M4.5+ Feed (Updated every 5 mins)
         r = requests.get('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson', timeout=10)
         if r.status_code == 200:
             features = r.json().get('features', [])
             for f in features[:6]:
                 props = f.get('properties', {})
-                geom = f.get('geometry', {})
-                coords = geom.get('coordinates', [0, 0])
+                coords = f.get('geometry', {}).get('coordinates', [0, 0])
                 events.append({
                     "stream": "USGS_SEISMIC",
                     "title": props.get('title'),
@@ -104,7 +126,7 @@ def fetch_live_telemetry_direct():
                     "time": props.get('time')
                 })
     except Exception as e:
-        print(f"[-] Telemetry fetch notice: {e}", flush=True)
+        print(f"[-] Telemetry direct notice: {e}", flush=True)
 
     if not events:
         events = [
@@ -115,12 +137,11 @@ def fetch_live_telemetry_direct():
 
 def run_ai_prediction_cycle(events_batch):
     if not GROQ_API_KEY:
-        print("[-] Skipping cycle: GROQ_API_KEY is not defined.", flush=True)
+        print("[-] Skipping cycle: GROQ_API_KEY missing.", flush=True)
         return
 
     now = datetime.now(timezone.utc)
     current_time_iso = now.strftime("%Y-%m-%dT%H:%M:%SZ")
-    min_future_time = (now + timedelta(hours=14)).strftime("%Y-%m-%dT%H:%M:%SZ")
 
     url = "https://api.groq.com/openai/v1/chat/completions"
     headers = {
@@ -134,22 +155,21 @@ def run_ai_prediction_cycle(events_batch):
             {
                 "role": "user",
                 "content": (
-                    f"CURRENT UTC TIME: {current_time_iso}\n"
-                    f"MINIMUM ALLOWED FUTURE ETA: {min_future_time}\n"
-                    f"LIVE PLANETARY TELEMETRY SENSORS:\n{json.dumps(events_batch[:35], indent=1)}\n\n"
-                    "MISSION: FUTURE HAZARD PREDICTION\n"
-                    "1. Formulate a future emergency forecast targeting 14 to 48 hours from right now.\n"
-                    "2. If seismic: calculate secondary fault trigger window or aftershock sequence.\n"
-                    "3. If thermal: calculate atmospheric dispersion / forward fire corridor.\n"
-                    "4. 'time_of_event' MUST BE IN THE FUTURE (ISO 8601 strictly after the minimum allowed ETA).\n"
-                    "5. Output calibrated realistic probability string (e.g. 58%, 72%).\n\n"
+                    f"CURRENT SYSTEM TIME (TODAY): {current_time_iso}\n"
+                    f"LIVE SCIENTIFIC TELEMETRY BATCH:\n{json.dumps(events_batch[:35], indent=1)}\n\n"
+                    "CRITICAL TASK: FUTURE RISK FORECASTING\n"
+                    "1. Today is November 10, 2026. DO NOT use dates from earlier days (such as November 5).\n"
+                    "2. Formulate a future risk forecast arriving between 14 and 48 hours from right now.\n"
+                    "3. Specify 'eta_hours_from_now' as an integer between 14 and 48.\n"
+                    "4. If seismic: calculate the triggered aftershock risk window or secondary fault rupture.\n"
+                    "5. If thermal: calculate atmospheric boundary dispersion or wildfire spread.\n\n"
                     "Return ONLY valid JSON matching this schema:\n"
                     "{\n"
-                    '  "primary_threat": "Forecasted [Phenomenon] Risk",\n'
+                    '  "primary_threat": "Forecasted [Phenomenon] Risk / Window",\n'
                     '  "location": "Region, Country",\n'
-                    '  "time_of_event": "FUTURE ISO 8601 timestamp",\n'
+                    '  "eta_hours_from_now": 24,\n'
                     '  "severity": "Moderate | Severe | Extreme",\n'
-                    '  "probability": "calibrated percentage string",\n'
+                    '  "probability": "calibrated percentage string (e.g. 64%)",\n'
                     '  "lat": float_latitude,\n'
                     '  "lon": float_longitude,\n'
                     '  "cascading_effects": ["consequence 1", "consequence 2"]\n'
@@ -167,25 +187,22 @@ def run_ai_prediction_cycle(events_batch):
         res = requests.post(url, headers=headers, json=payload, timeout=35)
         if res.status_code == 200:
             choice = res.json()["choices"][0]["message"]
-            
-            # Print Reasoning Trace to Render runtime logs
-            thinking = choice.get("reasoning") or choice.get("reasoning_content")
-            if thinking:
-                print("\n" + "="*50, flush=True)
-                print("🧠 [GROQ REASONING LOG]:", flush=True)
-                print(thinking.strip(), flush=True)
-                print("="*50 + "\n", flush=True)
-
             ai_result = json.loads(choice["content"])
             ai_result["is_demo"] = False
 
-            # Strict guardrail: Prevent premature purge
+            # Python computes the future timestamp using the live clock
             try:
-                event_dt = datetime.fromisoformat(ai_result["time_of_event"].replace("Z", "+00:00"))
-                if event_dt <= now + timedelta(hours=2):
-                    ai_result["time_of_event"] = (now + timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%SZ")
+                eta_hours = int(ai_result.get("eta_hours_from_now", 24))
+                if eta_hours < 6 or eta_hours > 72:
+                    eta_hours = 24
             except Exception:
-                ai_result["time_of_event"] = (now + timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%SZ")
+                eta_hours = 24
+
+            future_dt = now + timedelta(hours=eta_hours)
+            ai_result["time_of_event"] = future_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+            # Clean helper field
+            ai_result.pop("eta_hours_from_now", None)
 
             save_prediction_to_disk(ai_result)
         else:
@@ -193,21 +210,18 @@ def run_ai_prediction_cycle(events_batch):
     except Exception as e:
         print(f"❌ Groq execution exception: {e}", flush=True)
 
-# Continuous background thread so AI runs autonomously even if RabbitMQ has 0 messages
 def autonomous_timer_loop():
-    print("[*] Autonomous AI telemetry loop started.", flush=True)
-    # Run immediately on boot
+    print("[*] Autonomous telemetry loop active.", flush=True)
     telemetry = fetch_live_telemetry_direct()
     run_ai_prediction_cycle(telemetry)
 
     while True:
-        # Re-evaluates global telemetry every 90 seconds
         time.sleep(90)
         try:
             telemetry = fetch_live_telemetry_direct()
             run_ai_prediction_cycle(telemetry)
         except Exception as e:
-            print(f"[-] Autonomous loop cycle exception: {e}", flush=True)
+            print(f"[-] Autonomous cycle error: {e}", flush=True)
 
 def rabbitmq_consumer_loop():
     while True:
@@ -221,19 +235,16 @@ def rabbitmq_consumer_loop():
                     events = json.loads(body)
                 except Exception:
                     events = []
-                print(f"📩 RabbitMQ received {len(events)} points. Triggering AI cycle...", flush=True)
+                print(f"📩 RabbitMQ received {len(events)} points.", flush=True)
                 run_ai_prediction_cycle(events)
 
             chan.basic_consume(queue=QUEUE_NAME, on_message_callback=callback, auto_ack=True)
             chan.start_consuming()
         except Exception as e:
-            # Expected if RabbitMQ isn't running locally or on Render
             time.sleep(15)
 
 if __name__ == "__main__":
-    # Start RabbitMQ consumer in a daemon thread
     t_rabbit = threading.Thread(target=rabbitmq_consumer_loop, daemon=True)
     t_rabbit.start()
 
-    # Run the main autonomous telemetry loop
     autonomous_timer_loop()
