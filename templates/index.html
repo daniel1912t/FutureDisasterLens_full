@@ -48,7 +48,7 @@
       z-index: 1;
     }
 
-    /* Standard Desktop & Large Screens */
+    /* Desktop Sidebar */
     #sidebar {
       position: absolute;
       top: 20px;
@@ -71,7 +71,7 @@
       transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
-    /* TABLET VIEW: Stays pinned on the SIDE */
+    /* Tablet View */
     @media (min-width: 681px) and (max-width: 1180px) {
       #sidebar {
         top: 16px;
@@ -84,14 +84,13 @@
         padding: 16px;
         gap: 10px;
         border-radius: 14px;
-        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.75);
       }
       .mobile-handle {
         display: none !important;
       }
     }
 
-    /* MOBILE PHONES: Bottom Sheet Drawer */
+    /* Mobile View */
     @media (max-width: 680px) {
       #sidebar {
         top: auto;
@@ -249,16 +248,16 @@
     <div class="badge-container">
       <div id="status-badge" class="badge badge-demo">
         <span class="status-dot"></span>
-        <span id="badge-text">Demo Preview</span>
+        <span id="badge-text">Reading JSON...</span>
       </div>
       <span id="coords-text" style="font-family: monospace; font-size: 11px; color: #7dd3fc;">0.00°, 0.00°</span>
     </div>
 
-    <h1 id="threat-title" class="threat-title">Scanning Global Telemetry...</h1>
+    <h1 id="threat-title" class="threat-title">Parsing JSON Data...</h1>
 
     <div class="info-card">
       <div class="label">Target Geographic Region</div>
-      <div id="threat-location" class="value">Awaiting coordinates...</div>
+      <div id="threat-location" class="value">Awaiting JSON input...</div>
     </div>
 
     <div class="info-card countdown-box">
@@ -281,7 +280,7 @@
     <div class="info-card">
       <div class="label">Predicted Cascading Effects</div>
       <ul id="impact-list" class="impact-list">
-        <li>Evaluating incoming telemetry...</li>
+        <li>Reading telemetry feed...</li>
       </ul>
     </div>
 
@@ -302,7 +301,6 @@
 
     function getResponsiveSettings() {
       const w = window.innerWidth;
-      const h = window.innerHeight;
       const isMobile = w <= 680;
       const isTablet = w > 680 && w <= 1180;
 
@@ -332,7 +330,7 @@
     controls.autoRotateSpeed = 0.35;
     controls.target.set(0, initialSettings.yTarget, 0);
 
-    // --- REAL SATELLITE TEXTURE ---
+    // NASA Satellite Texture
     const textureLoader = new THREE.TextureLoader();
     textureLoader.setCrossOrigin('anonymous');
 
@@ -519,53 +517,52 @@
 
     window.addEventListener('pointerdown', onPointerDown);
 
-    // --- SMART AUTO-UPDATE ENGINE ---
+    // --- DIRECT JSON DATA PICKUP ---
     let lastDataSignature = "";
 
-    async function syncThreats() {
+    async function syncFromJsonEndpoints() {
       try {
+        const timestamp = Date.now();
         let threatList = [];
-        const resAll = await fetch('/api/threats');
-        if (resAll.ok) {
-          const data = await resAll.json();
+        
+        // Fetch from the JSON-backed endpoint with cache buster
+        const res = await fetch(`/api/threats?_t=${timestamp}`, {
+          cache: "no-store",
+          headers: { "Pragma": "no-cache", "Cache-Control": "no-cache" }
+        });
+
+        if (res.ok) {
+          const data = await res.json();
           threatList = Array.isArray(data) ? data : [data];
-        } else {
-          const resLatest = await fetch('/api/latest_threat');
-          if (resLatest.ok) {
-            const data = await resLatest.json();
-            threatList = [data];
-          }
         }
 
         if (threatList.length === 0) return;
 
-        // Generate data signature to detect changes
+        // Check if file content changed
         const currentSignature = JSON.stringify(threatList.map(t => `${t.primary_threat}_${t.time_of_event}`));
 
-        // Only rebuild pins if the data actually changed
         if (currentSignature !== lastDataSignature) {
-          console.log("[+] New prediction detected! Updating Earth pins...", threatList);
+          console.log("[+] Picked up updated JSON data:", threatList);
           lastDataSignature = currentSignature;
 
           clearPins();
           threatList.forEach(t => createThreatPin(t));
 
-          // Retain currently selected threat if still valid, otherwise default to top item
           const stillExists = activeSelectedThreat && threatList.some(t => t.primary_threat === activeSelectedThreat.primary_threat);
           if (!stillExists) {
             displayThreatDetails(threatList[0]);
           }
         }
       } catch (err) {
-        console.warn("Sync warning:", err);
+        console.warn("JSON fetch warning:", err);
       }
     }
 
-    // Check backend every 5 seconds for newly published predictions
-    syncThreats();
-    setInterval(syncThreats, 5000);
+    // Poll JSON every 4 seconds
+    syncFromJsonEndpoints();
+    setInterval(syncFromJsonEndpoints, 4000);
 
-    // Continuously update live ETA countdown every second
+    // Update real-time countdown every second
     setInterval(updateLiveCountdownDisplay, 1000);
 
     let pulseScale = 1;
