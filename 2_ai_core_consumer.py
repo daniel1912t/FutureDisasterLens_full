@@ -43,7 +43,7 @@ STATE_FILE = os.path.join(DATA_DIR, 'ai_state.json')
 
 MODEL_ID = "openai/gpt-oss-120b"
 
-print(f"=== [BOOT] LOW-TOKEN MULTI-KEY HAZARD ENGINE: {MODEL_ID} ===", flush=True)
+print(f"=== [BOOT] AI DYNAMIC-TIMING HAZARD ENGINE: {MODEL_ID} ===", flush=True)
 print(f"🔑 Active Groq API Keys Detected: {len(GROQ_KEYS)}", flush=True)
 
 # ----------------- GITHUB REST API ENGINE -----------------
@@ -181,7 +181,6 @@ def save_prediction_to_disk(new_ai_result):
 
 # ----------------- COMPACT TELEMETRY INGESTION -----------------
 def fetch_live_telemetry_direct():
-    """Extracts only strictly required numbers/names to avoid TPM limits."""
     compact_events = []
     
     # 1. USGS Seismic
@@ -217,7 +216,7 @@ def fetch_live_telemetry_direct():
         ]
     return compact_events
 
-# ----------------- AI CYCLE WITH MULTI-KEY ROTATION -----------------
+# ----------------- AI CYCLE WITH AI-DETERMINED TIMING -----------------
 def run_ai_prediction_cycle(events_list):
     current_key = get_current_groq_key()
     if not current_key:
@@ -227,24 +226,26 @@ def run_ai_prediction_cycle(events_list):
     now = datetime.now(timezone.utc)
     current_time_iso = now.strftime("%Y-%m-%dT%H:%M:%SZ")
 
-    # Ultra-compact input format: uses < 350 tokens
     telemetry_summary = "\n".join(f"- {e}" for e in events_list[:6])
 
     prompt_content = (
-        f"TIME: {current_time_iso}\n"
+        f"CURRENT TIME: {current_time_iso}\n"
         f"SENSORS:\n{telemetry_summary}\n\n"
-        "TASK: Predict a distinct future disaster targeting 14 to 48 hours from now.\n"
-        "Rotate types: Cyclones, Wildfires, Volcanic Ash, Floods, or Fault Triggers.\n"
-        "Return ONLY JSON:\n"
+        "TASK: Formulate a planetary emergency forecast.\n"
+        "TIMING INSTRUCTIONS:\n"
+        "- YOU decide the realistic ETA window based on the nature and speed of the hazard (e.g. 5 hours, 13 hours, 21 hours, 42 hours).\n"
+        "- DO NOT use a fixed 24 or 30 hour number every time. Calibrate the hours based on the physical progression of the crisis.\n"
+        "- Provide 'eta_hours_from_now' as an integer representing how many hours ahead from CURRENT TIME the event will culminate.\n\n"
+        "Return ONLY valid JSON:\n"
         "{\n"
         '  "primary_threat": "Forecasted [Hazard Type] Window",\n'
         '  "location": "Region, Country",\n'
-        '  "eta_hours_from_now": 24,\n'
+        '  "eta_hours_from_now": integer_hours_ahead,\n'
         '  "severity": "Moderate | Severe | Extreme",\n'
-        '  "probability": "74%",\n'
-        '  "lat": float_lat,\n'
-        '  "lon": float_lon,\n'
-        '  "cascading_effects": ["impact 1", "impact 2"]\n'
+        '  "probability": "percentage string",\n'
+        '  "lat": float_latitude,\n'
+        '  "lon": float_longitude,\n'
+        '  "cascading_effects": ["consequence 1", "consequence 2"]\n'
         "}"
     )
 
@@ -261,7 +262,7 @@ def run_ai_prediction_cycle(events_list):
     }
 
     try:
-        print(f"[*] Calling Groq ({MODEL_ID}) with Key Slot #{key_index + 1} (~350 tokens)...", flush=True)
+        print(f"[*] Calling Groq ({MODEL_ID}) with Key Slot #{key_index + 1}...", flush=True)
         res = requests.post(url, headers=headers, json=payload, timeout=25)
         
         if res.status_code == 200:
@@ -269,19 +270,33 @@ def run_ai_prediction_cycle(events_list):
             ai_result = json.loads(raw_choice)
             ai_result["is_demo"] = False
 
-            try:
-                eta_hours = int(ai_result.get("eta_hours_from_now", 24))
-                if eta_hours < 6 or eta_hours > 72:
-                    eta_hours = 24
-            except Exception:
-                eta_hours = 24
+            # Let the AI determine the future timing
+            eta_hours = None
+            if "eta_hours_from_now" in ai_result:
+                try:
+                    eta_hours = float(ai_result["eta_hours_from_now"])
+                except Exception:
+                    pass
 
-            future_dt = now + timedelta(hours=eta_hours)
-            ai_result["time_of_event"] = future_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+            if eta_hours is not None and eta_hours > 1:
+                # Use AI's calculated duration directly
+                future_dt = now + timedelta(hours=eta_hours)
+                ai_result["time_of_event"] = future_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+            elif "time_of_event" in ai_result:
+                # If the AI provided a direct ISO timestamp, check that it's in the future
+                try:
+                    parsed_dt = datetime.fromisoformat(ai_result["time_of_event"].replace("Z", "+00:00"))
+                    if parsed_dt <= now + timedelta(hours=1):
+                        ai_result["time_of_event"] = (now + timedelta(hours=12)).strftime("%Y-%m-%dT%H:%M:%SZ")
+                except Exception:
+                    ai_result["time_of_event"] = (now + timedelta(hours=12)).strftime("%Y-%m-%dT%H:%M:%SZ")
+            else:
+                ai_result["time_of_event"] = (now + timedelta(hours=12)).strftime("%Y-%m-%dT%H:%M:%SZ")
+
             ai_result.pop("eta_hours_from_now", None)
 
             save_prediction_to_disk(ai_result)
-            rotate_groq_key()  # Rotate to next key for balanced load
+            rotate_groq_key()
 
         elif res.status_code in [413, 429]:
             print(f"⚠️ [RATE/TOKEN LIMIT HIT on Key #{key_index + 1}] HTTP {res.status_code}: {res.text}", flush=True)
