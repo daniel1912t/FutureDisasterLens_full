@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+import re
 import time
 import base64
 import threading
@@ -43,8 +44,7 @@ STATE_FILE = os.path.join(DATA_DIR, 'ai_state.json')
 
 MODEL_ID = "openai/gpt-oss-120b"
 
-print(f"=== [BOOT] AI DYNAMIC-TIMING HAZARD ENGINE: {MODEL_ID} ===", flush=True)
-print(f"🔑 Active Groq API Keys Detected: {len(GROQ_KEYS)}", flush=True)
+print(f"=== [BOOT] ROBUST JSON AI ENGINE: {MODEL_ID} ===", flush=True)
 
 # ----------------- GITHUB REST API ENGINE -----------------
 def get_github_file_sha():
@@ -216,7 +216,7 @@ def fetch_live_telemetry_direct():
         ]
     return compact_events
 
-# ----------------- AI CYCLE WITH AI-DETERMINED TIMING -----------------
+# ----------------- BULLETPROOF AI PREDICTION -----------------
 def run_ai_prediction_cycle(events_list):
     current_key = get_current_groq_key()
     if not current_key:
@@ -226,27 +226,34 @@ def run_ai_prediction_cycle(events_list):
     now = datetime.now(timezone.utc)
     current_time_iso = now.strftime("%Y-%m-%dT%H:%M:%SZ")
 
-    telemetry_summary = "\n".join(f"- {e}" for e in events_list[:6])
+    telemetry_summary = "\n".join(f"- {e}" for e in events_list[:5])
 
-    prompt_content = (
-        f"CURRENT TIME: {current_time_iso}\n"
-        f"SENSORS:\n{telemetry_summary}\n\n"
-        "TASK: Formulate a planetary emergency forecast.\n"
-        "TIMING INSTRUCTIONS:\n"
-        "- YOU decide the realistic ETA window based on the nature and speed of the hazard (e.g. 5 hours, 13 hours, 21 hours, 42 hours).\n"
-        "- DO NOT use a fixed 24 or 30 hour number every time. Calibrate the hours based on the physical progression of the crisis.\n"
-        "- Provide 'eta_hours_from_now' as an integer representing how many hours ahead from CURRENT TIME the event will culminate.\n\n"
-        "Return ONLY valid JSON:\n"
+    # System instruction strictly isolates the schema definition
+    system_prompt = (
+        "You are an automated disaster prediction engine. "
+        "You must respond ONLY with a raw, valid JSON object. "
+        "Do NOT include any markdown code blocks, thoughts, explanations, or text outside the JSON object.\n\n"
+        "Required JSON schema:\n"
         "{\n"
         '  "primary_threat": "Forecasted [Hazard Type] Window",\n'
         '  "location": "Region, Country",\n'
-        '  "eta_hours_from_now": integer_hours_ahead,\n'
+        '  "eta_hours_from_now": 24,\n'
         '  "severity": "Moderate | Severe | Extreme",\n'
-        '  "probability": "percentage string",\n'
-        '  "lat": float_latitude,\n'
-        '  "lon": float_longitude,\n'
-        '  "cascading_effects": ["consequence 1", "consequence 2"]\n'
+        '  "probability": "74%",\n'
+        '  "lat": 0.0,\n'
+        '  "lon": 0.0,\n'
+        '  "cascading_effects": ["impact 1", "impact 2"]\n'
         "}"
+    )
+
+    user_prompt = (
+        f"CURRENT UTC TIME: {current_time_iso}\n"
+        f"SENSORS BATCH:\n{telemetry_summary}\n\n"
+        "INSTRUCTIONS:\n"
+        "1. Predict an emerging planetary disaster event based on the telemetry.\n"
+        "2. Dynamically estimate 'eta_hours_from_now' (integer, e.g. 6, 15, 28, 44) based on hazard speed.\n"
+        "3. Coordinates 'lat' and 'lon' must match one of the sensors in the batch.\n"
+        "4. Output valid JSON now."
     )
 
     url = "https://api.groq.com/openai/v1/chat/completions"
@@ -254,11 +261,16 @@ def run_ai_prediction_cycle(events_list):
         "Authorization": f"Bearer {current_key}",
         "Content-Type": "application/json"
     }
+
+    # Request without strict response_format to prevent 400 rejection; regex parses output
     payload = {
         "model": MODEL_ID,
-        "messages": [{"role": "user", "content": prompt_content}],
-        "response_format": {"type": "json_object"},
-        "max_tokens": 450
+        "messages": [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt}
+        ],
+        "temperature": 0.2,
+        "max_tokens": 800
     }
 
     try:
@@ -266,11 +278,19 @@ def run_ai_prediction_cycle(events_list):
         res = requests.post(url, headers=headers, json=payload, timeout=25)
         
         if res.status_code == 200:
-            raw_choice = res.json()["choices"][0]["message"]["content"]
-            ai_result = json.loads(raw_choice)
+            raw_text = res.json()["choices"][0]["message"]["content"].strip()
+            
+            # Extract JSON cleanly even if wrapped in markdown (```json ... ```)
+            match = re.search(r'\{.*\}', raw_text, re.DOTALL)
+            if not match:
+                print(f"❌ [PARSE ERROR] Could not find JSON block in output: {raw_text}", flush=True)
+                rotate_groq_key()
+                return
+
+            ai_result = json.loads(match.group(0))
             ai_result["is_demo"] = False
 
-            # Let the AI determine the future timing
+            # Dynamic AI timing logic
             eta_hours = None
             if "eta_hours_from_now" in ai_result:
                 try:
@@ -279,11 +299,9 @@ def run_ai_prediction_cycle(events_list):
                     pass
 
             if eta_hours is not None and eta_hours > 1:
-                # Use AI's calculated duration directly
                 future_dt = now + timedelta(hours=eta_hours)
                 ai_result["time_of_event"] = future_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
             elif "time_of_event" in ai_result:
-                # If the AI provided a direct ISO timestamp, check that it's in the future
                 try:
                     parsed_dt = datetime.fromisoformat(ai_result["time_of_event"].replace("Z", "+00:00"))
                     if parsed_dt <= now + timedelta(hours=1):
