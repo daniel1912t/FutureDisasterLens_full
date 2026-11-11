@@ -2,6 +2,7 @@ import os
 import sys
 import json
 import time
+import base64
 import threading
 import traceback
 from datetime import datetime, timezone, timedelta
@@ -12,18 +13,95 @@ RABBITMQ_HOST = os.environ.get('RABBITMQ_HOST', 'localhost')
 QUEUE_NAME = 'disaster_telemetry'
 GROQ_API_KEY = os.environ.get('GROQ_API_KEY')
 
+# GITHUB PERSISTENCE CONFIGURATION
+GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
+GITHUB_REPO = os.environ.get('GITHUB_REPO')  # format: 'username/repo-name'
+GITHUB_BRANCH = os.environ.get('GITHUB_BRANCH', 'main')
+GITHUB_FILE_PATH = "data/threats.json"
+
 DATA_DIR = os.path.join(os.getcwd(), 'data')
 os.makedirs(DATA_DIR, exist_ok=True)
 
 DATA_FILE = os.path.join(DATA_DIR, 'latest_prediction.json')
 ALL_DATA_FILE = os.path.join(DATA_DIR, 'all_threats.json')
 STATE_FILE = os.path.join(DATA_DIR, 'ai_state.json')
-HEALTH_FILE = os.path.join(DATA_DIR, 'ai_health.json')
 
 MODEL_ID = "openai/gpt-oss-120b"
 
-print(f"=== [BOOT] MULTI-DISASTER PREDICTIVE AI ENGINE: {MODEL_ID} ===", flush=True)
+print(f"=== [BOOT] GITHUB-PERSISTENT HAZARD ENGINE: {MODEL_ID} ===", flush=True)
 
+# ----------------- GITHUB REST API ENGINE -----------------
+def get_github_file_sha():
+    """Gets current SHA of the file on GitHub to allow updating it."""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        return None
+    url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{GITHUB_FILE_PATH}?ref={GITHUB_BRANCH}"
+    headers = {
+        "Authorization": f"token {GITHUB_TOKEN.strip()}",
+        "Accept": "application/vnd.github.v3+json"
+    }
+    try:
+        res = requests.get(url, headers=headers, timeout=10)
+        if res.status_code == 200:
+            return res.json().get("sha")
+    except Exception as e:
+        print(f"[-] GitHub SHA probe error: {e}", flush=True)
+    return None
+
+def fetch_threats_from_github():
+    """Pulls existing active threats directly from GitHub on container boot."""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        return []
+    url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{GITHUB_FILE_PATH}?ref={GITHUB_BRANCH}"
+    headers = {
+        "Authorization": f"token {GITHUB_TOKEN.strip()}",
+        "Accept": "application/vnd.github.v3+json"
+    }
+    try:
+        res = requests.get(url, headers=headers, timeout=10)
+        if res.status_code == 200:
+            content_b64 = res.json().get("content", "")
+            raw_text = base64.b64decode(content_b64).decode("utf-8")
+            data = json.loads(raw_text)
+            print(f"📥 [GITHUB RESTORE]: Loaded {len(data)} threats from GitHub repository.", flush=True)
+            return data
+    except Exception as e:
+        print(f"[-] Error restoring threats from GitHub: {e}", flush=True)
+    return []
+
+def commit_threats_to_github(items):
+    """Commits and pushes the clean JSON array straight to GitHub."""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        print("[-] Skipping GitHub commit: GITHUB_TOKEN or GITHUB_REPO not configured.", flush=True)
+        return
+
+    sha = get_github_file_sha()
+    json_text = json.dumps(items, indent=2)
+    b64_content = base64.b64encode(json_text.encode("utf-8")).decode("utf-8")
+
+    url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{GITHUB_FILE_PATH}"
+    headers = {
+        "Authorization": f"token {GITHUB_TOKEN.strip()}",
+        "Accept": "application/vnd.github.v3+json"
+    }
+    payload = {
+        "message": f"telemetry: sync {len(items)} planetary predictions [skip ci]",
+        "content": b64_content,
+        "branch": GITHUB_BRANCH
+    }
+    if sha:
+        payload["sha"] = sha
+
+    try:
+        res = requests.put(url, headers=headers, json=payload, timeout=15)
+        if res.status_code in [200, 201]:
+            print(f"🚀 [GITHUB SYNC SUCCESS]: Committed {len(items)} active records to {GITHUB_REPO}/{GITHUB_FILE_PATH}", flush=True)
+        else:
+            print(f"❌ [GITHUB SYNC ERROR] HTTP {res.status_code}: {res.text}", flush=True)
+    except Exception as e:
+        print(f"❌ [GITHUB REST EXCEPTION]: {e}", flush=True)
+
+# ----------------- LOCAL PURGE & RESTORE -----------------
 def purge_expired_items(items):
     valid_items = []
     now = datetime.now(timezone.utc)
@@ -38,29 +116,18 @@ def purge_expired_items(items):
             if event_dt > cutoff:
                 valid_items.append(it)
             else:
-                print(f"🧹 [PURGE DISK]: Wiped expired event '{it.get('primary_threat')}' ({ts_str})", flush=True)
+                print(f"🧹 [PURGE]: Dropped expired event '{it.get('primary_threat')}' ({ts_str})", flush=True)
         except Exception:
             pass
     return valid_items
 
-def clean_all_disk_files():
-    for fpath in [STATE_FILE, ALL_DATA_FILE]:
-        if os.path.exists(fpath):
-            try:
-                with open(fpath, 'r', encoding='utf-8') as f:
-                    content = json.load(f)
-                if isinstance(content, dict) and "items" in content:
-                    content["items"] = purge_expired_items(content["items"])
-                    with open(fpath, 'w', encoding='utf-8') as f:
-                        json.dump(content, f, indent=2)
-                elif isinstance(content, list):
-                    cleaned = purge_expired_items(content)
-                    with open(fpath, 'w', encoding='utf-8') as f:
-                        json.dump(cleaned, f, indent=2)
-            except Exception as e:
-                print(f"[-] Disk scrub error on {fpath}: {e}", flush=True)
-
-clean_all_disk_files()
+# Restore previous data from GitHub on boot so memory is never empty
+boot_github_items = purge_expired_items(fetch_threats_from_github())
+if boot_github_items:
+    with open(ALL_DATA_FILE, 'w', encoding='utf-8') as f:
+        json.dump(boot_github_items, f, indent=2)
+    with open(DATA_FILE, 'w', encoding='utf-8') as f:
+        json.dump(boot_github_items[0], f, indent=2)
 
 def save_prediction_to_disk(new_ai_result):
     state = {"real_ai_count": 0, "items": []}
@@ -89,6 +156,7 @@ def save_prediction_to_disk(new_ai_result):
 
     state["items"] = purge_expired_items(state["items"])
 
+    # 1. Update local files for immediate Flask serving
     with open(STATE_FILE, 'w', encoding='utf-8') as f:
         json.dump(state, f, indent=2)
 
@@ -98,13 +166,14 @@ def save_prediction_to_disk(new_ai_result):
         with open(ALL_DATA_FILE, 'w', encoding='utf-8') as f:
             json.dump(state["items"], f, indent=2)
 
-    print(f"💾 [SAVED TO JSON]: '{new_ai_result.get('primary_threat')}' targeting {new_ai_result.get('time_of_event')}", flush=True)
+    print(f"💾 [SAVED LOCALLY]: '{new_ai_result.get('primary_threat')}' targeting {new_ai_result.get('time_of_event')}", flush=True)
 
-# MULTI-SOURCE TELEMETRY (Seismic + NASA Earth Observatory + Severe Atmospheric)
+    # 2. Commit permanently to GitHub repository
+    commit_threats_to_github(state["items"])
+
+# ----------------- LIVE TELEMETRY & AI INFERENCE -----------------
 def fetch_live_telemetry_direct():
     events = []
-    
-    # 1. USGS Seismic Feed
     try:
         r = requests.get('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson', timeout=10)
         if r.status_code == 200:
@@ -123,17 +192,14 @@ def fetch_live_telemetry_direct():
     except Exception as e:
         print(f"[-] USGS fetch notice: {e}", flush=True)
 
-    # 2. NASA EONET Active Severe Weather, Floods, Cyclones & Wildfires Feed
     try:
         r_nasa = requests.get('https://eonet.gsfc.nasa.gov/api/v3/events?status=open&limit=8', timeout=10)
         if r_nasa.status_code == 200:
-            eonet_events = r_nasa.json().get('events', [])
-            for ev in eonet_events[:5]:
+            for ev in r_nasa.json().get('events', [])[:5]:
                 cat = ev.get('categories', [{}])[0].get('title', 'Environmental Hazard')
                 geoms = ev.get('geometry', [])
                 if geoms:
                     coords = geoms[-1].get('coordinates', [0, 0])
-                    # Handle Point coordinates
                     if isinstance(coords, list) and len(coords) >= 2 and isinstance(coords[0], (int, float)):
                         events.append({
                             "stream": "NASA_EONET",
@@ -145,7 +211,6 @@ def fetch_live_telemetry_direct():
     except Exception as e:
         print(f"[-] NASA EONET fetch notice: {e}", flush=True)
 
-    # Balanced fallback if APIs throttle
     if len(events) < 2:
         events = [
             {"stream": "NOAA_NHC", "type": "Tropical Cyclone", "title": "Rapid Pressure Drop & Vortex Deepening", "place": "Philippine Sea, Western Pacific", "lat": 16.4, "lon": 134.2},
@@ -168,7 +233,6 @@ def run_ai_prediction_cycle(events_batch):
         "Content-Type": "application/json"
     }
 
-    # PROMPT: DIVERSE PLANETARY DISASTERS
     prompt_content = (
         f"CURRENT UTC TIME: {current_time_iso}\n"
         f"GLOBAL TELEMETRY SENSOR MATRIX:\n{json.dumps(events_batch, indent=1)}\n\n"
@@ -229,18 +293,17 @@ def run_ai_prediction_cycle(events_batch):
         print(f"❌ Groq execution exception: {e}", flush=True)
 
 def autonomous_timer_loop():
-    print("[*] Autonomous multi-source loop online.", flush=True)
+    print("[*] Autonomous telemetry generator started.", flush=True)
     telemetry = fetch_live_telemetry_direct()
     run_ai_prediction_cycle(telemetry)
 
     while True:
         time.sleep(90)
         try:
-            clean_all_disk_files()
             telemetry = fetch_live_telemetry_direct()
             run_ai_prediction_cycle(telemetry)
         except Exception as e:
-            print(f"[-] Autonomous cycle exception: {e}", flush=True)
+            print(f"[-] Autonomous loop cycle exception: {e}", flush=True)
 
 def rabbitmq_consumer_loop():
     while True:
