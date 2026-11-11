@@ -12,12 +12,14 @@ os.makedirs(DATA_DIR, exist_ok=True)
 
 DATA_FILE = os.path.join(DATA_DIR, 'latest_prediction.json')
 ALL_DATA_FILE = os.path.join(DATA_DIR, 'all_threats.json')
+STATE_FILE = os.path.join(DATA_DIR, 'ai_state.json')
 
-def filter_active_threats(items):
-    """Filters out any threat that has passed or has <= 1 hour left."""
+def purge_expired_from_disk(items):
+    """Filters items and removes anything <= 1 hour left or in the past."""
     valid_items = []
     now = datetime.now(timezone.utc)
     cutoff = now + timedelta(hours=1)
+    had_expired = False
 
     for item in items:
         ts = item.get("time_of_event")
@@ -27,12 +29,26 @@ def filter_active_threats(items):
             event_dt = datetime.fromisoformat(ts.replace("Z", "+00:00"))
             if event_dt > cutoff:
                 valid_items.append(item)
+            else:
+                had_expired = True
         except Exception:
-            valid_items.append(item)
+            pass
+
+    # If any old item was detected, overwrite the JSON on disk immediately
+    if had_expired:
+        try:
+            with open(ALL_DATA_FILE, 'w', encoding='utf-8') as f:
+                json.dump(valid_items, f, indent=2)
+            with open(DATA_FILE, 'w', encoding='utf-8') as f:
+                json.dump(valid_items[0] if valid_items else {}, f, indent=2)
+        except Exception:
+            pass
+
     return valid_items
 
 def load_json_data():
     items = []
+
     # 1. Read all_threats.json
     if os.path.exists(ALL_DATA_FILE):
         try:
@@ -40,26 +56,26 @@ def load_json_data():
                 content = json.load(f)
                 if isinstance(content, list):
                     items = content
-                elif isinstance(content, dict):
+                elif isinstance(content, dict) and content:
                     items = [content]
-        except Exception as e:
-            print(f"[-] Error reading {ALL_DATA_FILE}: {e}", flush=True)
+        except Exception:
+            pass
 
-    # 2. If empty, check latest_prediction.json
+    # 2. Check latest_prediction.json
     if not items and os.path.exists(DATA_FILE):
         try:
             with open(DATA_FILE, 'r', encoding='utf-8') as f:
                 content = json.load(f)
                 if isinstance(content, list):
                     items = content
-                elif isinstance(content, dict):
+                elif isinstance(content, dict) and content:
                     items = [content]
-        except Exception as e:
-            print(f"[-] Error reading {DATA_FILE}: {e}", flush=True)
+        except Exception:
+            pass
 
-    active_items = filter_active_threats(items)
+    active_items = purge_expired_from_disk(items)
 
-    # 3. Safe fallback if files are completely empty
+    # 3. Only if files are truly empty, provide a clean forward demo
     if not active_items:
         now = datetime.now(timezone.utc)
         fallback = {
@@ -72,7 +88,7 @@ def load_json_data():
             "lon": 142.1000,
             "is_demo": True,
             "cascading_effects": [
-                "Regional rail transit deceleration advisory",
+                "Regional rail deceleration advisory",
                 "Coastal surge warning"
             ]
         }
