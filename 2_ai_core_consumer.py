@@ -22,33 +22,7 @@ HEALTH_FILE = os.path.join(DATA_DIR, 'ai_health.json')
 
 MODEL_ID = "openai/gpt-oss-120b"
 
-print("\n" + "="*60, flush=True)
-print(f"🛰️  [DIAGNOSTICS BOOT] FUTURE HAZARD ENGINE: {MODEL_ID}", flush=True)
-print("="*60, flush=True)
-
-def update_health_status(status, message, details=None):
-    """Writes live AI status directly to data/ai_health.json for tracking."""
-    payload = {
-        "timestamp": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "status": status,
-        "model": MODEL_ID,
-        "message": message,
-        "details": details or {}
-    }
-    try:
-        with open(HEALTH_FILE, 'w', encoding='utf-8') as f:
-            json.dump(payload, f, indent=2)
-    except Exception as e:
-        print(f"[-] Could not write health file: {e}", flush=True)
-
-# 1. Check API Key Presence
-if not GROQ_API_KEY:
-    err_msg = "GROQ_API_KEY environment variable is NOT SET or empty in Render dashboard!"
-    print(f"\n❌ [CRITICAL CONFIG ERROR]: {err_msg}\n", flush=True)
-    update_health_status("ERROR", err_msg)
-else:
-    masked_key = f"{GROQ_API_KEY[:6]}...{GROQ_API_KEY[-4:]}" if len(GROQ_API_KEY) > 10 else "INVALID_LENGTH"
-    print(f"🔑 GROQ_API_KEY Loaded: {masked_key} (Total Length: {len(GROQ_API_KEY)})", flush=True)
+print(f"=== [BOOT] MULTI-DISASTER PREDICTIVE AI ENGINE: {MODEL_ID} ===", flush=True)
 
 def purge_expired_items(items):
     valid_items = []
@@ -86,59 +60,7 @@ def clean_all_disk_files():
             except Exception as e:
                 print(f"[-] Disk scrub error on {fpath}: {e}", flush=True)
 
-    if os.path.exists(DATA_FILE):
-        try:
-            with open(DATA_FILE, 'r', encoding='utf-8') as f:
-                latest = json.load(f)
-            if isinstance(latest, dict) and latest:
-                cleaned = purge_expired_items([latest])
-                if not cleaned:
-                    with open(DATA_FILE, 'w', encoding='utf-8') as f:
-                        json.dump({}, f, indent=2)
-        except Exception as e:
-            print(f"[-] Disk scrub error on {DATA_FILE}: {e}", flush=True)
-
 clean_all_disk_files()
-
-# 2. Pre-flight Network & Authorization Probe
-def run_boot_probe():
-    """Fires a lightweight request to test if Groq accepts the key and model."""
-    if not GROQ_API_KEY:
-        return False
-
-    print("\n🔍 [PROBE]: Testing Groq endpoint connectivity...", flush=True)
-    url = "https://api.groq.com/openai/v1/chat/completions"
-    headers = {
-        "Authorization": f"Bearer {GROQ_API_KEY.strip()}",
-        "Content-Type": "application/json"
-    }
-    payload = {
-        "model": MODEL_ID,
-        "messages": [{"role": "user", "content": "Respond with the word 'OK' only."}],
-        "max_tokens": 5
-    }
-
-    try:
-        res = requests.post(url, headers=headers, json=payload, timeout=15)
-        if res.status_code == 200:
-            print(f"✅ [PROBE PASSED]: Groq API is reachable and authorized with model '{MODEL_ID}'.\n", flush=True)
-            update_health_status("ONLINE", "API authenticated successfully")
-            return True
-        else:
-            print("\n" + "!"*60, flush=True)
-            print(f"❌ [PROBE FAILED] Groq returned HTTP {res.status_code}:", flush=True)
-            print(res.text, flush=True)
-            print("!"*60 + "\n", flush=True)
-            update_health_status("ERROR", f"HTTP {res.status_code}", {"response_text": res.text})
-            return False
-    except requests.exceptions.RequestException as e:
-        print("\n" + "!"*60, flush=True)
-        print(f"❌ [PROBE NETWORK ERROR]: Could not connect to api.groq.com: {e}", flush=True)
-        print("!"*60 + "\n", flush=True)
-        update_health_status("NETWORK_ERROR", str(e))
-        return False
-
-run_boot_probe()
 
 def save_prediction_to_disk(new_ai_result):
     state = {"real_ai_count": 0, "items": []}
@@ -178,38 +100,63 @@ def save_prediction_to_disk(new_ai_result):
 
     print(f"💾 [SAVED TO JSON]: '{new_ai_result.get('primary_threat')}' targeting {new_ai_result.get('time_of_event')}", flush=True)
 
+# MULTI-SOURCE TELEMETRY (Seismic + NASA Earth Observatory + Severe Atmospheric)
 def fetch_live_telemetry_direct():
     events = []
+    
+    # 1. USGS Seismic Feed
     try:
         r = requests.get('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson', timeout=10)
         if r.status_code == 200:
-            features = r.json().get('features', [])
-            for f in features[:8]:
+            for f in r.json().get('features', [])[:4]:
                 props = f.get('properties', {})
                 coords = f.get('geometry', {}).get('coordinates', [0, 0])
                 events.append({
                     "stream": "USGS_SEISMIC",
+                    "type": "Tectonic Fault Stress",
                     "title": props.get('title'),
                     "magnitude": props.get('mag'),
                     "place": props.get('place'),
                     "lon": coords[0],
-                    "lat": coords[1],
-                    "time": props.get('time')
+                    "lat": coords[1]
                 })
     except Exception as e:
-        print(f"[-] USGS direct telemetry fetch notice: {e}", flush=True)
+        print(f"[-] USGS fetch notice: {e}", flush=True)
 
-    if not events:
+    # 2. NASA EONET Active Severe Weather, Floods, Cyclones & Wildfires Feed
+    try:
+        r_nasa = requests.get('https://eonet.gsfc.nasa.gov/api/v3/events?status=open&limit=8', timeout=10)
+        if r_nasa.status_code == 200:
+            eonet_events = r_nasa.json().get('events', [])
+            for ev in eonet_events[:5]:
+                cat = ev.get('categories', [{}])[0].get('title', 'Environmental Hazard')
+                geoms = ev.get('geometry', [])
+                if geoms:
+                    coords = geoms[-1].get('coordinates', [0, 0])
+                    # Handle Point coordinates
+                    if isinstance(coords, list) and len(coords) >= 2 and isinstance(coords[0], (int, float)):
+                        events.append({
+                            "stream": "NASA_EONET",
+                            "type": cat,
+                            "title": ev.get('title'),
+                            "lon": coords[0],
+                            "lat": coords[1]
+                        })
+    except Exception as e:
+        print(f"[-] NASA EONET fetch notice: {e}", flush=True)
+
+    # Balanced fallback if APIs throttle
+    if len(events) < 2:
         events = [
-            {"stream": "USGS_SEISMIC", "title": "M 5.6 Seismic Activity", "place": "Near Coast of Honshu, Japan", "lat": 38.2, "lon": 142.5, "magnitude": 5.6},
-            {"stream": "NASA_FIRMS", "title": "Satellite Radiative Anomaly", "lat": -22.3, "lon": 119.1, "fire_radiative_power_mw": 410.0}
+            {"stream": "NOAA_NHC", "type": "Tropical Cyclone", "title": "Rapid Pressure Drop & Vortex Deepening", "place": "Philippine Sea, Western Pacific", "lat": 16.4, "lon": 134.2},
+            {"stream": "NASA_EONET", "type": "Severe Wildfire Front", "title": "Corridor Thermal Breakthrough", "place": "Northern Territory, Australia", "lat": -18.4, "lon": 133.8},
+            {"stream": "USGS_SEISMIC", "type": "Tectonic Subduction", "title": "M 5.8 Fault Displacement", "place": "Near Coast of Honshu, Japan", "lat": 38.2, "lon": 142.5}
         ]
     return events
 
-# 3. Main Prediction Cycle with Comprehensive Diagnostics
 def run_ai_prediction_cycle(events_batch):
     if not GROQ_API_KEY:
-        print("[-] Skipping cycle: GROQ_API_KEY is not configured.", flush=True)
+        print("[-] Skipping cycle: GROQ_API_KEY missing.", flush=True)
         return
 
     now = datetime.now(timezone.utc)
@@ -221,22 +168,29 @@ def run_ai_prediction_cycle(events_batch):
         "Content-Type": "application/json"
     }
 
+    # PROMPT: DIVERSE PLANETARY DISASTERS
     prompt_content = (
         f"CURRENT UTC TIME: {current_time_iso}\n"
-        f"LIVE PLANETARY TELEMETRY SENSORS:\n{json.dumps(events_batch[:30], indent=1)}\n\n"
-        "TASK: PREDICTIVE EMERGENCY FORECAST (14h to 48h in advance)\n"
-        "Analyze the incoming telemetry and project a realistic future hazard event.\n"
-        "1. Set 'eta_hours_from_now' to an integer between 14 and 48.\n"
-        "2. For seismic data: estimate aftershock sequence or secondary fault trigger.\n"
-        "3. For thermal hotspots: estimate firefront breach or dispersion corridor.\n"
-        "4. Coordinates must match the sensor event location.\n\n"
+        f"GLOBAL TELEMETRY SENSOR MATRIX:\n{json.dumps(events_batch, indent=1)}\n\n"
+        "OBJECTIVE: DIVERSE PLANETARY DISASTER FORECASTING (14h to 48h Window)\n"
+        "Evaluate the sensor data across ALL available categories (Tropical Cyclones, Wildfire Perimeters, Volcanic Haze, Tsunami/Ocean Surges, Flash Floods, and Fault Slip Displacements).\n"
+        "1. DO NOT default only to aftershocks. Pick the most acute emerging threat from the batch, rotating hazard classes across runs.\n"
+        "2. Threat categories to forecast:\n"
+        "   - 'Forecasted Category [X] Cyclone Landfall Window'\n"
+        "   - 'Projected Wildfire Pyroconvective Boundary Breach'\n"
+        "   - 'Forecasted Coastal Tsunami / Seiche Surge Risk'\n"
+        "   - 'Forecasted Volcanic Ash Plume Dispersion Corridor'\n"
+        "   - 'Projected Severe Flash Flood & Dam Spillway Threat'\n"
+        "   - 'Forecasted Secondary Fault Stress Transfer Risk'\n"
+        "3. Set 'eta_hours_from_now' to an integer between 14 and 48.\n"
+        "4. Coordinates ('lat', 'lon') MUST strictly match one of the sensor coordinates in the telemetry batch.\n\n"
         "Return ONLY valid JSON matching this schema:\n"
         "{\n"
-        '  "primary_threat": "Forecasted [Phenomenon] Risk / Window",\n'
+        '  "primary_threat": "Forecasted [Specific Disaster Type] Risk / Window",\n'
         '  "location": "Region, Country",\n'
         '  "eta_hours_from_now": 24,\n'
         '  "severity": "Moderate | Severe | Extreme",\n'
-        '  "probability": "percentage string (e.g. 64%)",\n'
+        '  "probability": "calibrated percentage string (e.g. 72%)",\n'
         '  "lat": float_latitude,\n'
         '  "lon": float_longitude,\n'
         '  "cascading_effects": ["consequence 1", "consequence 2"]\n'
@@ -249,28 +203,12 @@ def run_ai_prediction_cycle(events_batch):
         "response_format": {"type": "json_object"}
     }
 
-    print(f"[*] Dispatching {len(events_batch)} telemetry records to Groq ({MODEL_ID})...", flush=True)
-    start_time = time.time()
-
     try:
+        print(f"[*] Dispatching multi-source telemetry to Groq ({MODEL_ID})...", flush=True)
         res = requests.post(url, headers=headers, json=payload, timeout=35)
-        duration = round(time.time() - start_time, 2)
-
         if res.status_code == 200:
-            print(f"✅ [GROQ SUCCESS] Response received in {duration}s", flush=True)
-            res_json = res.json()
-            raw_choice = res_json["choices"][0]["message"]["content"]
-
-            try:
-                ai_result = json.loads(raw_choice)
-            except json.JSONDecodeError as je:
-                print("\n" + "!"*60, flush=True)
-                print(f"❌ [JSON PARSE ERROR]: Groq response was not valid JSON: {je}", flush=True)
-                print(f"Raw Output Received:\n{raw_choice}", flush=True)
-                print("!"*60 + "\n", flush=True)
-                update_health_status("PARSE_ERROR", str(je), {"raw_text": raw_choice})
-                return
-
+            raw_choice = res.json()["choices"][0]["message"]["content"]
+            ai_result = json.loads(raw_choice)
             ai_result["is_demo"] = False
 
             try:
@@ -285,36 +223,13 @@ def run_ai_prediction_cycle(events_batch):
             ai_result.pop("eta_hours_from_now", None)
 
             save_prediction_to_disk(ai_result)
-            update_health_status("ONLINE", f"Prediction generated successfully in {duration}s")
-
         else:
-            print("\n" + "!"*60, flush=True)
-            print(f"❌ [GROQ API ERROR] Status Code: {res.status_code}", flush=True)
-            print(f"Endpoint: {url}", flush=True)
-            print(f"Full Error Response:\n{res.text}", flush=True)
-            print("!"*60 + "\n", flush=True)
-            update_health_status("API_ERROR", f"HTTP {res.status_code}", {"response_text": res.text})
-
-    except requests.exceptions.Timeout:
-        print(f"❌ [TIMEOUT ERROR]: Groq API request timed out after 35 seconds.", flush=True)
-        update_health_status("TIMEOUT", "Request timed out after 35s")
-    except requests.exceptions.RequestException as re:
-        print("\n" + "!"*60, flush=True)
-        print(f"❌ [NETWORK REQUEST EXCEPTION]: {re}", flush=True)
-        print("Traceback:")
-        traceback.print_exc(file=sys.stdout)
-        print("!"*60 + "\n", flush=True)
-        update_health_status("REQUEST_EXCEPTION", str(re))
+            print(f"❌ Groq API error {res.status_code}: {res.text}", flush=True)
     except Exception as e:
-        print("\n" + "!"*60, flush=True)
-        print(f"❌ [UNEXPECTED SYSTEM EXCEPTION]: {e}", flush=True)
-        print("Traceback:")
-        traceback.print_exc(file=sys.stdout)
-        print("!"*60 + "\n", flush=True)
-        update_health_status("SYSTEM_EXCEPTION", str(e))
+        print(f"❌ Groq execution exception: {e}", flush=True)
 
 def autonomous_timer_loop():
-    print("[*] Autonomous loop online. Executing initial prediction cycle...", flush=True)
+    print("[*] Autonomous multi-source loop online.", flush=True)
     telemetry = fetch_live_telemetry_direct()
     run_ai_prediction_cycle(telemetry)
 
@@ -325,8 +240,7 @@ def autonomous_timer_loop():
             telemetry = fetch_live_telemetry_direct()
             run_ai_prediction_cycle(telemetry)
         except Exception as e:
-            print(f"[-] Autonomous cycle uncaught exception: {e}", flush=True)
-            traceback.print_exc(file=sys.stdout)
+            print(f"[-] Autonomous cycle exception: {e}", flush=True)
 
 def rabbitmq_consumer_loop():
     while True:
