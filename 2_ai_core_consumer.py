@@ -20,14 +20,10 @@ STATE_FILE = os.path.join(DATA_DIR, 'ai_state.json')
 
 MODEL_ID = "openai/gpt-oss-120b"
 
-print(f"=== [BOOT] FUTURE PREDICTION ENGINE: {MODEL_ID} ===", flush=True)
-
-if not GROQ_API_KEY:
-    print("❌ ERROR: GROQ_API_KEY is not set!", flush=True)
-else:
-    print(f"✅ GROQ_API_KEY loaded (len: {len(GROQ_API_KEY)})", flush=True)
+print(f"=== [BOOT] STRICT JSON PURGE ENGINE: {MODEL_ID} ===", flush=True)
 
 def purge_expired_items(items):
+    """Strictly deletes anything in the past or with <= 1 hour left."""
     valid_items = []
     now = datetime.now(timezone.utc)
     cutoff = now + timedelta(hours=1)
@@ -41,10 +37,53 @@ def purge_expired_items(items):
             if event_dt > cutoff:
                 valid_items.append(it)
             else:
-                print(f"🧹 [PURGE]: Dropped expired event '{it.get('primary_threat')}' ({ts_str})", flush=True)
+                print(f"🧹 [PURGE DISK]: Wiped expired event '{it.get('primary_threat')}' ({ts_str})", flush=True)
         except Exception:
             pass
     return valid_items
+
+def clean_all_disk_files():
+    """Scours every single json file on disk and removes old entries completely."""
+    # 1. State File
+    if os.path.exists(STATE_FILE):
+        try:
+            with open(STATE_FILE, 'r', encoding='utf-8') as f:
+                state = json.load(f)
+            if isinstance(state, dict):
+                state["items"] = purge_expired_items(state.get("items", []))
+                with open(STATE_FILE, 'w', encoding='utf-8') as f:
+                    json.dump(state, f, indent=2)
+        except Exception as e:
+            print(f"[-] State file scrub error: {e}", flush=True)
+
+    # 2. All Threats File
+    if os.path.exists(ALL_DATA_FILE):
+        try:
+            with open(ALL_DATA_FILE, 'r', encoding='utf-8') as f:
+                all_threats = json.load(f)
+            if isinstance(all_threats, list):
+                cleaned = purge_expired_items(all_threats)
+                with open(ALL_DATA_FILE, 'w', encoding='utf-8') as f:
+                    json.dump(cleaned, f, indent=2)
+        except Exception as e:
+            print(f"[-] All threats scrub error: {e}", flush=True)
+
+    # 3. Latest Prediction File
+    if os.path.exists(DATA_FILE):
+        try:
+            with open(DATA_FILE, 'r', encoding='utf-8') as f:
+                latest = json.load(f)
+            if isinstance(latest, dict) and latest:
+                cleaned = purge_expired_items([latest])
+                if not cleaned:
+                    # Overwrite with empty object if expired
+                    with open(DATA_FILE, 'w', encoding='utf-8') as f:
+                        json.dump({}, f, indent=2)
+        except Exception as e:
+            print(f"[-] Latest prediction scrub error: {e}", flush=True)
+
+# Run strict cleanup immediately on launch
+clean_all_disk_files()
 
 def save_prediction_to_disk(new_ai_result):
     state = {"real_ai_count": 0, "items": []}
@@ -58,18 +97,22 @@ def save_prediction_to_disk(new_ai_result):
     state["real_ai_count"] = state.get("real_ai_count", 0) + 1
     count = state["real_ai_count"]
 
+    # Purge old items first
+    clean_existing = purge_expired_items(state.get("items", []))
+
     if count < 2:
-        demo_items = [it for it in state.get("items", []) if it.get("is_demo", False)]
-        real_items = [it for it in state.get("items", []) if not it.get("is_demo", False)]
+        demo_items = [it for it in clean_existing if it.get("is_demo", False)]
+        real_items = [it for it in clean_existing if not it.get("is_demo", False)]
         if demo_items:
             demo_items.pop(0)
         state["items"] = [new_ai_result] + real_items + demo_items
     else:
-        real_items = [it for it in state.get("items", []) if not it.get("is_demo", False)]
+        # All demo data purged permanently
+        real_items = [it for it in clean_existing if not it.get("is_demo", False)]
         state["items"] = [new_ai_result] + real_items
         state["items"] = state["items"][:8]
-        print(f"🚀 [MILESTONE]: {count} verified AI forecasts logged. All demo entries removed.", flush=True)
 
+    # Final filter
     state["items"] = purge_expired_items(state["items"])
 
     with open(STATE_FILE, 'w', encoding='utf-8') as f:
@@ -80,8 +123,13 @@ def save_prediction_to_disk(new_ai_result):
             json.dump(state["items"][0], f, indent=2)
         with open(ALL_DATA_FILE, 'w', encoding='utf-8') as f:
             json.dump(state["items"], f, indent=2)
+    else:
+        with open(DATA_FILE, 'w', encoding='utf-8') as f:
+            json.dump({}, f, indent=2)
+        with open(ALL_DATA_FILE, 'w', encoding='utf-8') as f:
+            json.dump([], f, indent=2)
 
-    print(f"💾 [SAVED TO JSON]: '{new_ai_result.get('primary_threat')}' targeting {new_ai_result.get('time_of_event')}", flush=True)
+    print(f"💾 [SAVED CLEAN JSON]: '{new_ai_result.get('primary_threat')}' targeting {new_ai_result.get('time_of_event')}", flush=True)
 
 def fetch_live_telemetry_direct():
     events = []
@@ -161,7 +209,6 @@ def run_ai_prediction_cycle(events_batch):
             ai_result = json.loads(raw_choice)
             ai_result["is_demo"] = False
 
-            # Python calculates the exact future time using UTC clock
             try:
                 eta_hours = int(ai_result.get("eta_hours_from_now", 24))
                 if eta_hours < 6 or eta_hours > 72:
@@ -180,13 +227,14 @@ def run_ai_prediction_cycle(events_batch):
         print(f"❌ Groq execution exception: {e}", flush=True)
 
 def autonomous_timer_loop():
-    print("[*] Autonomous loop online. Running first cycle immediately...", flush=True)
+    print("[*] Autonomous loop online. Running first cycle...", flush=True)
     telemetry = fetch_live_telemetry_direct()
     run_ai_prediction_cycle(telemetry)
 
     while True:
         time.sleep(90)
         try:
+            clean_all_disk_files()  # Periodically scrub files on disk
             telemetry = fetch_live_telemetry_direct()
             run_ai_prediction_cycle(telemetry)
         except Exception as e:
