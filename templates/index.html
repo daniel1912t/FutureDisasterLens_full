@@ -48,7 +48,7 @@
       z-index: 1;
     }
 
-    /* Desktop Sidebar */
+    /* Standard Desktop & Large Screens */
     #sidebar {
       position: absolute;
       top: 20px;
@@ -71,7 +71,7 @@
       transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
-    /* Tablet View */
+    /* Tablet Screen Adjustments */
     @media (min-width: 681px) and (max-width: 1180px) {
       #sidebar {
         top: 16px;
@@ -90,7 +90,7 @@
       }
     }
 
-    /* Mobile View */
+    /* Mobile Sheet Drawer */
     @media (max-width: 680px) {
       #sidebar {
         top: auto;
@@ -98,8 +98,8 @@
         left: 0;
         right: 0;
         width: 100%;
-        max-height: 42vh;
-        max-height: 42dvh;
+        max-height: 44vh;
+        max-height: 44dvh;
         border-radius: 20px 20px 0 0;
         border-bottom: none;
         padding: 10px 16px 18px 16px;
@@ -153,6 +153,42 @@
       border-radius: 50%;
       background: currentColor;
       box-shadow: 0 0 8px currentColor;
+    }
+
+    /* Dropdown Selector for Overlapping Area Threats */
+    #cluster-picker-container {
+      display: none;
+      background: rgba(14, 165, 233, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.45);
+      border-radius: 10px;
+      padding: 8px 10px;
+    }
+
+    .dropdown-label {
+      font-size: 10px;
+      font-weight: 700;
+      color: #7dd3fc;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 4px;
+    }
+
+    #threat-selector {
+      width: 100%;
+      background: #081a38;
+      color: #f8fafc;
+      border: 1px solid var(--border-blue);
+      border-radius: 6px;
+      padding: 6px 8px;
+      font-size: 12px;
+      font-weight: 600;
+      outline: none;
+      cursor: pointer;
+    }
+
+    #threat-selector option {
+      background: #05132e;
+      color: #e0f2fe;
     }
 
     .threat-title {
@@ -248,16 +284,22 @@
     <div class="badge-container">
       <div id="status-badge" class="badge badge-demo">
         <span class="status-dot"></span>
-        <span id="badge-text">Reading JSON...</span>
+        <span id="badge-text">Scanning Telemetry...</span>
       </div>
       <span id="coords-text" style="font-family: monospace; font-size: 11px; color: #7dd3fc;">0.00°, 0.00°</span>
     </div>
 
-    <h1 id="threat-title" class="threat-title">Parsing JSON Data...</h1>
+    <!-- Multi-threat Dropdown in Same Geographic Area -->
+    <div id="cluster-picker-container">
+      <div class="dropdown-label">Multiple Hazards In This Region:</div>
+      <select id="threat-selector"></select>
+    </div>
+
+    <h1 id="threat-title" class="threat-title">Scanning Global Telemetry...</h1>
 
     <div class="info-card">
       <div class="label">Target Geographic Region</div>
-      <div id="threat-location" class="value">Awaiting JSON input...</div>
+      <div id="threat-location" class="value">Awaiting coordinates...</div>
     </div>
 
     <div class="info-card countdown-box">
@@ -280,7 +322,7 @@
     <div class="info-card">
       <div class="label">Predicted Cascading Effects</div>
       <ul id="impact-list" class="impact-list">
-        <li>Reading telemetry feed...</li>
+        <li>Evaluating incoming telemetry...</li>
       </ul>
     </div>
 
@@ -301,6 +343,7 @@
 
     function getResponsiveSettings() {
       const w = window.innerWidth;
+      const h = window.innerHeight;
       const isMobile = w <= 680;
       const isTablet = w > 680 && w <= 1180;
 
@@ -348,7 +391,7 @@
     const earth = new THREE.Mesh(earthGeo, earthMat);
     scene.add(earth);
 
-    // Atmosphere Glow
+    // Ozone Glow
     const atmosphereGeo = new THREE.SphereGeometry(EARTH_RADIUS * 1.025, 64, 64);
     const atmosphereMat = new THREE.MeshBasicMaterial({
       color: 0x38bdf8,
@@ -380,6 +423,49 @@
       );
     }
 
+    // Great-circle Haversine Distance Formula in Kilometers
+    function haversineDistanceKm(lat1, lon1, lat2, lon2) {
+      const R = 6371;
+      const dLat = (lat2 - lat1) * Math.PI / 180;
+      const dLon = (lon2 - lon1) * Math.PI / 180;
+      const a = 
+        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * 
+        Math.sin(dLon / 2) * Math.sin(dLon / 2);
+      const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      return R * c;
+    }
+
+    // Cluster threats within 350 km of each other into geographic bundles
+    function clusterThreatsByProximity(threatList, maxDistanceKm = 350) {
+      const clusters = [];
+
+      threatList.forEach(threat => {
+        const tLat = threat.lat || 0;
+        const tLon = threat.lon || 0;
+
+        let added = false;
+        for (const c of clusters) {
+          const dist = haversineDistanceKm(c.lat, c.lon, tLat, tLon);
+          if (dist <= maxDistanceKm) {
+            c.threats.push(threat);
+            added = true;
+            break;
+          }
+        }
+
+        if (!added) {
+          clusters.push({
+            lat: tLat,
+            lon: tLon,
+            threats: [threat]
+          });
+        }
+      });
+
+      return clusters;
+    }
+
     const threatPins = [];
     const pinGroup = new THREE.Group();
     scene.add(pinGroup);
@@ -391,24 +477,27 @@
       threatPins.length = 0;
     }
 
-    function createThreatPin(threatData) {
-      const lat = threatData.lat || 0;
-      const lon = threatData.lon || 0;
-      const pos = latLonToVector3(lat, lon, EARTH_RADIUS + 0.8);
+    function createClusterPin(cluster) {
+      const pos = latLonToVector3(cluster.lat, cluster.lon, EARTH_RADIUS + 0.8);
 
       const marker = new THREE.Group();
       marker.position.copy(pos);
 
-      const coreGeo = new THREE.SphereGeometry(3.6, 16, 16);
-      const coreMat = new THREE.MeshBasicMaterial({ color: 0xef4444 });
+      // Core sphere size slightly larger if multiple disasters in this location
+      const count = cluster.threats.length;
+      const coreSize = count > 1 ? 4.3 : 3.6;
+      const coreGeo = new THREE.SphereGeometry(coreSize, 16, 16);
+      const coreMat = new THREE.MeshBasicMaterial({ color: count > 1 ? 0xf59e0b : 0xef4444 });
       const coreMesh = new THREE.Mesh(coreGeo, coreMat);
-      coreMesh.userData = { threat: threatData, worldPos: pos.clone() };
+      
+      coreMesh.userData = { cluster: cluster, worldPos: pos.clone() };
       marker.add(coreMesh);
       threatPins.push(coreMesh);
 
-      const ringGeo = new THREE.RingGeometry(4.2, 7.2, 32);
+      // Outer Alert Ring
+      const ringGeo = new THREE.RingGeometry(count > 1 ? 5.2 : 4.2, count > 1 ? 8.6 : 7.2, 32);
       const ringMat = new THREE.MeshBasicMaterial({
-        color: 0xf87171,
+        color: count > 1 ? 0xfbbf24 : 0xf87171,
         side: THREE.DoubleSide,
         transparent: true,
         opacity: 0.9
@@ -442,6 +531,7 @@
     }
 
     let activeSelectedThreat = null;
+    let currentActiveCluster = null;
 
     function formatCountdown(targetIso) {
       if (!targetIso) return { text: "Awaiting Forecast", isImminent: false };
@@ -475,11 +565,11 @@
       }
 
       document.getElementById('threat-title').innerText = threat.primary_threat || 'Threat Detected';
-      document.getElementById('threat-location').innerText = threat.location || 'Global';
+      document.getElementById('threat-location').innerText = threat.location || 'Global Observation';
       document.getElementById('threat-severity').innerText = threat.severity || 'Moderate';
       document.getElementById('threat-probability').innerText = threat.probability || '50%';
       document.getElementById('coords-text').innerText = `${(threat.lat || 0).toFixed(2)}°, ${(threat.lon || 0).toFixed(2)}°`;
-      document.getElementById('eta-timestamp').innerText = `Forecast Target: ${threat.time_of_event || '--'}`;
+      document.getElementById('eta-timestamp').innerText = `Forecast Window: ${threat.time_of_event || '--'}`;
 
       updateLiveCountdownDisplay();
 
@@ -490,6 +580,40 @@
         li.innerText = eff;
         impactList.appendChild(li);
       });
+    }
+
+    // Handles Cluster Selection & Populates the Dropdown
+    function handleClusterSelect(cluster) {
+      currentActiveCluster = cluster;
+      const pickerContainer = document.getElementById('cluster-picker-container');
+      const selector = document.getElementById('threat-selector');
+
+      if (cluster.threats.length > 1) {
+        // Show dropdown selector with each event's name and exact time
+        pickerContainer.style.display = 'block';
+        selector.innerHTML = '';
+
+        cluster.threats.forEach((th, idx) => {
+          const opt = document.createElement('option');
+          opt.value = idx;
+          const timeFormatted = th.time_of_event ? th.time_of_event.replace('T', ' ').replace('Z', ' UTC') : 'TBD';
+          opt.innerText = `${th.primary_threat} [ETA: ${timeFormatted}]`;
+          selector.appendChild(opt);
+        });
+
+        selector.onchange = (e) => {
+          const chosen = cluster.threats[e.target.value];
+          displayThreatDetails(chosen);
+        };
+
+        // Default to first item
+        selector.value = 0;
+        displayThreatDetails(cluster.threats[0]);
+      } else {
+        // Only 1 threat in this radius: hide dropdown
+        pickerContainer.style.display = 'none';
+        displayThreatDetails(cluster.threats[0]);
+      }
     }
 
     const raycaster = new THREE.Raycaster();
@@ -510,14 +634,14 @@
 
       if (intersects.length > 0) {
         const clickedMesh = intersects[0].object;
-        displayThreatDetails(clickedMesh.userData.threat);
+        handleClusterSelect(clickedMesh.userData.cluster);
         magnetToPosition(clickedMesh.userData.worldPos);
       }
     }
 
     window.addEventListener('pointerdown', onPointerDown);
 
-    // --- DIRECT JSON DATA PICKUP ---
+    // --- DIRECT JSON DATA PICKUP & CLUSTER SYNC ---
     let lastDataSignature = "";
 
     async function syncFromJsonEndpoints() {
@@ -525,7 +649,6 @@
         const timestamp = Date.now();
         let threatList = [];
         
-        // Fetch from the JSON-backed endpoint with cache buster
         const res = await fetch(`/api/threats?_t=${timestamp}`, {
           cache: "no-store",
           headers: { "Pragma": "no-cache", "Cache-Control": "no-cache" }
@@ -538,19 +661,22 @@
 
         if (threatList.length === 0) return;
 
-        // Check if file content changed
-        const currentSignature = JSON.stringify(threatList.map(t => `${t.primary_threat}_${t.time_of_event}`));
+        const currentSignature = JSON.stringify(threatList.map(t => `${t.primary_threat}_${t.time_of_event}_${t.lat}_${t.lon}`));
 
         if (currentSignature !== lastDataSignature) {
           console.log("[+] Picked up updated JSON data:", threatList);
           lastDataSignature = currentSignature;
 
-          clearPins();
-          threatList.forEach(t => createThreatPin(t));
+          // 1. Group events into geographic clusters (< 350km apart)
+          const clusters = clusterThreatsByProximity(threatList, 350);
 
-          const stillExists = activeSelectedThreat && threatList.some(t => t.primary_threat === activeSelectedThreat.primary_threat);
-          if (!stillExists) {
-            displayThreatDetails(threatList[0]);
+          // 2. Clear and render pins for each cluster
+          clearPins();
+          clusters.forEach(c => createClusterPin(c));
+
+          // 3. Maintain current selection or default to top cluster
+          if (clusters.length > 0) {
+            handleClusterSelect(clusters[0]);
           }
         }
       } catch (err) {
@@ -558,11 +684,10 @@
       }
     }
 
-    // Poll JSON every 4 seconds
     syncFromJsonEndpoints();
     setInterval(syncFromJsonEndpoints, 4000);
 
-    // Update real-time countdown every second
+    // Live continuous countdown clock
     setInterval(updateLiveCountdownDisplay, 1000);
 
     let pulseScale = 1;
