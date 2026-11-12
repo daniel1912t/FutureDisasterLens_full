@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Weining, China",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 27.22,
+    "lon": 104.19,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T21:36:42Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Bitung, Indonesia",
     "severity": "Moderate",
     "probability": "78%",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T20:16:41Z"
-  },
-  {
-    "primary_threat": "Forecasted Prescribed Fire Window",
-    "location": "Okanogan, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.53,
-    "lon": -119.06,
-    "cascading_effects": [
-      "Reduced air quality",
-      "Potential smoke plume affecting nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T20:06:57Z"
   }
 ]
