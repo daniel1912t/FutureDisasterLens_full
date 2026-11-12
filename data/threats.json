@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos, New Hampshire, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in surrounding states",
+      "Potential strain on local emergency services and evacuation routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T04:52:26Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, near 9.9\u00b0N, 168.7\u00b0W",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T03:43:00Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Pacific Ocean, near 30.2\u00b0N, 154.1\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 30.2,
-    "lon": 154.1,
-    "cascading_effects": [
-      "heavy rainfall",
-      "flash flooding",
-      "landfall wind damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-12T17:37:48Z"
   }
 ]
