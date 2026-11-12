@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Pacific Ocean, near 30.2\u00b0N 154.1\u00b0E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 30.2,
+    "lon": 154.1,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "wind damage to infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T16:46:58Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T15:25:54Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific Ocean, near Kiribati",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -171.3,
-    "cascading_effects": [
-      "Heavy rainfall leading to flash floods on low-lying islands",
-      "Strong winds causing coastal erosion and damage to infrastructure",
-      "Disruption of maritime navigation and shipping routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T15:17:37Z"
   }
 ]
