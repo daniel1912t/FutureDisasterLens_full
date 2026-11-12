@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Pacific Ocean, near 9.9\u00b0N, 168.7\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.9,
+    "lon": -168.7,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "strong wind damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T04:44:18Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Near Cami\u00f1a, Chile",
     "severity": "Severe",
