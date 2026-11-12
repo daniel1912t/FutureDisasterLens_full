@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Near Bitung, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 1.12,
+    "lon": 126.11,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of coastal shipping routes due to tsunami risk",
+      "Damage to local infrastructure and power outages"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T19:03:01Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Scott, Mississippi, USA",
     "severity": "Moderate",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T17:42:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Near 9.8\u00b0N 173.2\u00b0W, Pacific Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods",
-      "Strong winds damaging coastal infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T17:34:22Z"
   }
 ]
