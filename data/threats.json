@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Indian Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.3,
+    "lon": 50.5,
+    "cascading_effects": [
+      "Coastal flooding in nearby islands",
+      "Disruption of maritime shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T05:48:26Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T04:26:20Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "South Sandwich Islands Region",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -59.03,
-    "lon": -26.03,
-    "cascading_effects": [
-      "tsunami generation",
-      "ash plume disruption",
-      "marine navigation hazards"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T04:18:09Z"
   }
 ]
