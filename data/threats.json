@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "South Sandwich Islands Region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -59.03,
+    "lon": -26.03,
+    "cascading_effects": [
+      "tsunami generation",
+      "ash plume disruption",
+      "marine navigation hazards"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T04:18:09Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg B22K Window",
     "location": "Southern Ocean, near Antarctica",
     "severity": "Moderate",
