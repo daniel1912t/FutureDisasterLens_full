@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Johnson, Wyoming, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "damage to forest infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T05:38:36Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Saint Helena, United Kingdom Overseas Territory",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T04:18:09Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg B22K Window",
-    "location": "Southern Ocean, near Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Disruption of shipping lanes",
-      "Potential damage to offshore structures",
-      "Impact on marine wildlife habitats"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T04:11:09Z"
   }
 ]
