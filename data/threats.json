@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Window",
+    "location": "Southern Ocean near Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Potential collision with commercial shipping lanes",
+      "Disruption of scientific research vessel routes",
+      "Impact on local marine wildlife habitats"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T19:39:14Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T18:08:50Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "South Sandwich Islands region",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -59.03,
-    "lon": -26.03,
-    "cascading_effects": [
-      "Potential tsunami generation affecting southern Atlantic coastlines",
-      "Disruption of marine navigation and shipping lanes",
-      "Impact on local wildlife habitats"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T18:00:20Z"
   }
 ]
