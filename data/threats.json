@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Noda region, Japan",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 40.36,
+    "lon": 143.61,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure strain",
+      "Possible tsunami warning if offshore"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T06:11:50Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, Antarctica",
     "severity": "Moderate",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T06:42:16Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T06:34:01Z"
   }
 ]
