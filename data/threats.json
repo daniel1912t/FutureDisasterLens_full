@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos, New Hampshire, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "threat to nearby infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T19:14:20Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Near Bitung, Indonesia",
     "severity": "Severe",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T17:50:37Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Gyalshing region, India",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 27.87,
-    "lon": 87.89,
-    "cascading_effects": [
-      "potential landslides",
-      "disruption of local infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T17:42:28Z"
   }
 ]
