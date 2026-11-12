@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, near Kiribati",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -171.3,
+    "cascading_effects": [
+      "Heavy rainfall leading to flash floods on low-lying islands",
+      "Strong winds causing coastal erosion and damage to infrastructure",
+      "Disruption of maritime navigation and shipping routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T15:17:37Z"
+  },
+  {
+    "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, near Micronesia",
     "severity": "Severe",
     "probability": "68%",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T13:56:27Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Okanogan, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.53,
-    "lon": -119.06,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in neighboring counties",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T13:48:14Z"
   }
 ]
