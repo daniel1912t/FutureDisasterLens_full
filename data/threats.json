@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Gyalshing region, India",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 27.87,
+    "lon": 87.89,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T11:32:29Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Indian Ocean, near 11.3\u00b0S, 50.5\u00b0E",
     "severity": "Severe",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T10:01:58Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Severo-Kuril\u2019sk Region, Russia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 50.44,
-    "lon": 156.61,
-    "cascading_effects": [
-      "tsunami generation",
-      "infrastructure damage",
-      "landslide risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T09:52:17Z"
   }
 ]
