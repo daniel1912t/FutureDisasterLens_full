@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Noda region, Japan",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 40.36,
+    "lon": 143.61,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption of transportation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T12:46:28Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T11:22:43Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "South Sandwich Islands, UK Overseas Territory",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -59.03,
-    "lon": -26.03,
-    "cascading_effects": [
-      "Potential tsunami generation affecting southern Atlantic coastlines",
-      "Disruption of marine navigation routes",
-      "Possible volcanic ash release from nearby active volcanoes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T11:14:29Z"
   }
 ]
