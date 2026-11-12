@@ -16,16 +16,14 @@ DATA_FILE = os.path.join(DATA_DIR, 'latest_prediction.json')
 ALL_DATA_FILE = os.path.join(DATA_DIR, 'all_threats.json')
 HEALTH_FILE = os.path.join(DATA_DIR, 'ai_health.json')
 
+# DIRECT GITHUB REPOSITORY TARGET
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN', '').strip()
-raw_repo = os.environ.get('GITHUB_REPO', '').strip()
-GITHUB_REPO = raw_repo.replace('https://github.com/', '').replace('http://github.com/', '').rstrip('/')
-if GITHUB_REPO.endswith('.git'):
-    GITHUB_REPO = GITHUB_REPO[:-4]
-GITHUB_BRANCH = os.environ.get('GITHUB_BRANCH', 'main').strip()
+GITHUB_REPO = "daniel1912t/FutureDisasterLens_full"
+GITHUB_BRANCH = "main"
 GITHUB_FILE_PATH = "data/threats.json"
 
 def fetch_from_github_direct():
-    if not GITHUB_TOKEN or not GITHUB_REPO:
+    if not GITHUB_TOKEN:
         return []
     url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{GITHUB_FILE_PATH}?ref={GITHUB_BRANCH}"
     headers = {
@@ -102,7 +100,6 @@ def load_json_data():
         except Exception:
             pass
 
-    # If local disk was wiped on container restart, pull directly from GitHub
     if not items:
         items = fetch_from_github_direct()
 
@@ -156,8 +153,9 @@ def get_ai_health():
             pass
     return nocache_response({
         "status": "ONLINE",
-        "github_configured": bool(GITHUB_TOKEN and GITHUB_REPO),
-        "github_repo": GITHUB_REPO
+        "github_configured": bool(GITHUB_TOKEN),
+        "github_repo": GITHUB_REPO,
+        "github_branch": GITHUB_BRANCH
     })
 
 @app.route('/api/latest_threat', methods=['GET'])
