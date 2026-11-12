@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Pacific Ocean, near 30.2\u00b0N, 154.1\u00b0E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 30.2,
+    "lon": 154.1,
+    "cascading_effects": [
+      "coastal flooding",
+      "high winds causing infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T01:04:58Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "South Sandwich Islands region",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T07:45:15Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Southern Indian Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.3,
-    "lon": 50.5,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "high winds causing maritime hazards"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T07:28:39Z"
   }
 ]
