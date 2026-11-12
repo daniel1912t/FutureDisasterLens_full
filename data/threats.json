@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "South Sandwich Islands",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -59.03,
+    "lon": -26.03,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T10:54:59Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Noda region, Japan",
     "severity": "Severe",
     "probability": "68%",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T11:32:29Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Indian Ocean, near 11.3\u00b0S, 50.5\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.3,
-    "lon": 50.5,
-    "cascading_effects": [
-      "heavy rainfall causing flash floods in coastal regions",
-      "strong winds damaging marine vessels and offshore platforms",
-      "storm surge impacting low-lying islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T11:22:43Z"
   }
 ]
