@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Southwest Indian Ocean, near 11.3\u00b0S, 50.5\u00b0E",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -11.3,
+    "lon": 50.5,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T09:14:56Z"
+  },
+  {
+    "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, near 30.2\u00b0N, 154.1\u00b0E",
     "severity": "Severe",
     "probability": "68%",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T07:53:52Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Johnson, Wyoming, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "air quality degradation",
-      "threat to nearby infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T07:45:15Z"
   }
 ]
