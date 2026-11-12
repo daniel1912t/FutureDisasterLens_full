@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Indian Ocean, near Madagascar",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.3,
+    "lon": 50.5,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods",
+      "High winds damaging coastal infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T14:42:40Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "South Sandwich Islands",
     "severity": "Moderate",
@@ -126,20 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T13:23:02Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 34.55,
-    "lon": -111.32,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T13:13:05Z"
   }
 ]
