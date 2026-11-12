@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg B22K Window",
+    "location": "Southern Ocean",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Potential maritime navigation hazards",
+      "Disruption to shipping lanes",
+      "Risk of ice melt affecting local albedo"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T06:06:16Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Okanogan, Washington, USA",
     "severity": "Moderate",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T04:44:18Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Near Cami\u00f1a, Chile",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -19.68,
-    "lon": -69.33,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T04:36:07Z"
   }
 ]
