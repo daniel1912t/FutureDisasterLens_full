@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 31.09,
+    "lon": -89.1,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T09:33:00Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Saint Helena Region",
     "severity": "Moderate",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T06:11:50Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential collision with commercial shipping lanes",
-      "Increased risk of coastal ice melt and localized sea level rise"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T08:01:58Z"
   }
 ]
