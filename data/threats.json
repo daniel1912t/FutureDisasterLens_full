@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.26,
+    "lon": -111.84,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T08:46:27Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Near Noda, Japan",
     "severity": "Severe",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T09:24:41Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Southwest Indian Ocean, near 11.3\u00b0S, 50.5\u00b0E",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -11.3,
-    "lon": 50.5,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T09:14:56Z"
   }
 ]
