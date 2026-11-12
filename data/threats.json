@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 31.09,
+    "lon": -89.1,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T06:16:04Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg B22K Window",
     "location": "Southern Ocean",
     "severity": "Moderate",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T04:52:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Pacific Ocean, near 9.9\u00b0N, 168.7\u00b0W",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.9,
-    "lon": -168.7,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "strong wind damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T04:44:18Z"
   }
 ]
