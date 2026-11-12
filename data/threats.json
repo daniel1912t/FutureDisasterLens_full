@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "South Sandwich Islands region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -59.03,
+    "lon": -26.03,
+    "cascading_effects": [
+      "potential tsunami generation",
+      "disruption of marine navigation",
+      "possible volcanic ash dispersal"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T16:21:46Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Wasatch, Utah, USA",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T15:01:01Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Evacuation of nearby communities",
-      "Potential strain on regional firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T14:51:05Z"
   }
 ]
