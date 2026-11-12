@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Kuril Islands, Russia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 50.44,
+    "lon": 156.61,
+    "cascading_effects": [
+      "Potential tsunami generation affecting coastal communities",
+      "Disruption of maritime traffic in the Pacific",
+      "Aftershock sequence impacting infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T05:11:57Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, near 30.2\u00b0N, 154.1\u00b0E",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-12T17:56:12Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Atlantic Ocean, near -11.3\u00b0, 50.5\u00b0",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.3,
-    "lon": 50.5,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "wind damage to marine vessels"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T03:49:35Z"
   }
 ]
