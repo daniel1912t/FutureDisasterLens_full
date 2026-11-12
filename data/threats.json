@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Near Noda, Japan",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 40.36,
+    "lon": 143.61,
+    "cascading_effects": [
+      "aftershocks",
+      "potential landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T17:23:04Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, near Antarctica",
     "severity": "Moderate",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T11:02:09Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Tako region, Japan",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.73,
-    "lon": 140.51,
-    "cascading_effects": [
-      "Potential aftershocks affecting nearby infrastructure",
-      "Landslide risk in adjacent mountainous terrain"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T15:52:20Z"
   }
 ]
