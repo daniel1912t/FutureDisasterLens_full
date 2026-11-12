@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "South Sandwich Islands",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -59.03,
+    "lon": -26.03,
+    "cascading_effects": [
+      "Tsunami generation",
+      "Disruption of marine navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T07:00:24Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Pacific Ocean",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T05:38:36Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Saint Helena, United Kingdom Overseas Territory",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -7.99,
-    "lon": -13.35,
-    "cascading_effects": [
-      "potential tsunami generation",
-      "damage to coastal infrastructure",
-      "disruption of communication networks"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T05:30:12Z"
   }
 ]
