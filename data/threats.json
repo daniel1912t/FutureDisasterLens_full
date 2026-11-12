@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Gyalshing region, India",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 27.87,
+    "lon": 87.89,
+    "cascading_effects": [
+      "potential landslides",
+      "disruption of local infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T17:42:28Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Near 9.8\u00b0N 173.2\u00b0W, Pacific Ocean",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T16:21:46Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Wasatch, Utah, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 40.51,
-    "lon": -110.94,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "threat to nearby infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T16:11:58Z"
   }
 ]
