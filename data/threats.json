@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Gyalshing region, India",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 27.87,
+    "lon": 87.89,
+    "cascading_effects": [
+      "landslide risk",
+      "damaged infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T14:13:07Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Johnson County, Wyoming, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T10:54:59Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Noda region, Japan",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 40.36,
-    "lon": 143.61,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage",
-      "Disruption of transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T12:46:28Z"
   }
 ]
