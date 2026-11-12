@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Indian Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.3,
+    "lon": 50.5,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "high winds causing infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T13:03:22Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "South Sandwich Islands",
     "severity": "Severe",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T11:42:11Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Gyalshing region, India",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 27.87,
-    "lon": 87.89,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T11:32:29Z"
   }
 ]
