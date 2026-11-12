@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "South Sandwich Islands",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -59.03,
+    "lon": -26.03,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T14:32:55Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Severo-Kuril\u2019sk region, Russia",
     "severity": "Severe",
     "probability": "68%",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T13:13:05Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Indian Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.3,
-    "lon": 50.5,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "high winds causing infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T13:03:22Z"
   }
 ]
