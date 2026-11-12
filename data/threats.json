@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Southern Indian Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.3,
+    "lon": 50.5,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "high winds causing maritime hazards"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T07:28:39Z"
+  },
+  {
+    "primary_threat": "Forecasted Severe Storm Window",
     "location": "Northern Philippines, Philippines",
     "severity": "Severe",
     "probability": "68%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T06:06:16Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Okanogan, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.53,
-    "lon": -119.06,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-12T19:58:04Z"
   }
 ]
