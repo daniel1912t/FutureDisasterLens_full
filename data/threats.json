@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Prescribed Fire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.28,
+    "lon": -111.67,
+    "cascading_effects": [
+      "air quality degradation",
+      "temporary road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T21:10:44Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Western Indian-Antarctic Ridge",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T19:47:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean near Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential collision with commercial shipping lanes",
-      "Disruption of scientific research vessel routes",
-      "Impact on local marine wildlife habitats"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T19:39:14Z"
   }
 ]
