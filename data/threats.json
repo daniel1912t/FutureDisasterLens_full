@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Near Cami\u00f1a, Chile",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -19.68,
+    "lon": -69.33,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T04:36:07Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Gyalshing Region, India",
     "severity": "Moderate",
     "probability": "68%",
