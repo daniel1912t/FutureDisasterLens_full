@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Wasatch, Utah, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 40.51,
+    "lon": -110.94,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "threat to nearby infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T16:11:58Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Off the coast of Oregon, USA",
     "severity": "Moderate",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T14:51:05Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Indian Ocean, near Madagascar",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.3,
-    "lon": 50.5,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods",
-      "High winds damaging coastal infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T14:42:40Z"
   }
 ]
