@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Off the coast of Oregon, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.45,
+    "lon": -129.62,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Coastal infrastructure damage",
+      "Disruption of marine navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T18:18:38Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Tako region, Japan",
     "severity": "Moderate",
     "probability": "68%",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T16:56:42Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Pacific Ocean, near 30.2\u00b0N 154.1\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 30.2,
-    "lon": 154.1,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "wind damage to infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T16:46:58Z"
   }
 ]
