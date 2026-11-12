@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Storm Window",
+    "location": "South Pacific Ocean, Near 9.8\u00b0S 173.2\u00b0W",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods",
+      "Coastal storm surge impacting low-lying islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T21:46:18Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Weining, China",
     "severity": "Severe",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T10:25:00Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Tako, Japan",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.73,
-    "lon": 140.51,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage to nearby roads and bridges"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T20:16:41Z"
   }
 ]
