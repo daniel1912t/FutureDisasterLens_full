@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Indian Ocean, near 11.3\u00b0S, 50.5\u00b0E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.3,
+    "lon": 50.5,
+    "cascading_effects": [
+      "heavy rainfall causing flash floods in coastal regions",
+      "strong winds damaging marine vessels and offshore platforms",
+      "storm surge impacting low-lying islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T11:22:43Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "South Sandwich Islands, UK Overseas Territory",
     "severity": "Severe",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T09:52:17Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Johnson, Wyoming, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "air quality degradation",
-      "road closures",
-      "threat to nearby wildlife habitats"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T09:44:16Z"
   }
 ]
