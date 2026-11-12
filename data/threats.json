@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Gyalshing, India",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 27.87,
+    "lon": 87.89,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T08:20:15Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Noda region, Japan",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T06:52:00Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Off the coast of Oregon, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.45,
-    "lon": -129.62,
-    "cascading_effects": [
-      "Potential tsunami generation affecting Pacific coastal communities",
-      "Disruption of offshore oil and gas platforms",
-      "Impact on marine navigation and shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T06:42:16Z"
   }
 ]
