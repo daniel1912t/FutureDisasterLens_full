@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg B22K Window",
+    "location": "Southern Ocean, near Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Disruption of shipping lanes",
+      "Potential damage to offshore structures",
+      "Impact on marine wildlife habitats"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T04:11:09Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Wasatch, Utah",
     "severity": "Moderate",
