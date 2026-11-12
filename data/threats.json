@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Noda, Japan",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 40.36,
+    "lon": 143.61,
+    "cascading_effects": [
+      "ground shaking",
+      "potential infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T06:24:22Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -131,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T05:02:09Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in surrounding states",
-      "Potential strain on local emergency services and evacuation routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T04:52:26Z"
   }
 ]
