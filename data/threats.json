@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, near 9.8\u00b0N, 171.3\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -171.3,
+    "cascading_effects": [
+      "coastal flooding",
+      "disruption of shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T11:04:32Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, near Antarctica",
     "severity": "Moderate",
@@ -41,21 +55,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T10:38:16Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific Ocean, near 9.8\u00b0N, 169.9\u00b0W",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -169.9,
-    "cascading_effects": [
-      "coastal flooding",
-      "marine navigation hazards",
-      "disruption to satellite communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T10:29:46Z"
   },
   {
     "primary_threat": "Forecasted Seismic Activity Window",
