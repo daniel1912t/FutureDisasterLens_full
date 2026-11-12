@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Pacific Ocean, near Kiribati",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -169.9,
+    "cascading_effects": [
+      "coastal flooding",
+      "disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T08:38:32Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Coastal Oregon, USA",
     "severity": "Moderate",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T07:10:38Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "South Sandwich Islands",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -59.03,
-    "lon": -26.03,
-    "cascading_effects": [
-      "Tsunami generation",
-      "Disruption of marine navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T07:00:24Z"
   }
 ]
