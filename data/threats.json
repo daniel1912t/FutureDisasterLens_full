@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Saint Helena Region",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -7.99,
+    "lon": -13.35,
+    "cascading_effects": [
+      "Potential tsunami risk",
+      "Infrastructure damage",
+      "Disruption of maritime navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T09:24:41Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Southwest Indian Ocean, near 11.3\u00b0S, 50.5\u00b0E",
     "severity": "Severe",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T08:01:58Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.26,
-    "lon": -111.84,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "threat to nearby infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T07:53:52Z"
   }
 ]
