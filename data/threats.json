@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Okanogan, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.53,
+    "lon": -119.06,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-12T19:58:04Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Indian Ocean",
     "severity": "Severe",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T04:36:07Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Gyalshing Region, India",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 27.87,
-    "lon": 87.89,
-    "cascading_effects": [
-      "landslides",
-      "damaged infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T04:26:20Z"
   }
 ]
