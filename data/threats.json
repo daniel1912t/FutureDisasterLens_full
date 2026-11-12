@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Tako, Japan",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.73,
+    "lon": 140.51,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage to nearby roads and bridges"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T20:16:41Z"
+  },
+  {
     "primary_threat": "Forecasted Prescribed Fire Window",
     "location": "Okanogan, Washington, USA",
     "severity": "Moderate",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T18:44:59Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Atlantic Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.3,
-    "lon": 50.5,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "wind damage to shipping"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T18:36:45Z"
   }
 ]
