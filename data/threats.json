@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Near Severo-Kuril\u2019sk, Russia",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 50.44,
+    "lon": 156.61,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Infrastructure damage",
+      "Aftershock sequence"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T18:44:59Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Atlantic Ocean",
     "severity": "Severe",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T17:23:04Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, near Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential disruption to nearby shipping lanes",
-      "Risk of iceberg grounding affecting coastal research stations"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T17:14:44Z"
   }
 ]
