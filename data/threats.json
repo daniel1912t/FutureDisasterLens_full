@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Window",
+    "location": "Southern Ocean, Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "shipping lane disruptions",
+      "potential impact on marine ecosystems"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T13:39:56Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, Philippines",
     "severity": "Extreme",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T12:18:42Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 31.09,
-    "lon": -89.1,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "potential power line damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T12:10:26Z"
   }
 ]
