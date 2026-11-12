@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Tako region, Japan",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.73,
+    "lon": 140.51,
+    "cascading_effects": [
+      "Potential aftershocks affecting nearby infrastructure",
+      "Landslide risk in adjacent mountainous terrain"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T15:52:20Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T14:32:55Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Severo-Kuril\u2019sk region, Russia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 50.44,
-    "lon": 156.61,
-    "cascading_effects": [
-      "Potential aftershocks affecting nearby islands",
-      "Disruption of maritime traffic in the Sea of Okhotsk",
-      "Risk of tsunamigenic activity impacting coastal communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T14:22:57Z"
   }
 ]
