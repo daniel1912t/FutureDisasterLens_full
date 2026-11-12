@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Near Noda, Japan",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 40.36,
+    "lon": 143.61,
+    "cascading_effects": [
+      "aftershocks",
+      "potential infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T03:43:00Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, near 30.2\u00b0N, 154.1\u00b0E",
     "severity": "Severe",
