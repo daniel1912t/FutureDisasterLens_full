@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Bitung, Indonesia",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": 1.12,
+    "lon": 126.11,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Landslide risk in nearby hillsides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T21:26:58Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "South of Akureyri, Iceland",
     "severity": "Severe",
     "probability": "68%",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T20:06:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "South Sandwich Islands",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -59.03,
-    "lon": -26.03,
-    "cascading_effects": [
-      "potential tsunami",
-      "landslide risk",
-      "marine navigation hazards"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T19:57:10Z"
   }
 ]
