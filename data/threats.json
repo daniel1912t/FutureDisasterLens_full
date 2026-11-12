@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.26,
+    "lon": -111.84,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "threat to nearby infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T07:53:52Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Severe",
     "probability": "68%",
@@ -12,20 +27,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T07:45:15Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 34.55,
-    "lon": -111.32,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T07:35:31Z"
   },
   {
     "primary_threat": "Forecasted Severe Storm Window",
