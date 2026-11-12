@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Okanogan, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.53,
+    "lon": -119.06,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in neighboring counties",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T13:48:14Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, Antarctica",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T12:26:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Coast of Oregon, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 44.45,
-    "lon": -129.62,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Aftershock sequence",
-      "Infrastructure damage to coastal facilities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T12:18:42Z"
   }
 ]
