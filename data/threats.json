@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Off the coast of Oregon, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.45,
+    "lon": -129.62,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption to marine navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T08:20:04Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Okanogan, Washington, USA",
     "severity": "Moderate",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T08:56:43Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Pacific Ocean, near Kiribati",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -169.9,
-    "cascading_effects": [
-      "coastal flooding",
-      "disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T08:38:32Z"
   }
 ]
