@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Coastal Oregon, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.45,
+    "lon": -129.62,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Infrastructure damage",
+      "Aftershock sequence"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T08:30:12Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Gyalshing, India",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T07:00:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -169.9,
-    "cascading_effects": [
-      "heavy rainfall causing flash floods",
-      "strong winds damaging coastal infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T06:52:00Z"
   }
 ]
