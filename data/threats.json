@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Window",
+    "location": "South Atlantic Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.3,
+    "lon": 50.5,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "wind damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T20:43:18Z"
+  },
+  {
     "primary_threat": "Forecasted Typhoon Window",
     "location": "Pacific Ocean, Micronesia",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T19:22:36Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "threat to nearby infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T19:14:20Z"
   }
 ]
