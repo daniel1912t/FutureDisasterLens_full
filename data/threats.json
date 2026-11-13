@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Bitung, Indonesia",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": 1.12,
+    "lon": 126.11,
+    "cascading_effects": [
+      "Potential landslides",
+      "Disruption to marine traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T23:09:14Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Georgia, USA",
     "severity": "Moderate",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T21:46:18Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Weining, China",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 27.22,
-    "lon": 104.19,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T21:36:42Z"
   }
 ]
