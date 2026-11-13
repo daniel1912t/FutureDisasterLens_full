@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Window",
+    "location": "Southern Ocean, Antarctica",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Potential collision with shipping lanes",
+      "Disruption of marine wildlife habitats"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T03:39:41Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Dry Lake Hills, Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T02:20:38Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Mwene-Ditu region, Democratic Republic of the Congo",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -6.94,
-    "lon": 22.68,
-    "cascading_effects": [
-      "landslides",
-      "infrastructure damage",
-      "disruption of river flow"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T02:11:04Z"
   }
 ]
