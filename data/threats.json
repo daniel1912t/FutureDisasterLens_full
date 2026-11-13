@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene, Georgia, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 33.75,
+    "lon": -83.26,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T23:00:55Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Mo\u00edres, Greece",
     "severity": "Severe",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T21:36:42Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Bitung, Indonesia",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": 1.12,
-    "lon": 126.11,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Landslide risk in nearby hillsides"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T21:26:58Z"
   }
 ]
