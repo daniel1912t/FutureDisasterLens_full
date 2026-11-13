@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos, New Hampshire, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "Air quality degradation affecting nearby towns",
+      "Potential strain on local firefighting resources",
+      "Risk of rapid spread to forested areas causing habitat loss"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T02:38:15Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Pagan region, Northern Mariana Islands",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T01:17:42Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Johnson, Wyoming, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities",
-      "threat to wildlife habitats"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T01:09:34Z"
   }
 ]
