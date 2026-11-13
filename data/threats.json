@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Wasatch, Utah, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 40.51,
+    "lon": -110.94,
+    "cascading_effects": [
+      "air quality degradation",
+      "potential evacuations",
+      "damage to vegetation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T18:11:28Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Okanogan County, Washington, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T16:48:53Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Near Changuillo, Peru",
-    "severity": "Severe",
-    "probability": "81%",
-    "lat": -14.99,
-    "lon": -75.88,
-    "cascading_effects": [
-      "landslide risk in Andean foothills",
-      "potential disruption to regional power grid"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T16:30:29Z"
   }
 ]
