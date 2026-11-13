@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Greece",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 34.7,
+    "lon": 24.88,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption to transport networks"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T00:50:10Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, near Micronesia",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T13:28:35Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Akureyri Region, Iceland",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 64.65,
-    "lon": -17.6,
-    "cascading_effects": [
-      "Potential landslides",
-      "Infrastructure damage",
-      "Disruption to power grid"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T23:18:54Z"
   }
 ]
