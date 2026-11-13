@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "West of Houma, Tonga",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -21.3,
+    "lon": -175.85,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of undersea communication cables",
+      "Landslides in coastal valleys"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T12:16:30Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Southeast of the Loyalty Islands",
     "severity": "Severe",
     "probability": "78%",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T10:56:20Z"
-  },
-  {
-    "primary_threat": "Forecasted Typhoon Window",
-    "location": "Pacific Ocean near 30.2\u00b0N, 154.1\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 30.2,
-    "lon": 154.1,
-    "cascading_effects": [
-      "heavy rainfall",
-      "flash floods",
-      "landslide risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T10:48:10Z"
   }
 ]
