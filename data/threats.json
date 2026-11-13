@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene, Georgia, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 33.75,
+    "lon": -83.26,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T05:58:40Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Kavieng region, Papua New Guinea",
     "severity": "Severe",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T04:36:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Pagan region, Northern Mariana Islands",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 18.89,
-    "lon": 145.6,
-    "cascading_effects": [
-      "tsunami risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T04:25:01Z"
   }
 ]
