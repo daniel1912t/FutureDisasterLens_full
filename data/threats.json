@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "South of the Fiji Islands",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -23.18,
+    "lon": 178.92,
+    "cascading_effects": [
+      "tsunami generation",
+      "landslide risk on nearby islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T20:01:20Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "South Sandwich Islands",
     "severity": "Severe",
     "probability": "68%",
@@ -131,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T08:38:58Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Johnson County, Wyoming, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "Smoke plume affecting air quality in nearby communities",
-      "Potential rapid spread to adjacent grasslands and forested areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T18:30:50Z"
   }
 ]
