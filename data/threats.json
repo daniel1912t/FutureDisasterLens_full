@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone 03S Window",
+    "location": "Southern Indian Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.3,
+    "lon": 50.5,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods",
+      "High winds damaging marine vessels"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T05:29:34Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T04:07:06Z"
-  },
-  {
-    "primary_threat": "Forecasted Typhoon Cempaka Window",
-    "location": "Pacific Ocean, near 30.2\u00b0N, 154.1\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 30.2,
-    "lon": 154.1,
-    "cascading_effects": [
-      "coastal flooding",
-      "landslide risk in mountainous islands",
-      "disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T03:57:27Z"
   }
 ]
