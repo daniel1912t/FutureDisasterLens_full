@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "South Sandwich Islands",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -58.96,
+    "lon": -25.73,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of marine navigation",
+      "Impact on nearby research stations"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T19:53:17Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg B22K Window",
     "location": "Southern Ocean, near Antarctica",
     "severity": "Moderate",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T18:30:50Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos County, New Hampshire, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in surrounding states",
-      "Potential evacuation of nearby communities",
-      "Strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T18:21:10Z"
   }
 ]
