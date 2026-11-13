@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Window",
+    "location": "Indian Ocean, near Madagascar",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.3,
+    "lon": 50.5,
+    "cascading_effects": [
+      "heavy rainfall",
+      "storm surge",
+      "coastal flooding"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T03:49:22Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, Antarctica",
     "severity": "Severe",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T02:28:43Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Philippines, Central Luzon",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 30.2,
-    "lon": 154.1,
-    "cascading_effects": [
-      "heavy rainfall leading to flash floods",
-      "landslide risk in mountainous areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T02:20:38Z"
   }
 ]
