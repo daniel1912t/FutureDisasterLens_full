@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Atlantic Ocean, near Namibia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.3,
+    "lon": 50.5,
+    "cascading_effects": [
+      "heavy rainfall causing flash floods",
+      "strong winds damaging coastal infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T01:43:36Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Papua New Guinea",
     "severity": "Severe",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T00:24:06Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Pacific Ocean, near Kiribati",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "Coastal flooding in low-lying islands",
-      "Disruption of maritime shipping lanes",
-      "Potential for tornadoes inland"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T00:14:28Z"
   }
 ]
