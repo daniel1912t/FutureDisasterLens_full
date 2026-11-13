@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Mwene-Ditu Region, Democratic Republic of the Congo",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -6.94,
+    "lon": 22.68,
+    "cascading_effects": [
+      "ground shaking",
+      "potential landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T00:32:19Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Weining, China",
     "severity": "Severe",
     "probability": "68%",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T23:09:14Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Georgia, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 33.75,
-    "lon": -83.26,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T23:00:55Z"
   }
 ]
