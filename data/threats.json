@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Barcelona, Philippines",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 8.21,
+    "lon": 127.2,
+    "cascading_effects": [
+      "Potential landslides in nearby hills",
+      "Disruption of coastal infrastructure",
+      "Aftershocks affecting nearby islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T11:30:35Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Window",
     "location": "South Indian Ocean",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T10:09:25Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean near Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential collision with commercial shipping lanes",
-      "Disruption of scientific research stations",
-      "Altered local sea ice formation patterns"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T10:00:37Z"
   }
 ]
