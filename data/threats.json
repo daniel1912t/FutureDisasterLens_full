@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Southern Atlantic Ocean, near -11.3\u00b0, 50.5\u00b0",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.3,
+    "lon": 50.5,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods in coastal regions",
+      "Strong winds generating dangerous sea state and potential maritime incidents"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T09:24:33Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "R\u00edo Grande region, Panama",
     "severity": "Severe",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T08:02:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T07:54:10Z"
   }
 ]
