@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Kuqa, Xinjiang, China",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 42.17,
+    "lon": 83.67,
+    "cascading_effects": [
+      "Potential aftershocks affecting nearby settlements",
+      "Risk of landslides in mountainous terrain"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T14:40:46Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Foot Creek, Johnson, Wyoming, USA",
     "severity": "Moderate",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T11:18:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "West Chile Rise, Pacific Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -36.44,
-    "lon": -97.98,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of undersea cable communications",
-      "Marine ecosystem disturbance"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T11:08:46Z"
   }
 ]
