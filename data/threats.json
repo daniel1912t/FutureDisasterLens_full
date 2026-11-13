@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Hazard Window",
+    "location": "Southern Ocean, near Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "shipping lane disruption",
+      "coastal erosion"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T23:36:45Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Southern Indian-Antarctic Ridge, International Waters",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T22:13:47Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Johnson, Wyoming, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "air quality degradation",
-      "threat to nearby wildlife habitats",
-      "potential road closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T22:04:02Z"
   }
 ]
