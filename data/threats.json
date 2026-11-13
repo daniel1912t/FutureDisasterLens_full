@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino County, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 34.51,
+    "lon": -111.26,
+    "cascading_effects": [
+      "Air quality degradation in nearby communities",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T17:43:48Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "South of the Fiji Islands",
     "severity": "Severe",
@@ -126,19 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T16:11:11Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, near Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "shipping route disruption",
-      "potential coastal ice impact"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T16:01:24Z"
   }
 ]
