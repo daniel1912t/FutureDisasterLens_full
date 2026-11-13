@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Atlantic Ocean near 11.3\u00b0S 50.5\u00b0E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.3,
+    "lon": 50.5,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods in coastal communities",
+      "Strong winds damaging marine vessels and offshore platforms",
+      "Potential storm surge impacting low\u2011lying islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T21:13:03Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "South of the Kermadec Islands",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T19:53:17Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg B22K Window",
-    "location": "Southern Ocean, near Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential maritime navigation hazards",
-      "Disruption to nearby research stations",
-      "Altered local sea ice formation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T19:43:42Z"
   }
 ]
