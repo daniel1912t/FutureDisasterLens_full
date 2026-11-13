@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Northwest of Kavieng, Papua New Guinea",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -1.47,
+    "lon": 149.96,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of coastal communications",
+      "Landslide risk in mountainous regions"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T21:22:42Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Atlantic Ocean near 11.3\u00b0S 50.5\u00b0E",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T20:01:20Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "South Sandwich Islands",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -58.96,
-    "lon": -25.73,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of marine navigation",
-      "Impact on nearby research stations"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T19:53:17Z"
   }
 ]
