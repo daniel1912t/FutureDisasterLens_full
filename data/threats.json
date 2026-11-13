@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg B22K Window",
+    "location": "Southern Ocean, near Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Potential maritime navigation hazards",
+      "Disruption to nearby research stations",
+      "Altered local sea ice formation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T19:43:42Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Window",
     "location": "South Pacific Ocean, near Fiji",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T18:21:10Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Wasatch, Utah, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 40.51,
-    "lon": -110.94,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential evacuations",
-      "damage to vegetation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T18:11:28Z"
   }
 ]
