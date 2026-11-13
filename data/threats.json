@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 31.09,
+    "lon": -89.1,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Potential evacuation of nearby communities",
+      "Strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T13:36:22Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Georgia, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T12:16:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Southeast of the Loyalty Islands",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -22.37,
-    "lon": 173.45,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Aftershock sequence",
-      "Infrastructure damage to coastal settlements"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T12:06:51Z"
   }
 ]
