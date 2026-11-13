@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Storm Pena Window",
+    "location": "Pacific Ocean, near 9.8\u00b0N, 173.2\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "heavy rainfall causing flash floods",
+      "storm surge impacting low-lying islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T04:15:12Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Papua New Guinea",
     "severity": "Severe",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T13:56:00Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Western Indian-Antarctic Ridge",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -51.43,
-    "lon": 139.59,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of undersea cable communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T02:49:29Z"
   }
 ]
