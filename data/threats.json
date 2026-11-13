@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "79 km WSW of Changuillo, Peru",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -14.99,
+    "lon": -75.88,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "aftershock sequence"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T20:47:08Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T19:24:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Window",
-    "location": "East China Sea, near Taiwan",
-    "severity": "Severe",
-    "probability": "81%",
-    "lat": 30.2,
-    "lon": 154.1,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "landslide risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T02:16:23Z"
   }
 ]
