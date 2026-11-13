@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Pacific Ocean, near Kiribati",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T02:01:20Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino County, Arizona, USA",
     "severity": "Moderate",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T00:41:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Mwene-Ditu Region, Democratic Republic of the Congo",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -6.94,
-    "lon": 22.68,
-    "cascading_effects": [
-      "ground shaking",
-      "potential landslides"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T00:32:19Z"
   }
 ]
