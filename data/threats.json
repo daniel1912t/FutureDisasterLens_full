@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Southeast of the Loyalty Islands",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -22.37,
+    "lon": 173.45,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Aftershock sequence",
+      "Infrastructure damage to coastal settlements"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T12:06:51Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean near 9.8\u00b0N, 173.2\u00b0W",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T10:48:10Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Pagan region, Northern Mariana Islands",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 18.89,
-    "lon": 145.6,
-    "cascading_effects": [
-      "tsunami potential",
-      "infrastructure damage",
-      "landslide risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T10:36:56Z"
   }
 ]
