@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "La Libertad, El Salvador",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 13.22,
+    "lon": -89.46,
+    "cascading_effects": [
+      "landslide risk in mountainous regions",
+      "potential damage to infrastructure",
+      "disruption of local transportation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T21:50:01Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T20:30:38Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Storm Window",
-    "location": "South Pacific Ocean, near 9.8\u00b0S 173.2\u00b0W",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "Heavy rainfall leading to flash flooding",
-      "Coastal storm surge impacting low-lying islands",
-      "Disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T20:19:27Z"
   }
 ]
