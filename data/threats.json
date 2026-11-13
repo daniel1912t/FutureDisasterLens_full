@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos County, New Hampshire, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in surrounding states",
+      "Potential evacuation of nearby communities",
+      "Strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T18:21:10Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Wasatch, Utah, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T16:57:03Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Kuqa, Xinjiang, China",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 42.17,
-    "lon": 83.67,
-    "cascading_effects": [
-      "Potential aftershocks affecting nearby infrastructure",
-      "Landslide risk in mountainous terrain",
-      "Disruption to regional power grid"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T16:48:53Z"
   }
 ]
