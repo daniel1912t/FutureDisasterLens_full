@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "West Tonga, Tonga",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -21.3,
+    "lon": -175.85,
+    "cascading_effects": [
+      "potential tsunami generation",
+      "damage to coastal infrastructure",
+      "disruption of marine navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T13:54:28Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Northwest Pacific Ocean, near 9.8\u00b0S, 173.2\u00b0W",
     "severity": "Severe",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T12:32:51Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Northern Philippines Sea, Philippines",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 30.2,
-    "lon": 154.1,
-    "cascading_effects": [
-      "heavy rainfall",
-      "landfall flooding",
-      "wind damage to coastal infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T12:24:40Z"
   }
 ]
