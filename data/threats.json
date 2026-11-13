@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "R\u00edo Grande, Panama",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 7.78,
+    "lon": -81.49,
+    "cascading_effects": [
+      "potential landslides",
+      "damage to infrastructure",
+      "disruption of local transportation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T11:39:00Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Barcelona, Philippines",
     "severity": "Moderate",
     "probability": "68%",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T10:19:03Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Lombok, Indonesia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -8.26,
-    "lon": 116.75,
-    "cascading_effects": [
-      "Potential landslides in nearby hills",
-      "Disruption of coastal infrastructure due to possible tsunami generation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T10:09:25Z"
   }
 ]
