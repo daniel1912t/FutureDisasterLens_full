@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos, New Hampshire, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in surrounding towns",
+      "Potential strain on local emergency services and evacuation routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T12:41:28Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Window",
     "location": "Southern Indian Ocean, near 11.3\u00b0S 50.5\u00b0E",
     "severity": "Severe",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T21:18:46Z"
-  },
-  {
-    "primary_threat": "Forecasted Prescribed Fire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.28,
-    "lon": -111.67,
-    "cascading_effects": [
-      "air quality degradation",
-      "temporary road closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T21:10:44Z"
   }
 ]
