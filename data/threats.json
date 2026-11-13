@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Papua New Guinea",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -1.59,
+    "lon": 149.89,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami potential",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T04:07:06Z"
+  },
+  {
     "primary_threat": "Forecasted Typhoon Cempaka Window",
     "location": "Pacific Ocean, near 30.2\u00b0N, 154.1\u00b0E",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T02:49:29Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "Air quality degradation affecting nearby towns",
-      "Potential strain on local firefighting resources",
-      "Risk of rapid spread to forested areas causing habitat loss"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T02:38:15Z"
   }
 ]
