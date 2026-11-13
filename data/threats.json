@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Wasatch, Utah, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 40.51,
+    "lon": -110.94,
+    "cascading_effects": [
+      "flash flooding",
+      "landslide risk",
+      "power outages"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T00:04:47Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Kavieng Region, Papua New Guinea",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T12:41:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Window",
-    "location": "Southern Indian Ocean, near 11.3\u00b0S 50.5\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.3,
-    "lon": 50.5,
-    "cascading_effects": [
-      "heavy rainfall causing flash floods",
-      "storm surge impacting coastal settlements",
-      "disruption to maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T22:33:15Z"
   }
 ]
