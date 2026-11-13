@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Typhoon Cempaka Window",
+    "location": "Pacific Ocean, East of Philippines",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 30.2,
+    "lon": 154.1,
+    "cascading_effects": [
+      "heavy rainfall leading to flooding",
+      "strong winds causing coastal erosion"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T22:23:33Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Tako, Japan",
     "severity": "Severe",
@@ -127,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T21:01:02Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in surrounding states",
-      "Potential strain on local emergency services and evacuation routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T20:52:55Z"
   }
 ]
