@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Okanogan County, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.53,
+    "lon": -119.06,
+    "cascading_effects": [
+      "Smoke plume affecting air quality in nearby communities",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T08:03:23Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Window",
     "location": "Southern Indian Ocean, near -11.3\u00b0, 50.5\u00b0",
     "severity": "Severe",
@@ -127,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T16:30:29Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "West Tonga, Tonga",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -21.3,
-    "lon": -175.85,
-    "cascading_effects": [
-      "potential tsunami generation",
-      "landslide risk in coastal valleys"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T16:20:49Z"
   }
 ]
