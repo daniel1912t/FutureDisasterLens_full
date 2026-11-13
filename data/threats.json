@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Kavieng Region, Papua New Guinea",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -1.59,
+    "lon": 149.89,
+    "cascading_effects": [
+      "Potential tsunami generation affecting coastal villages",
+      "Landslides in mountainous terrain",
+      "Disruption of air traffic in the region"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T23:56:37Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T22:33:15Z"
-  },
-  {
-    "primary_threat": "Forecasted Typhoon Cempaka Window",
-    "location": "Pacific Ocean, East of Philippines",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 30.2,
-    "lon": 154.1,
-    "cascading_effects": [
-      "heavy rainfall leading to flooding",
-      "strong winds causing coastal erosion"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T22:23:33Z"
   }
 ]
