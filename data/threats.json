@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "South Sandwich Islands Region",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -58.96,
+    "lon": -25.73,
+    "cascading_effects": [
+      "Potential tsunami generation affecting Southern Atlantic coastlines",
+      "Disruption of marine navigation routes",
+      "Triggering of submarine landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T17:24:31Z"
+  },
+  {
     "primary_threat": "Forecasted Typhoon Window",
     "location": "Northern Pacific Ocean, near 30.2\u00b0N, 154.1\u00b0E",
     "severity": "Severe",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T16:53:15Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific Ocean, near 9.8\u00b0S, 173.2\u00b0W",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "wind damage to vessels"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T15:43:26Z"
   }
 ]
