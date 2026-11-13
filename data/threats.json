@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Wasatch, Utah, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 40.51,
+    "lon": -110.94,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T09:34:23Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Southern Atlantic Ocean, near -11.3\u00b0, 50.5\u00b0",
     "severity": "Severe",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T08:10:36Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Labuan Lombok region, Indonesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -8.26,
-    "lon": 116.75,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T08:02:28Z"
   }
 ]
