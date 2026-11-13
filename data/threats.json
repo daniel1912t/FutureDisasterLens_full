@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg B22K Window",
+    "location": "Southern Ocean, Antarctica",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Potential collision with shipping lanes",
+      "Disruption of marine wildlife habitats",
+      "Altered oceanic currents affecting regional climate"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T05:39:17Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone 03S Window",
     "location": "Southern Indian Ocean",
     "severity": "Severe",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T04:15:12Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Papua New Guinea",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -1.59,
-    "lon": 149.89,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami potential",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T04:07:06Z"
   }
 ]
