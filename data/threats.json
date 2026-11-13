@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino County, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.27,
+    "lon": -111.62,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities",
+      "strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T01:53:14Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Atlantic Ocean, near Namibia",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T00:32:19Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Weining, China",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 27.22,
-    "lon": 104.19,
-    "cascading_effects": [
-      "Potential landslides in mountainous terrain",
-      "Disruption of regional transportation networks",
-      "Possible damage to hydroelectric infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T00:24:06Z"
   }
 ]
