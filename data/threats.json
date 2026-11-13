@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Kavieng region, Papua New Guinea",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -1.59,
+    "lon": 149.89,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of coastal shipping lanes due to tsunamigenic risk",
+      "Impact on local infrastructure and power grids"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T05:47:30Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg B22K Window",
     "location": "Southern Ocean, Antarctica",
     "severity": "Severe",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T04:25:01Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Storm Pena Window",
-    "location": "Pacific Ocean, near 9.8\u00b0N, 173.2\u00b0W",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "heavy rainfall causing flash floods",
-      "storm surge impacting low-lying islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T04:15:12Z"
   }
 ]
