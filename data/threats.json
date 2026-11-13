@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Wasatch, Utah, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 40.51,
+    "lon": -110.94,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T04:36:21Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Pagan region, Northern Mariana Islands",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T03:13:45Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Mo\u00edres region, Greece",
-    "severity": "Moderate",
-    "probability": "70%",
-    "lat": 34.7,
-    "lon": 24.88,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage",
-      "Disruption to transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T17:04:07Z"
   }
 ]
