@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Storm Window",
+    "location": "Central Pacific, near 9.8\u00b0N, 173.2\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods",
+      "Coastal storm surge impacting low-lying islands",
+      "Disruption to maritime navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T06:06:45Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Georgia, USA",
     "severity": "Moderate",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T04:44:27Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Wasatch, Utah, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 40.51,
-    "lon": -110.94,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T04:36:21Z"
   }
 ]
