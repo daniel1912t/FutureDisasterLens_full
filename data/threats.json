@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Storm Window",
+    "location": "Pacific Ocean near 9.8\u00b0N, 173.2\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "coastal flooding",
+      "high surf and erosion",
+      "disruption to maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T08:10:36Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Labuan Lombok region, Indonesia",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T06:34:10Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Moires region, Greece",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 34.7,
-    "lon": 24.88,
-    "cascading_effects": [
-      "Potential building collapses",
-      "Aftershocks affecting nearby villages",
-      "Disruption of local infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T06:24:23Z"
   }
 ]
