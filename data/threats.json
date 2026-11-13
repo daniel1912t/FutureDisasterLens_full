@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Guaymate, Dominican Republic",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 18.53,
+    "lon": -69.05,
+    "cascading_effects": [
+      "Potential structural damage to buildings",
+      "Aftershock sequence risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T20:11:02Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "South of the Fiji Islands",
     "severity": "Severe",
     "probability": "68%",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T08:48:40Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Storm Window",
-    "location": "Central Pacific Ocean",
-    "severity": "Moderate",
-    "probability": "70%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "landslides"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T08:38:58Z"
   }
 ]
