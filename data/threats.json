@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Storm Window",
+    "location": "Central Pacific Ocean",
+    "severity": "Moderate",
+    "probability": "70%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T08:38:58Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson County, Wyoming, USA",
     "severity": "Severe",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T17:16:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "West Chile Rise, Pacific Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -36.44,
-    "lon": -97.98,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption to undersea communication cables"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T17:05:12Z"
   }
 ]
