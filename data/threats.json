@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Typhoon Window",
+    "location": "Northern Pacific Ocean, near 30.2\u00b0N, 154.1\u00b0E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 30.2,
+    "lon": 154.1,
+    "cascading_effects": [
+      "heavy rainfall leading to flash floods",
+      "storm surge impacting coastal infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T17:16:24Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "West Chile Rise, Pacific Ocean",
     "severity": "Severe",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T15:43:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Southern Indian Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.3,
-    "lon": 50.5,
-    "cascading_effects": [
-      "high seas",
-      "coastal flooding",
-      "disruption to maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T15:35:03Z"
   }
 ]
