@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Typhoon Cempaka Window",
+    "location": "Pacific Ocean near 30.2\u00b0N, 154.1\u00b0E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 30.2,
+    "lon": 154.1,
+    "cascading_effects": [
+      "storm surge flooding",
+      "disruption of air traffic",
+      "landslide risk in mountainous regions"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T08:56:54Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T07:26:33Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Foot Creek, Johnson County, Wyoming, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "Air quality degradation affecting nearby communities",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T07:17:01Z"
   }
 ]
