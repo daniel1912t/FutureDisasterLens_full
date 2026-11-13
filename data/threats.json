@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Atlantic Ocean, near -11.3\u00b0, 50.5\u00b0",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.3,
+    "lon": 50.5,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods in coastal islands",
+      "Strong winds damaging marine vessels and offshore platforms"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T12:59:06Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Moderate",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T11:39:00Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Barcelona, Philippines",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 8.21,
-    "lon": 127.2,
-    "cascading_effects": [
-      "Potential landslides in nearby hills",
-      "Disruption of coastal infrastructure",
-      "Aftershocks affecting nearby islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T11:30:35Z"
   }
 ]
