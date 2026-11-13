@@ -1,18 +1,18 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
-    "location": "Scott, Mississippi, USA",
+    "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
     "probability": "68%",
-    "lat": 32.42,
-    "lon": -89.6,
+    "lat": 31.09,
+    "lon": -89.1,
     "cascading_effects": [
       "air quality degradation",
       "evacuation of nearby communities",
-      "strain on local firefighting resources"
+      "damage to infrastructure"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-14T07:36:19Z"
+    "time_of_event": "2026-11-14T07:44:27Z"
   },
   {
     "primary_threat": "Forecasted Tropical Cyclone Window",
