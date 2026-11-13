@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Southern Indian Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.3,
+    "lon": 50.5,
+    "cascading_effects": [
+      "high seas",
+      "coastal flooding",
+      "disruption to maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T15:35:03Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T14:14:06Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Loyalty Islands, New Caledonia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -22.37,
-    "lon": 173.45,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Landslides in coastal valleys"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T14:04:17Z"
   }
 ]
