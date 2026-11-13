@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Near Changuillo, Peru",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -14.99,
+    "lon": -75.88,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "possible tsunami if offshore"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T08:48:40Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Storm Window",
     "location": "Central Pacific Ocean",
     "severity": "Moderate",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T17:24:31Z"
-  },
-  {
-    "primary_threat": "Forecasted Typhoon Window",
-    "location": "Northern Pacific Ocean, near 30.2\u00b0N, 154.1\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 30.2,
-    "lon": 154.1,
-    "cascading_effects": [
-      "heavy rainfall leading to flash floods",
-      "storm surge impacting coastal infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T17:16:24Z"
   }
 ]
