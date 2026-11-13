@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Kavieng, Papua New Guinea",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -1.47,
+    "lon": 149.96,
+    "cascading_effects": [
+      "tsunami risk",
+      "landslide potential",
+      "damage to coastal infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T19:06:32Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T17:43:48Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "South of the Fiji Islands",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -23.18,
-    "lon": 178.92,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of undersea communication cables"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T17:34:08Z"
   }
 ]
