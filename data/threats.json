@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Window",
+    "location": "Southern Ocean, Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "shipping lane disruption",
+      "coastal erosion"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T08:20:26Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Storm Window",
     "location": "Pacific Ocean near 9.8\u00b0N, 173.2\u00b0W",
     "severity": "Severe",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T20:42:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 34.51,
-    "lon": -111.26,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T06:34:10Z"
   }
 ]
