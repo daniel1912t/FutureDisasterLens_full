@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Mwene-Ditu region, Democratic Republic of the Congo",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -6.94,
+    "lon": 22.68,
+    "cascading_effects": [
+      "Potential aftershocks affecting nearby settlements",
+      "Risk of landslides in mountainous terrain",
+      "Disruption of local transportation and communication networks"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T09:06:32Z"
+  },
+  {
     "primary_threat": "Forecasted Typhoon Cempaka Window",
     "location": "Pacific Ocean near 30.2\u00b0N, 154.1\u00b0E",
     "severity": "Severe",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T07:44:27Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Window",
-    "location": "Southern Indian Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.3,
-    "lon": 50.5,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods on nearby islands",
-      "High seas leading to coastal erosion and damage to marine infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T07:26:33Z"
   }
 ]
