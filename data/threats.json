@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Storm Window",
+    "location": "South Pacific Ocean, near 9.8\u00b0S 173.2\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "Heavy rainfall leading to flash flooding",
+      "Coastal storm surge impacting low-lying islands",
+      "Disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T20:19:27Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Guaymate, Dominican Republic",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T18:58:22Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Near Changuillo, Peru",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -14.99,
-    "lon": -75.88,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "possible tsunami if offshore"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T08:48:40Z"
   }
 ]
