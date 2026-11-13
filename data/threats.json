@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Window",
+    "location": "Southern Indian Ocean, near 11.3\u00b0S 50.5\u00b0E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.3,
+    "lon": 50.5,
+    "cascading_effects": [
+      "heavy rainfall causing flash floods",
+      "storm surge impacting coastal settlements",
+      "disruption to maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T22:33:15Z"
+  },
+  {
     "primary_threat": "Forecasted Typhoon Cempaka Window",
     "location": "Pacific Ocean, East of Philippines",
     "severity": "Severe",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T21:10:44Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Western Indian-Antarctic Ridge",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -51.43,
-    "lon": 139.59,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of undersea cable communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T21:01:02Z"
   }
 ]
