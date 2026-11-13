@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Johnson, Wyoming, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "air quality degradation",
+      "threat to nearby livestock and infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T12:51:01Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T11:30:35Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Window",
-    "location": "South Indian Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.3,
-    "lon": 50.5,
-    "cascading_effects": [
-      "heavy rainfall causing flash floods in nearby islands",
-      "storm surge impacting coastal communities",
-      "disruption of maritime shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T11:22:18Z"
   }
 ]
