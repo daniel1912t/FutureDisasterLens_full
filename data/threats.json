@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "West Chile Rise, Pacific Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -36.44,
+    "lon": -97.98,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption to undersea communication cables"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T17:05:12Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T15:35:03Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino County, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.27,
-    "lon": -111.62,
-    "cascading_effects": [
-      "air quality degradation",
-      "threat to nearby communities",
-      "potential for rapid spread due to wind"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T15:16:56Z"
   }
 ]
