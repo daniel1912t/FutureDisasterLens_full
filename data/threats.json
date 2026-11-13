@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Pagan region, Northern Mariana Islands",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 18.89,
+    "lon": 145.6,
+    "cascading_effects": [
+      "tsunami risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T04:25:01Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Storm Pena Window",
     "location": "Pacific Ocean, near 9.8\u00b0N, 173.2\u00b0W",
     "severity": "Severe",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T17:04:07Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Johnson, Wyoming, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T13:56:00Z"
   }
 ]
