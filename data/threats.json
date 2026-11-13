@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Northwest Pacific Ocean, near 9.8\u00b0S, 173.2\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "high winds causing coastal flooding",
+      "heavy rainfall leading to landslides",
+      "potential disruption to shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T13:44:35Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T12:24:40Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "West of Houma, Tonga",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -21.3,
-    "lon": -175.85,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of undersea communication cables",
-      "Landslides in coastal valleys"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T12:16:30Z"
   }
 ]
