@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "South Sandwich Islands region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -58.96,
+    "lon": -25.73,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of marine navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T21:58:38Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "La Libertad, El Salvador",
     "severity": "Moderate",
     "probability": "68%",
@@ -131,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T20:40:25Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Johnson, Wyoming, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in surrounding counties",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T20:30:38Z"
   }
 ]
