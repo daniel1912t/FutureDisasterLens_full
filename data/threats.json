@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Pagan region, Northern Mariana Islands",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 18.89,
+    "lon": 145.6,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Coastal tsunami risk",
+      "Infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T06:17:51Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Storm Window",
     "location": "Central Pacific, near 9.8\u00b0N, 173.2\u00b0W",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T04:55:32Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Mwene-Ditu region, Democratic Republic of the Congo",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -6.94,
-    "lon": 22.68,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "disruption of transport routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T04:44:27Z"
   }
 ]
