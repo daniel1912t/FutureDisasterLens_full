@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Lombok, Indonesia",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -8.26,
+    "lon": 116.75,
+    "cascading_effects": [
+      "Potential landslides in nearby hills",
+      "Disruption of coastal infrastructure due to possible tsunami generation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T10:09:25Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean near Antarctica",
     "severity": "Moderate",
@@ -132,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T08:48:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Pagan, Northern Mariana Islands",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 18.89,
-    "lon": 145.6,
-    "cascading_effects": [
-      "potential tsunami generation",
-      "damage to local infrastructure",
-      "disruption of communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T08:38:27Z"
   }
 ]
