@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Philippines, Central Luzon",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 30.2,
+    "lon": 154.1,
+    "cascading_effects": [
+      "heavy rainfall leading to flash floods",
+      "landslide risk in mountainous areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T02:20:38Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Mwene-Ditu region, Democratic Republic of the Congo",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T05:59:55Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Greece",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 34.7,
-    "lon": 24.88,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage",
-      "Disruption to transport networks"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T00:50:10Z"
   }
 ]
