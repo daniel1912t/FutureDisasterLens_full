@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Window",
+    "location": "East China Sea, near Taiwan",
+    "severity": "Severe",
+    "probability": "81%",
+    "lat": 30.2,
+    "lon": 154.1,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "landslide risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T02:16:23Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Kavieng, Papua New Guinea",
     "severity": "Severe",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T17:52:06Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino County, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 34.51,
-    "lon": -111.26,
-    "cascading_effects": [
-      "Air quality degradation in nearby communities",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T17:43:48Z"
   }
 ]
