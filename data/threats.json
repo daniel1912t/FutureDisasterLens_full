@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino County, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.27,
+    "lon": -111.62,
+    "cascading_effects": [
+      "air quality degradation",
+      "threat to nearby communities",
+      "potential for rapid spread due to wind"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T15:16:56Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "West Chile Rise, Pacific Ocean",
     "severity": "Severe",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T13:54:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Northwest Pacific Ocean, near 9.8\u00b0S, 173.2\u00b0W",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "high winds causing coastal flooding",
-      "heavy rainfall leading to landslides",
-      "potential disruption to shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T13:44:35Z"
   }
 ]
