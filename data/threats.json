@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Pagan region, Northern Mariana Islands",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 18.89,
+    "lon": 145.6,
+    "cascading_effects": [
+      "tsunami potential",
+      "infrastructure damage",
+      "landslide risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T10:36:56Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Loyalty Islands, New Caledonia",
     "severity": "Moderate",
     "probability": "78%",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T09:14:48Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Mwene-Ditu region, Democratic Republic of the Congo",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -6.94,
-    "lon": 22.68,
-    "cascading_effects": [
-      "Potential aftershocks affecting nearby settlements",
-      "Risk of landslides in mountainous terrain",
-      "Disruption of local transportation and communication networks"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T09:06:32Z"
   }
 ]
