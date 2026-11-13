@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 31.09,
+    "lon": -89.1,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T09:42:37Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Wasatch, Utah, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T08:20:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Storm Window",
-    "location": "Pacific Ocean near 9.8\u00b0N, 173.2\u00b0W",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "coastal flooding",
-      "high surf and erosion",
-      "disruption to maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T08:10:36Z"
   }
 ]
