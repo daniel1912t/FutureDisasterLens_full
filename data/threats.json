@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Akureyri Region, Iceland",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 64.65,
+    "lon": -17.6,
+    "cascading_effects": [
+      "Potential landslides",
+      "Infrastructure damage",
+      "Disruption to power grid"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T23:18:54Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Bitung, Indonesia",
     "severity": "Moderate",
     "probability": "78%",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T11:55:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Storm Window",
-    "location": "South Pacific Ocean, Near 9.8\u00b0S 173.2\u00b0W",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods",
-      "Coastal storm surge impacting low-lying islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T21:46:18Z"
   }
 ]
