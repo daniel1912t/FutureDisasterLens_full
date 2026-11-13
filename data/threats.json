@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Loyalty Islands, New Caledonia",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -22.37,
+    "lon": 173.45,
+    "cascading_effects": [
+      "landslide risk in mountainous terrain",
+      "potential tsunamigenic activity affecting nearby coastlines"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T08:28:42Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, Antarctica",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T06:51:58Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Mwene-Ditu region, Democratic Republic of the Congo",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -6.94,
-    "lon": 22.68,
-    "cascading_effects": [
-      "Potential landslides in surrounding hills",
-      "Infrastructure damage to roads and bridges",
-      "Disruption of local mining operations"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T20:42:21Z"
   }
 ]
