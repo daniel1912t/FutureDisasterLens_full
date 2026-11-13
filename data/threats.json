@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "South of the Kermadec Islands",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -32.75,
+    "lon": -178.64,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption to undersea cables"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T21:04:53Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Northern Philippines, Region",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T19:43:42Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Window",
-    "location": "South Pacific Ocean, near Fiji",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.3,
-    "lon": 50.5,
-    "cascading_effects": [
-      "storm surge flooding",
-      "heavy rainfall leading to landslides",
-      "disruption of maritime shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T19:34:09Z"
   }
 ]
