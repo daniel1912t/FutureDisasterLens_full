@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Window",
+    "location": "Southern Indian Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.3,
+    "lon": 50.5,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods on nearby islands",
+      "High seas leading to coastal erosion and damage to marine infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T07:26:33Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Foot Creek, Johnson County, Wyoming, USA",
     "severity": "Moderate",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T06:06:45Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Georgia, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 33.75,
-    "lon": -83.26,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T05:58:40Z"
   }
 ]
