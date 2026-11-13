@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Labuan Lombok region, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -8.26,
+    "lon": 116.75,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T08:02:28Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Moderate",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T06:24:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Pagan region, Northern Mariana Islands",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 18.89,
-    "lon": 145.6,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Coastal tsunami risk",
-      "Infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T06:17:51Z"
   }
 ]
