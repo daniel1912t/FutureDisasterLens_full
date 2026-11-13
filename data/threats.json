@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Window",
+    "location": "Southern Ocean, near Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "shipping route disruption",
+      "potential coastal ice impact"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T16:01:24Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Georgia, USA",
     "severity": "Moderate",
@@ -131,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T14:40:46Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Foot Creek, Johnson, Wyoming, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in nearby towns",
-      "Potential evacuation of residents and disruption of local transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T14:32:38Z"
   }
 ]
