@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Mo\u00edres, Greece",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 34.7,
+    "lon": 24.88,
+    "cascading_effects": [
+      "Potential aftershocks affecting nearby towns",
+      "Infrastructure damage to roads and bridges",
+      "Possible landslides in mountainous areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T22:51:20Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Moderate",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T21:26:58Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "South of Akureyri, Iceland",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 64.65,
-    "lon": -17.6,
-    "cascading_effects": [
-      "Potential landslides",
-      "Infrastructure damage",
-      "Disruption to power grid"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T21:18:46Z"
   }
 ]
