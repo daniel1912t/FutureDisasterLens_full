@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Mwene-Ditu region, Democratic Republic of the Congo",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -6.94,
+    "lon": 22.68,
+    "cascading_effects": [
+      "Potential landslides in surrounding hills",
+      "Infrastructure damage to roads and bridges",
+      "Disruption of local mining operations"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T20:42:21Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T05:21:22Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Levuka region, Fiji",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -17.94,
-    "lon": -178.05,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami generation potential"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T05:11:49Z"
   }
 ]
