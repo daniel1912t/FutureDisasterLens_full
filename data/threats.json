@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Tako, Japan",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 35.73,
+    "lon": 140.51,
+    "cascading_effects": [
+      "potential landslides",
+      "infrastructure damage",
+      "tsunami risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T22:13:47Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Moderate",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T20:52:55Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Window",
-    "location": "South Atlantic Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.3,
-    "lon": 50.5,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "wind damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T20:43:18Z"
   }
 ]
