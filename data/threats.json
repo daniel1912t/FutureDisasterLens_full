@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Northern Philippines Sea, Philippines",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 30.2,
+    "lon": 154.1,
+    "cascading_effects": [
+      "heavy rainfall",
+      "landfall flooding",
+      "wind damage to coastal infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T12:24:40Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "West of Houma, Tonga",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T11:02:52Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Okanogan, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.53,
-    "lon": -119.06,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T10:56:20Z"
   }
 ]
