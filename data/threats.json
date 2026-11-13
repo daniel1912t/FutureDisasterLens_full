@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Barcelona, Philippines",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 8.21,
+    "lon": 127.2,
+    "cascading_effects": [
+      "Potential landslides",
+      "Infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T14:14:06Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Loyalty Islands, New Caledonia",
     "severity": "Severe",
     "probability": "68%",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T12:51:01Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "Air quality degradation affecting nearby communities",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T12:42:47Z"
   }
 ]
