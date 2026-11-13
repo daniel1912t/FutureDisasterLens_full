@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Moires region, Greece",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 34.7,
+    "lon": 24.88,
+    "cascading_effects": [
+      "Potential building collapses",
+      "Aftershocks affecting nearby villages",
+      "Disruption of local infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T06:24:23Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Pagan region, Northern Mariana Islands",
     "severity": "Severe",
     "probability": "68%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T05:03:42Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Labuan Lombok region, Indonesia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -8.26,
-    "lon": 116.75,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "tsunami potential"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T04:55:32Z"
   }
 ]
