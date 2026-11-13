@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Mo\u00edres region, Greece",
+    "severity": "Moderate",
+    "probability": "70%",
+    "lat": 34.7,
+    "lon": 24.88,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption to transportation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T17:04:07Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T01:43:36Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Papua New Guinea",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -1.59,
-    "lon": 149.89,
-    "cascading_effects": [
-      "landslides",
-      "tsunami potential",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T01:33:55Z"
   }
 ]
