@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "R\u00edo Grande region, Panama",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 7.78,
+    "lon": -81.49,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "potential tsunamigenic activity"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T09:14:48Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Mwene-Ditu region, Democratic Republic of the Congo",
     "severity": "Severe",
     "probability": "68%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T07:54:10Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 31.09,
-    "lon": -89.1,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities",
-      "damage to infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T07:44:27Z"
   }
 ]
