@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Houma region, Tonga",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -21.3,
+    "lon": -175.85,
+    "cascading_effects": [
+      "tsunami generation",
+      "infrastructure damage",
+      "landslide risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T10:19:03Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Lombok, Indonesia",
     "severity": "Moderate",
     "probability": "68%",
@@ -131,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T08:56:54Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.28,
-    "lon": -111.67,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T08:48:21Z"
   }
 ]
