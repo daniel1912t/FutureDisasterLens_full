@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, near 9.8\u00b0S, 173.2\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "wind damage to vessels"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T15:43:26Z"
+  },
+  {
+    "primary_threat": "Forecasted Severe Storm Window",
     "location": "Southern Indian Ocean",
     "severity": "Severe",
     "probability": "68%",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T14:22:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Barcelona, Philippines",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 8.21,
-    "lon": 127.2,
-    "cascading_effects": [
-      "Potential landslides",
-      "Infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T14:14:06Z"
   }
 ]
