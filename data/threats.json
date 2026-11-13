@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "R\u00edo Grande, Panama",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 7.78,
+    "lon": -81.49,
+    "cascading_effects": [
+      "landslides",
+      "road closures",
+      "damage to bridges"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T07:00:25Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Window",
     "location": "Near Tokushima, Japan",
     "severity": "Severe",
@@ -132,19 +147,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T05:39:17Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone 03S Window",
-    "location": "Southern Indian Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.3,
-    "lon": 50.5,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods",
-      "High winds damaging marine vessels"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T05:29:34Z"
   }
 ]
