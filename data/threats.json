@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "South of the Fiji Islands",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -23.18,
+    "lon": 178.92,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of undersea communication cables"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T17:34:08Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "South Sandwich Islands Region",
     "severity": "Severe",
     "probability": "78%",
@@ -126,20 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T16:01:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Georgia, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 33.75,
-    "lon": -83.26,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in nearby communities",
-      "Potential strain on local firefighting resources",
-      "Risk of rapid fire spread to adjacent forested areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T16:53:15Z"
   }
 ]
