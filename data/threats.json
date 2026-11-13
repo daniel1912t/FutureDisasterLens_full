@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Pagan region, Northern Mariana Islands",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 18.89,
+    "lon": 145.6,
+    "cascading_effects": [
+      "tsunami potential",
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T02:28:43Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Philippines, Central Luzon",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T01:09:34Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Moderate",
-    "probability": "71%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Threat to nearby forest habitats",
-      "Potential evacuation orders for local communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T05:59:55Z"
   }
 ]
