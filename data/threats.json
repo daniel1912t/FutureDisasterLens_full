@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos, New Hampshire, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T11:41:56Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean near 69.76\u00b0S 163.35\u00b0E",
     "severity": "Moderate",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T20:19:27Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Guaymate, Dominican Republic",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 18.53,
-    "lon": -69.05,
-    "cascading_effects": [
-      "Potential structural damage to buildings",
-      "Aftershock sequence risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T20:11:02Z"
   }
 ]
