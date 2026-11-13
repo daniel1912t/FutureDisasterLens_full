@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Dry Lake Hills, Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.27,
+    "lon": -111.62,
+    "cascading_effects": [
+      "air quality degradation",
+      "threat to nearby infrastructure",
+      "potential evacuation orders"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T03:31:32Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T02:11:04Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Pacific Ocean, near Kiribati",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T02:01:20Z"
   }
 ]
