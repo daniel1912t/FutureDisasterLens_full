@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Loyalty Islands, New Caledonia",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": -22.37,
+    "lon": 173.45,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of coastal marine ecosystems due to submarine shaking"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T10:27:11Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Houma region, Tonga",
     "severity": "Severe",
     "probability": "68%",
@@ -131,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T09:06:32Z"
-  },
-  {
-    "primary_threat": "Forecasted Typhoon Cempaka Window",
-    "location": "Pacific Ocean near 30.2\u00b0N, 154.1\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 30.2,
-    "lon": 154.1,
-    "cascading_effects": [
-      "storm surge flooding",
-      "disruption of air traffic",
-      "landslide risk in mountainous regions"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T08:56:54Z"
   }
 ]
