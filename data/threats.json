@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos, New Hampshire, USA",
+    "severity": "Moderate",
+    "probability": "71%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Threat to nearby forest habitats",
+      "Potential evacuation orders for local communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T05:59:55Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Greece",
     "severity": "Moderate",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T23:36:45Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Southern Indian-Antarctic Ridge, International Waters",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -51.43,
-    "lon": 139.59,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of undersea communication cables",
-      "Impact on marine navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T13:28:35Z"
   }
 ]
