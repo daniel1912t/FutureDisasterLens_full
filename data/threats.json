@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Foot Creek, Johnson County, Wyoming, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "Air quality degradation affecting nearby communities",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T07:17:01Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -131,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T05:58:40Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Kavieng region, Papua New Guinea",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -1.59,
-    "lon": 149.89,
-    "cascading_effects": [
-      "Potential landslides in mountainous terrain",
-      "Disruption of coastal shipping lanes due to tsunamigenic risk",
-      "Impact on local infrastructure and power grids"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T05:47:30Z"
   }
 ]
