@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Johnson, Wyoming, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "air quality degradation",
+      "threat to nearby wildlife habitats",
+      "potential road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-13T22:04:02Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-13T20:43:18Z"
-  },
-  {
-    "primary_threat": "Forecasted Typhoon Window",
-    "location": "Pacific Ocean, Micronesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 30.2,
-    "lon": 154.1,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods",
-      "Storm surge impacting coastal infrastructure",
-      "High winds leading to power outages"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-13T20:34:55Z"
   }
 ]
