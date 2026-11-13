@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Papua New Guinea",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -1.59,
+    "lon": 149.89,
+    "cascading_effects": [
+      "landslides",
+      "tsunami potential",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T01:33:55Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T00:14:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Wasatch, Utah, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 40.51,
-    "lon": -110.94,
-    "cascading_effects": [
-      "flash flooding",
-      "landslide risk",
-      "power outages"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T00:04:47Z"
   }
 ]
