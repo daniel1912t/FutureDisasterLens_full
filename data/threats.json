@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "West Chile Rise, Pacific Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -36.44,
+    "lon": -97.98,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of undersea cable communications",
+      "Marine ecosystem disturbance"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T11:08:46Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Atlantic Ocean, near -11.3\u00b0, 50.5\u00b0",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T11:47:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "R\u00edo Grande, Panama",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 7.78,
-    "lon": -81.49,
-    "cascading_effects": [
-      "potential landslides",
-      "damage to infrastructure",
-      "disruption of local transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T11:39:00Z"
   }
 ]
