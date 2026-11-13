@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Okanogan, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.53,
+    "lon": -119.06,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T10:56:20Z"
+  },
+  {
     "primary_threat": "Forecasted Typhoon Window",
     "location": "Pacific Ocean near 30.2\u00b0N, 154.1\u00b0E",
     "severity": "Severe",
@@ -131,19 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T09:34:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Southern Atlantic Ocean, near -11.3\u00b0, 50.5\u00b0",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.3,
-    "lon": 50.5,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods in coastal regions",
-      "Strong winds generating dangerous sea state and potential maritime incidents"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T09:24:33Z"
   }
 ]
