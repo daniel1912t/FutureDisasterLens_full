@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene County, Georgia, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 33.75,
+    "lon": -83.26,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T12:49:03Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, near 30.2\u00b0N 154.1\u00b0E",
     "severity": "Severe",
@@ -131,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T11:28:27Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "State of Yap, Federated States of Micronesia",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 9.7,
-    "lon": 147.36,
-    "cascading_effects": [
-      "Potential tsunami generation affecting nearby islands",
-      "Disruption of undersea communication cables",
-      "Landslides on steep coastal terrain"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T11:17:22Z"
   }
 ]
