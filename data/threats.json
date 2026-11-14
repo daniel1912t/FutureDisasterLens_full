@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Stevens, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.4,
+    "lon": -117.53,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T12:57:14Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene County, Georgia, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T11:36:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Antarctica, Southern Ocean",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential shipping lane closures",
-      "Risk to offshore platforms",
-      "Impact on marine wildlife migration"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T11:28:27Z"
   }
 ]
