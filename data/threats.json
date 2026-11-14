@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Tagbina, Philippines",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 8.4,
+    "lon": 126.21,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami potential",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T16:43:54Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Foot Creek, Johnson, Wyoming, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T15:23:44Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Storm Window",
-    "location": "Pacific Ocean, near Micronesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "heavy rainfall",
-      "flash flooding",
-      "storm surge"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T15:14:03Z"
   }
 ]
