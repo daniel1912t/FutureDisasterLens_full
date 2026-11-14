@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Johnson, Wyoming, USA",
+    "severity": "Severe",
+    "probability": "81%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in neighboring states",
+      "Potential rapid spread to nearby forested areas",
+      "Strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T02:29:58Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "San Antonio de los Cobres, Argentina",
     "severity": "Moderate",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T03:10:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Okanogan, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.53,
-    "lon": -119.06,
-    "cascading_effects": [
-      "air quality degradation",
-      "local evacuations",
-      "road closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T03:02:29Z"
   }
 ]
