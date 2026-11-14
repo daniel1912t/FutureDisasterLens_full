@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Hazard Window",
+    "location": "Southern Ocean, Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "shipping route disruption",
+      "potential impact on marine wildlife",
+      "coastal ice melt acceleration"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T03:40:26Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Kermadec Islands region",
     "severity": "Severe",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T22:08:27Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "South Sandwich Islands region",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -58.96,
-    "lon": -25.73,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of marine navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T21:58:38Z"
   }
 ]
