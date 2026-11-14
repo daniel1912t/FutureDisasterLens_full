@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Northern Mid-Atlantic Ridge",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 30.12,
+    "lon": -42.63,
+    "cascading_effects": [
+      "Potential tsunami generation affecting Atlantic coastal regions",
+      "Disruption of undersea communication cables"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T07:48:13Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Hihifo region, Tonga",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T20:25:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "State of Yap, Federated States of Micronesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.7,
-    "lon": 147.36,
-    "cascading_effects": [
-      "tsunami potential",
-      "infrastructure damage",
-      "disruption of communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T06:17:52Z"
   }
 ]
