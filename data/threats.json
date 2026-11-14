@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Yacuiba, Bolivia",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -22.24,
+    "lon": -63.65,
+    "cascading_effects": [
+      "Potential landslides",
+      "Infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T17:01:36Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, near 9.8\u00b0N 173.2\u00b0W",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T15:41:35Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "road closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T15:31:47Z"
   }
 ]
