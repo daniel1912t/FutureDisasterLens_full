@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Pacific Ocean, near 9.8\u00b0N 173.2\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "heavy rainfall leading to flash floods",
+      "strong winds causing coastal erosion"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T20:59:20Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Ruteng, Indonesia",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T19:36:41Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Pondaguitan, Philippines",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 5.6,
-    "lon": 126.61,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage",
-      "Disruption to local transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T19:27:02Z"
   }
 ]
