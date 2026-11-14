@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.28,
+    "lon": -111.67,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Potential strain on local fire suppression resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T14:46:34Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, near Antarctica",
     "severity": "Moderate",
@@ -125,20 +139,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T13:23:11Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Petropavlovsk-Kamchatsky Region, Russia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 52.36,
-    "lon": 160.3,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of maritime navigation",
-      "Aftershock sequence affecting nearby settlements"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T13:15:01Z"
   }
 ]
