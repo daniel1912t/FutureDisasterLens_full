@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 31.09,
+    "lon": -89.1,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Potential evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T14:09:13Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "West Chile Rise, Chile",
     "severity": "Severe",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T12:49:03Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Pacific Ocean, near 30.2\u00b0N 154.1\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 30.2,
-    "lon": 154.1,
-    "cascading_effects": [
-      "coastal flooding",
-      "storm surge",
-      "landslides in mountainous islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T12:39:15Z"
   }
 ]
