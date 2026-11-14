@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "South Sandwich Islands region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -58.96,
+    "lon": -25.73,
+    "cascading_effects": [
+      "Potential tsunami generation affecting nearby islands",
+      "Disruption of shipping lanes in Southern Atlantic",
+      "Impact on marine wildlife habitats"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T23:48:38Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Hazard Window",
     "location": "Southern Ocean, Antarctica",
     "severity": "Moderate",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T22:16:32Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific Ocean near 9.8\u00b0S 173.2\u00b0W",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "High surf and coastal flooding",
-      "Disruption to maritime shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T22:08:27Z"
   }
 ]
