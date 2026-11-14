@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Kermadec Islands Region",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -33.0,
+    "lon": -178.34,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of undersea communication cables"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T18:23:36Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T19:01:00Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "San Antonio de los Cobres, Argentina",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -24.05,
-    "lon": -66.9,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "disruption of mining operations"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T08:41:39Z"
   }
 ]
