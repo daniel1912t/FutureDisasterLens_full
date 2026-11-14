@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Pondaguitan, Philippines",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 5.6,
+    "lon": 126.61,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption to local transportation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T19:27:02Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Kamchatka Peninsula, Russia",
     "severity": "Severe",
     "probability": "68%",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T17:29:05Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Pacific Ocean, near 30.2\u00b0N 154.1\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 30.2,
-    "lon": 154.1,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods",
-      "High winds leading to coastal erosion and infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T17:21:00Z"
   }
 ]
