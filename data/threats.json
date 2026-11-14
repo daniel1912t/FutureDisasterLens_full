@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos County, New Hampshire, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "Smoke plume affecting air quality in neighboring states",
+      "Potential strain on local firefighting resources",
+      "Risk of rapid spread to nearby forested areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T23:58:18Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "South Sandwich Islands region",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T22:26:10Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Chaparral, Colombia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 3.68,
-    "lon": -75.56,
-    "cascading_effects": [
-      "landslides",
-      "infrastructure damage",
-      "disruption of transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T22:16:32Z"
   }
 ]
