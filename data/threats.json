@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 31.09,
+    "lon": -89.1,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in neighboring counties",
+      "Potential strain on local emergency services and evacuation routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T16:33:46Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T15:12:53Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Papua New Guinea, near Kavieng",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -1.5,
-    "lon": 149.92,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami potential",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T01:03:08Z"
   }
 ]
