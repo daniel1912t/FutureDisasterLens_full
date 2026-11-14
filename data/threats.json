@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "West coast of northern Sumatra, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 3.3,
+    "lon": 92.83,
+    "cascading_effects": [
+      "tsunami potential",
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T04:38:04Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T07:20:01Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Papua New Guinea, near Kavieng",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -1.5,
-    "lon": 149.92,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      " landslide risk in mountainous terrain",
-      "disruption of coastal communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T03:10:30Z"
   }
 ]
