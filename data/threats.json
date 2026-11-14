@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino County, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.28,
+    "lon": -111.67,
+    "cascading_effects": [
+      "degraded air quality in surrounding regions",
+      "potential evacuations of nearby settlements"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T07:28:58Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T20:08:18Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Hihifo region, Tonga",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -15.09,
-    "lon": -173.45,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of maritime navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T06:00:04Z"
   }
 ]
