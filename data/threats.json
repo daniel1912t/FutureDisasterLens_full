@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "San Antonio de los Cobres region, Argentina",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -23.94,
+    "lon": -66.76,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of regional road and rail infrastructure",
+      "Impact on water supply from meltwater streams"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T02:43:20Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T01:20:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino County, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.28,
-    "lon": -111.67,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities",
-      "potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T15:12:53Z"
   }
 ]
