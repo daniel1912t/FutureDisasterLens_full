@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Northwestern Pacific, near Philippines",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 30.2,
+    "lon": 154.1,
+    "cascading_effects": [
+      "heavy rainfall causing flash floods",
+      "strong winds damaging coastal infrastructure",
+      "storm surge affecting low-lying islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T02:12:08Z"
+  },
+  {
+    "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, near Kiribati",
     "severity": "Severe",
     "probability": "68%",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T02:51:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "San Antonio de los Cobres region, Argentina",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -23.94,
-    "lon": -66.76,
-    "cascading_effects": [
-      "Potential landslides in mountainous terrain",
-      "Disruption of regional road and rail infrastructure",
-      "Impact on water supply from meltwater streams"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T02:43:20Z"
   }
 ]
