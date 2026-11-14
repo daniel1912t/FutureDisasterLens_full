@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Yudomari region, Japan",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 29.56,
+    "lon": 130.48,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Infrastructure damage",
+      "Disruption of coastal transport"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T01:30:34Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Fiji region",
     "severity": "Severe",
     "probability": "68%",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T00:07:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos County, New Hampshire, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "Smoke plume affecting air quality in neighboring states",
-      "Potential strain on local firefighting resources",
-      "Risk of rapid spread to nearby forested areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T23:58:18Z"
   }
 ]
