@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "San Antonio de los Cobres, Argentina",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -24.05,
+    "lon": -66.9,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "disruption of mining operations"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T08:41:39Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T16:52:02Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Tagbina, Philippines",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 8.4,
-    "lon": 126.21,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami potential",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T16:43:54Z"
   }
 ]
