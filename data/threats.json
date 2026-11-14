@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Pacific Ocean, near 9.8\u00b0N 173.2\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "wind damage to infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T19:09:17Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Tagbina, Philippines",
     "severity": "Severe",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T17:11:18Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Yacuiba, Bolivia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -22.24,
-    "lon": -63.65,
-    "cascading_effects": [
-      "Potential landslides",
-      "Infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T17:01:36Z"
   }
 ]
