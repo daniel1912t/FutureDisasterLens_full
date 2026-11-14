@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "State of Yap, Federated States of Micronesia",
+    "severity": "Extreme",
+    "probability": "85%",
+    "lat": 9.7,
+    "lon": 147.36,
+    "cascading_effects": [
+      "tsunami potential",
+      "infrastructure damage",
+      "disruption of communication networks"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T08:42:59Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "West Chile Rise, Pacific Ocean",
     "severity": "Severe",
     "probability": "68%",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T07:19:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Western Indian-Antarctic Ridge",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -50.37,
-    "lon": 139.67,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of undersea cable communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T07:11:13Z"
   }
 ]
