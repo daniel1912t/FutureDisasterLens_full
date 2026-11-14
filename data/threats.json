@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, near 9.8\u00b0N, 173.2\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "wind damage to infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T20:08:18Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Hihifo region, Tonga",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T04:38:04Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Johnson, Wyoming, USA",
-    "severity": "Severe",
-    "probability": "81%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in neighboring states",
-      "Potential rapid spread to nearby forested areas",
-      "Strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T02:29:58Z"
   }
 ]
