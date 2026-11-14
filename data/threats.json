@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Kermadec Islands region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -32.75,
+    "lon": -178.64,
+    "cascading_effects": [
+      "potential tsunami generation",
+      "disruption of undersea communication cables",
+      "air travel route closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T13:30:27Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Kavieng, Papua New Guinea",
     "severity": "Severe",
     "probability": "78%",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T21:58:38Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "La Libertad, El Salvador",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 13.22,
-    "lon": -89.46,
-    "cascading_effects": [
-      "landslide risk in mountainous regions",
-      "potential damage to infrastructure",
-      "disruption of local transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T21:50:01Z"
   }
 ]
