@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Wasatch, Utah, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 40.51,
+    "lon": -110.94,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T11:10:30Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -125,20 +139,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T09:27:08Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Southern Pacific Ocean, near Tonga",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "Coastal flooding in low-lying islands",
-      "Disruption of marine navigation routes",
-      "Potential for landslides on steep volcanic terrain"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T09:19:03Z"
   }
 ]
