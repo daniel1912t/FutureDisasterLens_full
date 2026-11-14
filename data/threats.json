@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Hihifo region, Tonga",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -15.09,
+    "lon": -173.45,
+    "cascading_effects": [
+      "Potential tsunami generation affecting coastal villages",
+      "Disruption of marine navigation routes",
+      "Damage to undersea communication cables"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T11:55:20Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "West Chile Rise, International Waters",
     "severity": "Severe",
     "probability": "68%",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T10:23:20Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Western Indian-Antarctic Ridge, International Waters",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -50.37,
-    "lon": 139.67,
-    "cascading_effects": [
-      "Potential tsunami generation affecting nearby coastlines",
-      "Disruption of undersea communication cables"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T10:05:28Z"
   }
 ]
