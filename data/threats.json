@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 34.51,
+    "lon": -111.26,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in neighboring counties",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T19:55:53Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Yacuiba, Bolivia",
     "severity": "Moderate",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T18:06:05Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "South of the Kermadec Islands",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -33.0,
-    "lon": -178.34,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of undersea communication cables"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T15:48:20Z"
   }
 ]
