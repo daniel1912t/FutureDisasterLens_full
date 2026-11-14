@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "West Chile Rise, Pacific Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -36.46,
+    "lon": -97.96,
+    "cascading_effects": [
+      "Potential tsunami generation affecting coastal Chile",
+      "Disruption of undersea cable communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T05:22:55Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Fiji region",
     "severity": "Severe",
     "probability": "68%",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T18:03:52Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities",
-      "potential strain on local fire resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T03:45:56Z"
   }
 ]
