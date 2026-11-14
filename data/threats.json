@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Window",
+    "location": "Southern Ocean, Antarctica",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Disruption of nearby shipping lanes",
+      "Potential impact on coastal research stations",
+      "Increased risk of iceberg grounding causing local sea level anomalies"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T01:38:51Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Yudomari region, Japan",
     "severity": "Severe",
@@ -131,19 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T00:17:39Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Chaparral, Colombia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 3.68,
-    "lon": -75.56,
-    "cascading_effects": [
-      "potential aftershocks",
-      "landslide risk in nearby hills"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T00:07:57Z"
   }
 ]
