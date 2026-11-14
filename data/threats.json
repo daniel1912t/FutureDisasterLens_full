@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "South of the Kermadec Islands",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -33.0,
+    "lon": -178.34,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of undersea communication cables"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T13:23:11Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Petropavlovsk-Kamchatsky Region, Russia",
     "severity": "Severe",
     "probability": "68%",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T12:04:56Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Hihifo region, Tonga",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -15.09,
-    "lon": -173.45,
-    "cascading_effects": [
-      "Potential tsunami generation affecting coastal villages",
-      "Disruption of marine navigation routes",
-      "Damage to undersea communication cables"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T11:55:20Z"
   }
 ]
