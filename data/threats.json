@@ -1,17 +1,17 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
-    "location": "Okanogan, Washington, USA",
+    "location": "Stevens, Washington, USA",
     "severity": "Moderate",
     "probability": "68%",
-    "lat": 48.53,
-    "lon": -119.06,
+    "lat": 48.4,
+    "lon": -117.53,
     "cascading_effects": [
       "air quality degradation",
       "evacuation of nearby communities"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-15T10:52:07Z"
+    "time_of_event": "2026-11-15T11:00:27Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
