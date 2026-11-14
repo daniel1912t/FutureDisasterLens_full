@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Tagbina, Philippines",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 8.4,
+    "lon": 126.21,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T19:01:00Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Scott, Mississippi, USA",
     "severity": "Moderate",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T17:01:36Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Pacific Ocean, near 9.8\u00b0N 173.2\u00b0W",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "Heavy rainfall leading to flash floods",
-      "Strong winds causing coastal erosion"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T16:52:02Z"
   }
 ]
