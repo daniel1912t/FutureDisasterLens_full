@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Kamchatka Peninsula, Russia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 52.36,
+    "lon": 160.3,
+    "cascading_effects": [
+      "Potential aftershocks affecting coastal infrastructure",
+      "Tsunami generation risk for nearby Pacific coast",
+      "Disruption of regional power grid"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T09:18:54Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, near 9.8\u00b0N 173.2\u00b0W",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T17:21:00Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 34.51,
-    "lon": -111.26,
-    "cascading_effects": [
-      "Air quality degradation in nearby communities",
-      "Potential strain on local firefighting resources",
-      "Risk of rapid spread to adjacent forested areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T17:11:18Z"
   }
 ]
