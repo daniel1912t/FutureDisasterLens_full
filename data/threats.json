@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Near Lebu, Chile",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -37.92,
+    "lon": -74.72,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Landslide risk in mountainous terrain"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T01:58:00Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "North Pacific Ocean, near 9.8\u00b0N, 173.2\u00b0W",
     "severity": "Severe",
@@ -132,19 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T14:35:39Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Georgia, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 33.75,
-    "lon": -83.26,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T14:27:25Z"
   }
 ]
