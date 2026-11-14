@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 34.51,
+    "lon": -111.26,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T09:36:43Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T21:56:15Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Northern Mid-Atlantic Ridge",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 30.12,
-    "lon": -42.63,
-    "cascading_effects": [
-      "Potential tsunami generation affecting Atlantic coastal regions",
-      "Disruption of undersea communication cables"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T07:48:13Z"
   }
 ]
