@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Lebu region, Chile",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -37.92,
+    "lon": -74.72,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Landslides in mountainous terrain",
+      "Infrastructure damage to roads and bridges"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T05:03:47Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Okanogan, Washington, USA",
     "severity": "Moderate",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T03:36:20Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Fiji region",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -19.58,
-    "lon": -177.74,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption to maritime navigation",
-      "Infrastructure damage in coastal communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T03:28:18Z"
   }
 ]
