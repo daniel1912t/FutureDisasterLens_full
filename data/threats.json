@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Pacific Ocean, near 9.8\u00b0N 173.2\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "Heavy rainfall leading to flash floods",
+      "Strong winds causing coastal erosion"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T16:52:02Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Tagbina, Philippines",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T15:31:47Z"
-  },
-  {
-    "primary_threat": "Forecasted Typhoon Cempaka Window",
-    "location": "Pacific Ocean, near 30.2\u00b0N 154.1\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 30.2,
-    "lon": 154.1,
-    "cascading_effects": [
-      "Coastal flooding",
-      "Wind damage to infrastructure",
-      "Disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T15:23:44Z"
   }
 ]
