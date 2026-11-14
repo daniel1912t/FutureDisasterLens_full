@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "State of Yap, Federated States of Micronesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.7,
+    "lon": 147.36,
+    "cascading_effects": [
+      "tsunami potential",
+      "infrastructure damage",
+      "disruption of communication networks"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T13:32:53Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "South of the Kermadec Islands",
     "severity": "Severe",
     "probability": "68%",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T12:14:45Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Western Indian-Antarctic Ridge, International Waters",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -50.37,
-    "lon": 139.67,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of undersea cable communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T12:04:56Z"
   }
 ]
