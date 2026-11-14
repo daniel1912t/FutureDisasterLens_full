@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "State of Yap, Federated States of Micronesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.7,
+    "lon": 147.36,
+    "cascading_effects": [
+      "tsunami potential",
+      "infrastructure damage",
+      "disruption of communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T06:17:52Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Pacific Ocean, near 9.8\u00b0N, 173.2\u00b0W",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T04:55:44Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "West coast of northern Sumatra, Indonesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 3.3,
-    "lon": 92.83,
-    "cascading_effects": [
-      "tsunami potential",
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T04:38:04Z"
   }
 ]
