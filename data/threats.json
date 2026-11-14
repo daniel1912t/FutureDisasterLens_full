@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Northern Mid-Atlantic Ridge",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 30.12,
+    "lon": -42.63,
+    "cascading_effects": [
+      "Potential undersea landslides",
+      "Tsunami generation affecting Atlantic coastal regions"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T16:08:01Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T14:46:34Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, near Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Disruption to shipping lanes",
-      "Potential damage to offshore platforms"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T14:37:02Z"
   }
 ]
