@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 34.51,
+    "lon": -111.26,
+    "cascading_effects": [
+      "Air quality degradation in downstream communities",
+      "Increased strain on local firefighting resources",
+      "Potential for rapid fire spread to nearby forest reserves"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T03:36:20Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Fiji region",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T02:15:55Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "Smoke dispersion affecting regional air quality",
-      "Potential evacuation of nearby communities",
-      "Strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T02:06:15Z"
   }
 ]
