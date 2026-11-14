@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Wasatch, Utah, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 40.51,
+    "lon": -110.94,
+    "cascading_effects": [
+      "air quality degradation",
+      "road closures",
+      "evacuation disruptions"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T05:40:36Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Scott, Mississippi, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T02:12:08Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Pacific Ocean, near Kiribati",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "heavy rainfall causing flash floods",
-      "strong winds damaging coastal infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T18:03:52Z"
   }
 ]
