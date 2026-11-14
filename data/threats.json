@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Ruteng, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -8.38,
+    "lon": 120.44,
+    "cascading_effects": [
+      "landslide risk",
+      "damaged infrastructure",
+      "potential tsunami if offshore fault movement"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T20:51:12Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Wasatch, Utah, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T19:27:02Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Kamchatka Peninsula, Russia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 52.36,
-    "lon": 160.3,
-    "cascading_effects": [
-      "Potential aftershocks affecting coastal infrastructure",
-      "Tsunami generation risk for nearby Pacific coast",
-      "Disruption of regional power grid"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T09:18:54Z"
   }
 ]
