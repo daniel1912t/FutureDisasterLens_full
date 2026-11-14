@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Pacific Ocean, near 30.2\u00b0N, 154.1\u00b0E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 30.2,
+    "lon": 154.1,
+    "cascading_effects": [
+      "Heavy rainfall leading to flash floods",
+      "Coastal storm surge affecting low-lying areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T02:15:55Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Moderate",
@@ -131,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T14:54:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "La Libertad region, El Salvador",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 13.22,
-    "lon": -89.46,
-    "cascading_effects": [
-      "Potential landslides",
-      "Infrastructure damage",
-      "Disruption of transportation routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T14:45:16Z"
   }
 ]
