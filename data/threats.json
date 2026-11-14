@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Window",
+    "location": "Southern Ocean, near Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Shipping lane disruptions",
+      "Potential impact on offshore platforms",
+      "Marine wildlife habitat disturbance"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T20:33:18Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Kermadec Islands Region",
     "severity": "Severe",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T19:09:17Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Tagbina, Philippines",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 8.4,
-    "lon": 126.21,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T19:01:00Z"
   }
 ]
