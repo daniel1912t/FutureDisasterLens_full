@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "North Pacific Ocean, near 9.8\u00b0N, 173.2\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "High winds causing coastal flooding",
+      "Potential disruption to maritime traffic",
+      "Increased wave heights impacting offshore platforms"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T01:48:25Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, Antarctica",
     "severity": "Severe",
@@ -131,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T14:27:25Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Johnson, Wyoming, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in surrounding counties",
-      "Potential strain on local firefighting resources",
-      "Risk of rapid fire spread to nearby grasslands and wildlife habitats"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T00:17:39Z"
   }
 ]
