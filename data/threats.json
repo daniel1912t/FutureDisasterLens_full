@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Kavieng, Papua New Guinea",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -1.5,
+    "lon": 149.92,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami generation potential"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T23:22:20Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T21:50:01Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T11:41:56Z"
   }
 ]
