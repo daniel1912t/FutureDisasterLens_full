@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Wasatch, Utah, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 40.51,
+    "lon": -110.94,
+    "cascading_effects": [
+      "air quality degradation",
+      "threat to nearby residential areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T23:03:05Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T11:41:56Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean near 69.76\u00b0S 163.35\u00b0E",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential collision with shipping lanes",
-      "Disruption of marine wildlife habitats",
-      "Impact on offshore drilling operations"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T21:32:21Z"
   }
 ]
