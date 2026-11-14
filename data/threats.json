@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Sea and Lake Ice Window",
+    "location": "Southern Ocean, near Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Potential disruption to shipping lanes",
+      "Risk of iceberg grounding affecting coastal ecosystems"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T07:03:10Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "San Antonio de los Cobres region, Argentina",
     "severity": "Moderate",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T05:40:36Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "West Chile Rise, Pacific Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -36.46,
-    "lon": -97.96,
-    "cascading_effects": [
-      "Potential tsunami generation affecting coastal Chile",
-      "Disruption of undersea cable communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T05:22:55Z"
   }
 ]
