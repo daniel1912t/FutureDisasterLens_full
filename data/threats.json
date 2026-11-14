@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Papua New Guinea, near Kavieng",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -1.5,
+    "lon": 149.92,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami potential",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T01:03:08Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T03:40:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Kermadec Islands region",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -32.75,
-    "lon": -178.64,
-    "cascading_effects": [
-      "potential tsunami generation",
-      "disruption of undersea communication cables",
-      "air travel route closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T13:30:27Z"
   }
 ]
