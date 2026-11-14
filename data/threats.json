@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, near 9.8\u00b0S 173.2\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "high wind damage to vessels"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T13:07:02Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T01:46:08Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Kamchatka Peninsula, Russia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 52.36,
-    "lon": 160.3,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption to regional communications",
-      "Possible landslides in mountainous areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T11:36:30Z"
   }
 ]
