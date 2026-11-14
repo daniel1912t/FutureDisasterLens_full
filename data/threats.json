@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "North of Hihifo, Tonga",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -15.09,
+    "lon": -173.45,
+    "cascading_effects": [
+      "Potential tsunami generation affecting coastal villages",
+      "Disruption of undersea communication cables",
+      "Landslides in steep terrain"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T14:56:16Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -125,19 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T13:32:53Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "South of the Kermadec Islands",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -33.0,
-    "lon": -178.34,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of undersea communication cables"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T13:23:11Z"
   }
 ]
