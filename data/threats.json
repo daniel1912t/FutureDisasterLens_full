@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Off the west coast of northern Sumatra, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 3.3,
+    "lon": 92.83,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Coastal infrastructure damage",
+      "Disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T06:45:10Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Northwest Pacific Ocean, near 30.2\u00b0N, 154.1\u00b0E",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T05:13:22Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Lebu region, Chile",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -37.92,
-    "lon": -74.72,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Landslides in mountainous terrain",
-      "Infrastructure damage to roads and bridges"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T05:03:47Z"
   }
 ]
