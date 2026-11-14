@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Chaparral, Colombia",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 3.68,
+    "lon": -75.56,
+    "cascading_effects": [
+      "potential aftershocks",
+      "landslide risk in nearby hills"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T00:07:57Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos County, New Hampshire, USA",
     "severity": "Moderate",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T12:35:52Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Foot Creek, Johnson, Wyoming, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Threat to nearby infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T22:26:10Z"
   }
 ]
