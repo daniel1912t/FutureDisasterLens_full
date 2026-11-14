@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Chaparral, Colombia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 3.68,
+    "lon": -75.56,
+    "cascading_effects": [
+      "landslides",
+      "infrastructure damage",
+      "disruption of transportation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T22:16:32Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Pacific Ocean near 9.8\u00b0S 173.2\u00b0W",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T20:55:15Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "79 km WSW of Changuillo, Peru",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -14.99,
-    "lon": -75.88,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "aftershock sequence"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T20:47:08Z"
   }
 ]
