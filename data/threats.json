@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Fiji region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -19.58,
+    "lon": -177.74,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Infrastructure damage",
+      "Disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T01:20:57Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino County, Arizona, USA",
     "severity": "Moderate",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T23:58:18Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "South Sandwich Islands region",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -58.96,
-    "lon": -25.73,
-    "cascading_effects": [
-      "Potential tsunami generation affecting nearby islands",
-      "Disruption of shipping lanes in Southern Atlantic",
-      "Impact on marine wildlife habitats"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T23:48:38Z"
   }
 ]
