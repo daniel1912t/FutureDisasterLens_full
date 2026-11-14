@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos, New Hampshire, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T15:31:47Z"
+  },
+  {
     "primary_threat": "Forecasted Typhoon Cempaka Window",
     "location": "Pacific Ocean, near 30.2\u00b0N 154.1\u00b0E",
     "severity": "Severe",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T14:09:13Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "West Chile Rise, Chile",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -36.46,
-    "lon": -97.96,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of undersea cable communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T14:00:41Z"
   }
 ]
