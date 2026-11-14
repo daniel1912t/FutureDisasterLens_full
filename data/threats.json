@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "South of the Kermadec Islands",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -33.0,
+    "lon": -178.34,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of undersea communication cables",
+      "Landslides on nearby islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T15:49:54Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "State of Yap, Federated States of Micronesia",
     "severity": "Severe",
     "probability": "78%",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T14:27:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Okanogan, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.53,
-    "lon": -119.06,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in nearby communities",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T14:17:26Z"
   }
 ]
