@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Fiji region",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -19.58,
+    "lon": -177.74,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption to maritime navigation",
+      "Infrastructure damage in coastal communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T03:28:18Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, near Antarctica",
     "severity": "Severe",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T02:06:15Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Near Lebu, Chile",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -37.92,
-    "lon": -74.72,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Landslide risk in mountainous terrain"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T01:58:00Z"
   }
 ]
