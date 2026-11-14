@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "South of the Kermadec Islands",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -33.0,
+    "lon": -178.34,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of undersea communication cables"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T15:48:20Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Okanogan, Washington, USA",
     "severity": "Moderate",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T16:25:52Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Southeast Kamchatka Peninsula, Russia",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 52.36,
-    "lon": 160.3,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami potential",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T16:16:07Z"
   }
 ]
