@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "San Antonio de los Cobres region, Argentina",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -24.05,
+    "lon": -66.9,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "disruption to communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T11:26:48Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Foot Creek, Johnson, Wyoming, USA",
     "severity": "Severe",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T10:05:37Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 34.51,
-    "lon": -111.26,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in neighboring counties",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T19:55:53Z"
   }
 ]
