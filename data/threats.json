@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "San Antonio de los Cobres, Argentina",
+    "severity": "Moderate",
+    "probability": "71%",
+    "lat": -24.05,
+    "lon": -66.9,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of local mining operations"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T16:25:52Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Southeast Kamchatka Peninsula, Russia",
     "severity": "Severe",
     "probability": "78%",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T15:04:22Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "North of Hihifo, Tonga",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -15.09,
-    "lon": -173.45,
-    "cascading_effects": [
-      "Potential tsunami generation affecting coastal villages",
-      "Disruption of undersea communication cables",
-      "Landslides in steep terrain"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T14:56:16Z"
   }
 ]
