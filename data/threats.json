@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos, New Hampshire, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T11:36:28Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "San Antonio de los Cobres region, Argentina",
     "severity": "Moderate",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T10:15:17Z"
-  },
-  {
-    "primary_threat": "Forecasted Typhoon Window",
-    "location": "Pacific Ocean, near 30.2\u00b0N 154.1\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 30.2,
-    "lon": 154.1,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods",
-      "Coastal storm surge impacting low-lying islands",
-      "Disruption to maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T10:05:37Z"
   }
 ]
