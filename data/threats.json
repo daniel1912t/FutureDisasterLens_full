@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Northern Mid-Atlantic Ridge",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 30.12,
+    "lon": -42.63,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of undersea cables",
+      "Marine ecosystem disturbance"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T12:31:05Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Severe",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T11:10:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T11:00:27Z"
   }
 ]
