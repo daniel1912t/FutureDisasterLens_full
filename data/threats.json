@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Western Indian-Antarctic Ridge",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -50.37,
+    "lon": 139.67,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of undersea cable communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T07:11:13Z"
+  },
+  {
     "primary_threat": "Forecasted Sea and Lake Ice Window",
     "location": "Southern Ocean, near Antarctica",
     "severity": "Moderate",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T16:50:20Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Wasatch, Utah, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 40.51,
-    "lon": -110.94,
-    "cascading_effects": [
-      "air quality degradation",
-      "road closures",
-      "evacuation disruptions"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T05:40:36Z"
   }
 ]
