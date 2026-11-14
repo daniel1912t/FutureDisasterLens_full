@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Southern Pacific Ocean, near Tonga",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "Coastal flooding in low-lying islands",
+      "Disruption of marine navigation routes",
+      "Potential for landslides on steep volcanic terrain"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T09:19:03Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, near Antarctica",
     "severity": "Moderate",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T07:48:13Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Hihifo region, Tonga",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -15.09,
-    "lon": -173.45,
-    "cascading_effects": [
-      "Potential tsunami generation affecting nearby coastlines",
-      "Disruption of undersea communication cables"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T07:38:37Z"
   }
 ]
