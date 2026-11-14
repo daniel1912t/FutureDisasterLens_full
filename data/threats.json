@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Johnson, Wyoming, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in surrounding counties",
+      "Potential strain on local firefighting resources",
+      "Risk of rapid fire spread to nearby grasslands and wildlife habitats"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T00:17:39Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Chaparral, Colombia",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T22:45:25Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 31.13,
-    "lon": -89.06,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation of nearby communities",
-      "Threat to local infrastructure and power lines"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T12:35:52Z"
   }
 ]
