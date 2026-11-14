@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Okanogan, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.53,
+    "lon": -119.06,
+    "cascading_effects": [
+      "air quality degradation",
+      "local evacuations",
+      "road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T03:02:29Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Off the west coast of northern Sumatra, Indonesia",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T01:38:51Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Yudomari region, Japan",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 29.56,
-    "lon": 130.48,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Infrastructure damage",
-      "Disruption of coastal transport"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T01:30:34Z"
   }
 ]
