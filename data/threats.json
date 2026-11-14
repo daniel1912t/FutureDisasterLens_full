@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Foot Creek, Johnson, Wyoming, USA",
+    "severity": "Severe",
+    "probability": "82%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Potential evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T11:18:32Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Southeast Philippines, Philippines",
     "severity": "Moderate",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T19:55:53Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Yacuiba, Bolivia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -22.24,
-    "lon": -63.65,
-    "cascading_effects": [
-      "potential landslides",
-      "damage to infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T19:46:15Z"
   }
 ]
