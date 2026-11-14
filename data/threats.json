@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Hihifo region, Tonga",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -15.09,
+    "lon": -173.45,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of maritime navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T06:00:04Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Georgia, USA",
     "severity": "Moderate",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T02:29:58Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "San Antonio de los Cobres, Argentina",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -23.94,
-    "lon": -66.76,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "disruption of communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T04:20:12Z"
   }
 ]
