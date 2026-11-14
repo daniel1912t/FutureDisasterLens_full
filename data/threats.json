@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Kamchatka Peninsula, Russia",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 52.36,
+    "lon": 160.3,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption to regional communications",
+      "Possible landslides in mountainous areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T11:36:30Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Antarctica, Southern Ocean",
     "severity": "Moderate",
@@ -126,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T04:55:50Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Northern Tonga, Kingdom of Tonga",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -15.09,
-    "lon": -173.45,
-    "cascading_effects": [
-      "potential tsunami generation",
-      "aftershock sequence"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T09:47:45Z"
   }
 ]
