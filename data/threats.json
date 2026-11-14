@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Western Indian-Antarctic Ridge, International Waters",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -50.37,
+    "lon": 139.67,
+    "cascading_effects": [
+      "Potential tsunami generation affecting nearby coastlines",
+      "Disruption of undersea communication cables"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T10:05:28Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Northern Mid-Atlantic Ridge, International Waters",
     "severity": "Severe",
     "probability": "68%",
@@ -127,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T08:33:22Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T22:25:07Z"
   }
 ]
