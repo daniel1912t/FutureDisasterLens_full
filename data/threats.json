@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.27,
+    "lon": -111.62,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "threat to nearby infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T17:53:32Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "East China Sea near 30.2\u00b0N 154.1\u00b0E",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T21:32:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Northwest of Kavieng, Papua New Guinea",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -1.47,
-    "lon": 149.96,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of coastal communications",
-      "Landslide risk in mountainous regions"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T21:22:42Z"
   }
 ]
