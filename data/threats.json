@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Northern Tonga, Kingdom of Tonga",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -15.09,
+    "lon": -173.45,
+    "cascading_effects": [
+      "potential tsunami generation",
+      "aftershock sequence"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T09:47:45Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T22:16:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Wasatch, Utah, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 40.51,
-    "lon": -110.94,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T21:56:15Z"
   }
 ]
