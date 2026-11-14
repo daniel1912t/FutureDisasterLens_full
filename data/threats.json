@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "West Chile Rise, International Waters",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -36.46,
+    "lon": -97.96,
+    "cascading_effects": [
+      "underwater landslides",
+      "tsunami generation",
+      "disruption of submarine cable networks"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T01:46:08Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Kamchatka Peninsula, Russia",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T10:05:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Northern Mid-Atlantic Ridge, International Waters",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 30.12,
-    "lon": -42.63,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of undersea cable communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T04:55:50Z"
   }
 ]
