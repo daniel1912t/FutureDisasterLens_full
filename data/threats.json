@@ -1,17 +1,17 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
-    "location": "Scott, Mississippi, USA",
+    "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
     "probability": "68%",
-    "lat": 32.42,
-    "lon": -89.6,
+    "lat": 31.13,
+    "lon": -89.06,
     "cascading_effects": [
       "air quality degradation",
-      "evacuation of nearby communities"
+      "potential evacuation of nearby communities"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-15T08:23:54Z"
+    "time_of_event": "2026-11-15T18:33:30Z"
   },
   {
     "primary_threat": "Forecasted Iceberg Drift Window",
