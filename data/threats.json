@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino County, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.28,
+    "lon": -111.67,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities",
+      "potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T15:12:53Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Papua New Guinea, near Kavieng",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T23:48:38Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Hazard Window",
-    "location": "Southern Ocean, Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "shipping route disruption",
-      "potential impact on marine wildlife",
-      "coastal ice melt acceleration"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T03:40:26Z"
   }
 ]
