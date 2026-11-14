@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Fiji region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -19.58,
+    "lon": -177.74,
+    "cascading_effects": [
+      "tsunami potential",
+      "infrastructure damage",
+      "disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T05:13:22Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Lebu region, Chile",
     "severity": "Severe",
     "probability": "68%",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T03:45:56Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 34.51,
-    "lon": -111.26,
-    "cascading_effects": [
-      "Air quality degradation in downstream communities",
-      "Increased strain on local firefighting resources",
-      "Potential for rapid fire spread to nearby forest reserves"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T03:36:20Z"
   }
 ]
