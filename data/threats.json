@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "San Antonio de los Cobres region, Argentina",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": -23.94,
+    "lon": -66.76,
+    "cascading_effects": [
+      "Potential landslides",
+      "Infrastructure damage",
+      "Disruption to mining operations"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T06:53:29Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Off the west coast of northern Sumatra, Indonesia",
     "severity": "Severe",
     "probability": "68%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T05:22:55Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Fiji region",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -19.58,
-    "lon": -177.74,
-    "cascading_effects": [
-      "tsunami potential",
-      "infrastructure damage",
-      "disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T05:13:22Z"
   }
 ]
