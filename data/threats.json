@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Southeast Kamchatka Peninsula, Russia",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 52.36,
+    "lon": 160.3,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami potential",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T16:16:07Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Northern Mid-Atlantic Ridge",
     "severity": "Severe",
     "probability": "68%",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T14:56:16Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.28,
-    "lon": -111.67,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential strain on local fire suppression resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T14:46:34Z"
   }
 ]
