@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Window",
+    "location": "Southern Ocean, near Antarctica",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Potential collision with shipping lanes",
+      "Disruption of marine ecosystems"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T07:20:01Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Papua New Guinea, near Kavieng",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T01:58:00Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "North Pacific Ocean, near 9.8\u00b0N, 173.2\u00b0W",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "High winds causing coastal flooding",
-      "Potential disruption to maritime traffic",
-      "Increased wave heights impacting offshore platforms"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T01:48:25Z"
   }
 ]
