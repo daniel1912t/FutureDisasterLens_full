@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 31.13,
+    "lon": -89.06,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Potential evacuation of nearby communities",
+      "Threat to local infrastructure and power lines"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T12:35:52Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Foot Creek, Johnson, Wyoming, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-14T21:13:03Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "South of the Kermadec Islands",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -32.75,
-    "lon": -178.64,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption to undersea cables"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T21:04:53Z"
   }
 ]
