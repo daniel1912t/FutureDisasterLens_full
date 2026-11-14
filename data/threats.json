@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Okanogan, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.53,
+    "lon": -119.06,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T10:52:07Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene County, Georgia, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -40,21 +54,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T10:23:20Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders for nearby communities",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T10:13:41Z"
   },
   {
     "primary_threat": "Forecasted Seismic Activity Window",
