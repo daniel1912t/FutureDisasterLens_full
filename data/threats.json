@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "South Tank Trail, Perry, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "80%",
+    "lat": 31.09,
+    "lon": -89.1,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "potential property loss"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-14T22:05:54Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Wasatch, Utah, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T06:45:10Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Northwest Pacific Ocean, near 30.2\u00b0N, 154.1\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 30.2,
-    "lon": 154.1,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "wind damage to infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-14T20:35:36Z"
   }
 ]
