@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "East Central Pacific Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 3.73,
+    "lon": -99.11,
+    "cascading_effects": [
+      "Potential tsunami generation affecting coastal nations",
+      "Disruption of undersea communication cables",
+      "Triggering of submarine landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T01:52:51Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Southern Mindanao, Philippines",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T14:30:44Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Okanogan, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.53,
-    "lon": -119.06,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities",
-      "damage to forest habitat"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T00:22:40Z"
   }
 ]
