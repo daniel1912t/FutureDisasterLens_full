@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Pondaguitan region, Philippines",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 5.6,
+    "lon": 126.61,
+    "cascading_effects": [
+      "aftershocks",
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T22:50:35Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Storm Pena Window",
     "location": "South Pacific Ocean",
     "severity": "Severe",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T11:26:48Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Foot Creek, Johnson, Wyoming, USA",
-    "severity": "Severe",
-    "probability": "82%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T11:18:32Z"
   }
 ]
