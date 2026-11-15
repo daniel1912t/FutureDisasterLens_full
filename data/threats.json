@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Northwest of Gorontalo, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 1.75,
+    "lon": 122.13,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Landslide risk in nearby valleys"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T16:34:48Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Severe",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T15:13:54Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Northwest of Houma, Tonga",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -20.59,
-    "lon": -175.94,
-    "cascading_effects": [
-      "Potential tsunami generation affecting nearby coastlines",
-      "Disruption of undersea communication cables",
-      "Landslides in adjacent volcanic islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T15:04:21Z"
   }
 ]
