@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos, New Hampshire, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T19:29:23Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T04:07:02Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Yacuiba region, Bolivia",
-    "severity": "Moderate",
-    "probability": "71%",
-    "lat": -22.24,
-    "lon": -63.65,
-    "cascading_effects": [
-      "Potential landslides",
-      "Infrastructure damage",
-      "Disruption of local transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T17:58:52Z"
   }
 ]
