@@ -1,18 +1,17 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Northwest of Houma, Tonga",
+    "location": "Fiji Region",
     "severity": "Severe",
-    "probability": "78%",
-    "lat": -20.59,
-    "lon": -175.94,
+    "probability": "68%",
+    "lat": -19.56,
+    "lon": -177.82,
     "cascading_effects": [
-      "Potential tsunami generation affecting low-lying islands",
-      "Disruption of undersea communication cables",
-      "Landslides in coastal valleys"
+      "Potential aftershocks",
+      "Tsunami generation risk"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-16T07:29:24Z"
+    "time_of_event": "2026-11-16T17:38:55Z"
   },
   {
     "primary_threat": "Forecasted Iceberg Drift Window",
