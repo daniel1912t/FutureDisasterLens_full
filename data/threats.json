@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Fiji region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -19.56,
+    "lon": -177.82,
+    "cascading_effects": [
+      "tsunami potential",
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T01:49:12Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Okanogan, Washington, USA",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T02:29:43Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 31.13,
-    "lon": -89.06,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "road closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T02:21:40Z"
   }
 ]
