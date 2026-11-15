@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Fiji Region",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -19.56,
+    "lon": -177.82,
+    "cascading_effects": [
+      "tsunami potential",
+      "infrastructure damage",
+      "disruption to maritime routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T19:08:49Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, near 30.2\u00b0N, 154.1\u00b0E",
     "severity": "Severe",
@@ -101,21 +116,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T17:56:36Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Tonga Region",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -20.59,
-    "lon": -175.94,
-    "cascading_effects": [
-      "tsunami risk",
-      "infrastructure damage",
-      "landslide potential"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T17:48:34Z"
   },
   {
     "primary_threat": "Forecasted Iceberg Drift Window",
