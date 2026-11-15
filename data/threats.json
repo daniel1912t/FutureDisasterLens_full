@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Stevens, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.4,
+    "lon": -117.53,
+    "cascading_effects": [
+      "Air quality degradation in nearby communities",
+      "Potential strain on regional firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T02:02:24Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "East Central Pacific Ocean",
     "severity": "Severe",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T14:38:55Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Wasatch County, Utah, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 40.51,
-    "lon": -110.94,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation of nearby communities",
-      "Strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T14:30:44Z"
   }
 ]
