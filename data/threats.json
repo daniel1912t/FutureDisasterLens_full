@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Gorontalo Region, Indonesia",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 1.75,
+    "lon": 122.13,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Landslide risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T21:38:08Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Collision Window",
     "location": "Southern Ocean, Antarctica",
     "severity": "Severe",
@@ -131,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T20:04:58Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Ambon Region, Indonesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -5.94,
-    "lon": 128.75,
-    "cascading_effects": [
-      "Potential aftershocks affecting nearby islands",
-      "Risk of tsunamigenic activity in surrounding seas",
-      "Disruption to maritime traffic and port operations"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T19:55:24Z"
   }
 ]
