@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Flores, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -8.38,
+    "lon": 120.44,
+    "cascading_effects": [
+      "landslides",
+      "tsunami risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T00:48:31Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -126,20 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T00:08:17Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Yacuiba region, Bolivia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -22.24,
-    "lon": -63.65,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "disruption to transport routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T22:58:36Z"
   }
 ]
