@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific, near 9.8\u00b0S, 173.2\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods",
+      "Strong winds damaging coastal infrastructure",
+      "Potential storm surge affecting low-lying islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T08:41:37Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T16:52:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Pacific Ocean near 30.2\u00b0N, 154.1\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 30.2,
-    "lon": 154.1,
-    "cascading_effects": [
-      "heavy rainfall causing flash floods",
-      "storm surge impacting coastal infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T14:44:26Z"
   }
 ]
