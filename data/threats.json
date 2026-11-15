@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Window",
+    "location": "Southern Ocean, Antarctica",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Potential collision with shipping lanes",
+      "Disruption of marine wildlife habitats"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T11:54:13Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T08:28:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Yacuiba, Bolivia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -22.24,
-    "lon": -63.65,
-    "cascading_effects": [
-      "landslide risk in nearby hills",
-      "potential infrastructure damage",
-      "disruption of local transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T10:09:28Z"
   }
 ]
