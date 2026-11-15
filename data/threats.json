@@ -1,17 +1,18 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Fiji Region",
+    "location": "Tonga Region",
     "severity": "Severe",
     "probability": "68%",
-    "lat": -19.56,
-    "lon": -177.82,
+    "lat": -20.59,
+    "lon": -175.94,
     "cascading_effects": [
-      "Potential aftershocks",
-      "Tsunami generation risk"
+      "tsunami risk",
+      "infrastructure damage",
+      "landslide potential"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-16T17:38:55Z"
+    "time_of_event": "2026-11-16T17:48:34Z"
   },
   {
     "primary_threat": "Forecasted Iceberg Drift Window",
