@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Storm Pena Window",
+    "location": "South Pacific Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "heavy rainfall causing flash floods",
+      "storm surge impacting low-lying islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T22:40:50Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Okanogan, Washington, USA",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T11:18:32Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Southeast Philippines, Philippines",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 5.6,
-    "lon": 126.61,
-    "cascading_effects": [
-      "Potential landslides in mountainous terrain",
-      "Disruption of local communications infrastructure",
-      "Risk of tsunami generation affecting nearby coastal communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T21:08:58Z"
   }
 ]
