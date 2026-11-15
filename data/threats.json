@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Fiji region",
+    "severity": "Severe",
+    "probability": "80%",
+    "lat": -19.56,
+    "lon": -177.82,
+    "cascading_effects": [
+      "tsunami generation",
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T23:51:19Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Okanogan, Washington, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T08:31:04Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Yacuiba region, Bolivia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -22.24,
-    "lon": -63.65,
-    "cascading_effects": [
-      "Potential landslides in nearby hills",
-      "Disruption of road and rail transport",
-      "Risk of aftershocks affecting nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T08:22:59Z"
   }
 ]
