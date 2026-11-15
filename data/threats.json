@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Albard\u00f3n, Argentina",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -31.32,
+    "lon": -68.68,
+    "cascading_effects": [
+      "potential aftershocks",
+      "landslide risk in mountainous areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T12:03:46Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, Antarctica",
     "severity": "Severe",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T10:36:31Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Ruteng, Indonesia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -8.38,
-    "lon": 120.44,
-    "cascading_effects": [
-      "landslides",
-      "damaged infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T08:28:30Z"
   }
 ]
