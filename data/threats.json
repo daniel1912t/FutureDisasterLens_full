@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Foot Creek, Johnson County, Wyoming, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "Air quality degradation affecting nearby communities",
+      "Potential wildfire spread to grazing lands and wildlife habitats",
+      "Increased strain on local fire suppression resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T18:06:13Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Union, Philippines",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T16:25:10Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Storm Window",
-    "location": "Northern Pacific Ocean near Kiribati",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T16:15:25Z"
   }
 ]
