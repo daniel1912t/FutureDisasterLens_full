@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Union, Philippines",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 9.76,
+    "lon": 126.2,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "possible tsunami generation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T13:14:46Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Central Pacific, Near 9.8\u00b0N, 173.2\u00b0W",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T11:54:13Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "road closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T11:46:04Z"
   }
 ]
