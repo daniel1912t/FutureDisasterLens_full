@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene, Georgia, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 33.75,
+    "lon": -83.26,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in nearby towns",
+      "Potential strain on local emergency services"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T12:03:50Z"
+  },
+  {
     "primary_threat": "Forecasted Typhoon Window",
     "location": "Philippines",
     "severity": "Severe",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T20:41:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, near Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Shipping lane disruptions",
-      "Potential impact on offshore platforms",
-      "Marine wildlife habitat disturbance"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T20:33:18Z"
   }
 ]
