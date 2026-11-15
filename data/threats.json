@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Ambon Region, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -5.94,
+    "lon": 128.75,
+    "cascading_effects": [
+      "Potential aftershocks affecting nearby islands",
+      "Risk of tsunamigenic activity in surrounding seas",
+      "Disruption to maritime traffic and port operations"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T19:55:24Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, Antarctica",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T18:23:53Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Foot Creek, Johnson County, Wyoming, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "Air quality degradation affecting nearby communities",
-      "Potential wildfire spread to grazing lands and wildlife habitats",
-      "Increased strain on local fire suppression resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T18:06:13Z"
   }
 ]
