@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Afghanistan, P\u0101r\u016bn Region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 36.09,
+    "lon": 70.95,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T17:02:05Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Severe",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T05:41:14Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "maritime navigation hazards",
-      "potential impact on nearby research stations"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T15:31:41Z"
   }
 ]
