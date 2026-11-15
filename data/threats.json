@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Southern Mindanao, Philippines",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 5.6,
+    "lon": 126.61,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T01:43:16Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, near 30.2\u00b0N 154.1\u00b0E",
     "severity": "Severe",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T00:22:40Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Tagbina region, Philippines",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 8.4,
-    "lon": 126.21,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T14:03:20Z"
   }
 ]
