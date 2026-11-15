@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Collision Window",
+    "location": "Southern Ocean, Antarctica",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Potential damage to nearby research vessels",
+      "Disruption of shipping lanes",
+      "Altered local marine ecosystems"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T21:28:32Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
@@ -131,19 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T19:55:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, Antarctica",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Disruption of nearby shipping lanes",
-      "Potential impact on coastal research stations"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T19:45:47Z"
   }
 ]
