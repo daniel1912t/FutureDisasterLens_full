@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Yacuiba region, Bolivia",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -22.24,
+    "lon": -63.65,
+    "cascading_effects": [
+      "Potential landslides in surrounding hills",
+      "Infrastructure damage to roads and bridges",
+      "Disruption of power and communication lines"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T15:06:20Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, near Kiribati",
     "severity": "Severe",
@@ -126,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T23:35:48Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg B22K Window",
-    "location": "Southern Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential collision with shipping lanes",
-      "Disruption of marine ecosystems"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T23:16:27Z"
   }
 ]
