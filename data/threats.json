@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Union, Philippines",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 9.76,
+    "lon": 126.2,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of local infrastructure and power outages"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T17:56:36Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Tonga Region",
     "severity": "Severe",
     "probability": "68%",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T16:15:25Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Johnson, Wyoming, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in surrounding states",
-      "Potential evacuation of nearby communities",
-      "Strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T16:07:15Z"
   }
 ]
