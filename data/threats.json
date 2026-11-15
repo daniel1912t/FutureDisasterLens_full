@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "East Central Pacific Ocean",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": 3.73,
+    "lon": -99.11,
+    "cascading_effects": [
+      "possible tsunami generation",
+      "disruption of undersea cable communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T04:44:03Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Albard\u00f3n region, Argentina",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T03:21:43Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Wasatch, Utah, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 40.51,
-    "lon": -110.94,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T17:13:39Z"
   }
 ]
