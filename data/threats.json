@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Johnson, Wyoming, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in surrounding states",
+      "Potential evacuation of nearby communities",
+      "Strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T16:07:15Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Albard\u00f3n Region, Argentina",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T14:46:40Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Gorontalo Region, Indonesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 1.75,
-    "lon": 122.13,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "tsunami potential"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T04:37:06Z"
   }
 ]
