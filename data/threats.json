@@ -1,18 +1,18 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Fiji Region",
+    "location": "Houma, Tonga",
     "severity": "Severe",
     "probability": "78%",
-    "lat": -19.56,
-    "lon": -177.82,
+    "lat": -20.59,
+    "lon": -175.94,
     "cascading_effects": [
-      "tsunami potential",
-      "infrastructure damage",
-      "disruption to maritime routes"
+      "Potential tsunami generation affecting nearby coastlines",
+      "Disruption of undersea communication cables",
+      "Landslides in nearby mountainous terrain"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-16T19:08:49Z"
+    "time_of_event": "2026-11-16T19:18:30Z"
   },
   {
     "primary_threat": "Forecasted Severe Storm Window",
