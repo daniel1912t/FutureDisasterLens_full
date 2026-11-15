@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Albard\u00f3n Region, Argentina",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -31.32,
+    "lon": -68.68,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Landslide risk in nearby hills",
+      "Infrastructure damage to roads and bridges"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T15:57:41Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene County, Georgia, USA",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T04:37:06Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Johnson, Wyoming, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential evacuations",
-      "threat to nearby infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T14:27:26Z"
   }
 ]
