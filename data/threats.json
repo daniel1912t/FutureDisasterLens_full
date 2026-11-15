@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "East Central Pacific Ocean",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 3.73,
+    "lon": -99.11,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of undersea cable communications",
+      "Impact on marine ecosystems"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T12:11:52Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Albard\u00f3n, Argentina",
     "severity": "Severe",
     "probability": "68%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T10:54:11Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 35.27,
-    "lon": -111.62,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities",
-      "strain on firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T10:36:31Z"
   }
 ]
