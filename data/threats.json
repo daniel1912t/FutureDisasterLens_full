@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Storm Window",
+    "location": "Northern Pacific Ocean near Kiribati",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T16:15:25Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Severe",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T14:56:18Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Wasatch, Utah, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 40.51,
-    "lon": -110.94,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation disruptions"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T14:46:40Z"
   }
 ]
