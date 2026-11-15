@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Albard\u00f3n region, Argentina",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -31.32,
+    "lon": -68.68,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption of transportation routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T08:31:04Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Yacuiba region, Bolivia",
     "severity": "Severe",
     "probability": "68%",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T06:52:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.27,
-    "lon": -111.62,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in nearby communities",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T06:43:17Z"
   }
 ]
