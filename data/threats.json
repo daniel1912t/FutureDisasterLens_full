@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Albard\u00f3n region, Argentina",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -31.32,
+    "lon": -68.68,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T04:34:27Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean near Antarctica",
     "severity": "Moderate",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T17:13:39Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential evacuation of nearby communities",
-      "damage to forest ecosystem"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T03:05:30Z"
   }
 ]
