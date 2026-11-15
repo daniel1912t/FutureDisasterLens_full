@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Okanogan, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.53,
+    "lon": -119.06,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T09:43:17Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Georgia, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T08:22:59Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, near Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "navigation hazards for vessels",
-      "potential coastal ice impact"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T08:13:23Z"
   }
 ]
