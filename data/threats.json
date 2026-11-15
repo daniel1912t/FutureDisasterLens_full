@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Fiji Region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -19.56,
+    "lon": -177.82,
+    "cascading_effects": [
+      "tsunami generation",
+      "infrastructure damage",
+      "landslide risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T07:28:30Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Severe",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T04:08:04Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Ruteng, Indonesia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -8.38,
-    "lon": 120.44,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami potential for nearby coastlines"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T05:58:18Z"
   }
 ]
