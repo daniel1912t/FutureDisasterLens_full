@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Pacific Ocean near 30.2\u00b0N, 154.1\u00b0E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 30.2,
+    "lon": 154.1,
+    "cascading_effects": [
+      "heavy rainfall causing flash floods",
+      "storm surge impacting coastal infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T14:44:26Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Northwest of Gorontalo, Indonesia",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T15:21:59Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Red Hill, Perry, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": 31.13,
-    "lon": -89.06,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Evacuation of nearby communities",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T15:13:54Z"
   }
 ]
