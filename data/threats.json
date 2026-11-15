@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Johnson, Wyoming, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "air quality degradation",
+      "threat to nearby livestock",
+      "potential evacuation orders"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T07:20:19Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T05:58:18Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Fiji region",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -19.56,
-    "lon": -177.82,
-    "cascading_effects": [
-      "tsunami generation",
-      "landslide risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T05:47:11Z"
   }
 ]
