@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Yacuiba region, Bolivia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -22.24,
+    "lon": -63.65,
+    "cascading_effects": [
+      "Potential landslides in nearby hills",
+      "Disruption of road and rail transport",
+      "Risk of aftershocks affecting nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T08:22:59Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, near Antarctica",
     "severity": "Moderate",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T06:43:17Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Albard\u00f3n, Argentina",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -31.32,
-    "lon": -68.68,
-    "cascading_effects": [
-      "ground shaking",
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T06:33:43Z"
   }
 ]
