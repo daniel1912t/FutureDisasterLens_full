@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Window",
+    "location": "Southern Ocean, near Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "navigation hazards for vessels",
+      "potential coastal ice impact"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T08:13:23Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Fiji region",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T06:33:43Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Near 9.8\u00b0N 173.2\u00b0W, Pacific Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "wind damage to infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T06:25:39Z"
   }
 ]
