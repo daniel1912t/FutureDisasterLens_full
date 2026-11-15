@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Houma, Tonga",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -20.59,
+    "lon": -175.94,
+    "cascading_effects": [
+      "tsunami generation",
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T13:50:11Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
@@ -27,21 +42,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T13:32:25Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Fiji Region",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -19.56,
-    "lon": -177.82,
-    "cascading_effects": [
-      "tsunami generation",
-      "infrastructure damage",
-      "landslide risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T13:22:51Z"
   },
   {
     "primary_threat": "Forecasted Seismic Activity Window",
