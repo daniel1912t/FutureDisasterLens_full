@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Albard\u00f3n, Argentina",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -31.32,
+    "lon": -68.68,
+    "cascading_effects": [
+      "ground shaking",
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T06:33:43Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Near 9.8\u00b0N 173.2\u00b0W, Pacific Ocean",
     "severity": "Severe",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T05:11:40Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Pondaguitan, Philippines",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 5.6,
-    "lon": 126.61,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T05:02:00Z"
   }
 ]
