@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Yacuiba, Bolivia",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -22.24,
+    "lon": -63.65,
+    "cascading_effects": [
+      "Potential landslides",
+      "Infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T06:17:36Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Wasatch, Utah, USA",
     "severity": "Moderate",
@@ -126,19 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T04:53:43Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "East Central Pacific Ocean",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": 3.73,
-    "lon": -99.11,
-    "cascading_effects": [
-      "possible tsunami generation",
-      "disruption of undersea cable communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T04:44:03Z"
   }
 ]
