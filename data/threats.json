@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Pacific Ocean, near Easter Island, Chile",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 3.73,
+    "lon": -99.11,
+    "cascading_effects": [
+      "Potential tsunami generation affecting coastal communities",
+      "Disruption of undersea communication cables"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T07:46:09Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Houma, Tonga",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T06:17:36Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Wasatch, Utah, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 40.51,
-    "lon": -110.94,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T04:08:04Z"
   }
 ]
