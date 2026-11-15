@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Fiji region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -19.56,
+    "lon": -177.82,
+    "cascading_effects": [
+      "tsunami generation",
+      "landslide risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T05:47:11Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Moderate",
@@ -126,20 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T04:26:20Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Pacific Ocean near 9.8\u00b0N 173.2\u00b0W",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "strong winds causing infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T04:16:44Z"
   }
 ]
