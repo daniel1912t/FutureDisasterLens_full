@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Central Pacific, near 9.8\u00b0N 173.2\u00b0W",
+    "severity": "Severe",
+    "probability": "81%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "coastal flooding",
+      "high winds damaging infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T08:58:27Z"
+  },
+  {
+    "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, near 30.2\u00b0N 154.1\u00b0E",
     "severity": "Severe",
     "probability": "68%",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T07:20:19Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in nearby towns",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T07:10:47Z"
   }
 ]
