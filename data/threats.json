@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Stevens, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.4,
+    "lon": -117.53,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T21:21:58Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "P\u0101r\u016bn Region, Afghanistan",
     "severity": "Severe",
@@ -73,21 +87,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T15:32:13Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Okanogan, Washington, USA",
-    "severity": "Moderate",
-    "probability": "71%",
-    "lat": 48.53,
-    "lon": -119.06,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "threat to nearby infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T10:24:09Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
