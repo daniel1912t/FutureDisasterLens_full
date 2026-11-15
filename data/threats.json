@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Pacific Ocean, near 30.2\u00b0N 154.1\u00b0E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 30.2,
+    "lon": 154.1,
+    "cascading_effects": [
+      "heavy rainfall",
+      "landfall flooding",
+      "storm surge"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T03:21:43Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Wasatch, Utah, USA",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T02:02:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "East Central Pacific Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 3.73,
-    "lon": -99.11,
-    "cascading_effects": [
-      "Potential tsunami generation affecting coastal nations",
-      "Disruption of undersea communication cables",
-      "Triggering of submarine landslides"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T01:52:51Z"
   }
 ]
