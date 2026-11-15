@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Northwest of Houma, Tonga",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -20.59,
+    "lon": -175.94,
+    "cascading_effects": [
+      "Potential tsunami generation affecting nearby coastlines",
+      "Disruption of undersea communication cables",
+      "Landslides in adjacent volcanic islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T15:04:21Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Northern Philippines Sea, Philippines",
     "severity": "Severe",
@@ -85,21 +100,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T14:09:33Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Fiji Region",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -19.56,
-    "lon": -177.82,
-    "cascading_effects": [
-      "tsunami generation",
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T13:59:58Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
