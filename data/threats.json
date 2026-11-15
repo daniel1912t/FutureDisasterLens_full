@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Northwest of Houma, Tonga",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -20.59,
+    "lon": -175.94,
+    "cascading_effects": [
+      "Potential tsunami generation affecting low-lying islands",
+      "Disruption of undersea communication cables",
+      "Landslides in coastal valleys"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T07:29:24Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean near Antarctica",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T16:07:15Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Albard\u00f3n Region, Argentina",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -31.32,
-    "lon": -68.68,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Landslide risk in nearby hills",
-      "Infrastructure damage to roads and bridges"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T15:57:41Z"
   }
 ]
