@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Northwest of Houma, Tonga",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -20.59,
+    "lon": -175.94,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Coastal flooding",
+      "Disruption of marine navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T10:17:30Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Yacuiba, Bolivia",
     "severity": "Severe",
     "probability": "68%",
@@ -27,21 +42,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T10:00:48Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Fiji region",
-    "severity": "Severe",
-    "probability": "80%",
-    "lat": -19.56,
-    "lon": -177.82,
-    "cascading_effects": [
-      "tsunami generation",
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T23:51:19Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
