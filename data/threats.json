@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos, New Hampshire, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Potential evacuation of nearby communities",
+      "Impact on local wildlife habitats"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T15:21:59Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Red Hill, Perry, Mississippi, USA",
     "severity": "Moderate",
     "probability": "78%",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T13:42:01Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Shipping route disruption",
-      "Marine ecosystem impact"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T13:32:25Z"
   }
 ]
