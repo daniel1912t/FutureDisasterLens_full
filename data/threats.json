@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Yacuiba region, Bolivia",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -22.24,
+    "lon": -63.65,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "disruption to transport routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T22:58:36Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Pondaguitan region, Philippines",
     "severity": "Severe",
     "probability": "68%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T11:36:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "San Antonio de los Cobres region, Argentina",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -24.05,
-    "lon": -66.9,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "disruption to communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T11:26:48Z"
   }
 ]
