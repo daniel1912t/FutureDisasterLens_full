@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "P\u0101r\u016bn Region, Afghanistan",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 36.09,
+    "lon": 70.95,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "disruption of communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T19:28:06Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Houma, Tonga",
     "severity": "Severe",
     "probability": "78%",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T17:21:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Moderate",
-    "probability": "71%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "air quality degradation",
-      "local evacuations",
-      "strain on firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T17:10:05Z"
   }
 ]
