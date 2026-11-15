@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Pacific Ocean, near 30.2\u00b0N 154.1\u00b0E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 30.2,
+    "lon": 154.1,
+    "cascading_effects": [
+      "heavy rainfall",
+      "flash flooding",
+      "landslide risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T08:50:18Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Ruteng region, Indonesia",
     "severity": "Severe",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T07:10:47Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 31.09,
-    "lon": -89.1,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T07:00:59Z"
   }
 ]
