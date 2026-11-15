@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Yacuiba region, Bolivia",
+    "severity": "Moderate",
+    "probability": "71%",
+    "lat": -22.24,
+    "lon": -63.65,
+    "cascading_effects": [
+      "Potential landslides",
+      "Infrastructure damage",
+      "Disruption of local transportation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T17:58:52Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Fiji region",
     "severity": "Severe",
     "probability": "68%",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T00:37:51Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Ruteng region, Indonesia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -8.38,
-    "lon": 120.44,
-    "cascading_effects": [
-      "Potential landslides",
-      "Disruption to local transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T02:29:43Z"
   }
 ]
