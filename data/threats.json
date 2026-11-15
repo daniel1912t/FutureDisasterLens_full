@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Tagbina, Philippines",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 8.4,
+    "lon": 126.21,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Landslide risk in nearby hillsides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T22:23:00Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Dry Lake Hills, Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-15T20:59:20Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Ruteng, Indonesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -8.38,
-    "lon": 120.44,
-    "cascading_effects": [
-      "landslide risk",
-      "damaged infrastructure",
-      "potential tsunami if offshore fault movement"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-15T20:51:12Z"
   }
 ]
