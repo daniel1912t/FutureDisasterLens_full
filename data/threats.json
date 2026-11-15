@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Stevens, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.4,
+    "lon": -117.53,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T13:42:01Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, Antarctica",
     "severity": "Moderate",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T12:21:31Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "East Central Pacific Ocean",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 3.73,
-    "lon": -99.11,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of undersea cable communications",
-      "Impact on marine ecosystems"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T12:11:52Z"
   }
 ]
