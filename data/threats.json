@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Ruteng region, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -8.38,
+    "lon": 120.44,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-15T22:40:44Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Albard\u00f3n region, Argentina",
     "severity": "Severe",
     "probability": "68%",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T07:00:59Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Near 30.2\u00b0N 154.1\u00b0E, Pacific Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 30.2,
-    "lon": 154.1,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods",
-      "Strong winds damaging coastal infrastructure",
-      "Storm surge impacting low-lying islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T06:52:57Z"
   }
 ]
