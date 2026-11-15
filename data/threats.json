@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 31.09,
+    "lon": -89.1,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Potential evacuation of nearby communities",
+      "Strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T12:56:57Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T11:37:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Northwest of Houma, Tonga",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -20.59,
-    "lon": -175.94,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami generation",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T11:28:22Z"
   }
 ]
