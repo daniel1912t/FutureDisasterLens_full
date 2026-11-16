@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Petropavlovsk-Kamchatsky region, Russia",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 52.49,
+    "lon": 160.49,
+    "cascading_effects": [
+      "tsunami risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T09:26:06Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Severe",
@@ -131,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T22:04:51Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Ambon region, Indonesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -5.94,
-    "lon": 128.75,
-    "cascading_effects": [
-      "tsunami potential",
-      "infrastructure damage",
-      "landslide risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T07:56:38Z"
   }
 ]
