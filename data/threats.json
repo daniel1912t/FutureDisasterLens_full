@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Prescribed Fire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.28,
+    "lon": -111.67,
+    "cascading_effects": [
+      "air quality degradation",
+      "temporary road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T07:30:41Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Severe",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T05:48:38Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Petropavlovsk-Kamchatsky region, Russia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 52.49,
-    "lon": 160.49,
-    "cascading_effects": [
-      "potential landslides",
-      "tsunami risk for nearby coastlines"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T05:40:25Z"
   }
 ]
