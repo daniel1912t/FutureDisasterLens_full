@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Prescribed Fire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 34.51,
+    "lon": -111.26,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in nearby communities",
+      "Potential ignition of uncontrolled wildfires under high wind conditions"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T02:27:15Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg B22K Window",
     "location": "Southern Ocean, Antarctica",
     "severity": "Severe",
@@ -99,21 +113,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T15:23:05Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 35.28,
-    "lon": -111.67,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities",
-      "strain on firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T12:14:58Z"
   },
   {
     "primary_threat": "Forecasted Severe Storm Window",
