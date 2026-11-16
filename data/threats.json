@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Cusco Region, Peru",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -15.03,
+    "lon": -76.03,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "aftershock sequence"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T18:59:41Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Dry Lake Hills, Coconino County, Arizona, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T17:36:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg B22K Drift Window",
-    "location": "Southern Ocean, Near Antarctica",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential collision with shipping lanes",
-      "Disruption of marine wildlife habitats",
-      "Influence on local sea ice formation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T07:26:48Z"
   }
 ]
