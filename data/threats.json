@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 31.13,
+    "lon": -89.06,
+    "cascading_effects": [
+      "Air quality degradation affecting nearby communities",
+      "Potential damage to residential structures and infrastructure",
+      "Evacuation orders and strain on emergency services"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T14:17:07Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T12:46:48Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Ambon Region, Indonesia",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -5.94,
-    "lon": 128.75,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Infrastructure damage",
-      "Disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T12:38:38Z"
   }
 ]
