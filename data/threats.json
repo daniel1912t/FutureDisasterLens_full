@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Jurm Region, Afghanistan",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": 36.47,
+    "lon": 70.92,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Landslide risk in mountainous terrain"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T15:51:52Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Moderate",
@@ -72,21 +86,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T15:05:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "P\u0101r\u016bn Region, Afghanistan",
-    "severity": "Moderate",
-    "probability": "71%",
-    "lat": 36.09,
-    "lon": 70.95,
-    "cascading_effects": [
-      "potential aftershocks",
-      "infrastructure damage",
-      "disruption of local communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T14:55:52Z"
   },
   {
     "primary_threat": "Forecasted Severe Storm Window",
