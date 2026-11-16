@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Pacific Ocean, near 9.8\u00b0N, 173.2\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods",
+      "High winds generating storm surge along coastal areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T10:47:07Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Anamizu, Japan",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T09:26:06Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 34.51,
-    "lon": -111.26,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Evacuation orders",
-      "Threat to nearby power lines"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T16:17:45Z"
   }
 ]
