@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Kamchatka Peninsula, Russia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 52.49,
+    "lon": 160.49,
+    "cascading_effects": [
+      "tsunami potential",
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T00:54:26Z"
+  },
+  {
     "primary_threat": "Forecasted Prescribed Fire Window",
     "location": "Wasatch, Utah, USA",
     "severity": "Moderate",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T01:32:37Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Okanogan, Washington, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 48.53,
-    "lon": -119.06,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "road closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T15:23:05Z"
   }
 ]
