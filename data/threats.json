@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Anamizu region, Japan",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 37.37,
+    "lon": 136.74,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Infrastructure damage",
+      "Aftershock sequence"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T12:50:01Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "East China Sea, near 30.2\u00b0N, 154.1\u00b0E",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T07:30:41Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
-    "severity": "Severe",
-    "probability": "80%",
-    "lat": 31.13,
-    "lon": -89.06,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "road closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T21:21:00Z"
   }
 ]
