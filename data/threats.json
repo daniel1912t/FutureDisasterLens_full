@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Prescribed Fire Window",
+    "location": "Wasatch, Utah, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 40.51,
+    "lon": -110.94,
+    "cascading_effects": [
+      "air quality degradation",
+      "potential wildfire ignition"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T02:46:24Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Northwest Gorontalo, Indonesia",
     "severity": "Severe",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T15:23:05Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Pacific Ocean, near Philippines",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 30.2,
-    "lon": 154.1,
-    "cascading_effects": [
-      "heavy rainfall",
-      "landfall flooding",
-      "wind damage to coastal infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T00:47:46Z"
   }
 ]
