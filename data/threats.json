@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Jurm region, Afghanistan",
+    "severity": "Severe",
+    "probability": "82%",
+    "lat": 36.47,
+    "lon": 70.92,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of local road networks",
+      "Aftershock sequence affecting nearby villages"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T22:24:09Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Moderate",
@@ -131,19 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T06:43:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Prescribed Fire Window",
-    "location": "Okanogan, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.53,
-    "lon": -119.06,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential wildfire spread if winds increase"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T20:35:11Z"
   }
 ]
