@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Pacific Ocean, near 9.8\u00b0N, 173.2\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "coastal flooding",
+      "high surf and erosion",
+      "disruption to maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T06:07:51Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Ambon region, Indonesia",
     "severity": "Severe",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T04:34:05Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "P\u0101r\u016bn region, Afghanistan",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 36.09,
-    "lon": 70.95,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T04:24:20Z"
   }
 ]
