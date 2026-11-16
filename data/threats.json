@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Stevens, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.4,
+    "lon": -117.53,
+    "cascading_effects": [
+      "air quality degradation",
+      "threat to nearby habitats"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T11:24:28Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Tual Region, Indonesia",
     "severity": "Severe",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T20:01:55Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg B22K Window",
-    "location": "Southern Ocean",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential collision with vessels",
-      "Disruption of marine wildlife habitats"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T19:53:45Z"
   }
 ]
