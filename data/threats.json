@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Kavieng Region, Papua New Guinea",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -1.72,
+    "lon": 149.81,
+    "cascading_effects": [
+      "landslides",
+      "road closures",
+      "building structural damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T20:47:13Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Storm Pena Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T19:26:09Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Changuillo Region, Peru",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -14.84,
-    "lon": -75.42,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage",
-      "Disruption to local transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T19:17:53Z"
   }
 ]
