@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": 31.12,
+    "lon": -89.08,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T05:57:05Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Severo-Kuril\u2019sk, Russia",
     "severity": "Severe",
@@ -13,21 +28,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T15:47:14Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Forrest, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 31.1,
-    "lon": -89.16,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Evacuation of nearby communities",
-      "Potential strain on regional firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T15:38:53Z"
   },
   {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
