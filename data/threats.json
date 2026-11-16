@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Wadomari, Japan",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 26.85,
+    "lon": 129.63,
+    "cascading_effects": [
+      "potential tsunami",
+      "damage to coastal infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T15:02:40Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean near Antarctica",
     "severity": "Severe",
@@ -126,19 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T13:42:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Sarangani Province, Philippines",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 4.78,
-    "lon": 125.43,
-    "cascading_effects": [
-      "Potential landslides in mountainous terrain",
-      "Disruption of coastal fishing communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T13:22:47Z"
   }
 ]
