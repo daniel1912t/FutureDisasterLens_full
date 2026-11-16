@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Pacific Ocean, near 9.8\u00b0N, 173.2\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "disruption to maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T22:31:16Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Union, Philippines",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T21:01:06Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Johnson, Wyoming, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities",
-      "potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T20:51:28Z"
   }
 ]
