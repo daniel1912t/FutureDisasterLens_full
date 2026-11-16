@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Sarangani region, Philippines",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 4.78,
+    "lon": 125.43,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of coastal fishing operations",
+      "Possible tsunami generation affecting nearby coastal communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T07:02:28Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T05:40:25Z"
-  },
-  {
-    "primary_threat": "Forecasted Prescribed Fire Window",
-    "location": "Wasatch, Utah, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 40.51,
-    "lon": -110.94,
-    "cascading_effects": [
-      "air quality degradation",
-      "temporary road closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T19:30:33Z"
   }
 ]
