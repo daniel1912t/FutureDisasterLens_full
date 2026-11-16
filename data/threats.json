@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Afghanistan, near Jurm",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 36.09,
+    "lon": 70.95,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption of communication networks"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T00:57:01Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, near 9.8\u00b0N, 173.2\u00b0W",
     "severity": "Severe",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T09:35:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Petropavlovsk-Kamchatsky region, Russia",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 52.49,
-    "lon": 160.49,
-    "cascading_effects": [
-      "tsunami risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T09:26:06Z"
   }
 ]
