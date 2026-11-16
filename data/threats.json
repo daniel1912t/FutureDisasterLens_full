@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Anamizu, Japan",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 37.37,
+    "lon": 136.74,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Landslide risk in mountainous terrain"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T10:38:55Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, near 30.2\u00b0N, 154.1\u00b0E",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T16:17:45Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Sarangani region, Philippines",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 4.78,
-    "lon": 125.43,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami potential",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T22:59:55Z"
   }
 ]
