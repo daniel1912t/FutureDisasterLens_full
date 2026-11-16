@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "South Pacific Ocean",
+    "severity": "Severe",
+    "probability": "82%",
+    "lat": -8.5,
+    "lon": -161.0,
+    "cascading_effects": [
+      "heavy rainfall causing flash floods",
+      "storm surge impacting low-lying islands",
+      "wind damage to coastal infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T10:29:27Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Wasatch, Utah, USA",
     "severity": "Moderate",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T19:08:06Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Dry Lake Hills, Coconino County, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.27,
-    "lon": -111.62,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation of nearby communities",
-      "Strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T18:48:11Z"
   }
 ]
