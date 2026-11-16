@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Window",
+    "location": "Central Pacific",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -8.2,
+    "lon": -158.9,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods",
+      "High winds leading to coastal erosion",
+      "Storm surge impacting low-lying islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T11:35:09Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, near Antarctica",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T08:12:05Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "strain on local fire resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T09:53:55Z"
   }
 ]
