@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Anamizu region, Japan",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 37.37,
+    "lon": 136.74,
+    "cascading_effects": [
+      "potential landslides",
+      "tsunami risk for coastal areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T05:22:21Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Gorontalo region, Indonesia",
     "severity": "Severe",
     "probability": "78%",
@@ -127,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T17:49:07Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Ambon, Indonesia",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -5.94,
-    "lon": 128.75,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami potential"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T03:39:30Z"
   }
 ]
