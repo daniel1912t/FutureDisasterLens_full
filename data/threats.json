@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos, New Hampshire, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities",
+      "potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T07:38:58Z"
+  },
+  {
     "primary_threat": "Forecasted Prescribed Fire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T05:58:16Z"
-  },
-  {
-    "primary_threat": "Forecasted Prescribed Fire Window",
-    "location": "Greene, Georgia, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 33.75,
-    "lon": -83.26,
-    "cascading_effects": [
-      "air quality degradation",
-      "temporary road closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T05:48:38Z"
   }
 ]
