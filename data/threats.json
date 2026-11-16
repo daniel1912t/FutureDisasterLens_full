@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "P\u0101r\u016bn region, Afghanistan",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 36.09,
+    "lon": 70.95,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T04:24:20Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T03:03:59Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Kamchatka Peninsula, Russia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 52.49,
-    "lon": 160.49,
-    "cascading_effects": [
-      "tsunami potential",
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T00:54:26Z"
   }
 ]
