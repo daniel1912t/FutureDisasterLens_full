@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Ambon region, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -5.94,
+    "lon": 128.75,
+    "cascading_effects": [
+      "tsunami potential",
+      "infrastructure damage",
+      "landslide risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T07:56:38Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, Near Antarctica",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T06:17:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Pacific Ocean, near 9.8\u00b0N, 173.2\u00b0W",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "coastal flooding",
-      "high surf and erosion",
-      "disruption to maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T06:07:51Z"
   }
 ]
