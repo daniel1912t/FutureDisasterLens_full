@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Stevens, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.4,
+    "lon": -117.53,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T23:17:41Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Parun Region, Afghanistan",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T21:38:08Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Collision Window",
-    "location": "Southern Ocean, Antarctica",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential damage to nearby research vessels",
-      "Disruption of shipping lanes",
-      "Altered local marine ecosystems"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T21:28:32Z"
   }
 ]
