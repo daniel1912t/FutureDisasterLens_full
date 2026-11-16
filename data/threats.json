@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Storm Pena Window",
+    "location": "Johnson, Wyoming, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "flash flooding",
+      "landslide risk",
+      "power outages"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T10:39:05Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "South Pacific Ocean",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T19:17:53Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Somalia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 13.47,
-    "lon": 50.74,
-    "cascading_effects": [
-      "Potential infrastructure damage",
-      "Disruption of communications",
-      "Aftershock risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T19:08:06Z"
   }
 ]
