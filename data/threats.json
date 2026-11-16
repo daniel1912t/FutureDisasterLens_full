@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Somalia",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 13.47,
+    "lon": 50.74,
+    "cascading_effects": [
+      "Potential infrastructure damage",
+      "Disruption of communications",
+      "Aftershock risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T19:08:06Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Cusco Region, Peru",
     "severity": "Severe",
     "probability": "68%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T07:46:03Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "Central Pacific Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -8.5,
-    "lon": -161,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "wind damage to infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T17:36:28Z"
   }
 ]
