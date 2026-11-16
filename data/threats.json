@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Wild River, Coos, New Hampshire, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Threat to nearby residential areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T18:41:28Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T17:18:39Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Okinawa Prefecture, Japan",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 26.85,
-    "lon": 129.63,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Infrastructure damage to coastal ports",
-      "Disruption of air traffic in the region"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T17:08:57Z"
   }
 ]
