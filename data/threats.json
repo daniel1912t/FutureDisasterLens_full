@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Johnson, Wyoming, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T03:57:09Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, near 9.8\u00b0N, 173.2\u00b0W",
     "severity": "Severe",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T02:36:48Z"
-  },
-  {
-    "primary_threat": "Forecasted Prescribed Fire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 34.51,
-    "lon": -111.26,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in nearby communities",
-      "Potential ignition of uncontrolled wildfires under high wind conditions"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T02:27:15Z"
   }
 ]
