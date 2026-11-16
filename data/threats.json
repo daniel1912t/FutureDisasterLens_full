@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos, New Hampshire, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T16:33:00Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Severe",
     "probability": "68%",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T14:44:44Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Near Changuillo, Peru",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -15.03,
-    "lon": -76.03,
-    "cascading_effects": [
-      "Potential aftershocks causing landslides",
-      "Disruption of local infrastructure and roads"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T14:36:34Z"
   }
 ]
