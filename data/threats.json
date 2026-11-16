@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Window",
+    "location": "Southern Ocean near Antarctica",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Disruption of international shipping lanes",
+      "Potential impact on marine wildlife migration patterns"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T14:54:27Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Caluula, Somalia",
     "severity": "Moderate",
@@ -126,20 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T13:22:47Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storms Window",
-    "location": "Central Pacific Ocean",
-    "severity": "Severe",
-    "probability": "71%",
-    "lat": -8.2,
-    "lon": -158.9,
-    "cascading_effects": [
-      "High surf and coastal flooding",
-      "Disruption of maritime traffic",
-      "Potential tornado formation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T13:14:36Z"
   }
 ]
