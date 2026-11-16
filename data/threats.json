@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Petropavlovsk-Kamchatsky Region, Russia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 52.49,
+    "lon": 160.49,
+    "cascading_effects": [
+      "aftershocks",
+      "tsunami potential",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T00:39:41Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Georgia, USA",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T23:17:41Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Typhoon Cempaka, Pacific Ocean",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 30.2,
-    "lon": 154.1,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "landslide risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T12:58:33Z"
   }
 ]
