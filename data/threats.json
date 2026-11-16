@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Ambon region, Indonesia",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -5.94,
+    "lon": 128.75,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami potential",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T09:45:38Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, near Antarctica",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T22:24:09Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Johnson, Wyoming, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "air quality degradation",
-      "threat to nearby livestock",
-      "potential evacuation orders"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T08:14:33Z"
   }
 ]
