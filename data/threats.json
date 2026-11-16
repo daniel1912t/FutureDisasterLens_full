@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 35.28,
+    "lon": -111.67,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "threat to nearby infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T11:15:21Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T09:45:38Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, near Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential collision with shipping lanes",
-      "Disruption of marine wildlife habitats"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T09:35:57Z"
   }
 ]
