@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Changuillo Region, Peru",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -14.84,
+    "lon": -75.42,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption to local transportation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T19:17:53Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Somalia",
     "severity": "Moderate",
     "probability": "68%",
@@ -13,21 +28,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T19:08:06Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Cusco Region, Peru",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -15.03,
-    "lon": -76.03,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "aftershock sequence"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T18:59:41Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
