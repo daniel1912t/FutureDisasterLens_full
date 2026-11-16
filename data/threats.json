@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos, New Hampshire, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T03:20:05Z"
+  },
+  {
     "primary_threat": "Forecasted Prescribed Fire Window",
     "location": "Greene County, Georgia, USA",
     "severity": "Moderate",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T02:01:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Jurm Region, Afghanistan",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": 36.47,
-    "lon": 70.92,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Landslide risk in mountainous terrain"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T15:51:52Z"
   }
 ]
