@@ -1,17 +1,17 @@
 [
   {
     "primary_threat": "Forecasted Prescribed Fire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
+    "location": "Okanogan, Washington, USA",
+    "severity": "Severe",
     "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
+    "lat": 48.53,
+    "lon": -119.06,
     "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby recreational areas"
+      "Smoke dispersion affecting air quality in nearby communities",
+      "Potential ignition of adjacent vegetation if control measures fail"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-17T04:45:07Z"
+    "time_of_event": "2026-11-17T04:54:52Z"
   },
   {
     "primary_threat": "Forecasted Iceberg Drift Window",
