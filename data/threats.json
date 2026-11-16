@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Dry Lake Hills, Coconino County, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.27,
+    "lon": -111.62,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Potential evacuation of nearby communities",
+      "Strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T18:48:11Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Wild River, Coos, New Hampshire, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T07:26:48Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Cusco Region, Peru",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -14.84,
-    "lon": -75.42,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T17:18:39Z"
   }
 ]
