@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 34.51,
+    "lon": -111.26,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T12:13:30Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Jurm Region, Afghanistan",
     "severity": "Moderate",
@@ -131,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T10:41:49Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Union Region, Philippines",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.76,
-    "lon": 126.2,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "tsunami potential"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T15:32:13Z"
   }
 ]
