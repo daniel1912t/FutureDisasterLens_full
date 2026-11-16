@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Gorontalo region, Indonesia",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 1.75,
+    "lon": 122.13,
+    "cascading_effects": [
+      "Potential landslides in mountainous areas",
+      "Disruption of coastal infrastructure due to tsunami risk",
+      "Interruption of power and communication networks"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T05:14:14Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, near 30.2\u00b0N, 154.1\u00b0E",
     "severity": "Severe",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T03:39:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Northwest of Anamizu, Japan",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 37.37,
-    "lon": 136.74,
-    "cascading_effects": [
-      "Potential landslides in mountainous terrain",
-      "Disruption of coastal shipping lanes due to tsunamigenic risk",
-      "Infrastructure damage to roads and bridges"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T03:31:20Z"
   }
 ]
