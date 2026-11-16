@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Foot Creek, Johnson, Wyoming, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Evacuation of nearby communities",
+      "Potential loss of wildlife habitat"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T18:12:07Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Sarangani Province, Philippines",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T06:52:18Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Storm Pena Window",
-    "location": "Central Pacific Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "heavy rainfall causing flash floods on low-lying islands",
-      "strong winds damaging marine infrastructure and coastal habitats",
-      "increased wave heights leading to coastal erosion"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T16:42:48Z"
   }
 ]
