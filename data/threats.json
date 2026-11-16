@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Okanogan, Washington, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 48.53,
+    "lon": -119.06,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T15:23:05Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Severe",
     "probability": "68%",
@@ -131,19 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T00:02:43Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Johnson, Wyoming, USA",
-    "severity": "Severe",
-    "probability": "81%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in nearby towns",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T23:53:06Z"
   }
 ]
