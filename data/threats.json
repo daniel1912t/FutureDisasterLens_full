@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Parun Region, Afghanistan",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 36.09,
+    "lon": 70.95,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T23:08:08Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Typhoon Cempaka, Pacific Ocean",
     "severity": "Severe",
@@ -71,21 +85,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T12:13:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Jurm Region, Afghanistan",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": 36.47,
-    "lon": 70.92,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage",
-      "Disruption to local transport"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T12:05:24Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
