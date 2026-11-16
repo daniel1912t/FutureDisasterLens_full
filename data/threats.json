@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Dry Lake Hills, Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.27,
+    "lon": -111.62,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Potential evacuation of nearby communities",
+      "Increased strain on regional fire suppression resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T11:35:37Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T10:13:05Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Wadomari Region, Japan",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 26.85,
-    "lon": 129.63,
-    "cascading_effects": [
-      "Potential aftershocks affecting nearby coastal infrastructure",
-      "Triggering of landslides in mountainous terrain"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T20:01:55Z"
   }
 ]
