@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Isangel Region, Vanuatu",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -20.77,
+    "lon": 169.82,
+    "cascading_effects": [
+      "Potential tsunamigenic activity",
+      "Disruption to maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T22:06:27Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Changuillo Region, Peru",
     "severity": "Moderate",
     "probability": "78%",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T09:45:27Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Evacuation of nearby communities",
-      "Potential strain on regional firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T19:35:49Z"
   }
 ]
