@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Cusco Region, Peru",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -14.84,
+    "lon": -75.42,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T17:18:39Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Okinawa Prefecture, Japan",
     "severity": "Severe",
     "probability": "68%",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T15:28:55Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Sarangani, Philippines",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 4.78,
-    "lon": 125.43,
-    "cascading_effects": [
-      "Potential infrastructure damage",
-      "Triggered landslides in hilly terrain",
-      "Disruption of coastal shipping routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T15:20:44Z"
   }
 ]
