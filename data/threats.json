@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Prescribed Fire Window",
+    "location": "Wasatch, Utah, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 40.51,
+    "lon": -110.94,
+    "cascading_effects": [
+      "air quality degradation",
+      "temporary road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T19:30:33Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Anamizu region, Japan",
     "severity": "Severe",
@@ -126,20 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T03:57:09Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Pacific Ocean, near 9.8\u00b0N, 173.2\u00b0W",
-    "severity": "Severe",
-    "probability": "81%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "Coastal flooding in nearby islands",
-      "High wind damage to marine vessels",
-      "Potential for tornado formation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T17:49:07Z"
   }
 ]
