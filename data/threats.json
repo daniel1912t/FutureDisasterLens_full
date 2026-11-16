@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Ambon Region, Indonesia",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -5.94,
+    "lon": 128.75,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Infrastructure damage",
+      "Disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T12:38:38Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T11:15:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Afghanistan, near Jurm",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 36.09,
-    "lon": 70.95,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage",
-      "Disruption of communication networks"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T00:57:01Z"
   }
 ]
