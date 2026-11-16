@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Tual Region, Indonesia",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -6.08,
+    "lon": 131.49,
+    "cascading_effects": [
+      "Potential tsunamigenic activity",
+      "Infrastructure damage",
+      "Disruption to maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T21:16:19Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Isangel Region, Vanuatu",
     "severity": "Severe",
     "probability": "68%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T19:53:45Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Lafayette, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": 34.49,
-    "lon": -89.42,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation of nearby communities",
-      "Strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T09:45:27Z"
   }
 ]
