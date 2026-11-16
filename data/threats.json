@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Northwest Gorontalo, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 1.75,
+    "lon": 122.13,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of coastal infrastructure and ports"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T02:36:48Z"
+  },
+  {
     "primary_threat": "Forecasted Prescribed Fire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T00:47:46Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Petropavlovsk-Kamchatsky Region, Russia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 52.49,
-    "lon": 160.49,
-    "cascading_effects": [
-      "aftershocks",
-      "tsunami potential",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T00:39:41Z"
   }
 ]
