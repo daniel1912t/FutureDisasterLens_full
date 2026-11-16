@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Ambon Region, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -5.94,
+    "lon": 128.75,
+    "cascading_effects": [
+      "aftershocks",
+      "landslide risk",
+      "damage to coastal infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T00:20:22Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Gorontalo Region, Indonesia",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T22:50:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Pacific Ocean, near 9.8\u00b0N, 173.2\u00b0W",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "disruption to maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T22:31:16Z"
   }
 ]
