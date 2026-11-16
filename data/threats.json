@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Jurm Region, Afghanistan",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": 36.47,
+    "lon": 70.92,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption to local transport"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T12:05:24Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Wasatch, Utah, USA",
     "severity": "Moderate",
@@ -71,21 +86,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T21:21:58Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "P\u0101r\u016bn Region, Afghanistan",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 36.09,
-    "lon": 70.95,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "aftershock sequence"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T21:09:26Z"
   },
   {
     "primary_threat": "Forecasted Severe Storm Window",
