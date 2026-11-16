@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Prescribed Fire Window",
+    "location": "Okanogan, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.53,
+    "lon": -119.06,
+    "cascading_effects": [
+      "air quality degradation",
+      "potential wildfire spread if winds increase"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T20:35:11Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Jurm region, Afghanistan",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T05:14:14Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Pacific Ocean, near 30.2\u00b0N, 154.1\u00b0E",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 30.2,
-    "lon": 154.1,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "wind damage to infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T05:03:08Z"
   }
 ]
