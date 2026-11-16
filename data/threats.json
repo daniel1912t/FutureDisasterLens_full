@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Jurm Region, Afghanistan",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 36.47,
+    "lon": 70.92,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T23:35:16Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Severe",
@@ -27,20 +41,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T23:17:41Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Parun Region, Afghanistan",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 36.09,
-    "lon": 70.95,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T23:08:08Z"
   },
   {
     "primary_threat": "Forecasted Severe Storm Window",
