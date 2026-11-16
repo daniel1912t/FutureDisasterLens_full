@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Sarangani Province, Philippines",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 4.78,
+    "lon": 125.43,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of coastal fishing communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T13:22:47Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storms Window",
     "location": "Central Pacific Ocean",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T02:01:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T11:53:17Z"
   }
 ]
