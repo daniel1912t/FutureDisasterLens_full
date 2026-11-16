@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg B22K Window",
+    "location": "Southern Ocean, Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Potential collision with shipping lanes",
+      "Disruption of marine wildlife habitats",
+      "Influence on local sea surface temperature"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T21:45:16Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Dry Lake Hills, Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T20:21:15Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Red Hill, Perry, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 31.13,
-    "lon": -89.06,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation of nearby communities",
-      "Impact on local agriculture"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T10:13:05Z"
   }
 ]
