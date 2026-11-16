@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Caluula Region, Somalia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 13.47,
+    "lon": 50.74,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption to coastal shipping"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T17:00:26Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino County, Arizona, USA",
     "severity": "Moderate",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T15:12:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Wadomari, Japan",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 26.85,
-    "lon": 129.63,
-    "cascading_effects": [
-      "potential tsunami",
-      "damage to coastal infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T15:02:40Z"
   }
 ]
