@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "Central Pacific Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -8.5,
+    "lon": -161,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "wind damage to infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T17:36:28Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg B22K Drift Window",
     "location": "Southern Ocean, Near Antarctica",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T03:16:32Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Severo-Kuril\u2019sk, Russia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 49.98,
-    "lon": 155.92,
-    "cascading_effects": [
-      "aftershocks",
-      "potential tsunami risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T15:47:14Z"
   }
 ]
