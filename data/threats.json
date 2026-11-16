@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "East China Sea, near 30.2\u00b0N, 154.1\u00b0E",
+    "severity": "Severe",
+    "probability": "80%",
+    "lat": 30.2,
+    "lon": 154.1,
+    "cascading_effects": [
+      "Coastal flooding in southern Japan",
+      "Disruption of maritime shipping lanes",
+      "Potential landslides in mountainous regions"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-16T22:41:52Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T21:21:00Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Sarangani region, Philippines",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 4.78,
-    "lon": 125.43,
-    "cascading_effects": [
-      "Potential landslides in mountainous terrain",
-      "Disruption of coastal fishing operations",
-      "Possible tsunami generation affecting nearby coastal communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T07:02:28Z"
   }
 ]
