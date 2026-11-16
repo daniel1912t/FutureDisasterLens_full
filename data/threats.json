@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Johnson, Wyoming, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "air quality degradation",
+      "threat to nearby livestock",
+      "potential evacuation orders"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T08:14:33Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, near 9.8\u00b0N, 173.2\u00b0W",
     "severity": "Severe",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T20:35:11Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Jurm region, Afghanistan",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": 36.47,
-    "lon": 70.92,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-16T20:25:28Z"
   }
 ]
