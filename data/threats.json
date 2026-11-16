@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Okanogan, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.53,
+    "lon": -119.06,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T12:20:47Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Georgia, USA",
     "severity": "Moderate",
     "probability": "71%",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T10:47:07Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Anamizu, Japan",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 37.37,
-    "lon": 136.74,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Landslide risk in mountainous terrain"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T10:38:55Z"
   }
 ]
