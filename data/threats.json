@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Forrest, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 31.1,
+    "lon": -89.16,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Evacuation of nearby communities",
+      "Potential strain on regional firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T15:38:53Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "Pacific Ocean, Near -8.2\u00b0S, 158.9\u00b0W",
     "severity": "Severe",
@@ -112,21 +127,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T14:26:55Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 31.13,
-    "lon": -89.06,
-    "cascading_effects": [
-      "Air quality degradation affecting nearby communities",
-      "Potential damage to residential structures and infrastructure",
-      "Evacuation orders and strain on emergency services"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T14:17:07Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
