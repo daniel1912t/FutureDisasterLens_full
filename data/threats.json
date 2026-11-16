@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Near Changuillo, Peru",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -15.03,
+    "lon": -76.03,
+    "cascading_effects": [
+      "Potential aftershocks causing landslides",
+      "Disruption of local infrastructure and roads"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T14:36:34Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Wasatch, Utah, USA",
     "severity": "Moderate",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T13:06:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Anamizu, Japan",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 37.37,
-    "lon": 136.74,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T12:56:28Z"
   }
 ]
