@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino County, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": 35.27,
+    "lon": -111.62,
+    "cascading_effects": [
+      "air quality degradation",
+      "potential evacuation of nearby recreation areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T06:52:18Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Storm Pena Window",
     "location": "Central Pacific Ocean",
     "severity": "Severe",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T15:02:40Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean near Antarctica",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Disruption of international shipping lanes",
-      "Potential impact on marine wildlife migration patterns"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T14:54:27Z"
   }
 ]
