@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg B22K Drift Window",
+    "location": "Southern Ocean, Near Antarctica",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Potential collision with shipping lanes",
+      "Disruption of marine wildlife habitats",
+      "Influence on local sea ice formation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T07:26:48Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Cusco Region, Peru",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T15:47:14Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "Pacific Ocean, Near -8.2\u00b0S, 158.9\u00b0W",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -8.2,
-    "lon": -158.9,
-    "cascading_effects": [
-      "Coastal flooding",
-      "High wind damage to infrastructure",
-      "Disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T15:28:55Z"
   }
 ]
