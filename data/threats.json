@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Caluula, Somalia",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 13.47,
+    "lon": 50.74,
+    "cascading_effects": [
+      "tsunami risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T14:44:44Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Near Changuillo, Peru",
     "severity": "Severe",
     "probability": "68%",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T13:14:36Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Petropavlovsk-Kamchatsky Region, Russia",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 52.49,
-    "lon": 160.49,
-    "cascading_effects": [
-      "tsunami risk",
-      "landslide potential",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T13:06:26Z"
   }
 ]
