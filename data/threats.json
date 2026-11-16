@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino County, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 34.51,
+    "lon": -111.26,
+    "cascading_effects": [
+      "air quality degradation",
+      "threat to nearby infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T13:59:01Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storms Window",
     "location": "South Pacific Ocean near 9.8\u00b0S, 173.2\u00b0W",
     "severity": "Severe",
@@ -27,21 +41,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T13:42:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino County, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.27,
-    "lon": -111.62,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation of nearby communities",
-      "Strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T13:32:31Z"
   },
   {
     "primary_threat": "Forecasted Seismic Activity Window",
