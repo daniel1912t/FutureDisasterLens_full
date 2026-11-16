@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storms Window",
+    "location": "Northern Philippines Sea, Philippines",
+    "severity": "Severe",
+    "probability": "82%",
+    "lat": 30.2,
+    "lon": 154.1,
+    "cascading_effects": [
+      "Coastal flooding",
+      "Landslides in mountainous regions",
+      "Disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T13:42:21Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino County, Arizona, USA",
     "severity": "Moderate",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T12:20:47Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Georgia, USA",
-    "severity": "Moderate",
-    "probability": "71%",
-    "lat": 33.75,
-    "lon": -83.26,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T12:11:13Z"
   }
 ]
