@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Northwest of Anamizu, Japan",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 37.37,
+    "lon": 136.74,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of coastal shipping lanes due to tsunamigenic risk",
+      "Infrastructure damage to roads and bridges"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T03:31:20Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Severe",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-16T16:09:34Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Pacific Ocean, near 9.8\u00b0N, 173.2\u00b0W",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "Coastal flooding",
-      "High wind damage to marine vessels",
-      "Potential for offshore tornadoes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T02:01:28Z"
   }
 ]
