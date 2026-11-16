@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Petropavlovsk-Kamchatsky Region, Russia",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 52.49,
+    "lon": 160.49,
+    "cascading_effects": [
+      "tsunami risk",
+      "landslide potential",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T13:06:26Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Anamizu, Japan",
     "severity": "Severe",
     "probability": "68%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T11:43:22Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Window",
-    "location": "Central Pacific",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -8.2,
-    "lon": -158.9,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods",
-      "High winds leading to coastal erosion",
-      "Storm surge impacting low-lying islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T11:35:09Z"
   }
 ]
