@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Anamizu, Japan",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 37.37,
+    "lon": 136.74,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T12:56:28Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "P\u0101r\u016bn Region, Afghanistan",
     "severity": "Severe",
     "probability": "68%",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T11:35:09Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, near Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential shipping route disruption",
-      "Marine ecosystem impact"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T11:23:46Z"
   }
 ]
