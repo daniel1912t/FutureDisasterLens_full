@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "P\u0101r\u016bn Region, Afghanistan",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 36.09,
+    "lon": 70.95,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "disruption of communication networks"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T12:46:48Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Ambon Region, Indonesia",
     "severity": "Severe",
     "probability": "78%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T11:23:46Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 35.28,
-    "lon": -111.67,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "threat to nearby infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T11:15:21Z"
   }
 ]
