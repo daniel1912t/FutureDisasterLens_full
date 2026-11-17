@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos, New Hampshire, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in neighboring towns",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T18:05:05Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, near Antarctica",
     "severity": "Moderate",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T16:33:22Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "South of the Kermadec Islands, New Zealand",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -32.31,
-    "lon": 179.84,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Triggering of landslides on nearby islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T16:23:40Z"
   }
 ]
