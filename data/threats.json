@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 42.92,
+    "lon": -88.48,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T17:48:38Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T16:15:07Z"
-  },
-  {
-    "primary_threat": "Forecasted Volcanic Eruption Window",
-    "location": "Oxford, New Zealand",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -43.02,
-    "lon": 171.81,
-    "cascading_effects": [
-      "ashfall affecting air traffic",
-      "lahar risk to downstream valleys"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T15:01:23Z"
   }
 ]
