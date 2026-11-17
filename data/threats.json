@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Window",
+    "location": "Southern Ocean, Near Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Maritime navigation hazards",
+      "Potential impact on nearby research stations"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T00:21:24Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Changuillo Vicinity, Peru",
     "severity": "Moderate",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T22:29:01Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Johnson, Wyoming, USA",
-    "severity": "Severe",
-    "probability": "81%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Threat to nearby infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T12:19:25Z"
   }
 ]
