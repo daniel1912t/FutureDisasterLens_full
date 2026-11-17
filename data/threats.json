@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Southeast of Kirakira, Solomon Islands",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.53,
+    "lon": 162.55,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Infrastructure damage",
+      "Disruption of maritime navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T06:19:28Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Kavieng region, Papua New Guinea",
     "severity": "Severe",
     "probability": "68%",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T18:46:44Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in nearby communities",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T04:37:05Z"
   }
 ]
