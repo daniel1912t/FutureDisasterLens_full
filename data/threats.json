@@ -1,18 +1,17 @@
 [
   {
-    "primary_threat": "Forecasted Volcanic Eruption Window",
-    "location": "South of the Kermadec Islands",
+    "primary_threat": "Forecasted Tsunami Warning Window",
+    "location": "South of the Kermadec Islands, New Zealand",
     "severity": "Severe",
     "probability": "68%",
     "lat": -32.31,
     "lon": 179.84,
     "cascading_effects": [
-      "Tsunami generation",
-      "Aviation ash hazard",
-      "Marine ecosystem disruption"
+      "Coastal flooding",
+      "Disruption of shipping lanes"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-18T14:43:07Z"
+    "time_of_event": "2026-11-18T04:51:36Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
