@@ -1,18 +1,17 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Ozernovskiy, Russia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 51.96,
-    "lon": 157.79,
+    "location": "Vilyuchinsk, Russia",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": 51.71,
+    "lon": 158.48,
     "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage",
-      "Disruption to regional power grid"
+      "Potential aftershocks affecting nearby coastal communities",
+      "Risk of tsunamigenic activity in the Pacific near Kamchatka Peninsula"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-18T15:39:31Z"
+    "time_of_event": "2026-11-18T15:48:10Z"
   },
   {
     "primary_threat": "Forecasted Volcanic Eruption Window",
