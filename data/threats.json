@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Near Kavieng, Papua New Guinea",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -1.72,
+    "lon": 149.81,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami generation potential",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T01:16:29Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T23:42:43Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "threat to local wildlife habitats"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T23:24:42Z"
   }
 ]
