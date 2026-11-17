@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Oxford, New Zealand",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -43.02,
+    "lon": 171.81,
+    "cascading_effects": [
+      "potential landslides",
+      "temporary infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T13:53:09Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Alotau, Papua New Guinea",
     "severity": "Severe",
     "probability": "68%",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T12:21:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Tsunami Wave Window",
-    "location": "Kirakira, Solomon Islands",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.53,
-    "lon": 162.55,
-    "cascading_effects": [
-      "Coastal flooding",
-      "Infrastructure damage",
-      "Disruption of maritime transport"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T12:10:57Z"
   }
 ]
