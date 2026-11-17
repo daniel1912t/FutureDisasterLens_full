@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Kavieng, Papua New Guinea",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -1.67,
+    "lon": 149.9,
+    "cascading_effects": [
+      "aftershocks",
+      "landslide risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T21:21:36Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Pacific Ocean, near Fiji",
     "severity": "Severe",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T19:43:37Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg B22K Window",
-    "location": "Southern Ocean, near Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "shipping lane disruption",
-      "potential iceberg grounding affecting marine ecosystems"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T19:32:20Z"
   }
 ]
