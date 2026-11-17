@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Tual, Indonesia",
+    "severity": "Severe",
+    "probability": "82%",
+    "lat": -6.08,
+    "lon": 131.49,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Landslides in surrounding highlands",
+      "Infrastructure damage in coastal communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T06:50:15Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Scott, Mississippi, USA",
     "severity": "Moderate",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T04:19:07Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Southeast of Kirakira, Solomon Islands",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.53,
-    "lon": 162.55,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami generation",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T04:09:24Z"
   }
 ]
