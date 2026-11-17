@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Volcanic Eruption Window",
+    "location": "Oxford, New Zealand",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -43.02,
+    "lon": 171.81,
+    "cascading_effects": [
+      "ashfall affecting air traffic",
+      "lahar risk to downstream valleys"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T15:01:23Z"
+  },
+  {
     "primary_threat": "Forecasted Tsunami Warning Window",
     "location": "South of the Kermadec Islands, New Zealand",
     "severity": "Severe",
@@ -26,20 +40,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T14:03:07Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Oxford, New Zealand",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -43.02,
-    "lon": 171.81,
-    "cascading_effects": [
-      "potential landslides",
-      "temporary infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T13:53:09Z"
   },
   {
     "primary_threat": "Forecasted Seismic Activity Window",
