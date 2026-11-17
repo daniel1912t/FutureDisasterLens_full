@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Port-Olry, Vanuatu",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -15.01,
+    "lon": 167.31,
+    "cascading_effects": [
+      "Potential landslides in surrounding hills",
+      "Disruption of coastal fishing activities",
+      "Risk of tsunamigenic waves affecting nearby islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T13:25:56Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Noda, Japan",
     "severity": "Moderate",
     "probability": "78%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T11:43:31Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Northwest of Oxford, New Zealand",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -43.02,
-    "lon": 171.81,
-    "cascading_effects": [
-      "Potential landslides in mountainous terrain",
-      "Disruption of regional power grid",
-      "Aftershock sequence affecting nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T11:35:01Z"
   }
 ]
