@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, near Fiji",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -9.1,
+    "lon": -163.5,
+    "cascading_effects": [
+      "heavy rainfall causing flash floods",
+      "storm surge impacting low-lying islands",
+      "disruption of maritime navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T21:11:55Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Northwest of Port-Vila, Vanuatu",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T19:32:20Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "potential strain on local fire resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T19:24:02Z"
   }
 ]
