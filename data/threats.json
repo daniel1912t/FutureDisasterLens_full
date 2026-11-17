@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Port-Olry, Vanuatu",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -15.01,
+    "lon": 167.31,
+    "cascading_effects": [
+      "Potential landslides in nearby hills",
+      "Disruption of local communications infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T04:56:33Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Foot Creek, Johnson, Wyoming, USA",
     "severity": "Severe",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T03:33:25Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential collision with shipping lanes",
-      "Disruption of marine wildlife habitats"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T03:23:46Z"
   }
 ]
