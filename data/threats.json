@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "Pacific Ocean, near Vanuatu",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -8.9,
+    "lon": -162.6,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods",
+      "Storm surge impacting low-lying coastal communities",
+      "Disruption of maritime shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T08:45:16Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Southeast of Kirakira, Solomon Islands",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T21:23:04Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential shipping lane disruptions",
-      "Risk to offshore platforms",
-      "Possible coastal ice impact on nearby research stations"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T07:03:50Z"
   }
 ]
