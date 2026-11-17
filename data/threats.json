@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Southeast Vanuatu, Vanuatu",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -20.77,
+    "lon": 169.82,
+    "cascading_effects": [
+      "tsunami potential",
+      "landslide risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T06:06:44Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Southern Pacific Ocean, Near Kiribati",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T11:24:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Tual Region, Indonesia",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -6.08,
-    "lon": 131.49,
-    "cascading_effects": [
-      "Potential tsunamigenic activity",
-      "Infrastructure damage",
-      "Disruption to maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T21:16:19Z"
   }
 ]
