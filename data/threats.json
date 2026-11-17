@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Window",
+    "location": "Southern Ocean, near Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "maritime navigation hazard",
+      "potential coastal impact on nearby research stations"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T17:55:22Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T16:23:40Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Ozernovskiy, Russia",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": 51.96,
-    "lon": 157.79,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure stress",
-      "Possible landslide in nearby hills"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T16:15:07Z"
   }
 ]
