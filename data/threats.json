@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Wild River, Coos, New Hampshire, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in nearby towns",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T08:16:26Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Near Isangel, Vanuatu",
     "severity": "Moderate",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T06:45:35Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Near Changuillo, Peru",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -14.98,
-    "lon": -75.87,
-    "cascading_effects": [
-      "Potential landslides in Andean foothills",
-      "Disruption of regional road networks",
-      "Risk to mining infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T20:27:35Z"
   }
 ]
