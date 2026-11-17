@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Kirakira, Solomon Islands",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -11.53,
+    "lon": 162.55,
+    "cascading_effects": [
+      "aftershocks",
+      "landslides",
+      "potential tsunami"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T12:02:09Z"
+  },
+  {
     "primary_threat": "Forecasted Volcanic Eruption Window",
     "location": "Southeast of Isangel, Vanuatu",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T10:41:40Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "South Pacific Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -9.1,
-    "lon": -163.5,
-    "cascading_effects": [
-      "storm surge flooding coastal communities",
-      "heavy rainfall causing landslides",
-      "disruption of maritime shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T10:32:00Z"
   }
 ]
