@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Northwest of Port-Vila, Vanuatu",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -17.56,
+    "lon": 168.14,
+    "cascading_effects": [
+      "tsunami potential",
+      "infrastructure damage",
+      "disruption of marine navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T21:03:47Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "South of Vilyuchinsk, Russia",
     "severity": "Moderate",
     "probability": "78%",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T19:24:02Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "95 km West of Alotau, Papua New Guinea",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -10.27,
-    "lon": 149.58,
-    "cascading_effects": [
-      "Potential landslides in coastal valleys",
-      "Disruption of undersea communication cables"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T19:14:19Z"
   }
 ]
