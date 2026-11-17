@@ -1,17 +1,18 @@
 [
   {
-    "primary_threat": "Forecasted Tsunami Warning Window",
-    "location": "Kamchatka Peninsula, Russia",
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Ozernovskiy, Russia",
     "severity": "Severe",
-    "probability": "68%",
-    "lat": 51.71,
-    "lon": 158.48,
+    "probability": "78%",
+    "lat": 51.96,
+    "lon": 157.79,
     "cascading_effects": [
-      "Coastal flooding in nearby villages",
-      "Disruption of maritime shipping lanes"
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Triggering of nearby landslides"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-18T15:10:25Z"
+    "time_of_event": "2026-11-18T15:20:56Z"
   },
   {
     "primary_threat": "Forecasted Volcanic Eruption Window",
