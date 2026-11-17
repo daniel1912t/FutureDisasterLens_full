@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene County, Georgia, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 33.75,
+    "lon": -83.26,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Potential evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T00:58:40Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Storm Window",
     "location": "Pacific Ocean, Near 9.8\u00b0N, 173.2\u00b0W",
     "severity": "Moderate",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T23:24:42Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Kavieng Region, Papua New Guinea",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -1.72,
-    "lon": 149.81,
-    "cascading_effects": [
-      "potential landslides",
-      "infrastructure damage",
-      "tsunami risk if offshore epicenter"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T23:16:38Z"
   }
 ]
