@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Near Tual, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -6.08,
+    "lon": 131.49,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami potential",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T21:50:26Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene County, Georgia, USA",
     "severity": "Moderate",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T06:09:48Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Dry Lake Hills, Coconino County, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.27,
-    "lon": -111.62,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in Flagstaff",
-      "Potential strain on local fire suppression resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T06:01:31Z"
   }
 ]
