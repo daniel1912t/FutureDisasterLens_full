@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Window",
+    "location": "Southern Ocean near Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Potential collision with shipping lanes",
+      "Disruption of marine wildlife habitats"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T13:35:50Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Port-Olry, Vanuatu",
     "severity": "Severe",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T11:52:06Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "West of Alotau, Papua New Guinea",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": -10.27,
-    "lon": 149.58,
-    "cascading_effects": [
-      "Potential landslides",
-      "Disruption to coastal shipping routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T11:43:31Z"
   }
 ]
