@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Stevens, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.4,
+    "lon": -117.53,
+    "cascading_effects": [
+      "air quality degradation",
+      "potential evacuation orders"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T20:55:23Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "South Pacific Ocean, near -8.9\u00b0, -162.6\u00b0",
     "severity": "Severe",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T03:14:34Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Hazard Window",
-    "location": "Southern Ocean, near -69.76\u00b0, 163.35\u00b0",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential collision with shipping lanes",
-      "Disruption of marine wildlife habitats",
-      "Influence on local sea temperature patterns"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T05:06:26Z"
   }
 ]
