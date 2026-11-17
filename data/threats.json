@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Southeast of Isangel, Vanuatu",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -20.77,
+    "lon": 169.82,
+    "cascading_effects": [
+      "potential tsunami generation",
+      "damage to coastal infrastructure",
+      "disruption of communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T09:46:08Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "ENE of Noda, Japan",
     "severity": "Severe",
     "probability": "68%",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T08:26:06Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Wild River, Coos, New Hampshire, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in nearby towns",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T08:16:26Z"
   }
 ]
