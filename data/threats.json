@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Volcanic Eruption Window",
+    "location": "Southeast of Isangel, Vanuatu",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -20.77,
+    "lon": 169.82,
+    "cascading_effects": [
+      "Ashfall affecting nearby islands",
+      "Lahars impacting river valleys",
+      "Air traffic disruptions"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T11:52:06Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "West of Alotau, Papua New Guinea",
     "severity": "Moderate",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T10:32:00Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "SSE of Kirakira, Solomon Islands",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.53,
-    "lon": 162.55,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami generation potential"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T10:23:46Z"
   }
 ]
