@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Changuillo, Peru",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -14.98,
+    "lon": -75.87,
+    "cascading_effects": [
+      "Potential landslides",
+      "Infrastructure damage",
+      "Disruption of local transportation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T04:19:07Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Southeast of Kirakira, Solomon Islands",
     "severity": "Severe",
     "probability": "68%",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T02:56:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Port-Olry region, Vanuatu",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -15.01,
-    "lon": 167.31,
-    "cascading_effects": [
-      "Potential landslides in surrounding hills",
-      "Disruption of coastal marine ecosystems due to underwater shockwaves"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T02:48:15Z"
   }
 ]
