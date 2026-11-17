@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Window",
+    "location": "Southern Ocean, Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Potential collision with shipping lanes",
+      "Disruption of marine wildlife habitats"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T03:23:46Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Storm Window",
     "location": "South Pacific Ocean, near 9.8\u00b0S, 173.2\u00b0W",
     "severity": "Severe",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T15:53:19Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Near Changuillo, Peru",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -14.84,
-    "lon": -75.42,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T01:43:44Z"
   }
 ]
