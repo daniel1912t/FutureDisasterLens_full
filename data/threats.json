@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "West Sulawesi, Indonesia",
+    "severity": "Extreme",
+    "probability": "80%",
+    "lat": -6.08,
+    "lon": 131.49,
+    "cascading_effects": [
+      "tsunami generation",
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T11:08:28Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Holly Springs, Lafayette, Mississippi, USA",
     "severity": "Moderate",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T09:46:08Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "ENE of Noda, Japan",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 40.64,
-    "lon": 143.75,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage",
-      "Disruption to transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T09:38:02Z"
   }
 ]
