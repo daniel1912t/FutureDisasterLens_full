@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Southwest Indian Ocean, near Madagascar",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 12.2,
+    "lon": 87.3,
+    "cascading_effects": [
+      "heavy rainfall causing flash floods",
+      "storm surge impacting coastal communities",
+      "disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T18:39:44Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Near Ozernovskiy, Russia",
     "severity": "Severe",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T17:19:33Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Piti Village, Guam",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 13.48,
-    "lon": 144.62,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Infrastructure damage",
-      "Disruption of communication networks"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T17:11:19Z"
   }
 ]
