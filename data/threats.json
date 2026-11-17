@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Johnson, Wyoming, USA",
+    "severity": "Severe",
+    "probability": "81%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Threat to nearby infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T12:19:25Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Forrest, Mississippi, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T20:47:13Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Storm Pena Window",
-    "location": "Johnson, Wyoming, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "flash flooding",
-      "landslide risk",
-      "power outages"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T10:39:05Z"
   }
 ]
