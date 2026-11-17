@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Holly Springs, Lafayette, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 34.49,
+    "lon": -89.42,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T11:00:04Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson County, Wyoming, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T09:38:02Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "West of Tual, Indonesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -6.08,
-    "lon": 131.49,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Infrastructure damage",
-      "Disruption to maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T09:29:51Z"
   }
 ]
