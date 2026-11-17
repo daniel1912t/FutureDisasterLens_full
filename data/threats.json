@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Forrest, Mississippi, USA",
+    "severity": "Severe",
+    "probability": "81%",
+    "lat": 31.1,
+    "lon": -89.16,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Evacuation of nearby communities",
+      "Potential strain on local water resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T13:08:54Z"
+  },
+  {
     "primary_threat": "Forecasted Volcanic Eruption Window",
     "location": "South of the Kermadec Islands",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T11:26:48Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "East of Noda, Japan",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 40.64,
-    "lon": 143.75,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage",
-      "Disruption to transportation networks"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T11:16:57Z"
   }
 ]
