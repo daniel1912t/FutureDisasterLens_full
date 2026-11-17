@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Pacific Region, Near Kiribati",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.8,
+    "lon": -173.2,
+    "cascading_effects": [
+      "Coastal flooding",
+      "High wind damage to infrastructure",
+      "Disruption of marine navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T22:29:01Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Severe",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T20:56:48Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Kavieng Region, Papua New Guinea",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -1.72,
-    "lon": 149.81,
-    "cascading_effects": [
-      "landslides",
-      "road closures",
-      "building structural damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T20:47:13Z"
   }
 ]
