@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "South of Vilyuchinsk, Russia",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": 51.71,
+    "lon": 158.48,
+    "cascading_effects": [
+      "potential aftershocks",
+      "infrastructure stress",
+      "tsunami risk for nearby coastlines"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T10:53:59Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -12,21 +27,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T20:45:41Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Ozernovskiy Region, Russia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 51.96,
-    "lon": 157.79,
-    "cascading_effects": [
-      "potential aftershocks",
-      "infrastructure damage",
-      "disruption of communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T03:35:55Z"
   },
   {
     "primary_threat": "Forecasted Severe Storm Window",
