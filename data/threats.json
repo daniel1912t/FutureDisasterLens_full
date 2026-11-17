@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "95 km West of Alotau, Papua New Guinea",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -10.27,
+    "lon": 149.58,
+    "cascading_effects": [
+      "Potential landslides in coastal valleys",
+      "Disruption of undersea communication cables"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T19:14:19Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Northwest of Port-Vila, Vanuatu",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T17:55:22Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Waukesha, Wisconsin, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 42.92,
-    "lon": -88.48,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "road closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T17:48:38Z"
   }
 ]
