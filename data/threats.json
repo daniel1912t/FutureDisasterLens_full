@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Near Changuillo, Peru",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -14.84,
+    "lon": -75.42,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T01:43:44Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Forrest, Mississippi, USA",
     "severity": "Severe",
@@ -114,21 +128,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T00:21:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Changuillo Vicinity, Peru",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -14.98,
-    "lon": -75.87,
-    "cascading_effects": [
-      "Potential aftershocks affecting nearby communities",
-      "Risk of landslides in steep terrain",
-      "Disruption to regional road networks"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T00:11:44Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
