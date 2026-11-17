@@ -1,17 +1,18 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
-    "location": "Scott, Mississippi, USA",
-    "severity": "Moderate",
+    "location": "Lafayette, Mississippi, USA",
+    "severity": "Severe",
     "probability": "68%",
-    "lat": 32.42,
-    "lon": -89.6,
+    "lat": 34.49,
+    "lon": -89.42,
     "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation of nearby communities"
+      "air quality degradation",
+      "mandatory evacuations",
+      "strain on local firefighting resources"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-18T06:53:07Z"
+    "time_of_event": "2026-11-18T17:01:17Z"
   },
   {
     "primary_threat": "Forecasted Severe Storm Window",
