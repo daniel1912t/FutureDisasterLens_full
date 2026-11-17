@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Wasatch, Utah, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 40.51,
+    "lon": -110.94,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in Salt Lake Valley",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T02:28:53Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "West Timor, Indonesia",
     "severity": "Extreme",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T00:58:40Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Storm Window",
-    "location": "Pacific Ocean, Near 9.8\u00b0N, 173.2\u00b0W",
-    "severity": "Moderate",
-    "probability": "71%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "wind damage to marine vessels"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T14:49:02Z"
   }
 ]
