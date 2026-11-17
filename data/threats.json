@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Kavieng Region, Papua New Guinea",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -1.72,
+    "lon": 149.81,
+    "cascading_effects": [
+      "potential landslides",
+      "infrastructure damage",
+      "tsunami risk if offshore epicenter"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T23:16:38Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Southeast Vanuatu, Vanuatu",
     "severity": "Severe",
     "probability": "78%",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T11:35:37Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "air quality degradation",
-      "threat to nearby habitats"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T11:24:28Z"
   }
 ]
