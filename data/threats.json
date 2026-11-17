@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "East of Noda, Japan",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 40.64,
+    "lon": 143.75,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption to transportation networks"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T11:16:57Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "West Sulawesi, Indonesia",
     "severity": "Extreme",
     "probability": "80%",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T09:55:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Southeast of Isangel, Vanuatu",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -20.77,
-    "lon": 169.82,
-    "cascading_effects": [
-      "potential tsunami generation",
-      "damage to coastal infrastructure",
-      "disruption of communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T09:46:08Z"
   }
 ]
