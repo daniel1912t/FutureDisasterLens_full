@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Southeast of Kirakira, Solomon Islands",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.53,
+    "lon": 162.55,
+    "cascading_effects": [
+      "Potential aftershocks affecting nearby islands",
+      "Disruption of maritime routes",
+      "Triggering of landslides in coastal valleys"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T08:35:40Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Severe",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T07:03:50Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential evacuation orders"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T20:55:23Z"
   }
 ]
