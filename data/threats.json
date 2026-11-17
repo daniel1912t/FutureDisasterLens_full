@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Port-Olry region, Vanuatu",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -15.01,
+    "lon": 167.31,
+    "cascading_effects": [
+      "Potential landslides in surrounding hills",
+      "Disruption of coastal marine ecosystems due to underwater shockwaves"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T02:48:15Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Window",
     "location": "Southern Pacific Ocean",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T01:24:33Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Near Kavieng, Papua New Guinea",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -1.72,
-    "lon": 149.81,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami generation potential",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T01:16:29Z"
   }
 ]
