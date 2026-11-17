@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Landslide Window",
+    "location": "South of the Kermadec Islands, New Zealand",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -32.31,
+    "lon": 179.84,
+    "cascading_effects": [
+      "Coastal flooding",
+      "Disruption of marine navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T15:57:52Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Vilyuchinsk, Russia",
     "severity": "Moderate",
@@ -26,20 +40,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T15:01:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Tsunami Warning Window",
-    "location": "South of the Kermadec Islands, New Zealand",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -32.31,
-    "lon": 179.84,
-    "cascading_effects": [
-      "Coastal flooding",
-      "Disruption of shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T04:51:36Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
