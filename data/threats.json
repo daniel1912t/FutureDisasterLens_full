@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.27,
+    "lon": -111.62,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in nearby communities",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T23:52:17Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Tual Region, Indonesia",
     "severity": "Extreme",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T12:19:25Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Georgia, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 33.75,
-    "lon": -83.26,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T21:53:29Z"
   }
 ]
