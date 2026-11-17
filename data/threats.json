@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Near Changuillo, Peru",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -14.98,
+    "lon": -75.87,
+    "cascading_effects": [
+      "Potential landslides in Andean foothills",
+      "Disruption of regional road networks",
+      "Risk to mining infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T20:27:35Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Southeast of Kirakira, Solomon Islands",
     "severity": "Severe",
     "probability": "68%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T04:56:33Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Foot Creek, Johnson, Wyoming, USA",
-    "severity": "Severe",
-    "probability": "81%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in surrounding states",
-      "Potential strain on local firefighting resources",
-      "Risk of rapid fire spread to nearby grasslands and wildlife habitats"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T18:46:44Z"
   }
 ]
