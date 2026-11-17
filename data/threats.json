@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Tual Region, Indonesia",
+    "severity": "Extreme",
+    "probability": "68%",
+    "lat": -6.08,
+    "lon": 131.49,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Landslides in mountainous terrain",
+      "Disruption of coastal infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T23:42:43Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Scott, Mississippi, USA",
     "severity": "Moderate",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T21:53:29Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg B22K Window",
-    "location": "Southern Ocean, Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential collision with shipping lanes",
-      "Disruption of marine wildlife habitats",
-      "Influence on local sea surface temperature"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T21:45:16Z"
   }
 ]
