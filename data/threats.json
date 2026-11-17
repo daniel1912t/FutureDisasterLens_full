@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, near French Polynesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -9.1,
+    "lon": -163.5,
+    "cascading_effects": [
+      "Heavy rainfall leading to flash floods",
+      "High winds causing coastal erosion"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T18:57:43Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Northwest of Kavieng, Papua New Guinea",
     "severity": "Moderate",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T17:37:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T17:29:16Z"
   }
 ]
