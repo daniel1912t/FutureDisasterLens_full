@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Changuillo Region, Peru",
+    "severity": "Moderate",
+    "probability": "70%",
+    "lat": -14.84,
+    "lon": -75.42,
+    "cascading_effects": [
+      "potential landslides",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T12:48:36Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Severe",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T22:06:27Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Changuillo Region, Peru",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": -14.98,
-    "lon": -75.87,
-    "cascading_effects": [
-      "potential landslides",
-      "damage to roads and bridges"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T20:56:48Z"
   }
 ]
