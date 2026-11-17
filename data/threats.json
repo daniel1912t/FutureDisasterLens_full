@@ -1,18 +1,18 @@
 [
   {
-    "primary_threat": "Forecasted Seismic Activity Window",
+    "primary_threat": "Forecasted Tsunami Wave Window",
     "location": "Kirakira, Solomon Islands",
     "severity": "Severe",
-    "probability": "78%",
+    "probability": "68%",
     "lat": -11.53,
     "lon": 162.55,
     "cascading_effects": [
-      "aftershocks",
-      "landslides",
-      "potential tsunami"
+      "Coastal flooding",
+      "Infrastructure damage",
+      "Disruption of maritime transport"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-18T12:02:09Z"
+    "time_of_event": "2026-11-18T12:10:57Z"
   },
   {
     "primary_threat": "Forecasted Volcanic Eruption Window",
