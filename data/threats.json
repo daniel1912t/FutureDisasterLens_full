@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Wasatch, Utah, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 40.51,
+    "lon": -110.94,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T21:39:21Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T10:01:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "South of the Kermadec Islands",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -32.31,
-    "lon": 179.84,
-    "cascading_effects": [
-      "Potential tsunami generation affecting nearby coastlines",
-      "Disruption of undersea communication cables",
-      "Triggering of landslides on volcanic islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T19:51:43Z"
   }
 ]
