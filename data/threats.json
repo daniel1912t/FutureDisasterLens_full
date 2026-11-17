@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Isangel, Vanuatu",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -20.77,
+    "lon": 169.82,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of local communications infrastructure",
+      "Risk of tsunami generation affecting nearby coastal communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T02:01:22Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson County, Wyoming, USA",
     "severity": "Moderate",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T00:31:03Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, Near Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Maritime navigation hazards",
-      "Potential impact on nearby research stations"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T00:21:24Z"
   }
 ]
