@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Ozernovskiy Region, Russia",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 51.96,
+    "lon": 157.79,
+    "cascading_effects": [
+      "potential aftershocks",
+      "infrastructure damage",
+      "disruption of communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T03:35:55Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Southwestern Indian Ocean, near Maldives",
     "severity": "Severe",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T19:14:19Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Northwest of Port-Vila, Vanuatu",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -17.56,
-    "lon": 168.14,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Infrastructure damage",
-      "Disruption of communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T19:06:03Z"
   }
 ]
