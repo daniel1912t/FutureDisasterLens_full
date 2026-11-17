@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Kavieng region, Papua New Guinea",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -1.72,
+    "lon": 149.81,
+    "cascading_effects": [
+      "landslide",
+      "tsunami risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T06:09:48Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Dry Lake Hills, Coconino County, Arizona, USA",
     "severity": "Moderate",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T04:37:05Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "South Pacific Ocean, near -8.9\u00b0S, 162.6\u00b0W",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -8.9,
-    "lon": -162.6,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods in low-lying islands",
-      "High winds damaging coastal infrastructure and marine vessels",
-      "Storm surge leading to coastal erosion and habitat loss"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T04:27:16Z"
   }
 ]
