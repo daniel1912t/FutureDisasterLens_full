@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "West of Tual, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -6.08,
+    "lon": 131.49,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Infrastructure damage",
+      "Disruption to maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T09:29:51Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "East of Port-Olry, Vanuatu",
     "severity": "Severe",
     "probability": "68%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T08:08:09Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Wasatch, Utah, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 40.51,
-    "lon": -110.94,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "potential damage to infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T21:58:33Z"
   }
 ]
