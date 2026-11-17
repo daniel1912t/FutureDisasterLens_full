@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Southern Pacific Ocean, Near Kiribati",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -8.9,
+    "lon": -162.6,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "disruption to shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T00:39:24Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Wasatch, Utah, USA",
     "severity": "Moderate",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T06:06:44Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Southern Pacific Ocean, Near Kiribati",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -8.9,
-    "lon": -162.6,
-    "cascading_effects": [
-      "heavy rainfall causing flash floods",
-      "storm surge impacting low-lying islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T22:58:23Z"
   }
 ]
