@@ -1,18 +1,18 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Changuillo Region, Peru",
-    "severity": "Severe",
+    "location": "Changuillo Vicinity, Peru",
+    "severity": "Moderate",
     "probability": "68%",
-    "lat": -15.03,
-    "lon": -76.03,
+    "lat": -14.98,
+    "lon": -75.87,
     "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "potential tsunami warning for coastal areas"
+      "Potential aftershocks affecting nearby communities",
+      "Risk of landslides in steep terrain",
+      "Disruption to regional road networks"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-18T00:02:06Z"
+    "time_of_event": "2026-11-18T00:11:44Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
