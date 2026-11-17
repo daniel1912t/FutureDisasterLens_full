@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Near Isangel, Vanuatu",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -20.77,
+    "lon": 169.82,
+    "cascading_effects": [
+      "potential landslides",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T08:08:09Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Wasatch, Utah, USA",
     "severity": "Moderate",
@@ -131,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T20:27:35Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Southeast of Kirakira, Solomon Islands",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.53,
-    "lon": 162.55,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Infrastructure damage",
-      "Disruption of maritime navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T06:19:28Z"
   }
 ]
