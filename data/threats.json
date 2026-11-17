@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Alotau, Papua New Guinea",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -10.27,
+    "lon": 149.58,
+    "cascading_effects": [
+      "Potential landslides",
+      "Tsunami generation risk",
+      "Infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T13:44:29Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean near Antarctica",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T12:10:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Volcanic Eruption Window",
-    "location": "Southeast of Isangel, Vanuatu",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -20.77,
-    "lon": 169.82,
-    "cascading_effects": [
-      "Ashfall affecting nearby islands",
-      "Lahars impacting river valleys",
-      "Air traffic disruptions"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T11:52:06Z"
   }
 ]
