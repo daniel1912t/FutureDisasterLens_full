@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg B22K Window",
+    "location": "Southern Ocean, Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "navigation hazard for vessels",
+      "potential impact on nearby research stations"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T10:05:41Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Red Hill, Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T08:35:40Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Johnson, Wyoming, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "road closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T08:26:06Z"
   }
 ]
