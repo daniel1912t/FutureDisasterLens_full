@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Johnson County, Wyoming, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation disruptions"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T10:49:55Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Storm Pena Window",
     "location": "South Pacific Ocean",
     "severity": "Severe",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T09:29:51Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "East of Port-Olry, Vanuatu",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -15.01,
-    "lon": 167.31,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami generation potential"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T23:19:58Z"
   }
 ]
