@@ -1,17 +1,18 @@
 [
   {
-    "primary_threat": "Forecasted Tsunami Window",
+    "primary_threat": "Forecasted Volcanic Eruption Window",
     "location": "South of the Kermadec Islands",
     "severity": "Severe",
     "probability": "68%",
     "lat": -32.31,
     "lon": 179.84,
     "cascading_effects": [
-      "Coastal flooding",
-      "Maritime navigation hazards"
+      "Tsunami generation",
+      "Aviation ash hazard",
+      "Marine ecosystem disruption"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-18T14:34:26Z"
+    "time_of_event": "2026-11-18T14:43:07Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
