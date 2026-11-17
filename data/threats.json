@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Kirakira Region, Solomon Islands",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.53,
+    "lon": 162.55,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Infrastructure damage",
+      "Disruption of maritime navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T01:24:33Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Near Kavieng, Papua New Guinea",
     "severity": "Severe",
     "probability": "68%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T23:52:17Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Tual Region, Indonesia",
-    "severity": "Extreme",
-    "probability": "68%",
-    "lat": -6.08,
-    "lon": 131.49,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Landslides in mountainous terrain",
-      "Disruption of coastal infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T23:42:43Z"
   }
 ]
