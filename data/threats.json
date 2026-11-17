@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "South of the Kermadec Islands",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -32.31,
+    "lon": 179.84,
+    "cascading_effects": [
+      "potential tsunami generation",
+      "disruption of undersea cables"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T18:13:24Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T16:43:15Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.27,
-    "lon": -111.62,
-    "cascading_effects": [
-      "Smoke plume affecting air quality in nearby communities",
-      "Potential strain on local firefighting resources",
-      "Risk of rapid fire spread to adjacent forested areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T16:33:22Z"
   }
 ]
