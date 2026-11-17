@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Dry Lake Hills, Coconino County, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.27,
+    "lon": -111.62,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in Flagstaff",
+      "Potential strain on local fire suppression resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T06:01:31Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Tual, Indonesia",
     "severity": "Severe",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T04:27:16Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Changuillo, Peru",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -14.98,
-    "lon": -75.87,
-    "cascading_effects": [
-      "Potential landslides",
-      "Infrastructure damage",
-      "Disruption of local transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T04:19:07Z"
   }
 ]
