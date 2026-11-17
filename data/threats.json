@@ -1,17 +1,18 @@
 [
   {
-    "primary_threat": "Forecasted Tsunami Window",
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Ozernovskiy, Russia",
-    "severity": "Severe",
-    "probability": "68%",
+    "severity": "Moderate",
+    "probability": "78%",
     "lat": 51.96,
     "lon": 157.79,
     "cascading_effects": [
-      "Coastal flooding",
-      "Infrastructure damage"
+      "Potential aftershocks",
+      "Infrastructure stress",
+      "Possible landslide in nearby hills"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-18T16:06:18Z"
+    "time_of_event": "2026-11-18T16:15:07Z"
   },
   {
     "primary_threat": "Forecasted Landslide Window",
