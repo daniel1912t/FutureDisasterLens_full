@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Tsunami Warning Window",
+    "location": "Kamchatka Peninsula, Russia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 51.71,
+    "lon": 158.48,
+    "cascading_effects": [
+      "Coastal flooding in nearby villages",
+      "Disruption of maritime shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T15:10:25Z"
+  },
+  {
     "primary_threat": "Forecasted Volcanic Eruption Window",
     "location": "Oxford, New Zealand",
     "severity": "Severe",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T12:40:22Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Dry Lake Hills, Coconino County, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.27,
-    "lon": -111.62,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T12:29:58Z"
   }
 ]
