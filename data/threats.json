@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Southwestern Indian Ocean, near Maldives",
+    "severity": "Severe",
+    "probability": "80%",
+    "lat": 12.2,
+    "lon": 87.3,
+    "cascading_effects": [
+      "Coastal flooding in low-lying islands",
+      "Disruption of maritime shipping lanes",
+      "Potential landslides on steep island terrain"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T10:27:41Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Forrest, Mississippi, USA",
     "severity": "Moderate",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T19:06:03Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific Ocean, near French Polynesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -9.1,
-    "lon": -163.5,
-    "cascading_effects": [
-      "Heavy rainfall leading to flash floods",
-      "High winds causing coastal erosion"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T18:57:43Z"
   }
 ]
