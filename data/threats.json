@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Severe",
+    "probability": "81%",
+    "lat": 31.13,
+    "lon": -89.06,
+    "cascading_effects": [
+      "air quality degradation",
+      "threat to nearby residential areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T18:21:38Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "South of the Kermadec Islands",
     "severity": "Severe",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T17:01:17Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Bay of Bengal, near Myanmar",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 12.2,
-    "lon": 87.3,
-    "cascading_effects": [
-      "Coastal flooding",
-      "Storm surge damage to low-lying infrastructure",
-      "Disruption of maritime shipping routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T16:43:15Z"
   }
 ]
