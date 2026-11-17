@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "West Timor, Indonesia",
+    "severity": "Extreme",
+    "probability": "82%",
+    "lat": -6.08,
+    "lon": 131.49,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of coastal infrastructure due to tsunamigenic potential",
+      "Impact on regional air travel and shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T16:19:16Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T14:49:02Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Southern Pacific Ocean, Near Kiribati",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -8.9,
-    "lon": -162.6,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "disruption to shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T00:39:24Z"
   }
 ]
