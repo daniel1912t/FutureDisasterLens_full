@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "South Pacific Ocean, near -8.9\u00b0, -162.6\u00b0",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -8.9,
+    "lon": -162.6,
+    "cascading_effects": [
+      "heavy rainfall leading to flash floods",
+      "storm surge impacting coastal communities",
+      "wind damage to infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T06:45:35Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Red Hill, Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T05:06:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Port-Olry, Vanuatu",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -15.01,
-    "lon": 167.31,
-    "cascading_effects": [
-      "Potential landslides in nearby hills",
-      "Disruption of local communications infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T04:56:33Z"
   }
 ]
