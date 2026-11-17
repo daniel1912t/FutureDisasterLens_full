@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Piti Village, Guam",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 13.48,
+    "lon": 144.62,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Infrastructure damage",
+      "Disruption of communication networks"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T17:11:19Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Lafayette, Mississippi, USA",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T13:35:50Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Port-Olry, Vanuatu",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -15.01,
-    "lon": 167.31,
-    "cascading_effects": [
-      "Potential landslides in surrounding hills",
-      "Disruption of coastal fishing activities",
-      "Risk of tsunamigenic waves affecting nearby islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T13:25:56Z"
   }
 ]
