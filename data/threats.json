@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos, New Hampshire, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "threat to local wildlife habitats"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T23:24:42Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Kavieng Region, Papua New Guinea",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T21:45:16Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Dry Lake Hills, Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.27,
-    "lon": -111.62,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation of nearby communities",
-      "Increased strain on regional fire suppression resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T11:35:37Z"
   }
 ]
