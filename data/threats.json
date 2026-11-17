@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Foot Creek, Johnson, Wyoming, USA",
+    "severity": "Severe",
+    "probability": "81%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in surrounding states",
+      "Potential strain on local firefighting resources",
+      "Risk of rapid fire spread to nearby grasslands and wildlife habitats"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T18:46:44Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T03:23:46Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Storm Window",
-    "location": "South Pacific Ocean, near 9.8\u00b0S, 173.2\u00b0W",
-    "severity": "Severe",
-    "probability": "82%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "storm surge"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T17:14:11Z"
   }
 ]
