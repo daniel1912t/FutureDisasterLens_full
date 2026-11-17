@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Wasatch, Utah, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 40.51,
+    "lon": -110.94,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "potential damage to infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T21:58:33Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Near Tual, Indonesia",
     "severity": "Severe",
@@ -131,19 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T06:19:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Kavieng region, Papua New Guinea",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -1.72,
-    "lon": 149.81,
-    "cascading_effects": [
-      "landslide",
-      "tsunami risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T06:09:48Z"
   }
 ]
