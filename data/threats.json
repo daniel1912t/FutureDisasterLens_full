@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Scott, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": 32.42,
+    "lon": -89.6,
+    "cascading_effects": [
+      "air quality degradation",
+      "potential evacuation of nearby communities",
+      "strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-17T21:13:25Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, Antarctica",
     "severity": "Moderate",
@@ -42,21 +57,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T06:45:35Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Red Hill, Perry, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 31.13,
-    "lon": -89.06,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation of nearby communities",
-      "Strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T20:36:00Z"
   },
   {
     "primary_threat": "Forecasted Seismic Activity Window",
