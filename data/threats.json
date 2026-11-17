@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Northwest of Kavieng, Papua New Guinea",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -1.67,
+    "lon": 149.9,
+    "cascading_effects": [
+      "Potential aftershocks affecting coastal communities",
+      "Risk of landslides in mountainous terrain",
+      "Disruption to maritime navigation in nearby waters"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T18:50:58Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Southwest Indian Ocean, near Madagascar",
     "severity": "Severe",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T17:29:16Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Pacific Ocean, near Kiribati",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -9.1,
-    "lon": -163.5,
-    "cascading_effects": [
-      "coastal flooding",
-      "high wind damage to infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T17:19:33Z"
   }
 ]
