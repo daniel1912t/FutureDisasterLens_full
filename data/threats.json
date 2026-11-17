@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Window",
+    "location": "Southern Ocean, Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Potential shipping lane disruptions",
+      "Risk to offshore platforms",
+      "Possible coastal ice impact on nearby research stations"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T07:03:50Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T05:32:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Storm Pena Window",
-    "location": "South Pacific Ocean, near 9.8\u00b0N, 173.2\u00b0W",
-    "severity": "Severe",
-    "probability": "71%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "landslide risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T03:14:34Z"
   }
 ]
