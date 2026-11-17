@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Johnson, Wyoming, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T08:26:06Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Wild River, Coos, New Hampshire, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T20:55:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "South Pacific Ocean, near -8.9\u00b0, -162.6\u00b0",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -8.9,
-    "lon": -162.6,
-    "cascading_effects": [
-      "heavy rainfall leading to flash floods",
-      "storm surge impacting coastal communities",
-      "wind damage to infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T06:45:35Z"
   }
 ]
