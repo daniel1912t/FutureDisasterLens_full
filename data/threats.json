@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.27,
+    "lon": -111.62,
+    "cascading_effects": [
+      "Smoke plume affecting air quality in nearby communities",
+      "Potential strain on local firefighting resources",
+      "Risk of rapid fire spread to adjacent forested areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T16:33:22Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "South of the Kermadec Islands, New Zealand",
     "severity": "Severe",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T13:08:54Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Piti Village, Guam",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 13.48,
-    "lon": 144.62,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T12:40:22Z"
   }
 ]
