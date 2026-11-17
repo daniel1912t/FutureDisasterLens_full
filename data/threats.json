@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "SSE of Kirakira, Solomon Islands",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.53,
+    "lon": 162.55,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami generation potential"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T10:23:46Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T09:02:05Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "Pacific Ocean, near Vanuatu",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -8.9,
-    "lon": -162.6,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods",
-      "Storm surge impacting low-lying coastal communities",
-      "Disruption of maritime shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T08:45:16Z"
   }
 ]
