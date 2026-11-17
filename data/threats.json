@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Tual region, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -6.08,
+    "lon": 131.49,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T03:04:34Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -55,21 +69,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T02:28:53Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "West Timor, Indonesia",
-    "severity": "Extreme",
-    "probability": "82%",
-    "lat": -6.08,
-    "lon": 131.49,
-    "cascading_effects": [
-      "Potential landslides in mountainous terrain",
-      "Disruption of coastal infrastructure due to tsunamigenic potential",
-      "Impact on regional air travel and shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T16:19:16Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
