@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.27,
+    "lon": -111.62,
+    "cascading_effects": [
+      "air quality degradation",
+      "threat to nearby forest infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T02:56:23Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Port-Olry region, Vanuatu",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T15:35:37Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Kirakira Region, Solomon Islands",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.53,
-    "lon": 162.55,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Infrastructure damage",
-      "Disruption of maritime navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T01:24:33Z"
   }
 ]
