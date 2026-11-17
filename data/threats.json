@@ -1,18 +1,18 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Vilyuchinsk, Russia",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": 51.71,
-    "lon": 158.48,
+    "location": "Ozernovskiy, Russia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 51.96,
+    "lon": 157.79,
     "cascading_effects": [
       "Potential aftershocks",
       "Infrastructure damage",
-      "Disruption to maritime traffic"
+      "Disruption to regional power grid"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-18T15:29:26Z"
+    "time_of_event": "2026-11-18T15:39:31Z"
   },
   {
     "primary_threat": "Forecasted Volcanic Eruption Window",
