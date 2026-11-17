@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Northwest of Kavieng, Papua New Guinea",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -1.72,
+    "lon": 149.81,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami generation potential"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T09:02:05Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Forrest, Mississippi, USA",
     "severity": "Moderate",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T21:40:44Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Storm Pena Window",
-    "location": "Pacific Ocean, near Kiribati",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.8,
-    "lon": -173.2,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods",
-      "Storm surge impacting low-lying atolls"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T21:32:38Z"
   }
 ]
