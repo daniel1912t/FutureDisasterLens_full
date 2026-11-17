@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Changuillo Region, Peru",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -15.03,
+    "lon": -76.03,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "potential tsunami warning for coastal areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T00:02:06Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -99,20 +114,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-17T22:58:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Changuillo Region, Peru",
-    "severity": "Moderate",
-    "probability": "70%",
-    "lat": -14.84,
-    "lon": -75.42,
-    "cascading_effects": [
-      "potential landslides",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-17T12:48:36Z"
   },
   {
     "primary_threat": "Forecasted Severe Storm Window",
