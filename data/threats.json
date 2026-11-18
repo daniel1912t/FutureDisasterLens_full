@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Near Nabire, Indonesia",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -2.99,
+    "lon": 136.66,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "tsunami potential"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T01:53:34Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
     "location": "South China Sea, near 13.1N 87.3E",
     "severity": "Severe",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T07:31:17Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg B22K Window",
-    "location": "Southern Ocean, Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Shipping route disruptions",
-      "Potential coastal impact if drift north"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T04:23:07Z"
   }
 ]
