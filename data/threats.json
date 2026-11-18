@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 31.12,
+    "lon": -89.08,
+    "cascading_effects": [
+      "Air quality degradation affecting nearby communities",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T14:50:31Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Dry Lake Hills, Coconino, Arizona, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T23:28:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
-    "location": "South China Sea, Vietnam",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 13.1,
-    "lon": 87.3,
-    "cascading_effects": [
-      "heavy rainfall",
-      "storm surge",
-      "landslides"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T23:18:54Z"
   }
 ]
