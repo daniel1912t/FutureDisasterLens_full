@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Foot Creek, Johnson, Wyoming, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "Smoke plume affecting air quality in neighboring counties",
+      "Potential strain on local firefighting resources",
+      "Risk of rapid spread to nearby forested areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T15:08:35Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Near Merizo Village, Guam",
     "severity": "Severe",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T23:47:31Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "Central Pacific Ocean, near Kiribati",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -9.6,
-    "lon": -163.8,
-    "cascading_effects": [
-      "Coastal flooding",
-      "Storm surge damaging low-lying islands",
-      "Disruption of marine navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T23:36:30Z"
   }
 ]
