@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Earthquake Window",
+    "location": "Kilimatinde, Tanzania",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -5.46,
+    "lon": 35.11,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T19:13:26Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Dry Lake Hills, Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -131,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T17:52:31Z"
-  },
-  {
-    "primary_threat": "Forecasted Earthquake Window",
-    "location": "Merizo Village, Guam",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 12.09,
-    "lon": 143.99,
-    "cascading_effects": [
-      "Potential tsunami generation affecting coastal communities",
-      "Disruption of power and communication infrastructure",
-      "Landslides in hilly terrain"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T17:42:58Z"
   }
 ]
