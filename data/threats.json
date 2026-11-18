@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos, New Hampshire, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Potential evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T21:20:33Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, Antarctica",
     "severity": "Moderate",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T05:50:59Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "San Juan, Peru",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -15.14,
-    "lon": -75.92,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "aftershock sequence"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T05:42:53Z"
   }
 ]
