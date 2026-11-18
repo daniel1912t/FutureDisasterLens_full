@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 42.92,
+    "lon": -88.48,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T12:48:45Z"
+  },
+  {
     "primary_threat": "Forecasted Earthquake Window",
     "location": "West Chile Rise, Pacific Ocean",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T11:28:44Z"
-  },
-  {
-    "primary_threat": "Forecasted Earthquake Window",
-    "location": "Near San Juan, Peru",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -15.14,
-    "lon": -75.92,
-    "cascading_effects": [
-      "landslide risk in Andean slopes",
-      "disruption of regional road networks",
-      "potential impact on hydroelectric facilities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T11:20:37Z"
   }
 ]
