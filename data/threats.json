@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Window",
+    "location": "Southern Ocean, near Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Potential collision with shipping lanes",
+      "Disruption of marine wildlife migration",
+      "Impact on offshore drilling operations"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T22:42:57Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Vilyuchinsk, Russia",
     "severity": "Moderate",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T21:03:47Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 31.13,
-    "lon": -89.06,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in neighboring counties",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T20:45:41Z"
   }
 ]
