@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Foot Creek, Johnson, Wyoming, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in surrounding states",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T18:00:42Z"
+  },
+  {
     "primary_threat": "Forecasted Earthquake Window",
     "location": "Pacific-Antarctic Ridge",
     "severity": "Severe",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T16:41:02Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "Southern Pacific Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -10.2,
-    "lon": -164.0,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods",
-      "High surf impacting coastal infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T16:31:16Z"
   }
 ]
