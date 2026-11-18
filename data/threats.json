@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Pacific-Antarctic Ridge",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -57.75,
+    "lon": -146.75,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of undersea cable communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T03:34:34Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Southern Pacific Ocean, Near -10.2\u00b0, -164\u00b0",
     "severity": "Severe",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T19:13:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Dry Lake Hills, Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.27,
-    "lon": -111.62,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential evacuation of nearby communities",
-      "strain on regional firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T19:05:06Z"
   }
 ]
