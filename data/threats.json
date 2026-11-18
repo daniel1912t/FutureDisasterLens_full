@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Earthquake Window",
+    "location": "Ry\u014dtsu-minato, Japan",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.72,
+    "lon": 137.87,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of coastal infrastructure",
+      "Aftershock sequence"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T13:51:24Z"
+  },
+  {
+    "primary_threat": "Forecasted Earthquake Window",
     "location": "Near San Juan, Peru",
     "severity": "Severe",
     "probability": "78%",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T12:32:13Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Georgia, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 33.75,
-    "lon": -83.26,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T12:22:33Z"
   }
 ]
