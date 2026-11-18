@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos, New Hampshire, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in surrounding states",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T11:46:51Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, Antarctica",
     "severity": "Moderate",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T10:25:27Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "Southern Pacific Ocean, near 9.6\u00b0S, 163.8\u00b0W",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -9.6,
-    "lon": -163.8,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods on nearby islands",
-      "High surf and coastal erosion",
-      "Disruption to maritime shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T10:15:35Z"
   }
 ]
