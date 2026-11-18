@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Southern Pacific Ocean, Near -10.2\u00b0, -164\u00b0",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -10.2,
+    "lon": -164,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "high surf and wave damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T20:26:30Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Georgia, USA",
     "severity": "Moderate",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T19:05:06Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg B22K Window",
-    "location": "Southern Ocean, Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential collision with shipping lanes",
-      "Disruption of marine wildlife habitats",
-      "Impact on nearby research stations"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T18:54:47Z"
   }
 ]
