@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Lorengau, Papua New Guinea",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -2.94,
+    "lon": 146.47,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami potential"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T21:48:02Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg B22K Window",
     "location": "Southern Ocean, near Antarctica",
     "severity": "Severe",
@@ -126,19 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T20:26:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Georgia, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 33.75,
-    "lon": -83.26,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T20:16:52Z"
   }
 ]
