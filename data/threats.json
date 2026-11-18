@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Earthquake Window",
+    "location": "Ruteng North-Northeast, Indonesia",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -8.03,
+    "lon": 120.65,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T07:56:38Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Severe",
@@ -13,20 +27,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T07:48:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Earthquake Window",
-    "location": "Ruteng Region, Indonesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -8.25,
-    "lon": 120.53,
-    "cascading_effects": [
-      "Landslides",
-      "Potential Tsunami"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T21:40:04Z"
   },
   {
     "primary_threat": "Forecasted Earthquake Window",
