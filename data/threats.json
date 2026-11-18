@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Earthquake Window",
+    "location": "Ruteng Region, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -8.25,
+    "lon": 120.53,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "tsunami potential"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T09:38:42Z"
+  },
+  {
+    "primary_threat": "Forecasted Earthquake Window",
     "location": "San Juan Region, Peru",
     "severity": "Severe",
     "probability": "68%",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T08:07:52Z"
-  },
-  {
-    "primary_threat": "Forecasted Earthquake Window",
-    "location": "Ruteng North-Northeast, Indonesia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -8.03,
-    "lon": 120.65,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T07:56:38Z"
   }
 ]
