@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Earthquake Window",
+    "location": "Attu Station region, Alaska, USA",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 51.45,
+    "lon": 172.9,
+    "cascading_effects": [
+      "Tsunami generation",
+      "Infrastructure damage",
+      "Disruption of communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T19:50:24Z"
+  },
+  {
+    "primary_threat": "Forecasted Earthquake Window",
     "location": "Guam, USA Territory",
     "severity": "Severe",
     "probability": "68%",
@@ -130,21 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T18:28:36Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Window",
-    "location": "Bay of Bengal, Myanmar",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 13.6,
-    "lon": 86.5,
-    "cascading_effects": [
-      "Coastal flooding",
-      "Storm surge",
-      "Landslides",
-      "Disruption to maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T18:18:55Z"
   }
 ]
