@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "South Pacific Ocean, Near -9.6, -163.8",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -9.6,
+    "lon": -163.8,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "storm surge"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T00:01:44Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Near Nabire, Indonesia",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T14:40:52Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "South of the Kermadec Islands",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -32.31,
-    "lon": 179.84,
-    "cascading_effects": [
-      "Potential tsunami generation affecting New Zealand coastlines",
-      "Disruption of undersea communication cables",
-      "Marine ecosystem disturbance"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T07:31:17Z"
   }
 ]
