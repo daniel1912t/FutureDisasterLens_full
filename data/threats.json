@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Wasatch, Utah, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 40.51,
+    "lon": -110.94,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T23:55:30Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T12:14:50Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Alotau, Papua New Guinea",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -10.27,
-    "lon": 149.58,
-    "cascading_effects": [
-      "potential tsunami generation",
-      "landslide risk in coastal valleys"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T22:04:11Z"
   }
 ]
