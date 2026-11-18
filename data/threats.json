@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Wasatch, Utah, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 40.51,
+    "lon": -110.94,
+    "cascading_effects": [
+      "Reduced air quality in Salt Lake Valley",
+      "Potential strain on local water resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T16:49:08Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
     "location": "Bay of Bengal, India",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T15:29:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Earthquake Window",
-    "location": "Merizo Village, Guam",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 12.09,
-    "lon": 143.99,
-    "cascading_effects": [
-      "potential tsunami generation",
-      "damage to coastal infrastructure",
-      "disruption of communications networks"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T15:19:47Z"
   }
 ]
