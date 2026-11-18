@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "Southern Pacific Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -10.2,
+    "lon": -164.0,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods",
+      "High surf impacting coastal infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T16:31:16Z"
+  },
+  {
     "primary_threat": "Forecasted Earthquake Window",
     "location": "Tsunagi, Japan",
     "severity": "Severe",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T14:46:46Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
-    "location": "Bay of Bengal, India",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 13.1,
-    "lon": 86.9,
-    "cascading_effects": [
-      "storm surge flooding",
-      "heavy rainfall causing landslides"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T14:35:18Z"
   }
 ]
