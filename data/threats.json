@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Ruteng, Indonesia",
+    "severity": "Severe",
+    "probability": "80%",
+    "lat": -8.25,
+    "lon": 120.53,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "tsunami potential (coastal zones)"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T16:58:00Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T01:35:44Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Northwest of Port-Vila, Vanuatu",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -17.56,
-    "lon": 168.14,
-    "cascading_effects": [
-      "tsunami potential",
-      "infrastructure damage",
-      "disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T23:26:05Z"
   }
 ]
