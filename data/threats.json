@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Lesser Sunda Islands, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 13.0,
+    "lon": 86.9,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods",
+      "Strong winds damaging coastal infrastructure",
+      "Potential landslides in mountainous regions"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T05:13:55Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Galapagos Triple Junction, Ecuador",
     "severity": "Severe",
@@ -57,20 +72,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T04:38:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Pacific Ocean, near Indonesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 13.1,
-    "lon": 87.3,
-    "cascading_effects": [
-      "coastal flooding",
-      "wind damage to infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T04:29:59Z"
   },
   {
     "primary_threat": "Forecasted Severe Storm Window",
