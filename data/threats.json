@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Red Hill, Perry, Mississippi",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 31.13,
+    "lon": -89.06,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T16:38:49Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Near Nereju Mic, Romania",
     "severity": "Severe",
@@ -131,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T01:18:05Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Foot Creek, Johnson, Wyoming, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "Smoke plume affecting air quality in neighboring counties",
-      "Potential strain on local firefighting resources",
-      "Risk of rapid spread to nearby forested areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T15:08:35Z"
   }
 ]
