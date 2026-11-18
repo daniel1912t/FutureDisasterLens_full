@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Guam",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 12.14,
+    "lon": 143.89,
+    "cascading_effects": [
+      "potential tsunami",
+      "infrastructure damage",
+      "landslide risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T17:52:51Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Forrest, Mississippi, USA",
     "severity": "Moderate",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T02:11:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "South Pacific Ocean, Near -9.6, -163.8",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -9.6,
-    "lon": -163.8,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "storm surge"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T00:01:44Z"
   }
 ]
