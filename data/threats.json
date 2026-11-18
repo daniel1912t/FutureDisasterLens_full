@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Stevens, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.4,
+    "lon": -117.53,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T11:56:32Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T10:33:43Z"
-  },
-  {
-    "primary_threat": "Forecasted Earthquake Window",
-    "location": "Galapagos Islands, Ecuador",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 0.43,
-    "lon": -103.08,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Damage to coastal infrastructure",
-      "Disruption of marine ecosystems"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T10:25:27Z"
   }
 ]
