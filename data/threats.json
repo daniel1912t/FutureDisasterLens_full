@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
+    "location": "South China Sea, Vietnam",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 13.1,
+    "lon": 87.3,
+    "cascading_effects": [
+      "heavy rainfall",
+      "storm surge",
+      "landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T23:18:54Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T21:39:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "Reduced air quality in nearby communities",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T21:29:42Z"
   }
 ]
