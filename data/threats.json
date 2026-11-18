@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Earthquake Window",
+    "location": "Near San Juan, Peru",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -15.14,
+    "lon": -75.92,
+    "cascading_effects": [
+      "landslide risk in Andean slopes",
+      "disruption of regional road networks",
+      "potential impact on hydroelectric facilities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T11:20:37Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Severe",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T09:57:53Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential damage to shipping lanes",
-      "Disruption of marine wildlife habitats"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T09:48:16Z"
   }
 ]
