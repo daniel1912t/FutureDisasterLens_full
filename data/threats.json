@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Earthquake Window",
+    "location": "Near San Juan, Peru",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -15.14,
+    "lon": -75.92,
+    "cascading_effects": [
+      "landslides in Andean foothills",
+      "infrastructure damage to roads and bridges",
+      "potential tsunami risk for coastal areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T13:43:13Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Moderate",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T12:22:33Z"
-  },
-  {
-    "primary_threat": "Forecasted Earthquake Window",
-    "location": "Ry\u014dtsu-minato, Japan",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 38.72,
-    "lon": 137.87,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Infrastructure damage to coastal ports",
-      "Disruption of regional power grid"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T12:14:23Z"
   }
 ]
