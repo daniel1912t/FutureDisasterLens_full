@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Earthquake Window",
+    "location": "West Chile Rise, Pacific Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -39.69,
+    "lon": -91.5,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of undersea cable communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T12:40:24Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Indian Ocean, Near Maldives",
     "severity": "Severe",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T11:20:37Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Johnson, Wyoming, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "air quality degradation",
-      "threat to nearby wildlife habitats"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T11:10:42Z"
   }
 ]
