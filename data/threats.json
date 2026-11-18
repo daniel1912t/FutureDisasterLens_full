@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Kamchatka Peninsula, Russia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 51.96,
+    "lon": 157.79,
+    "cascading_effects": [
+      "Potential aftershocks affecting nearby settlements",
+      "Risk of landslides in mountainous terrain",
+      "Possible disruption to regional power and communications infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T23:28:26Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
     "location": "South China Sea, Vietnam",
     "severity": "Severe",
@@ -71,21 +86,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T22:42:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Vilyuchinsk, Russia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 51.71,
-    "lon": 158.48,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure stress",
-      "Possible landslides"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T22:31:44Z"
   },
   {
     "primary_threat": "Forecasted Tsunami Window",
