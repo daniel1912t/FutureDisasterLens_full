@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Johnson, Wyoming, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities",
+      "potential damage to forest infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T07:48:23Z"
+  },
+  {
     "primary_threat": "Forecasted Earthquake Window",
     "location": "Ruteng Region, Indonesia",
     "severity": "Severe",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T06:27:06Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Central Pacific Ocean, near -9.6\u00b0, -163.8\u00b0",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -9.6,
-    "lon": -163.8,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods on low-lying islands",
-      "High winds damaging marine vessels and coastal infrastructure",
-      "Storm surge leading to coastal erosion and habitat loss"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T20:09:22Z"
   }
 ]
