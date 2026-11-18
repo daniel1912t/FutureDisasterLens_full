@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.27,
+    "lon": -111.62,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T21:27:05Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Severe",
     "probability": "68%",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T10:08:29Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T20:00:03Z"
   }
 ]
