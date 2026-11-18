@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "Central Pacific Ocean, near Kiribati",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -9.6,
+    "lon": -163.8,
+    "cascading_effects": [
+      "Coastal flooding",
+      "Storm surge damaging low-lying islands",
+      "Disruption of marine navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T23:36:30Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Kamchatka Peninsula, Russia",
     "severity": "Severe",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T11:57:12Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Wasatch, Utah, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 40.51,
-    "lon": -110.94,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T21:39:21Z"
   }
 ]
