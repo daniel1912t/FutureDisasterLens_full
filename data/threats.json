@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 31.13,
+    "lon": -89.06,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in surrounding counties",
+      "Potential strain on local emergency services and evacuation routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T04:02:34Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Guam",
     "severity": "Severe",
@@ -13,21 +27,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T17:52:51Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Forrest, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 31.1,
-    "lon": -89.16,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities",
-      "damage to infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T03:43:21Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
