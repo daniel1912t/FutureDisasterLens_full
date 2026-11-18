@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Near Nereju Mic, Romania",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 45.68,
+    "lon": 26.49,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "potential aftershocks"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T02:30:27Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Near Madang, Papua New Guinea",
     "severity": "Severe",
     "probability": "68%",
@@ -131,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T15:08:35Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Near Merizo Village, Guam",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 12.14,
-    "lon": 143.89,
-    "cascading_effects": [
-      "Potential tsunami generation affecting coastal communities",
-      "Disruption of communications and power infrastructure",
-      "Landslides in hilly terrain"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T15:00:10Z"
   }
 ]
