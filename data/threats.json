@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Galapagos Triple Junction, Ecuador",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 0.43,
+    "lon": -103.08,
+    "cascading_effects": [
+      "tsunami generation",
+      "landslide risk in nearby islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T19:04:21Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Madang Province, Papua New Guinea",
     "severity": "Severe",
     "probability": "71%",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T03:33:39Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Georgia, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 33.75,
-    "lon": -83.26,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in nearby towns",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T17:24:03Z"
   }
 ]
