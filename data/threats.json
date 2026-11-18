@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Earthquake Window",
+    "location": "Pacific-Antarctic Ridge",
+    "severity": "Severe",
+    "probability": "80%",
+    "lat": -57.75,
+    "lon": -146.75,
+    "cascading_effects": [
+      "Potential tsunami generation affecting nearby island chains",
+      "Disruption of undersea cable communications",
+      "Triggering of submarine landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T17:52:31Z"
+  },
+  {
+    "primary_threat": "Forecasted Earthquake Window",
     "location": "Merizo Village, Guam",
     "severity": "Severe",
     "probability": "78%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T16:31:16Z"
-  },
-  {
-    "primary_threat": "Forecasted Earthquake Window",
-    "location": "Tsunagi, Japan",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 32.28,
-    "lon": 130.46,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "potential tsunami warning for nearby coast"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T16:23:08Z"
   }
 ]
