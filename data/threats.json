@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Forrest, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 31.1,
+    "lon": -89.16,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "potential power line outages"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T06:17:24Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Central Pacific Ocean, near -9.6\u00b0, -163.8\u00b0",
     "severity": "Severe",
@@ -131,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T04:56:10Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, near Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential collision with commercial shipping lanes",
-      "Disruption of scientific research vessels",
-      "Impact on local marine wildlife migration patterns"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T04:48:02Z"
   }
 ]
