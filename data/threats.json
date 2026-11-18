@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
+    "location": "Bay of Bengal, India",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 13.1,
+    "lon": 86.9,
+    "cascading_effects": [
+      "storm surge flooding",
+      "heavy rainfall causing landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T14:35:18Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg B22K Window",
     "location": "Southern Ocean, Antarctica",
     "severity": "Moderate",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T13:17:04Z"
-  },
-  {
-    "primary_threat": "Forecasted Earthquake Window",
-    "location": "Ruteng, Indonesia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -8.03,
-    "lon": 120.65,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "disruption of transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T13:07:20Z"
   }
 ]
