@@ -1,18 +1,18 @@
 [
   {
     "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Ozernovskiy, Russia",
-    "severity": "Severe",
+    "location": "Vilyuchinsk, Russia",
+    "severity": "Moderate",
     "probability": "68%",
-    "lat": 51.96,
-    "lon": 157.79,
+    "lat": 51.71,
+    "lon": 158.48,
     "cascading_effects": [
       "Potential aftershocks",
-      "Infrastructure damage",
-      "Disruption to regional transport"
+      "Infrastructure stress",
+      "Possible landslides"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-18T22:23:26Z"
+    "time_of_event": "2026-11-18T22:31:44Z"
   },
   {
     "primary_threat": "Forecasted Tsunami Window",
