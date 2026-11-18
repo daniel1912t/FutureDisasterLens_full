@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Indian Ocean, near 13\u00b0N, 86.9\u00b0E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 13.0,
+    "lon": 86.9,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "wind damage to infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T07:04:14Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Georgia, USA",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T05:33:11Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Ruteng, Indonesia",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -8.15,
-    "lon": 120.65,
-    "cascading_effects": [
-      "Potential landslides in surrounding highland areas",
-      "Disruption of local transportation routes",
-      "Risk of tsunamigenic activity affecting nearby coastal zones"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T19:23:32Z"
   }
 ]
