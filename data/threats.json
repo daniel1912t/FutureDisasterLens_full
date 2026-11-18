@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Papua New Guinea, near Kavieng",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -1.67,
+    "lon": 149.9,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of coastal shipping lanes due to tsunamigenic risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T00:13:25Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Georgia, USA",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T12:51:04Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, near Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential collision with shipping lanes",
-      "Disruption of marine wildlife migration",
-      "Impact on offshore drilling operations"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T22:42:57Z"
   }
 ]
