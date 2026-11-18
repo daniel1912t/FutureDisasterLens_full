@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Near Merizo Village, Guam",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 12.14,
+    "lon": 143.89,
+    "cascading_effects": [
+      "Potential tsunami generation affecting coastal communities",
+      "Disruption of communications and power infrastructure",
+      "Landslides in hilly terrain"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T15:00:10Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T23:36:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Kamchatka Peninsula, Russia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 51.96,
-    "lon": 157.79,
-    "cascading_effects": [
-      "Potential aftershocks affecting nearby settlements",
-      "Risk of landslides in mountainous terrain",
-      "Possible disruption to regional power and communications infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T23:28:26Z"
   }
 ]
