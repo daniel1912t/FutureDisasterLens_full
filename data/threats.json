@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Ozernovskiy, Russia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 51.96,
+    "lon": 157.79,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption to regional transport"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T22:23:26Z"
+  },
+  {
     "primary_threat": "Forecasted Tsunami Window",
     "location": "Kermadec Islands, New Zealand",
     "severity": "Severe",
@@ -112,21 +127,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T21:03:47Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "South of Vilyuchinsk, Russia",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": 51.71,
-    "lon": 158.48,
-    "cascading_effects": [
-      "potential aftershocks",
-      "infrastructure stress",
-      "tsunami risk for nearby coastlines"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T10:53:59Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
