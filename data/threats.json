@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.27,
+    "lon": -111.62,
+    "cascading_effects": [
+      "air quality degradation",
+      "threat to nearby communities",
+      "potential strain on firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T10:33:43Z"
+  },
+  {
     "primary_threat": "Forecasted Earthquake Window",
     "location": "Galapagos Islands, Ecuador",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T09:10:58Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
-    "location": "Northern Indian Ocean, near 13\u00b0N, 86.9\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 13.0,
-    "lon": 86.9,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "landslides in adjacent highland regions"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T09:01:18Z"
   }
 ]
