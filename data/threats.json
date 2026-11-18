@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
+    "location": "South China Sea, near 13.1N 87.3E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 13.1,
+    "lon": 87.3,
+    "cascading_effects": [
+      "heavy rainfall leading to flash floods",
+      "storm surge affecting coastal infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T15:45:19Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T04:23:07Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Papua New Guinea, near Kavieng",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -1.67,
-    "lon": 149.9,
-    "cascading_effects": [
-      "Potential landslides in mountainous terrain",
-      "Disruption of coastal shipping lanes due to tsunamigenic risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T00:13:25Z"
   }
 ]
