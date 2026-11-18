@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Tsunami Window",
+    "location": "Kermadec Islands, New Zealand",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -32.31,
+    "lon": 179.84,
+    "cascading_effects": [
+      "Coastal flooding on nearby islands",
+      "Disruption of marine navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T12:14:50Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Activity Window",
     "location": "Alotau, Papua New Guinea",
     "severity": "Moderate",
@@ -26,21 +40,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T11:57:12Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "South of the Kermadec Islands",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -32.31,
-    "lon": 179.84,
-    "cascading_effects": [
-      "possible tsunami generation",
-      "disruption of undersea cables",
-      "landslide risk on nearby islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T21:47:25Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
