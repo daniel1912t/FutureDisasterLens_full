@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Window",
+    "location": "Southern Ocean, near Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Potential collision with commercial shipping lanes",
+      "Disruption of scientific research vessels",
+      "Impact on local marine wildlife migration patterns"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T04:48:02Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Lafayette, Mississippi, USA",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T17:06:01Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Ruteng, Indonesia",
-    "severity": "Severe",
-    "probability": "80%",
-    "lat": -8.25,
-    "lon": 120.53,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "tsunami potential (coastal zones)"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T16:58:00Z"
   }
 ]
