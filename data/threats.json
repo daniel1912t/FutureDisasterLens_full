@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Alotau, Papua New Guinea",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -10.27,
+    "lon": 149.58,
+    "cascading_effects": [
+      "potential tsunami generation",
+      "landslide risk in coastal valleys"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T22:04:11Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T20:45:41Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Southwestern Indian Ocean, near Maldives",
-    "severity": "Severe",
-    "probability": "80%",
-    "lat": 12.2,
-    "lon": 87.3,
-    "cascading_effects": [
-      "Coastal flooding in low-lying islands",
-      "Disruption of maritime shipping lanes",
-      "Potential landslides on steep island terrain"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T10:27:41Z"
   }
 ]
