@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Earthquake Window",
+    "location": "Guam, USA Territory",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 12.09,
+    "lon": 143.99,
+    "cascading_effects": [
+      "Potential tsunami generation affecting coastal villages",
+      "Infrastructure damage to military bases and civilian facilities",
+      "Disruption of air and sea transport routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T19:40:42Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Moderate",
@@ -131,19 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T18:18:55Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Lafayette, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 34.49,
-    "lon": -89.42,
-    "cascading_effects": [
-      "air quality degradation",
-      "temporary road closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T18:10:47Z"
   }
 ]
