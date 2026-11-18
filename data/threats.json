@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene, Georgia, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 33.75,
+    "lon": -83.26,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T20:56:02Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Severe",
     "probability": "68%",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T19:23:32Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Lesser Sunda Islands, Indonesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 13.0,
-    "lon": 86.9,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods",
-      "Strong winds damaging coastal infrastructure",
-      "Potential landslides in mountainous regions"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T05:13:55Z"
   }
 ]
