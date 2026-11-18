@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Earthquake Window",
+    "location": "Ruteng, Indonesia",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -8.03,
+    "lon": 120.65,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "disruption of transportation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T13:07:20Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, Near French Polynesia",
     "severity": "Severe",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T11:46:51Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential navigation hazard for shipping lanes",
-      "Risk of iceberg grounding affecting marine ecosystems"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T11:37:11Z"
   }
 ]
