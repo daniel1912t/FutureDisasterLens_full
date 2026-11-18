@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "Pacific Ocean, Kiribati",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -10.2,
+    "lon": -164,
+    "cascading_effects": [
+      "storm surge flooding",
+      "heavy rainfall causing landslides",
+      "disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T18:46:32Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Wasatch, Utah, USA",
     "severity": "Moderate",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T17:26:45Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 31.13,
-    "lon": -89.06,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation of nearby communities",
-      "Strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T07:17:02Z"
   }
 ]
