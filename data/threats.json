@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, Near -9.6, -163.8",
+    "severity": "Severe",
+    "probability": "82%",
+    "lat": -9.6,
+    "lon": -163.8,
+    "cascading_effects": [
+      "heavy rainfall causing flash floods",
+      "high winds damaging coastal infrastructure",
+      "storm surge impacting low-lying islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T18:21:51Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T02:30:27Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Near Madang, Papua New Guinea",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -5.7,
-    "lon": 146.55,
-    "cascading_effects": [
-      "Potential landslides in mountainous terrain",
-      "Disruption of coastal communities due to tsunami risk",
-      "Impact on regional infrastructure and transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T02:20:54Z"
   }
 ]
