@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg B22K Window",
+    "location": "Southern Ocean, near Antarctica",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Shipping route disruption",
+      "Potential collision with vessels"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T21:38:11Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -126,20 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T20:16:52Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Tsunagi, Japan",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 32.28,
-    "lon": 130.46,
-    "cascading_effects": [
-      "potential tsunami",
-      "infrastructure damage",
-      "landslide risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T10:08:29Z"
   }
 ]
