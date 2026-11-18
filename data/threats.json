@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "Southern Pacific Ocean, near 9.6\u00b0S, 163.8\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -9.6,
+    "lon": -163.8,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods on nearby islands",
+      "High surf and coastal erosion",
+      "Disruption to maritime shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T10:15:35Z"
+  },
+  {
     "primary_threat": "Forecasted Earthquake Window",
     "location": "West Chile Rise, Oceanic Region",
     "severity": "Severe",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T08:53:14Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": 31.12,
-    "lon": -89.08,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "road closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T08:43:25Z"
   }
 ]
