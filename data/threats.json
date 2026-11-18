@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene, Georgia, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 33.75,
+    "lon": -83.26,
+    "cascading_effects": [
+      "air quality degradation",
+      "potential evacuation orders"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T00:05:06Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Wasatch, Utah, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T22:42:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Tsunami Window",
-    "location": "Kermadec Islands, New Zealand",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -32.31,
-    "lon": 179.84,
-    "cascading_effects": [
-      "Coastal flooding on nearby islands",
-      "Disruption of marine navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T12:14:50Z"
   }
 ]
