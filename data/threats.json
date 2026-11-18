@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Earthquake Window",
+    "location": "Tsunagi, Japan",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 32.28,
+    "lon": 130.46,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "potential tsunami warning for nearby coast"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T16:23:08Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T14:35:18Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg B22K Window",
-    "location": "Southern Ocean, Antarctica",
-    "severity": "Moderate",
-    "probability": "80%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "shipping route disruption",
-      "potential coastal erosion",
-      "hazard to offshore platforms"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T14:26:59Z"
   }
 ]
