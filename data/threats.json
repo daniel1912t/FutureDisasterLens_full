@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Johnson, Wyoming, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "threat to local infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T16:16:28Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Severe",
     "probability": "68%",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T14:26:59Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "South Pacific Ocean, Near French Polynesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -10.2,
-    "lon": -164,
-    "cascading_effects": [
-      "heavy rainfall causing flash floods",
-      "storm surge impacting low-lying islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T14:18:45Z"
   }
 ]
