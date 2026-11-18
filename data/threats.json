@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Near Kavieng, Papua New Guinea",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -1.67,
+    "lon": 149.9,
+    "cascading_effects": [
+      "Potential aftershocks affecting coastal infrastructure",
+      "Risk of landslides in mountainous terrain",
+      "Disruption to local air and sea transport"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T02:11:21Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "South Pacific Ocean, Near -9.6, -163.8",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T14:50:31Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Dry Lake Hills, Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.27,
-    "lon": -111.62,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "threat to nearby infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T14:40:52Z"
   }
 ]
