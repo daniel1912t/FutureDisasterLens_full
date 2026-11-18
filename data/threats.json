@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Wasatch, Utah, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 40.51,
+    "lon": -110.94,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in Salt Lake Valley",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T18:38:17Z"
+  },
+  {
     "primary_threat": "Forecasted Earthquake Window",
     "location": "Tsunagi, Japan",
     "severity": "Severe",
@@ -131,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T07:17:02Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "shipping route disruptions",
-      "potential offshore platform damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T17:07:11Z"
   }
 ]
