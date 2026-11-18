@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Johnson, Wyoming, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T14:01:11Z"
+  },
+  {
     "primary_threat": "Forecasted Earthquake Window",
     "location": "Ry\u014dtsu-minato, Japan",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T12:40:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Indian Ocean, Near Maldives",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 13.1,
-    "lon": 86.9,
-    "cascading_effects": [
-      "coastal flooding",
-      "storm surge",
-      "wind damage to infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T12:32:13Z"
   }
 ]
