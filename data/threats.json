@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 31.13,
+    "lon": -89.06,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "damage to infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T11:02:38Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Wasatch, Utah, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T09:38:42Z"
-  },
-  {
-    "primary_threat": "Forecasted Earthquake Window",
-    "location": "San Juan Region, Peru",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -15.14,
-    "lon": -75.92,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "tsunami potential"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T09:30:13Z"
   }
 ]
