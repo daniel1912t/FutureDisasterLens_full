@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Window",
+    "location": "Southern Ocean, Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Disruption of nearby shipping lanes",
+      "Potential impact on marine wildlife habitats"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T07:12:16Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Indian Ocean, near 13\u00b0N, 86.9\u00b0E",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T05:42:53Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders for nearby communities",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T05:33:11Z"
   }
 ]
