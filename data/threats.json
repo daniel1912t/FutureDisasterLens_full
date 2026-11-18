@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Earthquake Window",
+    "location": "West Chile Rise, Oceanic Region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -39.69,
+    "lon": -91.5,
+    "cascading_effects": [
+      "possible tsunami generation",
+      "disruption of undersea cable communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T10:07:27Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Moderate",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T08:43:25Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Wasatch, Utah, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 40.51,
-    "lon": -110.94,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T08:35:17Z"
   }
 ]
