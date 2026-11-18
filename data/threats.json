@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Pacific Ocean, Near French Polynesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -10.2,
+    "lon": -164.0,
+    "cascading_effects": [
+      "Coastal flooding",
+      "High wind damage to infrastructure",
+      "Disruption of marine navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T12:58:28Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T11:37:11Z"
-  },
-  {
-    "primary_threat": "Forecasted Earthquake Window",
-    "location": "Ruteng, Indonesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -8.25,
-    "lon": 120.53,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "disruption of local transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T11:28:44Z"
   }
 ]
