@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Wasatch, Utah, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 40.51,
+    "lon": -110.94,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities",
+      "potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T06:00:48Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Foot Creek, Johnson, Wyoming, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -131,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T04:38:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific Ocean, Near -9.6, -163.8",
-    "severity": "Severe",
-    "probability": "82%",
-    "lat": -9.6,
-    "lon": -163.8,
-    "cascading_effects": [
-      "heavy rainfall causing flash floods",
-      "high winds damaging coastal infrastructure",
-      "storm surge impacting low-lying islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T18:21:51Z"
   }
 ]
