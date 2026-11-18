@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Stevens, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.4,
+    "lon": -117.53,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T06:36:45Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -131,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T05:13:55Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Activity Window",
-    "location": "Galapagos Triple Junction, Ecuador",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 0.43,
-    "lon": -103.08,
-    "cascading_effects": [
-      "tsunami generation",
-      "landslide risk in nearby islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-18T19:04:21Z"
   }
 ]
