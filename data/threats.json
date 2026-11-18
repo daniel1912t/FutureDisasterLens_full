@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Activity Window",
+    "location": "Ruteng, Indonesia",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -8.15,
+    "lon": 120.65,
+    "cascading_effects": [
+      "Potential landslides in surrounding highland areas",
+      "Disruption of local transportation routes",
+      "Risk of tsunamigenic activity affecting nearby coastal zones"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-18T19:23:32Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Lesser Sunda Islands, Indonesia",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-18T17:52:51Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino County, Arizona, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 35.27,
-    "lon": -111.62,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation of nearby communities",
-      "Strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T03:33:39Z"
   }
 ]
