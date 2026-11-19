@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 42.92,
+    "lon": -88.48,
+    "cascading_effects": [
+      "Air quality degradation in surrounding counties",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T20:28:34Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Kilimatinde region, Tanzania",
     "severity": "Severe",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T05:07:03Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Window",
-    "location": "Bay of Bengal, India",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 14.6,
-    "lon": 86.2,
-    "cascading_effects": [
-      "storm surge flooding",
-      "heavy rainfall causing landslides"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T04:57:24Z"
   }
 ]
