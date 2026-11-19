@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Illapel, Chile",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -31.85,
+    "lon": -72.18,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "tsunami potential"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T11:43:45Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Moderate",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T20:23:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "Smoke plume affecting air quality in nearby communities",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T20:13:37Z"
   }
 ]
