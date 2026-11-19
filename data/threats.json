@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene, Georgia, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 33.75,
+    "lon": -83.26,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "damage to property"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T02:21:46Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Wild River, Coos, New Hampshire, USA",
     "severity": "Severe",
     "probability": "81%",
@@ -131,19 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T15:01:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storms Window",
-    "location": "Southern Pacific Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -10.3,
-    "lon": -163.8,
-    "cascading_effects": [
-      "coastal flooding",
-      "high winds causing infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T14:53:05Z"
   }
 ]
