@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Wasatch, Utah, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 40.51,
+    "lon": -110.94,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in Salt Lake City",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T16:43:32Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Foot Creek, Johnson, Wyoming, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T15:22:17Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Kilimatinde region, Tanzania",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -5.54,
-    "lon": 35.08,
-    "cascading_effects": [
-      "ground shaking",
-      "potential landslides"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T15:12:29Z"
   }
 ]
