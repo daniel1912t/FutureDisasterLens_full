@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene, Georgia, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 33.75,
+    "lon": -83.26,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T07:12:35Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "130 km W of Teluk Dalam, Indonesia",
     "severity": "Severe",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T05:50:50Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Attu Station, Alaska, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 51.34,
-    "lon": 172.86,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption to aviation routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T05:41:17Z"
   }
 ]
