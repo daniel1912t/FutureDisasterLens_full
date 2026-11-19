@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Wasatch, Utah, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 40.51,
+    "lon": -110.94,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Potential evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T08:35:39Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Red Hill, Perry, Mississippi, USA",
     "severity": "Severe",
     "probability": "68%",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T07:04:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "Central Pacific Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -10.3,
-    "lon": -163.8,
-    "cascading_effects": [
-      "Coastal flooding",
-      "High wind damage to infrastructure",
-      "Disruption of marine traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T20:54:44Z"
   }
 ]
