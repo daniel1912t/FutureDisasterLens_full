@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene, Georgia, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 33.75,
+    "lon": -83.26,
+    "cascading_effects": [
+      "air quality degradation",
+      "local evacuations"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T18:26:48Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Pacific Ocean, Near -10.6\u00b0S 163.2\u00b0W",
     "severity": "Severe",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T16:53:09Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Wasatch, Utah, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 40.51,
-    "lon": -110.94,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in Salt Lake City",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T16:43:32Z"
   }
 ]
