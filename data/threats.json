@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Kilimatinde, Tanzania",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -5.54,
+    "lon": 35.08,
+    "cascading_effects": [
+      "Potential landslides in nearby hills",
+      "Disruption of local road networks",
+      "Risk to nearby water infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T17:29:33Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Illapel, Chile",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T16:07:14Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Atka, Alaska, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 51.68,
-    "lon": -174.66,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage",
-      "Tsunami risk if offshore"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T15:57:32Z"
   }
 ]
