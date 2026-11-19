@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Wasatch, Utah, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 40.51,
+    "lon": -110.94,
+    "cascading_effects": [
+      "air quality degradation",
+      "threat to nearby infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T17:43:27Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Santa Gertrudis Miramar, Mexico",
     "severity": "Moderate",
@@ -131,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T02:21:46Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Wild River, Coos, New Hampshire, USA",
-    "severity": "Severe",
-    "probability": "81%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T16:14:57Z"
   }
 ]
