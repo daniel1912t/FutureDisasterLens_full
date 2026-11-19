@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Kilimatinde region, Tanzania",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": -5.51,
+    "lon": 35.09,
+    "cascading_effects": [
+      "ground shaking affecting nearby villages",
+      "potential landslides in hilly terrain"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T18:30:44Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg B22K Window",
     "location": "Southern Ocean",
     "severity": "Severe",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T03:07:45Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "71%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation of nearby communities",
-      "Strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T16:49:38Z"
   }
 ]
