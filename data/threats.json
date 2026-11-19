@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Teluk Dalam region, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 0.5,
+    "lon": 96.63,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami potential",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T05:07:03Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Window",
     "location": "Bay of Bengal, India",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T17:43:27Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Santa Gertrudis Miramar, Mexico",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 15.96,
-    "lon": -95.43,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure strain",
-      "Disruption to local transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T03:35:16Z"
   }
 ]
