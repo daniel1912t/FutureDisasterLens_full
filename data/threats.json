@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
+    "location": "Bay of Bengal, near Myanmar",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 15.1,
+    "lon": 85.4,
+    "cascading_effects": [
+      "Coastal flooding",
+      "Storm surge affecting low-lying islands",
+      "Disruption of maritime shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T11:28:28Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T09:56:55Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Kilimatinde region, Tanzania",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -5.51,
-    "lon": 35.09,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "disruption of communication networks"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T04:47:16Z"
   }
 ]
