@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Red Hill, Perry, Mississippi, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 31.13,
+    "lon": -89.06,
+    "cascading_effects": [
+      "Air quality degradation in surrounding counties",
+      "Potential evacuation orders for nearby communities",
+      "Increased strain on regional firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T08:27:26Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, near Antarctica",
     "severity": "Moderate",
@@ -13,20 +28,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T08:17:48Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Forrest, Mississippi, USA",
-    "severity": "Severe",
-    "probability": "81%",
-    "lat": 31.1,
-    "lon": -89.16,
-    "cascading_effects": [
-      "Air quality degradation affecting nearby communities",
-      "Potential strain on local emergency services and resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T08:08:05Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
