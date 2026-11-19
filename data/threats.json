@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 31.12,
+    "lon": -89.08,
+    "cascading_effects": [
+      "Air quality degradation affecting nearby communities",
+      "Potential strain on local emergency services"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T17:39:16Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Kilimatinde, Tanzania",
     "severity": "Moderate",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T16:15:29Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Guayaquil, Ecuador",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -2.4,
-    "lon": -79.82,
-    "cascading_effects": [
-      "landslide risk in hillside communities",
-      "potential disruption of coastal port operations"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T16:07:14Z"
   }
 ]
