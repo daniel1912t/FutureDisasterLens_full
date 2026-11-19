@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Papua New Guinea",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -2.94,
+    "lon": 146.47,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of local communication networks",
+      "Risk of tsunamigenic activity affecting coastal communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T00:41:54Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T23:19:11Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Northern Pacific Ocean, near 13.8\u00b0N, 86.4\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 13.8,
-    "lon": 86.4,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "wind damage to infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T23:11:03Z"
   }
 ]
