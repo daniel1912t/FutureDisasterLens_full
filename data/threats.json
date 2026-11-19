@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 42.92,
+    "lon": -88.48,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of residential areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T17:11:35Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Indian Ocean, Near 16\u00b0N 85.3\u00b0E",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T15:47:43Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Rabaul, Papua New Guinea",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -4.3,
-    "lon": 151.89,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami potential",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T15:39:19Z"
   }
 ]
