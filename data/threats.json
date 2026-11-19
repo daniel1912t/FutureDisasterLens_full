@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific, International Waters",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -10.2,
+    "lon": -164.0,
+    "cascading_effects": [
+      "Heavy rainfall leading to flash floods on low-lying islands",
+      "High winds causing coastal erosion and damage to marine infrastructure",
+      "Potential generation of large ocean swells affecting shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T22:04:27Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Tsunagi, Japan",
     "severity": "Severe",
@@ -126,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T20:44:09Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Pacific-Antarctic Ridge",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -57.75,
-    "lon": -146.75,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of undersea cable communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T03:34:34Z"
   }
 ]
