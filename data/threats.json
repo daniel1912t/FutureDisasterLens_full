@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Near Guayaquil, Ecuador",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -2.4,
+    "lon": -79.82,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "tsunami potential if offshore epicenter"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T18:07:13Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Scott, Mississippi, USA",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T16:35:15Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean near Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential collision with commercial shipping routes",
-      "Disruption of scientific research stations",
-      "Altered local marine ecosystem due to iceberg melt"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T16:25:26Z"
   }
 ]
