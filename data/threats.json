@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Kilimatinde region, Tanzania",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -5.51,
+    "lon": 35.09,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption of communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T16:03:15Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Santa Gertrudis Miramar region, Mexico",
     "severity": "Moderate",
     "probability": "68%",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T00:41:54Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T00:33:37Z"
   }
 ]
