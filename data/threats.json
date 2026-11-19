@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Attu Island region, Alaska, USA",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 51.34,
+    "lon": 172.86,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of marine navigation",
+      "Infrastructure damage on nearby islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T15:46:50Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Holly Springs, Mississippi, USA",
     "severity": "Moderate",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T22:25:32Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Kintinku region, Tanzania",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -5.48,
-    "lon": 35.14,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T00:15:55Z"
   }
 ]
