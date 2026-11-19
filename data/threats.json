@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "South Georgia Island Region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -55.0,
+    "lon": -33.51,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of marine navigation",
+      "Impact on wildlife habitats"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T18:36:26Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Georgia, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T17:01:27Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "potential power line disruptions"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T16:53:09Z"
   }
 ]
