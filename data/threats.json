@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Northern Pacific Ocean, near 13.8\u00b0N, 86.4\u00b0E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 13.8,
+    "lon": 86.4,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "wind damage to infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T23:11:03Z"
+  },
+  {
+    "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Pacific Ocean, International Waters",
     "severity": "Severe",
     "probability": "71%",
@@ -41,21 +56,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T12:43:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Northern Indian Ocean, near 13.6\u00b0N, 86.5\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 13.6,
-    "lon": 86.5,
-    "cascading_effects": [
-      "heavy rainfall causing flash floods",
-      "storm surge impacting coastal communities",
-      "disruption to maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T22:33:48Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
