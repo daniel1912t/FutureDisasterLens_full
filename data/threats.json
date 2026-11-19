@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
+    "location": "South China Sea, near Vietnam",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 13.8,
+    "lon": 86.4,
+    "cascading_effects": [
+      "coastal flooding",
+      "landslide risk",
+      "storm surge"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T02:39:49Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Southwest of Lorengau, Papua New Guinea",
     "severity": "Severe",
@@ -131,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T15:17:50Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Wasatch, Utah, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 40.51,
-    "lon": -110.94,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T01:09:43Z"
   }
 ]
