@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "San Juan region, Peru",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -15.38,
+    "lon": -76.02,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Landslide risk in mountainous terrain"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T11:09:04Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "Southern Pacific Ocean near -10.6, -163.2",
     "severity": "Severe",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T09:39:06Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
-    "location": "Southern Indian Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 14.6,
-    "lon": 86.2,
-    "cascading_effects": [
-      "heavy rainfall causing flash floods",
-      "storm surge impacting coastal infrastructure",
-      "wind damage to shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T09:27:46Z"
   }
 ]
