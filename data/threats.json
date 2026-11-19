@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Xichang, China",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 27.93,
+    "lon": 102.13,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure strain",
+      "Landslide risk in nearby hills"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T20:23:28Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T18:53:05Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Atka, Alaska, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 51.68,
-    "lon": -174.66,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Infrastructure damage to coastal communities",
-      "Disruption of maritime navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T18:44:46Z"
   }
 ]
