@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene County, Georgia, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 33.75,
+    "lon": -83.26,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T12:23:05Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Red Hill, Perry, Mississippi, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T10:42:29Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean near Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Maritime navigation hazards",
-      "Potential impact on offshore platforms",
-      "Disruption to scientific research vessels"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T10:24:31Z"
   }
 ]
