@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storms Window",
+    "location": "Southern Pacific Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -10.3,
+    "lon": -163.8,
+    "cascading_effects": [
+      "coastal flooding",
+      "high winds causing infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T14:53:05Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Papua New Guinea",
     "severity": "Severe",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T06:28:48Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Johnson, Wyoming, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "air quality degradation",
-      "threat to nearby livestock"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T23:19:11Z"
   }
 ]
