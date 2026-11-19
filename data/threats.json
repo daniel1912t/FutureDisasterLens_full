@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos, New Hampshire, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "potential power line disruptions"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T16:53:09Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Wasatch, Utah, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T05:30:42Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
-    "location": "Bay of Bengal, near Myanmar",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 15.1,
-    "lon": 85.4,
-    "cascading_effects": [
-      "storm surge flooding coastal communities",
-      "disruption of maritime shipping lanes",
-      "triggered landslides in hilly inland areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T15:22:17Z"
   }
 ]
