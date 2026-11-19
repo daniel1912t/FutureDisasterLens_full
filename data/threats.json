@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Indian Ocean, near 16\u00b0N 85.3\u00b0E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 16.0,
+    "lon": 85.3,
+    "cascading_effects": [
+      "Coastal flooding in nearby islands",
+      "Disruption of maritime shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T00:39:53Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "South Georgia Island region",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T19:11:19Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Indian Ocean, near 16\u00b0N 85.3\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 16.0,
-    "lon": 85.3,
-    "cascading_effects": [
-      "Coastal flooding",
-      "High wind damage to infrastructure",
-      "Disruption of marine navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T19:01:22Z"
   }
 ]
