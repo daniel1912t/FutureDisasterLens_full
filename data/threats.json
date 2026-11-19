@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Illapel, Chile",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -31.85,
+    "lon": -72.18,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "potential tsunami warning for coastal areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T19:11:19Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Indian Ocean, near 16\u00b0N 85.3\u00b0E",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T17:47:43Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Kilimatinde, Tanzania",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -5.54,
-    "lon": 35.08,
-    "cascading_effects": [
-      "Potential landslides in nearby hills",
-      "Disruption of local road networks",
-      "Risk to nearby water infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T17:29:33Z"
   }
 ]
