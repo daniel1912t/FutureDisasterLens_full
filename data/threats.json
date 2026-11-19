@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene, Georgia, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 33.75,
+    "lon": -83.26,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T10:15:19Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Rabaul, Papua New Guinea",
     "severity": "Severe",
@@ -131,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T22:53:33Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "Central Pacific Ocean",
-    "severity": "Severe",
-    "probability": "82%",
-    "lat": -10.3,
-    "lon": -163.8,
-    "cascading_effects": [
-      "storm surge flooding",
-      "heavy rainfall causing landslides",
-      "disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T22:45:16Z"
   }
 ]
