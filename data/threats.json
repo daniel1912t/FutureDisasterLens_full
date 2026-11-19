@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Guayaquil, Ecuador",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -2.4,
+    "lon": -79.82,
+    "cascading_effects": [
+      "landslide risk in hillside communities",
+      "potential disruption of coastal port operations"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T16:07:14Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Atka, Alaska, USA",
     "severity": "Severe",
     "probability": "68%",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T14:46:02Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Disruption of nearby shipping lanes",
-      "Potential impact on marine wildlife habitats",
-      "Increased risk of iceberg grounding near coastal research stations"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T14:37:48Z"
   }
 ]
