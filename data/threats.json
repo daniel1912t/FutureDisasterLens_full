@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg B22K Window",
+    "location": "Southern Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "maritime navigation disruption",
+      "potential iceberg grounding causing coastal impact"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T04:21:03Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
@@ -131,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T16:49:38Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
-    "location": "South China Sea, near Vietnam",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 13.8,
-    "lon": 86.4,
-    "cascading_effects": [
-      "coastal flooding",
-      "landslide risk",
-      "storm surge"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T02:39:49Z"
   }
 ]
