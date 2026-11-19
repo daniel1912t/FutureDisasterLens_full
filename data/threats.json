@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 42.92,
+    "lon": -88.48,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities",
+      "potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T04:11:18Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Attu Station region, Alaska, USA",
     "severity": "Severe",
@@ -131,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T02:39:49Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Southwest of Lorengau, Papua New Guinea",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -2.94,
-    "lon": 146.47,
-    "cascading_effects": [
-      "Potential landslides in mountainous terrain",
-      "Disruption of local communications infrastructure",
-      "Risk of tsunami if offshore fault movement occurs"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T00:31:32Z"
   }
 ]
