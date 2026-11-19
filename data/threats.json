@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Attu Station region, Alaska, USA",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 51.34,
+    "lon": 172.86,
+    "cascading_effects": [
+      "Potential tsunami generation in the Bering Sea",
+      "Disruption of trans-Pacific communication cables",
+      "Triggering of landslides in nearby coastal cliffs"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T04:01:27Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Forrest, Mississippi, USA",
     "severity": "Moderate",
@@ -131,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T00:31:32Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Georgia, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 33.75,
-    "lon": -83.26,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "damage to property"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T02:21:46Z"
   }
 ]
