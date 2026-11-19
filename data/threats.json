@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Illapel, Chile",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -31.85,
+    "lon": -72.18,
+    "cascading_effects": [
+      "aftershocks",
+      "infrastructure damage",
+      "potential landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T17:21:24Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T15:57:32Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 31.12,
-    "lon": -89.08,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in surrounding counties",
-      "Potential strain on local firefighting resources",
-      "Risk of rapid fire spread to nearby residential areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T15:47:43Z"
   }
 ]
