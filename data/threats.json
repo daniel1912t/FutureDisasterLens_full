@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Kilimatinde, Tanzania",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -5.46,
+    "lon": 35.11,
+    "cascading_effects": [
+      "ground shaking",
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T22:24:07Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Georgia, USA",
     "severity": "Moderate",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T21:01:58Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Indian Ocean, near 13.6\u00b0N, 86.5\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 13.6,
-    "lon": 86.5,
-    "cascading_effects": [
-      "Coastal flooding in southern Bangladesh",
-      "Storm surge impacting Myanmar shoreline",
-      "Disruption of maritime shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T20:52:15Z"
   }
 ]
