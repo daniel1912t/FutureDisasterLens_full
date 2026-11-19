@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "Central Pacific Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -10.3,
+    "lon": -163.8,
+    "cascading_effects": [
+      "Coastal flooding",
+      "High wind damage to infrastructure",
+      "Disruption of marine traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T20:54:44Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T05:33:14Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Southeast of Guayaquil, Ecuador",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -2.4,
-    "lon": -79.82,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "tsunami potential"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T19:23:33Z"
   }
 ]
