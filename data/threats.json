@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Santa Gertrudis Miramar, Mexico",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 15.96,
+    "lon": -95.43,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure strain",
+      "Disruption to local transportation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T23:40:07Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Pacific-Antarctic Ridge",
     "severity": "Severe",
     "probability": "68%",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T21:56:09Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Lorengau, Papua New Guinea",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -2.94,
-    "lon": 146.47,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami potential"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T21:48:02Z"
   }
 ]
