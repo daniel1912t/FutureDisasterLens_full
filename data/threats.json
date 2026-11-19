@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "65 km SSW of Atka, Alaska",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 51.68,
+    "lon": -174.66,
+    "cascading_effects": [
+      "Potential tsunami generation affecting coastal communities",
+      "Disruption of air travel routes over the Aleutian Islands",
+      "Triggering of landslides in mountainous terrain"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T13:35:52Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
     "location": "Bay of Bengal, Myanmar",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T12:14:40Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Rabaul region, Papua New Guinea",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -4.3,
-    "lon": 151.89,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami potential",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T11:56:26Z"
   }
 ]
