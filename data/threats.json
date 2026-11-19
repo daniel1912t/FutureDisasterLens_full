@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos, New Hampshire, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T09:27:42Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, near Antarctica",
     "severity": "Moderate",
@@ -131,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T18:07:13Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Scott, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 32.42,
-    "lon": -89.6,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in nearby towns",
-      "Potential strain on local emergency services"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T17:57:34Z"
   }
 ]
