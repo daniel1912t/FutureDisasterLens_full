@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Kilimatinde region, Tanzania",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -5.51,
+    "lon": 35.09,
+    "cascading_effects": [
+      "Potential landslides",
+      "Disruption to nearby villages"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T08:58:18Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Foot Creek, Johnson, Wyoming, USA",
     "severity": "Moderate",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T07:36:51Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Waukesha, Wisconsin, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 42.92,
-    "lon": -88.48,
-    "cascading_effects": [
-      "Air quality degradation in surrounding counties",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T20:28:34Z"
   }
 ]
