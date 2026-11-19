@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Attu Station region, Alaska, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 51.34,
+    "lon": 172.86,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Infrastructure damage to remote facilities",
+      "Disruption of air traffic routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T07:31:45Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
     "location": "Indian Ocean, near 14.6\u00b0N, 86.2\u00b0E",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T20:09:11Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "shipping route disruption",
-      "coastal erosion",
-      "impact on marine wildlife"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T06:00:32Z"
   }
 ]
