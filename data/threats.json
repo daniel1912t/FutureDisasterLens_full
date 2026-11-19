@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Santa Gertrudis Miramar, Mexico",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 15.96,
+    "lon": -95.43,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure strain",
+      "Disruption to local transportation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T03:35:16Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Dry Lake Hills, Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -131,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T16:14:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Kilimatinde region, Tanzania",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -5.51,
-    "lon": 35.09,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage",
-      "Disruption of communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T16:03:15Z"
   }
 ]
