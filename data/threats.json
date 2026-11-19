@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Severe",
+    "probability": "81%",
+    "lat": 31.12,
+    "lon": -89.08,
+    "cascading_effects": [
+      "Air quality degradation affecting nearby communities",
+      "Potential strain on local emergency services"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T16:59:33Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
     "probability": "71%",
@@ -132,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T15:35:37Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, Antarctica",
-    "severity": "Moderate",
-    "probability": "80%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential collision with commercial shipping lanes",
-      "Disruption of scientific research vessels",
-      "Localized sea ice melt acceleration"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T15:27:30Z"
   }
 ]
