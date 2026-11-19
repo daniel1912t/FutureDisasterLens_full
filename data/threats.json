@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Window",
+    "location": "Southern Ocean, near Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Potential collision with shipping lanes",
+      "Disruption of marine wildlife habitats"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T02:19:32Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Illapel, Chile",
     "severity": "Severe",
@@ -131,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T17:57:34Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "San Juan, Peru",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -15.38,
-    "lon": -76.02,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T17:47:43Z"
   }
 ]
