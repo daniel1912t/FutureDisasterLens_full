@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
+    "location": "Southern Indian Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 14.6,
+    "lon": 86.2,
+    "cascading_effects": [
+      "heavy rainfall causing flash floods",
+      "storm surge impacting coastal infrastructure",
+      "wind damage to shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T09:27:46Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "San Juan region, Peru",
     "severity": "Moderate",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T08:58:18Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Foot Creek, Johnson, Wyoming, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "Smoke dispersion affecting nearby air quality",
-      "Potential evacuation of local communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T07:49:48Z"
   }
 ]
