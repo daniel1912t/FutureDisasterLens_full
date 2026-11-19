@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Kilimatinde region, Tanzania",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -5.54,
+    "lon": 35.08,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "disruption of local transport"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T20:19:00Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Southeast of Santa Gertrudis Miramar, Mexico",
     "severity": "Moderate",
     "probability": "78%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T04:57:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Window",
-    "location": "Pacific Ocean, near Kiribati",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -10.3,
-    "lon": -163.8,
-    "cascading_effects": [
-      "storm surge flooding coastal communities",
-      "heavy rainfall causing landslides and flash floods",
-      "disruption of marine navigation and shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T06:49:18Z"
   }
 ]
