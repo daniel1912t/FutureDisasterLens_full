@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "South Georgia Island region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -55.0,
+    "lon": -33.51,
+    "cascading_effects": [
+      "Tsunami generation",
+      "Infrastructure damage",
+      "Disruption of marine navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T20:31:42Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Xichang, China",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T19:01:22Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Rabaul, Papua New Guinea",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -4.3,
-    "lon": 151.89,
-    "cascading_effects": [
-      "Tsunami generation",
-      "Landslide risk in volcanic slopes",
-      "Disruption of regional air traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T18:53:05Z"
   }
 ]
