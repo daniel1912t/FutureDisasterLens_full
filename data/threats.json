@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
+    "location": "Bay of Bengal, Myanmar",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 15.1,
+    "lon": 85.4,
+    "cascading_effects": [
+      "storm surge flooding coastal villages",
+      "heavy rainfall causing landslides in hilly terrain",
+      "disruption of maritime shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T13:26:04Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "San Juan region, Peru",
     "severity": "Moderate",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T11:56:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Atka region, Alaska, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 51.68,
-    "lon": -174.66,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami generation potential"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T11:46:29Z"
   }
 ]
