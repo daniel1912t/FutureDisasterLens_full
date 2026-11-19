@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Tropical Cyclone Window",
+    "location": "Bay of Bengal, India",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 14.6,
+    "lon": 86.2,
+    "cascading_effects": [
+      "storm surge flooding",
+      "heavy rainfall causing landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T04:57:24Z"
+  },
+  {
+    "primary_threat": "Forecasted Tropical Cyclone Window",
     "location": "Pacific Ocean, near Kiribati",
     "severity": "Severe",
     "probability": "68%",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T03:35:16Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Dry Lake Hills, Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.27,
-    "lon": -111.62,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T17:25:38Z"
   }
 ]
