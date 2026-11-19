@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Stevens, Washington, USA",
+    "severity": "Moderate",
+    "probability": "71%",
+    "lat": 48.4,
+    "lon": -117.53,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Potential evacuation of nearby communities",
+      "Strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T16:49:38Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
     "location": "South China Sea, near Vietnam",
     "severity": "Severe",
@@ -132,19 +147,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T15:27:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "West of Teluk Dalam, Indonesia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 0.52,
-    "lon": 96.53,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami generation potential"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T15:17:50Z"
   }
 ]
