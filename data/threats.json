@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Kilimatinde region, Tanzania",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -5.54,
+    "lon": 35.08,
+    "cascading_effects": [
+      "ground shaking",
+      "potential landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T15:12:29Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "Pacific Ocean, Near Kiribati",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T13:44:13Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "65 km SSW of Atka, Alaska",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 51.68,
-    "lon": -174.66,
-    "cascading_effects": [
-      "Potential tsunami generation affecting coastal communities",
-      "Disruption of air travel routes over the Aleutian Islands",
-      "Triggering of landslides in mountainous terrain"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T13:35:52Z"
   }
 ]
