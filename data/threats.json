@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Window",
+    "location": "Pacific Ocean, near Kiribati",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -10.3,
+    "lon": -163.8,
+    "cascading_effects": [
+      "storm surge flooding coastal communities",
+      "heavy rainfall causing landslides and flash floods",
+      "disruption of marine navigation and shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T06:49:18Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Georgia, USA",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T17:25:38Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Teluk Dalam region, Indonesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 0.5,
-    "lon": 96.63,
-    "cascading_effects": [
-      "potential landslides",
-      "tsunami generation risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T03:17:25Z"
   }
 ]
