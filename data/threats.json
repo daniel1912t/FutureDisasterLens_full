@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Teluk Dalam region, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 0.5,
+    "lon": 96.63,
+    "cascading_effects": [
+      "aftershocks",
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T14:46:02Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean, Antarctica",
     "severity": "Moderate",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T13:15:56Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Kilimatinde region, Tanzania",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -5.54,
-    "lon": 35.08,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T13:09:04Z"
   }
 ]
