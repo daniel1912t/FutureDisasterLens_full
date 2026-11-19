@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Guayaquil region, Ecuador",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -2.4,
+    "lon": -79.82,
+    "cascading_effects": [
+      "Potential landslides in coastal hills",
+      "Disruption of port operations",
+      "Aftershock risk to nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T07:39:59Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Attu Station region, Alaska, USA",
     "severity": "Severe",
     "probability": "68%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T20:19:00Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Southeast of Santa Gertrudis Miramar, Mexico",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": 15.96,
-    "lon": -95.43,
-    "cascading_effects": [
-      "potential landslides",
-      "infrastructure damage",
-      "aftershock sequence"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T20:09:11Z"
   }
 ]
