@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Wasatch, Utah, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 40.51,
+    "lon": -110.94,
+    "cascading_effects": [
+      "air quality degradation",
+      "potential spread to adjacent grasslands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T07:36:51Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T19:15:11Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Teluk Dalam region, Indonesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 0.5,
-    "lon": 96.63,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami potential",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T05:07:03Z"
   }
 ]
