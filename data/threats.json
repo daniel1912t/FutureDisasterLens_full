@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Stevens, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.4,
+    "lon": -117.53,
+    "cascading_effects": [
+      "Smoke plume affecting air quality in nearby communities",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T20:13:37Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, near French Polynesia",
     "severity": "Severe",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T18:44:46Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "South Georgia Island Region",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -55.0,
-    "lon": -33.51,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of marine navigation",
-      "Impact on wildlife habitats"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T18:36:26Z"
   }
 ]
