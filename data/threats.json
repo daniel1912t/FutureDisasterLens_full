@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "130 km W of Teluk Dalam, Indonesia",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 0.5,
+    "lon": 96.63,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Infrastructure damage",
+      "Disruption of coastal shipping"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T07:04:23Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "Central Pacific Ocean",
     "severity": "Severe",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T05:41:17Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Foot Creek, Johnson, Wyoming, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "air quality degradation",
-      "threat to nearby livestock and infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T05:33:14Z"
   }
 ]
