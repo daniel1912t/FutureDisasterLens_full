@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Severe Storms Window",
+    "location": "Bay of Bengal, near Myanmar",
+    "severity": "Severe",
+    "probability": "82%",
+    "lat": 13.8,
+    "lon": 86.4,
+    "cascading_effects": [
+      "Coastal flooding",
+      "Storm surge impacting low-lying areas",
+      "Disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T15:01:26Z"
+  },
+  {
+    "primary_threat": "Forecasted Severe Storms Window",
     "location": "Southern Pacific Ocean",
     "severity": "Severe",
     "probability": "68%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T23:40:07Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Pacific-Antarctic Ridge",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -57.75,
-    "lon": -146.75,
-    "cascading_effects": [
-      "Potential tsunami generation affecting Southern Ocean islands",
-      "Ice shelf destabilization",
-      "Disruption of marine navigation routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T06:28:48Z"
   }
 ]
