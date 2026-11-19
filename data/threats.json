@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Attu Station, Alaska, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 51.34,
+    "lon": 172.86,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption to aviation routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T05:41:17Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Foot Creek, Johnson, Wyoming, USA",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T04:21:03Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Waukesha, Wisconsin, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 42.92,
-    "lon": -88.48,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities",
-      "potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T04:11:18Z"
   }
 ]
