@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, International Waters",
+    "severity": "Severe",
+    "probability": "71%",
+    "lat": -10.3,
+    "lon": -163.8,
+    "cascading_effects": [
+      "High winds causing coastal flooding",
+      "Heavy rainfall leading to landslides on nearby islands",
+      "Disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T23:01:17Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Moderate",
@@ -70,21 +85,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T12:15:37Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific, International Waters",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -10.2,
-    "lon": -164.0,
-    "cascading_effects": [
-      "Heavy rainfall leading to flash floods on low-lying islands",
-      "High winds causing coastal erosion and damage to marine infrastructure",
-      "Potential generation of large ocean swells affecting shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T22:04:27Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
