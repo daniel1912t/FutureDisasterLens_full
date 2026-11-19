@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Window",
+    "location": "Southern Ocean near Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "Maritime navigation hazards",
+      "Potential impact on offshore platforms",
+      "Disruption to scientific research vessels"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T10:24:31Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Georgia, USA",
     "severity": "Moderate",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T09:01:47Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Teluk Dalam region, Indonesia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 0.5,
-    "lon": 96.63,
-    "cascading_effects": [
-      "ground shaking",
-      "potential landslides",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T22:53:33Z"
   }
 ]
