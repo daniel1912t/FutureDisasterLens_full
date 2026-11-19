@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Rabaul region, Papua New Guinea",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -4.3,
+    "lon": 151.89,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami potential",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T04:02:32Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Forrest, Mississippi, USA",
     "severity": "Moderate",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T12:41:00Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean near Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "maritime navigation hazard",
-      "potential grounding on nearby islands",
-      "disruption to scientific research vessels"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T12:31:18Z"
   }
 ]
