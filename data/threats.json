@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, Near -10.6\u00b0S 163.2\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -10.6,
+    "lon": -163.2,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "wind damage to vessels"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T18:17:03Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Near Guayaquil, Ecuador",
     "severity": "Severe",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T16:43:32Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Foot Creek, Johnson, Wyoming, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T16:35:15Z"
   }
 ]
