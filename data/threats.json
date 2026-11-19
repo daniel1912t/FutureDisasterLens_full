@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
+    "location": "Indian Ocean, near 14.6\u00b0N, 86.2\u00b0E",
+    "severity": "Severe",
+    "probability": "81%",
+    "lat": 14.6,
+    "lon": 86.2,
+    "cascading_effects": [
+      "heavy rainfall leading to flash floods",
+      "storm surge affecting coastal communities",
+      "disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T07:22:11Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Georgia, USA",
     "severity": "Moderate",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T06:00:32Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Dry Lake Hills, Coconino, Arizona, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 35.27,
-    "lon": -111.62,
-    "cascading_effects": [
-      "Air quality degradation in surrounding communities",
-      "Potential strain on regional firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T05:50:50Z"
   }
 ]
