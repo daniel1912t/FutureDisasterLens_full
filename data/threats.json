@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Foot Creek, Johnson, Wyoming, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "Smoke dispersion affecting nearby air quality",
+      "Potential evacuation of local communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T07:49:48Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Guayaquil region, Ecuador",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T20:28:34Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Kilimatinde region, Tanzania",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -5.54,
-    "lon": 35.08,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "disruption of local transport"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T20:19:00Z"
   }
 ]
