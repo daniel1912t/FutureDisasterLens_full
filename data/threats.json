@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.27,
+    "lon": -111.62,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in Flagstaff",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T00:06:15Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Attu Station region, Alaska",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T12:43:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Kilimatinde, Tanzania",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -5.46,
-    "lon": 35.11,
-    "cascading_effects": [
-      "ground shaking",
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T22:24:07Z"
   }
 ]
