@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Northern Indian Ocean, near 13.6\u00b0N, 86.5\u00b0E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 13.6,
+    "lon": 86.5,
+    "cascading_effects": [
+      "heavy rainfall causing flash floods",
+      "storm surge impacting coastal communities",
+      "disruption to maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-19T22:33:48Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Kilimatinde, Tanzania",
     "severity": "Severe",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T21:10:17Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 31.12,
-    "lon": -89.08,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T21:01:58Z"
   }
 ]
