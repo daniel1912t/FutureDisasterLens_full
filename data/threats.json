@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Teluk Dalam region, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 0.5,
+    "lon": 96.63,
+    "cascading_effects": [
+      "potential landslides",
+      "tsunami generation risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T03:17:25Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "South Pacific Ocean, near French Polynesia",
     "severity": "Severe",
@@ -132,20 +147,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-19T15:55:00Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Attu Island region, Alaska, USA",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 51.34,
-    "lon": 172.86,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of marine navigation",
-      "Infrastructure damage on nearby islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-19T15:46:50Z"
   }
 ]
