@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Atka, Alaska, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 51.68,
+    "lon": -174.66,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of air travel routes",
+      "Infrastructure damage to remote communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T21:06:26Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Rabaul, Papua New Guinea",
     "severity": "Severe",
     "probability": "68%",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T09:27:42Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, near Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential collision with shipping lanes",
-      "Disruption of marine wildlife habitats"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T02:19:32Z"
   }
 ]
