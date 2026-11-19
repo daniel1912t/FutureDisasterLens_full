@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Rabaul, Papua New Guinea",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -4.3,
+    "lon": 151.89,
+    "cascading_effects": [
+      "Tsunami generation",
+      "Landslide risk in volcanic slopes",
+      "Disruption of regional air traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T18:53:05Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Atka, Alaska, USA",
     "severity": "Severe",
     "probability": "68%",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T17:21:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Waukesha, Wisconsin, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 42.92,
-    "lon": -88.48,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of residential areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T17:11:35Z"
   }
 ]
