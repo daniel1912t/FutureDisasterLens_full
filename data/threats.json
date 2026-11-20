@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos, New Hampshire, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in nearby towns",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T05:16:55Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Bienville, Mississippi, USA",
     "severity": "Moderate",
     "probability": "68%",
