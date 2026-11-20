@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg B22K Window",
+    "location": "Southern Ocean, Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "shipping lane disruption",
+      "potential impact on marine wildlife",
+      "coastal erosion of nearby ice shelves"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T15:14:35Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Carlsberg Ridge, Indian Ocean",
     "severity": "Severe",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T19:53:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Foot Creek, Johnson, Wyoming, USA",
-    "severity": "Moderate",
-    "probability": "71%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "air quality degradation",
-      "threat to nearby livestock and grazing lands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T19:44:56Z"
   }
 ]
