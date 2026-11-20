@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Soledad, California, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 36.58,
+    "lon": -121.23,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Ground liquefaction risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T18:52:00Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T03:21:00Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Tual, Indonesia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -6.03,
-    "lon": 130.65,
-    "cascading_effects": [
-      "Potential landslides in nearby hills",
-      "Disruption of marine traffic",
-      "Aftershock sequence"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T03:12:38Z"
   }
 ]
