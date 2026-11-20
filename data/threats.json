@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.27,
+    "lon": -111.62,
+    "cascading_effects": [
+      "air quality degradation",
+      "potential evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T01:18:57Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -126,20 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T23:58:55Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Illapel Region, Chile",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -31.85,
-    "lon": -72.18,
-    "cascading_effects": [
-      "Aftershocks",
-      "Potential landslides",
-      "Infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T23:48:57Z"
   }
 ]
