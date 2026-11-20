@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coos, New Hampshire, USA",
+    "severity": "Severe",
+    "probability": "81%",
+    "lat": 44.33,
+    "lon": -71.03,
+    "cascading_effects": [
+      "Air quality degradation affecting surrounding states",
+      "Potential strain on regional emergency services"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T08:17:16Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Madang Province, Papua New Guinea",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T06:56:19Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
-    "location": "Northern Indian Ocean",
-    "severity": "Severe",
-    "probability": "82%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "storm surge flooding",
-      "heavy rainfall causing landslides",
-      "disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T14:47:59Z"
   }
 ]
