@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Tual, Indonesia",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -6.03,
+    "lon": 130.65,
+    "cascading_effects": [
+      "potential landslides",
+      "tsunami risk for nearby coastlines"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T00:07:03Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
@@ -127,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T22:36:49Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Xichang, China",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 27.93,
-    "lon": 102.13,
-    "cascading_effects": [
-      "ground shaking",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T17:18:55Z"
   }
 ]
