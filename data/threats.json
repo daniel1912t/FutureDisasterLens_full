@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Madang, Papua New Guinea",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": -5.22,
+    "lon": 145.3,
+    "cascading_effects": [
+      "landslide risk",
+      "potential coastal tsunami"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T03:38:06Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Calingasta, Argentina",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T02:20:38Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Xichang, China",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 27.93,
-    "lon": 102.13,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage",
-      "Disruption to regional power grid"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T02:13:48Z"
   }
 ]
