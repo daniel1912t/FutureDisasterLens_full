@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Xichang, China",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 27.93,
+    "lon": 102.13,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption to regional power grid"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T02:13:48Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean near Antarctica",
     "severity": "Moderate",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T14:51:42Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "South Georgia Island region",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -55.0,
-    "lon": -33.51,
-    "cascading_effects": [
-      "Potential tsunami generation affecting nearby coastlines",
-      "Disruption of marine navigation and fisheries"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T14:43:24Z"
   }
 ]
