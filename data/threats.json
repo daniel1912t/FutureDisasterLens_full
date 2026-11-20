@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Carlsberg Ridge, Indian Ocean",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 9.79,
+    "lon": 57.75,
+    "cascading_effects": [
+      "underwater landslides",
+      "tsunami generation",
+      "disruption of submarine cables"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T20:05:17Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Southeast of the Loyalty Islands",
     "severity": "Severe",
     "probability": "78%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T01:36:46Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Johnson, Wyoming, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "road closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T11:27:09Z"
   }
 ]
