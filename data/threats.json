@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Southeast of Pangai, Tonga",
+    "severity": "Moderate",
+    "probability": "70%",
+    "lat": -20.32,
+    "lon": -173.41,
+    "cascading_effects": [
+      "potential tsunami generation",
+      "infrastructure damage",
+      "disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T21:14:43Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Window",
     "location": "Central Indian Ocean, near 17.2\u00b0N, 84.7\u00b0E",
     "severity": "Severe",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T19:45:53Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Kor\u00f3ni, Greece",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 36.44,
-    "lon": 22.08,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage",
-      "Disruption of transportation routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T19:28:08Z"
   }
 ]
