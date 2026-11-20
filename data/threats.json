@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
+    "location": "Bay of Bengal, India",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "storm surge flooding",
+      "heavy rainfall causing landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T04:33:26Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Holly Springs, Mississippi, USA",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T16:55:38Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "Central Pacific, near Kiribati",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -10.7,
-    "lon": -162.8,
-    "cascading_effects": [
-      "storm surge flooding",
-      "heavy rainfall causing landslides",
-      "disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T16:47:08Z"
   }
 ]
