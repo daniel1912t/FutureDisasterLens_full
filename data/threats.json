@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Kor\u00f3ni region, Greece",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 36.44,
+    "lon": 22.08,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure stress",
+      "Localized landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T10:50:55Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
     "location": "Bay of Bengal, India",
     "severity": "Severe",
@@ -126,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T10:19:16Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Johnson, Wyoming, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "air quality degradation",
-      "threat to nearby wildlife habitats"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T09:09:39Z"
   }
 ]
