@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Xichang, China",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 27.93,
+    "lon": 102.13,
+    "cascading_effects": [
+      "Potential landslides",
+      "Infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T07:16:40Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Tual, Indonesia",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T12:45:07Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "South Georgia Island, South Atlantic Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -55.0,
-    "lon": -33.51,
-    "cascading_effects": [
-      "tsunami potential",
-      "disruption of marine navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T22:36:49Z"
   }
 ]
