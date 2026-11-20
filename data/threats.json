@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Calingasta, Argentina",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -31.43,
+    "lon": -69.19,
+    "cascading_effects": [
+      "landslides",
+      "road network disruption"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T03:29:40Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "East Pacific Rise, International Waters",
     "severity": "Severe",
     "probability": "68%",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T02:13:48Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean near Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Shipping lane closures",
-      "Potential impact on marine wildlife habitats"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T02:03:48Z"
   }
 ]
