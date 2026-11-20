@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Port-Olry, Vanuatu",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -14.84,
+    "lon": 167.29,
+    "cascading_effects": [
+      "tsunami potential",
+      "infrastructure damage",
+      "disruption of communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T20:13:13Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Loyalty Islands, New Caledonia",
     "severity": "Severe",
     "probability": "68%",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T18:42:09Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Tennessee, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 36.36,
-    "lon": -82.8,
-    "cascading_effects": [
-      "Air quality degradation affecting nearby communities",
-      "Potential strain on local emergency services and evacuation routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T18:32:26Z"
   }
 ]
