@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Loyalty Islands region, New Caledonia",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -24.75,
+    "lon": 171.43,
+    "cascading_effects": [
+      "tsunami generation",
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T18:03:25Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Bibb, Alabama, USA",
     "severity": "Moderate",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T16:14:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Window",
-    "location": "Bay of Bengal, India",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "storm surge flooding",
-      "heavy rainfall causing landslides"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T16:06:22Z"
   }
 ]
