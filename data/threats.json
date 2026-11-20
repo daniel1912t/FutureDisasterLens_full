@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Foot Creek, Johnson, Wyoming, USA",
+    "severity": "Moderate",
+    "probability": "71%",
+    "lat": 44.32,
+    "lon": -106.93,
+    "cascading_effects": [
+      "air quality degradation",
+      "threat to nearby livestock and grazing lands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T19:44:56Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "West of Tual, Indonesia",
     "severity": "Severe",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T03:56:35Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Madang, Papua New Guinea",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": -5.22,
-    "lon": 145.3,
-    "cascading_effects": [
-      "landslide risk",
-      "potential coastal tsunami"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T03:38:06Z"
   }
 ]
