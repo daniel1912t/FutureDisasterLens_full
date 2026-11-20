@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Stevens, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.4,
+    "lon": -117.53,
+    "cascading_effects": [
+      "air quality degradation",
+      "potential evacuation orders"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T16:37:19Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -126,20 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T01:09:47Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Central Indian Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "Coastal flooding in nearby islands",
-      "Disruption of maritime shipping routes",
-      "Potential landslides in mountainous coastal regions"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T01:01:33Z"
   }
 ]
