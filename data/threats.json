@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Southeast of the Loyalty Islands",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -24.75,
+    "lon": 171.43,
+    "cascading_effects": [
+      "Potential tsunami generation affecting nearby coastlines",
+      "Disruption of undersea communication cables",
+      "Triggering of landslides on volcanic islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T12:55:14Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T11:27:09Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Carlsberg Ridge, Indian Ocean",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 9.79,
-    "lon": 57.75,
-    "cascading_effects": [
-      "Potential undersea landslide generating tsunamis",
-      "Disruption of submarine cable communications",
-      "Impact on marine ecosystems due to sediment plume"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T11:17:25Z"
   }
 ]
