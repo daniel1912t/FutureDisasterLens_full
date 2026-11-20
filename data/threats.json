@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Bay of Bengal, near 17.2\u00b0N, 84.7\u00b0E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "heavy rainfall",
+      "flash flooding",
+      "landslide risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T22:53:35Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Foot Creek, Johnson, Wyoming, USA",
     "severity": "Moderate",
@@ -26,21 +41,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T22:36:49Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Bay of Bengal, India",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 16.0,
-    "lon": 85.3,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "landslide risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T06:28:35Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
