@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Pinnacles, California, USA",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 36.59,
+    "lon": -121.22,
+    "cascading_effects": [
+      "Potential landslides in surrounding hills",
+      "Infrastructure damage to roads and bridges",
+      "Disruption of water supply systems"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T22:51:35Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Georgia, USA",
     "severity": "Moderate",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T07:31:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Johnson, Wyoming, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 44.32,
-    "lon": -106.93,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities",
-      "potential loss of grazing land"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T07:23:01Z"
   }
 ]
