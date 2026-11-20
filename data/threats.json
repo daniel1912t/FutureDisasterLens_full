@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Kor\u00f3ni region, Greece",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": 36.44,
+    "lon": 22.08,
+    "cascading_effects": [
+      "Potential aftershocks causing structural damage",
+      "Disruption to local transportation networks",
+      "Risk of landslides in nearby hills"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T13:13:30Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Carlsberg Ridge, Indian Ocean",
     "severity": "Severe",
     "probability": "78%",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T11:53:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "82%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in nearby communities",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T01:36:46Z"
   }
 ]
