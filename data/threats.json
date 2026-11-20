@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 31.13,
+    "lon": -89.06,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T13:41:00Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Illapel Region, Chile",
     "severity": "Severe",
@@ -13,21 +27,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T13:31:22Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Bibb County, Alabama, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 32.95,
-    "lon": -87.35,
-    "cascading_effects": [
-      "air quality degradation",
-      "local evacuations",
-      "strain on firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T13:23:13Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
