@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Balangonan region, Philippines",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 5.44,
+    "lon": 125.3,
+    "cascading_effects": [
+      "landslides",
+      "damage to roads and bridges",
+      "disruption of power supply"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T16:51:37Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Kor\u00f3ni region, Greece",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T14:35:14Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Window",
-    "location": "South Pacific Ocean, near Fiji",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.0,
-    "lon": -162.8,
-    "cascading_effects": [
-      "storm surge flooding coastal communities",
-      "heavy rainfall causing landslides and flash floods"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T14:15:35Z"
   }
 ]
