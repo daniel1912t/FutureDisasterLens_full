@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Window",
+    "location": "Bay of Bengal, near Myanmar",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "storm surge flooding coastal communities",
+      "heavy rainfall causing landslides inland"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T18:13:15Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Loyalty Islands region, New Caledonia",
     "severity": "Severe",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T16:24:10Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Waukesha, Wisconsin, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 42.92,
-    "lon": -88.48,
-    "cascading_effects": [
-      "Reduced air quality in surrounding suburbs",
-      "Potential strain on local fire suppression resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T16:14:26Z"
   }
 ]
