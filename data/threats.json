@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Loyalty Islands region, New Caledonia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -24.75,
+    "lon": 171.43,
+    "cascading_effects": [
+      "Potential tsunami generation affecting coastal communities",
+      "Disruption of marine navigation and shipping lanes",
+      "Infrastructure damage to coastal facilities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T05:30:30Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Forrest, Mississippi, USA",
     "severity": "Moderate",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T13:13:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Carlsberg Ridge, Indian Ocean",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 9.79,
-    "lon": 57.75,
-    "cascading_effects": [
-      "underwater landslides",
-      "tsunami generation",
-      "disruption of submarine cables"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T20:05:17Z"
   }
 ]
