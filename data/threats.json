@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Carlsberg Ridge, Indian Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.79,
+    "lon": 57.75,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of undersea cable communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T09:04:43Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Southeast of the Loyalty Islands",
     "severity": "Severe",
     "probability": "68%",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T19:44:56Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "West of Tual, Indonesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -6.03,
-    "lon": 130.65,
-    "cascading_effects": [
-      "potential landslides",
-      "tsunami generation risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T05:35:09Z"
   }
 ]
