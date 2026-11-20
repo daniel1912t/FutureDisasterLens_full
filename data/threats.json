@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Tual, Indonesia",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -6.03,
+    "lon": 130.65,
+    "cascading_effects": [
+      "Potential landslides in nearby hills",
+      "Disruption of marine traffic",
+      "Aftershock sequence"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T03:12:38Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "South Georgia Island region",
     "severity": "Severe",
     "probability": "68%",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T12:55:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Georgia, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 33.75,
-    "lon": -83.26,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T01:37:11Z"
   }
 ]
