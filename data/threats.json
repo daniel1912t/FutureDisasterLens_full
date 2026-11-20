@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Southeast of the Loyalty Islands",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -24.7,
+    "lon": 171.16,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of maritime navigation",
+      "Aftershock sequence affecting nearby islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T23:13:25Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Atka, Alaska, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T11:43:45Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T21:32:34Z"
   }
 ]
