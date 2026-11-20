@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Atka, Alaska, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 51.68,
+    "lon": -174.66,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Landslide risk in mountainous terrain"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T23:03:30Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Bay of Bengal, near 17.2\u00b0N, 84.7\u00b0E",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T21:32:34Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean, Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "shipping lane disruption",
-      "coastal erosion",
-      "potential impact on marine wildlife"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T21:24:25Z"
   }
 ]
