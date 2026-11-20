@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, near Fiji",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -10.7,
+    "lon": -162.8,
+    "cascading_effects": [
+      "coastal flooding",
+      "storm surge",
+      "disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T14:51:42Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "South Georgia Island region",
     "severity": "Severe",
@@ -126,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T23:13:25Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Atka, Alaska, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 51.68,
-    "lon": -174.66,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Landslide risk in mountainous terrain"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T23:03:30Z"
   }
 ]
