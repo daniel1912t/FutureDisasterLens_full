@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "South Georgia Island region, South Georgia and the South Sandwich Islands",
+    "severity": "Extreme",
+    "probability": "68%",
+    "lat": -55.0,
+    "lon": -33.51,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of marine navigation",
+      "Impact on wildlife colonies"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T05:26:51Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coos, New Hampshire, USA",
     "severity": "Moderate",
@@ -69,20 +84,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T04:33:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Tsunami Window",
-    "location": "South Georgia Island region, South Georgia and the South Sandwich Islands",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -55.0,
-    "lon": -33.51,
-    "cascading_effects": [
-      "Coastal flooding",
-      "Disruption of marine navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T04:13:37Z"
   },
   {
     "primary_threat": "Forecasted Tsunami Window",
