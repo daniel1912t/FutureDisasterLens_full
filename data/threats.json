@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Pinnacles, California, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 36.59,
+    "lon": -121.22,
+    "cascading_effects": [
+      "Potential building damage",
+      "Triggered landslides in surrounding hills"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T20:21:24Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Calingasta, Argentina",
     "severity": "Moderate",
     "probability": "78%",
@@ -113,21 +127,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T03:03:18Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Soledad, California, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 36.58,
-    "lon": -121.23,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage",
-      "Ground liquefaction risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T18:52:00Z"
   },
   {
     "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
