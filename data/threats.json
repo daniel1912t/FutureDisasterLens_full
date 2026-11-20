@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Bay of Bengal, India",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 16.0,
+    "lon": 85.3,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "landslide risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T06:28:35Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Xichang, China",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T21:06:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Rabaul, Papua New Guinea",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -4.3,
-    "lon": 151.89,
-    "cascading_effects": [
-      "tsunami generation",
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T10:58:03Z"
   }
 ]
