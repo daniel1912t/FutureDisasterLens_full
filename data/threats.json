@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Scott, Mississippi, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 32.42,
+    "lon": -89.6,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T10:31:20Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "Central Pacific Ocean",
     "severity": "Severe",
@@ -55,21 +69,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T09:55:08Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
-    "severity": "Severe",
-    "probability": "81%",
-    "lat": 31.13,
-    "lon": -89.06,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T23:46:58Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
