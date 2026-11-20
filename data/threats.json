@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Illapel region, Chile",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -31.78,
+    "lon": -72.15,
+    "cascading_effects": [
+      "Potential landslides",
+      "Infrastructure damage",
+      "Aftershock sequence"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T16:33:50Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Severe",
@@ -126,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T14:10:18Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Balangonan region, Philippines",
-    "severity": "Moderate",
-    "probability": "70%",
-    "lat": 5.44,
-    "lon": 125.3,
-    "cascading_effects": [
-      "Potential landslides in nearby hills",
-      "Disruption of local road and bridge infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T03:58:59Z"
   }
 ]
