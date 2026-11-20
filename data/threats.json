@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "El Dorado, California, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.62,
+    "lon": -120.5,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T18:42:09Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Tennessee, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T16:41:58Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Illapel region, Chile",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -31.78,
-    "lon": -72.15,
-    "cascading_effects": [
-      "Potential landslides",
-      "Infrastructure damage",
-      "Aftershock sequence"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T16:33:50Z"
   }
 ]
