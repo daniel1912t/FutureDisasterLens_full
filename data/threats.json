@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Pinnacles, California, USA",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 36.59,
+    "lon": -121.22,
+    "cascading_effects": [
+      "Landslides in surrounding hills",
+      "Damage to transportation corridors and pipelines"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T10:59:14Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Kor\u00f3ni region, Greece",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T09:29:03Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Carlsberg Ridge, International Waters",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 9.79,
-    "lon": 57.75,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of undersea cable communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T10:19:16Z"
   }
 ]
