@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Tsunami Window",
+    "location": "South Georgia Island region, South Georgia and the South Sandwich Islands",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -55.0,
+    "lon": -33.51,
+    "cascading_effects": [
+      "Coastal flooding",
+      "Disruption of marine navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T04:13:37Z"
+  },
+  {
+    "primary_threat": "Forecasted Tsunami Window",
     "location": "Loyalty Islands region, New Caledonia",
     "severity": "Severe",
     "probability": "68%",
@@ -85,21 +99,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T03:12:38Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "South Georgia Island region",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -55.0,
-    "lon": -33.51,
-    "cascading_effects": [
-      "Potential tsunami generation affecting nearby coastlines",
-      "Disruption of marine navigation routes",
-      "Impact on wildlife habitats and breeding colonies"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T03:04:11Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
