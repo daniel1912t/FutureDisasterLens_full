@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Illapel region, Chile",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -31.78,
+    "lon": -72.15,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T21:42:06Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
