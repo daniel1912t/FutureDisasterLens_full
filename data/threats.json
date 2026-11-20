@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
+    "location": "Bay of Bengal, India",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "storm surge flooding coastal districts",
+      "disruption of power and communications infrastructure",
+      "agricultural crop damage and soil erosion"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T10:41:06Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Scott, Mississippi, USA",
     "severity": "Severe",
@@ -125,20 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T09:09:39Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Loyalty Islands Region, New Caledonia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -24.75,
-    "lon": 171.43,
-    "cascading_effects": [
-      "tsunami potential",
-      "infrastructure damage",
-      "landslide risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T09:01:21Z"
   }
 ]
