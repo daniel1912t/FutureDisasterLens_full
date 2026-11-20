@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Window",
+    "location": "South Pacific Ocean, near French Polynesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.4,
+    "lon": -163.5,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods on low-lying islands",
+      "Strong winds damaging coastal infrastructure and marine vessels"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T17:37:11Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Scott, Mississippi, USA",
     "severity": "Moderate",
