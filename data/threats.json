@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "East Pacific Rise, International Waters",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -9.19,
+    "lon": -109.91,
+    "cascading_effects": [
+      "potential undersea landslides",
+      "tsunami generation affecting coastal Pacific regions"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T22:10:38Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Wasatch, Utah, USA",
     "severity": "Moderate",
@@ -131,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T20:49:41Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Indian Ocean, near 16\u00b0N 85.3\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 16.0,
-    "lon": 85.3,
-    "cascading_effects": [
-      "Coastal flooding in nearby islands",
-      "Disruption of maritime shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T00:39:53Z"
   }
 ]
