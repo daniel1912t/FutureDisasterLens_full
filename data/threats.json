@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Window",
+    "location": "Central Indian Ocean, near 17.2\u00b0N, 84.7\u00b0E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "storm surge flooding",
+      "heavy rainfall causing landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T21:06:37Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T19:28:08Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Illapel, Chile",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -31.78,
-    "lon": -72.15,
-    "cascading_effects": [
-      "Aftershocks",
-      "Landslides",
-      "Infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T19:16:54Z"
   }
 ]
