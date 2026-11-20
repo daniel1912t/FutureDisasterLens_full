@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Severe",
+    "probability": "81%",
+    "lat": 31.13,
+    "lon": -89.06,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities",
+      "strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T23:46:58Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Wasatch, Utah, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T06:25:27Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coos, New Hampshire, USA",
-    "severity": "Severe",
-    "probability": "81%",
-    "lat": 44.33,
-    "lon": -71.03,
-    "cascading_effects": [
-      "Air quality degradation affecting surrounding states",
-      "Potential strain on regional emergency services"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T08:17:16Z"
   }
 ]
