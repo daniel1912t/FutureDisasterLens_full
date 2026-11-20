@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Calingasta, Argentina",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": -31.43,
+    "lon": -69.19,
+    "cascading_effects": [
+      "potential landslides",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T20:11:38Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T04:33:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Tsunami Window",
-    "location": "Loyalty Islands region, New Caledonia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -24.7,
-    "lon": 171.23,
-    "cascading_effects": [
-      "Coastal flooding",
-      "Infrastructure damage",
-      "Disruption of marine navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T04:05:24Z"
   }
 ]
