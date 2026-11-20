@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Carlsberg Ridge, International Waters",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 9.79,
+    "lon": 57.75,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of undersea cable communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T10:19:16Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Johnson, Wyoming, USA",
     "severity": "Severe",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T07:57:37Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 31.12,
-    "lon": -89.08,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T07:49:27Z"
   }
 ]
