@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Calingasta, Argentina",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -31.43,
+    "lon": -69.19,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption to transportation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T12:55:24Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Scott, Mississippi, USA",
     "severity": "Moderate",
