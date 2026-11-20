@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "South Pacific Ocean near French Polynesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.1,
+    "lon": -162.6,
+    "cascading_effects": [
+      "heavy rainfall causing flash floods",
+      "storm surge impacting coastal settlements"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T03:03:18Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Soledad, California, USA",
     "severity": "Severe",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T03:29:40Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "East Pacific Rise, International Waters",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -9.19,
-    "lon": -109.91,
-    "cascading_effects": [
-      "Potential tsunami generation affecting Pacific coastal regions",
-      "Disruption of undersea cable communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T03:21:00Z"
   }
 ]
