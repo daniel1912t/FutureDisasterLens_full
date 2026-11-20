@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 35.05,
+    "lon": -111.58,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in Flagstaff",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T16:24:10Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -126,19 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T03:58:59Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "Air quality degradation affecting nearby communities",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T13:50:50Z"
   }
 ]
