@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "South Georgia Island, South Atlantic Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -55.0,
+    "lon": -33.51,
+    "cascading_effects": [
+      "tsunami potential",
+      "disruption of marine navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T22:36:49Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Bay of Bengal, India",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T21:14:42Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Atka, Alaska, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 51.68,
-    "lon": -174.66,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of air travel routes",
-      "Infrastructure damage to remote communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T21:06:26Z"
   }
 ]
