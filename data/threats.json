@@ -1,17 +1,18 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
-    "location": "Bibb County, Alabama, USA",
-    "severity": "Moderate",
+    "location": "Forrest, Mississippi, USA",
+    "severity": "Severe",
     "probability": "68%",
-    "lat": 32.95,
-    "lon": -87.35,
+    "lat": 31.1,
+    "lon": -89.16,
     "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
+      "Air quality degradation",
+      "Evacuation of nearby communities",
+      "Potential strain on regional firefighting resources"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-21T15:38:55Z"
+    "time_of_event": "2026-11-21T15:48:30Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
