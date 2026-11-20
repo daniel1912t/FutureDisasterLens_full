@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Madang Province, Papua New Guinea",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -5.22,
+    "lon": 145.3,
+    "cascading_effects": [
+      "Landslides in mountainous terrain",
+      "Disruption of coastal shipping lanes",
+      "Potential tsunami generation affecting nearby islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T20:29:32Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Pinnacles, California, USA",
     "severity": "Severe",
     "probability": "68%",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T03:03:18Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
-    "location": "Bay of Bengal, India",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "storm surge flooding",
-      "heavy rainfall causing landslides"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T04:33:26Z"
   }
 ]
