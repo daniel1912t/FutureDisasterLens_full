@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Holly Springs, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": 34.49,
+    "lon": -89.42,
+    "cascading_effects": [
+      "Air quality degradation in surrounding counties",
+      "Potential strain on local emergency services",
+      "Risk of spot fires spreading to nearby agricultural lands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T18:23:27Z"
+  },
+  {
     "primary_threat": "Forecasted Tsunami Window",
     "location": "South Georgia Island region, South Georgia and the South Sandwich Islands",
     "severity": "Severe",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T16:47:08Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential evacuation orders"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T16:37:19Z"
   }
 ]
