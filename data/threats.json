@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Loyalty Islands region, New Caledonia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -24.7,
+    "lon": 171.23,
+    "cascading_effects": [
+      "tsunami generation",
+      "landslide risk in coastal valleys"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T02:20:38Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Xichang, China",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T01:01:33Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific Ocean, near Fiji",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -10.7,
-    "lon": -162.8,
-    "cascading_effects": [
-      "coastal flooding",
-      "storm surge",
-      "disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T14:51:42Z"
   }
 ]
