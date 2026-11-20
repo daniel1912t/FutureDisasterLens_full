@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 31.12,
+    "lon": -89.08,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T20:30:56Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene County, Tennessee, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -72,20 +86,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T19:45:53Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Bibb County, Alabama, USA",
-    "severity": "Moderate",
-    "probability": "71%",
-    "lat": 32.95,
-    "lon": -87.35,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in neighboring counties",
-      "Potential strain on local emergency services and evacuation routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T09:36:16Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
