@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Balangonan region, Philippines",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 5.44,
+    "lon": 125.3,
+    "cascading_effects": [
+      "ground shaking",
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T11:53:26Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Forrest, Mississippi, USA",
     "severity": "Moderate",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T10:23:05Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg B22K Window",
-    "location": "Southern Ocean, Antarctica",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "navigation hazard for vessels",
-      "potential coastal impact from iceberg drift"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T15:13:12Z"
   }
 ]
