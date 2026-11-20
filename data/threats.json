@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Balangonan, Philippines",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 5.44,
+    "lon": 125.3,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T19:45:53Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Bibb County, Alabama, USA",
     "severity": "Moderate",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T18:03:25Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Port-Olry, Vanuatu",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -14.84,
-    "lon": 167.29,
-    "cascading_effects": [
-      "tsunami risk",
-      "infrastructure damage",
-      "landslide potential"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T17:45:20Z"
   }
 ]
