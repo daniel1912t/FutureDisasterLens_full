@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 42.92,
+    "lon": -88.48,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in Milwaukee metro area",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-20T23:58:55Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Illapel Region, Chile",
     "severity": "Severe",
@@ -127,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T17:18:55Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "East Pacific Rise, International Waters",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -9.19,
-    "lon": -109.91,
-    "cascading_effects": [
-      "potential undersea landslides",
-      "tsunami generation affecting coastal Pacific regions"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T22:10:38Z"
   }
 ]
