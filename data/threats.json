@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Loyalty Islands Region, New Caledonia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -24.75,
+    "lon": 171.43,
+    "cascading_effects": [
+      "tsunami potential",
+      "infrastructure damage",
+      "landslide risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T09:01:21Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Pinnacles, California, USA",
     "severity": "Severe",
     "probability": "78%",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T07:41:16Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "Northern Pacific Ocean, near American Samoa",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.1,
-    "lon": -162.6,
-    "cascading_effects": [
-      "Coastal flooding",
-      "High wind damage to infrastructure",
-      "Disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T07:31:28Z"
   }
 ]
