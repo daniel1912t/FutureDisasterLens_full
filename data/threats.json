@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Illapel Region, Chile",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -31.78,
+    "lon": -72.15,
+    "cascading_effects": [
+      "Potential landslides in Andean foothills",
+      "Disruption of regional road and rail infrastructure",
+      "Risk of aftershocks affecting nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T13:31:22Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Bibb County, Alabama, USA",
     "severity": "Moderate",
@@ -131,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T12:11:33Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Balangonan region, Philippines",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 5.44,
-    "lon": 125.3,
-    "cascading_effects": [
-      "ground shaking",
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T11:53:26Z"
   }
 ]
