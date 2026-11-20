@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Balangonan region, Philippines",
+    "severity": "Moderate",
+    "probability": "70%",
+    "lat": 5.44,
+    "lon": 125.3,
+    "cascading_effects": [
+      "Potential landslides in nearby hills",
+      "Disruption of local road and bridge infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T03:58:59Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T12:27:45Z"
-  },
-  {
-    "primary_threat": "Forecasted Iceberg Drift Window",
-    "location": "Southern Ocean near Antarctica",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -69.76,
-    "lon": 163.35,
-    "cascading_effects": [
-      "Potential collision with shipping lanes",
-      "Disruption of local marine ecosystems",
-      "Impact on offshore research platforms"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T12:19:42Z"
   }
 ]
