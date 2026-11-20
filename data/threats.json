@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 31.12,
+    "lon": -89.08,
+    "cascading_effects": [
+      "air quality degradation",
+      "potential evacuations",
+      "strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T15:11:07Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Lafayette, Mississippi, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T20:05:17Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Southeast of the Loyalty Islands",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -24.75,
-    "lon": 171.43,
-    "cascading_effects": [
-      "Potential tsunami generation affecting nearby coastlines",
-      "Disruption of undersea communication cables",
-      "Triggering of landslides on volcanic islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T12:55:14Z"
   }
 ]
