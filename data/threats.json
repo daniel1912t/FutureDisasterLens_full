@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "Central Pacific Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.1,
+    "lon": -162.6,
+    "cascading_effects": [
+      "heavy rainfall",
+      "storm surge",
+      "landfall flooding"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T10:23:05Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg B22K Window",
     "location": "Southern Ocean, Antarctica",
     "severity": "Severe",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T09:01:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Pinnacles, California, USA",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 36.59,
-    "lon": -121.22,
-    "cascading_effects": [
-      "Potential landslides in surrounding hills",
-      "Infrastructure damage to roads and bridges",
-      "Disruption of water supply systems"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T22:51:35Z"
   }
 ]
