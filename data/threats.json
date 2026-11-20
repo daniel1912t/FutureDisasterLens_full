@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Iceberg Drift Window",
+    "location": "Southern Ocean near Antarctica",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -69.76,
+    "lon": 163.35,
+    "cascading_effects": [
+      "shipping lane disruptions",
+      "potential grounding of vessels",
+      "localized marine ecosystem disturbance"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T03:56:35Z"
+  },
+  {
     "primary_threat": "Forecasted Volcanic Eruption Window",
     "location": "Loyalty Islands region, New Caledonia",
     "severity": "Severe",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-20T16:37:19Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 31.13,
-    "lon": -89.06,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T16:29:01Z"
   }
 ]
