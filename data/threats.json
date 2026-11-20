@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Window",
+    "location": "Pacific Ocean, near Kiribati",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.0,
+    "lon": -162.8,
+    "cascading_effects": [
+      "Coastal flooding",
+      "High wind damage to infrastructure",
+      "Disruption of marine navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T12:27:45Z"
+  },
+  {
     "primary_threat": "Forecasted Iceberg Drift Window",
     "location": "Southern Ocean near Antarctica",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T10:59:14Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Kor\u00f3ni region, Greece",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 36.44,
-    "lon": 22.08,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure stress",
-      "Localized landslides"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T10:50:55Z"
   }
 ]
