@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Calingasta, Argentina",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -31.43,
+    "lon": -69.19,
+    "cascading_effects": [
+      "landslides",
+      "road closures",
+      "damage to buildings"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T07:57:37Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T06:39:39Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Madang Province, Papua New Guinea",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -5.22,
-    "lon": 145.3,
-    "cascading_effects": [
-      "Landslides in mountainous terrain",
-      "Disruption of coastal shipping lanes",
-      "Potential tsunami generation affecting nearby islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-20T20:29:32Z"
   }
 ]
