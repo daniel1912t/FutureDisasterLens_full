@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Kor\u00f3ni, Greece",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 36.44,
+    "lon": 22.08,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption of transportation routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T19:28:08Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Illapel, Chile",
     "severity": "Severe",
     "probability": "68%",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T17:45:20Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Window",
-    "location": "South Pacific Ocean, near French Polynesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.4,
-    "lon": -163.5,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods on low-lying islands",
-      "Strong winds damaging coastal infrastructure and marine vessels"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T17:37:11Z"
   }
 ]
