@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Tropical Cyclone Window",
+    "location": "Andaman Sea, India",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "storm surge flooding",
+      "disruption of maritime traffic",
+      "heavy rainfall causing landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T12:37:23Z"
+  },
+  {
+    "primary_threat": "Forecasted Tropical Cyclone Window",
     "location": "Pacific Ocean, near Kiribati",
     "severity": "Severe",
     "probability": "68%",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T11:09:12Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Pinnacles, California, USA",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 36.59,
-    "lon": -121.22,
-    "cascading_effects": [
-      "Landslides in surrounding hills",
-      "Damage to transportation corridors and pipelines"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T10:59:14Z"
   }
 ]
