@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "West of Tual, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -6.03,
+    "lon": 130.65,
+    "cascading_effects": [
+      "potential landslides",
+      "tsunami generation risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T05:35:09Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "South Georgia Island region, South Georgia and the South Sandwich Islands",
     "severity": "Extreme",
     "probability": "68%",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T03:38:06Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Calingasta, Argentina",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -31.43,
-    "lon": -69.19,
-    "cascading_effects": [
-      "landslides",
-      "road network disruption"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T03:29:40Z"
   }
 ]
