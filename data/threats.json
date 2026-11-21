@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Lospalos, Timor Leste",
+    "severity": "Extreme",
+    "probability": "85%",
+    "lat": -7.73,
+    "lon": 127.54,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami potential",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T14:41:01Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "El Dorado, California, USA",
     "severity": "Moderate",
@@ -131,19 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T13:19:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Matagorda, Texas, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 28.76,
-    "lon": -95.81,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in Gulf Coast cities",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T13:01:36Z"
   }
 ]
