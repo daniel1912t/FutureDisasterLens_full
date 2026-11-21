@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Matagorda, Texas, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 28.76,
+    "lon": -95.81,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in Gulf Coast cities",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T13:01:36Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Northern Indian Ocean, near 17.2\u00b0N, 84.7\u00b0E",
     "severity": "Severe",
@@ -132,19 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T11:38:47Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Tennessee, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 36.36,
-    "lon": -82.8,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in nearby counties",
-      "Potential evacuation of residential areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T11:21:12Z"
   }
 ]
