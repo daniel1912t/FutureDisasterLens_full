@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Bay of Bengal, near 17.2\u00b0N, 84.7\u00b0E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "Coastal flooding",
+      "High wind damage to infrastructure",
+      "Potential landslides in adjacent hilly terrain"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T04:18:40Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Matagorda, Texas, USA",
     "severity": "Moderate",
@@ -125,20 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T16:45:20Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Waukesha, Wisconsin, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 43.04,
-    "lon": -88.4,
-    "cascading_effects": [
-      "air quality degradation",
-      "local evacuations",
-      "road closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T16:27:43Z"
   }
 ]
