@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "El Aguilar, Argentina",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -23.03,
+    "lon": -66.52,
+    "cascading_effects": [
+      "Potential landslides in nearby mountainous terrain",
+      "Disruption of regional power grid",
+      "Aftershock sequence affecting nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T21:50:45Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Pacific Ocean, near Fiji",
     "severity": "Severe",
@@ -131,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T00:18:58Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "La Romana, Dominican Republic",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 18.34,
-    "lon": -68.83,
-    "cascading_effects": [
-      "potential aftershocks",
-      "damage to coastal infrastructure",
-      "disruption of tourism activities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T20:09:20Z"
   }
 ]
