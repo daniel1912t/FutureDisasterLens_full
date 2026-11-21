@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Bay of Bengal, near Odisha, India",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "storm surge flooding",
+      "heavy rainfall causing landslides",
+      "disruption of coastal infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T20:29:14Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Matagorda, Texas, USA",
     "severity": "Moderate",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T19:06:58Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "El Dorado, California, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 38.62,
-    "lon": -120.5,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T04:55:52Z"
   }
 ]
