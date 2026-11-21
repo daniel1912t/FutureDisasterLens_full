@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Pangai region, Tonga",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -20.32,
+    "lon": -173.41,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Coastal infrastructure damage",
+      "Disruption to marine navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T03:32:13Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -125,19 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T01:58:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Indian Ocean, near 17.2\u00b0N, 84.7\u00b0E",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "storm surge flooding",
-      "heavy rainfall causing landslides"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T01:50:15Z"
   }
 ]
