@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene, Tennessee, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 36.36,
+    "lon": -82.8,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T15:45:36Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Yanglong, China",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T04:23:07Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Port-Vila, Vanuatu",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -17.18,
-    "lon": 168.1,
-    "cascading_effects": [
-      "tsunami generation",
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T14:13:25Z"
   }
 ]
