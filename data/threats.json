@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 43.04,
+    "lon": -88.4,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby neighborhoods"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T08:01:28Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -126,19 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T16:29:49Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "La Romana, Dominican Republic",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 18.34,
-    "lon": -68.83,
-    "cascading_effects": [
-      "Potential building damage",
-      "Aftershock risk to nearby towns"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T17:21:23Z"
   }
 ]
