@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Southwest of Myanmar, Bay of Bengal",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "Coastal flooding in low-lying coastal communities",
+      "Disruption of maritime shipping routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T16:29:49Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "La Romana, Dominican Republic",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T15:07:13Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Southeast of Tateyama, Japan",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 34.01,
-    "lon": 140.21,
-    "cascading_effects": [
-      "tsunami potential",
-      "infrastructure damage",
-      "landslide risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T14:59:05Z"
   }
 ]
