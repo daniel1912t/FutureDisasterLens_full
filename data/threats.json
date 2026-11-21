@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "El Aguilar, Argentina",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -23.03,
+    "lon": -66.52,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption to transportation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T19:14:27Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T17:53:15Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Lospalos, Timor Leste",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -7.73,
-    "lon": 127.54,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T17:43:34Z"
   }
 ]
