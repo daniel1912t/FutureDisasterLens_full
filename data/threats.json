@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Lafayette, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 34.49,
+    "lon": -89.42,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T03:59:30Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -126,19 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T16:17:48Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Calama region, Chile",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -22.23,
-    "lon": -68.64,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T01:58:30Z"
   }
 ]
