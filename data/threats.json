@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, near Tonga",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -11.5,
+    "lon": -164.2,
+    "cascading_effects": [
+      "Coastal flooding",
+      "High wind damage to infrastructure",
+      "Disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T19:42:30Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T04:09:04Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Pangai region, Tonga",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -20.32,
-    "lon": -173.41,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Coastal infrastructure damage",
-      "Disruption to marine navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T03:32:13Z"
   }
 ]
