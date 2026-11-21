@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Tongatapu, Tonga",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -20.32,
+    "lon": -173.41,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T01:12:52Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Bibb County, Alabama, USA",
     "severity": "Moderate",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T23:31:18Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Balangonan region, Philippines",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 5.44,
-    "lon": 125.3,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "disruption of communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T23:21:43Z"
   }
 ]
