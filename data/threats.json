@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Yunnan Province, China",
+    "severity": "Extreme",
+    "probability": "80%",
+    "lat": 37.2,
+    "lon": 96.64,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "potential tsunamigenic activity"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T01:26:02Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Pacific Ocean, Near Fiji",
     "severity": "Severe",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T17:03:31Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Port-Vila, Vanuatu",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -17.18,
-    "lon": 168.1,
-    "cascading_effects": [
-      "tsunami potential",
-      "infrastructure damage",
-      "landslide risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T15:53:55Z"
   }
 ]
