@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Carhuamayo, Peru",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -10.91,
+    "lon": -76.03,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "possible tsunami if near coast"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T12:16:16Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Pacific Ocean, Near -11.6\u00b0, -164.7\u00b0",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T10:35:50Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Bay of Bengal, India",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "Coastal flooding",
-      "Storm surge affecting low\u2011lying villages",
-      "Disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T10:26:08Z"
   }
 ]
