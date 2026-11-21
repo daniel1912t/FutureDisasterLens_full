@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "El Dorado, California, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.62,
+    "lon": -120.5,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T04:55:52Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T16:55:07Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Carhuamayo region, Peru",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -10.85,
-    "lon": -75.98,
-    "cascading_effects": [
-      "landslides",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T16:45:20Z"
   }
 ]
