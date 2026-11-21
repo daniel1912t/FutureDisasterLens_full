@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Lafayette, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 34.49,
+    "lon": -89.42,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in surrounding counties",
+      "Potential strain on local firefighting resources",
+      "Risk of spot fires igniting nearby vegetation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T13:29:24Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -131,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T12:06:27Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Northwest of Port-Vila, Vanuatu",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": -17.18,
-    "lon": 168.1,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of marine navigation",
-      "Infrastructure damage to coastal villages"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T09:56:47Z"
   }
 ]
