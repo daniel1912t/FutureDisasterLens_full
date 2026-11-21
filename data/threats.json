@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Carhuamayo region, Peru",
+    "severity": "Extreme",
+    "probability": "82%",
+    "lat": -10.85,
+    "lon": -75.98,
+    "cascading_effects": [
+      "landslide risk in Andean valleys",
+      "dam failure potential in upstream reservoirs",
+      "disruption of regional road and rail infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T14:08:31Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Illapel region, Chile",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T22:46:37Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Matagorda, Texas, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 28.76,
-    "lon": -95.81,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "potential power line disruptions"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T22:37:00Z"
   }
 ]
