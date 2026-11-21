@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Illapel region, Chile",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -31.78,
+    "lon": -72.15,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption to transportation routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T13:58:45Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "El Dorado, California, USA",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T22:37:00Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Carhuamayo region, Peru",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -10.85,
-    "lon": -75.98,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "disruption of transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T22:27:15Z"
   }
 ]
