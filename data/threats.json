@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Yanglong, China",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 37.2,
+    "lon": 96.64,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Landslides in mountainous terrain",
+      "Disruption to regional power grid"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T11:38:47Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Bibb, Alabama, USA",
     "severity": "Moderate",
