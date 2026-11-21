@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Reykjanes Ridge, Iceland",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 58.55,
+    "lon": -31.86,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of undersea communication cables"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T16:55:07Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Carhuamayo region, Peru",
     "severity": "Severe",
     "probability": "68%",
@@ -126,20 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T01:12:52Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific, French Polynesia",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -11.3,
-    "lon": -163.9,
-    "cascading_effects": [
-      "Coastal flooding",
-      "Disruption of maritime traffic",
-      "Potential landslides on volcanic islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T00:53:35Z"
   }
 ]
