@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Balangonan region, Philippines",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 5.44,
+    "lon": 125.3,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "disruption of communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T23:21:43Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Severe",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T21:51:49Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Illapel region, Chile",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -31.78,
-    "lon": -72.15,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T21:42:06Z"
   }
 ]
