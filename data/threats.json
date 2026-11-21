@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Lospalos region, Timor Leste",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -7.76,
+    "lon": 127.54,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami generation potential"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T03:09:35Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Reykjanes Ridge, Iceland",
     "severity": "Severe",
     "probability": "68%",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T06:09:53Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Tennessee, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 36.36,
-    "lon": -82.8,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "road closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T06:01:47Z"
   }
 ]
