@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Carhuamayo, Peru",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -10.91,
+    "lon": -76.03,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "disruption of transport routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T07:43:36Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -131,19 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T19:42:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Waukesha, Wisconsin, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 42.92,
-    "lon": -88.48,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby neighborhoods"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T05:34:18Z"
   }
 ]
