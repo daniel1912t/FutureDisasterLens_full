@@ -1,18 +1,17 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
-    "location": "Bibb County, Alabama",
+    "location": "Red Hill, Perry, Mississippi",
     "severity": "Moderate",
     "probability": "68%",
-    "lat": 32.95,
-    "lon": -87.35,
+    "lat": 31.13,
+    "lon": -89.06,
     "cascading_effects": [
       "air quality degradation",
-      "local evacuations",
-      "strain on firefighting resources"
+      "potential evacuation of nearby communities"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-22T06:37:15Z"
+    "time_of_event": "2026-11-21T17:46:54Z"
   },
   {
     "primary_threat": "Forecasted Severe Storm Window",
