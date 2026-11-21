@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Tateyama region, Japan",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 34.01,
+    "lon": 140.21,
+    "cascading_effects": [
+      "Potential landslides",
+      "Disruption to coastal infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T09:22:05Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Yanglong region, China",
     "severity": "Severe",
     "probability": "68%",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T08:01:18Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Bibb, Alabama, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 32.95,
-    "lon": -87.35,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T21:53:14Z"
   }
 ]
