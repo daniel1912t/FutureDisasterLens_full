@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, Near Fiji",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.8,
+    "lon": -165.2,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods on nearby islands",
+      "Strong winds damaging coastal infrastructure and marine vessels"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T19:16:27Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Lafayette, Mississippi, USA",
     "severity": "Moderate",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T15:53:55Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Tennessee, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 36.36,
-    "lon": -82.8,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T15:45:36Z"
   }
 ]
