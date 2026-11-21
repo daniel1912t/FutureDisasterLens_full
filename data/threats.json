@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Southern Pacific, near Fiji",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.5,
+    "lon": -164.2,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "landslide risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T08:17:44Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Lospalos region, Timor Leste",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T06:17:58Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Port-Vila, Vanuatu",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -17.18,
-    "lon": 168.1,
-    "cascading_effects": [
-      "tsunami potential",
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T06:09:53Z"
   }
 ]
