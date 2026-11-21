@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "El Dorado, California, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.62,
+    "lon": -120.5,
+    "cascading_effects": [
+      "Air quality degradation in Sacramento valley",
+      "Potential road closures on Highway 50"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T12:24:28Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Carhuamayo, Peru",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T10:45:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Timor Leste, Near Lospalos",
-    "severity": "Severe",
-    "probability": "71%",
-    "lat": -7.73,
-    "lon": 127.54,
-    "cascading_effects": [
-      "Potential aftershocks affecting nearby settlements",
-      "Landslide risk in mountainous terrain",
-      "Disruption of regional communications infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T10:35:50Z"
   }
 ]
