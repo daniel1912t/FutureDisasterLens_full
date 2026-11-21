@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 42.92,
+    "lon": -88.48,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby neighborhoods"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T05:34:18Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Carhuamayo region, Peru",
     "severity": "Severe",
@@ -127,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T03:32:13Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "71%",
-    "lat": 35.05,
-    "lon": -111.58,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in Flagstaff",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T17:24:07Z"
   }
 ]
