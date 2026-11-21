@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene, Tennessee, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 36.36,
+    "lon": -82.8,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in nearby counties",
+      "Potential evacuation of residential areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T11:21:12Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Severe",
     "probability": "68%",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T23:59:48Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Reykjanes Ridge, Iceland",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 58.55,
-    "lon": -31.86,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of undersea communication cables"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T09:49:59Z"
   }
 ]
