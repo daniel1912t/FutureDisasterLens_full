@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, near Vanuatu",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.5,
+    "lon": -164.2,
+    "cascading_effects": [
+      "heavy rainfall leading to flash flooding",
+      "storm surge affecting coastal villages",
+      "disruption of maritime navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T10:09:36Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Lafayette, Mississippi, USA",
     "severity": "Moderate",
@@ -126,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T08:46:35Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Port-Vila region, Vanuatu",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -17.18,
-    "lon": 168.1,
-    "cascading_effects": [
-      "Potential tsunami generation affecting coastal villages",
-      "Disruption of communication infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T08:36:55Z"
   }
 ]
