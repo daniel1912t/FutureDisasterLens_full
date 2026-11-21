@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "El Dorado, California, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 38.62,
+    "lon": -120.5,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "potential power line outages"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T18:11:05Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -126,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T16:40:53Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Southwest of Myanmar, Bay of Bengal",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "Coastal flooding in low-lying coastal communities",
-      "Disruption of maritime shipping routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T16:29:49Z"
   }
 ]
