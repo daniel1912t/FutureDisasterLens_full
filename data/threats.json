@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "80%",
+    "lat": 31.13,
+    "lon": -89.06,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Evacuation of nearby communities",
+      "Potential damage to infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T06:58:40Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Matagorda, Texas, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T15:35:59Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific Ocean, Near -11.6\u00b0, -164.7\u00b0",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.6,
-    "lon": -164.7,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods on nearby islands",
-      "High winds generating storm surge and coastal erosion",
-      "Disruption of marine navigation and potential oil spill risks"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T15:26:18Z"
   }
 ]
