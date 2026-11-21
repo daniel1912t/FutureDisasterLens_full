@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Southwestern Indian Ocean, near 17.2\u00b0N, 84.7\u00b0E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "Coastal flooding",
+      "High wind damage to infrastructure",
+      "Disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T08:46:35Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Port-Vila region, Vanuatu",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T21:06:18Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "El Dorado, California, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 38.62,
-    "lon": -120.5,
-    "cascading_effects": [
-      "air quality degradation",
-      "local evacuations",
-      "strain on firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T06:55:06Z"
   }
 ]
