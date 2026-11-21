@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Southeast of Tateyama, Japan",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 34.01,
+    "lon": 140.21,
+    "cascading_effects": [
+      "tsunami potential",
+      "infrastructure damage",
+      "landslide risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T14:59:05Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Near 17.2\u00b0N, 84.7\u00b0E, Indian Ocean",
     "severity": "Severe",
@@ -131,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T13:39:01Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Lafayette, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 34.49,
-    "lon": -89.42,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in surrounding counties",
-      "Potential strain on local firefighting resources",
-      "Risk of spot fires igniting nearby vegetation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T13:29:24Z"
   }
 ]
