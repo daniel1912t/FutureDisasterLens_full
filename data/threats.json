@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Reykjanes Ridge, Iceland",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 58.55,
+    "lon": -31.86,
+    "cascading_effects": [
+      "Potential tsunami generation affecting Atlantic coastlines",
+      "Disruption of undersea communication cables"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T08:01:18Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Bibb, Alabama, USA",
     "severity": "Moderate",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T06:01:47Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific Ocean, near Tonga",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -11.5,
-    "lon": -164.2,
-    "cascading_effects": [
-      "Coastal flooding",
-      "High wind damage to infrastructure",
-      "Disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T19:42:30Z"
   }
 ]
