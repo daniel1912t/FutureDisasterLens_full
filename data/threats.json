@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, near -11.8\u00b0, -165.2\u00b0",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.8,
+    "lon": -165.2,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods",
+      "High winds damaging coastal infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T19:41:50Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T08:19:15Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "El Dorado, California, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 38.62,
-    "lon": -120.5,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "potential power line outages"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T18:11:05Z"
   }
 ]
