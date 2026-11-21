@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 31.13,
+    "lon": -89.06,
+    "cascading_effects": [
+      "air quality degradation",
+      "local evacuations and road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T09:30:16Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Tateyama region, Japan",
     "severity": "Moderate",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T03:09:35Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Reykjanes Ridge, Iceland",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 58.55,
-    "lon": -31.86,
-    "cascading_effects": [
-      "Potential tsunami generation affecting Atlantic coastlines",
-      "Disruption of undersea communication cables"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T08:01:18Z"
   }
 ]
