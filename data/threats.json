@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene, Tennessee, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 36.36,
+    "lon": -82.8,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Potential evacuation of nearby communities",
+      "Strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T20:51:26Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Pacific Ocean, near -11.8\u00b0, -165.2\u00b0",
     "severity": "Severe",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T08:28:59Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "La Colorada, Panama",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 8.01,
-    "lon": -80.99,
-    "cascading_effects": [
-      "potential landslides",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T08:19:15Z"
   }
 ]
