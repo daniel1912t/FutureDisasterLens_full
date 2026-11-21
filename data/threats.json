@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Yanglong, China",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 37.2,
+    "lon": 96.64,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption to transportation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T15:35:59Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Pacific Ocean, Near -11.6\u00b0, -164.7\u00b0",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T14:13:25Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Carhuamayo, Peru",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -10.91,
-    "lon": -76.03,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "disruption of local transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T14:05:14Z"
   }
 ]
