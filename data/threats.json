@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 31.12,
+    "lon": -89.08,
+    "cascading_effects": [
+      "Smoke plume affecting air quality in neighboring counties",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T13:39:01Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Lafayette, Mississippi, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -131,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T12:16:16Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific Ocean, Near -11.6\u00b0, -164.7\u00b0",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.6,
-    "lon": -164.7,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "high wind damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T12:06:27Z"
   }
 ]
