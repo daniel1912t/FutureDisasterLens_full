@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Tateyama, Japan",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 34.41,
+    "lon": 140.13,
+    "cascading_effects": [
+      "possible aftershocks",
+      "infrastructure damage",
+      "tsunami advisory"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T16:40:53Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Southwest of Myanmar, Bay of Bengal",
     "severity": "Severe",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T15:16:46Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Waukesha, Wisconsin, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 42.92,
-    "lon": -88.48,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby neighborhoods"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T15:07:13Z"
   }
 ]
