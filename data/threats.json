@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, near -11.6\u00b0, -164.7\u00b0",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.6,
+    "lon": -164.7,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "wind damage to vessels"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T13:47:16Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T12:24:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Carhuamayo, Peru",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -10.91,
-    "lon": -76.03,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "possible tsunami if near coast"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T12:16:16Z"
   }
 ]
