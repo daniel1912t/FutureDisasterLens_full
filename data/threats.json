@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "El Dorado, California, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.62,
+    "lon": -120.5,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T14:32:53Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "La Romana, Dominican Republic",
     "severity": "Moderate",
@@ -130,21 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T13:01:36Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Northern Indian Ocean, near 17.2\u00b0N, 84.7\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "storm surge",
-      "wind damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T12:52:02Z"
   }
 ]
