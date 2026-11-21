@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Carhuamayo region, Peru",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -10.85,
+    "lon": -75.98,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T05:24:46Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Reykjanes Ridge, Iceland",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T17:24:07Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Tennessee, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 36.36,
-    "lon": -82.8,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T03:14:30Z"
   }
 ]
