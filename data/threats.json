@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Carhuamayo region, Peru",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -10.85,
+    "lon": -75.98,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "disruption of transportation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T22:27:15Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T20:22:49Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Port-Olry, Vanuatu",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -14.84,
-    "lon": 167.29,
-    "cascading_effects": [
-      "tsunami potential",
-      "infrastructure damage",
-      "disruption of communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T20:13:13Z"
   }
 ]
