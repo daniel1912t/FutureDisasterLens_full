@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "La Romana, Dominican Republic",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 18.34,
+    "lon": -68.83,
+    "cascading_effects": [
+      "Potential building damage",
+      "Disruption of coastal infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T08:28:59Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "La Colorada, Panama",
     "severity": "Moderate",
     "probability": "68%",
@@ -126,19 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T06:58:40Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Matagorda, Texas, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 28.76,
-    "lon": -95.81,
-    "cascading_effects": [
-      "Smoke plume affecting air quality in neighboring counties",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T16:49:00Z"
   }
 ]
