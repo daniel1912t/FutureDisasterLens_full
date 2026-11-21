@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.05,
+    "lon": -111.58,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation disruptions"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T17:53:15Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Lospalos, Timor Leste",
     "severity": "Severe",
@@ -126,19 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T17:21:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T16:13:16Z"
   }
 ]
