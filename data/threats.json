@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 42.92,
+    "lon": -88.48,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in Milwaukee",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T20:46:24Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Bibb, Alabama",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T19:24:03Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "El Aguilar, Argentina",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -23.03,
-    "lon": -66.52,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage",
-      "Disruption to transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T19:14:27Z"
   }
 ]
