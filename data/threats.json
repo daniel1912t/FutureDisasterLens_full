@@ -1,18 +1,17 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
-    "location": "Yunnan Province, China",
-    "severity": "Extreme",
-    "probability": "80%",
+    "location": "Yanglong, China",
+    "severity": "Severe",
+    "probability": "78%",
     "lat": 37.2,
     "lon": 96.64,
     "cascading_effects": [
       "landslide risk",
-      "infrastructure damage",
-      "potential tsunamigenic activity"
+      "infrastructure damage"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-23T01:26:02Z"
+    "time_of_event": "2026-11-22T07:34:03Z"
   },
   {
     "primary_threat": "Forecasted Severe Storm Window",
