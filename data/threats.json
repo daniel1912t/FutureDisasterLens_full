@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Forrest, Mississippi, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 31.1,
+    "lon": -89.16,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T01:22:37Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Tongatapu, Tonga",
     "severity": "Moderate",
@@ -12,20 +27,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T01:12:52Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Bibb County, Alabama, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 32.95,
-    "lon": -87.35,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T01:03:17Z"
   },
   {
     "primary_threat": "Forecasted Severe Storm Window",
