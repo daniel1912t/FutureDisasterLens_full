@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Calama region, Chile",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -22.23,
+    "lon": -68.64,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T01:58:30Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Indian Ocean, near 17.2\u00b0N, 84.7\u00b0E",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T14:08:31Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Illapel region, Chile",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -31.78,
-    "lon": -72.15,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage",
-      "Disruption to transportation routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T13:58:45Z"
   }
 ]
