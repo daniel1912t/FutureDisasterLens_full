@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, Near -11.6\u00b0, -164.7\u00b0",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.6,
+    "lon": -164.7,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "high wind damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T12:06:27Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Northwest of Port-Vila, Vanuatu",
     "severity": "Moderate",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T10:26:08Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Carhuamayo, Peru",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -10.91,
-    "lon": -76.03,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T10:17:47Z"
   }
 ]
