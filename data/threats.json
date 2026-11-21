@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Bibb County, Alabama",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 32.95,
+    "lon": -87.35,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Potential evacuation of nearby communities",
+      "Increased strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T07:16:01Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Calama, Chile",
     "severity": "Moderate",
@@ -28,20 +43,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T06:55:06Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Red Hill, Perry, Mississippi",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 31.13,
-    "lon": -89.06,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T17:46:54Z"
   },
   {
     "primary_threat": "Forecasted Severe Storm Window",
