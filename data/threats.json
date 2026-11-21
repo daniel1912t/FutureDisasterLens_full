@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Near 17.2\u00b0N, 84.7\u00b0E, Indian Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "storm surge flooding",
+      "heavy rainfall causing landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T14:50:56Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Lospalos, Timor Leste",
     "severity": "Extreme",
@@ -132,19 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T13:29:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Waukesha, Wisconsin, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 42.92,
-    "lon": -88.48,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby neighborhoods"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T13:19:23Z"
   }
 ]
