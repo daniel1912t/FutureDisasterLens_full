@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "La Romana, Dominican Republic",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 18.34,
+    "lon": -68.83,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption to tourism"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T04:23:07Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Port-Vila, Vanuatu",
     "severity": "Severe",
     "probability": "68%",
@@ -101,21 +116,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T13:19:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Salvale\u00f3n de Hig\u00fcey, Dominican Republic",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": 18.61,
-    "lon": -68.78,
-    "cascading_effects": [
-      "Potential building damage",
-      "Disruption of local infrastructure",
-      "Aftershock risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T14:11:15Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
