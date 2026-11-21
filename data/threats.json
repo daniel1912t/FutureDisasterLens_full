@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "La Romana, Dominican Republic",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 18.34,
+    "lon": -68.83,
+    "cascading_effects": [
+      "Potential building damage",
+      "Aftershock risk to nearby towns"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T17:21:23Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T14:59:05Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Near 17.2\u00b0N, 84.7\u00b0E, Indian Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "storm surge flooding",
-      "heavy rainfall causing landslides"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T14:50:56Z"
   }
 ]
