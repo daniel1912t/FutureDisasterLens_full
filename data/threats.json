@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "La Colorada, Panama",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 8.01,
+    "lon": -80.99,
+    "cascading_effects": [
+      "potential landslides",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T08:19:15Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "El Dorado, California, USA",
     "severity": "Severe",
@@ -126,20 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T16:49:00Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Tateyama, Japan",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 34.41,
-    "lon": 140.13,
-    "cascading_effects": [
-      "possible aftershocks",
-      "infrastructure damage",
-      "tsunami advisory"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T16:40:53Z"
   }
 ]
