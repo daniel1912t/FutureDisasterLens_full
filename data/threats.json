@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, near Fiji",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.8,
+    "lon": -165.2,
+    "cascading_effects": [
+      "Coastal flooding",
+      "High winds causing infrastructure damage",
+      "Potential maritime hazards"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T21:41:02Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Matagorda, Texas, USA",
     "severity": "Moderate",
@@ -131,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T20:09:20Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Yanglong, China",
-    "severity": "Severe",
-    "probability": "80%",
-    "lat": 37.2,
-    "lon": 96.64,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "aftershock sequence"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T10:00:59Z"
   }
 ]
