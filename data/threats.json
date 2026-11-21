@@ -1,5 +1,21 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Northern Indian Ocean, near 17.2\u00b0N, 84.7\u00b0E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "storm surge",
+      "wind damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T12:52:02Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Tateyama, Japan",
     "severity": "Severe",
@@ -130,19 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T11:21:12Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T11:03:19Z"
   }
 ]
