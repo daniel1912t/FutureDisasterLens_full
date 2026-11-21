@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Northwest of Port-Vila, Vanuatu",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": -17.18,
+    "lon": 168.1,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of marine navigation",
+      "Infrastructure damage to coastal villages"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T09:56:47Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Forrest, Mississippi, USA",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T10:17:47Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific Ocean, near Vanuatu",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.5,
-    "lon": -164.2,
-    "cascading_effects": [
-      "heavy rainfall leading to flash flooding",
-      "storm surge affecting coastal villages",
-      "disruption of maritime navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T10:09:36Z"
   }
 ]
