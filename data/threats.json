@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific, French Polynesia",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -11.3,
+    "lon": -163.9,
+    "cascading_effects": [
+      "Coastal flooding",
+      "Disruption of maritime traffic",
+      "Potential landslides on volcanic islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T00:53:35Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Reykjanes Ridge, Iceland",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T23:21:43Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities",
-      "potential strain on regional firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T23:13:33Z"
   }
 ]
