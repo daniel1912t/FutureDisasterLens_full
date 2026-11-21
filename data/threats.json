@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Stevens, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.4,
+    "lon": -117.53,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T08:54:42Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Southwestern Indian Ocean, near 17.2\u00b0N, 84.7\u00b0E",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T07:33:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Calama, Chile",
-    "severity": "Moderate",
-    "probability": "70%",
-    "lat": -22.23,
-    "lon": -68.64,
-    "cascading_effects": [
-      "potential aftershocks",
-      "infrastructure damage",
-      "landslide risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T21:06:18Z"
   }
 ]
