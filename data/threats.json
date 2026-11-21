@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, near -11.3\u00b0S, 163.9\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.3,
+    "lon": -163.9,
+    "cascading_effects": [
+      "Heavy rainfall leading to flash flooding on low-lying islands",
+      "Strong winds causing coastal erosion and damage to infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T03:03:26Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Reykjanes Ridge, Iceland",
     "severity": "Severe",
@@ -126,19 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T01:32:20Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Tongatapu, Tonga",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -20.32,
-    "lon": -173.41,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T01:12:52Z"
   }
 ]
