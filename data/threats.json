@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Reykjanes Ridge, Iceland",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": 58.55,
+    "lon": -31.86,
+    "cascading_effects": [
+      "potential submarine landslides",
+      "tsunami generation risk for nearby coastlines"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-21T14:43:54Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Scott, Mississippi, USA",
     "severity": "Moderate",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-21T23:13:33Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
-    "location": "Central Indian Ocean, near 17.2\u00b0N, 84.7\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "storm surge flooding",
-      "heavy rainfall causing landslides"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-21T13:05:26Z"
   }
 ]
