@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 42.92,
+    "lon": -88.48,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby neighborhoods"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T15:07:13Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Southeast of Tateyama, Japan",
     "severity": "Severe",
@@ -132,19 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T13:47:16Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 31.12,
-    "lon": -89.08,
-    "cascading_effects": [
-      "Smoke plume affecting air quality in neighboring counties",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T13:39:01Z"
   }
 ]
