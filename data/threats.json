@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 43.04,
+    "lon": -88.4,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in Milwaukee metro area",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T22:53:12Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "La Colorada, Panama",
     "severity": "Moderate",
@@ -131,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T21:21:52Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "El Dorado, California, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 38.62,
-    "lon": -120.5,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "road closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T21:13:47Z"
   }
 ]
