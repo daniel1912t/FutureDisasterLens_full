@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "9 km NNE of Carhuamayo, Peru",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -10.84,
+    "lon": -76.02,
+    "cascading_effects": [
+      "Potential landslides in Andean slopes",
+      "Disruption of local road networks",
+      "Risk to mining infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T09:58:20Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "South of Fiji Islands",
     "severity": "Severe",
     "probability": "68%",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T08:35:51Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "South of Fiji Islands",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -24.83,
-    "lon": 179.66,
-    "cascading_effects": [
-      "potential tsunami",
-      "aftershock sequence",
-      "marine navigation hazards"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T18:08:40Z"
   }
 ]
