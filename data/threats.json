@@ -1,17 +1,18 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
-    "location": "Bibb, Alabama, USA",
+    "location": "Lafayette, Mississippi, USA",
     "severity": "Moderate",
-    "probability": "68%",
-    "lat": 32.95,
-    "lon": -87.35,
+    "probability": "78%",
+    "lat": 34.49,
+    "lon": -89.42,
     "cascading_effects": [
       "air quality degradation",
-      "potential evacuation of nearby communities"
+      "evacuation of nearby communities",
+      "potential strain on local emergency services"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-22T12:17:28Z"
+    "time_of_event": "2026-11-22T12:27:10Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
