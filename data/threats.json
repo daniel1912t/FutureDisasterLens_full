@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 42.92,
+    "lon": -88.48,
+    "cascading_effects": [
+      "Air quality degradation affecting nearby communities",
+      "Potential strain on local emergency services"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T21:49:00Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
     "location": "Southern Indian Ocean, near 17.2\u00b0N, 84.7\u00b0E",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T20:25:40Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "9 km NNE of Carhuamayo, Peru",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -10.84,
-    "lon": -76.02,
-    "cascading_effects": [
-      "Potential landslides in Andean slopes",
-      "Disruption of local road networks",
-      "Risk to mining infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T09:58:20Z"
   }
 ]
