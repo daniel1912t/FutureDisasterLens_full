@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "El Aguilar, Argentina",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": -23.03,
+    "lon": -66.52,
+    "cascading_effects": [
+      "Potential landslides",
+      "Infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T15:56:07Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -126,19 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T14:36:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "La Romana, Dominican Republic",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 18.34,
-    "lon": -68.83,
-    "cascading_effects": [
-      "Potential building structural damage",
-      "Triggered landslides in hilly terrain"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T00:26:46Z"
   }
 ]
