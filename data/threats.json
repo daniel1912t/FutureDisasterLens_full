@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "South of Fiji Islands",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -24.33,
+    "lon": -176.38,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Coastal flooding",
+      "Landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T19:50:06Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Forrest, Mississippi, USA",
     "severity": "Moderate",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T18:08:40Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Holly Springs, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 34.49,
-    "lon": -89.42,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby residences"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T07:49:33Z"
   }
 ]
