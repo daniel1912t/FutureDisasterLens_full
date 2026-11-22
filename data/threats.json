@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.05,
+    "lon": -111.58,
+    "cascading_effects": [
+      "air quality degradation",
+      "potential evacuations",
+      "threat to nearby infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T17:31:42Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Sarangani, Philippines",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T19:25:48Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Carhuamayo, Peru",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -10.8,
-    "lon": -75.96,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "disruption of transportation routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T15:06:40Z"
   }
 ]
