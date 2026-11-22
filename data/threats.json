@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Near Calama, Chile",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -22.0,
+    "lon": -68.73,
+    "cascading_effects": [
+      "Potential landslides",
+      "Disruption to mining operations",
+      "Aftershock risk to nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T10:36:45Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Matagorda, Texas, USA",
     "severity": "Moderate",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T19:03:10Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "El Dorado, California, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 38.62,
-    "lon": -120.5,
-    "cascading_effects": [
-      "air quality degradation",
-      "local evacuations",
-      "strain on firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T18:53:37Z"
   }
 ]
