@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "South Pacific Ocean, near 11.6\u00b0S, 167.6\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.6,
+    "lon": -167.6,
+    "cascading_effects": [
+      "coastal flooding",
+      "storm surge damage",
+      "heavy rainfall causing landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T11:02:11Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -98,21 +113,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T09:32:09Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific Ocean, near 12\u00b0S, 167\u00b0W",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.9,
-    "lon": -166.8,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "strong wind damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T07:12:57Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
