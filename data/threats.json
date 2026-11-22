@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Abepura region, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -2.44,
+    "lon": 140.11,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "disruption of communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T05:25:27Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Southern Bay of Bengal, near Akvan",
     "severity": "Severe",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T03:54:32Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Tateyama, Japan",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 34.41,
-    "lon": 140.13,
-    "cascading_effects": [
-      "tsunami potential",
-      "infrastructure damage",
-      "aftershock sequence"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T03:28:27Z"
   }
 ]
