@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "South of Fiji Islands",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -24.33,
+    "lon": -176.38,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption to maritime traffic",
+      "Impact on coastal ecosystems"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T16:01:12Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Scott, Mississippi, USA",
     "severity": "Moderate",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T14:03:38Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in nearby communities",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T13:54:02Z"
   }
 ]
