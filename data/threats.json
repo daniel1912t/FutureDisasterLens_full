@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "Southern Pacific Ocean, near Kiribati",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.6,
+    "lon": -167.6,
+    "cascading_effects": [
+      "Coastal flooding in low-lying islands",
+      "Disruption of marine navigation routes",
+      "Potential landslides on volcanic islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T16:38:23Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "North-East of Bitung, Indonesia",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T14:21:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
-    "location": "Bay of Bengal, near Myanmar",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "Coastal flooding",
-      "Storm surge damage to ports",
-      "Disruption of maritime shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T14:11:46Z"
   }
 ]
