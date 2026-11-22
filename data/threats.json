@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Bibb County, Alabama",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 32.95,
+    "lon": -87.35,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in surrounding counties",
+      "Potential strain on local firefighting resources",
+      "Risk of rapid spread to nearby residential areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T05:43:19Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Sarangani region, Philippines",
     "severity": "Severe",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T04:21:59Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 31.13,
-    "lon": -89.06,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential evacuations",
-      "threat to nearby infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T04:12:22Z"
   }
 ]
