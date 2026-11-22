@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Stevens, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.4,
+    "lon": -117.53,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T04:30:12Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T02:31:52Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Yanglong, China",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 37.2,
-    "lon": 96.64,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "aftershock sequence"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T00:23:48Z"
   }
 ]
