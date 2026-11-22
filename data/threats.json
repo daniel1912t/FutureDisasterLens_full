@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "El Aguilar, Argentina",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": -23.03,
+    "lon": -66.52,
+    "cascading_effects": [
+      "Potential landslides",
+      "Infrastructure damage to nearby roads"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T23:48:07Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "West-Northwest of Abepura, Indonesia",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T12:09:13Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Yanglong, China",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 37.2,
-    "lon": 96.64,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage",
-      "Disruption to transportation networks"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T12:00:37Z"
   }
 ]
