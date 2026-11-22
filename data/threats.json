@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Sarangani Province, Philippines",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 4.56,
+    "lon": 127.52,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "disruption of communication networks"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T11:38:56Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
     "location": "Near 17.2\u00b0N, 84.7\u00b0E",
     "severity": "Severe",
@@ -113,20 +128,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T10:17:12Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Bitung region, Indonesia",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 3.03,
-    "lon": 126.39,
-    "cascading_effects": [
-      "landslide risk in nearby hills",
-      "disruption of coastal shipping routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T14:07:34Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
