@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Matagorda, Texas, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 28.76,
+    "lon": -95.81,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in nearby communities",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T08:55:13Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Sarangani region, Philippines",
     "severity": "Severe",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T20:55:48Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific Ocean, Near -11.9\u00b0, -166.8\u00b0",
-    "severity": "Severe",
-    "probability": "82%",
-    "lat": -11.9,
-    "lon": -166.8,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "storm surge"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T20:38:12Z"
   }
 ]
