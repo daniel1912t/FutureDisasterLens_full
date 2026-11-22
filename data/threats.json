@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "La Romana, Dominican Republic",
+    "severity": "Moderate",
+    "probability": "70%",
+    "lat": 18.34,
+    "lon": -68.83,
+    "cascading_effects": [
+      "potential building damage",
+      "aftershocks",
+      "disruption to local infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T12:09:13Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Yanglong, China",
     "severity": "Severe",
     "probability": "78%",
@@ -131,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T20:46:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Tateyama, Japan",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 34.01,
-    "lon": 140.21,
-    "cascading_effects": [
-      "potential aftershocks",
-      "infrastructure damage",
-      "tsunami risk in coastal areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T03:28:43Z"
   }
 ]
