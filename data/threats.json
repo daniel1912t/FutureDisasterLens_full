@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "La Romana, Dominican Republic",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 18.34,
+    "lon": -68.83,
+    "cascading_effects": [
+      "Potential building structural damage",
+      "Triggered landslides in hilly terrain"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T00:26:46Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T03:02:46Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Waukesha, Wisconsin, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 43.04,
-    "lon": -88.4,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in Milwaukee metro area",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T22:53:12Z"
   }
 ]
