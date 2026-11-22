@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "El Aguilar, Argentina",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -23.03,
+    "lon": -66.52,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T04:59:39Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T03:09:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "La Romana, Dominican Republic",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 18.34,
-    "lon": -68.83,
-    "cascading_effects": [
-      "potential building damage",
-      "aftershock sequence",
-      "infrastructure disruption"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T03:00:52Z"
   }
 ]
