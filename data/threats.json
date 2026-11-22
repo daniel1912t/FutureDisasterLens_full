@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "K\u016bh Sef\u012bd region, Iran",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 28.78,
+    "lon": 56.81,
+    "cascading_effects": [
+      "potential landslides",
+      "damage to infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T08:35:51Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T16:20:41Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "South of Fiji Islands",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -24.33,
-    "lon": -176.38,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption to maritime traffic",
-      "Impact on coastal ecosystems"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T16:01:12Z"
   }
 ]
