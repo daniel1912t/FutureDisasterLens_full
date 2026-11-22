@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Severe",
+    "probability": "82%",
+    "lat": 31.13,
+    "lon": -89.06,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "potential power line outages"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T16:05:53Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "El Aguilar, Argentina",
     "severity": "Moderate",
@@ -98,20 +113,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T23:03:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Bibb, Alabama, USA",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": 32.95,
-    "lon": -87.35,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T14:54:05Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
