@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "\u00dcr\u00fcmqi, China",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 43.47,
+    "lon": 87.94,
+    "cascading_effects": [
+      "Infrastructure damage",
+      "Potential landslides",
+      "Disruption to power grid"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T12:33:24Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Bitung Region, Indonesia",
     "severity": "Severe",
     "probability": "78%",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T11:02:11Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "South of the Fiji Islands",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -24.33,
-    "lon": -176.38,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption to maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T10:43:03Z"
   }
 ]
