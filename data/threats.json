@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Carhuamayo, Peru",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -10.8,
+    "lon": -75.96,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "disruption of transportation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T10:04:39Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "El Dorado, California, USA",
     "severity": "Severe",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T10:43:03Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "\u00dcr\u00fcmqi region, China",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 43.47,
-    "lon": 87.94,
-    "cascading_effects": [
-      "structural damage",
-      "landslide risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T10:25:22Z"
   }
 ]
