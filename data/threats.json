@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "El Dorado, California, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.62,
+    "lon": -120.5,
+    "cascading_effects": [
+      "air quality degradation",
+      "potential evacuation orders"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T16:21:43Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T09:58:20Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "South of Fiji Islands",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -24.33,
-    "lon": -176.38,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Coastal flooding",
-      "Landslides"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T19:50:06Z"
   }
 ]
