@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.05,
+    "lon": -111.58,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in Flagstaff",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T15:46:28Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Tennessee, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -126,20 +140,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T00:26:46Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Yanglong, China",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 37.2,
-    "lon": 96.64,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "potential tsunami if near coast"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T19:07:22Z"
   }
 ]
