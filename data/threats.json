@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "45 km SE of \u00dcr\u00fcmqi, China",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 43.47,
+    "lon": 87.94,
+    "cascading_effects": [
+      "Potential building damage",
+      "Disruption of transportation networks",
+      "Possible landslides in surrounding hills"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T18:45:27Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "K\u016bh Sef\u012bd region, Iran",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T16:38:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "El Dorado, California, USA",
-    "severity": "Moderate",
-    "probability": "81%",
-    "lat": 38.62,
-    "lon": -120.5,
-    "cascading_effects": [
-      "Reduced air quality in surrounding valleys",
-      "Potential evacuation orders for nearby communities",
-      "Increased strain on regional firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T16:20:41Z"
   }
 ]
