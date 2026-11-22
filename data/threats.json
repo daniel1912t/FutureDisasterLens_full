@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Carhuamayo, Peru",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -10.8,
+    "lon": -75.96,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "disruption of transportation routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T15:06:40Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T13:00:41Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "\u00dcr\u00fcmqi, China",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 43.47,
-    "lon": 87.94,
-    "cascading_effects": [
-      "Infrastructure damage",
-      "Potential landslides",
-      "Disruption to power grid"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T12:33:24Z"
   }
 ]
