@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Sarangani region, Philippines",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 4.56,
+    "lon": 127.52,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "disruption of communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T08:45:36Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Tennessee, USA",
     "severity": "Severe",
@@ -13,21 +28,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T08:36:03Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Bitung region, Indonesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 3.03,
-    "lon": 126.39,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami potential",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T08:27:51Z"
   },
   {
     "primary_threat": "Forecasted Severe Storm Window",
