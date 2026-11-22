@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "La Colorada, Panama",
+    "severity": "Moderate",
+    "probability": "71%",
+    "lat": 8.01,
+    "lon": -80.99,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T14:36:21Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "La Romana, Dominican Republic",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T18:10:53Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Indian Ocean, near India",
-    "severity": "Severe",
-    "probability": "80%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "wind damage to infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T03:02:46Z"
   }
 ]
