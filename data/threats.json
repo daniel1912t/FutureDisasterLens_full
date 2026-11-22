@@ -1,17 +1,17 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
-    "location": "Bibb, Alabama, USA",
-    "severity": "Moderate",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Severe",
     "probability": "68%",
-    "lat": 32.95,
-    "lon": -87.35,
+    "lat": 31.13,
+    "lon": -89.06,
     "cascading_effects": [
       "air quality degradation",
       "evacuation of nearby communities"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-23T14:48:57Z"
+    "time_of_event": "2026-11-23T14:58:33Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
