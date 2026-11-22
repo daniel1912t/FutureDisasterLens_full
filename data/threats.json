@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "El Dorado, California, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.62,
+    "lon": -120.5,
+    "cascading_effects": [
+      "air quality degradation",
+      "local evacuations",
+      "strain on firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T18:53:37Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "45 km SE of \u00dcr\u00fcmqi, China",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T16:46:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "Southern Pacific Ocean, near Kiribati",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.6,
-    "lon": -167.6,
-    "cascading_effects": [
-      "Coastal flooding in low-lying islands",
-      "Disruption of marine navigation routes",
-      "Potential landslides on volcanic islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T16:38:23Z"
   }
 ]
