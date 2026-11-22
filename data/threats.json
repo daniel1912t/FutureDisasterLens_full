@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Southern Bay of Bengal, near Akvan",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "coastal flooding",
+      "storm surge",
+      "disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T05:17:26Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "La Colorada, Panama",
     "severity": "Moderate",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T03:28:27Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific Ocean, near -11.9, -165.6",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.9,
-    "lon": -165.6,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "high winds causing infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T03:18:54Z"
   }
 ]
