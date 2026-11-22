@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Stevens, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.4,
+    "lon": -117.53,
+    "cascading_effects": [
+      "air quality degradation",
+      "local evacuations",
+      "road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T23:57:49Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "El Aguilar, Argentina",
     "severity": "Moderate",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T12:27:10Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "La Romana, Dominican Republic",
-    "severity": "Moderate",
-    "probability": "70%",
-    "lat": 18.34,
-    "lon": -68.83,
-    "cascading_effects": [
-      "potential building damage",
-      "aftershocks",
-      "disruption to local infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T12:09:13Z"
   }
 ]
