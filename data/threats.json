@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Matagorda, Texas, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 28.76,
+    "lon": -95.81,
+    "cascading_effects": [
+      "air quality degradation",
+      "local evacuations",
+      "strain on firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T20:25:40Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T18:53:37Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "45 km SE of \u00dcr\u00fcmqi, China",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 43.47,
-    "lon": 87.94,
-    "cascading_effects": [
-      "Potential building damage",
-      "Disruption of transportation networks",
-      "Possible landslides in surrounding hills"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T18:45:27Z"
   }
 ]
