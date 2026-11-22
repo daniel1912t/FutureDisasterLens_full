@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 43.04,
+    "lon": -88.4,
+    "cascading_effects": [
+      "air quality degradation",
+      "potential evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T14:03:38Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T11:47:02Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
-    "location": "Near 17.2\u00b0N, 84.7\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "Coastal flooding",
-      "Infrastructure damage",
-      "Disruption of shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T11:29:26Z"
   }
 ]
