@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.05,
+    "lon": -111.58,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby recreational areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T10:17:12Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Bitung region, Indonesia",
     "severity": "Severe",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T08:08:31Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "\u00dcr\u00fcmqi region, China",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 43.47,
-    "lon": 87.94,
-    "cascading_effects": [
-      "Potential building collapse",
-      "Disruption of power grid",
-      "Aftershock sequence"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T22:00:05Z"
   }
 ]
