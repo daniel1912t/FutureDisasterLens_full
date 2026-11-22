@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Bitung region, Indonesia",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 3.03,
+    "lon": 126.39,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of coastal shipping lanes",
+      "Impact on regional power infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T14:31:00Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Abepura, Indonesia",
     "severity": "Moderate",
     "probability": "68%",
@@ -70,20 +85,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T13:44:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Sarangani Province, Philippines",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 4.56,
-    "lon": 127.52,
-    "cascading_effects": [
-      "potential landslides",
-      "damage to roads and bridges"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T13:36:24Z"
   },
   {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
