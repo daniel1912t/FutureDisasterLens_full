@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 31.13,
+    "lon": -89.06,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Evacuation of nearby communities",
+      "Potential strain on local emergency services"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T08:17:19Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "South Pacific Ocean",
     "severity": "Severe",
@@ -58,20 +73,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T12:33:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Bibb, Alabama, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 32.95,
-    "lon": -87.35,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T12:14:15Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
