@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 43.04,
+    "lon": -88.4,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T14:45:58Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "La Colorada, Panama",
     "severity": "Moderate",
@@ -127,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T13:20:29Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Southeast of Tateyama, Japan",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 34.41,
-    "lon": 140.13,
-    "cascading_effects": [
-      "Potential aftershocks affecting coastal infrastructure",
-      "Triggering of tsunamigenic activity in nearby bays"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T18:10:53Z"
   }
 ]
