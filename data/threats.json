@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, near Fiji",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.9,
+    "lon": -165.6,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods",
+      "Strong winds damaging coastal infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T13:20:29Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Southeast of Tateyama, Japan",
     "severity": "Moderate",
@@ -115,21 +129,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T21:50:45Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific Ocean, near Fiji",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.8,
-    "lon": -165.2,
-    "cascading_effects": [
-      "Coastal flooding",
-      "High winds causing infrastructure damage",
-      "Potential maritime hazards"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T21:41:02Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
