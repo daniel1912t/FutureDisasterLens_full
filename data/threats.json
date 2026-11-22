@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "South Pacific Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.6,
+    "lon": -167.6,
+    "cascading_effects": [
+      "heavy rainfall leading to flash floods",
+      "storm surge affecting coastal communities",
+      "disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T13:09:11Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "South of the Fiji Islands",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T11:19:48Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "West Papua, Indonesia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -2.44,
-    "lon": 140.11,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "disruption of communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T11:13:17Z"
   }
 ]
