@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 42.92,
+    "lon": -88.48,
+    "cascading_effects": [
+      "Smoke plume affecting regional air quality",
+      "Potential strain on local fire suppression resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T16:46:24Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "Southern Pacific Ocean, near Kiribati",
     "severity": "Severe",
@@ -131,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T14:40:50Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Abepura, Indonesia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -2.44,
-    "lon": 140.11,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T14:21:24Z"
   }
 ]
