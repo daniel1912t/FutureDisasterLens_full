@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Southeast of Tateyama, Japan",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 34.01,
+    "lon": 140.21,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Tsunami risk in coastal areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T22:35:19Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Lafayette, Mississippi, USA",
     "severity": "Moderate",
@@ -132,19 +147,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T21:04:13Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Waukesha, Wisconsin, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 42.92,
-    "lon": -88.48,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in Milwaukee",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T20:46:24Z"
   }
 ]
