@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Bay of Bengal, India",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "Coastal flooding",
+      "Storm surge damage to infrastructure",
+      "Disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T03:09:23Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "La Romana, Dominican Republic",
     "severity": "Severe",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T01:28:37Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific Ocean, near -11.9, -165.6",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.9,
-    "lon": -165.6,
-    "cascading_effects": [
-      "coastal flooding",
-      "high wind damage to infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T01:20:27Z"
   }
 ]
