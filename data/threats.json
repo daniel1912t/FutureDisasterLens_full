@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "El Aguilar region, Argentina",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -23.03,
+    "lon": -66.52,
+    "cascading_effects": [
+      "Potential landslides",
+      "Infrastructure damage",
+      "Disruption of transportation routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T09:32:09Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Bitung region, Indonesia",
     "severity": "Severe",
     "probability": "78%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T07:40:56Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Carhuamayo region, Peru",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -10.8,
-    "lon": -75.96,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "disruption of local transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T07:31:10Z"
   }
 ]
