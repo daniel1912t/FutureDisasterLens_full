@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.05,
+    "lon": -111.58,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T04:21:59Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Severe",
     "probability": "68%",
@@ -131,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T00:23:48Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "El Aguilar, Argentina",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": -23.03,
-    "lon": -66.52,
-    "cascading_effects": [
-      "Potential landslides",
-      "Infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T15:56:07Z"
   }
 ]
