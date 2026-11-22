@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Southeast of Tateyama, Japan",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 34.41,
+    "lon": 140.13,
+    "cascading_effects": [
+      "Potential aftershocks affecting coastal infrastructure",
+      "Triggering of tsunamigenic activity in nearby bays"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T18:10:53Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Indian Ocean, near India",
     "severity": "Severe",
@@ -41,21 +55,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T22:44:59Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Southeast of Tateyama, Japan",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 34.01,
-    "lon": 140.21,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage",
-      "Tsunami risk in coastal areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T22:35:19Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
