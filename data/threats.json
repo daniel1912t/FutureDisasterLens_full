@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "El Dorado, California, USA",
+    "severity": "Moderate",
+    "probability": "81%",
+    "lat": 38.62,
+    "lon": -120.5,
+    "cascading_effects": [
+      "Reduced air quality in surrounding valleys",
+      "Potential evacuation orders for nearby communities",
+      "Increased strain on regional firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T16:20:41Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Sarangani Province, Philippines",
     "severity": "Moderate",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T14:11:46Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Waukesha, Wisconsin, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 43.04,
-    "lon": -88.4,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T14:03:38Z"
   }
 ]
