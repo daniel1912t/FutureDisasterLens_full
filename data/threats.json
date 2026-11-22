@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Sarangani, Philippines",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 4.56,
+    "lon": 127.52,
+    "cascading_effects": [
+      "potential landslides",
+      "disruption of coastal infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T17:23:36Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -56,21 +70,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T16:38:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "North-East of Bitung, Indonesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 3.03,
-    "lon": 126.39,
-    "cascading_effects": [
-      "Potential landslides",
-      "Infrastructure damage",
-      "Tsunami risk in coastal areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T16:28:47Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
