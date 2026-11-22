@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, near 12\u00b0S, 167\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.9,
+    "lon": -166.8,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "strong wind damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T07:12:57Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Bibb, Alabama, USA",
     "severity": "Moderate",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T07:31:10Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Waukesha, Wisconsin, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 42.92,
-    "lon": -88.48,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby residences"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T21:23:05Z"
   }
 ]
