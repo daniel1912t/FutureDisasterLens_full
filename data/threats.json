@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "La Colorada, Panama",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 8.01,
+    "lon": -80.99,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "potential tsunami warning for nearby coastal areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T02:31:52Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Yanglong, China",
     "severity": "Severe",
     "probability": "78%",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T23:03:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Waukesha, Wisconsin, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 43.04,
-    "lon": -88.4,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T14:45:58Z"
   }
 ]
