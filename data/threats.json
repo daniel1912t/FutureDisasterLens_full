@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "South of the Fiji Islands",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -24.33,
+    "lon": -176.38,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption to maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T10:43:03Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Forrest, Mississippi, USA",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T08:36:03Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Near 17.2\u00b0N, 84.7\u00b0E, Indian Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods",
-      "Coastal storm surge impacting low\u2011lying areas",
-      "High winds damaging infrastructure and power lines"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T08:18:12Z"
   }
 ]
