@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene, Tennessee, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 36.36,
+    "lon": -82.8,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T15:33:55Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "\u00dcr\u00fcmqi region, China",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T13:54:02Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "South Pacific Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.6,
-    "lon": -167.6,
-    "cascading_effects": [
-      "heavy rainfall leading to flash floods",
-      "storm surge affecting coastal communities",
-      "disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T13:09:11Z"
   }
 ]
