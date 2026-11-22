@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "\u00dcr\u00fcmqi region, China",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 43.47,
+    "lon": 87.94,
+    "cascading_effects": [
+      "Potential building collapse",
+      "Disruption of power grid",
+      "Aftershock sequence"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-22T22:00:05Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Sarangani region, Philippines",
     "severity": "Severe",
     "probability": "78%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T00:54:32Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Abepura region, Indonesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -2.44,
-    "lon": 140.11,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "disruption of communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T05:25:27Z"
   }
 ]
