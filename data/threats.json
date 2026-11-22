@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Port-Olry, Vanuatu",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -14.2,
+    "lon": 165.76,
+    "cascading_effects": [
+      "tsunami risk",
+      "landslide potential"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T21:04:00Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "South Pacific, Fiji",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T19:30:36Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "224 km NE of Bitung, Indonesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 3.03,
-    "lon": 126.39,
-    "cascading_effects": [
-      "landslides",
-      "potential tsunami",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T19:20:53Z"
   }
 ]
