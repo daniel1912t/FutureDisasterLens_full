@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "El Dorado, California, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.62,
+    "lon": -120.5,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in Sacramento basin",
+      "Potential strain on regional firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T01:28:37Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Pacific Ocean, near -11.9, -165.6",
     "severity": "Severe",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T23:57:49Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "El Aguilar, Argentina",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": -23.03,
-    "lon": -66.52,
-    "cascading_effects": [
-      "Potential landslides",
-      "Infrastructure damage to nearby roads"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T23:48:07Z"
   }
 ]
