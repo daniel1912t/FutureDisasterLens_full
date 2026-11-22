@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Sarangani Province, Philippines",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 4.56,
+    "lon": 127.52,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T16:11:03Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "South of Fiji Islands",
     "severity": "Severe",
     "probability": "68%",
@@ -86,21 +100,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T14:40:50Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Bitung region, Indonesia",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 3.03,
-    "lon": 126.39,
-    "cascading_effects": [
-      "Potential landslides in mountainous terrain",
-      "Disruption of coastal shipping lanes",
-      "Impact on regional power infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T14:31:00Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
