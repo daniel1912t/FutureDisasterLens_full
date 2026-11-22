@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Carhuamayo region, Peru",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -10.8,
+    "lon": -75.96,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "disruption of transportation corridors"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T09:49:53Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Sarangani region, Philippines",
     "severity": "Severe",
     "probability": "68%",
@@ -131,19 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T22:00:05Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation disruptions"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T07:40:56Z"
   }
 ]
