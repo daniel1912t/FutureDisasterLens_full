@@ -1,18 +1,18 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
-    "location": "Bitung region, Indonesia",
+    "location": "Sarangani region, Philippines",
     "severity": "Severe",
     "probability": "68%",
-    "lat": 3.03,
-    "lon": 126.39,
+    "lat": 4.56,
+    "lon": 127.52,
     "cascading_effects": [
-      "Potential landslides",
-      "Infrastructure damage",
-      "Disruption of coastal shipping"
+      "landslide risk",
+      "infrastructure damage",
+      "tsunami potential"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-23T06:20:22Z"
+    "time_of_event": "2026-11-23T06:30:02Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
