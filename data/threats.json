@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene, Tennessee, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 36.36,
+    "lon": -82.8,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T08:36:03Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Bitung region, Indonesia",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T20:38:12Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Tateyama region, Japan",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 34.41,
-    "lon": 140.13,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Coastal tsunami risk",
-      "Infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T06:12:16Z"
   }
 ]
