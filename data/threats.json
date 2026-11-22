@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Abepura Region, Indonesia",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -2.44,
+    "lon": 140.11,
+    "cascading_effects": [
+      "Potential aftershocks affecting nearby settlements",
+      "Disruption to local infrastructure and transportation routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T02:51:19Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T01:12:04Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Near Indian Ocean, off coast of India",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "Coastal flooding",
-      "High wind damage to infrastructure",
-      "Disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-22T23:03:57Z"
   }
 ]
