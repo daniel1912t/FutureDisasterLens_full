@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "El Dorado, California, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 38.62,
+    "lon": -120.5,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T11:56:40Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Tennessee, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T10:25:22Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.05,
-    "lon": -111.58,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby recreational areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T10:17:12Z"
   }
 ]
