@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 43.04,
+    "lon": -88.4,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T04:48:32Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Carhuamayo, Peru",
     "severity": "Severe",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T03:00:52Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Abepura Region, Indonesia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -2.44,
-    "lon": 140.11,
-    "cascading_effects": [
-      "Potential aftershocks affecting nearby settlements",
-      "Disruption to local infrastructure and transportation routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T02:51:19Z"
   }
 ]
