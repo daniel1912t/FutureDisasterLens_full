@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, near -11.9, -165.6",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.9,
+    "lon": -165.6,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "high winds causing infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T03:18:54Z"
+  },
+  {
+    "primary_threat": "Forecasted Severe Storm Window",
     "location": "Bay of Bengal, India",
     "severity": "Severe",
     "probability": "68%",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-22T15:38:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "El Dorado, California, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 38.62,
-    "lon": -120.5,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in Sacramento basin",
-      "Potential strain on regional firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T01:28:37Z"
   }
 ]
