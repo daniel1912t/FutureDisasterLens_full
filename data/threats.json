@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "North of Tobelo, Indonesia",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 3.06,
+    "lon": 126.47,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T22:54:58Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "South Pacific Ocean, near -11.7\u00b0S, 167.9\u00b0W",
     "severity": "Severe",
@@ -13,20 +27,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T22:45:10Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "North-East of Bitung, Indonesia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 2.98,
-    "lon": 126.41,
-    "cascading_effects": [
-      "potential landslides",
-      "disruption to coastal shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T17:37:06Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
