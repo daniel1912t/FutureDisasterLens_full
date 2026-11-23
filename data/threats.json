@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Kuqa Region, China",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 41.93,
+    "lon": 82.54,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T16:39:20Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "El Dorado, California, USA",
     "severity": "Moderate",
@@ -128,21 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T15:09:25Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "South Pacific Ocean, Near Vanuatu",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.8,
-    "lon": -168.4,
-    "cascading_effects": [
-      "heavy rainfall",
-      "flash flooding",
-      "storm surge",
-      "disruption to maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T03:00:59Z"
   }
 ]
