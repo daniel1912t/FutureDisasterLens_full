@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Indian Ocean near India",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "coastal flooding",
+      "heavy rainfall leading to landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T09:26:28Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Vanuatu Region",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T08:05:47Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Papua New Guinea, near Kokopo",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -4.76,
-    "lon": 153.65,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Infrastructure damage",
-      "Disruption to communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T07:56:07Z"
   }
 ]
