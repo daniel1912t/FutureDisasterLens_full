@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Timor Leste region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -7.44,
+    "lon": 128.24,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami potential",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T13:33:11Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T12:08:14Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 31.12,
-    "lon": -89.08,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in surrounding counties",
-      "Potential strain on local emergency services and evacuation routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T09:58:31Z"
   }
 ]
