@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Southwest of Finschhafen, Papua New Guinea",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -6.75,
+    "lon": 147.65,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of local communications infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T13:54:05Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T11:02:35Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "80%",
-    "lat": 35.05,
-    "lon": -111.58,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T08:54:30Z"
   }
 ]
