@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Finschhafen region, Papua New Guinea",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -6.75,
+    "lon": 147.65,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "potential tsunami warning for nearby coastal areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T14:53:35Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "South Pacific Ocean, near Fiji",
     "severity": "Severe",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T13:33:11Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T13:22:02Z"
   }
 ]
