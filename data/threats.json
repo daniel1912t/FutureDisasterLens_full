@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "El Dorado, California, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.62,
+    "lon": -120.5,
+    "cascading_effects": [
+      "air quality degradation",
+      "potential evacuation orders"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T02:31:15Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T03:00:59Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Near Calama, Chile",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -22.0,
-    "lon": -68.73,
-    "cascading_effects": [
-      "Potential landslides in Andean slopes",
-      "Disruption of mining operations",
-      "Possible damage to regional power infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T00:51:26Z"
   }
 ]
