@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Southern Pacific Ocean near Vanuatu",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.8,
+    "lon": -168.8,
+    "cascading_effects": [
+      "storm surge affecting low-lying islands",
+      "heavy rainfall leading to flash floods",
+      "disruption of maritime navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T09:07:11Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T07:38:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.05,
-    "lon": -111.58,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T07:19:07Z"
   }
 ]
