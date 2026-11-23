@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Port-Olry, Vanuatu",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -14.2,
+    "lon": 165.76,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of coastal fishing activities due to tsunamigenic risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T06:30:53Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Near Carhuamayo, Peru",
     "severity": "Severe",
     "probability": "78%",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T11:58:35Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Waukesha, Wisconsin, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 42.92,
-    "lon": -88.48,
-    "cascading_effects": [
-      "Air quality degradation affecting nearby communities",
-      "Potential strain on local emergency services"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T21:49:00Z"
   }
 ]
