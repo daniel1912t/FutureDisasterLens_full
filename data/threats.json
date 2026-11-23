@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Bitung, Indonesia",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": 2.98,
+    "lon": 126.41,
+    "cascading_effects": [
+      "Potential landslides in nearby hills",
+      "Disruption of coastal shipping routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T13:38:24Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Port-Olry, Vanuatu",
     "severity": "Severe",
     "probability": "78%",
@@ -56,20 +70,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T23:03:10Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "North of Tobelo, Indonesia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 3.06,
-    "lon": 126.47,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T22:54:58Z"
   },
   {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
