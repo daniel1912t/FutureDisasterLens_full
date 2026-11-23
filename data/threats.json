@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Near Calama, Chile",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -22.0,
+    "lon": -68.73,
+    "cascading_effects": [
+      "Potential landslides in Andean foothills",
+      "Disruption of regional power grid",
+      "Impact on mining operations"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T12:27:28Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Lafayette, Mississippi, USA",
     "severity": "Moderate",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T20:54:20Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Tennessee, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 36.36,
-    "lon": -82.8,
-    "cascading_effects": [
-      "air quality degradation",
-      "threat to nearby residential areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T10:44:45Z"
   }
 ]
