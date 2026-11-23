@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "South Pacific, Fiji",
+    "severity": "Severe",
+    "probability": "80%",
+    "lat": -11.8,
+    "lon": -168.8,
+    "cascading_effects": [
+      "Heavy rainfall leading to flash floods",
+      "Storm surge causing coastal erosion and infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T11:25:24Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T20:04:06Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Finschhafen region, Papua New Guinea",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -6.75,
-    "lon": 147.65,
-    "cascading_effects": [
-      "Potential landslides in mountainous terrain",
-      "Disruption of coastal marine ecosystems due to underwater tremors",
-      "Impact on local infrastructure and transportation routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T19:54:21Z"
   }
 ]
