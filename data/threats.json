@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "Southern Pacific Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.8,
+    "lon": -168.4,
+    "cascading_effects": [
+      "storm surge flooding of low-lying islands",
+      "heavy rainfall triggering landslides",
+      "disruption of maritime shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T02:48:57Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Kuqa Region, China",
     "severity": "Severe",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T15:19:04Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Tennessee, USA",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": 36.36,
-    "lon": -82.8,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T15:09:25Z"
   }
 ]
