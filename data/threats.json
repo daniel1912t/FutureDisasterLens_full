@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Vanuatu region",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -13.7,
+    "lon": 170.87,
+    "cascading_effects": [
+      "Potential tsunami generation affecting nearby islands",
+      "Disruption of undersea communication cables",
+      "Landslides in steep coastal terrain"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T20:41:17Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Tennessee, USA",
     "severity": "Moderate",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T19:18:50Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Waukesha, Wisconsin, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 43.04,
-    "lon": -88.4,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T19:10:39Z"
   }
 ]
