@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Northern Indian Ocean, near 17.2N 84.7E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "wind damage to infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T12:26:32Z"
+  },
+  {
+    "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Pacific, near Palau",
     "severity": "Severe",
     "probability": "68%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T10:28:35Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Palau Region",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 1.34,
-    "lon": 132.02,
-    "cascading_effects": [
-      "Tsunami potential",
-      "Infrastructure damage",
-      "Disruption of maritime navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T10:10:39Z"
   }
 ]
