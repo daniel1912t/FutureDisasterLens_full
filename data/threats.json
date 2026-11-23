@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Kokopo region, Papua New Guinea",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -4.76,
+    "lon": 153.65,
+    "cascading_effects": [
+      "landslide",
+      "tsunami risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T04:36:21Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "Fiji Region, Fiji",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T03:16:22Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Tennessee, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 36.36,
-    "lon": -82.8,
-    "cascading_effects": [
-      "Air quality degradation in surrounding counties",
-      "Potential strain on local firefighting resources",
-      "Evacuation of nearby residences"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T03:06:50Z"
   }
 ]
