@@ -1,17 +1,17 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
-    "location": "Tobelo Region, Indonesia",
-    "severity": "Severe",
+    "location": "Bitung Region, Indonesia",
+    "severity": "Moderate",
     "probability": "68%",
-    "lat": 3.06,
-    "lon": 126.47,
+    "lat": 2.98,
+    "lon": 126.41,
     "cascading_effects": [
-      "Potential landslides in nearby highland areas",
-      "Disruption of coastal shipping lanes due to tsunami risk"
+      "landslide risk",
+      "infrastructure damage"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-24T05:03:42Z"
+    "time_of_event": "2026-11-24T05:13:19Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
