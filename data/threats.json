@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "El Dorado, California, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 38.62,
+    "lon": -120.5,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities",
+      "strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T19:36:34Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T18:15:09Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "South Sandwich Islands Region",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -57.31,
-    "lon": -25.88,
-    "cascading_effects": [
-      "Tsunami generation risk",
-      "Disruption of marine navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T18:05:27Z"
   }
 ]
