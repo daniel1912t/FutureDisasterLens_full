@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "West of Macquarie Island, Australia",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -60.63,
+    "lon": 153.85,
+    "cascading_effects": [
+      "Potential tsunami generation affecting nearby islands",
+      "Disruption of undersea communication cables",
+      "Triggering of landslides on steep coastal slopes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T14:35:31Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "El Dorado, California, USA",
     "severity": "Moderate",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T13:12:20Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Vanuatu region",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -13.7,
-    "lon": 170.87,
-    "cascading_effects": [
-      "tsunami potential",
-      "landslide risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T13:03:28Z"
   }
 ]
