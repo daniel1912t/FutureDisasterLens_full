@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Macquarie Island, Australia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -60.63,
+    "lon": 153.85,
+    "cascading_effects": [
+      "Potential tsunami generation affecting nearby coastlines",
+      "Disruption of marine navigation and research stations",
+      "Triggering of landslides on steep island terrain"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T12:36:16Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Northern Indian Ocean, near 17.2N 84.7E",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T10:36:42Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Finschhafen region, Papua New Guinea",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -6.75,
-    "lon": 147.65,
-    "cascading_effects": [
-      "Potential landslides in mountainous terrain",
-      "Disruption of coastal shipping lanes",
-      "Risk of tsunami generation affecting nearby islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T10:28:35Z"
   }
 ]
