@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Finschhafen region, Papua New Guinea",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -6.75,
+    "lon": 147.65,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of coastal shipping lanes",
+      "Risk of tsunami generation affecting nearby islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T10:28:35Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T08:31:52Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Tennessee, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 36.36,
-    "lon": -82.8,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T08:23:48Z"
   }
 ]
