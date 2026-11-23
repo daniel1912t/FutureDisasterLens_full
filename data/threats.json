@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Lospalos, Timor Leste",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -7.44,
+    "lon": 128.24,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "tsunami potential"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T06:06:49Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T04:08:51Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
-    "location": "Bay of Bengal, India",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "storm surge flooding",
-      "disruption of maritime traffic",
-      "power grid outages"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T03:51:47Z"
   }
 ]
