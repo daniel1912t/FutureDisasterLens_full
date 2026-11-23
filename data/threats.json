@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": 31.13,
+    "lon": -89.06,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T10:23:28Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "West of Macquarie Island, Australia",
     "severity": "Severe",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T19:00:39Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Palau Region",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": 1.34,
-    "lon": 132.02,
-    "cascading_effects": [
-      "potential landslides",
-      "tsunami generation risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T08:52:27Z"
   }
 ]
