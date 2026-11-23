@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "Vanuatu Region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.8,
+    "lon": -168.8,
+    "cascading_effects": [
+      "storm surge flooding",
+      "heavy rainfall causing landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T17:47:33Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Bibb, Alabama, USA",
     "severity": "Moderate",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T16:14:50Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Tyrma region, Russia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 49.76,
-    "lon": 131.57,
-    "cascading_effects": [
-      "Potential infrastructure damage",
-      "Aftershocks affecting nearby settlements"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T16:05:07Z"
   }
 ]
