@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "South of the Fiji Islands",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -22.08,
+    "lon": -178.18,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of undersea cables",
+      "Triggering of landslides on nearby islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T00:41:50Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Tobelo, Indonesia",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T23:03:10Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "South Pacific Ocean, near -11.7\u00b0S, 167.9\u00b0W",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.7,
-    "lon": -167.9,
-    "cascading_effects": [
-      "Heavy rainfall leading to flash floods",
-      "Storm surge affecting coastal communities",
-      "Disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T22:45:10Z"
   }
 ]
