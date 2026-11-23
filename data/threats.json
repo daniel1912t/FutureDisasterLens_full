@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "Fiji Region, Fiji",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.8,
+    "lon": -168.4,
+    "cascading_effects": [
+      "Coastal flooding",
+      "High wind damage to infrastructure",
+      "Disruption of maritime shipping routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T04:26:42Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Matagorda, Texas, USA",
     "severity": "Severe",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T03:06:50Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Kokopo Region, Papua New Guinea",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -4.76,
-    "lon": 153.65,
-    "cascading_effects": [
-      "Potential landslides",
-      "Tsunami risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T02:57:14Z"
   }
 ]
