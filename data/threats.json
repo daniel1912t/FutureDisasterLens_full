@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Vanuatu Region",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -13.7,
+    "lon": 170.87,
+    "cascading_effects": [
+      "landslide risk",
+      "potential tsunami generation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T17:55:47Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "Vanuatu Region",
     "severity": "Severe",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T16:24:34Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "South Sandwich Islands region",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -57.31,
-    "lon": -25.88,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of nearby shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T16:14:50Z"
   }
 ]
