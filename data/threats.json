@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Matagorda, Texas, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 28.76,
+    "lon": -95.81,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities",
+      "potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T23:12:49Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Tennessee, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T21:39:27Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "El Dorado, California, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 38.62,
-    "lon": -120.5,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential evacuation orders"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T16:21:43Z"
   }
 ]
