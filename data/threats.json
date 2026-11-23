@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Vanuatu Region, Vanuatu",
+    "severity": "Extreme",
+    "probability": "82%",
+    "lat": -13.58,
+    "lon": 172.27,
+    "cascading_effects": [
+      "Tsunami generation affecting nearby islands",
+      "Infrastructure damage to coastal villages",
+      "Disruption of air and sea transport"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T04:55:37Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T17:34:09Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.05,
-    "lon": -111.58,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T03:24:32Z"
   }
 ]
