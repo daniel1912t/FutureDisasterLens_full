@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Kokopo Region, Papua New Guinea",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -4.76,
+    "lon": 153.65,
+    "cascading_effects": [
+      "Potential landslides",
+      "Tsunami risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T02:57:14Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "Southern Pacific Ocean",
     "severity": "Severe",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T01:36:50Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Carhuamayo, Peru",
-    "severity": "Moderate",
-    "probability": "71%",
-    "lat": -10.83,
-    "lon": -76.02,
-    "cascading_effects": [
-      "landslides",
-      "road closures",
-      "damaged utilities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T15:19:04Z"
   }
 ]
