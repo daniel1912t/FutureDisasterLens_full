@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific, near Palau",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.8,
+    "lon": -168.8,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods",
+      "Coastal storm surge impacting low-lying islands",
+      "High winds damaging infrastructure and power lines"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T12:18:19Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Tennessee, USA",
     "severity": "Moderate",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T10:10:39Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "West of Macquarie Island",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -60.63,
-    "lon": 153.85,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of maritime navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T09:34:45Z"
   }
 ]
