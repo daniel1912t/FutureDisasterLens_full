@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "North-East of Bitung, Indonesia",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 2.98,
+    "lon": 126.41,
+    "cascading_effects": [
+      "potential landslides",
+      "disruption to coastal shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T17:37:06Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Near Calama, Chile",
     "severity": "Severe",
     "probability": "78%",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T21:04:00Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "South Pacific, Fiji",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.7,
-    "lon": -167.9,
-    "cascading_effects": [
-      "storm surge flooding",
-      "landslide risk in mountainous areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T20:54:20Z"
   }
 ]
