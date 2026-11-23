@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "El Dorado, California, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.62,
+    "lon": -120.5,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "potential property damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T14:27:23Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
     "location": "Bay of Bengal, near Myanmar",
     "severity": "Severe",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T13:03:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Southwest of Finschhafen, Papua New Guinea",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -6.75,
-    "lon": 147.65,
-    "cascading_effects": [
-      "Potential landslides in mountainous terrain",
-      "Disruption of local communications infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T13:54:05Z"
   }
 ]
