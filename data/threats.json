@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 42.92,
+    "lon": -88.48,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities",
+      "strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T08:05:47Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Papua New Guinea, near Kokopo",
     "severity": "Severe",
@@ -131,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T06:16:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Lospalos, Timor Leste",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -7.44,
-    "lon": 128.24,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "tsunami potential"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T06:06:49Z"
   }
 ]
