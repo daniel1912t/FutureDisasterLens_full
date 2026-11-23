@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Stevens, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.4,
+    "lon": -117.53,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T08:43:15Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Finschhafen, Papua New Guinea",
     "severity": "Moderate",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T10:23:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "West of Macquarie Island, Australia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -60.63,
-    "lon": 153.85,
-    "cascading_effects": [
-      "Potential tsunami generation affecting nearby coastlines",
-      "Disruption of undersea communication cables",
-      "Triggering of landslides on nearby islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T20:13:45Z"
   }
 ]
