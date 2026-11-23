@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
+    "location": "Odisha Coast, India",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "storm surge flooding coastal villages",
+      "heavy rainfall causing landslides in hilly interior"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T17:00:12Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "El Dorado, California, USA",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T14:53:35Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "South Pacific Ocean, near Fiji",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.8,
-    "lon": -168.8,
-    "cascading_effects": [
-      "storm surge flooding coastal communities",
-      "heavy rainfall causing landslides",
-      "disruption of maritime shipping routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T14:45:13Z"
   }
 ]
