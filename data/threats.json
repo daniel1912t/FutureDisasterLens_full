@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Bitung Region, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 2.98,
+    "lon": 126.41,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of coastal shipping lanes",
+      "Aftershock sequence affecting nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T03:42:12Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Forrest, Mississippi, USA",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T02:21:41Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
-    "location": "Andaman Sea, India",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "storm surge flooding coastal villages",
-      "disruption of maritime shipping lanes",
-      "heavy rainfall causing landslides inland"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T02:11:59Z"
   }
 ]
