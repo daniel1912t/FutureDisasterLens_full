@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Southwest of Finschhafen, Papua New Guinea",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -6.75,
+    "lon": 147.65,
+    "cascading_effects": [
+      "Potential landslides in nearby hilly terrain",
+      "Disruption of coastal shipping routes",
+      "Risk of tsunamigenic activity affecting nearby islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T17:18:27Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T15:47:18Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Vanuatu region",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -13.7,
-    "lon": 170.87,
-    "cascading_effects": [
-      "tsunami potential",
-      "infrastructure damage",
-      "displacement of communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T15:30:42Z"
   }
 ]
