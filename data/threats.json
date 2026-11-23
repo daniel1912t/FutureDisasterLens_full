@@ -1,18 +1,17 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
+    "location": "Bibb County, Alabama, USA",
     "severity": "Moderate",
     "probability": "68%",
-    "lat": 31.13,
-    "lon": -89.06,
+    "lat": 32.95,
+    "lon": -87.35,
     "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "strain on local firefighting resources"
+      "Smoke dispersion affecting air quality in surrounding counties",
+      "Potential strain on local firefighting resources"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-24T02:03:10Z"
+    "time_of_event": "2026-11-24T15:11:18Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
