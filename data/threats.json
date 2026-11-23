@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
+    "location": "Bay of Bengal, India",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "storm surge flooding",
+      "disruption of maritime traffic",
+      "power grid outages"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T23:56:50Z"
+  },
+  {
     "primary_threat": "Forecasted Tsunami Window",
     "location": "Port-Olry, Vanuatu",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T22:08:13Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "South of the Fiji Islands",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -22.08,
-    "lon": -178.18,
-    "cascading_effects": [
-      "tsunami potential",
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T11:58:35Z"
   }
 ]
