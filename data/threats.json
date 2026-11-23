@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "South Sandwich Islands Region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -57.31,
+    "lon": -25.88,
+    "cascading_effects": [
+      "Tsunami generation risk",
+      "Disruption of marine navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T18:05:27Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Vanuatu Region",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T16:42:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Southeast of Tobi Village, Palau",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 1.34,
-    "lon": 132.02,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption to undersea communication cables"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T16:24:34Z"
   }
 ]
