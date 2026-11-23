@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Near Carhuamayo, Peru",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -10.83,
+    "lon": -76.02,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of local road networks and transport",
+      "Aftershock risk affecting nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T23:20:52Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Matagorda, Texas, USA",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T21:49:00Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
-    "location": "Southern Indian Ocean, near 17.2\u00b0N, 84.7\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "Coastal flooding",
-      "High wind damage to infrastructure",
-      "Disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T21:39:27Z"
   }
 ]
