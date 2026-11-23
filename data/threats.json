@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Carhuamayo, Peru",
+    "severity": "Moderate",
+    "probability": "71%",
+    "lat": -10.83,
+    "lon": -76.02,
+    "cascading_effects": [
+      "landslides",
+      "road closures",
+      "damaged utilities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T15:19:04Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Tennessee, USA",
     "severity": "Moderate",
@@ -131,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T23:56:50Z"
-  },
-  {
-    "primary_threat": "Forecasted Tsunami Window",
-    "location": "Port-Olry, Vanuatu",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -14.2,
-    "lon": 165.76,
-    "cascading_effects": [
-      "Coastal flooding",
-      "Infrastructure damage",
-      "Displacement of populations"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T23:47:07Z"
   }
 ]
