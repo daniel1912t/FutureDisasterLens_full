@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Tyrma Region, Russia",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 49.76,
+    "lon": 131.57,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure stress",
+      "Disruption to local transport"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T19:18:50Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
@@ -126,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T17:55:47Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "Vanuatu Region",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.8,
-    "lon": -168.8,
-    "cascading_effects": [
-      "storm surge flooding",
-      "heavy rainfall causing landslides"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T17:47:33Z"
   }
 ]
