@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Stevens, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.4,
+    "lon": -117.53,
+    "cascading_effects": [
+      "Reduced air quality in surrounding communities",
+      "Potential habitat disruption for local wildlife"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T19:28:29Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Tyrma Region, Russia",
     "severity": "Moderate",
@@ -127,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T18:05:27Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Vanuatu Region",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -13.7,
-    "lon": 170.87,
-    "cascading_effects": [
-      "landslide risk",
-      "potential tsunami generation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T17:55:47Z"
   }
 ]
