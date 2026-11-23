@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Kuqa, Xinjiang, China",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 41.93,
+    "lon": 82.54,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption to transportation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T19:31:02Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Bibb County, Alabama",
     "severity": "Moderate",
