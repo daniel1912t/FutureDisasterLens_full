@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "El Dorado, California, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.62,
+    "lon": -120.5,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "threat to nearby infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T16:52:04Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Tennessee, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T14:45:13Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "West of Macquarie Island, Australia",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -60.63,
-    "lon": 153.85,
-    "cascading_effects": [
-      "Potential tsunami generation affecting nearby islands",
-      "Disruption of undersea communication cables",
-      "Triggering of landslides on steep coastal slopes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T14:35:31Z"
   }
 ]
