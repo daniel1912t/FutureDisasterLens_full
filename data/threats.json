@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Bitung Region, Indonesia",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": 2.98,
+    "lon": 126.41,
+    "cascading_effects": [
+      "Potential landslides in nearby hills",
+      "Disruption of coastal shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-23T16:03:07Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -117,20 +131,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T00:41:50Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Tobelo, Indonesia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 3.06,
-    "lon": 126.47,
-    "cascading_effects": [
-      "landslide potential",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T14:33:44Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
