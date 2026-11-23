@@ -1,5 +1,21 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "South Pacific Ocean, Near Vanuatu",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.8,
+    "lon": -168.4,
+    "cascading_effects": [
+      "heavy rainfall",
+      "flash flooding",
+      "storm surge",
+      "disruption to maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T03:00:59Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Near Calama, Chile",
     "severity": "Severe",
@@ -130,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T23:20:52Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Matagorda, Texas, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 28.76,
-    "lon": -95.81,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities",
-      "potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T23:12:49Z"
   }
 ]
