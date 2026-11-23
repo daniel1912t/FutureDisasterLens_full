@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 43.04,
+    "lon": -88.4,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby residential areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T17:10:10Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
     "location": "Odisha Coast, India",
     "severity": "Severe",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T15:30:42Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Finschhafen region, Papua New Guinea",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -6.75,
-    "lon": 147.65,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "potential tsunami warning for nearby coastal areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T14:53:35Z"
   }
 ]
