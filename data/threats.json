@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Palau Region",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": 1.34,
+    "lon": 132.02,
+    "cascading_effects": [
+      "potential landslides",
+      "tsunami generation risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T08:52:27Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Holly Springs, Mississippi, USA",
     "severity": "Moderate",
@@ -127,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T17:18:27Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Waukesha, Wisconsin, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 43.04,
-    "lon": -88.4,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby residential areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T17:10:10Z"
   }
 ]
