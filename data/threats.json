@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Tyrma region, Russia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 49.76,
+    "lon": 131.57,
+    "cascading_effects": [
+      "Potential infrastructure damage",
+      "Aftershocks affecting nearby settlements"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T16:05:07Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Bibb, Alabama, USA",
     "severity": "Moderate",
