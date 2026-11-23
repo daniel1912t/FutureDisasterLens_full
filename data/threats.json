@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 43.04,
+    "lon": -88.4,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T12:44:29Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Macquarie Island, Australia",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T08:54:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Tyrma Region, Russia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 49.76,
-    "lon": 131.57,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage",
-      "Disruption to rail transport"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T10:36:42Z"
   }
 ]
