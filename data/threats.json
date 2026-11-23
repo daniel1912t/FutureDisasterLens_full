@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Vanuatu region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -13.7,
+    "lon": 170.87,
+    "cascading_effects": [
+      "tsunami potential",
+      "infrastructure damage",
+      "displacement of communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T15:30:42Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Holly Springs, Mississippi, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T13:41:27Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Timor Leste region",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -7.44,
-    "lon": 128.24,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami potential",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T13:33:11Z"
   }
 ]
