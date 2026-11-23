@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Vanuatu Region, Vanuatu",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -13.56,
+    "lon": 172.22,
+    "cascading_effects": [
+      "potential tsunami",
+      "infrastructure damage",
+      "disruption of communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T06:24:31Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Tennessee, USA",
     "severity": "Severe",
@@ -71,21 +86,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T05:13:19Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Vanuatu Region, Vanuatu",
-    "severity": "Extreme",
-    "probability": "82%",
-    "lat": -13.58,
-    "lon": 172.27,
-    "cascading_effects": [
-      "Tsunami generation affecting nearby islands",
-      "Infrastructure damage to coastal villages",
-      "Disruption of air and sea transport"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T04:55:37Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
