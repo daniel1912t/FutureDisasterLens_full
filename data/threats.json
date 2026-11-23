@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Tyrma Region, Russia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 49.76,
+    "lon": 131.57,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption to rail transport"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T10:36:42Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Finschhafen region, Papua New Guinea",
     "severity": "Severe",
     "probability": "68%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T08:49:35Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Bitung, Indonesia",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 1.38,
-    "lon": 126.11,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "tsunami potential"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T08:31:52Z"
   }
 ]
