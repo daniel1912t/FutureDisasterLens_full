@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Southeast of Tobi Village, Palau",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 1.34,
+    "lon": 132.02,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption to undersea communication cables"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T16:24:34Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "South Sandwich Islands region",
     "severity": "Severe",
     "probability": "68%",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T14:27:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
-    "location": "Bay of Bengal, near Myanmar",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "heavy rainfall",
-      "storm surge",
-      "coastal flooding"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T14:17:41Z"
   }
 ]
