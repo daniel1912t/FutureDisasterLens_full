@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene, Tennessee, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 36.36,
+    "lon": -82.8,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T13:51:10Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Tyrma region, Russia",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T12:26:32Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific, near Palau",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.8,
-    "lon": -168.8,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods",
-      "Coastal storm surge impacting low-lying islands",
-      "High winds damaging infrastructure and power lines"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T12:18:19Z"
   }
 ]
