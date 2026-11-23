@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 31.13,
+    "lon": -89.06,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in surrounding counties",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T00:24:07Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-23T22:45:10Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Near Calama, Chile",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -22.0,
-    "lon": -68.73,
-    "cascading_effects": [
-      "Potential landslides in Andean foothills",
-      "Disruption of regional power grid",
-      "Impact on mining operations"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-23T12:27:28Z"
   }
 ]
