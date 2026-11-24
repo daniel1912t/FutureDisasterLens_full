@@ -1,18 +1,18 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
-    "location": "White Oak Flat, Alleghany, Virginia, USA",
+    "location": "Highland, Virginia, USA",
     "severity": "Moderate",
     "probability": "68%",
-    "lat": 37.84,
-    "lon": -79.86,
+    "lat": 38.31,
+    "lon": -79.79,
     "cascading_effects": [
-      "Air quality degradation",
-      "Evacuation of nearby communities",
-      "Potential strain on regional firefighting resources"
+      "air quality degradation",
+      "potential evacuation of nearby communities",
+      "strain on local firefighting resources"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-25T03:08:36Z"
+    "time_of_event": "2026-11-24T17:16:39Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
