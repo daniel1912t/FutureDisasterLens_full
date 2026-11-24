@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "La Tronosa, Panama",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 7.52,
+    "lon": -80.62,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T06:40:24Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Guam, United States Territory",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T10:20:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Puerto Madero region, Mexico",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 14.44,
-    "lon": -93.24,
-    "cascading_effects": [
-      "Potential building damage",
-      "Infrastructure disruption"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T10:09:12Z"
   }
 ]
