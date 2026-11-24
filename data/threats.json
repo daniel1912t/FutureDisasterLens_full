@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Vallenar, Chile",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -28.61,
+    "lon": -71.49,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "disruption of mining operations"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T19:43:46Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Southeast of Kokopo, Papua New Guinea",
     "severity": "Severe",
     "probability": "68%",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T18:23:41Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Puerto Madero, Mexico",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 14.44,
-    "lon": -93.24,
-    "cascading_effects": [
-      "Potential infrastructure damage",
-      "Aftershocks causing additional injuries"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T18:13:51Z"
   }
 ]
