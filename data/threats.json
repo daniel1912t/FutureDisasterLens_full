@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tsunami Window",
+    "location": "Mauritius - Reunion region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -17.7,
+    "lon": 65.7,
+    "cascading_effects": [
+      "coastal flooding",
+      "infrastructure damage",
+      "disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T15:33:05Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Guam, USA",
     "severity": "Severe",
@@ -27,21 +42,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T02:15:05Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Mauritius - Reunion region",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -17.7,
-    "lon": 65.7,
-    "cascading_effects": [
-      "tsunami risk",
-      "infrastructure damage",
-      "landslide potential"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T15:06:27Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
