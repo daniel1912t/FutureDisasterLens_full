@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Finschhafen region, Papua New Guinea",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -6.75,
+    "lon": 147.65,
+    "cascading_effects": [
+      "Potential landslides in coastal valleys",
+      "Disruption of maritime navigation and port operations",
+      "Triggering of tsunamigenic activity affecting nearby islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T08:21:21Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Mangan region, India",
     "severity": "Severe",
     "probability": "78%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T06:52:09Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.05,
-    "lon": -111.58,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities",
-      "potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T06:42:29Z"
   }
 ]
