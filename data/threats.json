@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Tyrma region, Russia",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 49.76,
+    "lon": 131.57,
+    "cascading_effects": [
+      "Potential landslides",
+      "Infrastructure damage",
+      "Disruption of communication networks"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T17:09:41Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T03:49:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Vanuatu region",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -13.7,
-    "lon": 170.87,
-    "cascading_effects": [
-      "Potential tsunami generation affecting nearby islands",
-      "Disruption of undersea communication cables",
-      "Landslides in steep coastal terrain"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T20:41:17Z"
   }
 ]
