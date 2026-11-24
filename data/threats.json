@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "White Oak Flat, Alleghany, Virginia, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 37.84,
+    "lon": -79.86,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Evacuation of nearby communities",
+      "Potential strain on regional firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T03:08:36Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Southeast of Tobi Village, Palau",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T01:46:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Near Indian Ocean, off coast of Myanmar",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "Coastal flooding",
-      "High wind damage to infrastructure",
-      "Disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T15:36:50Z"
   }
 ]
