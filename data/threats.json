@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "La Tronosa, Panama",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 7.52,
+    "lon": -80.62,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T14:22:26Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Alleghany, Virginia, USA",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T12:52:07Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Near Puerto Madero, Mexico",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 14.44,
-    "lon": -93.24,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage",
-      "Disruption of transportation routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T12:34:16Z"
   }
 ]
