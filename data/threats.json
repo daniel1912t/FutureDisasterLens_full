@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Mangan region, India",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 27.83,
+    "lon": 87.95,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "disruption of communication networks"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T01:54:33Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T00:15:54Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Tennessee, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 36.36,
-    "lon": -82.8,
-    "cascading_effects": [
-      "air quality degradation",
-      "local evacuations",
-      "road closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T00:06:19Z"
   }
 ]
