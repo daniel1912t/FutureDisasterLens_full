@@ -1,18 +1,17 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
-    "location": "Forrest, Mississippi, USA",
-    "severity": "Moderate",
+    "location": "Bibb, Alabama, USA",
+    "severity": "Severe",
     "probability": "68%",
-    "lat": 31.1,
-    "lon": -89.16,
+    "lat": 32.95,
+    "lon": -87.35,
     "cascading_effects": [
       "air quality degradation",
-      "local evacuations",
-      "road closures"
+      "evacuation orders"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-25T16:27:03Z"
+    "time_of_event": "2026-11-25T16:35:17Z"
   },
   {
     "primary_threat": "Forecasted Tropical Cyclone Window",
