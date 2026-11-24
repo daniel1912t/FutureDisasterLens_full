@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 43.04,
+    "lon": -88.4,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T17:37:58Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T15:33:05Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Guam, USA",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 13.56,
-    "lon": 144.5,
-    "cascading_effects": [
-      "Potential landslides in hilly terrain",
-      "Disruption of power and communications infrastructure",
-      "Risk of tsunami generation affecting coastal areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T22:25:18Z"
   }
 ]
