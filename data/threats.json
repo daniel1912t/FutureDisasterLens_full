@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Matagorda, Texas, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 28.76,
+    "lon": -95.81,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T21:13:37Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T19:43:46Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Southeast of Kokopo, Papua New Guinea",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -5.6,
-    "lon": 153.68,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami potential",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T19:35:33Z"
   }
 ]
