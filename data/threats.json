@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "South Sandwich Islands region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -57.31,
+    "lon": -25.88,
+    "cascading_effects": [
+      "potential tsunami generation",
+      "disruption of marine navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T04:29:12Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T02:39:40Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "La Tronosa region, Panama",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 7.52,
-    "lon": -80.62,
-    "cascading_effects": [
-      "Potential landslides in nearby hills",
-      "Disruption of local road networks",
-      "Risk of infrastructure damage to bridges and utilities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T02:31:27Z"
   }
 ]
