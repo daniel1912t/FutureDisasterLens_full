@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Near Puerto Madero, Mexico",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 14.44,
+    "lon": -93.24,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption of transportation routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T12:34:16Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Mangan, India",
     "severity": "Severe",
     "probability": "68%",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T11:04:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "El Dorado, California, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 38.62,
-    "lon": -120.5,
-    "cascading_effects": [
-      "air quality degradation",
-      "threat to nearby residential areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T10:54:32Z"
   }
 ]
