@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene, Tennessee, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 36.36,
+    "lon": -82.8,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T14:39:45Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T13:19:59Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Mauritius - Reunion region",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -17.7,
-    "lon": 65.7,
-    "cascading_effects": [
-      "potential tsunami generation",
-      "significant infrastructure damage",
-      "landslide risk in mountainous areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T13:01:54Z"
   }
 ]
