@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Highland, Virginia, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.31,
+    "lon": -79.79,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in nearby communities",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T17:11:34Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Severe",
     "probability": "68%",
@@ -13,20 +27,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T17:03:16Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Alleghany, Virginia, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 37.84,
-    "lon": -79.86,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in nearby towns",
-      "Potential strain on local emergency services"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T16:53:18Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
