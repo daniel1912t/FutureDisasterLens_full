@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Puerto Madero, Mexico",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 14.44,
+    "lon": -93.24,
+    "cascading_effects": [
+      "Potential infrastructure damage",
+      "Aftershocks causing additional injuries"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T18:13:51Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Vallenar, Chile",
     "severity": "Severe",
     "probability": "68%",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T03:45:01Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Window",
-    "location": "South Pacific Ocean, near Fiji",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.8,
-    "lon": -168.8,
-    "cascading_effects": [
-      "storm surge flooding",
-      "landslide risk in coastal hills",
-      "disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T16:17:17Z"
   }
 ]
