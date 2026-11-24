@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Puerto Madero, Mexico",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 14.44,
+    "lon": -93.24,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of regional power grid"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T20:11:45Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Indian Ocean, near Maldives",
     "severity": "Severe",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T08:51:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Matagorda, Texas, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 28.76,
-    "lon": -95.81,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T18:41:33Z"
   }
 ]
