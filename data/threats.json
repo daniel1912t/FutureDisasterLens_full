@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Highland, Virginia, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.31,
+    "lon": -79.79,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T12:06:36Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Tennessee, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T10:46:16Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "Southern Pacific Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.8,
-    "lon": -168.8,
-    "cascading_effects": [
-      "storm surge flooding",
-      "heavy rainfall causing landslides",
-      "disruption to maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T10:36:45Z"
   }
 ]
