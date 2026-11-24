@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "G\u00fcvercinlik, Turkey",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 37.09,
+    "lon": 27.78,
+    "cascading_effects": [
+      "aftershocks",
+      "infrastructure damage",
+      "potential landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T20:37:52Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Pacific Ocean, near Tokelau",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T02:17:33Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene County, Tennessee, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 36.36,
-    "lon": -82.8,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation orders",
-      "Strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T19:07:49Z"
   }
 ]
