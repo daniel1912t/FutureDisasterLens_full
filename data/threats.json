@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Mangan region, India",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 27.83,
+    "lon": 87.95,
+    "cascading_effects": [
+      "landslide risk in nearby valleys",
+      "disruption of regional road and rail infrastructure",
+      "potential damage to hydroelectric facilities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T23:58:13Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Tyrma region, Russia",
     "severity": "Severe",
     "probability": "68%",
@@ -131,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T22:37:01Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Guam region, United States Territory",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 12.28,
-    "lon": 144.02,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Infrastructure damage",
-      "Disruption of communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T22:27:25Z"
   }
 ]
