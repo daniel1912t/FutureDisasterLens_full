@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Vanuatu region",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -13.7,
+    "lon": 170.87,
+    "cascading_effects": [
+      "potential landslides",
+      "tsunami generation risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T22:19:19Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Tyrma region, Russia",
     "severity": "Severe",
     "probability": "78%",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T20:57:34Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Palau region",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 1.34,
-    "lon": 132.02,
-    "cascading_effects": [
-      "Potential landslides in low-lying coastal areas",
-      "Disruption of undersea communication cables",
-      "Tsunami generation affecting nearby islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T03:49:26Z"
   }
 ]
