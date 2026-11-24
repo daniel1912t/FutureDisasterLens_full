@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Andaman Sea, Myanmar",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "heavy rainfall",
+      "coastal flooding",
+      "landslide risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T13:22:30Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Matagorda, Texas, USA",
     "severity": "Severe",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T22:00:59Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "West of Macquarie Island, Australia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -60.63,
-    "lon": 153.85,
-    "cascading_effects": [
-      "potential tsunami generation",
-      "disruption of maritime navigation",
-      "impact on nearby research stations"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T21:52:54Z"
   }
 ]
