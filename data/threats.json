@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Pacific Ocean, near Guam",
+    "severity": "Severe",
+    "probability": "80%",
+    "lat": -11.8,
+    "lon": -168.8,
+    "cascading_effects": [
+      "coastal flooding",
+      "wind damage to infrastructure",
+      "disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T23:01:12Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Highland, Virginia, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T23:30:35Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Andaman Sea, Myanmar",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "landslide risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T13:22:30Z"
   }
 ]
