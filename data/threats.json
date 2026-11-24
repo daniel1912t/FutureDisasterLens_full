@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "South Sandwich Islands region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -57.31,
+    "lon": -25.88,
+    "cascading_effects": [
+      "tsunami generation",
+      "landslide risk",
+      "disruption of marine navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T06:52:09Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T05:04:40Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Mineral, Montana, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 47.12,
-    "lon": -114.75,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T15:54:57Z"
   }
 ]
