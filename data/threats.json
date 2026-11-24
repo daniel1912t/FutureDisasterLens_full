@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Tyrma region, Russia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 49.76,
+    "lon": 131.57,
+    "cascading_effects": [
+      "structural damage to buildings",
+      "disruption of transportation networks",
+      "potential landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T23:48:33Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Scott, Mississippi",
     "severity": "Moderate",
@@ -131,19 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T22:27:25Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Vanuatu region",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -13.7,
-    "lon": 170.87,
-    "cascading_effects": [
-      "potential landslides",
-      "tsunami generation risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T22:19:19Z"
   }
 ]
