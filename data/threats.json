@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Palau",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 1.34,
+    "lon": 132.02,
+    "cascading_effects": [
+      "potential landslides",
+      "tsunami generation risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T05:58:30Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Highland, Virginia, USA",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T04:01:47Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Mangan region, India",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 27.83,
-    "lon": 87.95,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "disruption of communication networks"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T03:53:38Z"
   }
 ]
