@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Mangan region, India",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 27.83,
+    "lon": 87.95,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "disruption of communication networks"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T03:53:38Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Forrest, Mississippi, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T02:12:14Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "El Dorado, California, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 38.62,
-    "lon": -120.5,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T02:02:37Z"
   }
 ]
