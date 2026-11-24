@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Window",
+    "location": "Indian Ocean, near Mauritius",
+    "severity": "Severe",
+    "probability": "80%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "Coastal flooding",
+      "Storm surge",
+      "Heavy rainfall leading to landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T16:09:07Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Little Ridge, Highland, Virginia, USA",
     "severity": "Moderate",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T14:22:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T14:04:28Z"
   }
 ]
