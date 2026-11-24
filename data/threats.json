@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Mauritius - Reunion region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -17.7,
+    "lon": 65.7,
+    "cascading_effects": [
+      "Potential tsunami generation affecting coastal zones",
+      "Infrastructure damage and landslides",
+      "Disruption to air and sea transport"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T11:04:21Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "El Dorado, California, USA",
     "severity": "Moderate",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T09:42:40Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Guam",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 12.28,
-    "lon": 144.02,
-    "cascading_effects": [
-      "Potential landslides",
-      "Infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T09:33:03Z"
   }
 ]
