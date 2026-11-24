@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "Southern Pacific Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.8,
+    "lon": -168.8,
+    "cascading_effects": [
+      "storm surge flooding",
+      "heavy rainfall causing landslides",
+      "disruption to maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T10:36:45Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Highland, Virginia, USA",
     "severity": "Moderate",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T09:15:06Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "La Tronosa region, Panama",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 7.52,
-    "lon": -80.62,
-    "cascading_effects": [
-      "Potential landslides in mountainous terrain",
-      "Disruption of local road and bridge infrastructure",
-      "Risk of secondary tsunami if offshore fault movement occurs"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T09:06:57Z"
   }
 ]
