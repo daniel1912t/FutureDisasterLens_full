@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Puerto Madero, Mexico",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 14.44,
+    "lon": -93.24,
+    "cascading_effects": [
+      "potential landslides",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T02:15:05Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Mauritius - Reunion region",
     "severity": "Severe",
     "probability": "78%",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T13:56:11Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Piti Village, Guam",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 13.56,
-    "lon": 144.5,
-    "cascading_effects": [
-      "Potential infrastructure damage",
-      "Tsunami generation risk",
-      "Disruption to communication networks"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T13:46:09Z"
   }
 ]
