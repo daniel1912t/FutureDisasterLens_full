@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Andaman Sea, near Myanmar",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "Coastal flooding",
+      "Landslides in hilly terrain",
+      "Disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T18:23:41Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Puerto Madero, Mexico",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T17:03:16Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "La Tronosa, Panama",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": 7.52,
-    "lon": -80.62,
-    "cascading_effects": [
-      "landslide risk in nearby hills",
-      "potential infrastructure damage",
-      "temporary disruption of communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T03:45:01Z"
   }
 ]
