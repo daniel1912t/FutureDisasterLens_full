@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 43.04,
+    "lon": -88.4,
+    "cascading_effects": [
+      "Air quality degradation in Milwaukee metro area",
+      "Potential strain on local firefighting resources",
+      "Smoke plume affecting aviation routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T09:15:06Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "La Tronosa region, Panama",
     "severity": "Severe",
@@ -131,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T07:55:15Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Guam, USA Territory",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 12.28,
-    "lon": 144.02,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Infrastructure damage",
-      "Disruption to communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T07:47:08Z"
   }
 ]
