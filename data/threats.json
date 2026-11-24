@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
+    "location": "Indian Ocean near 17.2\u00b0N, 84.7\u00b0E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "storm surge flooding",
+      "heavy rainfall causing landslides",
+      "disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T08:03:31Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Forrest, Mississippi, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T06:34:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Mangan region, India",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 27.83,
-    "lon": 87.95,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "disruption of transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T06:26:10Z"
   }
 ]
