@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.05,
+    "lon": -111.58,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities",
+      "potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T06:42:29Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "South Pacific Ocean",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T15:54:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "La Tronosa, Panama",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 7.52,
-    "lon": -80.62,
-    "cascading_effects": [
-      "Potential aftershocks affecting nearby communities",
-      "Disruption to local road infrastructure",
-      "Possible landslide risk in surrounding hills"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T04:46:48Z"
   }
 ]
