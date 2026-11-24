@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Mangan region, India",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 27.83,
+    "lon": 87.95,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "disruption of transportation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T06:26:10Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Alleghany, Virginia, USA",
     "severity": "Moderate",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T04:37:14Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "South Sandwich Islands region",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -57.31,
-    "lon": -25.88,
-    "cascading_effects": [
-      "potential tsunami generation",
-      "disruption of marine navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T04:29:12Z"
   }
 ]
