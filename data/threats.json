@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "G\u00fcvercinlik, Turkey",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 37.09,
+    "lon": 27.78,
+    "cascading_effects": [
+      "Potential landslides",
+      "Infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T14:58:04Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Vallenar, Chile",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T13:37:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 31.12,
-    "lon": -89.08,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T13:28:18Z"
   }
 ]
