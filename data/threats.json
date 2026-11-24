@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Piti Village, Guam",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 13.56,
+    "lon": 144.5,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami potential",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T02:17:33Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene County, Tennessee, USA",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T17:55:56Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Mauritius - Reunion region",
-    "severity": "Severe",
-    "probability": "85%",
-    "lat": -17.7,
-    "lon": 65.7,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Infrastructure damage",
-      "Disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T15:46:13Z"
   }
 ]
