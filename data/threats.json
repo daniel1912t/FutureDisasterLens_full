@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, Near -11.8, -168.8",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.8,
+    "lon": -168.8,
+    "cascading_effects": [
+      "coastal flooding",
+      "high wind damage to infrastructure",
+      "disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T23:03:08Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "South Sandwich Islands region",
     "severity": "Moderate",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T08:43:15Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Finschhafen, Papua New Guinea",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -6.75,
-    "lon": 147.65,
-    "cascading_effects": [
-      "landslide",
-      "potential tsunami"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T21:33:37Z"
   }
 ]
