@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "South Pacific Ocean, near Tokelau",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.8,
+    "lon": -168.8,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods on low-lying islands",
+      "High winds generating storm surge and coastal erosion",
+      "Disruption of maritime traffic and satellite communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T20:29:32Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Mineral, Montana, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T19:07:49Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "G\u00fcvercinlik, Turkey",
-    "severity": "Moderate",
-    "probability": "71%",
-    "lat": 37.09,
-    "lon": 27.78,
-    "cascading_effects": [
-      "potential aftershocks",
-      "infrastructure damage",
-      "disruption of transportation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T08:59:30Z"
   }
 ]
