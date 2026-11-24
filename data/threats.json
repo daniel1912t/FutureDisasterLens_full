@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Guam region, United States Territory",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 12.28,
+    "lon": 144.02,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Infrastructure damage",
+      "Disruption of communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T22:27:25Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Vanuatu region",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T21:07:13Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Lafayette, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 34.49,
-    "lon": -89.42,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T20:57:34Z"
   }
 ]
