@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "South Pacific Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.8,
+    "lon": -168.8,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods on low-lying islands",
+      "Storm surge damaging coastal infrastructure",
+      "Disruption of maritime shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T08:31:01Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Finschhafen region, Papua New Guinea",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T02:01:53Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "South Sandwich Islands region",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -57.31,
-    "lon": -25.88,
-    "cascading_effects": [
-      "tsunami generation",
-      "landslide risk",
-      "disruption of marine navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T06:52:09Z"
   }
 ]
