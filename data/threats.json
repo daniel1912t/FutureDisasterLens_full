@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Tropical Cyclone Window",
+    "location": "South Pacific Ocean, near Fiji",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.8,
+    "lon": -168.8,
+    "cascading_effects": [
+      "storm surge flooding",
+      "landslide risk in coastal hills",
+      "disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T16:17:17Z"
+  },
+  {
+    "primary_threat": "Forecasted Tropical Cyclone Window",
     "location": "Indian Ocean, near Mauritius",
     "severity": "Severe",
     "probability": "80%",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T14:30:45Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "La Tronosa, Panama",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 7.52,
-    "lon": -80.62,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T14:22:26Z"
   }
 ]
