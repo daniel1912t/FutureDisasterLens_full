@@ -1,17 +1,17 @@
 [
   {
-    "primary_threat": "Forecasted Flood Window",
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Puerto Madero, Mexico",
     "severity": "Severe",
-    "probability": "81%",
+    "probability": "68%",
     "lat": 14.44,
     "lon": -93.24,
     "cascading_effects": [
-      "riverbank overflow",
-      "infrastructure damage"
+      "Infrastructure damage",
+      "Potential landslides"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-25T15:41:22Z"
+    "time_of_event": "2026-11-25T15:49:36Z"
   },
   {
     "primary_threat": "Forecasted Tsunami Window",
