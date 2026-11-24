@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.05,
+    "lon": -111.58,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T11:12:31Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Mauritius - Reunion region",
     "severity": "Severe",
@@ -128,21 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T23:52:19Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
-    "location": "Andaman Sea, India",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "Coastal flooding in eastern India and Myanmar",
-      "Disruption of maritime shipping lanes",
-      "Potential landslides in hilly terrain",
-      "Power grid outages due to high winds"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T09:42:40Z"
   }
 ]
