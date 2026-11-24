@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "La Tronosa region, Panama",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 7.52,
+    "lon": -80.62,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of local road and bridge infrastructure",
+      "Risk of secondary tsunami if offshore fault movement occurs"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T09:06:57Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Alleghany, Virginia, USA",
     "severity": "Moderate",
@@ -131,19 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T07:47:08Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Mineral, Montana, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 47.12,
-    "lon": -114.75,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T07:35:54Z"
   }
 ]
