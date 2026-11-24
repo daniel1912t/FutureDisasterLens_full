@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Mangan region, India",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 27.83,
+    "lon": 87.95,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "disruption of river flow"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T08:13:12Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
     "location": "Indian Ocean near 17.2\u00b0N, 84.7\u00b0E",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T06:42:29Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "South Pacific Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.8,
-    "lon": -168.8,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods on low-lying islands",
-      "Storm surge damaging coastal infrastructure",
-      "Disruption of marine navigation routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T06:34:21Z"
   }
 ]
