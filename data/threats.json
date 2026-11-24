@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Highland, Virginia, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.31,
+    "lon": -79.79,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T10:47:31Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "G\u00fcvercinlik, Turkey",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T19:25:44Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Piti Village, Guam",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 13.56,
-    "lon": 144.5,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami potential",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T02:17:33Z"
   }
 ]
