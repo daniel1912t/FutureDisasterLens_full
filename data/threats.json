@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Papua New Guinea",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -6.75,
+    "lon": 147.65,
+    "cascading_effects": [
+      "potential landslides",
+      "disruption of local communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T04:37:14Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "South Sandwich Islands region",
     "severity": "Severe",
     "probability": "68%",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T02:49:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Tennessee, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 36.36,
-    "lon": -82.8,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T02:39:40Z"
   }
 ]
