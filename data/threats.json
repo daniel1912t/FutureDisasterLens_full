@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Mauritius - Reunion region",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -17.7,
+    "lon": 65.7,
+    "cascading_effects": [
+      "tsunami risk",
+      "infrastructure damage",
+      "landslide potential"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T15:06:27Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "G\u00fcvercinlik, Turkey",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T13:46:09Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": 35.05,
-    "lon": -111.58,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation of nearby communities",
-      "Strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T13:37:57Z"
   }
 ]
