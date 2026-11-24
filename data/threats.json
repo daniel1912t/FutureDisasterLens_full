@@ -1,17 +1,17 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
-    "location": "Mineral, Montana, USA",
+    "location": "Stevens, Washington, USA",
     "severity": "Moderate",
     "probability": "68%",
-    "lat": 47.12,
-    "lon": -114.75,
+    "lat": 48.4,
+    "lon": -117.53,
     "cascading_effects": [
       "air quality degradation",
-      "threat to nearby livestock and forest infrastructure"
+      "evacuation of nearby communities"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-25T04:11:26Z"
+    "time_of_event": "2026-11-25T04:19:30Z"
   },
   {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
