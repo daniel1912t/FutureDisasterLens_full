@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Highland, Virginia, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.31,
+    "lon": -79.79,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Potential evacuation of nearby communities",
+      "Strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T14:53:01Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Severe",
     "probability": "68%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T13:22:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Matagorda, Texas, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 28.76,
-    "lon": -95.81,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Evacuation of nearby communities",
-      "Potential strain on regional fire suppression resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T23:12:53Z"
   }
 ]
