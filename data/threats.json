@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Guam",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 12.28,
+    "lon": 144.02,
+    "cascading_effects": [
+      "Potential landslides",
+      "Infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T09:33:03Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Mauritius - Reunion region",
     "severity": "Extreme",
     "probability": "78%",
@@ -132,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T08:13:12Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
-    "location": "Indian Ocean near 17.2\u00b0N, 84.7\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "storm surge flooding",
-      "heavy rainfall causing landslides",
-      "disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T08:03:31Z"
   }
 ]
