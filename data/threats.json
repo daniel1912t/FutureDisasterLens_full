@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Palau",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 1.34,
+    "lon": 132.02,
+    "cascading_effects": [
+      "Tsunami potential",
+      "Infrastructure damage",
+      "Landslides"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T08:39:16Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "South Pacific Ocean",
     "severity": "Severe",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T21:10:00Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "La Tronosa region, Panama",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 7.52,
-    "lon": -80.62,
-    "cascading_effects": [
-      "potential landslides",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T02:01:53Z"
   }
 ]
