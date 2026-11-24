@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Little Ridge, Highland, Virginia, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.31,
+    "lon": -79.79,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T15:59:19Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Puerto Madero, Mexico",
     "severity": "Severe",
@@ -113,20 +128,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T14:22:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Alleghany, Virginia, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 37.84,
-    "lon": -79.86,
-    "cascading_effects": [
-      "Smoke plume affecting air quality in nearby urban centers",
-      "Potential strain on local water resources for fire suppression"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T14:12:40Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
