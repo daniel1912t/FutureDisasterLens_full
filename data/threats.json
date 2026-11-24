@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Near Indian Ocean, off coast of Myanmar",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "Coastal flooding",
+      "High wind damage to infrastructure",
+      "Disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T15:36:50Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Bibb, Alabama, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T00:06:19Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Mangan region, India",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 27.83,
-    "lon": 87.95,
-    "cascading_effects": [
-      "landslide risk in nearby valleys",
-      "disruption of regional road and rail infrastructure",
-      "potential damage to hydroelectric facilities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T23:58:13Z"
   }
 ]
