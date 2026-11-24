@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Guam, United States Territory",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 12.28,
+    "lon": 144.02,
+    "cascading_effects": [
+      "potential landslides",
+      "infrastructure damage",
+      "disruption to communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T11:30:24Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
     "location": "Indian Ocean near 17.2\u00b0N, 84.7\u00b0E",
     "severity": "Severe",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T10:09:12Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T10:00:25Z"
   }
 ]
