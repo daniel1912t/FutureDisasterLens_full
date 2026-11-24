@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Vallenar, Chile",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -28.61,
+    "lon": -71.49,
+    "cascading_effects": [
+      "Potential aftershocks affecting nearby communities",
+      "Risk of landslides in mountainous terrain",
+      "Disruption to regional road and rail infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T11:48:45Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "La Tronosa, Panama",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T10:28:35Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Mangan region, India",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 27.83,
-    "lon": 87.95,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "disruption of communication networks"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T10:20:23Z"
   }
 ]
