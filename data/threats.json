@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Vallenar, Chile",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -28.61,
+    "lon": -71.49,
+    "cascading_effects": [
+      "Potential landslides in nearby hills",
+      "Infrastructure damage to roads and bridges",
+      "Disruption of local power grid"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T18:05:43Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T16:17:17Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Window",
-    "location": "Indian Ocean, near Mauritius",
-    "severity": "Severe",
-    "probability": "80%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "Coastal flooding",
-      "Storm surge",
-      "Heavy rainfall leading to landslides"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T16:09:07Z"
   }
 ]
