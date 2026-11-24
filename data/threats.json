@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene County, Tennessee, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 36.36,
+    "lon": -82.8,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T23:52:19Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
     "location": "Andaman Sea, India",
     "severity": "Severe",
@@ -132,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T08:31:01Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Finschhafen region, Papua New Guinea",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -6.75,
-    "lon": 147.65,
-    "cascading_effects": [
-      "Potential landslides in coastal valleys",
-      "Disruption of maritime navigation and port operations",
-      "Triggering of tsunamigenic activity affecting nearby islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T08:21:21Z"
   }
 ]
