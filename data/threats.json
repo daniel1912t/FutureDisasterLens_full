@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Flood Window",
+    "location": "Puerto Madero, Mexico",
+    "severity": "Severe",
+    "probability": "81%",
+    "lat": 14.44,
+    "lon": -93.24,
+    "cascading_effects": [
+      "riverbank overflow",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T15:41:22Z"
+  },
+  {
     "primary_threat": "Forecasted Tsunami Window",
     "location": "Mauritius - Reunion region",
     "severity": "Severe",
@@ -28,20 +42,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T22:25:18Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Puerto Madero, Mexico",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 14.44,
-    "lon": -93.24,
-    "cascading_effects": [
-      "potential landslides",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T02:15:05Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
