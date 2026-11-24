@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "Southern Pacific Ocean near -11.8\u00b0S, 168.8\u00b0W",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.8,
+    "lon": -168.8,
+    "cascading_effects": [
+      "Heavy rainfall causing flash floods on nearby islands",
+      "High winds leading to coastal erosion and infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T12:52:07Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T09:22:14Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.05,
-    "lon": -111.58,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T11:12:31Z"
   }
 ]
