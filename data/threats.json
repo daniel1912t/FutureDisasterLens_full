@@ -1,17 +1,17 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
-    "location": "Alleghany, Virginia, USA",
+    "location": "Highland, Virginia, USA",
     "severity": "Moderate",
     "probability": "68%",
-    "lat": 37.84,
-    "lon": -79.86,
+    "lat": 38.31,
+    "lon": -79.79,
     "cascading_effects": [
       "air quality degradation",
-      "evacuation orders"
+      "potential evacuation orders"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-25T05:40:43Z"
+    "time_of_event": "2026-11-24T19:48:53Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
