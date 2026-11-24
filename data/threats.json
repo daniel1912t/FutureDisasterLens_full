@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Vallenar, Chile",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -28.61,
+    "lon": -71.49,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "potential tsunami warning for coastal areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T21:50:54Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Tennessee, USA",
     "severity": "Moderate",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T20:29:32Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Puerto Madero, Mexico",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 14.44,
-    "lon": -93.24,
-    "cascading_effects": [
-      "Potential landslides in mountainous terrain",
-      "Disruption of regional power grid"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T20:11:45Z"
   }
 ]
