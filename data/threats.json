@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Guam, USA Territory",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 13.56,
+    "lon": 144.5,
+    "cascading_effects": [
+      "tsunami risk",
+      "infrastructure damage",
+      "landslide potential"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T21:24:47Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Matagorda, Texas, USA",
     "severity": "Moderate",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T19:52:01Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Vallenar, Chile",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -28.61,
-    "lon": -71.49,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "disruption of mining operations"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T19:43:46Z"
   }
 ]
