@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Palau Region, Palau",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 1.34,
+    "lon": 132.02,
+    "cascading_effects": [
+      "tsunami risk",
+      "infrastructure damage",
+      "landslide potential"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T01:10:58Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Pacific Ocean, near Guam",
     "severity": "Severe",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T23:48:33Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Finschhafen region, Papua New Guinea",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -6.75,
-    "lon": 147.65,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T23:30:35Z"
   }
 ]
