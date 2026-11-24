@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Mauritius - Reunion region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -17.7,
+    "lon": 65.7,
+    "cascading_effects": [
+      "potential tsunami generation",
+      "significant infrastructure damage",
+      "landslide risk in mountainous areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T13:01:54Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "Southern Pacific Ocean near -11.8\u00b0S, 168.8\u00b0W",
     "severity": "Severe",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T11:30:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
-    "location": "Indian Ocean near 17.2\u00b0N, 84.7\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "storm surge flooding",
-      "heavy rainfall causing landslides"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T09:22:14Z"
   }
 ]
