@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene, Tennessee, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 36.36,
+    "lon": -82.8,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Evacuation of nearby communities",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T11:58:27Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Vallenar, Chile",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T10:36:45Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Highland, Virginia, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 38.31,
-    "lon": -79.79,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T10:28:35Z"
   }
 ]
