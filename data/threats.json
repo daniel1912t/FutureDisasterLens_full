@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 31.12,
+    "lon": -89.08,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Evacuation of nearby communities",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T12:43:54Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Near Puerto Madero, Mexico",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T11:12:31Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Mauritius - Reunion region",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -17.7,
-    "lon": 65.7,
-    "cascading_effects": [
-      "Potential tsunami generation affecting coastal zones",
-      "Infrastructure damage and landslides",
-      "Disruption to air and sea transport"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T11:04:21Z"
   }
 ]
