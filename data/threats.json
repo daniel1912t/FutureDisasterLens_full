@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "South Sandwich Islands region",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -57.31,
+    "lon": -25.88,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of maritime navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T01:19:06Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Palau Region, Palau",
     "severity": "Severe",
     "probability": "68%",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T23:58:13Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Tyrma region, Russia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 49.76,
-    "lon": 131.57,
-    "cascading_effects": [
-      "structural damage to buildings",
-      "disruption of transportation networks",
-      "potential landslides"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T23:48:33Z"
   }
 ]
