@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Guam, USA",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 13.56,
+    "lon": 144.5,
+    "cascading_effects": [
+      "Potential landslides in hilly terrain",
+      "Disruption of power and communications infrastructure",
+      "Risk of tsunami generation affecting coastal areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T22:25:18Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Puerto Madero, Mexico",
     "severity": "Moderate",
     "probability": "68%",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T14:04:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Akvan Window",
-    "location": "Indian Ocean near 17.2\u00b0N, 84.7\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "Coastal flooding",
-      "Storm surge",
-      "Disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T13:56:11Z"
   }
 ]
