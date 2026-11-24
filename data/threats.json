@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "South Sandwich Islands region",
+    "severity": "Moderate",
+    "probability": "70%",
+    "lat": -57.31,
+    "lon": -25.88,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption to shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T12:55:00Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "El Dorado, California, USA",
     "severity": "Moderate",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T21:33:37Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "South Pacific, Fiji",
-    "severity": "Severe",
-    "probability": "80%",
-    "lat": -11.8,
-    "lon": -168.8,
-    "cascading_effects": [
-      "Heavy rainfall leading to flash floods",
-      "Storm surge causing coastal erosion and infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T11:25:24Z"
   }
 ]
