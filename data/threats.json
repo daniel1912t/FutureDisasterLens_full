@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Stevens, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.4,
+    "lon": -117.53,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "potential road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T10:57:11Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Highland, Virginia, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -42,21 +57,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T20:29:32Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Mineral, Montana, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 47.12,
-    "lon": -114.75,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "road closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T20:19:56Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
