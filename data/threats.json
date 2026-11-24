@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Mangan region, India",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 27.83,
+    "lon": 87.95,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "disruption of communication networks"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T10:20:23Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Puerto Madero region, Mexico",
     "severity": "Severe",
     "probability": "68%",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T08:57:14Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "South Sandwich Islands region",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -57.31,
-    "lon": -25.88,
-    "cascading_effects": [
-      "tsunami generation",
-      "aviation route disruptions"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T08:49:04Z"
   }
 ]
