@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Southeast of Kokopo, Papua New Guinea",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -5.6,
+    "lon": 153.68,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami potential",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T19:35:33Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T18:13:51Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Vallenar, Chile",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -28.61,
-    "lon": -71.49,
-    "cascading_effects": [
-      "Potential landslides in nearby hills",
-      "Infrastructure damage to roads and bridges",
-      "Disruption of local power grid"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T18:05:43Z"
   }
 ]
