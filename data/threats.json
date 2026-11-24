@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Mineral, Montana, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 47.12,
+    "lon": -114.75,
+    "cascading_effects": [
+      "air quality degradation",
+      "threat to nearby livestock and forest infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T04:11:26Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "South Pacific Ocean",
     "severity": "Severe",
@@ -131,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T02:31:27Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Finschhafen region, Papua New Guinea",
-    "severity": "Moderate",
-    "probability": "78%",
-    "lat": -6.75,
-    "lon": 147.65,
-    "cascading_effects": [
-      "Aftershocks",
-      "Infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T02:21:49Z"
   }
 ]
