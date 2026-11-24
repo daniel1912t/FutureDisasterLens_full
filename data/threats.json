@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene, Tennessee, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 36.36,
+    "lon": -82.8,
+    "cascading_effects": [
+      "air quality degradation",
+      "local evacuations",
+      "road closures"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T00:06:19Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Mangan region, India",
     "severity": "Severe",
@@ -131,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T12:45:14Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Palau region, Palau",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 1.34,
-    "lon": 132.02,
-    "cascading_effects": [
-      "tsunami potential",
-      "infrastructure damage",
-      "disruption of marine navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T22:37:01Z"
   }
 ]
