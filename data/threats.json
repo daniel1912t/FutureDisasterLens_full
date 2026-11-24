@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Matagorda, Texas, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 28.76,
+    "lon": -95.81,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Evacuation of nearby communities",
+      "Potential strain on regional fire suppression resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-24T23:12:53Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Pacific Ocean, Near -11.8, -168.8",
     "severity": "Severe",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-24T21:52:54Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-24T08:43:15Z"
   }
 ]
