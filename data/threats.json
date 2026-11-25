@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Kimbe, Papua New Guinea",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -6.35,
+    "lon": 151.54,
+    "cascading_effects": [
+      "ground shaking",
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T19:50:44Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T18:02:20Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Waukesha, Wisconsin, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 42.92,
-    "lon": -88.48,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T17:53:59Z"
   }
 ]
