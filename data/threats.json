@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "South Pacific, French Polynesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.8,
+    "lon": -168.8,
+    "cascading_effects": [
+      "coastal flooding",
+      "wind damage to infrastructure",
+      "disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T16:14:45Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Mineral, Montana, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T13:33:17Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Luwuk region, Indonesia",
-    "severity": "Severe",
-    "probability": "71%",
-    "lat": -0.38,
-    "lon": 123.0,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "tsunami generation potential"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T13:24:42Z"
   }
 ]
