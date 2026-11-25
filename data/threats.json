@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Balleny Islands Region",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -63.09,
+    "lon": 170.94,
+    "cascading_effects": [
+      "Potential tsunami generation affecting Southern Ocean islands",
+      "Disruption of satellite communication links",
+      "Triggering of ice shelf calving events"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T17:44:14Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Hengchun, Taiwan",
     "severity": "Severe",
     "probability": "78%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T16:23:29Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "South Pacific, French Polynesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.8,
-    "lon": -168.8,
-    "cascading_effects": [
-      "coastal flooding",
-      "wind damage to infrastructure",
-      "disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T16:14:45Z"
   }
 ]
