@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "San Juan, Peru",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -15.38,
+    "lon": -75.77,
+    "cascading_effects": [
+      "ground shaking",
+      "potential landslides",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T04:41:46Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Alleghany, Virginia, USA",
     "severity": "Moderate",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T02:43:38Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Balleny Islands, Antarctica",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -63.09,
-    "lon": 170.94,
-    "cascading_effects": [
-      "Tsunami generation risk",
-      "Disruption of maritime navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T09:34:02Z"
   }
 ]
