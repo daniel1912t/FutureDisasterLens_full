@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Balleny Islands, Antarctica",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -63.09,
+    "lon": 170.94,
+    "cascading_effects": [
+      "Tsunami generation risk",
+      "Disruption of maritime navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T09:34:02Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T14:53:33Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Kokopo Region, Papua New Guinea",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -5.6,
-    "lon": 153.68,
-    "cascading_effects": [
-      "Potential aftershocks affecting coastal communities",
-      "Risk of landslides in mountainous terrain",
-      "Disruption to regional air traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T02:35:40Z"
   }
 ]
