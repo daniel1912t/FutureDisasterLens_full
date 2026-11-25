@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Mineral, Montana, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 47.12,
+    "lon": -114.75,
+    "cascading_effects": [
+      "air quality degradation",
+      "threat to nearby livestock",
+      "potential evacuation of nearby residences"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T16:04:54Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Balleny Islands region",
     "severity": "Severe",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T13:24:42Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific Ocean, near Fiji",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.8,
-    "lon": -168.8,
-    "cascading_effects": [
-      "storm surge flooding",
-      "heavy rainfall leading to landslides"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T13:16:13Z"
   }
 ]
