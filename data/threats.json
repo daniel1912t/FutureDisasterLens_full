@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Port-Vila, Vanuatu",
+    "severity": "Moderate",
+    "probability": "70%",
+    "lat": -17.65,
+    "lon": 168.22,
+    "cascading_effects": [
+      "Potential landslides",
+      "Coastal tsunami risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T08:58:17Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Stevens, Washington, USA",
     "severity": "Moderate",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T17:05:51Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "El Dorado, California, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 38.62,
-    "lon": -120.5,
-    "cascading_effects": [
-      "Air quality degradation in Sacramento Valley",
-      "Potential power line outages",
-      "Evacuation of nearby residential areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T16:57:30Z"
   }
 ]
