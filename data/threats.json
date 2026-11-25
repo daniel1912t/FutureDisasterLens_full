@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Vallenar Region, Chile",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -28.61,
+    "lon": -71.49,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T01:21:13Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Alleghany, Virginia, USA",
     "severity": "Moderate",
@@ -132,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T13:40:24Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Ovalle Region, Chile",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -30.95,
-    "lon": -71.52,
-    "cascading_effects": [
-      "Potential landslides in nearby hills",
-      "Disruption of local road networks",
-      "Risk of aftershocks affecting nearby settlements"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T23:30:36Z"
   }
 ]
