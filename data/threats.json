@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Highland, Virginia, USA",
+    "severity": "Severe",
+    "probability": "81%",
+    "lat": 38.31,
+    "lon": -79.79,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T05:52:50Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Hicks Bay region, New Zealand",
     "severity": "Severe",
@@ -42,20 +56,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T05:26:54Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "White Oak Flat, Alleghany, Virginia, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 37.84,
-    "lon": -79.86,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T19:17:21Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
