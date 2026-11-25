@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "G\u00fcvercinlik, Turkey",
+    "severity": "Moderate",
+    "probability": "71%",
+    "lat": 37.09,
+    "lon": 27.78,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption of transport routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T12:46:22Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Kokopo Region, Papua New Guinea",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T11:05:25Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "potential road closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T10:57:11Z"
   }
 ]
