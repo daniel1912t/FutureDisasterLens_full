@@ -1,18 +1,17 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
-    "location": "Ovalle, Chile",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -30.95,
-    "lon": -71.52,
+    "location": "Vallenar, Chile",
+    "severity": "Moderate",
+    "probability": "78%",
+    "lat": -28.61,
+    "lon": -71.49,
     "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "aftershock series"
+      "landslides",
+      "damage to roads and bridges"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-25T22:10:29Z"
+    "time_of_event": "2026-11-25T12:20:15Z"
   },
   {
     "primary_threat": "Forecasted Severe Storm Window",
