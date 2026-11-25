@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Tsunami Window",
+    "location": "Hengchun region, Taiwan",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 21.82,
+    "lon": 121.52,
+    "cascading_effects": [
+      "coastal flooding",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T11:54:44Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Luwuk region, Indonesia",
     "severity": "Severe",
@@ -85,21 +99,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T12:01:44Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Hengchun, Taiwan",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 21.82,
-    "lon": 121.52,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami potential",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T10:52:03Z"
   },
   {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
