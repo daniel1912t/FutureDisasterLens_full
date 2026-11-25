@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Central Pacific Ocean",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.8,
+    "lon": -168.8,
+    "cascading_effects": [
+      "high winds",
+      "heavy rainfall",
+      "coastal flooding"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T06:20:36Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Alleghany, Virginia, USA",
     "severity": "Severe",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T04:15:43Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Tennessee, USA",
-    "severity": "Severe",
-    "probability": "81%",
-    "lat": 36.36,
-    "lon": -82.8,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T18:06:03Z"
   }
 ]
