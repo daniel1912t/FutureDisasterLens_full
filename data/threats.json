@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Hicks Bay, New Zealand",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -36.02,
+    "lon": 178.37,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Infrastructure damage",
+      "Disruption to coastal communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T19:14:53Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Highland, Virginia, USA",
     "severity": "Moderate",
@@ -131,19 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T07:34:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Tennessee, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 36.36,
-    "lon": -82.8,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T17:05:51Z"
   }
 ]
