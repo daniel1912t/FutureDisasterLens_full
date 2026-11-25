@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Hengchun, Taiwan",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 21.82,
+    "lon": 121.52,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami potential",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T10:52:03Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "South Pacific Ocean",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T09:31:00Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Cabatuan region, Philippines",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 10.9,
-    "lon": 122.48,
-    "cascading_effects": [
-      "Potential landslides in nearby hills",
-      "Infrastructure damage to roads and bridges",
-      "Disruption of local power grid"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T09:01:27Z"
   }
 ]
