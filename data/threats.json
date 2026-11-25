@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Kokopo region, Papua New Guinea",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -5.6,
+    "lon": 153.68,
+    "cascading_effects": [
+      "aftershocks",
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T03:57:51Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -12,20 +27,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T03:48:17Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Kimbe region, Papua New Guinea",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -6.35,
-    "lon": 151.54,
-    "cascading_effects": [
-      "Potential tsunami risk",
-      "Disruption to regional air travel"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T03:36:56Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
