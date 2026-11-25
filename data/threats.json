@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Hicks Bay region, New Zealand",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -36.02,
+    "lon": 178.37,
+    "cascading_effects": [
+      "tsunami generation",
+      "landslide risk in coastal areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T11:37:05Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Balleny Islands, Antarctica",
     "severity": "Severe",
     "probability": "68%",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T10:15:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Alleghany, Virginia, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 37.84,
-    "lon": -79.86,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in nearby communities",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T10:07:30Z"
   }
 ]
