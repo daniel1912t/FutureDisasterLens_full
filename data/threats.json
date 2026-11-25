@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Fiji Waters, Fiji",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.8,
+    "lon": -168.8,
+    "cascading_effects": [
+      "Coastal flooding",
+      "Disruption of maritime shipping routes",
+      "Potential landslides on nearby islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T22:26:58Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Vallenar, Chile",
     "severity": "Moderate",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T10:47:31Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "G\u00fcvercinlik, Turkey",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 37.09,
-    "lon": 27.78,
-    "cascading_effects": [
-      "aftershocks",
-      "infrastructure damage",
-      "potential landslides"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T20:37:52Z"
   }
 ]
