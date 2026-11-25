@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "G\u00fcvercinlik, Turkey",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 37.09,
+    "lon": 27.78,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Infrastructure damage",
+      "Disruption to transport routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T01:03:11Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Pacific Ocean, near -11.8\u00b0S 168.8\u00b0W",
     "severity": "Severe",
@@ -131,19 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T23:30:36Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Matagorda, Texas, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 28.76,
-    "lon": -95.81,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T10:22:27Z"
   }
 ]
