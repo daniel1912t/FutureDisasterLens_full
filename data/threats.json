@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "El Dorado, California, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.62,
+    "lon": -120.5,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T15:39:10Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Ovalle Region, Chile",
     "severity": "Moderate",
@@ -132,20 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T13:50:09Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Cabatuan Region, Philippines",
-    "severity": "Moderate",
-    "probability": "71%",
-    "lat": 10.9,
-    "lon": 122.48,
-    "cascading_effects": [
-      "Potential landslides in nearby hills",
-      "Disruption of local road networks",
-      "Risk of tsunami if offshore fault activation occurs"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T13:40:24Z"
   }
 ]
