@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Stevens, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.4,
+    "lon": -117.53,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T02:24:28Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T02:35:40Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Balleny Islands Region, Antarctica",
-    "severity": "Extreme",
-    "probability": "68%",
-    "lat": -63.23,
-    "lon": 171.05,
-    "cascading_effects": [
-      "potential tsunami generation",
-      "disruption of satellite communication",
-      "hazard to research stations"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T00:25:58Z"
   }
 ]
