@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Highland, Virginia, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.31,
+    "lon": -79.79,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T20:30:24Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Central Pacific Ocean",
     "severity": "Severe",
@@ -13,21 +27,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T06:20:36Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Alleghany, Virginia, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 37.84,
-    "lon": -79.86,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in neighboring counties",
-      "Potential strain on local firefighting resources",
-      "Evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T06:10:45Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
