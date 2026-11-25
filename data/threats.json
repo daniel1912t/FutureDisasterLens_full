@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene, Tennessee, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 36.36,
+    "lon": -82.8,
+    "cascading_effects": [
+      "Air quality degradation in surrounding counties",
+      "Potential evacuation of nearby communities",
+      "Strain on regional firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T11:10:07Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Cabatuan, Philippines",
     "severity": "Moderate",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T09:49:15Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "San Juan region, Peru",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -15.38,
-    "lon": -75.77,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T09:39:32Z"
   }
 ]
