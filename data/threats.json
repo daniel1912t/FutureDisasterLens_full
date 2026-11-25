@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Balleny Islands, Antarctica",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -63.09,
+    "lon": 170.94,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Disruption of maritime navigation",
+      "Impact on scientific research stations"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T07:41:16Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "San Juan, Peru",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T06:02:35Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Hicks Bay region, New Zealand",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -36.02,
-    "lon": 178.37,
-    "cascading_effects": [
-      "Potential tsunami generation affecting coastal communities",
-      "Infrastructure damage to roads and bridges",
-      "Triggering of landslides in mountainous terrain"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T05:44:37Z"
   }
 ]
