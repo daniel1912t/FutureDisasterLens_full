@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "San Juan, Peru",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -15.38,
+    "lon": -75.77,
+    "cascading_effects": [
+      "landslide",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T21:31:21Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T05:44:37Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Kimbe region, Papua New Guinea",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -6.35,
-    "lon": 151.54,
-    "cascading_effects": [
-      "landslide risk in coastal valleys",
-      "potential tsunami generation",
-      "disruption of marine navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T05:34:58Z"
   }
 ]
