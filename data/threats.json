@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Hengchun, Taiwan",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 21.82,
+    "lon": 121.52,
+    "cascading_effects": [
+      "tsunami risk",
+      "infrastructure damage",
+      "landslide potential"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T20:00:35Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Kimbe, Papua New Guinea",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T18:21:54Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Southern Pacific Ocean, near Fiji",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.8,
-    "lon": -168.8,
-    "cascading_effects": [
-      "heavy rainfall causing flash floods",
-      "storm surge impacting coastal communities",
-      "disruption to maritime shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T18:02:20Z"
   }
 ]
