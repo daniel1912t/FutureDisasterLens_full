@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Southern Pacific Ocean, near Fiji",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.8,
+    "lon": -168.8,
+    "cascading_effects": [
+      "heavy rainfall causing flash floods",
+      "storm surge impacting coastal communities",
+      "disruption to maritime shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T18:02:20Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T16:39:29Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Cabatuan, Philippines",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 10.9,
-    "lon": 122.48,
-    "cascading_effects": [
-      "landslide risk in nearby hills",
-      "damage to infrastructure and roads",
-      "potential tsunami if offshore fault involvement"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T16:30:57Z"
   }
 ]
