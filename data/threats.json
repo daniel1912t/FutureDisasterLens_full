@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Highland, Virginia, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.31,
+    "lon": -79.79,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Potential evacuation of nearby communities",
+      "Strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T14:27:17Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Kimbe region, Papua New Guinea",
     "severity": "Moderate",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T12:30:04Z"
-  },
-  {
-    "primary_threat": "Forecasted Tsunami Window",
-    "location": "Balleny Islands, Antarctica",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -63.09,
-    "lon": 170.94,
-    "cascading_effects": [
-      "Coastal flooding",
-      "Ice shelf destabilization"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T12:21:14Z"
   }
 ]
