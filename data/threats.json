@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Odisha Coast, India",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "Coastal flooding",
+      "Storm surge damage to ports",
+      "Disruption of power and communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T22:00:28Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Vallenar, Chile",
     "severity": "Severe",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T20:37:52Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific Ocean, near Tokelau",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.8,
-    "lon": -168.8,
-    "cascading_effects": [
-      "Heavy rainfall causing flash floods on low-lying islands",
-      "High winds generating storm surge and coastal erosion",
-      "Disruption of maritime traffic and satellite communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T20:29:32Z"
   }
 ]
