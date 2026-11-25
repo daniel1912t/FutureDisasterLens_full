@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Kokopo Region, Papua New Guinea",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -5.6,
+    "lon": 153.68,
+    "cascading_effects": [
+      "Potential aftershocks affecting coastal communities",
+      "Risk of landslides in mountainous terrain",
+      "Disruption to regional air traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T02:35:40Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Balleny Islands Region, Antarctica",
     "severity": "Extreme",
     "probability": "68%",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T13:12:33Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "G\u00fcvercinlik, Turkey",
-    "severity": "Moderate",
-    "probability": "71%",
-    "lat": 37.09,
-    "lon": 27.78,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Infrastructure damage",
-      "Disruption of transport routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T12:46:22Z"
   }
 ]
