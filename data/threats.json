@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene, Tennessee, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 36.36,
+    "lon": -82.8,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Potential evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T20:35:29Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T08:58:17Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "road closures"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T18:48:27Z"
   }
 ]
