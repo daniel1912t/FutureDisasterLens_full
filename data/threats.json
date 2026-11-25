@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Balleny Islands, Antarctica",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -63.09,
+    "lon": 170.94,
+    "cascading_effects": [
+      "Potential tsunami generation affecting Southern Ocean islands",
+      "Disruption of satellite communication links"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T11:28:34Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Kimbe region, Papua New Guinea",
     "severity": "Moderate",
     "probability": "68%",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T10:07:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Hicks Bay region, New Zealand",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -36.02,
-    "lon": 178.37,
-    "cascading_effects": [
-      "Potential aftershocks causing landslides",
-      "Tsunami generation risk for nearby coastal areas",
-      "Disruption to regional power and communication infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T09:59:16Z"
   }
 ]
