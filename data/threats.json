@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 31.12,
+    "lon": -89.08,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T17:25:49Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Alleghany, Virginia, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T16:04:54Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Balleny Islands region",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -63.09,
-    "lon": 170.94,
-    "cascading_effects": [
-      "tsunami generation",
-      "disruption of shipping lanes",
-      "impact on research stations"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T15:56:42Z"
   }
 ]
