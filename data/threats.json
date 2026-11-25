@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Ovalle, Chile",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -30.95,
+    "lon": -71.52,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "aftershock series"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T22:10:29Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Odisha Coast, India",
     "severity": "Severe",
@@ -13,21 +28,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T22:00:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Vallenar, Chile",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -28.61,
-    "lon": -71.49,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "potential tsunami warning for coastal areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T21:50:54Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
