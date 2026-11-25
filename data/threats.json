@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Kimbe region, Papua New Guinea",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -6.35,
+    "lon": 151.54,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of coastal marine ecosystems due to underwater shock"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T11:20:08Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Tennessee, USA",
     "severity": "Severe",
@@ -131,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T09:59:16Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Balleny Islands, Antarctica",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -63.09,
-    "lon": 170.94,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption to Southern Ocean shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T09:49:15Z"
   }
 ]
