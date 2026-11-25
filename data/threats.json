@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 42.92,
+    "lon": -88.48,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in Milwaukee region",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T09:31:00Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Little Ridge, Highland, Virginia, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T07:41:16Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "San Juan, Peru",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -15.38,
-    "lon": -75.77,
-    "cascading_effects": [
-      "landslide",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T21:31:21Z"
   }
 ]
