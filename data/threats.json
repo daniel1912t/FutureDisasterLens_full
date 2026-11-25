@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Luwuk region, Indonesia",
+    "severity": "Severe",
+    "probability": "71%",
+    "lat": -0.38,
+    "lon": 123.0,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "tsunami generation potential"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T13:24:42Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Pacific Ocean, near Fiji",
     "severity": "Severe",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T12:03:04Z"
-  },
-  {
-    "primary_threat": "Forecasted Tsunami Window",
-    "location": "Hengchun region, Taiwan",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 21.82,
-    "lon": 121.52,
-    "cascading_effects": [
-      "coastal flooding",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T11:54:44Z"
   }
 ]
