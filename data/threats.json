@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 43.04,
+    "lon": -88.4,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in Milwaukee metro area",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T02:16:20Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Cabatuan, Philippines",
     "severity": "Moderate",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T00:25:58Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Indian Ocean, near 17.2\u00b0N 84.7\u00b0E",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "Coastal flooding",
-      "High wind damage to infrastructure",
-      "Disruption of maritime traffic"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T02:08:02Z"
   }
 ]
