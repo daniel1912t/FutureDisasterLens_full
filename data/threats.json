@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Tsunami Window",
+    "location": "Balleny Islands, Antarctica",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -63.09,
+    "lon": 170.94,
+    "cascading_effects": [
+      "Coastal flooding",
+      "Ice shelf destabilization"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T12:21:14Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Forrest, Mississippi, USA",
     "severity": "Severe",
@@ -71,20 +85,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T11:37:05Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Balleny Islands, Antarctica",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -63.09,
-    "lon": 170.94,
-    "cascading_effects": [
-      "Potential tsunami generation affecting Southern Ocean islands",
-      "Disruption of satellite communication links"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T11:28:34Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
