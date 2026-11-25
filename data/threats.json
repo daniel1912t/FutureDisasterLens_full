@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Kokopo Region, Papua New Guinea",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -5.6,
+    "lon": 153.68,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami potential",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T22:36:40Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Fiji Waters, Fiji",
     "severity": "Severe",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T10:57:11Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Highland, Virginia, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 38.31,
-    "lon": -79.79,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T10:47:31Z"
   }
 ]
