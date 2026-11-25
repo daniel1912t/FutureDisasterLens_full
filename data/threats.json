@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Cabatuan, Philippines",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 10.9,
+    "lon": 122.48,
+    "cascading_effects": [
+      "Potential landslides in surrounding hills",
+      "Disruption of local transportation routes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T02:08:06Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Forrest, Mississippi, USA",
     "severity": "Moderate",
@@ -131,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T02:08:02Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Mineral County, Montana, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 47.12,
-    "lon": -114.75,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Threat to nearby timber resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T23:58:22Z"
   }
 ]
