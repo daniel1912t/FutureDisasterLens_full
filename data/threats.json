@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Cabatuan, Philippines",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": 10.9,
+    "lon": 122.48,
+    "cascading_effects": [
+      "landslide risk in nearby hills",
+      "damage to infrastructure and roads",
+      "potential tsunami if offshore fault involvement"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T16:30:57Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Luwuk, Indonesia",
     "severity": "Severe",
     "probability": "68%",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T14:53:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Kimbe region, Papua New Guinea",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -6.35,
-    "lon": 151.54,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T13:42:04Z"
   }
 ]
