@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Luwuk, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -0.38,
+    "lon": 123.0,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami generation potential"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T16:23:29Z"
+  },
+  {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
     "location": "South Pacific, French Polynesia",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T13:42:04Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Hicks Bay region, New Zealand",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -36.02,
-    "lon": 178.37,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Infrastructure damage",
-      "Disruption to coastal communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T13:33:17Z"
   }
 ]
