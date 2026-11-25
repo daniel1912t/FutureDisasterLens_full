@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.05,
+    "lon": -111.58,
+    "cascading_effects": [
+      "air quality degradation",
+      "potential evacuation orders"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T05:26:54Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "White Oak Flat, Alleghany, Virginia, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T17:28:40Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Matagorda, Texas, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 28.76,
-    "lon": -95.81,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Evacuation of nearby communities",
-      "Potential damage to agricultural assets"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T03:02:52Z"
   }
 ]
