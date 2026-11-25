@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Balleny Islands, Antarctica",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -63.09,
+    "lon": 170.94,
+    "cascading_effects": [
+      "Potential tsunami generation affecting Southern Ocean islands",
+      "Disruption of satellite communication due to ionospheric disturbances"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T04:59:38Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Mineral, Montana, USA",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T03:02:52Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific Ocean, near Fiji",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.8,
-    "lon": -168.8,
-    "cascading_effects": [
-      "heavy rainfall",
-      "coastal flooding",
-      "landfall wind damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T02:53:19Z"
   }
 ]
