@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene County, Tennessee, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 36.36,
+    "lon": -82.8,
+    "cascading_effects": [
+      "Air quality degradation affecting nearby communities",
+      "Potential strain on local emergency services",
+      "Risk of spot fires spreading to adjacent forested areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-25T13:50:09Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Cabatuan Region, Philippines",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T22:26:58Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Odisha Coast, India",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 17.2,
-    "lon": 84.7,
-    "cascading_effects": [
-      "Coastal flooding",
-      "Storm surge damage to ports",
-      "Disruption of power and communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T22:00:28Z"
   }
 ]
