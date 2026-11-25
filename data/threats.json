@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Hicks Bay region, New Zealand",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -36.02,
+    "lon": 178.37,
+    "cascading_effects": [
+      "Potential aftershocks causing landslides",
+      "Tsunami generation risk for nearby coastal areas",
+      "Disruption to regional power and communication infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T09:59:16Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Balleny Islands, Antarctica",
     "severity": "Severe",
     "probability": "68%",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T08:25:26Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Hengchun, Taiwan",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 21.82,
-    "lon": 121.52,
-    "cascading_effects": [
-      "Potential aftershocks affecting coastal infrastructure",
-      "Tsunami generation risk for nearby islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T08:17:13Z"
   }
 ]
