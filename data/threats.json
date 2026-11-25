@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "San Juan region, Peru",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -15.38,
+    "lon": -75.77,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T09:39:32Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T07:49:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Balleny Islands, Antarctica",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -63.09,
-    "lon": 170.94,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Disruption of maritime navigation",
-      "Impact on scientific research stations"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T07:41:16Z"
   }
 ]
