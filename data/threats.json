@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Hicks Bay Region, New Zealand",
+    "severity": "Moderate",
+    "probability": "71%",
+    "lat": -35.9,
+    "lon": 178.55,
+    "cascading_effects": [
+      "Potential landslides in coastal hills",
+      "Disruption to undersea communication cables",
+      "Triggered tsunamigenic waves affecting nearby shorelines"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T10:53:35Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Mineral, Montana, USA",
     "severity": "Moderate",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T19:24:34Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Hicks Bay, New Zealand",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -36.02,
-    "lon": 178.37,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Infrastructure damage",
-      "Disruption to coastal communications"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T19:14:53Z"
   }
 ]
