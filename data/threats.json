@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Alleghany, Virginia, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 37.84,
+    "lon": -79.86,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "damage to timber resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T04:19:03Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Kokopo region, Papua New Guinea",
     "severity": "Severe",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T01:58:32Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Vallenar Region, Chile",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -28.61,
-    "lon": -71.49,
-    "cascading_effects": [
-      "landslides",
-      "infrastructure damage",
-      "disruption of transport routes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T01:48:52Z"
   }
 ]
