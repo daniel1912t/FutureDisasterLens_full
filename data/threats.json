@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 42.92,
+    "lon": -88.48,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities",
+      "strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T17:53:59Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Balleny Islands Region",
     "severity": "Severe",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T16:30:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Luwuk, Indonesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -0.38,
-    "lon": 123.0,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami generation potential"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T16:23:29Z"
   }
 ]
