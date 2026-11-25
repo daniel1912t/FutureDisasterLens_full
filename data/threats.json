@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Bibb County, Alabama, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 32.95,
+    "lon": -87.35,
+    "cascading_effects": [
+      "Air quality degradation in surrounding regions",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T18:12:12Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "Southern Pacific Ocean, near Fiji",
     "severity": "Severe",
@@ -58,20 +72,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T07:34:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 31.12,
-    "lon": -89.08,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T17:25:49Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
