@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 43.04,
+    "lon": -88.4,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Potential evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T07:23:13Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Alleghany, Virginia, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T05:34:58Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.05,
-    "lon": -111.58,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential evacuation orders"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T05:26:54Z"
   }
 ]
