@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Hicks Bay region, New Zealand",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -36.02,
+    "lon": 178.37,
+    "cascading_effects": [
+      "Potential tsunami generation affecting coastal communities",
+      "Infrastructure damage to roads and bridges",
+      "Triggering of landslides in mountainous terrain"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T05:44:37Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Kimbe region, Papua New Guinea",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T03:48:17Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Ovalle region, Chile",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -30.95,
-    "lon": -71.52,
-    "cascading_effects": [
-      "landslide risk in Andean foothills",
-      "potential disruption to regional power grid"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T17:28:40Z"
   }
 ]
