@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Forrest, Mississippi, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 31.1,
+    "lon": -89.16,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Evacuation of nearby communities",
+      "Potential strain on regional firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T18:30:09Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Luwuk, Central Sulawesi, Indonesia",
     "severity": "Severe",
@@ -13,20 +28,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T18:21:54Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Bibb County, Alabama, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 32.95,
-    "lon": -87.35,
-    "cascading_effects": [
-      "Air quality degradation in surrounding regions",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T18:12:12Z"
   },
   {
     "primary_threat": "Forecasted Severe Storm Window",
