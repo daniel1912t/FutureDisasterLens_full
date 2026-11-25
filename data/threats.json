@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Hengchun, Taiwan",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 21.82,
+    "lon": 121.52,
+    "cascading_effects": [
+      "Potential aftershocks affecting coastal infrastructure",
+      "Tsunami generation risk for nearby islands"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T08:17:13Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Highland, Virginia, USA",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T06:47:11Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Central Pacific Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.8,
-    "lon": -168.8,
-    "cascading_effects": [
-      "high winds",
-      "heavy rainfall",
-      "coastal flooding"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T06:20:36Z"
   }
 ]
