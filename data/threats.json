@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Balleny Islands region",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -63.09,
+    "lon": 170.94,
+    "cascading_effects": [
+      "tsunami generation",
+      "disruption of shipping lanes",
+      "impact on research stations"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T15:56:42Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Forrest, Mississippi, USA",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T13:16:13Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene County, Tennessee, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 36.36,
-    "lon": -82.8,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T13:07:07Z"
   }
 ]
