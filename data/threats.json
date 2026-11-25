@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "El Dorado, California, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.62,
+    "lon": -120.5,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in surrounding counties",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T19:24:34Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Hicks Bay, New Zealand",
     "severity": "Severe",
@@ -131,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T17:44:14Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Hengchun, Taiwan",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": 21.82,
-    "lon": 121.52,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami potential",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T07:34:21Z"
   }
 ]
