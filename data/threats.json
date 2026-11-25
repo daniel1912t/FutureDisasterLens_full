@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.05,
+    "lon": -111.58,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in Flagstaff",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T02:43:38Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Balleny Islands, Antarctica",
     "severity": "Severe",
@@ -127,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T01:03:11Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "South Pacific Ocean, near -11.8\u00b0S 168.8\u00b0W",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.8,
-    "lon": -168.8,
-    "cascading_effects": [
-      "Coastal flooding in nearby islands",
-      "Disruption of maritime shipping routes",
-      "Potential landslides on volcanic islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T14:53:33Z"
   }
 ]
