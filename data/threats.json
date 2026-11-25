@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Matagorda, Texas, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 28.76,
+    "lon": -95.81,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Evacuation of nearby communities",
+      "Potential damage to agricultural assets"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T03:02:52Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Pacific Ocean, near Fiji",
     "severity": "Severe",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T15:39:10Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Alleghany, Virginia, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 37.84,
-    "lon": -79.86,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "potential property loss"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T12:11:21Z"
   }
 ]
