@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Window",
+    "location": "Indian Ocean, near 17.2\u00b0N 84.7\u00b0E",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 17.2,
+    "lon": 84.7,
+    "cascading_effects": [
+      "Coastal flooding",
+      "High wind damage to infrastructure",
+      "Disruption of maritime traffic"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T02:08:02Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Mineral County, Montana, USA",
     "severity": "Moderate",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-25T22:36:40Z"
-  },
-  {
-    "primary_threat": "Forecasted Severe Storm Window",
-    "location": "Fiji Waters, Fiji",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.8,
-    "lon": -168.8,
-    "cascading_effects": [
-      "Coastal flooding",
-      "Disruption of maritime shipping routes",
-      "Potential landslides on nearby islands"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T22:26:58Z"
   }
 ]
