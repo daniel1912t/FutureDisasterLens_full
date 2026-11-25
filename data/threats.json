@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Highland, Virginia, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 38.31,
+    "lon": -79.79,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "potential power line damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T08:07:23Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Bibb County, Alabama",
     "severity": "Moderate",
     "probability": "68%",
@@ -70,20 +85,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T07:23:13Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Alleghany, Virginia, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 37.84,
-    "lon": -79.86,
-    "cascading_effects": [
-      "Smoke dispersion affecting nearby communities",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-25T21:13:28Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
