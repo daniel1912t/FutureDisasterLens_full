@@ -1,17 +1,18 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
-    "location": "Vallenar Region, Chile",
+    "location": "Ovalle Region, Chile",
     "severity": "Moderate",
     "probability": "68%",
-    "lat": -28.61,
-    "lon": -71.49,
+    "lat": -30.95,
+    "lon": -71.52,
     "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage"
+      "Potential landslides",
+      "Infrastructure damage",
+      "Aftershock sequence"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-26T01:21:13Z"
+    "time_of_event": "2026-11-26T01:29:23Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
