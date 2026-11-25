@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Mineral, Montana, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 47.12,
+    "lon": -114.75,
+    "cascading_effects": [
+      "air quality degradation",
+      "threat to nearby wildlife habitats"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T20:45:28Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Tennessee, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -127,19 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T19:14:53Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Port-Vila, Vanuatu",
-    "severity": "Moderate",
-    "probability": "70%",
-    "lat": -17.65,
-    "lon": 168.22,
-    "cascading_effects": [
-      "Potential landslides",
-      "Coastal tsunami risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T08:58:17Z"
   }
 ]
