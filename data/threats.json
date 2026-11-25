@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Cabatuan region, Philippines",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 10.9,
+    "lon": 122.48,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Damage to buildings and roads",
+      "Disruption of utilities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T12:57:15Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Mineral, Montana, USA",
     "severity": "Severe",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T11:37:05Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Kimbe region, Papua New Guinea",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": -6.35,
-    "lon": 151.54,
-    "cascading_effects": [
-      "Potential landslides in mountainous terrain",
-      "Disruption of coastal marine ecosystems due to underwater shock"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T11:20:08Z"
   }
 ]
