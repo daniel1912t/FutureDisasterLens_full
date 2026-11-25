@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Hicks Bay region, New Zealand",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -36.02,
+    "lon": 178.37,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Landslides in coastal hills",
+      "Infrastructure damage to ports and roads"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T07:49:21Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Balleny Islands, Antarctica",
     "severity": "Severe",
     "probability": "68%",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T06:20:36Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "El Dorado, California, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 38.62,
-    "lon": -120.5,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities",
-      "threat to power infrastructure"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T06:02:35Z"
   }
 ]
