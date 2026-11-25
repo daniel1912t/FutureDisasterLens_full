@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Mineral, Montana, USA",
+    "severity": "Severe",
+    "probability": "81%",
+    "lat": 47.12,
+    "lon": -114.75,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T12:48:39Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T11:20:08Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Greene, Tennessee, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 36.36,
-    "lon": -82.8,
-    "cascading_effects": [
-      "Air quality degradation in surrounding counties",
-      "Potential evacuation of nearby communities",
-      "Strain on regional firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T11:10:07Z"
   }
 ]
