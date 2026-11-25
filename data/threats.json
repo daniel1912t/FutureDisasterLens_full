@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Hicks Bay region, New Zealand",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -36.02,
+    "lon": 178.37,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Infrastructure damage",
+      "Disruption to coastal communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T13:33:17Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Luwuk region, Indonesia",
     "severity": "Severe",
     "probability": "71%",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T12:11:17Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Waukesha, Wisconsin, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 43.04,
-    "lon": -88.4,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation orders",
-      "Strain on local emergency services"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T12:03:04Z"
   }
 ]
