@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Matagorda, Texas, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 28.76,
+    "lon": -95.81,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "damage to agricultural assets"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T12:30:04Z"
+  },
+  {
     "primary_threat": "Forecasted Tsunami Window",
     "location": "Balleny Islands, Antarctica",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T12:01:44Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "South Pacific Ocean",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.8,
-    "lon": -168.8,
-    "cascading_effects": [
-      "Coastal flooding in low-lying islands",
-      "High wind damage to infrastructure",
-      "Disruption of marine navigation"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T10:43:46Z"
   }
 ]
