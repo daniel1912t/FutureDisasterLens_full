@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Perry, Mississippi, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 31.12,
+    "lon": -89.08,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Evacuation of nearby communities",
+      "Potential strain on local firefighting resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T12:38:13Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Alleghany, Virginia, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -12,21 +27,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-27T12:28:22Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Forrest, Mississippi, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 31.1,
-    "lon": -89.16,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Evacuation of nearby communities",
-      "Potential strain on local emergency services"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-27T12:18:28Z"
   },
   {
     "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
