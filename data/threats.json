@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "South Pacific Ocean, near -11.8, -168.8",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.8,
+    "lon": -168.8,
+    "cascading_effects": [
+      "heavy rainfall",
+      "storm surge",
+      "landfall flooding"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T12:08:41Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Matagorda, Texas, USA",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-27T10:26:50Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Gulf of Mexico region, Mexico",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 14.16,
-    "lon": -93.13,
-    "cascading_effects": [
-      "potential tsunami generation",
-      "damage to offshore platforms",
-      "disruption of shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-27T10:08:43Z"
   }
 ]
