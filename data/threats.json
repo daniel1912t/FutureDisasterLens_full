@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Highland, Virginia, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.31,
+    "lon": -79.79,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T14:14:21Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Hicks Bay, New Zealand",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T22:33:10Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Kimbe Region, Papua New Guinea",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -6.35,
-    "lon": 151.54,
-    "cascading_effects": [
-      "landslide risk",
-      "infrastructure damage",
-      "tsunami potential"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T22:23:21Z"
   }
 ]
