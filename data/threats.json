@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "El Dorado, California, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.62,
+    "lon": -120.5,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T05:26:12Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Lafayette, Mississippi, USA",
     "severity": "Severe",
     "probability": "68%",
@@ -130,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-27T03:44:49Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Puerto Madero Region, Mexico",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 14.16,
-    "lon": -93.13,
-    "cascading_effects": [
-      "potential aftershocks",
-      "damage to roads and bridges"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-27T02:57:31Z"
   }
 ]
