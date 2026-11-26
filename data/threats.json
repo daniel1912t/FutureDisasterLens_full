@@ -1,5 +1,30 @@
 [
   {
+    "primary_threat": "Forecasted Severe Cyclone Window",
+    "location": "Gulf of Alaska, USA",
+    "severity": "Severe",
+    "lat": 58.0,
+    "lon": -150.0,
+    "cascading_effects": [
+      "coastal flooding",
+      "high wind damage to infrastructure"
+    ],
+    "is_demo": false,
+    "probability": "35.5%",
+    "calculation_breakdown": {
+      "sample_size": 90,
+      "regional_readings_400km": 7,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 57.3,
+      "intensity_component": 31.5,
+      "momentum_component": 0.0
+    },
+    "time_of_event": "2026-11-28T04:46:10Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Dust Storm Window",
     "location": "Somali Region, Ethiopia",
     "severity": "Severe",
