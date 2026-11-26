@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Waukesha, Wisconsin, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 42.92,
+    "lon": -88.48,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in Milwaukee metro area",
+      "Potential strain on local fire department resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T09:51:03Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Port-Vila, Vanuatu",
     "severity": "Severe",
@@ -128,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T11:21:11Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Mineral, Montana, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 47.12,
-    "lon": -114.75,
-    "cascading_effects": [
-      "air quality degradation",
-      "threat to nearby wildlife habitats"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T20:45:28Z"
   }
 ]
