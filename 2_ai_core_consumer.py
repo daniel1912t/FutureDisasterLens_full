@@ -7,13 +7,13 @@ import time
 import random
 import base64
 import threading
-import traceback
 from datetime import datetime, timezone, timedelta
 import pika
 import requests
 
 RABBITMQ_HOST = os.environ.get('RABBITMQ_HOST', 'localhost')
 QUEUE_NAME = 'disaster_telemetry'
+MAX_RECORDS = 1000
 
 # DUAL API KEY ROTATION SETUP
 GROQ_KEYS = [k.strip() for k in [os.environ.get('GROQ_API_KEY'), os.environ.get('GROQ_API_KEY_2')] if k and k.strip()]
@@ -42,6 +42,7 @@ os.makedirs(DATA_DIR, exist_ok=True)
 
 DATA_FILE = os.path.join(DATA_DIR, 'latest_prediction.json')
 ALL_DATA_FILE = os.path.join(DATA_DIR, 'all_threats.json')
+TELEMETRY_1000_FILE = os.path.join(DATA_DIR, 'telemetry_1000.json')
 STATE_FILE = os.path.join(DATA_DIR, 'ai_state.json')
 HEALTH_FILE = os.path.join(DATA_DIR, 'ai_health.json')
 
@@ -52,6 +53,7 @@ def update_health_status(status, message, details=None):
         "timestamp": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "status": status,
         "model": MODEL_ID,
+        "dataset_capacity": MAX_RECORDS,
         "active_key_slot": (key_index % len(GROQ_KEYS)) + 1 if GROQ_KEYS else 0,
         "total_keys_loaded": len(GROQ_KEYS),
         "github_configured": bool(GITHUB_TOKEN),
@@ -65,11 +67,10 @@ def update_health_status(status, message, details=None):
     except Exception:
         pass
 
-print(f"=== [BOOT] FIXED HAZARD ENGINE: {MODEL_ID} ===", flush=True)
-print(f"🔑 Groq Keys Loaded: {len(GROQ_KEYS)} | GitHub Token Set: {bool(GITHUB_TOKEN)}", flush=True)
-update_health_status("BOOTING", "Consumer initialized")
+print(f"=== [BOOT] 1000-DATA STATISTICAL HAZARD ENGINE: {MODEL_ID} ===", flush=True)
+update_health_status("BOOTING", "Consumer initialized with 1000-record statistical engine")
 
-# ----------------- GEOSPATIAL DEDUPLICATION -----------------
+# ----------------- GEOSPATIAL & MATHEMATICAL PROBABILITY ENGINE -----------------
 def haversine_km(lat1, lon1, lat2, lon2):
     R = 6371.0
     dlat = math.radians(lat2 - lat1)
@@ -79,22 +80,89 @@ def haversine_km(lat1, lon1, lat2, lon2):
          math.sin(dlon / 2) ** 2)
     return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
-def deduplicate_threats(items):
+def calculate_hazard_probability(target_lat, target_lon, severity, telemetry_pool):
+    """
+    Calculates a calibrated probability percentage mathematically from the 1,000-sensor dataset:
+      - 40% Regional Cluster Density (nearby anomalies within 400 km out of N=1000)
+      - 40% Physical Energy / Intensity (magnitude or active anomaly weight)
+      - 20% 24h Temporal Momentum (recent acceleration vs 30-day baseline)
+    """
+    total_n = max(len(telemetry_pool), 1)
+    now_ms = time.time() * 1000.0
+    day_ms = 24.0 * 3600.0 * 1000.0
+
+    nearby_events = []
+    recent_nearby_count = 0
+    max_magnitude = 0.0
+
+    for ev in telemetry_pool:
+        ev_lat = float(ev.get("lat", 0.0))
+        ev_lon = float(ev.get("lon", 0.0))
+        dist = haversine_km(target_lat, target_lon, ev_lat, ev_lon)
+        if dist <= 400.0:
+            nearby_events.append(ev)
+            mag = float(ev.get("magnitude", 4.5))
+            if mag > max_magnitude:
+                max_magnitude = mag
+            ev_ts = float(ev.get("timestamp_ms", 0))
+            if ev_ts > 0 and (now_ms - ev_ts) <= day_ms:
+                recent_nearby_count += 1
+
+    nearby_count = len(nearby_events)
+
+    # 1. Density score (0 to 100): saturates logarithmically around 25+ regional sensors in 1000-point sample
+    density_ratio = min(1.0, math.log1p(nearby_count) / math.log1p(25.0))
+    density_score = density_ratio * 100.0
+
+    # 2. Physical intensity score (0 to 100)
+    sev_clean = str(severity).strip().lower()
+    sev_base = {"extreme": 88.0, "severe": 72.0, "moderate": 54.0}.get(sev_clean, 60.0)
+    if max_magnitude > 0:
+        mag_norm = min(100.0, max(20.0, ((max_magnitude - 2.5) / 5.5) * 100.0))
+        intensity_score = (sev_base * 0.5) + (mag_norm * 0.5)
+    else:
+        intensity_score = sev_base
+
+    # 3. Temporal momentum score (0 to 100)
+    if nearby_count > 0:
+        momentum_ratio = min(1.0, (recent_nearby_count / nearby_count) * 2.5)
+        momentum_score = momentum_ratio * 100.0
+    else:
+        momentum_score = 35.0
+
+    raw_prob = (0.40 * density_score) + (0.40 * intensity_score) + (0.20 * momentum_score)
+    calibrated_prob = round(min(98.5, max(12.0, raw_prob)), 1)
+
+    breakdown = {
+        "sample_size": total_n,
+        "regional_anomalies_400km": nearby_count,
+        "recent_24h_anomalies": recent_nearby_count,
+        "peak_sensor_magnitude": round(max_magnitude, 2) if max_magnitude > 0 else None,
+        "density_component": round(density_score, 1),
+        "intensity_component": round(intensity_score, 1),
+        "momentum_component": round(momentum_score, 1)
+    }
+    return f"{calibrated_prob}%", breakdown
+
+def deduplicate_active_threats(items):
+    """Deduplicates identical threats in the same 250 km zone while preserving historical 1,000-item archive."""
     unique = []
     for item in items:
         lat1 = float(item.get("lat", 0))
         lon1 = float(item.get("lon", 0))
         title1 = item.get("primary_threat", "").lower()
+        ts1 = item.get("time_of_event", "")
 
         is_duplicate = False
         for existing in unique:
             lat2 = float(existing.get("lat", 0))
             lon2 = float(existing.get("lon", 0))
             title2 = existing.get("primary_threat", "").lower()
+            ts2 = existing.get("time_of_event", "")
 
             dist = haversine_km(lat1, lon1, lat2, lon2)
             same_hazard = any(word in title2 for word in title1.split() if len(word) > 4)
-            if dist < 300 and same_hazard:
+            if dist < 250 and same_hazard and ts1[:13] == ts2[:13]:
                 is_duplicate = True
                 break
         if not is_duplicate:
@@ -103,7 +171,6 @@ def deduplicate_threats(items):
 
 # ----------------- GITHUB AUTO-CREATE & SYNC ENGINE -----------------
 def get_github_file_info():
-    """Returns (sha, decoded_list, status_code)."""
     if not GITHUB_TOKEN:
         return None, [], 0
 
@@ -133,17 +200,16 @@ def get_github_file_info():
     return None, [], -1
 
 def commit_threats_to_github(items):
-    """Creates data/threats.json if missing, or updates it with active threats."""
     if not GITHUB_TOKEN:
         print("❌ [GITHUB SKIP]: GITHUB_TOKEN is missing in Render Environment Variables.", flush=True)
         return
 
     sha, _, status = get_github_file_info()
-    # Never overwrite an existing remote file with an empty array due to a temporary read error
     if not items and status != 404:
         return
 
-    json_text = json.dumps(items, indent=2)
+    capped_items = items[:MAX_RECORDS]
+    json_text = json.dumps(capped_items, indent=2)
     b64_content = base64.b64encode(json_text.encode("utf-8")).decode("utf-8")
 
     url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{GITHUB_FILE_PATH}"
@@ -154,7 +220,7 @@ def commit_threats_to_github(items):
 
     action = "update" if sha else "create"
     payload = {
-        "message": f"telemetry: {action} {GITHUB_FILE_PATH} ({len(items)} active threats) [skip ci]",
+        "message": f"telemetry: {action} {GITHUB_FILE_PATH} ({len(capped_items)}/{MAX_RECORDS} records) [skip ci]",
         "content": b64_content,
         "branch": GITHUB_BRANCH
     }
@@ -162,47 +228,27 @@ def commit_threats_to_github(items):
         payload["sha"] = sha
 
     try:
-        res = requests.put(url, headers=headers, json=payload, timeout=15)
+        res = requests.put(url, headers=headers, json=payload, timeout=20)
         if res.status_code in [200, 201]:
             status_word = "CREATED NEW FILE" if res.status_code == 201 else "UPDATED FILE"
-            print(f"🚀 [GITHUB {status_word}]: Saved {len(items)} threats to {GITHUB_REPO}/{GITHUB_FILE_PATH}", flush=True)
+            print(f"🚀 [GITHUB {status_word}]: Saved {len(capped_items)} records to {GITHUB_REPO}/{GITHUB_FILE_PATH}", flush=True)
         else:
             print(f"❌ [GITHUB WRITE ERROR] HTTP {res.status_code}: {res.text}", flush=True)
     except Exception as e:
         print(f"❌ [GITHUB PUT EXCEPTION]: {e}", flush=True)
 
-# ----------------- LOCAL PURGE & STATE -----------------
-def purge_expired_items(items):
-    valid_items = []
-    now = datetime.now(timezone.utc)
-    cutoff = now + timedelta(hours=1)
-
-    for it in items:
-        ts_str = it.get("time_of_event")
-        if not ts_str:
-            continue
-        try:
-            event_dt = datetime.fromisoformat(ts_str.replace("Z", "+00:00"))
-            if event_dt > cutoff:
-                valid_items.append(it)
-            else:
-                print(f"🧹 [PURGE]: Dropped expired event '{it.get('primary_threat')}' ({ts_str})", flush=True)
-        except Exception:
-            pass
-    return deduplicate_threats(valid_items)
-
-# Restore from GitHub on startup without wiping existing data
+# Restore up to 1,000 records from GitHub on startup
 _, initial_gh_items, init_status = get_github_file_info()
-boot_items = purge_expired_items(initial_gh_items)
+boot_items = deduplicate_active_threats(initial_gh_items)[:MAX_RECORDS]
 
 if boot_items:
-    print(f"📥 [GITHUB RESTORE]: Loaded {len(boot_items)} active threats from GitHub.", flush=True)
+    print(f"📥 [GITHUB RESTORE]: Loaded {len(boot_items)} records from GitHub.", flush=True)
     with open(ALL_DATA_FILE, 'w', encoding='utf-8') as f:
         json.dump(boot_items, f, indent=2)
     with open(DATA_FILE, 'w', encoding='utf-8') as f:
         json.dump(boot_items[0], f, indent=2)
     with open(STATE_FILE, 'w', encoding='utf-8') as f:
-        json.dump({"real_ai_count": len(boot_items), "items": boot_items}, f, indent=2)
+        json.dump({"total_records": len(boot_items), "items": boot_items}, f, indent=2)
 elif init_status == 404:
     commit_threats_to_github([])
 
@@ -216,13 +262,14 @@ def save_prediction_to_disk(new_ai_result):
         except Exception:
             pass
 
-    merged = purge_expired_items(remote_items + local_items)
+    merged = deduplicate_active_threats(remote_items + local_items)
     real_items = [it for it in merged if not it.get("is_demo", False)]
 
-    updated_list = deduplicate_threats([new_ai_result] + real_items)[:10]
+    # Build up to 1,000 records
+    updated_list = deduplicate_active_threats([new_ai_result] + real_items)[:MAX_RECORDS]
 
     with open(STATE_FILE, 'w', encoding='utf-8') as f:
-        json.dump({"real_ai_count": len(updated_list), "items": updated_list}, f, indent=2)
+        json.dump({"total_records": len(updated_list), "items": updated_list}, f, indent=2)
 
     if updated_list:
         with open(DATA_FILE, 'w', encoding='utf-8') as f:
@@ -230,54 +277,96 @@ def save_prediction_to_disk(new_ai_result):
         with open(ALL_DATA_FILE, 'w', encoding='utf-8') as f:
             json.dump(updated_list, f, indent=2)
 
-    print(f"💾 [SAVED]: '{new_ai_result.get('primary_threat')}' at {new_ai_result.get('location')} | ETA: {new_ai_result.get('time_of_event')}", flush=True)
+    print(
+        f"💾 [SAVED {len(updated_list)}/{MAX_RECORDS}]: '{new_ai_result.get('primary_threat')}' "
+        f"at {new_ai_result.get('location')} | Calculated Prob: {new_ai_result.get('probability')} | ETA: {new_ai_result.get('time_of_event')}",
+        flush=True
+    )
     commit_threats_to_github(updated_list)
 
-# ----------------- DIVERSE TELEMETRY INGESTION -----------------
+# ----------------- 1,000-SENSOR TELEMETRY INGESTION -----------------
 def fetch_live_telemetry_direct():
-    compact_events = []
+    """Ingests up to 1,000 live global sensor events for statistical probability calculation."""
+    structured_pool = []
 
+    # 1. USGS 30-day M2.5+ feed (typically ~800-1,200 global seismic records)
     try:
-        r = requests.get('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson', timeout=10)
+        r = requests.get('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_month.geojson', timeout=15)
         if r.status_code == 200:
-            for f in r.json().get('features', [])[:6]:
+            for f in r.json().get('features', []):
                 p = f.get('properties', {})
                 c = f.get('geometry', {}).get('coordinates', [0, 0])
-                compact_events.append(f"SEISMIC: M{p.get('mag', 5.0)} at {p.get('place', 'Ocean')} (Lat: {round(c[1], 2)}, Lon: {round(c[0], 2)})")
+                if isinstance(c, list) and len(c) >= 2:
+                    structured_pool.append({
+                        "category": "SEISMIC",
+                        "title": f"M{p.get('mag', 3.0)} at {p.get('place', 'Ocean')}",
+                        "magnitude": float(p.get('mag') or 3.0),
+                        "timestamp_ms": float(p.get('time') or 0),
+                        "lat": round(float(c[1]), 4),
+                        "lon": round(float(c[0]), 4)
+                    })
     except Exception as e:
-        print(f"[-] USGS fetch notice: {e}", flush=True)
+        print(f"[-] USGS 1000-feed notice: {e}", flush=True)
 
+    # 2. NASA EONET Severe Hazards (Wildfires, Volcanoes, Storms, Floods, Sea Ice)
     try:
-        r_nasa = requests.get('https://eonet.gsfc.nasa.gov/api/v3/events?status=open&limit=15', timeout=10)
+        r_nasa = requests.get('https://eonet.gsfc.nasa.gov/api/v3/events?limit=250', timeout=15)
         if r_nasa.status_code == 200:
             for ev in r_nasa.json().get('events', []):
-                cat = ev.get('categories', [{}])[0].get('title', 'Hazard')
+                cat = ev.get('categories', [{}])[0].get('title', 'Hazard').upper()
                 geoms = ev.get('geometry', [])
                 if geoms:
-                    c = geoms[-1].get('coordinates', [0, 0])
+                    last_g = geoms[-1]
+                    c = last_g.get('coordinates', [0, 0])
                     if isinstance(c, list) and len(c) >= 2 and isinstance(c[0], (int, float)):
-                        compact_events.append(f"{cat.upper()}: {ev.get('title')} (Lat: {round(c[1], 2)}, Lon: {round(c[0], 2)})")
+                        ts_ms = 0.0
+                        date_str = last_g.get('date')
+                        if date_str:
+                            try:
+                                ts_ms = datetime.fromisoformat(date_str.replace("Z", "+00:00")).timestamp() * 1000.0
+                            except Exception:
+                                pass
+                        structured_pool.append({
+                            "category": cat,
+                            "title": ev.get('title', cat),
+                            "magnitude": 5.5 if cat in ("SEVERE STORMS", "VOLCANOES") else 4.8,
+                            "timestamp_ms": ts_ms,
+                            "lat": round(float(c[1]), 4),
+                            "lon": round(float(c[0]), 4)
+                        })
     except Exception as e:
-        print(f"[-] NASA EONET fetch notice: {e}", flush=True)
+        print(f"[-] NASA EONET 1000-feed notice: {e}", flush=True)
 
-    if not compact_events:
-        compact_events = [
-            "CYCLONE: Deep Vortex Warning (Lat: 16.4, Lon: 134.2)",
-            "WILDFIRE: Severe Thermal Front (Lat: -18.4, Lon: 133.8)",
-            "VOLCANO: Ash Plume Advisory (Lat: 14.75, Lon: -91.55)",
-            "SEISMIC: M5.8 Subduction Rupture (Lat: 38.2, Lon: 142.5)"
+    if not structured_pool:
+        structured_pool = [
+            {"category": "CYCLONE", "title": "Deep Vortex Warning", "magnitude": 6.2, "timestamp_ms": time.time() * 1000, "lat": 16.4, "lon": 134.2},
+            {"category": "WILDFIRE", "title": "Severe Thermal Front", "magnitude": 5.1, "timestamp_ms": time.time() * 1000, "lat": -18.4, "lon": 133.8},
+            {"category": "VOLCANO", "title": "Ash Plume Advisory", "magnitude": 5.8, "timestamp_ms": time.time() * 1000, "lat": 14.75, "lon": -91.55},
+            {"category": "SEISMIC", "title": "M5.8 Subduction Rupture", "magnitude": 5.8, "timestamp_ms": time.time() * 1000, "lat": 38.2, "lon": 142.5}
         ]
 
-    random.shuffle(compact_events)
-    return compact_events
+    # Cap pool to exact 1,000 records and persist snapshot locally
+    telemetry_1000 = structured_pool[:MAX_RECORDS]
+    try:
+        with open(TELEMETRY_1000_FILE, 'w', encoding='utf-8') as f:
+            json.dump(telemetry_1000, f)
+    except Exception:
+        pass
 
-# ----------------- DIVERSE AI PREDICTION CYCLE WITH IMMEDIATE FAILOVER -----------------
-def run_ai_prediction_cycle(events_list):
+    print(f"📡 [TELEMETRY POOL]: Loaded {len(telemetry_1000)} sensor records for statistical analysis.", flush=True)
+    return telemetry_1000
+
+# ----------------- DIVERSE AI PREDICTION CYCLE -----------------
+def run_ai_prediction_cycle(telemetry_pool):
     if not GROQ_KEYS:
         err = "No GROQ_API_KEY or GROQ_API_KEY_2 configured in Render."
         print(f"❌ {err}", flush=True)
         update_health_status("CONFIG_ERROR", err)
         return
+
+    # Normalize if RabbitMQ delivered raw strings instead of dicts
+    if telemetry_pool and isinstance(telemetry_pool[0], str):
+        telemetry_pool = fetch_live_telemetry_direct()
 
     now = datetime.now(timezone.utc)
     current_time_iso = now.strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -291,22 +380,30 @@ def run_ai_prediction_cycle(events_list):
             pass
 
     already_tracked_str = "\n".join(
-        f"- {t.get('primary_threat')} at {t.get('location')} ({t.get('lat')}, {t.get('lon')}) [ETA: {t.get('time_of_event')}]"
-        for t in existing_threats
+        f"- {t.get('primary_threat')} at {t.get('location')} ({t.get('lat')}, {t.get('lon')})"
+        for t in existing_threats[:12]
     ) or "None yet."
 
-    telemetry_summary = "\n".join(f"- {e}" for e in events_list[:8])
+    # Sample 10 diverse high-signal sensors from the 1,000-record pool for the LLM prompt
+    high_signal = [ev for ev in telemetry_pool if ev.get("magnitude", 0) >= 4.5 or ev.get("category") != "SEISMIC"]
+    sample_pool = high_signal if len(high_signal) >= 10 else telemetry_pool
+    sampled_sensors = random.sample(sample_pool, min(10, len(sample_pool)))
+
+    telemetry_summary = "\n".join(
+        f"- {s['category']}: {s['title']} (Lat: {s['lat']}, Lon: {s['lon']})"
+        for s in sampled_sensors
+    )
 
     system_prompt = (
         "You are a global planetary hazard forecasting AI. "
-        "Respond ONLY with a valid JSON object. No markdown fences, no commentary.\n\n"
+        "Respond ONLY with a valid JSON object. No markdown fences, no commentary. "
+        "Do NOT include a probability field — probability is calculated mathematically by the statistical engine.\n\n"
         "Required JSON schema:\n"
         "{\n"
         '  "primary_threat": "Forecasted [Specific Hazard] Window",\n'
         '  "location": "Region, Country",\n'
         '  "eta_hours_from_now": 14,\n'
         '  "severity": "Moderate | Severe | Extreme",\n'
-        '  "probability": "74%",\n'
         '  "lat": 0.0,\n'
         '  "lon": 0.0,\n'
         '  "cascading_effects": ["impact 1", "impact 2"]\n'
@@ -314,19 +411,19 @@ def run_ai_prediction_cycle(events_list):
     )
 
     user_prompt = (
-        f"CURRENT UTC TIME: {current_time_iso}\n\n"
-        f"ALREADY TRACKED ON MAP (DO NOT REPEAT THESE REGIONS OR HAZARDS):\n{already_tracked_str}\n\n"
-        f"NEW INCOMING SENSORS:\n{telemetry_summary}\n\n"
-        "CRITICAL RULES:\n"
-        "1. Pick a DIFFERENT sensor/region/disaster type than what is listed in ALREADY TRACKED ON MAP.\n"
-        "2. Choose a realistic, varied 'eta_hours_from_now' between 4 and 68 hours (e.g., 5, 9, 17, 29, 46, 62).\n"
-        "3. Coordinates 'lat' and 'lon' must match the chosen sensor from NEW INCOMING SENSORS.\n"
+        f"CURRENT UTC TIME: {current_time_iso}\n"
+        f"ACTIVE TELEMETRY DATASET SIZE: {len(telemetry_pool)} sensors\n\n"
+        f"RECENTLY FORECASTED (PICK A DIFFERENT REGION OR HAZARD):\n{already_tracked_str}\n\n"
+        f"SAMPLED ANOMALIES FROM 1000-SENSOR POOL:\n{telemetry_summary}\n\n"
+        "RULES:\n"
+        "1. Select a distinct anomaly from SAMPLED ANOMALIES.\n"
+        "2. Set 'eta_hours_from_now' between 4 and 68 hours based on hazard speed.\n"
+        "3. Coordinates 'lat' and 'lon' must match the chosen sensor.\n"
         "4. Output valid JSON now."
     )
 
     url = "https://api.groq.com/openai/v1/chat/completions"
 
-    # Try each available key immediately before giving up on the cycle
     for attempt in range(len(GROQ_KEYS)):
         current_key = get_current_groq_key()
         slot_num = (key_index % len(GROQ_KEYS)) + 1
@@ -357,7 +454,7 @@ def run_ai_prediction_cycle(events_list):
 
                 match = re.search(r'\{.*\}', raw_text, re.DOTALL)
                 if not match:
-                    err = f"Key #{slot_num} returned non-JSON or empty content: {raw_text[:200]}"
+                    err = f"Key #{slot_num} returned non-JSON content: {raw_text[:200]}"
                     print(f"❌ [PARSE ERROR] {err}", flush=True)
                     update_health_status("PARSE_ERROR", err)
                     rotate_groq_key()
@@ -365,6 +462,17 @@ def run_ai_prediction_cycle(events_list):
 
                 ai_result = json.loads(match.group(0))
                 ai_result["is_demo"] = False
+
+                target_lat = float(ai_result.get("lat", 0.0))
+                target_lon = float(ai_result.get("lon", 0.0))
+                severity = ai_result.get("severity", "Moderate")
+
+                # Compute exact percentage mathematically across the 1,000-sensor dataset
+                calc_prob, breakdown = calculate_hazard_probability(
+                    target_lat, target_lon, severity, telemetry_pool
+                )
+                ai_result["probability"] = calc_prob
+                ai_result["calculation_breakdown"] = breakdown
 
                 eta_hours = None
                 if "eta_hours_from_now" in ai_result:
@@ -383,7 +491,10 @@ def run_ai_prediction_cycle(events_list):
                 ai_result.pop("eta_hours_from_now", None)
 
                 save_prediction_to_disk(ai_result)
-                update_health_status("ONLINE", f"Generated '{ai_result.get('primary_threat')}' via Key #{slot_num}")
+                update_health_status(
+                    "ONLINE",
+                    f"Generated '{ai_result.get('primary_threat')}' ({calc_prob} from N={len(telemetry_pool)}) via Key #{slot_num}"
+                )
                 rotate_groq_key()
                 return
 
@@ -400,7 +511,7 @@ def run_ai_prediction_cycle(events_list):
             rotate_groq_key()
 
 def autonomous_timer_loop():
-    print("[*] Autonomous diverse loop online.", flush=True)
+    print("[*] Autonomous 1000-sensor statistical loop online.", flush=True)
     telemetry = fetch_live_telemetry_direct()
     run_ai_prediction_cycle(telemetry)
 
