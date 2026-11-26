@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FutureDisasterLens // Planetary Threat Telemetry</title>
+  <title>FutureDisasterLens // Planetary Physics Telemetry</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -501,13 +501,13 @@
     <div class="brand-pill">
       <div class="pulse-dot"></div>
       <div>
-        <div class="brand-title">FUTUREDISASTERLENS // ORBITAL TELEMETRY</div>
-        <div class="brand-sub" id="hud-sub">STREAMING 1000 RAW TELEMETRY SENSORS</div>
+        <div class="brand-title">FUTUREDISASTERLENS // RAW PHYSICS TELEMETRY</div>
+        <div class="brand-sub" id="hud-sub">OEF MICRO-SEISMICITY • GNSS MM DRIFT • HPA PRESSURE • ORBITAL FLUX</div>
       </div>
     </div>
 
     <div class="hud-controls">
-      <div class="stat-chip">RAW SENSORS: <strong id="hud-sensors">1000</strong></div>
+      <div class="stat-chip">SENSORS: <strong id="hud-sensors">1000</strong></div>
       <div class="stat-chip">ARCHIVE: <strong id="hud-archive">--</strong></div>
       <button class="btn-matrix" onclick="toggleMatrix(true)">
         <span>⚡</span> INTEL MATRIX
@@ -524,7 +524,7 @@
       <span id="hud-prob" class="prob-pill">PROBABILITY: --%</span>
     </div>
 
-    <div id="hud-title" class="threat-title">Analyzing Raw Planetary Telemetry...</div>
+    <div id="hud-title" class="threat-title">Processing Raw Sensor Channels...</div>
     <div id="hud-loc" class="threat-loc">LAT -- // LON --</div>
 
     <div class="countdown-box">
@@ -536,7 +536,7 @@
     </div>
 
     <ul id="hud-effects" class="effects-list">
-      <li>Ingesting live USGS seismic & NASA EONET raw streams</li>
+      <li>Ingesting live hPa pressure, GNSS mm drift & OEF arrays</li>
     </ul>
   </div>
 
@@ -550,8 +550,8 @@
   <div id="matrix-modal" class="matrix-modal">
     <div class="matrix-top">
       <div>
-        <div class="brand-title" style="font-size: 16px;">PLANETARY INTEL & STATISTICAL PROBABILITY MATRIX</div>
-        <div class="brand-sub">RAW TELEMETRY STREAM • 1,000-SENSOR PROBABILITY MODEL • GITHUB ARCHIVE</div>
+        <div class="brand-title" style="font-size: 16px;">PLANETARY PHYSICS & STATISTICAL PROBABILITY MATRIX</div>
+        <div class="brand-sub">OEF B-VALUE • BAROMETRIC HPA • GNSS MILLIMETER STRAIN • 1,000-CHANNEL STREAM</div>
       </div>
       <button class="btn-matrix" onclick="toggleMatrix(false)">✕ CLOSE MATRIX</button>
     </div>
@@ -559,32 +559,32 @@
     <div class="matrix-grid">
       <!-- Card 1: Engine & Pipeline Telemetry -->
       <div class="m-card">
-        <h4>1. Autonomous Engine Telemetry</h4>
-        <div class="kv-row"><span>Pipeline State</span><span>STREAMING</span></div>
-        <div class="kv-row"><span>AI Model</span><span id="m-model">openai/gpt-oss-120b</span></div>
-        <div class="kv-row"><span>Active Key Slot</span><span id="m-key">Slot #1 of 2</span></div>
-        <div class="kv-row"><span>Raw Sensor Pool (N)</span><span id="m-pool">1000 Live Sensors</span></div>
-        <div class="kv-row"><span>GitHub Repository</span><span id="m-gh">daniel1912t/FutureDisasterLens_full</span></div>
+        <h4>1. Physical Telemetry Channels</h4>
+        <div class="kv-row"><span>OEF Seismicity</span><span>USGS M0.0+ Waveform Array</span></div>
+        <div class="kv-row"><span>Atmosphere</span><span>Open-Meteo Barometric hPa</span></div>
+        <div class="kv-row"><span>Tectonic Drift</span><span>GNSS Crustal mm/24h</span></div>
+        <div class="kv-row"><span>Orbital Satellites</span><span>NASA VIIRS Radiative Flux</span></div>
+        <div class="kv-row"><span>GitHub Persistence</span><span id="m-gh">daniel1912t/FutureDisasterLens_full</span></div>
       </div>
 
       <!-- Card 2: Selected Threat Mathematical Probability Breakdown -->
       <div class="m-card">
-        <h4>2. Selected Threat Probability Math</h4>
+        <h4>2. Selected Threat Physics Probability Math</h4>
         <div style="font-size: 12px; font-weight: 600; margin-bottom: 8px;" id="m-calc-title">--</div>
         <div class="bar-wrap">
-          <div class="bar-label"><span>Regional Density (40% wt)</span><span id="m-b-dens">--</span></div>
+          <div class="bar-label"><span>OEF Density & b-Value Stress (40%)</span><span id="m-b-dens">--</span></div>
           <div class="bar-track"><div class="bar-fill" id="m-bar-dens" style="width:0%"></div></div>
         </div>
         <div class="bar-wrap">
-          <div class="bar-label"><span>Physical Energy (40% wt)</span><span id="m-b-int">--</span></div>
+          <div class="bar-label"><span>hPa Drop / GNSS mm / Flux (40%)</span><span id="m-b-int">--</span></div>
           <div class="bar-track"><div class="bar-fill" id="m-bar-int" style="width:0%"></div></div>
         </div>
         <div class="bar-wrap">
-          <div class="bar-label"><span>24h Momentum (20% wt)</span><span id="m-b-mom">--</span></div>
+          <div class="bar-label"><span>24h Inter-Event Acceleration (20%)</span><span id="m-b-mom">--</span></div>
           <div class="bar-track"><div class="bar-fill" id="m-bar-mom" style="width:0%"></div></div>
         </div>
         <div style="font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); margin-top: 8px;" id="m-b-meta">
-          400km Raw Readings: -- | 24h Surge: --
+          OEF b-value: -- | dP: -- hPa | GNSS: -- mm
         </div>
       </div>
 
@@ -592,7 +592,7 @@
       <div class="m-card">
         <h4>3. Live JSON & GitHub Data Feeds</h4>
         <p style="font-size: 12px; color: var(--text-dim); margin-bottom: 10px;">
-          Direct endpoints for the 1,000-record archive, raw sensor pool, and persistent GitHub JSON store:
+          Direct endpoints for the 1,000-record archive, raw physics channels, and GitHub JSON store:
         </p>
         <div class="endpoint-links">
           <a class="ep-link" href="/api/threats" target="_blank">/api/threats</a>
@@ -607,9 +607,9 @@
     <div class="table-controls">
       <div class="tab-btns">
         <button id="tab-forecasts" class="tab-btn active" onclick="switchMatrixTab('forecasts')">AI FORECAST ARCHIVE (<span id="cnt-forecasts">0</span>)</button>
-        <button id="tab-sensors" class="tab-btn" onclick="switchMatrixTab('sensors')">RAW 1,000-SENSOR STREAM (<span id="cnt-sensors">0</span>)</button>
+        <button id="tab-sensors" class="tab-btn" onclick="switchMatrixTab('sensors')">RAW 1,000-CHANNEL PHYSICS STREAM (<span id="cnt-sensors">0</span>)</button>
       </div>
-      <input id="matrix-search" class="search-box" type="text" placeholder="Filter by region, sensor, value..." oninput="renderMatrixTable()" />
+      <input id="matrix-search" class="search-box" type="text" placeholder="Filter by hPa, mm, OEF, coordinates..." oninput="renderMatrixTable()" />
     </div>
 
     <div class="data-table-wrap">
@@ -797,13 +797,14 @@
       const effects = Array.isArray(item.cascading_effects) ? item.cascading_effects : [];
       effList.innerHTML = effects.length
         ? effects.map(e => `<li>${e}</li>`).join('')
-        : '<li>Continuous raw telemetry stream active</li>';
+        : '<li>Continuous multi-channel physics stream active</li>';
 
       document.getElementById('m-calc-title').textContent = `${item.primary_threat} → ${item.probability}`;
       const b = item.calculation_breakdown;
       if (b) {
-        const regCount = b.regional_readings_400km ?? b.regional_anomalies_400km ?? '--';
-        const recentCount = b.recent_24h_readings ?? b.recent_24h_anomalies ?? '--';
+        const bVal = b.oef_b_value ?? '1.00';
+        const dP = b.max_barometric_drop_hpa ?? '0.0';
+        const gnssMm = b.max_gnss_drift_mm ?? '0.0';
         document.getElementById('m-b-dens').textContent = `${b.density_component}%`;
         document.getElementById('m-bar-dens').style.width = `${b.density_component}%`;
         document.getElementById('m-b-int').textContent = `${b.intensity_component}%`;
@@ -811,7 +812,7 @@
         document.getElementById('m-b-mom').textContent = `${b.momentum_component}%`;
         document.getElementById('m-bar-mom').style.width = `${b.momentum_component}%`;
         document.getElementById('m-b-meta').textContent =
-          `Sample N=${b.sample_size} | 400km Raw Readings: ${regCount} | 24h Surge: ${recentCount}`;
+          `OEF b-value: ${bVal} | Max dP: ${dP} hPa | GNSS Drift: ${gnssMm} mm/24h`;
       }
 
       document.querySelectorAll('.pin-item').forEach((el, idx) => {
@@ -881,16 +882,15 @@
         </tr>`).join('');
       } else {
         thead.innerHTML = `<tr>
-          <th>SOURCE</th><th>TYPE</th><th>RAW TELEMETRY READING</th><th>VALUE</th><th>LATITUDE</th><th>LONGITUDE</th>
+          <th>STATION / ARRAY</th><th>DOMAIN</th><th>RAW PHYSICAL MEASUREMENT</th><th>LATITUDE</th><th>LONGITUDE</th>
         </tr>`;
         const rows = telemetryPool1000.filter(s =>
           !q || JSON.stringify(s).toLowerCase().includes(q)
         );
         tbody.innerHTML = rows.slice(0, 300).map(s => `<tr>
-          <td style="color:var(--text-dim);">${s.sensor_source || 'RAW_STREAM'}</td>
+          <td style="color:var(--text-dim);">${s.sensor_source || 'PHYS_CH'}</td>
           <td style="color:var(--cyan);font-weight:700;">${s.category || '--'}</td>
-          <td style="color:#fff;">${s.raw_reading || s.title || '--'}</td>
-          <td>${s.magnitude || '--'}</td>
+          <td style="color:#fff;">${s.raw_reading || '--'}</td>
           <td>${s.lat}</td>
           <td>${s.lon}</td>
         </tr>`).join('');
@@ -935,19 +935,13 @@
         if (healthRes.ok) {
           const h = await healthRes.json();
           const poolCount = h.telemetry_pool_size || 1000;
-          document.getElementById('hud-sub').textContent = `STREAMING ${poolCount} RAW TELEMETRY SENSORS`;
           document.getElementById('hud-sensors').textContent = poolCount;
           document.getElementById('hud-archive').textContent = `${h.stored_threats_count || 0}/${h.max_threats_capacity || 1000}`;
-
-          document.getElementById('m-model').textContent = h.model || 'openai/gpt-oss-120b';
-          document.getElementById('m-key').textContent = `Slot #${h.active_key_slot || 1} of ${h.total_keys_loaded || 2}`;
-          document.getElementById('m-pool').textContent = `${poolCount} Live Sensors`;
           document.getElementById('m-gh').textContent = h.github_repo || 'daniel1912t/FutureDisasterLens_full';
         }
       } catch (e) {}
     }
 
-    // Live 1-second countdown timer
     setInterval(() => {
       if (!targetCountdownIso) return;
       const diff = new Date(targetCountdownIso).getTime() - Date.now();
