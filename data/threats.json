@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "South of Taliwang, Indonesia",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -10.56,
+    "lon": 117.2,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Road and bridge damage",
+      "Disruption of coastal communications"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T08:27:04Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Perry, Mississippi, USA",
     "severity": "Moderate",
@@ -127,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T20:12:00Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Hicks Bay Region, New Zealand",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -35.93,
-    "lon": 178.26,
-    "cascading_effects": [
-      "landslide risk",
-      "tsunami generation potential",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-27T06:53:49Z"
   }
 ]
