@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Sumbawa, Indonesia",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -10.77,
+    "lon": 117.1,
+    "cascading_effects": [
+      "Potential landslides in mountainous terrain",
+      "Disruption of local transportation routes",
+      "Risk of tsunami if offshore fault movement occurs"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T10:46:41Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Lafayette, Mississippi, USA",
     "severity": "Moderate",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-27T09:12:57Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "El Dorado, California, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 38.62,
-    "lon": -120.5,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in Sacramento region",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-27T09:03:09Z"
   }
 ]
