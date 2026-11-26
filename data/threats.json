@@ -1,5 +1,30 @@
 [
   {
+    "primary_threat": "Forecasted Major Earthquake Window",
+    "location": "Los Angeles County, California, USA",
+    "severity": "Severe",
+    "lat": 34.05,
+    "lon": -118.25,
+    "cascading_effects": [
+      "ground rupture",
+      "infrastructure collapse"
+    ],
+    "is_demo": false,
+    "probability": "38.3%",
+    "calculation_breakdown": {
+      "sample_size": 90,
+      "regional_readings_400km": 10,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 64.2,
+      "intensity_component": 31.5,
+      "momentum_component": 0.0
+    },
+    "time_of_event": "2026-11-27T17:58:01Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Surge Window",
     "location": "Bengal Bay, Bangladesh",
     "severity": "Severe",
