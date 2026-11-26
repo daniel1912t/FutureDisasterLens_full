@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "West of Houma, Tonga",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -20.54,
+    "lon": -177.76,
+    "cascading_effects": [
+      "Potential tsunami generation affecting nearby coastlines",
+      "Structural damage to offshore platforms and marine infrastructure",
+      "Disruption of regional communications and navigation systems"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T10:26:50Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Alleghany, Virginia, USA",
     "severity": "Moderate",
@@ -128,19 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-27T08:27:04Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 31.12,
-    "lon": -89.08,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in neighboring counties",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-27T08:17:13Z"
   }
 ]
