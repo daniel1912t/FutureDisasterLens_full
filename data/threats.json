@@ -1,6 +1,30 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Arequipa Region, Peru",
+    "severity": "Extreme",
+    "lat": -14.9934,
+    "lon": -75.8807,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "potential tsunami in coastal areas"
+    ],
+    "is_demo": false,
+    "probability": "56.9%",
+    "calculation_breakdown": {
+      "sample_size": 1000,
+      "regional_anomalies_400km": 8,
+      "recent_24h_anomalies": 0,
+      "peak_sensor_magnitude": 5.9,
+      "density_component": 67.4,
+      "intensity_component": 74.9,
+      "momentum_component": 0.0
+    },
+    "time_of_event": "2026-11-27T03:39:50Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Teluk Dalam, Indonesia",
     "severity": "Severe",
     "lat": 0.5027,
