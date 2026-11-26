@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Hicks Bay, New Zealand",
+    "severity": "Severe",
+    "probability": "80%",
+    "lat": -36.02,
+    "lon": 178.37,
+    "cascading_effects": [
+      "landslides",
+      "tsunami potential",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T22:04:37Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Bibb County, Alabama",
     "severity": "Moderate",
