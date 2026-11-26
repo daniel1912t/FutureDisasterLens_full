@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "North of Hicks Bay, New Zealand",
+    "severity": "Severe",
+    "probability": "78%",
+    "lat": -35.97,
+    "lon": 178.64,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Infrastructure damage to coastal communities",
+      "Disruption of maritime navigation"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T10:54:56Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Sumbawa, Indonesia",
     "severity": "Severe",
     "probability": "68%",
@@ -85,21 +100,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-27T10:57:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "North of Hicks Bay, New Zealand",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -35.93,
-    "lon": 178.26,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Aftershock sequence",
-      "Infrastructure damage to coastal communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-27T09:47:46Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
