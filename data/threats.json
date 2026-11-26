@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "El Dorado, California, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.62,
+    "lon": -120.5,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T14:32:19Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Hengchun, Taiwan",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T09:51:03Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Port-Vila, Vanuatu",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -17.65,
-    "lon": 168.22,
-    "cascading_effects": [
-      "Potential landslides",
-      "Infrastructure damage",
-      "Tsunami risk in coastal areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T12:42:51Z"
   }
 ]
