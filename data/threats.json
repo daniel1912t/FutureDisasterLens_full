@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "Pacific Ocean, Near Fiji",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.8,
+    "lon": -168.8,
+    "cascading_effects": [
+      "heavy rainfall",
+      "storm surge",
+      "coastal flooding"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T23:37:01Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Lafayette, Mississippi, USA",
     "severity": "Moderate",
@@ -127,19 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T23:15:04Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Hicks Bay Region, New Zealand",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -36.02,
-    "lon": 178.37,
-    "cascading_effects": [
-      "Potential aftershocks",
-      "Landslide risk in coastal areas"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T22:05:21Z"
   }
 ]
