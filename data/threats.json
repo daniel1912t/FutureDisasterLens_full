@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Hicks Bay Region, New Zealand",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -35.93,
+    "lon": 178.26,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami generation potential",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T06:53:49Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Port-Vila Region, Vanuatu",
     "severity": "Severe",
     "probability": "68%",
@@ -131,19 +146,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-27T04:11:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Coconino, Arizona, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 35.05,
-    "lon": -111.58,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-27T04:02:50Z"
   }
 ]
