@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Stevens, Washington, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 48.4,
+    "lon": -117.53,
+    "cascading_effects": [
+      "Air quality degradation",
+      "Potential road closures",
+      "Threat to nearby timber resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T13:22:27Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Highland, Virginia, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-27T10:54:56Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "West of Houma, Tonga",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -20.54,
-    "lon": -177.76,
-    "cascading_effects": [
-      "Potential tsunami generation affecting nearby coastlines",
-      "Structural damage to offshore platforms and marine infrastructure",
-      "Disruption of regional communications and navigation systems"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-27T10:26:50Z"
   }
 ]
