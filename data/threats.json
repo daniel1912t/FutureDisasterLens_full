@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Puerto Madero Region, Mexico",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 14.16,
+    "lon": -93.13,
+    "cascading_effects": [
+      "potential aftershocks",
+      "damage to roads and bridges"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T02:57:31Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Bibb, Alabama, USA",
     "severity": "Moderate",
@@ -130,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-27T01:16:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Waukesha, Wisconsin, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 42.92,
-    "lon": -88.48,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Evacuation of nearby residential areas",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-27T01:08:12Z"
   }
 ]
