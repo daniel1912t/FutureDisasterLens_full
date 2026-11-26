@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Kimbe Region, Papua New Guinea",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -6.35,
+    "lon": 151.54,
+    "cascading_effects": [
+      "landslide risk",
+      "infrastructure damage",
+      "tsunami potential"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T22:23:21Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Highland, Virginia, USA",
     "severity": "Moderate",
@@ -126,20 +141,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T20:27:13Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Hengchun, Taiwan",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 21.82,
-    "lon": 121.52,
-    "cascading_effects": [
-      "tsunami risk",
-      "infrastructure damage",
-      "landslide potential"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T20:00:35Z"
   }
 ]
