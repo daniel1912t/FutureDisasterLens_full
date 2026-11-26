@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Mineral, Montana, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 47.12,
+    "lon": -114.75,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T06:46:46Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Storm Window",
     "location": "South Pacific Ocean, Near Vanuatu",
     "severity": "Severe",
@@ -129,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-27T05:06:58Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Luwuk Region, Indonesia",
-    "severity": "Severe",
-    "probability": "80%",
-    "lat": -0.38,
-    "lon": 123.0,
-    "cascading_effects": [
-      "Potential landslides in nearby hills",
-      "Disruption of coastal shipping lanes",
-      "Possible tsunamigenic activity affecting nearby coastlines"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-27T04:58:36Z"
   }
 ]
