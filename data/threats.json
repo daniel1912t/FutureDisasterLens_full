@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Hicks Bay Region, New Zealand",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -35.97,
+    "lon": 178.64,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Landslide risk",
+      "Coastal tsunami warning"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T01:16:21Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Waukesha, Wisconsin, USA",
     "severity": "Moderate",
@@ -85,21 +100,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-27T00:22:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Hicks Bay, New Zealand",
-    "severity": "Severe",
-    "probability": "80%",
-    "lat": -36.02,
-    "lon": 178.37,
-    "cascading_effects": [
-      "landslides",
-      "tsunami potential",
-      "infrastructure damage"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T22:04:37Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
