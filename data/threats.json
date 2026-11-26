@@ -1,5 +1,30 @@
 [
   {
+    "primary_threat": "Forecasted Severe Thunderstorm Outbreak Window",
+    "location": "Northern Plains, United States",
+    "severity": "Severe",
+    "lat": 45.0,
+    "lon": -100.0,
+    "cascading_effects": [
+      "hail damage",
+      "localized flash flooding"
+    ],
+    "is_demo": false,
+    "probability": "23.8%",
+    "calculation_breakdown": {
+      "sample_size": 90,
+      "regional_readings_400km": 0,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 12.0,
+      "intensity_component": 31.5,
+      "momentum_component": 32.0
+    },
+    "time_of_event": "2026-11-28T03:17:35Z"
+  },
+  {
     "primary_threat": "Forecasted Tsunami Window",
     "location": "Nankai Coast, Japan",
     "severity": "Severe",
