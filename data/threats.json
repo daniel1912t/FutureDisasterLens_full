@@ -1,6 +1,20 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Bibb, Alabama, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 32.95,
+    "lon": -87.35,
+    "cascading_effects": [
+      "air quality degradation",
+      "potential evacuation orders"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T11:50:37Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Highland, Virginia, USA",
     "severity": "Severe",
     "probability": "81%",
@@ -40,21 +54,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-27T11:22:53Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Perry, Mississippi, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 31.12,
-    "lon": -89.08,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities",
-      "potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-27T11:14:34Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
@@ -100,20 +99,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-27T10:46:41Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Lafayette, Mississippi, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 34.49,
-    "lon": -89.42,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-27T10:36:43Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
