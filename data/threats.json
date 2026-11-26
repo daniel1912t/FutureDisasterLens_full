@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
+    "location": "Southern Fiji, Fiji",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -11.8,
+    "lon": -168.8,
+    "cascading_effects": [
+      "Coastal flooding",
+      "Landslides in mountainous terrain",
+      "Disruption of maritime shipping lanes"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T01:35:50Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Coconino, Arizona, USA",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-27T00:56:23Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Luwuk Region, Indonesia",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -0.38,
-    "lon": 123.0,
-    "cascading_effects": [
-      "Potential landslides in hilly terrain",
-      "Disruption of coastal shipping routes",
-      "Damage to offshore oil platforms"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T23:46:43Z"
   }
 ]
