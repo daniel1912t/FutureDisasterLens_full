@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Lafayette, Mississippi, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 34.49,
+    "lon": -89.42,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "damage to infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T05:16:37Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Alleghany, Virginia, USA",
     "severity": "Severe",
     "probability": "81%",
@@ -57,20 +72,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-27T04:39:08Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Bibb, Alabama, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 32.95,
-    "lon": -87.35,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-27T04:29:20Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
