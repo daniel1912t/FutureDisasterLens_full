@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Luwuk Region, Indonesia",
+    "severity": "Severe",
+    "probability": "80%",
+    "lat": -0.38,
+    "lon": 123.0,
+    "cascading_effects": [
+      "Potential landslides in nearby hills",
+      "Disruption of coastal shipping lanes",
+      "Possible tsunamigenic activity affecting nearby coastlines"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T04:58:36Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Mineral, Montana, USA",
     "severity": "Moderate",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-27T00:39:31Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "El Dorado, California, USA",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 38.62,
-    "lon": -120.5,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Evacuation of nearby communities",
-      "Potential strain on regional firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-27T02:31:12Z"
   }
 ]
