@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Port-Vila Region, Vanuatu",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -17.65,
+    "lon": 168.22,
+    "cascading_effects": [
+      "Potential tsunami generation",
+      "Infrastructure damage to coastal ports",
+      "Disruption of communication networks"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T05:42:33Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Puerto Madero Region, Mexico",
     "severity": "Severe",
     "probability": "68%",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-27T04:02:50Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Hicks Bay Region, New Zealand",
-    "severity": "Severe",
-    "probability": "78%",
-    "lat": -35.9,
-    "lon": 178.55,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Infrastructure damage",
-      "Aftershock risk"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T17:53:02Z"
   }
 ]
