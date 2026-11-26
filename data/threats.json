@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "North of Hicks Bay, New Zealand",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": -35.9,
+    "lon": 178.55,
+    "cascading_effects": [
+      "Potential landslides",
+      "Tsunami generation risk"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T09:39:31Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Greene, Tennessee, USA",
     "severity": "Moderate",
@@ -83,21 +97,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T22:45:06Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Hicks Bay Region, New Zealand",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -35.97,
-    "lon": 178.64,
-    "cascading_effects": [
-      "Potential tsunami generation",
-      "Infrastructure damage",
-      "Aftershock sequence"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-27T08:35:20Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
