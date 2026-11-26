@@ -2,16 +2,17 @@
   {
     "primary_threat": "Forecasted Seismic Window",
     "location": "North of Hicks Bay, New Zealand",
-    "severity": "Moderate",
+    "severity": "Severe",
     "probability": "68%",
-    "lat": -35.9,
-    "lon": 178.55,
+    "lat": -35.93,
+    "lon": 178.26,
     "cascading_effects": [
-      "Potential landslides",
-      "Tsunami generation risk"
+      "Potential tsunami generation",
+      "Aftershock sequence",
+      "Infrastructure damage to coastal communities"
     ],
     "is_demo": false,
-    "time_of_event": "2026-11-27T09:39:31Z"
+    "time_of_event": "2026-11-27T09:47:46Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
