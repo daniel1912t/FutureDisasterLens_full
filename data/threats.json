@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Port-Vila Region, Vanuatu",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -17.65,
+    "lon": 168.22,
+    "cascading_effects": [
+      "landslide risk",
+      "tsunami generation",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T00:39:31Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "El Dorado, California, USA",
     "severity": "Severe",
@@ -129,20 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-27T01:08:12Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Mineral, Montana, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 47.12,
-    "lon": -114.75,
-    "cascading_effects": [
-      "Air quality degradation",
-      "Potential evacuation of nearby communities",
-      "Strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T14:48:48Z"
   }
 ]
