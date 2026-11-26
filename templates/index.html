@@ -1,363 +1,632 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>FutureDisasterLens AI - Planetary Telemetry</title>
-
-  <script>
-    window.process = window.process || { env: { NODE_ENV: 'production' } };
-  </script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FutureDisasterLens // Planetary Threat Telemetry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
   <style>
     :root {
-      --primary-blue: #0284c7;
-      --accent-cyan: #38bdf8;
-      --bg-panel: rgba(8, 22, 48, 0.88);
-      --border-blue: rgba(56, 189, 248, 0.35);
+      --bg-void: #03060c;
+      --glass: rgba(8, 15, 28, 0.78);
+      --glass-heavy: rgba(6, 11, 22, 0.94);
+      --border: rgba(56, 189, 248, 0.22);
+      --border-bright: rgba(56, 189, 248, 0.55);
+      --cyan: #38bdf8;
+      --emerald: #10b981;
+      --amber: #f59e0b;
+      --crimson: #ef4444;
+      --text-main: #f1f5f9;
+      --text-dim: #94a3b8;
+      --font-ui: 'Inter', system-ui, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      -webkit-tap-highlight-color: transparent;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      background: radial-gradient(circle at center, #05132e 0%, #01040d 100%);
-      color: #e0f2fe;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      background: radial-gradient(circle at 50% 45%, #0a162b 0%, var(--bg-void) 75%);
+      color: var(--text-main);
+      font-family: var(--font-ui);
       overflow: hidden;
-      width: 100vw;
       height: 100vh;
-      height: 100dvh;
-      touch-action: none;
+      width: 100vw;
+      user-select: none;
     }
 
-    #canvas-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+    #globe-container {
+      position: fixed;
+      inset: 0;
       z-index: 1;
     }
 
-    /* Standard Desktop & Large Screens */
-    #sidebar {
-      position: absolute;
-      top: 20px;
+    /* Subtle tactical grid overlay */
+    .scanlines {
+      position: fixed;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+      background:
+        linear-gradient(rgba(56, 189, 248, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(56, 189, 248, 0.03) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: radial-gradient(circle at center, transparent 35%, black 100%);
+    }
+
+    /* TOP COMMAND BAR */
+    .top-hud {
+      position: fixed;
+      top: 16px;
       left: 20px;
+      right: 20px;
       z-index: 10;
-      width: clamp(320px, 28vw, 420px);
-      max-height: calc(100vh - 40px);
-      max-height: calc(100dvh - 40px);
-      background: var(--bg-panel);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid var(--border-blue);
-      border-radius: 16px;
-      padding: 20px;
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75), inset 0 0 15px rgba(56, 189, 248, 0.08);
       display: flex;
-      flex-direction: column;
-      gap: 12px;
-      overflow-y: auto;
-      transition: transform 0.3s ease, opacity 0.3s ease;
-    }
-
-    /* Tablet Screen Adjustments */
-    @media (min-width: 681px) and (max-width: 1180px) {
-      #sidebar {
-        top: 16px;
-        left: 16px;
-        bottom: auto;
-        right: auto;
-        width: 320px;
-        max-height: calc(100vh - 32px);
-        max-height: calc(100dvh - 32px);
-        padding: 16px;
-        gap: 10px;
-        border-radius: 14px;
-      }
-      .mobile-handle {
-        display: none !important;
-      }
-    }
-
-    /* Mobile Sheet Drawer */
-    @media (max-width: 680px) {
-      #sidebar {
-        top: auto;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        max-height: 44vh;
-        max-height: 44dvh;
-        border-radius: 20px 20px 0 0;
-        border-bottom: none;
-        padding: 10px 16px 18px 16px;
-        gap: 8px;
-        box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.85);
-      }
-      .mobile-handle {
-        display: block !important;
-      }
-    }
-
-    .mobile-handle {
-      display: none;
-      width: 40px;
-      height: 4px;
-      background: rgba(255, 255, 255, 0.3);
-      border-radius: 4px;
-      margin: 0 auto 6px auto;
-    }
-
-    .badge-container {
-      display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      pointer-events: none;
     }
 
-    .badge {
-      display: inline-flex;
+    .brand-pill, .hud-controls {
+      pointer-events: auto;
+      background: var(--glass);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 10px 16px;
+      display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 14px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+    }
+
+    .pulse-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--emerald);
+      box-shadow: 0 0 12px var(--emerald);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.35); opacity: 0.55; }
+    }
+
+    .brand-title {
+      font-family: var(--font-mono);
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      color: #fff;
+    }
+
+    .brand-sub {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--cyan);
+    }
+
+    .stat-chip {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-dim);
       padding: 4px 10px;
-      border-radius: 9999px;
+      border-radius: 6px;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(148, 163, 184, 0.15);
+    }
+
+    .stat-chip strong { color: #fff; }
+
+    .btn-matrix {
+      background: linear-gradient(135deg, rgba(14, 165, 233, 0.25), rgba(56, 189, 248, 0.12));
+      border: 1px solid var(--border-bright);
+      color: #fff;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 8px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      letter-spacing: 0.05em;
+    }
+
+    .btn-matrix:hover {
+      background: rgba(56, 189, 248, 0.3);
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+      transform: translateY(-1px);
+    }
+
+    /* LEFT ACTIVE THREAT CARD */
+    .threat-hud {
+      position: fixed;
+      left: 20px;
+      bottom: 20px;
+      width: 390px;
+      max-width: calc(100vw - 40px);
+      z-index: 10;
+      background: var(--glass);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.65);
+    }
+
+    .cluster-selector {
+      width: 100%;
+      background: rgba(15, 23, 42, 0.9);
+      color: var(--cyan);
+      border: 1px solid var(--border-bright);
+      border-radius: 8px;
+      padding: 7px 10px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      margin-bottom: 12px;
+      display: none;
+      outline: none;
+    }
+
+    .badge-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .sev-badge {
+      font-family: var(--font-mono);
       font-size: 11px;
       font-weight: 700;
-      letter-spacing: 0.6px;
-      text-transform: uppercase;
-    }
-    .badge-demo {
-      background: rgba(234, 179, 8, 0.18);
-      border: 1px solid rgba(234, 179, 8, 0.6);
-      color: #fef08a;
-    }
-    .badge-live {
-      background: rgba(16, 185, 129, 0.18);
-      border: 1px solid rgba(16, 185, 129, 0.6);
-      color: #6ee7b7;
-    }
-    .status-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: currentColor;
-      box-shadow: 0 0 8px currentColor;
-    }
-
-    /* Dropdown Selector for Overlapping Area Threats */
-    #cluster-picker-container {
-      display: none;
-      background: rgba(14, 165, 233, 0.15);
-      border: 1px solid rgba(56, 189, 248, 0.45);
-      border-radius: 10px;
-      padding: 8px 10px;
-    }
-
-    .dropdown-label {
-      font-size: 10px;
-      font-weight: 700;
-      color: #7dd3fc;
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
-      margin-bottom: 4px;
-    }
-
-    #threat-selector {
-      width: 100%;
-      background: #081a38;
-      color: #f8fafc;
-      border: 1px solid var(--border-blue);
+      padding: 3px 9px;
       border-radius: 6px;
-      padding: 6px 8px;
-      font-size: 12px;
-      font-weight: 600;
-      outline: none;
-      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
     }
 
-    #threat-selector option {
-      background: #05132e;
-      color: #e0f2fe;
+    .sev-Extreme { background: rgba(239, 68, 68, 0.22); color: #fca5a5; border: 1px solid var(--crimson); }
+    .sev-Severe { background: rgba(245, 158, 11, 0.22); color: #fcd34d; border: 1px solid var(--amber); }
+    .sev-Moderate { background: rgba(56, 189, 248, 0.2); color: #7dd3fc; border: 1px solid var(--cyan); }
+
+    .prob-pill {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--emerald);
     }
 
     .threat-title {
-      font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+      font-size: 17px;
       font-weight: 700;
-      color: #ffffff;
       line-height: 1.3;
-      text-shadow: 0 2px 8px rgba(56, 189, 248, 0.4);
+      margin-bottom: 4px;
+      color: #fff;
     }
 
-    .info-card {
-      background: rgba(15, 32, 64, 0.6);
-      border: 1px solid rgba(56, 189, 248, 0.2);
-      border-radius: 12px;
-      padding: 10px 12px;
-    }
-
-    .label {
-      font-size: 10px;
-      text-transform: uppercase;
-      font-weight: 700;
-      letter-spacing: 0.8px;
-      color: var(--accent-cyan);
-      margin-bottom: 2px;
-    }
-
-    .value {
-      font-size: 13.5px;
-      font-weight: 600;
-      color: #f8fafc;
+    .threat-loc {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-bottom: 12px;
     }
 
     .countdown-box {
-      background: rgba(14, 165, 233, 0.14);
-      border: 1px solid rgba(56, 189, 248, 0.5);
-      box-shadow: 0 0 14px rgba(14, 165, 233, 0.25);
-    }
-    .countdown-primary {
-      font-size: 15.5px;
-      font-weight: 800;
-      color: var(--accent-cyan);
-      letter-spacing: 0.3px;
-    }
-    .eta-sub {
-      font-size: 10px;
-      color: #94a3b8;
-      margin-top: 2px;
+      background: rgba(2, 6, 23, 0.75);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: 10px;
+      padding: 10px 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
     }
 
-    .grid-two {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    .countdown-label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--text-dim);
+      text-transform: uppercase;
+    }
+
+    .countdown-val {
+      font-family: var(--font-mono);
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--cyan);
+    }
+
+    .effects-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 12px;
+      color: #cbd5e1;
+    }
+
+    .effects-list li::before {
+      content: "▸ ";
+      color: var(--cyan);
+      font-family: var(--font-mono);
+    }
+
+    /* RIGHT QUICK PIN LIST */
+    .pin-rail {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 280px;
+      max-height: 46vh;
+      overflow-y: auto;
+      z-index: 10;
+      background: var(--glass);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
       gap: 8px;
     }
 
-    ul.impact-list {
-      list-style-type: none;
-      margin-top: 3px;
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-    ul.impact-list li {
-      font-size: 12px;
-      color: #cbd5e1;
-      position: relative;
-      padding-left: 14px;
-      line-height: 1.35;
-    }
-    ul.impact-list li::before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      color: var(--accent-cyan);
-      font-weight: bold;
+    .rail-header {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--cyan);
+      letter-spacing: 0.06em;
+      padding-bottom: 4px;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.15);
     }
 
-    .tip-tag {
-      font-size: 10.5px;
-      color: #93c5fd;
-      text-align: center;
-      padding: 6px;
+    .pin-item {
+      background: rgba(15, 23, 42, 0.65);
+      border: 1px solid rgba(148, 163, 184, 0.14);
       border-radius: 8px;
-      background: rgba(56, 189, 248, 0.08);
-      border: 1px dashed rgba(56, 189, 248, 0.3);
+      padding: 8px 10px;
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+
+    .pin-item:hover, .pin-item.active {
+      border-color: var(--cyan);
+      background: rgba(14, 165, 233, 0.16);
+    }
+
+    .pin-item-top {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      margin-bottom: 3px;
+    }
+
+    .pin-item-title {
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* FULL ADVANCED INTEL MATRIX OVERLAY */
+    .matrix-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      background: rgba(2, 5, 12, 0.85);
+      backdrop-filter: blur(18px);
+      display: none;
+      flex-direction: column;
+      padding: 24px;
+      overflow-y: auto;
+      user-select: text;
+    }
+
+    .matrix-modal.open { display: flex; }
+
+    .matrix-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+    }
+
+    .matrix-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .m-card {
+      background: var(--glass-heavy);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+    }
+
+    .m-card h4 {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--cyan);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      letter-spacing: 0.06em;
+    }
+
+    .kv-row {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      padding: 4px 0;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.08);
+    }
+
+    .kv-row span:first-child { color: var(--text-dim); }
+    .kv-row span:last-child { color: #fff; font-weight: 600; }
+
+    .bar-wrap { margin-top: 6px; }
+    .bar-label {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      margin-bottom: 3px;
+    }
+    .bar-track {
+      height: 6px;
+      background: rgba(30, 41, 59, 0.9);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--cyan), var(--emerald));
+      transition: width 0.3s ease;
+    }
+
+    .endpoint-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .ep-link {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--cyan);
+      text-decoration: none;
+      background: rgba(14, 165, 233, 0.12);
+      border: 1px solid var(--border);
+      padding: 5px 10px;
+      border-radius: 6px;
+    }
+
+    .ep-link:hover { background: rgba(14, 165, 233, 0.25); }
+
+    .table-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .tab-btns { display: flex; gap: 8px; }
+
+    .tab-btn {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      padding: 6px 12px;
+      border-radius: 6px;
+      background: rgba(15, 23, 42, 0.8);
+      color: var(--text-dim);
+      border: 1px solid var(--border);
+      cursor: pointer;
+    }
+
+    .tab-btn.active {
+      background: rgba(56, 189, 248, 0.22);
+      color: #fff;
+      border-color: var(--cyan);
+    }
+
+    .search-box {
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid var(--border);
+      color: #fff;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      padding: 6px 12px;
+      border-radius: 6px;
+      width: 260px;
+    }
+
+    .data-table-wrap {
+      flex: 1;
+      overflow: auto;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--glass-heavy);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: var(--font-mono);
+      font-size: 12px;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 9px 12px;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+    }
+
+    th {
+      position: sticky;
+      top: 0;
+      background: #070e1c;
+      color: var(--cyan);
+      font-size: 11px;
+    }
+
+    tr:hover td { background: rgba(56, 189, 248, 0.06); }
+
+    @media (max-width: 820px) {
+      .pin-rail { display: none; }
+      .stat-chip { display: none; }
     }
   </style>
 </head>
 <body>
 
-  <aside id="sidebar">
-    <div class="mobile-handle"></div>
-    <div class="badge-container">
-      <div id="status-badge" class="badge badge-demo">
-        <span class="status-dot"></span>
-        <span id="badge-text">Scanning Telemetry...</span>
-      </div>
-      <span id="coords-text" style="font-family: monospace; font-size: 11px; color: #7dd3fc;">0.00°, 0.00°</span>
-    </div>
+  <div id="globe-container"></div>
+  <div class="scanlines"></div>
 
-    <!-- Multi-threat Dropdown in Same Geographic Area -->
-    <div id="cluster-picker-container">
-      <div class="dropdown-label">Multiple Hazards In This Region:</div>
-      <select id="threat-selector"></select>
-    </div>
-
-    <h1 id="threat-title" class="threat-title">Scanning Global Telemetry...</h1>
-
-    <div class="info-card">
-      <div class="label">Target Geographic Region</div>
-      <div id="threat-location" class="value">Awaiting coordinates...</div>
-    </div>
-
-    <div class="info-card countdown-box">
-      <div class="label">Impending Forecast Window</div>
-      <div id="countdown-timer" class="countdown-primary">Calculating ETA...</div>
-      <div id="eta-timestamp" class="eta-sub">Target: Synchronizing...</div>
-    </div>
-
-    <div class="grid-two">
-      <div class="info-card">
-        <div class="label">Severity Level</div>
-        <div id="threat-severity" class="value">--</div>
-      </div>
-      <div class="info-card">
-        <div class="label">Probability</div>
-        <div id="threat-probability" class="value" style="color: var(--accent-cyan);">--</div>
+  <!-- TOP COMMAND BAR -->
+  <div class="top-hud">
+    <div class="brand-pill">
+      <div class="pulse-dot" id="status-dot"></div>
+      <div>
+        <div class="brand-title">FUTUREDISASTERLENS // ORBITAL TELEMETRY</div>
+        <div class="brand-sub" id="hud-sub">INITIALIZING 1000-SENSOR MATRIX...</div>
       </div>
     </div>
 
-    <div class="info-card">
-      <div class="label">Predicted Cascading Effects</div>
-      <ul id="impact-list" class="impact-list">
-        <li>Evaluating incoming telemetry...</li>
-      </ul>
+    <div class="hud-controls">
+      <div class="stat-chip">SENSORS: <strong id="hud-sensors">1000</strong></div>
+      <div class="stat-chip">ARCHIVE: <strong id="hud-archive">--</strong></div>
+      <button class="btn-matrix" onclick="toggleMatrix(true)">
+        <span>⚡</span> INTEL MATRIX
+      </button>
+    </div>
+  </div>
+
+  <!-- LEFT ACTIVE THREAT HUD -->
+  <div class="threat-hud">
+    <select id="cluster-select" class="cluster-selector" onchange="onClusterSelect(this.value)"></select>
+
+    <div class="badge-row">
+      <span id="hud-sev" class="sev-badge sev-Severe">SEVERE</span>
+      <span id="hud-prob" class="prob-pill">PROBABILITY: --%</span>
     </div>
 
-    <div class="tip-tag">
-      🎯 Tap any red pulsing beacon on Earth to magnetize camera to it
-    </div>
-  </aside>
+    <div id="hud-title" class="threat-title">Synchronizing Planetary Telemetry...</div>
+    <div id="hud-loc" class="threat-loc">LAT -- // LON --</div>
 
-  <div id="canvas-container"></div>
+    <div class="countdown-box">
+      <div>
+        <div class="countdown-label">ESTIMATED IMPACT WINDOW</div>
+        <div id="hud-eta-utc" style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8;">--</div>
+      </div>
+      <div id="hud-countdown" class="countdown-val">--:--:--</div>
+    </div>
+
+    <ul id="hud-effects" class="effects-list">
+      <li>Calibrating USGS & NASA EONET sensor streams</li>
+    </ul>
+  </div>
+
+  <!-- RIGHT ACTIVE PINS RAIL -->
+  <div class="pin-rail">
+    <div class="rail-header">ACTIVE REGIONAL CLUSTERS</div>
+    <div id="pin-list"></div>
+  </div>
+
+  <!-- ADVANCED INTEL MATRIX DRAWER -->
+  <div id="matrix-modal" class="matrix-modal">
+    <div class="matrix-top">
+      <div>
+        <div class="brand-title" style="font-size: 16px;">PLANETARY INTEL & STATISTICAL PROBABILITY MATRIX</div>
+        <div class="brand-sub">LIVE ENGINE DIAGNOSTICS • 1,000-SENSOR PROBABILITY MODEL • GITHUB ARCHIVE</div>
+      </div>
+      <button class="btn-matrix" onclick="toggleMatrix(false)">✕ CLOSE MATRIX</button>
+    </div>
+
+    <div class="matrix-grid">
+      <!-- Card 1: Engine & Pipeline Health -->
+      <div class="m-card">
+        <h4>1. Autonomous Engine Telemetry</h4>
+        <div class="kv-row"><span>Engine Status</span><span id="m-status">--</span></div>
+        <div class="kv-row"><span>AI Model</span><span id="m-model">--</span></div>
+        <div class="kv-row"><span>Active Groq Key</span><span id="m-key">--</span></div>
+        <div class="kv-row"><span>Sensor Pool (N)</span><span id="m-pool">--</span></div>
+        <div class="kv-row"><span>GitHub Sync</span><span id="m-gh">--</span></div>
+      </div>
+
+      <!-- Card 2: Selected Threat Mathematical Probability Breakdown -->
+      <div class="m-card">
+        <h4>2. Selected Threat Probability Math</h4>
+        <div style="font-size: 12px; font-weight: 600; margin-bottom: 8px;" id="m-calc-title">--</div>
+        <div class="bar-wrap">
+          <div class="bar-label"><span>Regional Density (40% wt)</span><span id="m-b-dens">--</span></div>
+          <div class="bar-track"><div class="bar-fill" id="m-bar-dens" style="width:0%"></div></div>
+        </div>
+        <div class="bar-wrap">
+          <div class="bar-label"><span>Physical Energy (40% wt)</span><span id="m-b-int">--</span></div>
+          <div class="bar-track"><div class="bar-fill" id="m-bar-int" style="width:0%"></div></div>
+        </div>
+        <div class="bar-wrap">
+          <div class="bar-label"><span>24h Momentum (20% wt)</span><span id="m-b-mom">--</span></div>
+          <div class="bar-track"><div class="bar-fill" id="m-bar-mom" style="width:0%"></div></div>
+        </div>
+        <div style="font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); margin-top: 8px;" id="m-b-meta">
+          400km Anomalies: -- | 24h Surge: --
+        </div>
+      </div>
+
+      <!-- Card 3: Direct JSON & GitHub Data Endpoints -->
+      <div class="m-card">
+        <h4>3. Live JSON & GitHub Data Feeds</h4>
+        <p style="font-size: 12px; color: var(--text-dim); margin-bottom: 10px;">
+          Direct endpoints for the 1,000-record archive, raw sensor pool, and persistent GitHub JSON store:
+        </p>
+        <div class="endpoint-links">
+          <a class="ep-link" href="/api/threats" target="_blank">/api/threats</a>
+          <a class="ep-link" href="/api/all_threats" target="_blank">/api/all_threats (1000)</a>
+          <a class="ep-link" href="/api/telemetry_1000" target="_blank">/api/telemetry_1000</a>
+          <a class="ep-link" href="/api/ai_health" target="_blank">/api/ai_health</a>
+          <a class="ep-link" href="https://github.com/daniel1912t/FutureDisasterLens_full/blob/main/data/threats.json" target="_blank">GitHub data/threats.json ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-controls">
+      <div class="tab-btns">
+        <button id="tab-forecasts" class="tab-btn active" onclick="switchMatrixTab('forecasts')">AI FORECAST ARCHIVE (<span id="cnt-forecasts">0</span>)</button>
+        <button id="tab-sensors" class="tab-btn" onclick="switchMatrixTab('sensors')">RAW 1,000-SENSOR POOL (<span id="cnt-sensors">0</span>)</button>
+      </div>
+      <input id="matrix-search" class="search-box" type="text" placeholder="Filter by region, hazard, magnitude..." oninput="renderMatrixTable()" />
+    </div>
+
+    <div class="data-table-wrap">
+      <table>
+        <thead id="matrix-thead"></thead>
+        <tbody id="matrix-tbody"></tbody>
+      </table>
+    </div>
+  </div>
 
   <script>
-    const container = document.getElementById('canvas-container');
+    // ----------------- THREE.JS 3D EARTH SETUP -----------------
+    const container = document.getElementById('globe-container');
     const scene = new THREE.Scene();
-
-    const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 2000);
-
-    const EARTH_RADIUS = 75;
-
-    function getResponsiveSettings() {
-      const w = window.innerWidth;
-      const h = window.innerHeight;
-      const isMobile = w <= 680;
-      const isTablet = w > 680 && w <= 1180;
-
-      if (isMobile) {
-        return { dist: 285, yCam: 46, yTarget: 22 };
-      } else if (isTablet) {
-        return { dist: 250, yCam: 0, yTarget: 0 };
-      } else {
-        return { dist: 235, yCam: 0, yTarget: 0 };
-      }
-    }
-
-    const initialSettings = getResponsiveSettings();
-    camera.position.set(0, initialSettings.yCam, initialSettings.dist);
+    const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.set(0, 1.2, 4.2);
 
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -367,351 +636,348 @@
     const controls = new THREE.OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
     controls.dampingFactor = 0.05;
-    controls.minDistance = 90;
-    controls.maxDistance = 550;
+    controls.minDistance = 2.2;
+    controls.maxDistance = 8.0;
     controls.autoRotate = true;
-    controls.autoRotateSpeed = 0.35;
-    controls.target.set(0, initialSettings.yTarget, 0);
+    controls.autoRotateSpeed = 0.45;
 
-    // NASA Satellite Texture
-    const textureLoader = new THREE.TextureLoader();
-    textureLoader.setCrossOrigin('anonymous');
+    // Lighting
+    scene.add(new THREE.AmbientLight(0x334155, 1.4));
+    const dirLight = new THREE.DirectionalLight(0x38bdf8, 1.8);
+    dirLight.position.set(5, 3, 5);
+    scene.add(dirLight);
 
-    const earthTexture = textureLoader.load(
-      'https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/earth_atmos_2048.jpg'
+    // Earth Group
+    const earthGroup = new THREE.Group();
+    scene.add(earthGroup);
+
+    const EARTH_RADIUS = 1.5;
+    const texLoader = new THREE.TextureLoader();
+    const earthTex = texLoader.load('https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg');
+    const bumpTex = texLoader.load('https://unpkg.com/three-globe/example/img/earth-topology.png');
+
+    const earthMesh = new THREE.Mesh(
+      new THREE.SphereGeometry(EARTH_RADIUS, 64, 64),
+      new THREE.MeshPhongMaterial({
+        map: earthTex,
+        bumpMap: bumpTex,
+        bumpScale: 0.03,
+        specular: new THREE.Color(0x1e293b),
+        shininess: 14
+      })
     );
+    earthGroup.add(earthMesh);
 
-    const earthGeo = new THREE.SphereGeometry(EARTH_RADIUS, 64, 64);
-    const earthMat = new THREE.MeshPhongMaterial({
-      map: earthTexture,
-      color: 0x82c6fc,
-      specular: 0x0369a1,
-      shininess: 25
-    });
-    const earth = new THREE.Mesh(earthGeo, earthMat);
-    scene.add(earth);
+    // Subtle wireframe latitude/longitude grid + outer atmosphere halo
+    const wireMesh = new THREE.Mesh(
+      new THREE.SphereGeometry(EARTH_RADIUS + 0.008, 36, 24),
+      new THREE.MeshBasicMaterial({ color: 0x38bdf8, wireframe: true, transparent: true, opacity: 0.06 })
+    );
+    earthGroup.add(wireMesh);
 
-    // Ozone Glow
-    const atmosphereGeo = new THREE.SphereGeometry(EARTH_RADIUS * 1.025, 64, 64);
-    const atmosphereMat = new THREE.MeshBasicMaterial({
-      color: 0x38bdf8,
-      transparent: true,
-      opacity: 0.14,
-      side: THREE.BackSide
-    });
-    scene.add(new THREE.Mesh(atmosphereGeo, atmosphereMat));
+    const atmoMesh = new THREE.Mesh(
+      new THREE.SphereGeometry(EARTH_RADIUS + 0.08, 64, 64),
+      new THREE.MeshBasicMaterial({ color: 0x0ea5e9, transparent: true, opacity: 0.11, side: THREE.BackSide })
+    );
+    earthGroup.add(atmoMesh);
 
-    // Balanced Lighting
-    const keyLight = new THREE.DirectionalLight(0xffffff, 0.9);
-    keyLight.position.set(200, 100, 200);
-    scene.add(keyLight);
+    // Orbital telemetry rings
+    const ringGeo = new THREE.RingGeometry(1.92, 1.935, 128);
+    const ringMat = new THREE.MeshBasicMaterial({ color: 0x38bdf8, side: THREE.DoubleSide, transparent: true, opacity: 0.22 });
+    const orbitRing = new THREE.Mesh(ringGeo, ringMat);
+    orbitRing.rotation.x = Math.PI / 2.4;
+    scene.add(orbitRing);
 
-    const fillLight = new THREE.DirectionalLight(0x7dd3fc, 0.7);
-    fillLight.position.set(-200, -80, -200);
-    scene.add(fillLight);
+    const markersGroup = new THREE.Group();
+    earthGroup.add(markersGroup);
 
-    const ambientLight = new THREE.AmbientLight(0x162a45, 1.4);
-    scene.add(ambientLight);
-
-    function latLonToVector3(lat, lon, radius) {
+    function latLonToVec3(lat, lon, radius) {
       const phi = (90 - lat) * (Math.PI / 180);
       const theta = (lon + 180) * (Math.PI / 180);
       return new THREE.Vector3(
-        -(radius * Math.sin(phi) * Math.cos(theta)),
+        -radius * Math.sin(phi) * Math.cos(theta),
         radius * Math.cos(phi),
         radius * Math.sin(phi) * Math.sin(theta)
       );
     }
 
-    // Great-circle Haversine Distance Formula in Kilometers
-    function haversineDistanceKm(lat1, lon1, lat2, lon2) {
+    // ----------------- GEOSPATIAL CLUSTERING & STATE -----------------
+    let activeClusters = [];
+    let currentClusterIdx = 0;
+    let currentClusterItemIdx = 0;
+    let allForecastArchive = [];
+    let telemetryPool1000 = [];
+    let activeMatrixTab = 'forecasts';
+    let targetCountdownIso = null;
+
+    function haversineKm(lat1, lon1, lat2, lon2) {
       const R = 6371;
       const dLat = (lat2 - lat1) * Math.PI / 180;
       const dLon = (lon2 - lon1) * Math.PI / 180;
-      const a = 
-        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-        Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * 
-        Math.sin(dLon / 2) * Math.sin(dLon / 2);
-      const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-      return R * c;
+      const a = Math.sin(dLat / 2) ** 2 +
+        Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.sin(dLon / 2) ** 2;
+      return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
     }
 
-    // Cluster threats within 350 km of each other into geographic bundles
-    function clusterThreatsByProximity(threatList, maxDistanceKm = 350) {
+    function clusterThreats(items) {
       const clusters = [];
-
-      threatList.forEach(threat => {
-        const tLat = threat.lat || 0;
-        const tLon = threat.lon || 0;
-
-        let added = false;
+      items.forEach(item => {
+        const lat = parseFloat(item.lat) || 0;
+        const lon = parseFloat(item.lon) || 0;
+        let placed = false;
         for (const c of clusters) {
-          const dist = haversineDistanceKm(c.lat, c.lon, tLat, tLon);
-          if (dist <= maxDistanceKm) {
-            c.threats.push(threat);
-            added = true;
+          if (haversineKm(lat, lon, c.lat, c.lon) <= 350) {
+            c.items.push(item);
+            placed = true;
             break;
           }
         }
-
-        if (!added) {
-          clusters.push({
-            lat: tLat,
-            lon: tLon,
-            threats: [threat]
-          });
-        }
+        if (!placed) clusters.push({ lat, lon, items: [item] });
       });
-
       return clusters;
     }
 
-    const threatPins = [];
-    const pinGroup = new THREE.Group();
-    scene.add(pinGroup);
-
-    function clearPins() {
-      while (pinGroup.children.length > 0) {
-        pinGroup.remove(pinGroup.children[0]);
-      }
-      threatPins.length = 0;
+    function severityColor(sev) {
+      const s = (sev || '').toLowerCase();
+      if (s === 'extreme') return 0xef4444;
+      if (s === 'severe') return 0xf59e0b;
+      return 0x38bdf8;
     }
 
-    function createClusterPin(cluster) {
-      const pos = latLonToVector3(cluster.lat, cluster.lon, EARTH_RADIUS + 0.8);
+    function rebuildGlobePins() {
+      while (markersGroup.children.length > 0) markersGroup.remove(markersGroup.children[0]);
 
-      const marker = new THREE.Group();
-      marker.position.copy(pos);
+      activeClusters.forEach((cluster, idx) => {
+        const primary = cluster.items[0];
+        const col = severityColor(primary.severity);
+        const pos = latLonToVec3(cluster.lat, cluster.lon, EARTH_RADIUS + 0.02);
 
-      // Core sphere size slightly larger if multiple disasters in this location
-      const count = cluster.threats.length;
-      const coreSize = count > 1 ? 4.3 : 3.6;
-      const coreGeo = new THREE.SphereGeometry(coreSize, 16, 16);
-      const coreMat = new THREE.MeshBasicMaterial({ color: count > 1 ? 0xf59e0b : 0xef4444 });
-      const coreMesh = new THREE.Mesh(coreGeo, coreMat);
-      
-      coreMesh.userData = { cluster: cluster, worldPos: pos.clone() };
-      marker.add(coreMesh);
-      threatPins.push(coreMesh);
+        const pin = new THREE.Mesh(
+          new THREE.SphereGeometry(idx === currentClusterIdx ? 0.042 : 0.028, 16, 16),
+          new THREE.MeshBasicMaterial({ color: col })
+        );
+        pin.position.copy(pos);
 
-      // Outer Alert Ring
-      const ringGeo = new THREE.RingGeometry(count > 1 ? 5.2 : 4.2, count > 1 ? 8.6 : 7.2, 32);
-      const ringMat = new THREE.MeshBasicMaterial({
-        color: count > 1 ? 0xfbbf24 : 0xf87171,
-        side: THREE.DoubleSide,
-        transparent: true,
-        opacity: 0.9
-      });
-      const ringMesh = new THREE.Mesh(ringGeo, ringMat);
-      ringMesh.lookAt(pos.clone().multiplyScalar(2));
-      marker.add(ringMesh);
+        const halo = new THREE.Mesh(
+          new THREE.RingGeometry(0.045, 0.075, 32),
+          new THREE.MeshBasicMaterial({ color: col, side: THREE.DoubleSide, transparent: true, opacity: 0.75 })
+        );
+        halo.position.copy(pos);
+        halo.lookAt(new THREE.Vector3(0, 0, 0));
 
-      pinGroup.add(marker);
-    }
-
-    function magnetToPosition(worldPos) {
-      controls.autoRotate = false;
-      const outwardDir = worldPos.clone().normalize();
-      
-      const settings = getResponsiveSettings();
-      const targetCamPos = outwardDir.multiplyScalar(settings.dist);
-      targetCamPos.y += settings.yCam;
-
-      gsap.to(camera.position, {
-        x: targetCamPos.x,
-        y: targetCamPos.y,
-        z: targetCamPos.z,
-        duration: 1.6,
-        ease: "power2.inOut",
-        onUpdate: () => {
-          controls.target.set(0, settings.yTarget, 0);
-          controls.update();
-        }
+        markersGroup.add(pin);
+        markersGroup.add(halo);
       });
     }
 
-    let activeSelectedThreat = null;
-    let currentActiveCluster = null;
+    function selectCluster(cIdx, itemIdx = 0) {
+      if (!activeClusters.length) return;
+      currentClusterIdx = cIdx;
+      currentClusterItemIdx = itemIdx;
+      const cluster = activeClusters[cIdx];
+      const item = cluster.items[itemIdx] || cluster.items[0];
 
-    function formatCountdown(targetIso) {
-      if (!targetIso) return { text: "Awaiting Forecast", isImminent: false };
-      const diffMs = new Date(targetIso).getTime() - Date.now();
-      if (diffMs <= 0) return { text: "Imminent / Active", isImminent: true };
-      const hours = Math.floor(diffMs / (1000 * 60 * 60));
-      const mins = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
-      const secs = Math.floor((diffMs % (1000 * 60)) / 1000);
-      return { text: `In ~${hours}h ${mins}m ${secs}s`, isImminent: false };
-    }
-
-    function updateLiveCountdownDisplay() {
-      if (!activeSelectedThreat) return;
-      const countdown = formatCountdown(activeSelectedThreat.time_of_event);
-      const timerElem = document.getElementById('countdown-timer');
-      timerElem.innerText = countdown.text;
-      timerElem.style.color = countdown.isImminent ? '#f87171' : 'var(--accent-cyan)';
-    }
-
-    function displayThreatDetails(threat) {
-      activeSelectedThreat = threat;
-
-      const badge = document.getElementById('status-badge');
-      const badgeText = document.getElementById('badge-text');
-      if (threat.is_demo) {
-        badge.className = 'badge badge-demo';
-        badgeText.innerText = 'Demo Telemetry';
+      // Cluster dropdown if >1 hazard in 350km
+      const sel = document.getElementById('cluster-select');
+      if (cluster.items.length > 1) {
+        sel.style.display = 'block';
+        sel.innerHTML = cluster.items.map((it, i) =>
+          `<option value="${i}" ${i === itemIdx ? 'selected' : ''}>[${i + 1}/${cluster.items.length}] ${it.primary_threat} (${it.probability})</option>`
+        ).join('');
       } else {
-        badge.className = 'badge badge-live';
-        badgeText.innerText = 'AI Verified Forecast';
+        sel.style.display = 'none';
       }
 
-      document.getElementById('threat-title').innerText = threat.primary_threat || 'Threat Detected';
-      document.getElementById('threat-location').innerText = threat.location || 'Global Observation';
-      document.getElementById('threat-severity').innerText = threat.severity || 'Moderate';
-      document.getElementById('threat-probability').innerText = threat.probability || '50%';
-      document.getElementById('coords-text').innerText = `${(threat.lat || 0).toFixed(2)}°, ${(threat.lon || 0).toFixed(2)}°`;
-      document.getElementById('eta-timestamp').innerText = `Forecast Window: ${threat.time_of_event || '--'}`;
+      const sev = item.severity || 'Moderate';
+      const sevEl = document.getElementById('hud-sev');
+      sevEl.textContent = sev.toUpperCase();
+      sevEl.className = `sev-badge sev-${sev.charAt(0).toUpperCase() + sev.slice(1).toLowerCase()}`;
 
-      updateLiveCountdownDisplay();
+      document.getElementById('hud-prob').textContent = `PROBABILITY: ${item.probability || '--'}`;
+      document.getElementById('hud-title').textContent = item.primary_threat || 'Unknown Anomaly';
+      document.getElementById('hud-loc').textContent = `${item.location || 'Global'} (${Number(item.lat).toFixed(2)}, ${Number(item.lon).toFixed(2)})`;
+      document.getElementById('hud-eta-utc').textContent = item.time_of_event || '--';
+      targetCountdownIso = item.time_of_event;
 
-      const impactList = document.getElementById('impact-list');
-      impactList.innerHTML = '';
-      (threat.cascading_effects || []).forEach(eff => {
-        const li = document.createElement('li');
-        li.innerText = eff;
-        impactList.appendChild(li);
-      });
-    }
+      const effList = document.getElementById('hud-effects');
+      const effects = Array.isArray(item.cascading_effects) ? item.cascading_effects : [];
+      effList.innerHTML = effects.length
+        ? effects.map(e => `<li>${e}</li>`).join('')
+        : '<li>Continuous multi-sensor monitoring active</li>';
 
-    // Handles Cluster Selection & Populates the Dropdown
-    function handleClusterSelect(cluster) {
-      currentActiveCluster = cluster;
-      const pickerContainer = document.getElementById('cluster-picker-container');
-      const selector = document.getElementById('threat-selector');
-
-      if (cluster.threats.length > 1) {
-        // Show dropdown selector with each event's name and exact time
-        pickerContainer.style.display = 'block';
-        selector.innerHTML = '';
-
-        cluster.threats.forEach((th, idx) => {
-          const opt = document.createElement('option');
-          opt.value = idx;
-          const timeFormatted = th.time_of_event ? th.time_of_event.replace('T', ' ').replace('Z', ' UTC') : 'TBD';
-          opt.innerText = `${th.primary_threat} [ETA: ${timeFormatted}]`;
-          selector.appendChild(opt);
-        });
-
-        selector.onchange = (e) => {
-          const chosen = cluster.threats[e.target.value];
-          displayThreatDetails(chosen);
-        };
-
-        // Default to first item
-        selector.value = 0;
-        displayThreatDetails(cluster.threats[0]);
+      // Update Math Breakdown in Intel Matrix
+      document.getElementById('m-calc-title').textContent = `${item.primary_threat} → ${item.probability}`;
+      const b = item.calculation_breakdown;
+      if (b) {
+        document.getElementById('m-b-dens').textContent = `${b.density_component}%`;
+        document.getElementById('m-bar-dens').style.width = `${b.density_component}%`;
+        document.getElementById('m-b-int').textContent = `${b.intensity_component}%`;
+        document.getElementById('m-bar-int').style.width = `${b.intensity_component}%`;
+        document.getElementById('m-b-mom').textContent = `${b.momentum_component}%`;
+        document.getElementById('m-bar-mom').style.width = `${b.momentum_component}%`;
+        document.getElementById('m-b-meta').textContent =
+          `Sample N=${b.sample_size} | 400km Anomalies: ${b.regional_anomalies_400km} | 24h Surge: ${b.recent_24h_anomalies}`;
       } else {
-        // Only 1 threat in this radius: hide dropdown
-        pickerContainer.style.display = 'none';
-        displayThreatDetails(cluster.threats[0]);
+        document.getElementById('m-b-dens').textContent = '--';
+        document.getElementById('m-b-int').textContent = '--';
+        document.getElementById('m-b-mom').textContent = '--';
+      }
+
+      // Update Right Rail highlight
+      document.querySelectorAll('.pin-item').forEach((el, idx) => {
+        el.classList.toggle('active', idx === cIdx);
+      });
+
+      rebuildGlobePins();
+    }
+
+    function onClusterSelect(val) {
+      selectCluster(currentClusterIdx, parseInt(val, 10) || 0);
+    }
+
+    function renderPinRail() {
+      const rail = document.getElementById('pin-list');
+      rail.innerHTML = activeClusters.map((c, idx) => {
+        const it = c.items[0];
+        return `
+          <div class="pin-item ${idx === currentClusterIdx ? 'active' : ''}" onclick="selectCluster(${idx}, 0)">
+            <div class="pin-item-top">
+              <span style="color: var(--cyan);">${it.probability || '--'}</span>
+              <span style="color: var(--text-dim);">${c.items.length > 1 ? `+${c.items.length - 1} clustered` : it.severity}</span>
+            </div>
+            <div class="pin-item-title">${it.primary_threat}</div>
+            <div style="font-size: 11px; color: var(--text-dim);">${it.location}</div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // ----------------- MATRIX DRAWER & LIVE DATA SYNC -----------------
+    function toggleMatrix(open) {
+      const modal = document.getElementById('matrix-modal');
+      modal.classList.toggle('open', open);
+      controls.autoRotate = !open;
+      if (open) {
+        fetchMatrixDatasets();
       }
     }
 
-    const raycaster = new THREE.Raycaster();
-    const pointer = new THREE.Vector2();
+    function switchMatrixTab(tab) {
+      activeMatrixTab = tab;
+      document.getElementById('tab-forecasts').classList.toggle('active', tab === 'forecasts');
+      document.getElementById('tab-sensors').classList.toggle('active', tab === 'sensors');
+      renderMatrixTable();
+    }
 
-    function onPointerDown(e) {
-      if (e.target.closest('#sidebar')) return;
+    function renderMatrixTable() {
+      const q = document.getElementById('matrix-search').value.toLowerCase().trim();
+      const thead = document.getElementById('matrix-thead');
+      const tbody = document.getElementById('matrix-tbody');
 
-      const clientX = e.clientX || (e.touches && e.touches[0] ? e.touches[0].clientX : null);
-      const clientY = e.clientY || (e.touches && e.touches[0] ? e.touches[0].clientY : null);
-      if (clientX === null || clientY === null) return;
-
-      pointer.x = (clientX / window.innerWidth) * 2 - 1;
-      pointer.y = -(clientY / window.innerHeight) * 2 + 1;
-
-      raycaster.setFromCamera(pointer, camera);
-      const intersects = raycaster.intersectObjects(threatPins, false);
-
-      if (intersects.length > 0) {
-        const clickedMesh = intersects[0].object;
-        handleClusterSelect(clickedMesh.userData.cluster);
-        magnetToPosition(clickedMesh.userData.worldPos);
+      if (activeMatrixTab === 'forecasts') {
+        thead.innerHTML = `<tr>
+          <th>HAZARD</th><th>LOCATION</th><th>PROBABILITY</th><th>SEVERITY</th><th>COORDS</th><th>ETA (UTC)</th>
+        </tr>`;
+        const rows = allForecastArchive.filter(r =>
+          !q || JSON.stringify(r).toLowerCase().includes(q)
+        );
+        tbody.innerHTML = rows.slice(0, 250).map(r => `<tr>
+          <td style="color:#fff;font-weight:600;">${r.primary_threat || '--'}</td>
+          <td>${r.location || '--'}</td>
+          <td style="color:var(--emerald);font-weight:700;">${r.probability || '--'}</td>
+          <td>${r.severity || '--'}</td>
+          <td>${Number(r.lat).toFixed(2)}, ${Number(r.lon).toFixed(2)}</td>
+          <td>${r.time_of_event || '--'}</td>
+        </tr>`).join('');
+      } else {
+        thead.innerHTML = `<tr>
+          <th>CATEGORY</th><th>SENSOR ANOMALY</th><th>MAGNITUDE</th><th>LATITUDE</th><th>LONGITUDE</th>
+        </tr>`;
+        const rows = telemetryPool1000.filter(s =>
+          !q || JSON.stringify(s).toLowerCase().includes(q)
+        );
+        tbody.innerHTML = rows.slice(0, 300).map(s => `<tr>
+          <td style="color:var(--cyan);font-weight:700;">${s.category || '--'}</td>
+          <td style="color:#fff;">${s.title || '--'}</td>
+          <td>${s.magnitude || '--'}</td>
+          <td>${s.lat}</td>
+          <td>${s.lon}</td>
+        </tr>`).join('');
       }
     }
 
-    window.addEventListener('pointerdown', onPointerDown);
-
-    // --- DIRECT JSON DATA PICKUP & CLUSTER SYNC ---
-    let lastDataSignature = "";
-
-    async function syncFromJsonEndpoints() {
+    async function fetchMatrixDatasets() {
       try {
-        const timestamp = Date.now();
-        let threatList = [];
-        
-        const res = await fetch(`/api/threats?_t=${timestamp}`, {
-          cache: "no-store",
-          headers: { "Pragma": "no-cache", "Cache-Control": "no-cache" }
-        });
-
-        if (res.ok) {
-          const data = await res.json();
-          threatList = Array.isArray(data) ? data : [data];
+        const [allRes, telRes] = await Promise.all([
+          fetch('/api/all_threats?_t=' + Date.now()),
+          fetch('/api/telemetry_1000?_t=' + Date.now())
+        ]);
+        if (allRes.ok) {
+          allForecastArchive = await allRes.json();
+          document.getElementById('cnt-forecasts').textContent = allForecastArchive.length;
         }
+        if (telRes.ok) {
+          telemetryPool1000 = await telRes.json();
+          document.getElementById('cnt-sensors').textContent = telemetryPool1000.length;
+        }
+        renderMatrixTable();
+      } catch (e) {}
+    }
 
-        if (threatList.length === 0) return;
+    async function pollTelemetry() {
+      try {
+        const [threatsRes, healthRes] = await Promise.all([
+          fetch('/api/threats?_t=' + Date.now()),
+          fetch('/api/ai_health?_t=' + Date.now())
+        ]);
 
-        const currentSignature = JSON.stringify(threatList.map(t => `${t.primary_threat}_${t.time_of_event}_${t.lat}_${t.lon}`));
-
-        if (currentSignature !== lastDataSignature) {
-          console.log("[+] Picked up updated JSON data:", threatList);
-          lastDataSignature = currentSignature;
-
-          // 1. Group events into geographic clusters (< 350km apart)
-          const clusters = clusterThreatsByProximity(threatList, 350);
-
-          // 2. Clear and render pins for each cluster
-          clearPins();
-          clusters.forEach(c => createClusterPin(c));
-
-          // 3. Maintain current selection or default to top cluster
-          if (clusters.length > 0) {
-            handleClusterSelect(clusters[0]);
+        if (threatsRes.ok) {
+          const items = await threatsRes.json();
+          if (Array.isArray(items) && items.length) {
+            activeClusters = clusterThreats(items);
+            if (currentClusterIdx >= activeClusters.length) currentClusterIdx = 0;
+            renderPinRail();
+            selectCluster(currentClusterIdx, currentClusterItemIdx);
           }
         }
-      } catch (err) {
-        console.warn("JSON fetch warning:", err);
-      }
+
+        if (healthRes.ok) {
+          const h = await healthRes.json();
+          document.getElementById('hud-sub').textContent = h.message || 'AUTONOMOUS LOOP ONLINE';
+          document.getElementById('hud-sensors').textContent = h.telemetry_pool_size || 1000;
+          document.getElementById('hud-archive').textContent = `${h.stored_threats_count || 0}/${h.max_threats_capacity || 1000}`;
+
+          document.getElementById('m-status').textContent = h.status || 'ONLINE';
+          document.getElementById('m-model').textContent = h.model || 'openai/gpt-oss-120b';
+          document.getElementById('m-key').textContent = `Slot #${h.active_key_slot || 1} of ${h.total_keys_loaded || 2}`;
+          document.getElementById('m-pool').textContent = `${h.telemetry_pool_size || 1000} Live Sensors`;
+          document.getElementById('m-gh').textContent = h.github_configured ? `ACTIVE (${h.github_repo})` : 'MISSING TOKEN';
+
+          const dot = document.getElementById('status-dot');
+          dot.style.background = (h.status === 'ONLINE' || h.status === 'BOOTING') ? 'var(--emerald)' : 'var(--crimson)';
+        }
+      } catch (e) {}
     }
 
-    syncFromJsonEndpoints();
-    setInterval(syncFromJsonEndpoints, 4000);
+    // Live 1-second countdown timer
+    setInterval(() => {
+      if (!targetCountdownIso) return;
+      const diff = new Date(targetCountdownIso).getTime() - Date.now();
+      if (diff <= 0) {
+        document.getElementById('hud-countdown').textContent = 'WINDOW ACTIVE';
+        return;
+      }
+      const hrs = Math.floor(diff / 3600000);
+      const mins = Math.floor((diff % 3600000) / 60000);
+      const secs = Math.floor((diff % 60000) / 1000);
+      document.getElementById('hud-countdown').textContent =
+        `${String(hrs).padStart(2, '0')}h ${String(mins).padStart(2, '0')}m ${String(secs).padStart(2, '0')}s`;
+    }, 1000);
 
-    // Live continuous countdown clock
-    setInterval(updateLiveCountdownDisplay, 1000);
-
-    let pulseScale = 1;
-    let pulseGrowing = true;
-
+    // Animation & Resize
     function animate() {
       requestAnimationFrame(animate);
-
-      if (pulseGrowing) {
-        pulseScale += 0.02;
-        if (pulseScale >= 1.55) pulseGrowing = false;
-      } else {
-        pulseScale -= 0.02;
-        if (pulseScale <= 1.0) pulseGrowing = true;
-      }
-
-      pinGroup.children.forEach(marker => {
-        const ring = marker.children[1];
-        if (ring) {
-          ring.scale.set(pulseScale, pulseScale, 1);
-          ring.material.opacity = 1.55 - (pulseScale - 1);
-        }
-      });
-
+      orbitRing.rotation.z += 0.0015;
       controls.update();
       renderer.render(scene, camera);
     }
@@ -719,13 +985,12 @@
 
     window.addEventListener('resize', () => {
       camera.aspect = window.innerWidth / window.innerHeight;
-      const settings = getResponsiveSettings();
-      camera.position.set(camera.position.x, settings.yCam, settings.dist);
-      controls.target.set(0, settings.yTarget, 0);
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     });
+
+    pollTelemetry();
+    setInterval(pollTelemetry, 5000);
   </script>
 </body>
 </html>
