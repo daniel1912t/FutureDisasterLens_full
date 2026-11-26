@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "El Dorado, California, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 38.62,
+    "lon": -120.5,
+    "cascading_effects": [
+      "Smoke dispersion affecting air quality in Sacramento basin",
+      "Potential strain on local firefighting resources",
+      "Risk of rapid fire spread to nearby residential areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T01:04:48Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "North of Hicks Bay, New Zealand",
     "severity": "Severe",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-27T09:21:13Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Waukesha, Wisconsin, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 43.04,
-    "lon": -88.4,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-27T09:12:57Z"
   }
 ]
