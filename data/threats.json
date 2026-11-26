@@ -1,5 +1,20 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Puerto Madero Region, Mexico",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 14.16,
+    "lon": -93.13,
+    "cascading_effects": [
+      "Potential building damage",
+      "Disruption of road networks",
+      "Risk of landslides in nearby hills"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T05:34:28Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "El Dorado, California, USA",
     "severity": "Moderate",
@@ -130,19 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T17:53:02Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Matagorda, Texas, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 28.76,
-    "lon": -95.81,
-    "cascading_effects": [
-      "air quality degradation",
-      "potential evacuation orders"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-27T03:44:49Z"
   }
 ]
