@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Greene, Tennessee, USA",
+    "severity": "Moderate",
+    "probability": "70%",
+    "lat": 36.36,
+    "lon": -82.8,
+    "cascading_effects": [
+      "air quality degradation",
+      "potential evacuation of nearby communities",
+      "damage to forest ecosystem"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T16:01:56Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Alleghany, Virginia, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -129,19 +144,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-27T00:22:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Bibb County, Alabama",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 32.95,
-    "lon": -87.35,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation of nearby communities"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-27T00:56:23Z"
   }
 ]
