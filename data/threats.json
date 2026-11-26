@@ -1,6 +1,30 @@
 [
   {
     "primary_threat": "Forecasted Seismic Window",
+    "location": "Karakul Region, Tajikistan",
+    "severity": "Severe",
+    "lat": 39.1912,
+    "lon": 71.5875,
+    "cascading_effects": [
+      "landslides",
+      "infrastructure damage",
+      "potential secondary avalanches"
+    ],
+    "is_demo": false,
+    "probability": "57.0%",
+    "calculation_breakdown": {
+      "sample_size": 1000,
+      "regional_readings_400km": 13,
+      "recent_24h_readings": 0,
+      "peak_sensor_value": 5.3,
+      "density_component": 81.0,
+      "intensity_component": 61.5,
+      "momentum_component": 0.0
+    },
+    "time_of_event": "2026-11-27T03:51:54Z"
+  },
+  {
+    "primary_threat": "Forecasted Seismic Window",
     "location": "Arequipa Region, Peru",
     "severity": "Extreme",
     "lat": -14.9934,
