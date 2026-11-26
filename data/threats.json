@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.05,
+    "lon": -111.58,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation of nearby communities",
+      "potential strain on regional fire resources"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T20:12:00Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Bibb, Alabama, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -130,20 +145,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-27T04:39:08Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Waukesha, Wisconsin, USA",
-    "severity": "Moderate",
-    "probability": "68%",
-    "lat": 42.92,
-    "lon": -88.48,
-    "cascading_effects": [
-      "air quality degradation",
-      "evacuation orders",
-      "strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-27T04:11:21Z"
   }
 ]
