@@ -1,6 +1,21 @@
 [
   {
     "primary_threat": "Forecasted Wildfire Window",
+    "location": "Alleghany, Virginia, USA",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": 37.84,
+    "lon": -79.86,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders",
+      "threat to nearby infrastructure"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T07:23:01Z"
+  },
+  {
+    "primary_threat": "Forecasted Wildfire Window",
     "location": "Matagorda, Texas, USA",
     "severity": "Moderate",
     "probability": "68%",
@@ -128,20 +143,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-27T05:42:33Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Puerto Madero Region, Mexico",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": 14.16,
-    "lon": -93.13,
-    "cascading_effects": [
-      "Potential building damage",
-      "Disruption of road networks",
-      "Risk of landslides in nearby hills"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-27T05:34:28Z"
   }
 ]
