@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Seismic Window",
+    "location": "Hicks Bay Region, New Zealand",
+    "severity": "Severe",
+    "probability": "68%",
+    "lat": -36.02,
+    "lon": 178.37,
+    "cascading_effects": [
+      "Potential aftershocks",
+      "Landslide risk in coastal areas"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-26T22:05:21Z"
+  },
+  {
     "primary_threat": "Forecasted Wildfire Window",
     "location": "Matagorda, Texas, USA",
     "severity": "Moderate",
@@ -70,21 +84,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T11:21:11Z"
-  },
-  {
-    "primary_threat": "Forecasted Seismic Window",
-    "location": "Hicks Bay Region, New Zealand",
-    "severity": "Moderate",
-    "probability": "71%",
-    "lat": -35.9,
-    "lon": 178.55,
-    "cascading_effects": [
-      "Potential landslides in coastal hills",
-      "Disruption to undersea communication cables",
-      "Triggered tsunamigenic waves affecting nearby shorelines"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T10:53:35Z"
   },
   {
     "primary_threat": "Forecasted Wildfire Window",
