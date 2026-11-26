@@ -9,11 +9,14 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
+MAX_RECORDS = 1000
+
 DATA_DIR = os.path.join(os.getcwd(), 'data')
 os.makedirs(DATA_DIR, exist_ok=True)
 
 DATA_FILE = os.path.join(DATA_DIR, 'latest_prediction.json')
 ALL_DATA_FILE = os.path.join(DATA_DIR, 'all_threats.json')
+TELEMETRY_1000_FILE = os.path.join(DATA_DIR, 'telemetry_1000.json')
 HEALTH_FILE = os.path.join(DATA_DIR, 'ai_health.json')
 
 # DIRECT GITHUB REPOSITORY TARGET
@@ -31,51 +34,22 @@ def fetch_from_github_direct():
         "Accept": "application/vnd.github.v3+json"
     }
     try:
-        res = requests.get(url, headers=headers, timeout=8)
+        res = requests.get(url, headers=headers, timeout=10)
         if res.status_code == 200:
             raw = base64.b64decode(res.json().get("content", "")).decode("utf-8").strip()
             data = json.loads(raw) if raw else []
             if isinstance(data, list) and data:
+                capped = data[:MAX_RECORDS]
                 with open(ALL_DATA_FILE, 'w', encoding='utf-8') as f:
-                    json.dump(data, f, indent=2)
+                    json.dump(capped, f, indent=2)
                 with open(DATA_FILE, 'w', encoding='utf-8') as f:
-                    json.dump(data[0], f, indent=2)
-                return data
+                    json.dump(capped[0], f, indent=2)
+                return capped
     except Exception as e:
         print(f"[-] Web server GitHub fetch notice: {e}", flush=True)
     return []
 
-def purge_expired_from_disk(items):
-    valid_items = []
-    now = datetime.now(timezone.utc)
-    cutoff = now + timedelta(hours=1)
-    had_expired = False
-
-    for item in items:
-        ts = item.get("time_of_event")
-        if not ts:
-            continue
-        try:
-            event_dt = datetime.fromisoformat(ts.replace("Z", "+00:00"))
-            if event_dt > cutoff:
-                valid_items.append(item)
-            else:
-                had_expired = True
-        except Exception:
-            pass
-
-    if had_expired:
-        try:
-            with open(ALL_DATA_FILE, 'w', encoding='utf-8') as f:
-                json.dump(valid_items, f, indent=2)
-            with open(DATA_FILE, 'w', encoding='utf-8') as f:
-                json.dump(valid_items[0] if valid_items else {}, f, indent=2)
-        except Exception:
-            pass
-
-    return valid_items
-
-def load_json_data():
+def load_all_records():
     items = []
 
     if os.path.exists(ALL_DATA_FILE):
@@ -103,27 +77,46 @@ def load_json_data():
     if not items:
         items = fetch_from_github_direct()
 
-    active_items = purge_expired_from_disk(items)
+    return items[:MAX_RECORDS]
+
+def get_active_and_all():
+    all_items = load_all_records()
+    now = datetime.now(timezone.utc)
+    cutoff = now + timedelta(hours=1)
+
+    active_items = []
+    for item in all_items:
+        ts = item.get("time_of_event")
+        if not ts:
+            continue
+        try:
+            event_dt = datetime.fromisoformat(ts.replace("Z", "+00:00"))
+            if event_dt > cutoff:
+                active_items.append(item)
+        except Exception:
+            pass
 
     if not active_items:
-        now = datetime.now(timezone.utc)
-        fallback = {
-            "primary_threat": "[DEMO] Forecasted M6.2 Triggered Aftershock",
-            "location": "Near Coast of Honshu, Japan",
-            "time_of_event": (now + timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "severity": "Severe",
-            "probability": "68%",
-            "lat": 37.8500,
-            "lon": 142.1000,
-            "is_demo": True,
-            "cascading_effects": [
-                "Regional rail deceleration advisory",
-                "Coastal surge warning"
-            ]
-        }
-        return fallback, [fallback]
+        if all_items:
+            active_items = all_items[:15]
+        else:
+            fallback = {
+                "primary_threat": "[DEMO] Forecasted M6.2 Triggered Aftershock",
+                "location": "Near Coast of Honshu, Japan",
+                "time_of_event": (now + timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "severity": "Severe",
+                "probability": "68.4%",
+                "lat": 37.8500,
+                "lon": 142.1000,
+                "is_demo": True,
+                "cascading_effects": [
+                    "Regional rail deceleration advisory",
+                    "Coastal surge warning"
+                ]
+            }
+            return fallback, [fallback], [fallback]
 
-    return active_items[0], active_items
+    return active_items[0], active_items[:30], all_items
 
 def nocache_response(payload, status=200):
     resp = make_response(jsonify(payload), status)
@@ -145,33 +138,62 @@ def favicon():
 
 @app.route('/api/ai_health', methods=['GET'])
 def get_ai_health():
+    all_items = load_all_records()
+    telemetry_count = 0
+    if os.path.exists(TELEMETRY_1000_FILE):
+        try:
+            with open(TELEMETRY_1000_FILE, 'r', encoding='utf-8') as f:
+                telemetry_count = len(json.load(f))
+        except Exception:
+            pass
+
+    base_health = {}
     if os.path.exists(HEALTH_FILE):
         try:
             with open(HEALTH_FILE, 'r', encoding='utf-8') as f:
-                return nocache_response(json.load(f))
+                base_health = json.load(f)
         except Exception:
             pass
-    return nocache_response({
-        "status": "ONLINE",
+
+    base_health.update({
+        "stored_threats_count": len(all_items),
+        "max_threats_capacity": MAX_RECORDS,
+        "telemetry_pool_size": telemetry_count,
         "github_configured": bool(GITHUB_TOKEN),
         "github_repo": GITHUB_REPO,
         "github_branch": GITHUB_BRANCH
     })
+    return nocache_response(base_health)
 
 @app.route('/api/latest_threat', methods=['GET'])
 @app.route('/api/threats/latest', methods=['GET'])
 def get_latest_threat():
-    single, _ = load_json_data()
+    single, _, _ = get_active_and_all()
     return nocache_response(single)
 
 @app.route('/api/threats', methods=['GET'])
 @app.route('/api/later_threats', methods=['GET'])
+def get_active_threats():
+    _, active_items, _ = get_active_and_all()
+    return nocache_response(active_items)
+
 @app.route('/api/historical_predictions', methods=['GET'])
-def get_all_threats():
-    _, all_items = load_json_data()
+@app.route('/api/all_threats', methods=['GET'])
+def get_all_1000_threats():
+    _, _, all_items = get_active_and_all()
     return nocache_response(all_items)
+
+@app.route('/api/telemetry_1000', methods=['GET'])
+def get_telemetry_1000():
+    if os.path.exists(TELEMETRY_1000_FILE):
+        try:
+            with open(TELEMETRY_1000_FILE, 'r', encoding='utf-8') as f:
+                return nocache_response(json.load(f))
+        except Exception:
+            pass
+    return nocache_response([])
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 7860))
-    print(f"[*] Starting FutureDisasterLens Server on port {port}", flush=True)
+    print(f"[*] Starting FutureDisasterLens Server (1000-record mode) on port {port}", flush=True)
     app.run(host='0.0.0.0', port=port)
