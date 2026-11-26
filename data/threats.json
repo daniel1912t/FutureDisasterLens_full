@@ -1,5 +1,30 @@
 [
   {
+    "primary_threat": "Forecasted Earthquake Window",
+    "location": "Coquimbo Region, Chile",
+    "severity": "Severe",
+    "lat": -30.2,
+    "lon": -71.0,
+    "cascading_effects": [
+      "landslide in mountainous terrain",
+      "tsunami potential along Pacific coast"
+    ],
+    "is_demo": false,
+    "probability": "23.8%",
+    "calculation_breakdown": {
+      "sample_size": 90,
+      "regional_readings_400km": 0,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 12.0,
+      "intensity_component": 31.5,
+      "momentum_component": 32.0
+    },
+    "time_of_event": "2026-11-28T05:24:12Z"
+  },
+  {
     "primary_threat": "Forecasted Volcanic Eruption Window",
     "location": "Sicily, Italy",
     "severity": "Severe",
@@ -1006,31 +1031,6 @@
       "momentum_component": 0.0
     },
     "time_of_event": "2026-11-27T19:49:55Z"
-  },
-  {
-    "primary_threat": "Forecasted Major Earthquake Window",
-    "location": "Coquimbo Region, Chile",
-    "severity": "Severe",
-    "lat": -30.2,
-    "lon": -70.9,
-    "cascading_effects": [
-      "tsunami generation",
-      "landslide risk in mountainous terrain"
-    ],
-    "is_demo": false,
-    "probability": "23.8%",
-    "calculation_breakdown": {
-      "sample_size": 90,
-      "regional_readings_400km": 0,
-      "recent_24h_readings": 0,
-      "oef_b_value": 1.0,
-      "max_barometric_drop_hpa": 0.0,
-      "max_gnss_drift_mm": 0.0,
-      "density_component": 12.0,
-      "intensity_component": 31.5,
-      "momentum_component": 32.0
-    },
-    "time_of_event": "2026-11-28T05:42:09Z"
   },
   {
     "primary_threat": "Forecasted Volcanic Eruption Window",
