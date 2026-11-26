@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Mineral, Montana, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 47.12,
+    "lon": -114.75,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T10:57:30Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "North of Hicks Bay, New Zealand",
     "severity": "Severe",
@@ -84,20 +98,6 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T22:53:21Z"
-  },
-  {
-    "primary_threat": "Forecasted Wildfire Window",
-    "location": "Stevens, Washington, USA",
-    "severity": "Moderate",
-    "probability": "70%",
-    "lat": 48.4,
-    "lon": -117.53,
-    "cascading_effects": [
-      "Smoke dispersion affecting air quality in surrounding counties",
-      "Potential strain on local firefighting resources"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-26T22:45:06Z"
   },
   {
     "primary_threat": "Forecasted Seismic Window",
