@@ -1,5 +1,19 @@
 [
   {
+    "primary_threat": "Forecasted Wildfire Window",
+    "location": "Coconino, Arizona, USA",
+    "severity": "Moderate",
+    "probability": "68%",
+    "lat": 35.05,
+    "lon": -111.58,
+    "cascading_effects": [
+      "air quality degradation",
+      "evacuation orders"
+    ],
+    "is_demo": false,
+    "time_of_event": "2026-11-27T04:02:50Z"
+  },
+  {
     "primary_threat": "Forecasted Seismic Window",
     "location": "Hicks Bay Region, New Zealand",
     "severity": "Severe",
@@ -128,20 +142,5 @@
     ],
     "is_demo": false,
     "time_of_event": "2026-11-26T15:53:42Z"
-  },
-  {
-    "primary_threat": "Forecasted Tropical Cyclone Xavier Window",
-    "location": "Southern Fiji, Fiji",
-    "severity": "Severe",
-    "probability": "68%",
-    "lat": -11.8,
-    "lon": -168.8,
-    "cascading_effects": [
-      "Coastal flooding",
-      "Landslides in mountainous terrain",
-      "Disruption of maritime shipping lanes"
-    ],
-    "is_demo": false,
-    "time_of_event": "2026-11-27T01:35:50Z"
   }
 ]
