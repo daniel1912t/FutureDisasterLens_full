@@ -1,5 +1,31 @@
 [
   {
+    "primary_threat": "Forecasted Earthquake Window",
+    "location": "San Andreas Fault Region, United States",
+    "severity": "Severe",
+    "lat": 36.5,
+    "lon": -120.5,
+    "cascading_effects": [
+      "ground shaking",
+      "infrastructure damage",
+      "potential landslides"
+    ],
+    "is_demo": false,
+    "probability": "41.0%",
+    "calculation_breakdown": {
+      "sample_size": 90,
+      "regional_readings_400km": 14,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 70.9,
+      "intensity_component": 31.5,
+      "momentum_component": 0.0
+    },
+    "time_of_event": "2026-11-28T06:19:34Z"
+  },
+  {
     "primary_threat": "Forecasted Flash Flood Window",
     "location": "Cagayan Valley, Philippines",
     "severity": "Severe",
