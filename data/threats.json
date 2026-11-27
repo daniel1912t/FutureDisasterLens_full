@@ -1,13 +1,13 @@
 [
   {
-    "primary_threat": "Forecasted Tsunami Window",
-    "location": "Calabria Coast, Italy",
+    "primary_threat": "Forecasted Volcanic Eruption Window",
+    "location": "Mount Etna, Sicily, Italy",
     "severity": "Severe",
-    "lat": 38.9,
-    "lon": 16.1,
+    "lat": 37.75,
+    "lon": 15.0,
     "cascading_effects": [
-      "coastal inundation",
-      "infrastructure damage"
+      "ash fall affecting air traffic",
+      "lava flows endangering nearby communities"
     ],
     "is_demo": false,
     "probability": "23.8%",
@@ -22,7 +22,7 @@
       "intensity_component": 31.5,
       "momentum_component": 32.0
     },
-    "time_of_event": "2026-11-28T02:48:44Z"
+    "time_of_event": "2026-11-28T02:57:07Z"
   },
   {
     "primary_threat": "Forecasted Volcanic Eruption Window",
