@@ -1,6 +1,31 @@
 [
   {
     "primary_threat": "Forecasted Volcanic Eruption Window",
+    "location": "Luzon Volcanic Arc, Philippines",
+    "severity": "Severe",
+    "lat": 14.5,
+    "lon": 121.0,
+    "cascading_effects": [
+      "ash plume disrupting air traffic",
+      "lahar flows affecting downstream communities"
+    ],
+    "is_demo": false,
+    "probability": "23.4%",
+    "calculation_breakdown": {
+      "sample_size": 98,
+      "regional_readings_400km": 1,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 27.1,
+      "intensity_component": 31.5,
+      "momentum_component": 0.0
+    },
+    "time_of_event": "2026-11-28T14:25:14Z"
+  },
+  {
+    "primary_threat": "Forecasted Volcanic Eruption Window",
     "location": "Ethiopian Rift, Ethiopia",
     "severity": "Severe",
     "lat": 9.2,
