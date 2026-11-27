@@ -1,5 +1,30 @@
 [
   {
+    "primary_threat": "Forecasted Tropical Cyclone Storm Surge Window",
+    "location": "Gulf Coast, Texas, United States",
+    "severity": "Severe",
+    "lat": 29.2,
+    "lon": -95.1,
+    "cascading_effects": [
+      "coastal flooding",
+      "inland wind damage"
+    ],
+    "is_demo": false,
+    "probability": "29.5%",
+    "calculation_breakdown": {
+      "sample_size": 90,
+      "regional_readings_400km": 3,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 42.2,
+      "intensity_component": 31.5,
+      "momentum_component": 0.0
+    },
+    "time_of_event": "2026-11-28T23:27:10Z"
+  },
+  {
     "primary_threat": "Forecasted Flash Flood Window",
     "location": "Mississippi River Basin, United States",
     "severity": "Severe",
