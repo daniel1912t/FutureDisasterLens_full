@@ -1,5 +1,30 @@
 [
   {
+    "primary_threat": "Forecasted Severe Windstorm Window",
+    "location": "Central California, United States",
+    "severity": "Severe",
+    "lat": 36.5,
+    "lon": -119.7,
+    "cascading_effects": [
+      "tree uprooting",
+      "power grid failures"
+    ],
+    "is_demo": false,
+    "probability": "41.0%",
+    "calculation_breakdown": {
+      "sample_size": 98,
+      "regional_readings_400km": 14,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 70.9,
+      "intensity_component": 31.5,
+      "momentum_component": 0.0
+    },
+    "time_of_event": "2026-11-28T05:42:30Z"
+  },
+  {
     "primary_threat": "Forecasted Major Earthquake Window",
     "location": "Central Anatolia, Turkey",
     "severity": "Severe",
