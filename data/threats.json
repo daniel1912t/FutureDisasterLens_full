@@ -1,5 +1,31 @@
 [
   {
+    "primary_threat": "Forecasted Volcanic Eruption Window",
+    "location": "Mount Nyiragongo, Democratic Republic of the Congo",
+    "severity": "Severe",
+    "lat": -1.52,
+    "lon": 29.25,
+    "cascading_effects": [
+      "lava flows",
+      "ash cloud dispersion",
+      "lahar formation"
+    ],
+    "is_demo": false,
+    "probability": "27.0%",
+    "calculation_breakdown": {
+      "sample_size": 90,
+      "regional_readings_400km": 2,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 35.9,
+      "intensity_component": 31.5,
+      "momentum_component": 0.0
+    },
+    "time_of_event": "2026-11-28T22:10:27Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Snowstorm Window",
     "location": "Sierra Nevada, United States",
     "severity": "Severe",
