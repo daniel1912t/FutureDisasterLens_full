@@ -1,6 +1,31 @@
 [
   {
     "primary_threat": "Forecasted Hurricane Formation Window",
+    "location": "Puerto Rico, USA",
+    "severity": "Severe",
+    "lat": 18.2,
+    "lon": -66.5,
+    "cascading_effects": [
+      "storm surge flooding",
+      "wind damage to infrastructure"
+    ],
+    "is_demo": false,
+    "probability": "29.5%",
+    "calculation_breakdown": {
+      "sample_size": 90,
+      "regional_readings_400km": 3,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 42.2,
+      "intensity_component": 31.5,
+      "momentum_component": 0.0
+    },
+    "time_of_event": "2026-11-29T01:00:27Z"
+  },
+  {
+    "primary_threat": "Forecasted Hurricane Formation Window",
     "location": "Gulf of Mexico, USA",
     "severity": "Severe",
     "lat": 25.0,
