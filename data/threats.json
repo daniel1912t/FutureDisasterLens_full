@@ -1,5 +1,31 @@
 [
   {
+    "primary_threat": "Forecasted Tsunami Wave Impact Window",
+    "location": "Kohala Coast, Hawaii, USA",
+    "severity": "Severe",
+    "lat": 20.1,
+    "lon": -155.6,
+    "cascading_effects": [
+      "Coastal inundation",
+      "Infrastructure damage",
+      "Saltwater intrusion"
+    ],
+    "is_demo": false,
+    "probability": "33.0%",
+    "calculation_breakdown": {
+      "sample_size": 90,
+      "regional_readings_400km": 5,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 51.0,
+      "intensity_component": 31.5,
+      "momentum_component": 0.0
+    },
+    "time_of_event": "2026-11-28T14:57:19Z"
+  },
+  {
     "primary_threat": "Forecasted Volcanic Eruption Window",
     "location": "South Iceland Rift, Iceland",
     "severity": "Severe",
