@@ -1,5 +1,30 @@
 [
   {
+    "primary_threat": "Forecasted Severe Storm Surge Window",
+    "location": "Gulf of Alaska, United States",
+    "severity": "Severe",
+    "lat": 58.5,
+    "lon": -151.0,
+    "cascading_effects": [
+      "coastal flooding",
+      "increased wave erosion"
+    ],
+    "is_demo": false,
+    "probability": "42.6%",
+    "calculation_breakdown": {
+      "sample_size": 90,
+      "regional_readings_400km": 17,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 74.9,
+      "intensity_component": 31.5,
+      "momentum_component": 0.0
+    },
+    "time_of_event": "2026-11-29T11:19:05Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Tropical Cyclone Window",
     "location": "Northern Bay of Bengal, Bangladesh",
     "severity": "Severe",
