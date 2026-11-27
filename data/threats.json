@@ -1,5 +1,31 @@
 [
   {
+    "primary_threat": "Forecasted Flash Flood Window",
+    "location": "Central Valley, California, United States",
+    "severity": "Severe",
+    "lat": 36.5,
+    "lon": -119.5,
+    "cascading_effects": [
+      "rapid river level rise",
+      "infrastructure damage",
+      "soil erosion"
+    ],
+    "is_demo": false,
+    "probability": "43.0%",
+    "calculation_breakdown": {
+      "sample_size": 90,
+      "regional_readings_400km": 18,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 76.1,
+      "intensity_component": 31.5,
+      "momentum_component": 0.0
+    },
+    "time_of_event": "2026-11-28T13:16:27Z"
+  },
+  {
     "primary_threat": "Forecasted Landslide Window",
     "location": "Himalayan Foothills, Nepal",
     "severity": "Severe",
