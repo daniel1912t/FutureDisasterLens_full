@@ -1,5 +1,30 @@
 [
   {
+    "primary_threat": "Forecasted Major Earthquake Window",
+    "location": "Honshu, Japan",
+    "severity": "Severe",
+    "lat": 36.5,
+    "lon": 138.0,
+    "cascading_effects": [
+      "ground shaking causing building collapse",
+      "triggered landslides in mountainous areas"
+    ],
+    "is_demo": false,
+    "probability": "23.4%",
+    "calculation_breakdown": {
+      "sample_size": 98,
+      "regional_readings_400km": 1,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 27.1,
+      "intensity_component": 31.5,
+      "momentum_component": 0.0
+    },
+    "time_of_event": "2026-11-28T07:06:12Z"
+  },
+  {
     "primary_threat": "Forecasted Volcanic Eruption Window",
     "location": "Aegean Islands, Greece",
     "severity": "Severe",
@@ -2464,31 +2489,6 @@
       "momentum_component": 32.0
     },
     "time_of_event": "2026-11-28T07:29:15Z"
-  },
-  {
-    "primary_threat": "Forecasted Earthquake Window",
-    "location": "Kanto Region, Japan",
-    "severity": "Severe",
-    "lat": 35.7,
-    "lon": 139.7,
-    "cascading_effects": [
-      "structural damage",
-      "potential tsunami generation"
-    ],
-    "is_demo": false,
-    "probability": "23.8%",
-    "calculation_breakdown": {
-      "sample_size": 90,
-      "regional_readings_400km": 0,
-      "recent_24h_readings": 0,
-      "oef_b_value": 1.0,
-      "max_barometric_drop_hpa": 0.0,
-      "max_gnss_drift_mm": 0.0,
-      "density_component": 12.0,
-      "intensity_component": 31.5,
-      "momentum_component": 32.0
-    },
-    "time_of_event": "2026-11-28T07:21:47Z"
   },
   {
     "primary_threat": "Forecasted Severe Thunderstorm Outbreak Window",
