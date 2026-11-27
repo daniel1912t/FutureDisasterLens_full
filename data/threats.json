@@ -1,5 +1,31 @@
 [
   {
+    "primary_threat": "Forecasted Severe Landslide Window",
+    "location": "Kathmandu Valley, Nepal",
+    "severity": "Severe",
+    "lat": 27.7172,
+    "lon": 85.324,
+    "cascading_effects": [
+      "river blockage",
+      "downstream flooding",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "probability": "23.8%",
+    "calculation_breakdown": {
+      "sample_size": 90,
+      "regional_readings_400km": 0,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 12.0,
+      "intensity_component": 31.5,
+      "momentum_component": 32.0
+    },
+    "time_of_event": "2026-11-28T06:36:22Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Hurricane Formation Window",
     "location": "Gulf Coast, Texas, USA",
     "severity": "Extreme",
