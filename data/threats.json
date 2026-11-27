@@ -1,5 +1,30 @@
 [
   {
+    "primary_threat": "Forecasted Tsunami Window",
+    "location": "Calabria Coast, Italy",
+    "severity": "Severe",
+    "lat": 38.9,
+    "lon": 16.1,
+    "cascading_effects": [
+      "coastal inundation",
+      "infrastructure damage"
+    ],
+    "is_demo": false,
+    "probability": "23.8%",
+    "calculation_breakdown": {
+      "sample_size": 98,
+      "regional_readings_400km": 0,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 12.0,
+      "intensity_component": 31.5,
+      "momentum_component": 32.0
+    },
+    "time_of_event": "2026-11-28T02:48:44Z"
+  },
+  {
     "primary_threat": "Forecasted Volcanic Eruption Window",
     "location": "Shiretoko Peninsula, Japan",
     "severity": "Severe",
@@ -48,31 +73,6 @@
       "momentum_component": 32.0
     },
     "time_of_event": "2026-11-28T02:39:17Z"
-  },
-  {
-    "primary_threat": "Forecasted Volcanic Eruption Window",
-    "location": "Mount Etna, Sicily, Italy",
-    "severity": "Severe",
-    "lat": 37.751,
-    "lon": 14.993,
-    "cascading_effects": [
-      "lava flows threatening nearby villages",
-      "ash plume disrupting air traffic"
-    ],
-    "is_demo": false,
-    "probability": "23.8%",
-    "calculation_breakdown": {
-      "sample_size": 98,
-      "regional_readings_400km": 0,
-      "recent_24h_readings": 0,
-      "oef_b_value": 1.0,
-      "max_barometric_drop_hpa": 0.0,
-      "max_gnss_drift_mm": 0.0,
-      "density_component": 12.0,
-      "intensity_component": 31.5,
-      "momentum_component": 32.0
-    },
-    "time_of_event": "2026-11-28T02:31:54Z"
   },
   {
     "primary_threat": "Forecasted Volcanic Eruption Window",
