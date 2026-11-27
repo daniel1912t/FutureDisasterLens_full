@@ -1,5 +1,30 @@
 [
   {
+    "primary_threat": "Forecasted Earthquake Window",
+    "location": "Baja California, Mexico",
+    "severity": "Severe",
+    "lat": 32.5,
+    "lon": -115.0,
+    "cascading_effects": [
+      "ground shaking causing infrastructure damage",
+      "potential tsunami generation along the Pacific coast"
+    ],
+    "is_demo": false,
+    "probability": "33.0%",
+    "calculation_breakdown": {
+      "sample_size": 90,
+      "regional_readings_400km": 5,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 51.0,
+      "intensity_component": 31.5,
+      "momentum_component": 0.0
+    },
+    "time_of_event": "2026-11-28T10:37:14Z"
+  },
+  {
     "primary_threat": "Forecasted Volcanic Eruption Window",
     "location": "Kyushu, Japan",
     "severity": "Severe",
