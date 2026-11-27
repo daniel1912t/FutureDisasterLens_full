@@ -1,5 +1,30 @@
 [
   {
+    "primary_threat": "Forecasted Landslide Hazard Window",
+    "location": "Northern Andes, Colombia",
+    "severity": "Severe",
+    "lat": 5.5,
+    "lon": -73.2,
+    "cascading_effects": [
+      "river damming",
+      "downstream flooding"
+    ],
+    "is_demo": false,
+    "probability": "23.8%",
+    "calculation_breakdown": {
+      "sample_size": 90,
+      "regional_readings_400km": 0,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 12.0,
+      "intensity_component": 31.5,
+      "momentum_component": 32.0
+    },
+    "time_of_event": "2026-11-28T08:43:38Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Cyclone Windstorm Window",
     "location": "Coastal Java, Indonesia",
     "severity": "Severe",
