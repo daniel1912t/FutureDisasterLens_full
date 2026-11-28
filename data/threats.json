@@ -1,6 +1,31 @@
 [
   {
     "primary_threat": "Forecasted Severe Earthquake Window",
+    "location": "Santiago Metropolitan Region, Chile",
+    "severity": "Severe",
+    "lat": -33.5,
+    "lon": -70.7,
+    "cascading_effects": [
+      "landslide risk in Andean foothills",
+      "damaged infrastructure and power outages"
+    ],
+    "is_demo": false,
+    "probability": "23.8%",
+    "calculation_breakdown": {
+      "sample_size": 98,
+      "regional_readings_400km": 0,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 12.0,
+      "intensity_component": 31.5,
+      "momentum_component": 32.0
+    },
+    "time_of_event": "2026-11-29T12:32:10Z"
+  },
+  {
+    "primary_threat": "Forecasted Severe Earthquake Window",
     "location": "Central California, United States",
     "severity": "Severe",
     "lat": 36.5,
