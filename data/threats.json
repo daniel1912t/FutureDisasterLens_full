@@ -1,5 +1,31 @@
 [
   {
+    "primary_threat": "Forecasted Severe Landslide Window",
+    "location": "Coastal California, United States",
+    "severity": "Severe",
+    "lat": 36.5,
+    "lon": -121.9,
+    "cascading_effects": [
+      "Road closures",
+      "Infrastructure damage",
+      "Potential mudflow into waterways"
+    ],
+    "is_demo": false,
+    "probability": "45.1%",
+    "calculation_breakdown": {
+      "sample_size": 90,
+      "regional_readings_400km": 23,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 81.2,
+      "intensity_component": 31.5,
+      "momentum_component": 0.0
+    },
+    "time_of_event": "2026-11-28T19:53:21Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Earthquake Window",
     "location": "Canterbury Region, New Zealand",
     "severity": "Severe",
