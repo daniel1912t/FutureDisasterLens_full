@@ -1,6 +1,31 @@
 [
   {
     "primary_threat": "Forecasted Volcanic Eruption Window",
+    "location": "Iceland, Reykjanes Peninsula",
+    "severity": "Severe",
+    "lat": 63.8,
+    "lon": -22.0,
+    "cascading_effects": [
+      "ash plume affecting air traffic",
+      "lava flows threatening nearby settlements"
+    ],
+    "is_demo": false,
+    "probability": "23.8%",
+    "calculation_breakdown": {
+      "sample_size": 90,
+      "regional_readings_400km": 0,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 12.0,
+      "intensity_component": 31.5,
+      "momentum_component": 32.0
+    },
+    "time_of_event": "2026-11-29T10:11:02Z"
+  },
+  {
+    "primary_threat": "Forecasted Volcanic Eruption Window",
     "location": "Kamchatka Peninsula, Russia",
     "severity": "Severe",
     "lat": 56.0,
@@ -554,31 +579,6 @@
       "momentum_component": 32.0
     },
     "time_of_event": "2026-11-29T08:11:28Z"
-  },
-  {
-    "primary_threat": "Forecasted Volcanic Eruption Window",
-    "location": "Gr\u00edmsv\u00f6tn, Iceland",
-    "severity": "Severe",
-    "lat": 64.0,
-    "lon": -17.3,
-    "cascading_effects": [
-      "ash plume disrupting air traffic",
-      "glacial outburst floods (j\u00f6kulhlaup)"
-    ],
-    "is_demo": false,
-    "probability": "23.8%",
-    "calculation_breakdown": {
-      "sample_size": 90,
-      "regional_readings_400km": 0,
-      "recent_24h_readings": 0,
-      "oef_b_value": 1.0,
-      "max_barometric_drop_hpa": 0.0,
-      "max_gnss_drift_mm": 0.0,
-      "density_component": 12.0,
-      "intensity_component": 31.5,
-      "momentum_component": 32.0
-    },
-    "time_of_event": "2026-11-29T10:04:08Z"
   },
   {
     "primary_threat": "Forecasted Volcanic Eruption Window",
