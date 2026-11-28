@@ -1,5 +1,31 @@
 [
   {
+    "primary_threat": "Forecasted Severe Hurricane Surge Window",
+    "location": "Florida Keys, United States",
+    "severity": "Severe",
+    "lat": 24.6,
+    "lon": -81.8,
+    "cascading_effects": [
+      "coastal flooding",
+      "storm surge inundation",
+      "wind damage to infrastructure"
+    ],
+    "is_demo": false,
+    "probability": "44.3%",
+    "calculation_breakdown": {
+      "sample_size": 98,
+      "regional_readings_400km": 21,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 79.3,
+      "intensity_component": 31.5,
+      "momentum_component": 0.0
+    },
+    "time_of_event": "2026-11-29T15:12:37Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Flood Window",
     "location": "Mekong Delta, Vietnam",
     "severity": "Severe",
