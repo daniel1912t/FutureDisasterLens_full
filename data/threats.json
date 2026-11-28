@@ -1,5 +1,30 @@
 [
   {
+    "primary_threat": "Forecasted Volcanic Eruption Window",
+    "location": "Iceland, Reykjanes Peninsula",
+    "severity": "Severe",
+    "lat": 63.9,
+    "lon": -22.5,
+    "cascading_effects": [
+      "ash plume affecting air traffic",
+      "acid rain in downstream regions"
+    ],
+    "is_demo": false,
+    "probability": "23.4%",
+    "calculation_breakdown": {
+      "sample_size": 98,
+      "regional_readings_400km": 1,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 27.1,
+      "intensity_component": 31.5,
+      "momentum_component": 0.0
+    },
+    "time_of_event": "2026-11-29T17:28:13Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Landslide Window",
     "location": "Sierra Nevada, United States",
     "severity": "Severe",
