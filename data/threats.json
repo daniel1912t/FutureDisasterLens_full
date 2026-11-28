@@ -1,6 +1,31 @@
 [
   {
     "primary_threat": "Forecasted Severe Flood Window",
+    "location": "Lagos, Nigeria",
+    "severity": "Moderate",
+    "lat": 6.5244,
+    "lon": 3.3792,
+    "cascading_effects": [
+      "urban drainage overload",
+      "soil liquefaction in low-lying districts"
+    ],
+    "is_demo": false,
+    "probability": "20.6%",
+    "calculation_breakdown": {
+      "sample_size": 90,
+      "regional_readings_400km": 0,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 12.0,
+      "intensity_component": 23.4,
+      "momentum_component": 32.0
+    },
+    "time_of_event": "2026-11-29T10:51:13Z"
+  },
+  {
+    "primary_threat": "Forecasted Severe Flood Window",
     "location": "Manila, Philippines",
     "severity": "Severe",
     "lat": 14.5995,
