@@ -1,5 +1,30 @@
 [
   {
+    "primary_threat": "Forecasted Severe Earthquake Window",
+    "location": "Southern California, United States",
+    "severity": "Severe",
+    "lat": 34.05,
+    "lon": -118.25,
+    "cascading_effects": [
+      "intense ground shaking",
+      "potential infrastructure collapse"
+    ],
+    "is_demo": false,
+    "probability": "34.3%",
+    "calculation_breakdown": {
+      "sample_size": 90,
+      "regional_readings_400km": 6,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 54.4,
+      "intensity_component": 31.5,
+      "momentum_component": 0.0
+    },
+    "time_of_event": "2026-11-29T11:38:32Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Cyclone Window",
     "location": "Luzon, Philippines",
     "severity": "Severe",
