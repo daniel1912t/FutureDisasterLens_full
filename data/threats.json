@@ -1,5 +1,30 @@
 [
   {
+    "primary_threat": "Forecasted Volcanic Eruption Window",
+    "location": "Mount Nyiragongo, Democratic Republic of the Congo",
+    "severity": "Severe",
+    "lat": -1.5,
+    "lon": 29.2,
+    "cascading_effects": [
+      "lava flow inundation of surrounding villages",
+      "airborne volcanic ash affecting regional air traffic"
+    ],
+    "is_demo": false,
+    "probability": "27.0%",
+    "calculation_breakdown": {
+      "sample_size": 98,
+      "regional_readings_400km": 2,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 35.9,
+      "intensity_component": 31.5,
+      "momentum_component": 0.0
+    },
+    "time_of_event": "2026-11-29T12:45:05Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Tropical Cyclone Windstorm Window",
     "location": "Luzon Island, Philippines",
     "severity": "Severe",
