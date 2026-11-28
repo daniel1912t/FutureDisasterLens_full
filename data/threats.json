@@ -1,5 +1,30 @@
 [
   {
+    "primary_threat": "Forecasted Volcanic Eruption Window",
+    "location": "Luzon, Philippines",
+    "severity": "Severe",
+    "lat": 15.5,
+    "lon": 121.0,
+    "cascading_effects": [
+      "ashfall affecting air traffic",
+      "lahar flows impacting downstream communities"
+    ],
+    "is_demo": false,
+    "probability": "23.8%",
+    "calculation_breakdown": {
+      "sample_size": 90,
+      "regional_readings_400km": 0,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 12.0,
+      "intensity_component": 31.5,
+      "momentum_component": 32.0
+    },
+    "time_of_event": "2026-11-29T09:24:17Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Landslide Window",
     "location": "Alps, Austria",
     "severity": "Severe",
