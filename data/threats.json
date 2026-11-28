@@ -1,6 +1,31 @@
 [
   {
     "primary_threat": "Forecasted Volcanic Eruption Window",
+    "location": "Mount Fuji, Japan",
+    "severity": "Severe",
+    "lat": 35.36,
+    "lon": 138.73,
+    "cascading_effects": [
+      "ash fall affecting air traffic",
+      "lahar flows in downstream river valleys"
+    ],
+    "is_demo": false,
+    "probability": "23.4%",
+    "calculation_breakdown": {
+      "sample_size": 98,
+      "regional_readings_400km": 1,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 27.1,
+      "intensity_component": 31.5,
+      "momentum_component": 0.0
+    },
+    "time_of_event": "2026-11-29T05:15:05Z"
+  },
+  {
+    "primary_threat": "Forecasted Volcanic Eruption Window",
     "location": "Andes, Chile",
     "severity": "Severe",
     "lat": -32.5,
