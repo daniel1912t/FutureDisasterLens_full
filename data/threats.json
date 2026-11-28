@@ -1,5 +1,30 @@
 [
   {
+    "primary_threat": "Forecasted Severe Earthquake Window",
+    "location": "Crete, Greece",
+    "severity": "Severe",
+    "lat": 35.3,
+    "lon": 24.9,
+    "cascading_effects": [
+      "building collapse",
+      "tsunami generation in surrounding seas"
+    ],
+    "is_demo": false,
+    "probability": "23.8%",
+    "calculation_breakdown": {
+      "sample_size": 98,
+      "regional_readings_400km": 0,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 12.0,
+      "intensity_component": 31.5,
+      "momentum_component": 32.0
+    },
+    "time_of_event": "2026-11-29T16:31:36Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Flood Window",
     "location": "Mekong Delta, Vietnam",
     "severity": "Severe",
