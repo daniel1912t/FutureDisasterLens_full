@@ -1,6 +1,31 @@
 [
   {
     "primary_threat": "Forecasted Volcanic Eruption Window",
+    "location": "Yellowstone National Park, USA",
+    "severity": "Severe",
+    "lat": 44.6,
+    "lon": -110.5,
+    "cascading_effects": [
+      "ash plume dispersal affecting air traffic",
+      "hydrothermal explosions impacting nearby ecosystems"
+    ],
+    "is_demo": false,
+    "probability": "23.4%",
+    "calculation_breakdown": {
+      "sample_size": 90,
+      "regional_readings_400km": 1,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 27.1,
+      "intensity_component": 31.5,
+      "momentum_component": 0.0
+    },
+    "time_of_event": "2026-11-29T23:13:55Z"
+  },
+  {
+    "primary_threat": "Forecasted Volcanic Eruption Window",
     "location": "Andes Region, Chile",
     "severity": "Severe",
     "lat": -33.5,
