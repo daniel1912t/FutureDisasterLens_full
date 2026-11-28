@@ -1,5 +1,31 @@
 [
   {
+    "primary_threat": "Forecasted Severe Earthquake Window",
+    "location": "Tokyo, Japan",
+    "severity": "Severe",
+    "lat": 35.68,
+    "lon": 139.69,
+    "cascading_effects": [
+      "building collapse",
+      "infrastructure disruption",
+      "potential tsunami generation"
+    ],
+    "is_demo": false,
+    "probability": "23.8%",
+    "calculation_breakdown": {
+      "sample_size": 90,
+      "regional_readings_400km": 0,
+      "recent_24h_readings": 0,
+      "oef_b_value": 1.0,
+      "max_barometric_drop_hpa": 0.0,
+      "max_gnss_drift_mm": 0.0,
+      "density_component": 12.0,
+      "intensity_component": 31.5,
+      "momentum_component": 32.0
+    },
+    "time_of_event": "2026-11-29T11:51:03Z"
+  },
+  {
     "primary_threat": "Forecasted Severe Flood Window",
     "location": "Jakarta, Indonesia",
     "severity": "Severe",
@@ -1532,31 +1558,6 @@
       "momentum_component": 0.0
     },
     "time_of_event": "2026-11-29T16:00:30Z"
-  },
-  {
-    "primary_threat": "Forecasted Volcanic Eruption Window",
-    "location": "Honshu Island, Japan",
-    "severity": "Severe",
-    "lat": 36.5,
-    "lon": 138.2,
-    "cascading_effects": [
-      "ash plume disrupting air traffic",
-      "lahar flows affecting downstream valleys"
-    ],
-    "is_demo": false,
-    "probability": "23.4%",
-    "calculation_breakdown": {
-      "sample_size": 98,
-      "regional_readings_400km": 1,
-      "recent_24h_readings": 0,
-      "oef_b_value": 1.0,
-      "max_barometric_drop_hpa": 0.0,
-      "max_gnss_drift_mm": 0.0,
-      "density_component": 27.1,
-      "intensity_component": 31.5,
-      "momentum_component": 0.0
-    },
-    "time_of_event": "2026-11-29T11:55:19Z"
   },
   {
     "primary_threat": "Forecasted Severe Earthquake Window",
